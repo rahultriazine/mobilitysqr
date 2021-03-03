@@ -1,0 +1,223 @@
+ERROR|29/Jan/2021 00:40:58|exception|4340|140517484803840|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 00:41:54|exception|4340|140517484803840|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 01:51:27|exception|4340|140517484803840|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 02:39:45|basehttp|4340|140517484803840|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|29/Jan/2021 02:58:13|exception|4340|140517484803840|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 04:37:44|exception|4340|140517468018432|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 05:43:53|exception|4340|140517468018432|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 05:48:18|basehttp|4340|140517468018432|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|29/Jan/2021 05:48:19|basehttp|4340|140517468018432|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|29/Jan/2021 05:48:19|basehttp|4340|140517468018432|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|29/Jan/2021 05:48:20|basehttp|4340|140517468018432|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|29/Jan/2021 07:28:55|exception|4340|140517468018432|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 10:22:11|exception|4340|140517468018432|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 13:08:34|exception|4340|140517219489536|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 15:59:11|exception|4340|140517219489536|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 18:08:43|log|4340|140517236274944|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 106, in post
+    request.data['user_name']=request.data['vendor_email']
+KeyError: 'vendor_email'
+ERROR|29/Jan/2021 18:08:43|basehttp|4340|140517236274944|"POST /get_add/vendor/ HTTP/1.1" 500 17263
+ERROR|29/Jan/2021 18:50:29|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 21:43:38|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 22:45:21|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 22:45:21|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|29/Jan/2021 22:51:16|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 23:28:06|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|29/Jan/2021 23:29:54|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 00:11:19|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 00:11:19|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 00:16:18|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 00:35:05|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 00:56:14|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 00:59:10|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 01:31:31|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 01:31:46|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 01:31:46|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 01:46:23|basehttp|4340|140517227882240|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|30/Jan/2021 03:25:07|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 03:40:28|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 03:53:11|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 03:57:38|basehttp|4340|140517227882240|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|30/Jan/2021 04:35:28|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 04:43:48|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 04:43:48|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 05:17:02|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 05:26:39|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 05:55:30|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 05:55:31|basehttp|4340|140517211096832|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 06:00:48|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 06:36:24|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 06:43:29|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 08:26:23|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 08:40:46|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 09:00:58|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 09:36:12|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 09:43:09|exception|4340|140517211096832|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 09:43:09|basehttp|4340|140517211096832|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 10:05:15|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 10:20:23|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 10:24:53|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 10:24:53|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 10:54:23|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 11:02:14|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 11:09:02|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 11:15:38|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 11:15:38|basehttp|4340|140517227882240|"GET /script HTTP/1.1" 500 59
+ERROR|30/Jan/2021 11:36:07|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 11:36:07|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 11:42:24|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 13:45:23|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 13:57:27|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 14:43:11|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 14:46:51|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 15:25:01|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 15:25:01|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 15:28:25|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 15:28:25|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|30/Jan/2021 16:01:31|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 16:11:53|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 16:37:13|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 16:52:04|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 17:29:35|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 18:58:50|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 19:11:03|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 19:37:03|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 19:52:24|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 20:22:24|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 20:34:29|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 21:02:56|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 21:14:54|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 21:25:50|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 21:33:11|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 21:38:49|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 21:50:18|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 23:55:45|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|30/Jan/2021 23:56:31|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 00:26:02|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 00:30:04|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 00:42:53|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 00:50:45|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 01:26:30|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 01:42:10|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 01:52:40|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 02:08:42|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 02:20:49|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 02:41:05|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 02:42:15|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 02:58:39|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 03:19:53|exception|4340|140517202704128|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 03:24:01|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 04:48:24|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 05:14:55|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 05:49:24|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 05:54:34|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 05:55:50|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 06:05:00|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 06:31:54|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 06:39:51|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 07:05:00|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 07:20:31|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 07:42:25|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 07:45:01|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 07:56:19|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 09:03:12|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 10:03:02|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 10:09:22|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 10:46:04|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 10:46:04|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|31/Jan/2021 11:00:35|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 11:00:35|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|31/Jan/2021 11:36:11|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 11:40:36|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 11:40:37|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|31/Jan/2021 12:09:53|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 12:23:05|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 12:45:51|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 13:01:22|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 15:05:08|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 15:17:58|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 15:52:38|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 16:04:56|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 16:35:00|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 16:51:43|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 17:14:06|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 17:29:20|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 17:49:04|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 18:03:29|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 18:03:29|basehttp|4340|140517194311424|"GET /manager/html HTTP/1.1" 500 59
+ERROR|31/Jan/2021 19:26:57|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 20:05:40|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 20:08:36|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 20:53:37|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 21:09:37|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 21:41:44|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 21:52:37|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 21:55:41|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 21:55:51|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 22:13:31|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 22:13:31|basehttp|4340|140517194311424|"GET /manager/html HTTP/1.1" 500 59
+ERROR|31/Jan/2021 22:29:15|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 22:58:23|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Jan/2021 23:06:09|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 01:12:41|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 01:14:32|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 01:19:39|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 01:22:54|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 01:54:25|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 02:11:05|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 02:39:49|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 02:53:42|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 03:04:45|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 03:19:00|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 03:31:58|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 03:55:05|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 04:10:02|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 04:59:10|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 05:02:51|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 06:01:33|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 06:08:21|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 06:18:05|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 06:32:55|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 07:01:43|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 07:17:05|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 07:22:06|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 07:29:17|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 07:44:02|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 07:53:28|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 08:17:27|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 08:35:02|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 08:59:43|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 09:02:07|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 09:11:59|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 09:11:59|basehttp|4340|140517227882240|"GET /manager/html HTTP/1.1" 500 59
+ERROR|01/Feb/2021 10:19:51|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 10:23:33|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 11:05:36|exception|4340|140517194311424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 11:26:04|exception|4340|140517236274944|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 12:00:14|exception|4340|140517227882240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|01/Feb/2021 12:16:21|exception|4340|140517219489536|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

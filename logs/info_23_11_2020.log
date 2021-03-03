@@ -1,0 +1,1174 @@
+INFO|23/Nov/2020 11:26:57|basehttp|42632|140163151177472|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:26:57|basehttp|42632|140163142784768|"POST /api/login/ HTTP/1.1" 200 441
+INFO|23/Nov/2020 11:26:58|basehttp|42632|140163142784768|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:26:59|basehttp|42632|140163142784768|"POST /emoloyeeinfo/ HTTP/1.1" 200 1338
+INFO|23/Nov/2020 11:27:00|basehttp|42632|140163142784768|"OPTIONS /get_post_notification/?email=vikasphpdev@yahoo.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:27:00|basehttp|42632|140163142784768|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=vikasphpdev@yahoo.com HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:27:00|basehttp|42632|140163142784768|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:27:01|basehttp|42632|140163142784768|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=vikasphpdev@yahoo.com HTTP/1.1" 200 48
+INFO|23/Nov/2020 11:27:01|basehttp|42632|140163142784768|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|23/Nov/2020 11:27:01|basehttp|42632|140163151177472|"GET /get_post_notification/?email=vikasphpdev@yahoo.com&org_id=ORG150866 HTTP/1.1" 200 92742
+INFO|23/Nov/2020 11:27:08|basehttp|42632|140163151177472|"OPTIONS /get_travel_request_approver/?emp_email=vikasphpdev@yahoo.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:27:08|basehttp|42632|140163142784768|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|23/Nov/2020 11:27:13|basehttp|42632|140163142784768|"GET /get_travel_request_approver/?emp_email=vikasphpdev@yahoo.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 165129
+INFO|23/Nov/2020 11:28:18|basehttp|42632|140163142784768|"OPTIONS /get_travel_request_approver/?emp_email=vikasphpdev@yahoo.com&visa_status=2&type=Visa&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:28:18|basehttp|42632|140163151177472|"OPTIONS /get_action_status/?module=V HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:28:18|basehttp|42632|140163142784768|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|23/Nov/2020 11:28:22|basehttp|42632|140163151177472|"GET /get_travel_request_approver/?emp_email=vikasphpdev@yahoo.com&visa_status=2&type=Visa&org_id=ORG150866 HTTP/1.1" 200 85374
+INFO|23/Nov/2020 11:28:27|basehttp|42632|140163142784768|"OPTIONS /get_action_status/?module=A HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:28:27|basehttp|42632|140163120760576|"OPTIONS /get_visa_status_summary/?visa_req_id=VR203737&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:28:27|basehttp|42632|140163142784768|"OPTIONS /get_view_visa_request/?visa_req_id=VR203737&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:28:27|basehttp|42632|140163151177472|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|23/Nov/2020 11:28:27|basehttp|42632|140163151177472|"GET /get_visa_status_summary/?visa_req_id=VR203737&org_id=ORG150866 HTTP/1.1" 200 1163
+INFO|23/Nov/2020 11:28:27|basehttp|42632|140163142784768|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|23/Nov/2020 11:28:27|basehttp|42632|140163151177472|"GET /get_view_visa_request/?visa_req_id=VR203737&org_id=ORG150866 HTTP/1.1" 200 1300
+INFO|23/Nov/2020 11:28:28|basehttp|42632|140163151177472|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:28:28|basehttp|42632|140163142784768|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:28:28|basehttp|42632|140163142784768|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|23/Nov/2020 11:28:29|basehttp|42632|140163142784768|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|23/Nov/2020 11:51:06|basehttp|44339|140492401891072|"POST /api/login/ HTTP/1.1" 200 441
+INFO|23/Nov/2020 11:51:06|basehttp|44339|140492401891072|"POST /emoloyeeinfo/ HTTP/1.1" 200 1363
+INFO|23/Nov/2020 11:51:07|basehttp|44339|140492401891072|"OPTIONS /get_post_notification/?email=nishantt@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:51:07|basehttp|44339|140492401891072|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:51:07|basehttp|44339|140492392449792|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|23/Nov/2020 11:51:07|basehttp|44339|140492401891072|"GET /get_post_notification/?email=nishantt@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 54136
+INFO|23/Nov/2020 11:51:07|basehttp|44339|140492392449792|"GET /media/Koala_8UyjVHo.jpg HTTP/1.1" 200 334173
+INFO|23/Nov/2020 11:51:12|basehttp|44339|140492375140096|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 135553
+INFO|23/Nov/2020 11:51:19|basehttp|44339|140492375140096|"OPTIONS /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 0
+INFO|23/Nov/2020 11:51:19|basehttp|44339|140492375140096|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|23/Nov/2020 11:51:20|basehttp|44339|140492375140096|"GET /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 11453
+INFO|23/Nov/2020 11:51:24|basehttp|44339|140492375140096|"OPTIONS /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 200 0
+ERROR|23/Nov/2020 11:51:24|log|44339|140492375140096|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 106, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+AttributeError: 'getassignmentletter' object has no attribute 'date_format'
+ERROR|23/Nov/2020 11:51:24|basehttp|44339|140492375140096|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17459
+WARNING|23/Nov/2020 12:01:14|log|45114|139731990566656|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 12:01:14|basehttp|45114|139731990566656|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 12:01:14|basehttp|45114|139731990566656|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|23/Nov/2020 12:01:15|log|45114|139731990566656|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 12:01:15|basehttp|45114|139731990566656|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 12:01:15|basehttp|45114|139731990566656|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|23/Nov/2020 12:01:15|basehttp|45114|139731990566656|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 12:01:15|log|45114|139731981911808|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 12:01:15|basehttp|45114|139731981911808|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 12:01:16|basehttp|45114|139731981911808|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 12:01:16|log|45114|139731990566656|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 107, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+AttributeError: 'getassignmentletter' object has no attribute 'date_format'
+ERROR|23/Nov/2020 12:01:16|basehttp|45114|139731990566656|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17459
+WARNING|23/Nov/2020 12:06:35|log|45555|139895703463680|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 12:06:35|basehttp|45555|139895703463680|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 12:06:35|basehttp|45555|139895703463680|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 12:06:35|log|45555|139895703463680|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 12:06:35|basehttp|45555|139895703463680|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 12:06:36|basehttp|45555|139895694808832|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 12:06:36|log|45555|139895703463680|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 106, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 512, in date_format
+    from_zone = tz.tzutc()
+NameError: name 'tz' is not defined
+ERROR|23/Nov/2020 12:06:36|basehttp|45555|139895703463680|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17496
+ERROR|23/Nov/2020 12:07:25|log|45591|140218457650944|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 107, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 517, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data '2020-11-26T18:30:00' does not match format '%Y-%m-%d %H:%M:%S'
+ERROR|23/Nov/2020 12:07:25|basehttp|45591|140218457650944|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17851
+ERROR|23/Nov/2020 12:07:28|log|45591|140218457650944|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 107, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 517, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data '2020-11-26T18:30:00' does not match format '%Y-%m-%d %H:%M:%S'
+ERROR|23/Nov/2020 12:07:28|basehttp|45591|140218457650944|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17851
+ERROR|23/Nov/2020 12:09:04|log|45741|139740161160960|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data '2020-11-26T18:30:00' does not match format '%Y-%m-%d %H:%M:%S'
+ERROR|23/Nov/2020 12:09:04|basehttp|45741|139740161160960|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17851
+ERROR|23/Nov/2020 12:09:06|log|45741|139740161160960|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data '2020-11-26T18:30:00' does not match format '%Y-%m-%d %H:%M:%S'
+ERROR|23/Nov/2020 12:09:06|basehttp|45741|139740161160960|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17851
+WARNING|23/Nov/2020 12:20:14|log|46118|140295985002240|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 12:20:14|basehttp|46118|140295985002240|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 12:20:15|basehttp|46118|140295985002240|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 12:20:15|log|46118|140295985002240|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 12:20:15|basehttp|46118|140295985002240|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 12:20:16|basehttp|46118|140295985002240|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 12:20:16|log|46118|140295976347392|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%d'
+ERROR|23/Nov/2020 12:20:16|basehttp|46118|140295976347392|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17791
+ERROR|23/Nov/2020 12:23:02|log|46312|140125338150656|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%dT%H:%M:%S'
+ERROR|23/Nov/2020 12:23:02|basehttp|46312|140125338150656|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17817
+INFO|23/Nov/2020 14:03:13|basehttp|46312|140125338150656|"GET / HTTP/1.1" 200 44
+INFO|23/Nov/2020 14:15:53|basehttp|50612|140377932244736|"OPTIONS /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 200 0
+WARNING|23/Nov/2020 14:15:53|log|50612|140377932244736|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:15:53|basehttp|50612|140377932244736|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:15:54|basehttp|50612|140377932244736|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|23/Nov/2020 14:15:54|log|50612|140377932244736|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:15:54|basehttp|50612|140377932244736|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:15:54|basehttp|50612|140377932244736|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|23/Nov/2020 14:15:55|basehttp|50612|140377932244736|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 14:15:55|log|50612|140377851950848|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:15:55|basehttp|50612|140377851950848|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:15:55|basehttp|50612|140377851950848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 14:15:56|log|50612|140377932244736|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 517, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%fZ')
+TypeError: strptime() argument 1 must be str, not None
+ERROR|23/Nov/2020 14:15:56|basehttp|50612|140377932244736|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17563
+WARNING|23/Nov/2020 14:21:17|log|50612|140377851950848|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:21:17|basehttp|50612|140377851950848|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:21:17|basehttp|50612|140377851950848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 14:21:18|log|50612|140377851950848|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:21:18|basehttp|50612|140377851950848|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:21:18|basehttp|50612|140377851950848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 14:21:19|log|50612|140377932244736|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 517, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%fZ')
+TypeError: strptime() argument 1 must be str, not None
+ERROR|23/Nov/2020 14:21:19|basehttp|50612|140377932244736|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17563
+ERROR|23/Nov/2020 14:21:52|log|50900|140067412211456|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 517, in date_format
+    utc = datetime.strptime(str(date), '%Y-%m-%dT%H:%M:%S.%fZ')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%dT%H:%M:%S.%fZ'
+ERROR|23/Nov/2020 14:21:52|basehttp|50900|140067412211456|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17834
+ERROR|23/Nov/2020 14:22:01|log|50900|140067402245888|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 517, in date_format
+    utc = datetime.strptime(str(date), '%Y-%m-%dT%H:%M:%S.%fZ')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%dT%H:%M:%S.%fZ'
+ERROR|23/Nov/2020 14:22:01|basehttp|50900|140067402245888|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17835
+ERROR|23/Nov/2020 14:23:51|log|51049|139758923753216|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%fZ')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%dT%H:%M:%S.%fZ'
+ERROR|23/Nov/2020 14:23:51|basehttp|51049|139758923753216|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17829
+ERROR|23/Nov/2020 14:24:00|log|51049|139758923753216|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%fZ')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%dT%H:%M:%S.%fZ'
+ERROR|23/Nov/2020 14:24:00|basehttp|51049|139758923753216|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17829
+WARNING|23/Nov/2020 14:29:11|log|51367|140222743586560|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:29:11|basehttp|51367|140222743586560|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:29:11|basehttp|51367|140222743586560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 14:29:12|log|51367|140222743586560|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:29:12|basehttp|51367|140222743586560|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:29:12|basehttp|51367|140222743586560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 14:29:13|log|51367|140222734931712|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%d'
+ERROR|23/Nov/2020 14:29:13|basehttp|51367|140222734931712|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17791
+ERROR|23/Nov/2020 14:29:16|log|51367|140222734931712|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%d'
+ERROR|23/Nov/2020 14:29:16|basehttp|51367|140222734931712|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17790
+ERROR|23/Nov/2020 14:29:19|log|51367|140222734931712|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%d')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%d'
+ERROR|23/Nov/2020 14:29:19|basehttp|51367|140222734931712|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17790
+ERROR|23/Nov/2020 14:31:20|log|51532|139838707803904|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 365, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: .
+ERROR|23/Nov/2020 14:31:20|basehttp|51532|139838707803904|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17764
+ERROR|23/Nov/2020 14:31:24|log|51532|139838707803904|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 365, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: .
+ERROR|23/Nov/2020 14:31:24|basehttp|51532|139838707803904|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17764
+ERROR|23/Nov/2020 14:32:00|log|51567|139702191748864|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 365, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: .0
+ERROR|23/Nov/2020 14:32:00|basehttp|51567|139702191748864|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17766
+ERROR|23/Nov/2020 14:32:03|log|51567|139702181783296|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 365, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: .0
+ERROR|23/Nov/2020 14:32:03|basehttp|51567|139702181783296|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17767
+ERROR|23/Nov/2020 14:32:32|log|51588|139745024091904|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 365, in _strptime
+    data_string[found.end():])
+ValueError: unconverted data remains: .00
+ERROR|23/Nov/2020 14:32:32|basehttp|51588|139745024091904|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17768
+ERROR|23/Nov/2020 14:33:34|basehttp|51588|139744945633024|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 59
+ERROR|23/Nov/2020 14:33:40|log|51721|139890358712064|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 109, in get
+    datas['AssignmentEndDate']=self.date_format(date=data['Actual_End_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S')
+  File "/usr/lib/python3.6/_strptime.py", line 565, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.6/_strptime.py", line 362, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%dT%H:%M:%S'
+ERROR|23/Nov/2020 14:33:40|basehttp|51721|139890358712064|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17817
+WARNING|23/Nov/2020 14:37:10|log|51884|140621204498176|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:37:10|basehttp|51884|140621204498176|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:37:10|basehttp|51884|140621204498176|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 14:37:10|log|51884|140621204498176|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 14:37:10|basehttp|51884|140621204498176|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 14:37:11|basehttp|51884|140621121582848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|23/Nov/2020 14:37:15|basehttp|51884|140621204498176|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 200 78
+INFO|23/Nov/2020 14:38:59|basehttp|51884|140621121582848|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:00|basehttp|51884|140621121582848|"POST /api/login/ HTTP/1.1" 200 441
+INFO|23/Nov/2020 14:39:01|basehttp|51884|140621121582848|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:01|basehttp|51884|140621121582848|"POST /emoloyeeinfo/ HTTP/1.1" 200 1394
+INFO|23/Nov/2020 14:39:02|basehttp|51884|140621121582848|"OPTIONS /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:02|basehttp|51884|140621121582848|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:02|basehttp|51884|140621121582848|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:02|basehttp|51884|140621121582848|"GET /media/linux.png HTTP/1.1" 200 4510
+INFO|23/Nov/2020 14:39:02|basehttp|51884|140621111355136|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|23/Nov/2020 14:39:02|basehttp|51884|140621121582848|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 17534
+INFO|23/Nov/2020 14:39:03|basehttp|51884|140621121582848|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|23/Nov/2020 14:39:06|basehttp|51884|140621121582848|"OPTIONS /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:07|basehttp|51884|140621121582848|"OPTIONS /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:08|basehttp|51884|140621121582848|"GET /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 76
+INFO|23/Nov/2020 14:39:09|basehttp|51884|140621121582848|"OPTIONS /assignmentletterkeys/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:09|basehttp|51884|140621121582848|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:09|basehttp|51884|140621111355136|"GET /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 75
+INFO|23/Nov/2020 14:39:10|basehttp|51884|140621121582848|"GET /assignmentletterkeys/ HTTP/1.1" 200 593
+INFO|23/Nov/2020 14:39:10|basehttp|51884|140621111355136|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|23/Nov/2020 14:39:27|basehttp|51884|140621111355136|"OPTIONS /getSavedTemplate/?country=231&organization=ORG150866&letter_type=Assignment%20Letter&letter_term=Medium%20Term%20Assignment HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:28|basehttp|51884|140621111355136|"GET /getSavedTemplate/?country=231&organization=ORG150866&letter_type=Assignment%20Letter&letter_term=Medium%20Term%20Assignment HTTP/1.1" 200 628
+INFO|23/Nov/2020 14:39:54|basehttp|51884|140621111355136|"OPTIONS /uploadletters/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:39:54|basehttp|51884|140621111355136|"POST /uploadletters/ HTTP/1.1" 200 689
+INFO|23/Nov/2020 14:40:23|basehttp|51884|140621111355136|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:40:23|basehttp|51884|140621111355136|"POST /api/login/ HTTP/1.1" 200 441
+INFO|23/Nov/2020 14:40:24|basehttp|51884|140621111355136|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:40:24|basehttp|51884|140621111355136|"POST /emoloyeeinfo/ HTTP/1.1" 200 1363
+INFO|23/Nov/2020 14:40:25|basehttp|51884|140621111355136|"OPTIONS /get_post_notification/?email=nishantt@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:40:25|basehttp|51884|140621111355136|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:40:25|basehttp|51884|140621121582848|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:40:26|basehttp|51884|140621111355136|"GET /get_post_notification/?email=nishantt@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 54136
+INFO|23/Nov/2020 14:40:26|basehttp|51884|140621121582848|"GET /media/Koala_8UyjVHo.jpg HTTP/1.1" 200 334173
+INFO|23/Nov/2020 14:40:26|basehttp|51884|140621089064704|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|23/Nov/2020 14:40:30|basehttp|51884|140621097457408|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 135553
+INFO|23/Nov/2020 14:40:37|basehttp|51884|140621097457408|"OPTIONS /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:40:37|basehttp|51884|140621089064704|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|23/Nov/2020 14:40:37|basehttp|51884|140621089064704|"GET /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=nishantt@triazinesoft.com HTTP/1.1" 200 11453
+INFO|23/Nov/2020 14:40:40|basehttp|51884|140621089064704|"OPTIONS /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 200 0
+INFO|23/Nov/2020 14:40:42|basehttp|51884|140621089064704|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 200 78
+WARNING|23/Nov/2020 15:09:42|log|53204|140306188412672|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 15:09:42|basehttp|53204|140306188412672|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 15:09:43|basehttp|53204|140306188412672|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|23/Nov/2020 15:09:43|log|53204|140306188412672|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 15:09:43|basehttp|53204|140306188412672|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 15:09:43|basehttp|53204|140306188412672|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 15:09:43|log|53204|140306112575232|Unauthorized: /getassignmentletter/
+INFO|23/Nov/2020 15:09:43|basehttp|53204|140306188412672|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 15:09:43|basehttp|53204|140306112575232|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 15:09:44|basehttp|53204|140306188412672|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 15:09:44|log|53204|140306112575232|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.date.strftime(date, "%m/%d/%Y")
+AttributeError: 'method_descriptor' object has no attribute 'strftime'
+ERROR|23/Nov/2020 15:09:44|basehttp|53204|140306112575232|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17591
+ERROR|23/Nov/2020 15:11:09|log|53257|139770860238592|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.date.strftime(date, "%m/%d/%Y")
+AttributeError: 'method_descriptor' object has no attribute 'strftime'
+ERROR|23/Nov/2020 15:11:09|basehttp|53257|139770860238592|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17590
+ERROR|23/Nov/2020 15:12:06|log|53474|140422936786688|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.date.strftime(date, "%m/%d/%Y")
+AttributeError: 'method_descriptor' object has no attribute 'strftime'
+ERROR|23/Nov/2020 15:12:06|basehttp|53474|140422936786688|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17590
+ERROR|23/Nov/2020 15:12:14|log|53474|140422926296832|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.date.strftime(date, "%m/%d/%Y")
+AttributeError: 'method_descriptor' object has no attribute 'strftime'
+ERROR|23/Nov/2020 15:12:14|basehttp|53474|140422926296832|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17591
+ERROR|23/Nov/2020 15:13:18|log|53548|139666350372608|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strftime(date, "%m/%d/%Y")
+TypeError: descriptor 'strftime' requires a 'datetime.date' object but received a 'str'
+ERROR|23/Nov/2020 15:13:18|basehttp|53548|139666350372608|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17619
+INFO|23/Nov/2020 18:49:54|basehttp|60074|139808334587648|"OPTIONS /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 200 0
+WARNING|23/Nov/2020 18:49:54|log|60074|139808334587648|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 18:49:54|basehttp|60074|139808334587648|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 18:49:55|basehttp|60074|139808334587648|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|23/Nov/2020 18:49:55|log|60074|139808326194944|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 18:49:55|basehttp|60074|139808326194944|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 18:49:55|basehttp|60074|139808326194944|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|23/Nov/2020 18:49:55|basehttp|60074|139808326194944|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 18:49:55|log|60074|139808334587648|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 18:49:55|basehttp|60074|139808334587648|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 18:49:56|basehttp|60074|139808334587648|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 18:49:56|log|60074|139808326194944|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.datetime.strftime(date, "%m/%d/%Y")
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+ERROR|23/Nov/2020 18:49:56|basehttp|60074|139808326194944|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17605
+ERROR|23/Nov/2020 18:50:42|log|60097|139654533359360|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.datetime.strftime(date, "%m/%d/%Y")
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+ERROR|23/Nov/2020 18:50:42|basehttp|60097|139654533359360|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17604
+ERROR|23/Nov/2020 18:53:28|log|60261|140388530484992|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strftime(date, "%m/%d/%Y")
+TypeError: descriptor 'strftime' requires a 'datetime.date' object but received a 'str'
+ERROR|23/Nov/2020 18:53:28|basehttp|60261|140388530484992|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17619
+ERROR|23/Nov/2020 18:54:35|log|60285|140115611240192|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strftime(date, "%m/%d/%Y")
+TypeError: descriptor 'strftime' requires a 'datetime.date' object but received a 'str'
+ERROR|23/Nov/2020 18:54:35|basehttp|60285|140115611240192|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17619
+WARNING|23/Nov/2020 18:55:32|log|60404|140473998911232|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 18:55:32|basehttp|60404|140473998911232|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 18:55:33|basehttp|60404|140473998911232|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 18:55:33|log|60404|140473998911232|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 18:55:33|basehttp|60404|140473998911232|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 18:55:34|basehttp|60404|140473998911232|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 18:55:34|log|60404|140473990256384|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.date.strftime(date, "%m/%d/%Y")
+AttributeError: 'method_descriptor' object has no attribute 'strftime'
+ERROR|23/Nov/2020 18:55:34|basehttp|60404|140473990256384|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17591
+ERROR|23/Nov/2020 18:55:44|log|60404|140473998911232|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.date.strftime(date, "%m/%d/%Y")
+AttributeError: 'method_descriptor' object has no attribute 'strftime'
+ERROR|23/Nov/2020 18:55:44|basehttp|60404|140473998911232|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17591
+ERROR|23/Nov/2020 18:57:54|log|60437|139932022183680|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.datetime.strftime(date, "%m/%d/%Y")
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+ERROR|23/Nov/2020 18:57:54|basehttp|60437|139932022183680|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17604
+ERROR|23/Nov/2020 18:59:53|log|60610|139720132994816|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strftime(date, "%m/%d/%Y")
+TypeError: descriptor 'strftime' requires a 'datetime.date' object but received a 'str'
+ERROR|23/Nov/2020 18:59:53|basehttp|60610|139720132994816|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17619
+WARNING|23/Nov/2020 19:01:25|log|60610|139720050865920|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 19:01:25|basehttp|60610|139720050865920|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 19:01:25|basehttp|60610|139720050865920|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|23/Nov/2020 19:01:26|log|60610|139720050865920|Unauthorized: /getassignmentletter/
+WARNING|23/Nov/2020 19:01:26|basehttp|60610|139720050865920|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 401 183
+INFO|23/Nov/2020 19:01:26|basehttp|60610|139720050865920|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|23/Nov/2020 19:01:27|log|60610|139720132994816|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strftime(date, "%m/%d/%Y")
+TypeError: descriptor 'strftime' requires a 'datetime.date' object but received a 'str'
+ERROR|23/Nov/2020 19:01:27|basehttp|60610|139720132994816|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17620
+ERROR|23/Nov/2020 19:02:30|log|60610|139720050865920|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 108, in get
+    datas['AssignmentStartDate']=self.date_format(date=data['Actual_Start_Date'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/letter/views.py", line 518, in date_format
+    utc = datetime.strftime(date, "%m/%d/%Y")
+TypeError: descriptor 'strftime' requires a 'datetime.date' object but received a 'str'
+ERROR|23/Nov/2020 19:02:30|basehttp|60610|139720050865920|"GET /getassignmentletter/?travel_req_id=TR185141 HTTP/1.1" 500 17619

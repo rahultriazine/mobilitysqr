@@ -1,0 +1,675 @@
+ERROR|07/Feb/2021 20:46:59|exception|9221|140213966997248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Feb/2021 20:54:33|exception|9221|140213966997248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Feb/2021 20:54:34|basehttp|9221|140213966997248|"GET /jmx-console/ HTTP/1.1" 500 59
+ERROR|07/Feb/2021 20:56:48|exception|9221|140213966997248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Feb/2021 21:56:46|exception|15576|140702667765504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Feb/2021 22:45:18|exception|15576|140702676158208|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Feb/2021 22:57:26|exception|15576|140702667765504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Feb/2021 22:57:26|basehttp|15576|140702667765504|"GET /script HTTP/1.1" 500 59
+ERROR|07/Feb/2021 23:00:51|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Feb/2021 23:23:58|basehttp|15576|140702295246592|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|07/Feb/2021 23:36:48|log|15576|140702295246592|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|07/Feb/2021 23:36:48|basehttp|15576|140702295246592|"POST /users?page=&size=5 HTTP/1.1" 500 65329
+ERROR|07/Feb/2021 23:42:44|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 00:21:27|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 00:30:18|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 01:04:18|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 01:04:18|basehttp|15576|140702295246592|"GET /script HTTP/1.1" 500 59
+ERROR|08/Feb/2021 01:05:17|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 01:09:09|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 01:59:19|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 02:01:07|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 02:02:51|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 02:15:13|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 03:15:45|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 03:33:12|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 03:54:47|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 03:57:01|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 03:57:01|basehttp|15576|140702295246592|"GET /script HTTP/1.1" 500 59
+ERROR|08/Feb/2021 05:00:56|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 05:10:08|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 05:14:48|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 05:42:42|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 05:42:42|basehttp|15576|140702312032000|"GET /jmx-console/ HTTP/1.1" 500 59
+ERROR|08/Feb/2021 06:09:13|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 06:09:13|basehttp|15576|140702312032000|"GET /manager/html HTTP/1.1" 500 59
+ERROR|08/Feb/2021 06:09:21|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 06:42:53|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 06:47:18|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 07:01:19|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 07:07:01|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 07:19:58|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 07:47:49|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 08:03:13|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 08:16:26|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 08:37:10|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 08:46:03|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 08:49:46|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 09:15:03|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 09:27:24|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 09:44:35|exception|15576|140702667765504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 11:11:34|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 11:32:39|exception|15576|140702676158208|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 11:48:00|exception|15576|140702676158208|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 13:06:41|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 13:40:09|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 14:36:57|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 15:15:54|exception|15576|140702295246592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 16:39:44|log|15576|140702312032000|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 316, in get
+    template = get_template(lettername)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Short_Term_Assignment_ORG150866_x2G6NWV.html
+ERROR|08/Feb/2021 16:39:44|basehttp|15576|140702312032000|"GET /getassignmentletter/?travel_req_id=TR108929 HTTP/1.1" 500 18690
+ERROR|08/Feb/2021 17:33:22|log|15576|140702298396416|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'api_user_username_cf4e88d2_uniq'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikastest@mailinator.com). (2627) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 118, in post
+    emailserializer.save()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 742, in save_base
+    update_fields=update_fields,
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/models.py", line 124, in Add_Employee_to_User
+    User.objects.create_user(username=instance.user_name,email=instance.email,password=instance.password)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 144, in _create_user
+    user.save(using=self._db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'api_user_username_cf4e88d2_uniq'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikastest@mailinator.com). (2627) (SQLExecDirectW)")
+ERROR|08/Feb/2021 17:33:22|basehttp|15576|140702298396416|"POST /get_add/vendor/ HTTP/1.1" 500 22949
+ERROR|08/Feb/2021 17:37:51|log|15576|140702673536768|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'UQ__api_user__AB6E6164D842F9A5'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikas5678@mailinator.com). (2627) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 118, in post
+    emailserializer.save()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 742, in save_base
+    update_fields=update_fields,
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/models.py", line 124, in Add_Employee_to_User
+    User.objects.create_user(username=instance.user_name,email=instance.email,password=instance.password)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 144, in _create_user
+    user.save(using=self._db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'UQ__api_user__AB6E6164D842F9A5'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikas5678@mailinator.com). (2627) (SQLExecDirectW)")
+ERROR|08/Feb/2021 17:37:51|basehttp|15576|140702673536768|"POST /get_add/vendor/ HTTP/1.1" 500 22942
+ERROR|08/Feb/2021 17:38:02|log|15576|140702276101888|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'UQ__api_user__AB6E6164D842F9A5'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikas5678@mailinator.com). (2627) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 118, in post
+    emailserializer.save()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 742, in save_base
+    update_fields=update_fields,
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/models.py", line 124, in Add_Employee_to_User
+    User.objects.create_user(username=instance.user_name,email=instance.email,password=instance.password)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 144, in _create_user
+    user.save(using=self._db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'UQ__api_user__AB6E6164D842F9A5'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikas5678@mailinator.com). (2627) (SQLExecDirectW)")
+ERROR|08/Feb/2021 17:38:02|basehttp|15576|140702276101888|"POST /get_add/vendor/ HTTP/1.1" 500 22943
+ERROR|08/Feb/2021 17:39:11|log|15576|140702267709184|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'api_user_username_cf4e88d2_uniq'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikastest@mailinator.com). (2627) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 118, in post
+    emailserializer.save()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 742, in save_base
+    update_fields=update_fields,
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/models.py", line 124, in Add_Employee_to_User
+    User.objects.create_user(username=instance.user_name,email=instance.email,password=instance.password)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 144, in _create_user
+    user.save(using=self._db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'api_user_username_cf4e88d2_uniq'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikastest@mailinator.com). (2627) (SQLExecDirectW)")
+ERROR|08/Feb/2021 17:39:11|basehttp|15576|140702267709184|"POST /get_add/vendor/ HTTP/1.1" 500 22946
+ERROR|08/Feb/2021 17:41:10|exception|15576|140702267709184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 17:42:07|log|15576|140702267709184|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'UQ__api_user__AB6E6164D842F9A5'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikas5678@mailinator.com). (2627) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 118, in post
+    emailserializer.save()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 742, in save_base
+    update_fields=update_fields,
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/models.py", line 124, in Add_Employee_to_User
+    User.objects.create_user(username=instance.user_name,email=instance.email,password=instance.password)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/models.py", line 144, in _create_user
+    user.save(using=self._db)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Violation of UNIQUE KEY constraint 'UQ__api_user__AB6E6164D842F9A5'. Cannot insert duplicate key in object 'dbo.api_user'. The duplicate key value is (vikas5678@mailinator.com). (2627) (SQLExecDirectW)")
+ERROR|08/Feb/2021 17:42:07|basehttp|15576|140702267709184|"POST /get_add/vendor/ HTTP/1.1" 500 22942
+ERROR|08/Feb/2021 18:00:38|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 18:03:56|log|15576|140702312032000|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 65, in get
+    emp_code=travel_request_serializer.data[0]['Employee_ID']
+IndexError: list index out of range
+ERROR|08/Feb/2021 18:03:56|basehttp|15576|140702312032000|"GET /getassignmentletter/?travel_req_id=TR298741 HTTP/1.1" 500 17357
+ERROR|08/Feb/2021 18:04:50|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 18:04:51|basehttp|15576|140702312032000|"GET /script HTTP/1.1" 500 59
+ERROR|08/Feb/2021 18:05:59|exception|15576|140702312032000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 18:07:44|log|15576|140702284494592|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 65, in get
+    emp_code=travel_request_serializer.data[0]['Employee_ID']
+IndexError: list index out of range
+ERROR|08/Feb/2021 18:07:44|basehttp|15576|140702284494592|"GET /getassignmentletter/?travel_req_id=TR298741 HTTP/1.1" 500 17358
+ERROR|08/Feb/2021 19:20:43|exception|15576|140702189090560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 19:20:43|basehttp|15576|140702189090560|"GET /manager/html HTTP/1.1" 500 59
+ERROR|08/Feb/2021 19:36:58|exception|15576|140702267709184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 19:36:58|basehttp|15576|140702267709184|"GET /manager/html HTTP/1.1" 500 59
+ERROR|08/Feb/2021 20:25:10|log|15576|140702189090560|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 316, in get
+    template = get_template(lettername)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Short_Term_Assignment_ORG150866_x2G6NWV.html
+ERROR|08/Feb/2021 20:25:10|basehttp|15576|140702189090560|"GET /getassignmentletter/?travel_req_id=TR108929 HTTP/1.1" 500 18690
+ERROR|08/Feb/2021 20:32:25|log|15576|140702312032000|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 95, in get
+    if data['emp_info']:
+KeyError: 'emp_info'
+ERROR|08/Feb/2021 20:32:25|basehttp|15576|140702312032000|"GET /getassignmentletter/?travel_req_id=TR652036 HTTP/1.1" 500 17322
+ERROR|08/Feb/2021 20:34:09|log|15576|140702189090560|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 95, in get
+    if data['emp_info']:
+KeyError: 'emp_info'
+ERROR|08/Feb/2021 20:34:09|basehttp|15576|140702189090560|"GET /getassignmentletter/?travel_req_id=TR652036 HTTP/1.1" 500 17322
+ERROR|08/Feb/2021 20:42:49|exception|15576|140702189090560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 22:01:31|exception|15576|140702276101888|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 22:31:18|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 23:21:42|exception|15576|140702276101888|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Feb/2021 23:21:42|basehttp|15576|140702276101888|"GET /manager/html HTTP/1.1" 500 59
+ERROR|09/Feb/2021 00:41:38|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 00:48:37|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 00:55:32|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 01:46:45|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 03:06:32|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 03:28:50|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 03:42:43|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 04:08:04|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 04:12:24|exception|15576|140702284494592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 05:00:21|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 05:11:42|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 05:51:08|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 06:46:01|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 06:47:56|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 07:58:51|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 08:40:45|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 09:16:20|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 09:18:25|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 09:22:01|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 10:10:50|exception|15576|140702673536768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Feb/2021 11:10:24|log|15576|140702298396416|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 95, in get
+    if data['emp_info']:
+KeyError: 'emp_info'
+ERROR|09/Feb/2021 11:10:25|basehttp|15576|140702298396416|"GET /getassignmentletter/?travel_req_id=TR652036 HTTP/1.1" 500 17294

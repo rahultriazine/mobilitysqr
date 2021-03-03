@@ -1,0 +1,12 @@
+{% autoescape off %}
+Hi <span style="font-size: medium;font-weight: 700;">{{preferred_first_name}}</span>,
+<br>
+
+<p>Your travel request <span style="font-size: medium;font-weight: 700;">{{travel_request_id}}</span> has been approved by <span style="font-size: medium;font-weight: 700;">{{approver_name}}</span>, and now pending with  <span style="font-size: medium;font-weight: 700;">{{next_approver_name}}</span> for approval</p>
+
+<br>
+<p><span style="font-size: medium;font-weight: 700;">Thanks,</span></p>
+<p>Mobility Team</p>
+
+<p style="font-size: medium;font-weight: 600;text-align: center;">This is an automatically generated email, please do not reply.</p>
+{% endautoescape %}

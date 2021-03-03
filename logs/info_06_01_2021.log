@@ -1,0 +1,1207 @@
+INFO|06/Jan/2021 12:45:16|basehttp|24488|139741582477056|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:16|basehttp|24488|139741582477056|"OPTIONS /getemoloyeedata/?employee=div944 HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:16|basehttp|24488|139741582477056|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:16|basehttp|24488|139741582477056|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:16|basehttp|24488|139741582477056|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:16|basehttp|24488|139741582477056|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:17|basehttp|24488|139741582477056|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:17|basehttp|24488|139741574084352|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:17|basehttp|24488|139741565691648|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:17|basehttp|24488|139741557298944|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:17|basehttp|24488|139741540513536|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:17|basehttp|24488|139741548906240|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:17|basehttp|24488|139741548906240|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:18|basehttp|24488|139741190158080|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 12:45:18|basehttp|24488|139741557298944|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 12:45:18|basehttp|24488|139741582477056|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 12:45:18|basehttp|24488|139741190158080|"GET /media/tvs-apache-rtr-160-matte-blue-1506079207989.jpg HTTP/1.1" 200 36184
+INFO|06/Jan/2021 12:45:19|basehttp|24488|139741582477056|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 12:45:19|basehttp|24488|139741557298944|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 12:45:19|basehttp|24488|139741540513536|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|06/Jan/2021 12:45:19|basehttp|24488|139741582477056|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 12:45:19|basehttp|24488|139741548906240|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 12:45:20|basehttp|24488|139741548906240|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 12:45:20|basehttp|24488|139741548906240|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 12:45:20|basehttp|24488|139741582477056|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 12:45:20|basehttp|24488|139741565691648|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 12:45:20|basehttp|24488|139741582477056|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 12:45:21|basehttp|24488|139741565691648|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:21|basehttp|24488|139741582477056|"OPTIONS /get_national_id/?country=Afghanistan HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:21|basehttp|24488|139741548906240|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:21|basehttp|24488|139741540513536|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:45:22|basehttp|24488|139741540513536|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:45:22|basehttp|24488|139741548906240|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 12:45:22|basehttp|24488|139741548906240|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:45:23|basehttp|24488|139741548906240|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+WARNING|06/Jan/2021 12:50:52|log|25177|140053634209536|Unauthorized: /emoloyeeinfo/
+WARNING|06/Jan/2021 12:50:52|basehttp|25177|140053634209536|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:52|log|25177|140053634209536|Unauthorized: /getemoloyeedata/
+WARNING|06/Jan/2021 12:50:52|log|25177|140053625554688|Unauthorized: /get_country_master/
+WARNING|06/Jan/2021 12:50:52|basehttp|25177|140053634209536|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:52|basehttp|25177|140053625554688|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:52|log|25177|140053625554688|Unauthorized: /get_dial_code/
+WARNING|06/Jan/2021 12:50:52|log|25177|140053634209536|Unauthorized: /get_post_relation/
+WARNING|06/Jan/2021 12:50:52|log|25177|140053617161984|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 12:50:52|basehttp|25177|140053625554688|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:52|basehttp|25177|140053617161984|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:52|basehttp|25177|140053634209536|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|log|25177|140053617161984|Unauthorized: /get_post_phone/
+WARNING|06/Jan/2021 12:50:53|log|25177|140053634209536|Unauthorized: /get_post_email/
+WARNING|06/Jan/2021 12:50:53|log|25177|140053625554688|Unauthorized: /get_post_marital_status/
+WARNING|06/Jan/2021 12:50:53|log|25177|140053608769280|Unauthorized: /get_post_salutation/
+WARNING|06/Jan/2021 12:50:53|log|25177|140053600376576|Unauthorized: /get_post_address/
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053617161984|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053634209536|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|log|25177|140053591983872|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053625554688|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053608769280|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053600376576|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053591983872|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|log|25177|140053591983872|Unauthorized: /get_post_notification/
+WARNING|06/Jan/2021 12:50:53|log|25177|140053600376576|Unauthorized: /get_dial_code/
+INFO|06/Jan/2021 12:50:53|basehttp|25177|140053608769280|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:50:53|basehttp|25177|140053625554688|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053591983872|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:53|log|25177|140053634209536|Unauthorized: /get_post_relation/
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053600376576|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:53|basehttp|25177|140053617161984|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 12:50:53|basehttp|25177|140053634209536|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:54|log|25177|140053634209536|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 12:50:54|log|25177|140053617161984|Unauthorized: /emoloyeeinfo/
+WARNING|06/Jan/2021 12:50:54|basehttp|25177|140053634209536|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:54|basehttp|25177|140053617161984|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:54|basehttp|25177|140053591983872|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:50:54|basehttp|25177|140053600376576|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 12:50:54|log|25177|140053634209536|Unauthorized: /getemoloyeedata/
+WARNING|06/Jan/2021 12:50:54|log|25177|140053625554688|Unauthorized: /get_country_master/
+WARNING|06/Jan/2021 12:50:54|basehttp|25177|140053634209536|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:54|basehttp|25177|140053625554688|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:55|log|25177|140053591983872|Unauthorized: /get_post_email/
+INFO|06/Jan/2021 12:50:55|basehttp|25177|140053625554688|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:50:55|basehttp|25177|140053634209536|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:50:55|basehttp|25177|140053617161984|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 12:50:55|log|25177|140053600376576|Unauthorized: /get_post_phone/
+WARNING|06/Jan/2021 12:50:55|log|25177|140053608769280|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 12:50:55|basehttp|25177|140053591983872|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:55|basehttp|25177|140053600376576|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:55|basehttp|25177|140053608769280|"GET /get_post_suffix/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:55|basehttp|25177|140053608769280|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 12:50:55|log|25177|140053600376576|Unauthorized: /get_post_salutation/
+WARNING|06/Jan/2021 12:50:55|log|25177|140053617161984|Unauthorized: /get_post_address/
+WARNING|06/Jan/2021 12:50:55|log|25177|140053591983872|Unauthorized: /get_post_marital_status/
+INFO|06/Jan/2021 12:50:55|basehttp|25177|140053625554688|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 12:50:55|basehttp|25177|140053634209536|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 12:50:55|basehttp|25177|140053600376576|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:55|basehttp|25177|140053617161984|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:55|basehttp|25177|140053591983872|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:56|basehttp|25177|140053591983872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:56|basehttp|25177|140053617161984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:56|basehttp|25177|140053600376576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:56|log|25177|140053617161984|Unauthorized: /get_post_notification/
+WARNING|06/Jan/2021 12:50:56|basehttp|25177|140053617161984|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:56|basehttp|25177|140053600376576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:56|basehttp|25177|140053617161984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:57|log|25177|140053600376576|Unauthorized: /get_dial_code/
+WARNING|06/Jan/2021 12:50:57|log|25177|140053617161984|Unauthorized: /get_post_relation/
+INFO|06/Jan/2021 12:50:57|basehttp|25177|140053591983872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:57|basehttp|25177|140053634209536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:57|basehttp|25177|140053600376576|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:57|basehttp|25177|140053625554688|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:57|basehttp|25177|140053617161984|"GET /get_post_relation/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:57|basehttp|25177|140053608769280|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:57|log|25177|140053608769280|Unauthorized: /get_country_master/
+WARNING|06/Jan/2021 12:50:57|log|25177|140053634209536|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 12:50:57|log|25177|140053625554688|Unauthorized: /emoloyeeinfo/
+INFO|06/Jan/2021 12:50:57|basehttp|25177|140053617161984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:57|log|25177|140053591983872|Unauthorized: /getemoloyeedata/
+WARNING|06/Jan/2021 12:50:57|basehttp|25177|140053608769280|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:57|basehttp|25177|140053634209536|"GET /get_post_gender/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:57|basehttp|25177|140053600376576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:57|basehttp|25177|140053625554688|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:57|basehttp|25177|140053591983872|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053591983872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053625554688|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053600376576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053634209536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:58|log|25177|140053600376576|Unauthorized: /get_post_phone/
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053625554688|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:58|basehttp|25177|140053600376576|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:58|log|25177|140053600376576|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 12:50:58|log|25177|140053591983872|Unauthorized: /get_post_email/
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053625554688|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053634209536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:58|basehttp|25177|140053600376576|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:58|basehttp|25177|140053591983872|"GET /get_post_email/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053617161984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:58|basehttp|25177|140053608769280|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:59|log|25177|140053617161984|Unauthorized: /get_post_marital_status/
+WARNING|06/Jan/2021 12:50:59|basehttp|25177|140053617161984|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:50:59|basehttp|25177|140053600376576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:50:59|basehttp|25177|140053591983872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:59|log|25177|140053634209536|Unauthorized: /get_post_salutation/
+INFO|06/Jan/2021 12:50:59|basehttp|25177|140053608769280|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:50:59|log|25177|140053625554688|Unauthorized: /get_post_address/
+WARNING|06/Jan/2021 12:50:59|basehttp|25177|140053625554688|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:50:59|basehttp|25177|140053634209536|"GET /get_post_salutation/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053634209536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053591983872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053617161984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053608769280|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053634209536|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053625554688|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053625554688|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:00|basehttp|25177|140053617161984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:01|basehttp|25177|140053625554688|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:01|basehttp|25177|140053617161984|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 12:51:01|basehttp|25177|140053617161984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053625554688|"GET /get_post_gender/ HTTP/1.1" 200 2072
+ERROR|06/Jan/2021 12:51:02|log|25177|140053634209536|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 103, in post
+    with open('emp_serializer.data[0].json') as json_data:
+FileNotFoundError: [Errno 2] No such file or directory: 'emp_serializer.data[0].json'
+ERROR|06/Jan/2021 12:51:02|basehttp|25177|140053634209536|"POST /emoloyeeinfo/ HTTP/1.1" 500 17377
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053634209536|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053608769280|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053608769280|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053608769280|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053608769280|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053634209536|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 12:51:02|basehttp|25177|140053634209536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:03|basehttp|25177|140053634209536|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 12:51:03|basehttp|25177|140053634209536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:03|basehttp|25177|140053634209536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:51:03|basehttp|25177|140053608769280|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 12:51:03|basehttp|25177|140053608769280|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 12:51:03|basehttp|25177|140053634209536|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:51:03|basehttp|25177|140053608769280|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 12:51:04|basehttp|25177|140053608769280|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:51:04|basehttp|25177|140053608769280|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:52:45|basehttp|25436|140491476403968|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 12:52:45|basehttp|25436|140491484796672|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 12:52:46|basehttp|25436|140491493189376|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 12:52:46|basehttp|25436|140491501582080|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+ERROR|06/Jan/2021 12:52:46|log|25436|140491518629632|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 104, in post
+    del element['password']
+TypeError: 'str' object does not support item deletion
+ERROR|06/Jan/2021 12:52:46|basehttp|25436|140491518629632|"POST /emoloyeeinfo/ HTTP/1.1" 500 17287
+INFO|06/Jan/2021 12:52:46|basehttp|25436|140491518629632|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 12:52:46|basehttp|25436|140491493189376|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 12:52:46|basehttp|25436|140491509974784|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 12:52:47|basehttp|25436|140491509974784|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 12:52:47|basehttp|25436|140491493189376|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 12:52:47|basehttp|25436|140491493189376|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 12:52:47|basehttp|25436|140491493189376|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 12:52:47|basehttp|25436|140491509974784|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 12:52:47|basehttp|25436|140491509974784|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:52:47|basehttp|25436|140491493189376|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 12:52:48|basehttp|25436|140491493189376|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:52:48|basehttp|25436|140491493189376|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:53:26|basehttp|25477|139857104766720|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 12:53:26|basehttp|25477|139857113159424|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 12:53:26|basehttp|25477|139856751621888|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 12:53:27|basehttp|25477|139857096374016|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 12:53:27|basehttp|25477|139857096374016|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 12:53:27|basehttp|25477|139856751621888|"GET /get_post_email/ HTTP/1.1" 200 1280
+ERROR|06/Jan/2021 12:53:27|log|25477|139857130206976|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 105, in post
+    del element['password']
+TypeError: 'str' object does not support item deletion
+ERROR|06/Jan/2021 12:53:27|basehttp|25477|139857130206976|"POST /emoloyeeinfo/ HTTP/1.1" 500 17287
+INFO|06/Jan/2021 12:53:28|basehttp|25477|139856751621888|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 12:53:28|basehttp|25477|139857121552128|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 12:53:28|basehttp|25477|139857121552128|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 12:53:28|basehttp|25477|139856751621888|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 12:53:28|basehttp|25477|139857121552128|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 12:53:28|basehttp|25477|139857121552128|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 12:53:28|basehttp|25477|139857121552128|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:53:29|basehttp|25477|139857130206976|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 12:53:29|basehttp|25477|139857130206976|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:53:30|basehttp|25477|139857130206976|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:54:47|basehttp|25519|139777001113344|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 12:54:47|basehttp|25519|139777009506048|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 12:54:47|basehttp|25519|139777017898752|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 12:54:47|basehttp|25519|139777026291456|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+ERROR|06/Jan/2021 12:54:47|log|25519|139777116276480|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 106, in post
+    del element['password']
+TypeError: 'str' object does not support item deletion
+ERROR|06/Jan/2021 12:54:48|basehttp|25519|139777116276480|"POST /emoloyeeinfo/ HTTP/1.1" 500 17287
+INFO|06/Jan/2021 12:54:48|basehttp|25519|139777107621632|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 12:54:48|basehttp|25519|139777116276480|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 12:54:48|basehttp|25519|139777107621632|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 12:54:48|basehttp|25519|139777107621632|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 12:54:48|basehttp|25519|139777107621632|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 12:54:48|basehttp|25519|139777116276480|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 12:54:48|basehttp|25519|139777026291456|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 12:54:49|basehttp|25519|139777026291456|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:54:49|basehttp|25519|139777107621632|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 12:54:49|basehttp|25519|139777116276480|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 12:54:49|basehttp|25519|139777116276480|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:54:50|basehttp|25519|139777116276480|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+WARNING|06/Jan/2021 12:57:58|log|25706|139727942653696|Unauthorized: /emoloyeeinfo/
+WARNING|06/Jan/2021 12:57:58|basehttp|25706|139727942653696|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:58|log|25706|139727942653696|Unauthorized: /getemoloyeedata/
+WARNING|06/Jan/2021 12:57:58|basehttp|25706|139727942653696|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:58|log|25706|139727942653696|Unauthorized: /get_country_master/
+WARNING|06/Jan/2021 12:57:58|basehttp|25706|139727942653696|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:58|log|25706|139727942653696|Unauthorized: /get_dial_code/
+WARNING|06/Jan/2021 12:57:58|basehttp|25706|139727942653696|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:58|log|25706|139727942653696|Unauthorized: /get_post_relation/
+WARNING|06/Jan/2021 12:57:58|basehttp|25706|139727942653696|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:58|log|25706|139727942653696|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 12:57:58|basehttp|25706|139727942653696|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:59|log|25706|139727942653696|Unauthorized: /get_post_phone/
+WARNING|06/Jan/2021 12:57:59|basehttp|25706|139727942653696|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:59|log|25706|139727942653696|Unauthorized: /get_post_email/
+WARNING|06/Jan/2021 12:57:59|basehttp|25706|139727942653696|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:59|log|25706|139727942653696|Unauthorized: /get_post_marital_status/
+WARNING|06/Jan/2021 12:57:59|log|25706|139727933998848|Unauthorized: /get_post_salutation/
+WARNING|06/Jan/2021 12:57:59|basehttp|25706|139727942653696|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:59|log|25706|139727925606144|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 12:57:59|basehttp|25706|139727933998848|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:59|log|25706|139727917213440|Unauthorized: /get_post_address/
+WARNING|06/Jan/2021 12:57:59|basehttp|25706|139727925606144|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:59|basehttp|25706|139727917213440|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:57:59|log|25706|139727917213440|Unauthorized: /get_post_notification/
+WARNING|06/Jan/2021 12:57:59|basehttp|25706|139727917213440|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:57:59|basehttp|25706|139727917213440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:00|log|25706|139727917213440|Unauthorized: /emoloyeeinfo/
+WARNING|06/Jan/2021 12:58:00|log|25706|139727925606144|Unauthorized: /getemoloyeedata/
+WARNING|06/Jan/2021 12:58:00|log|25706|139727933998848|Unauthorized: /get_country_master/
+WARNING|06/Jan/2021 12:58:00|basehttp|25706|139727917213440|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:58:00|basehttp|25706|139727942653696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:00|basehttp|25706|139727925606144|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:00|basehttp|25706|139727933998848|"GET /get_country_master/?country= HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:58:00|basehttp|25706|139727933998848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:00|log|25706|139727933998848|Unauthorized: /get_dial_code/
+WARNING|06/Jan/2021 12:58:00|basehttp|25706|139727933998848|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:00|log|25706|139727925606144|Unauthorized: /get_post_relation/
+INFO|06/Jan/2021 12:58:00|basehttp|25706|139727942653696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:00|basehttp|25706|139727933998848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:00|log|25706|139727917213440|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 12:58:00|basehttp|25706|139727925606144|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:00|basehttp|25706|139727917213440|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:01|log|25706|139727917213440|Unauthorized: /get_post_phone/
+INFO|06/Jan/2021 12:58:01|basehttp|25706|139727925606144|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:01|basehttp|25706|139727917213440|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:01|log|25706|139727925606144|Unauthorized: /get_post_email/
+INFO|06/Jan/2021 12:58:01|basehttp|25706|139727933998848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:01|log|25706|139727942653696|Unauthorized: /get_post_marital_status/
+INFO|06/Jan/2021 12:58:01|basehttp|25706|139727917213440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:01|basehttp|25706|139727925606144|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:01|basehttp|25706|139727942653696|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:01|log|25706|139727925606144|Unauthorized: /get_post_suffix/
+INFO|06/Jan/2021 12:58:01|basehttp|25706|139727942653696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:01|basehttp|25706|139727925606144|"GET /get_post_suffix/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:58:01|basehttp|25706|139727925606144|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:01|log|25706|139727917213440|Unauthorized: /get_post_salutation/
+INFO|06/Jan/2021 12:58:01|basehttp|25706|139727942653696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:01|log|25706|139727925606144|Unauthorized: /get_post_address/
+WARNING|06/Jan/2021 12:58:01|basehttp|25706|139727917213440|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:01|basehttp|25706|139727925606144|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 12:58:02|log|25706|139727925606144|Unauthorized: /get_post_notification/
+INFO|06/Jan/2021 12:58:02|basehttp|25706|139727942653696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:02|basehttp|25706|139727917213440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 12:58:02|basehttp|25706|139727925606144|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|06/Jan/2021 12:58:02|basehttp|25706|139727692883712|"POST /api/token/refresh/ HTTP/1.1" 200 220
+ERROR|06/Jan/2021 12:58:02|log|25706|139727933998848|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 103, in post
+    emp_serializer.data[0].remove('password')
+AttributeError: 'collections.OrderedDict' object has no attribute 'remove'
+ERROR|06/Jan/2021 12:58:02|basehttp|25706|139727933998848|"POST /emoloyeeinfo/ HTTP/1.1" 500 17342
+INFO|06/Jan/2021 12:58:02|basehttp|25706|139727933998848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:02|basehttp|25706|139727917213440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:02|basehttp|25706|139727692883712|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 12:58:03|basehttp|25706|139727925606144|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 12:58:03|basehttp|25706|139727701276416|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 12:58:03|basehttp|25706|139727701276416|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:03|basehttp|25706|139727925606144|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 12:58:03|basehttp|25706|139727925606144|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 12:58:03|basehttp|25706|139727925606144|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727925606144|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727701276416|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727701276416|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727701276416|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727925606144|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727701276416|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727925606144|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727701276416|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727701276416|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727701276416|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727692883712|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 12:58:04|basehttp|25706|139727925606144|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 12:58:05|basehttp|25706|139727692883712|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 12:58:05|basehttp|25706|139727692883712|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:58:05|basehttp|25706|139727925606144|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 12:58:05|basehttp|25706|139727925606144|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:58:06|basehttp|25706|139727925606144|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:59:30|basehttp|25896|140054099072768|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 12:59:30|basehttp|25896|140054073894656|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 12:59:30|basehttp|25896|140054090680064|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 12:59:31|basehttp|25896|140054082287360|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 12:59:31|basehttp|25896|140054116120320|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|06/Jan/2021 12:59:31|basehttp|25896|140054107465472|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 12:59:31|basehttp|25896|140054107465472|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 12:59:31|basehttp|25896|140054116120320|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 12:59:31|basehttp|25896|140054116120320|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 12:59:31|basehttp|25896|140054107465472|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 12:59:32|basehttp|25896|140054107465472|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 12:59:32|basehttp|25896|140054107465472|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 12:59:32|basehttp|25896|140054107465472|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 12:59:32|basehttp|25896|140054082287360|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:59:32|basehttp|25896|140054116120320|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 12:59:33|basehttp|25896|140054116120320|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 12:59:33|basehttp|25896|140054116120320|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 13:00:38|basehttp|26032|140457837324032|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 13:00:38|basehttp|26032|140457812145920|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 13:00:38|basehttp|26032|140457820538624|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 13:00:38|basehttp|26032|140457828931328|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 13:00:38|basehttp|26032|140457924822784|"POST /emoloyeeinfo/ HTTP/1.1" 200 1415
+INFO|06/Jan/2021 13:00:38|basehttp|26032|140457845716736|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 13:00:39|basehttp|26032|140457924822784|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 13:00:39|basehttp|26032|140457845716736|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 13:00:39|basehttp|26032|140457828931328|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 13:00:39|basehttp|26032|140457828931328|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 13:00:39|basehttp|26032|140457828931328|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 13:00:39|basehttp|26032|140457828931328|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 13:00:39|basehttp|26032|140457924822784|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 13:00:40|basehttp|26032|140457924822784|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 13:00:40|basehttp|26032|140457845716736|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 13:00:40|basehttp|26032|140457845716736|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 13:00:41|basehttp|26032|140457845716736|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 13:04:01|basehttp|26032|140457845716736|"GET / HTTP/1.1" 200 44
+INFO|06/Jan/2021 13:04:01|basehttp|26032|140457845716736|"GET / HTTP/1.1" 200 44
+WARNING|06/Jan/2021 13:06:24|log|26371|140060973614848|Unauthorized: /get_country_master/
+WARNING|06/Jan/2021 13:06:24|log|26371|140060896786176|Unauthorized: /emoloyeeinfo/
+WARNING|06/Jan/2021 13:06:24|log|26371|140060888393472|Unauthorized: /getemoloyeedata/
+WARNING|06/Jan/2021 13:06:24|log|26371|140060880000768|Unauthorized: /get_dial_code/
+WARNING|06/Jan/2021 13:06:24|basehttp|26371|140060973614848|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:24|basehttp|26371|140060896786176|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:24|basehttp|26371|140060888393472|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:24|basehttp|26371|140060880000768|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:24|log|26371|140060888393472|Unauthorized: /get_post_relation/
+WARNING|06/Jan/2021 13:06:24|basehttp|26371|140060888393472|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:24|log|26371|140060880000768|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 13:06:24|basehttp|26371|140060880000768|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:25|log|26371|140060888393472|Unauthorized: /get_post_marital_status/
+WARNING|06/Jan/2021 13:06:25|log|26371|140060880000768|Unauthorized: /get_post_phone/
+WARNING|06/Jan/2021 13:06:25|log|26371|140060973614848|Unauthorized: /get_post_email/
+WARNING|06/Jan/2021 13:06:25|log|26371|140060896786176|Unauthorized: /get_post_salutation/
+WARNING|06/Jan/2021 13:06:25|basehttp|26371|140060888393472|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:25|basehttp|26371|140060880000768|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:25|basehttp|26371|140060973614848|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:25|basehttp|26371|140060896786176|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:25|log|26371|140060896786176|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 13:06:25|basehttp|26371|140060896786176|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:25|log|26371|140060880000768|Unauthorized: /get_post_address/
+WARNING|06/Jan/2021 13:06:25|basehttp|26371|140060880000768|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:26|log|26371|140060880000768|Unauthorized: /get_post_notification/
+WARNING|06/Jan/2021 13:06:26|log|26371|140060896786176|Unauthorized: /get_country_master/
+INFO|06/Jan/2021 13:06:26|basehttp|26371|140060973614848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:26|basehttp|26371|140060888393472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:26|basehttp|26371|140060896786176|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:26|basehttp|26371|140060880000768|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:26|log|26371|140060888393472|Unauthorized: /emoloyeeinfo/
+WARNING|06/Jan/2021 13:06:26|basehttp|26371|140060888393472|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:26|log|26371|140060880000768|Unauthorized: /getemoloyeedata/
+WARNING|06/Jan/2021 13:06:26|basehttp|26371|140060880000768|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:27|log|26371|140060973614848|Unauthorized: /get_post_gender/
+INFO|06/Jan/2021 13:06:27|basehttp|26371|140060880000768|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:27|log|26371|140060888393472|Unauthorized: /get_dial_code/
+INFO|06/Jan/2021 13:06:27|basehttp|26371|140060896786176|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:27|basehttp|26371|140060973614848|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:27|basehttp|26371|140060888393472|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:27|log|26371|140060888393472|Unauthorized: /get_post_relation/
+INFO|06/Jan/2021 13:06:27|basehttp|26371|140060973614848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:27|basehttp|26371|140060888393472|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:28|log|26371|140060880000768|Unauthorized: /get_post_marital_status/
+INFO|06/Jan/2021 13:06:28|basehttp|26371|140060973614848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:28|basehttp|26371|140060888393472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:28|log|26371|140060896786176|Unauthorized: /get_post_salutation/
+WARNING|06/Jan/2021 13:06:28|basehttp|26371|140060880000768|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:28|basehttp|26371|140060896786176|"GET /get_post_salutation/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 13:06:28|basehttp|26371|140060896786176|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:28|log|26371|140060880000768|Unauthorized: /get_post_phone/
+WARNING|06/Jan/2021 13:06:28|basehttp|26371|140060880000768|"GET /get_post_phone/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 13:06:28|basehttp|26371|140060880000768|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:28|log|26371|140060896786176|Unauthorized: /get_post_email/
+WARNING|06/Jan/2021 13:06:28|log|26371|140060973614848|Unauthorized: /get_post_address/
+INFO|06/Jan/2021 13:06:28|basehttp|26371|140060888393472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:28|basehttp|26371|140060896786176|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:28|basehttp|26371|140060973614848|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 13:06:29|log|26371|140060973614848|Unauthorized: /get_post_suffix/
+INFO|06/Jan/2021 13:06:29|basehttp|26371|140060896786176|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:06:29|basehttp|26371|140060973614848|"GET /get_post_suffix/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 13:06:29|basehttp|26371|140060973614848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:29|basehttp|26371|140060888393472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:29|basehttp|26371|140060880000768|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 13:06:29|basehttp|26371|140060880000768|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:29|basehttp|26371|140060896786176|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 13:06:29|basehttp|26371|140060888393472|"POST /emoloyeeinfo/ HTTP/1.1" 200 1415
+INFO|06/Jan/2021 13:06:30|basehttp|26371|140060896786176|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:30|basehttp|26371|140060880000768|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060880000768|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060896786176|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060871083776|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060973614848|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060880000768|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060888393472|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060888393472|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060880000768|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060973614848|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:31|basehttp|26371|140060888393472|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060888393472|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060888393472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060880000768|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060973614848|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060888393472|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060888393472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060888393472|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 13:06:32|basehttp|26371|140060973614848|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|06/Jan/2021 13:06:33|basehttp|26371|140060973614848|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 13:06:33|basehttp|26371|140060973614848|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 13:06:34|basehttp|26371|140060973614848|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|06/Jan/2021 13:06:36|basehttp|26371|140060888393472|"OPTIONS /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:36|basehttp|26371|140060973614848|"OPTIONS /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:37|basehttp|26371|140060973614848|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 76
+INFO|06/Jan/2021 13:06:37|basehttp|26371|140060973614848|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 76
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060973614848|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060888393472|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060880000768|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060896786176|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060858234624|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060849841920|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060858234624|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060849841920|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060880000768|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 13:06:39|basehttp|26371|140060896786176|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 13:06:55|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=v&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:56|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=vi&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:56|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=vik&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:56|basehttp|26371|140060880000768|"OPTIONS /emoloyeedetails/?employee=vika&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:56|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=v&org_id=ORG150866 HTTP/1.1" 200 12863
+INFO|06/Jan/2021 13:06:56|basehttp|26371|140060849841920|"OPTIONS /emoloyeedetails/?employee=vikas&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:57|basehttp|26371|140060880000768|"GET /emoloyeedetails/?employee=vi&org_id=ORG150866 HTTP/1.1" 200 12811
+INFO|06/Jan/2021 13:06:57|basehttp|26371|140060880000768|"OPTIONS /emoloyeedetails/?employee=vikas0&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060880000768|"OPTIONS /emoloyeedetails/?employee=vikas07&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=vik&org_id=ORG150866 HTTP/1.1" 200 12812
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=vikas0712&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=vikas0712&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060849841920|"GET /emoloyeedetails/?employee=vika&org_id=ORG150866 HTTP/1.1" 200 12813
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060858234624|"GET /emoloyeedetails/?employee=vikas&org_id=ORG150866 HTTP/1.1" 200 12814
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060849841920|"OPTIONS /emoloyeedetails/?employee=vikas07124&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:58|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=vikas071244&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:59|basehttp|26371|140060858234624|"GET /emoloyeedetails/?employee=vikas0&org_id=ORG150866 HTTP/1.1" 200 1410
+INFO|06/Jan/2021 13:06:59|basehttp|26371|140060888393472|"OPTIONS /emoloyeedetails/?employee=vikas071&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:06:59|basehttp|26371|140060849841920|"GET /emoloyeedetails/?employee=vikas07&org_id=ORG150866 HTTP/1.1" 200 1410
+INFO|06/Jan/2021 13:07:00|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=vikas0712&org_id=ORG150866 HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:00|basehttp|26371|140060858234624|"GET /emoloyeedetails/?employee=vikas07124&org_id=ORG150866 HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:01|basehttp|26371|140060880000768|"GET /emoloyeedetails/?employee=vikas071244&org_id=ORG150866 HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:01|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=vikas071&org_id=ORG150866 HTTP/1.1" 200 1410
+INFO|06/Jan/2021 13:07:01|basehttp|26371|140060849841920|"GET /emoloyeedetails/?employee=vikas0712&org_id=ORG150866 HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:01|basehttp|26371|140060849841920|"OPTIONS /emoloyeedetails/?employee=vikas0714&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:02|basehttp|26371|140060880000768|"GET /emoloyeedetails/?employee=vikas07124&org_id=ORG150866 HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:02|basehttp|26371|140060880000768|"OPTIONS /emoloyeedetails/?employee=vikas07144&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:02|basehttp|26371|140060880000768|"GET /emoloyeedetails/?employee=vikas0712&org_id=ORG150866 HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:02|basehttp|26371|140060849841920|"GET /emoloyeedetails/?employee=vikas0714&org_id=ORG150866 HTTP/1.1" 200 1410
+INFO|06/Jan/2021 13:07:03|basehttp|26371|140060849841920|"GET /emoloyeedetails/?employee=vikas07144&org_id=ORG150866 HTTP/1.1" 200 1410
+INFO|06/Jan/2021 13:07:04|basehttp|26371|140060849841920|"OPTIONS /getemoloyeedata/?employee=Emp002 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:05|basehttp|26371|140060849841920|"GET /getemoloyeedata/?employee=Emp002 HTTP/1.1" 200 3323
+INFO|06/Jan/2021 13:07:05|basehttp|26371|140060849841920|"OPTIONS /get_state_master/?country_id=101 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:05|basehttp|26371|140060849841920|"OPTIONS /get_national_id/?country=United%20States HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:05|basehttp|26371|140060849841920|"GET /media/user-male_bnrt7eF.png HTTP/1.1" 200 7056
+INFO|06/Jan/2021 13:07:06|basehttp|26371|140060849841920|"GET /get_state_master/?country_id=101 HTTP/1.1" 200 8604
+INFO|06/Jan/2021 13:07:06|basehttp|26371|140060849841920|"GET /get_national_id/?country=United%20States HTTP/1.1" 200 520
+INFO|06/Jan/2021 13:07:17|basehttp|26371|140060849841920|"OPTIONS /checkemployeeuser/?user_name=tes HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:17|basehttp|26371|140060849841920|"OPTIONS /checkemployeeuser/?user_name=test HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:17|basehttp|26371|140060849841920|"OPTIONS /checkemployeeuser/?user_name=tests HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:17|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=tes HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:18|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=test HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:18|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=tests HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:18|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=test HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:24|basehttp|26371|140060896786176|"OPTIONS /checkemployeeuser/?user_name=testn HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"OPTIONS /checkemployeeuser/?user_name=testne HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"OPTIONS /checkemployeeuser/?user_name=testnew HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=testn HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=testne HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"OPTIONS /checkemployeeuser/?user_name=testnewo HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=testnew HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"OPTIONS /checkemployeeuser/?user_name=testnewon HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:25|basehttp|26371|140060896786176|"OPTIONS /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:26|basehttp|26371|140060849841920|"GET /checkemployeeuser/?user_name=testnewon HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:26|basehttp|26371|140060896786176|"GET /checkemployeeuser/?user_name=testnewo HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:26|basehttp|26371|140060858234624|"GET /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:07:29|basehttp|26371|140060858234624|"OPTIONS /checkemployeeemail/?email=supervisor@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:30|basehttp|26371|140060858234624|"GET /checkemployeeemail/?email=supervisor@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:32|basehttp|26371|140060896786176|"OPTIONS /checkemployeeemail/?email=t@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:32|basehttp|26371|140060896786176|"OPTIONS /checkemployeeemail/?email=te@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:32|basehttp|26371|140060858234624|"OPTIONS /checkemployeeemail/?email=tes@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:32|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=t@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:32|basehttp|26371|140060896786176|"OPTIONS /checkemployeeemail/?email=test@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:33|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=te@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:33|basehttp|26371|140060858234624|"OPTIONS /checkemployeeemail/?email=testn@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:33|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=tes@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:33|basehttp|26371|140060858234624|"GET /checkemployeeemail/?email=test@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:33|basehttp|26371|140060858234624|"OPTIONS /checkemployeeemail/?email=testne@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:33|basehttp|26371|140060858234624|"OPTIONS /checkemployeeemail/?email=testnew@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:33|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=testn@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:34|basehttp|26371|140060858234624|"OPTIONS /checkemployeeemail/?email=testnewo@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:34|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=testne@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:34|basehttp|26371|140060858234624|"OPTIONS /checkemployeeemail/?email=testnewon@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:34|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=testnew@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:34|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=testnewo@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:34|basehttp|26371|140060896786176|"OPTIONS /checkemployeeemail/?email=testnewone@mailinator.com HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:07:35|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=testnewon@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:07:35|basehttp|26371|140060896786176|"GET /checkemployeeemail/?email=testnewone@mailinator.com HTTP/1.1" 200 43
+INFO|06/Jan/2021 13:08:00|basehttp|26371|140060896786176|"OPTIONS /get_country_master/?country=i HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:00|basehttp|26371|140060896786176|"OPTIONS /get_country_master/?country=in HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:00|basehttp|26371|140060896786176|"GET /get_country_master/?country=i HTTP/1.1" 200 37994
+INFO|06/Jan/2021 13:08:01|basehttp|26371|140060896786176|"GET /get_country_master/?country=in HTTP/1.1" 200 9046
+INFO|06/Jan/2021 13:08:01|basehttp|26371|140060896786176|"OPTIONS /get_country_master/?country=ind HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:02|basehttp|26371|140060896786176|"GET /get_country_master/?country=ind HTTP/1.1" 200 781
+INFO|06/Jan/2021 13:08:31|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emp HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:31|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Emp HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:31|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emp37 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:31|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emp374 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emp3743 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emp37437 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emp37437 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emp374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Emp37 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060880000768|"GET /checkemployeeempcode/?emp_code=Emp374 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Emp3743 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Emp37437 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:32|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Emp374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:33|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Emp37437 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:36|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Empt374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:36|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Empte374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:36|basehttp|26371|140060896786176|"OPTIONS /checkemployeeempcode/?emp_code=Emptes374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:36|basehttp|26371|140060880000768|"OPTIONS /checkemployeeempcode/?emp_code=Emptest374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:36|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Empt374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:37|basehttp|26371|140060880000768|"GET /checkemployeeempcode/?emp_code=Emptes374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:37|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Empte374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:37|basehttp|26371|140060858234624|"GET /checkemployeeempcode/?emp_code=Emptest374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:37|basehttp|26371|140060858234624|"OPTIONS /checkemployeeempcode/?emp_code=Emptesto374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:37|basehttp|26371|140060858234624|"OPTIONS /checkemployeeempcode/?emp_code=Empteston374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:37|basehttp|26371|140060858234624|"OPTIONS /checkemployeeempcode/?emp_code=Emptestone374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:38|basehttp|26371|140060858234624|"GET /checkemployeeempcode/?emp_code=Emptesto374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:38|basehttp|26371|140060896786176|"GET /checkemployeeempcode/?emp_code=Emptestone374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:38|basehttp|26371|140060858234624|"GET /checkemployeeempcode/?emp_code=Empteston374377 HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:08:41|basehttp|26371|140060858234624|"OPTIONS /get_add/employee/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:08:41|basehttp|26371|140060858234624|"POST /get_add/employee/ HTTP/1.1" 201 121
+ERROR|06/Jan/2021 13:08:55|exception|26371|140060858234624|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 13:08:55|log|26371|140060858234624|Bad Request: /manager/html
+WARNING|06/Jan/2021 13:08:55|basehttp|26371|140060858234624|"GET /manager/html HTTP/1.1" 400 62887
+INFO|06/Jan/2021 13:09:10|basehttp|26371|140060858234624|"POST /get_add/employee/ HTTP/1.1" 201 121
+INFO|06/Jan/2021 13:09:27|basehttp|26371|140060858234624|"POST /get_add/employee/ HTTP/1.1" 201 1443
+INFO|06/Jan/2021 13:09:27|basehttp|26371|140060858234624|"OPTIONS /get_add/employee_emails/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:09:27|basehttp|26371|140060858234624|"OPTIONS /getemoloyeedata/?employee=Emptestone374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:09:28|basehttp|26371|140060858234624|"POST /get_add/employee_emails/ HTTP/1.1" 201 570
+INFO|06/Jan/2021 13:09:29|basehttp|26371|140060858234624|"GET /getemoloyeedata/?employee=Emptestone374377 HTTP/1.1" 200 2045
+INFO|06/Jan/2021 13:09:55|basehttp|26371|140060858234624|"GET /checkemployeeemail/?email=testnewone@mailinator.com HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:09:56|basehttp|26371|140060858234624|"GET /checkemployeeemail/?email=testnewone@mailinator.com HTTP/1.1" 200 47
+INFO|06/Jan/2021 13:11:39|basehttp|26371|140060858234624|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:40|basehttp|26371|140060858234624|"POST /api/login/ HTTP/1.1" 200 441
+INFO|06/Jan/2021 13:11:40|basehttp|26371|140060858234624|"POST /emoloyeeinfo/ HTTP/1.1" 200 1415
+INFO|06/Jan/2021 13:11:41|basehttp|26371|140060858234624|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 13:11:41|basehttp|26371|140060858234624|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:41|basehttp|26371|140060896786176|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:42|basehttp|26371|140060858234624|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 13:11:43|basehttp|26371|140060896786176|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+INFO|06/Jan/2021 13:11:46|basehttp|26371|140060858234624|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 76
+INFO|06/Jan/2021 13:11:46|basehttp|26371|140060896786176|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 76
+INFO|06/Jan/2021 13:11:48|basehttp|26371|140060896786176|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 13:11:48|basehttp|26371|140060880000768|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 13:11:48|basehttp|26371|140060858234624|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 13:11:48|basehttp|26371|140060896786176|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 13:11:48|basehttp|26371|140060849841920|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 13:11:48|basehttp|26371|140060888393472|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 13:11:48|basehttp|26371|140060888393472|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 13:11:49|basehttp|26371|140060888393472|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 13:11:49|basehttp|26371|140060849841920|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 13:11:49|basehttp|26371|140060896786176|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 13:11:50|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=t&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:50|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=te&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:50|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=tes&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:51|basehttp|26371|140060849841920|"GET /emoloyeedetails/?employee=t&org_id=ORG150866 HTTP/1.1" 200 12704
+INFO|06/Jan/2021 13:11:51|basehttp|26371|140060849841920|"OPTIONS /emoloyeedetails/?employee=test&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:51|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=te&org_id=ORG150866 HTTP/1.1" 200 12825
+INFO|06/Jan/2021 13:11:51|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=tes&org_id=ORG150866 HTTP/1.1" 200 12937
+INFO|06/Jan/2021 13:11:51|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=test&org_id=ORG150866 HTTP/1.1" 200 12938
+INFO|06/Jan/2021 13:11:52|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=testn&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:52|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=testn&org_id=ORG150866 HTTP/1.1" 200 1495
+INFO|06/Jan/2021 13:11:52|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=testne&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:53|basehttp|26371|140060896786176|"OPTIONS /emoloyeedetails/?employee=testnew&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:11:53|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=testne&org_id=ORG150866 HTTP/1.1" 200 1495
+INFO|06/Jan/2021 13:11:53|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=testnew&org_id=ORG150866 HTTP/1.1" 200 1495
+INFO|06/Jan/2021 13:11:57|basehttp|26371|140060896786176|"GET /getemoloyeedata/?employee=Emptestone374377 HTTP/1.1" 200 2045
+INFO|06/Jan/2021 13:12:02|basehttp|26371|140060849841920|"GET /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:12:03|basehttp|26371|140060849841920|"GET /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:12:03|basehttp|26371|140060849841920|"GET /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:12:08|basehttp|26371|140060849841920|"GET /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:12:08|basehttp|26371|140060849841920|"GET /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:12:09|basehttp|26371|140060849841920|"GET /checkemployeeuser/?user_name=testnewone HTTP/1.1" 200 51
+INFO|06/Jan/2021 13:12:22|basehttp|26371|140060896786176|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 13:12:22|basehttp|26371|140060888393472|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 13:12:22|basehttp|26371|140060858234624|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 13:12:22|basehttp|26371|140060880000768|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 13:12:22|basehttp|26371|140060841449216|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 13:12:22|basehttp|26371|140060849841920|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 13:12:23|basehttp|26371|140060841449216|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 13:12:23|basehttp|26371|140060849841920|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 13:12:23|basehttp|26371|140060880000768|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 13:12:23|basehttp|26371|140060858234624|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 13:12:23|basehttp|26371|140060896786176|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 13:12:42|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=t&org_id=ORG150866 HTTP/1.1" 200 12704
+INFO|06/Jan/2021 13:12:43|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=te&org_id=ORG150866 HTTP/1.1" 200 12825
+INFO|06/Jan/2021 13:12:43|basehttp|26371|140060858234624|"GET /emoloyeedetails/?employee=tes&org_id=ORG150866 HTTP/1.1" 200 12937
+INFO|06/Jan/2021 13:12:43|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=test&org_id=ORG150866 HTTP/1.1" 200 12938
+INFO|06/Jan/2021 13:12:45|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=testn&org_id=ORG150866 HTTP/1.1" 200 1495
+INFO|06/Jan/2021 13:12:46|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=testne&org_id=ORG150866 HTTP/1.1" 200 1495
+INFO|06/Jan/2021 13:12:46|basehttp|26371|140060896786176|"GET /emoloyeedetails/?employee=testnew&org_id=ORG150866 HTTP/1.1" 200 1495
+INFO|06/Jan/2021 13:12:49|basehttp|26371|140060896786176|"GET /getemoloyeedata/?employee=Emptestone374377 HTTP/1.1" 200 2045
+INFO|06/Jan/2021 13:13:46|basehttp|26371|140060858234624|"OPTIONS /forget_password/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:13:48|basehttp|26371|140060858234624|"POST /forget_password/ HTTP/1.1" 200 73
+INFO|06/Jan/2021 13:14:49|basehttp|26371|140060896786176|"POST /api/login/ HTTP/1.1" 200 449
+ERROR|06/Jan/2021 13:14:49|log|26371|140060896786176|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 73, in post
+    if employees[0]['active_start_date']:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|06/Jan/2021 13:14:49|basehttp|26371|140060896786176|"POST /emoloyeeinfo/ HTTP/1.1" 500 17399
+INFO|06/Jan/2021 13:18:17|basehttp|27002|139815454316288|"POST /api/login/ HTTP/1.1" 200 449
+INFO|06/Jan/2021 13:18:17|basehttp|27002|139815454316288|"POST /emoloyeeinfo/ HTTP/1.1" 200 1381
+INFO|06/Jan/2021 13:19:08|basehttp|27002|139815454316288|"OPTIONS /reset_password/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:19:09|basehttp|27002|139815454316288|"POST /reset_password/ HTTP/1.1" 200 35
+INFO|06/Jan/2021 13:19:17|basehttp|27002|139815454316288|"POST /api/login/ HTTP/1.1" 200 449
+INFO|06/Jan/2021 13:19:18|basehttp|27002|139815454316288|"POST /emoloyeeinfo/ HTTP/1.1" 200 1381
+INFO|06/Jan/2021 13:19:23|basehttp|27002|139815454316288|"OPTIONS /is_termandcondtion/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:19:24|basehttp|27002|139815454316288|"POST /is_termandcondtion/ HTTP/1.1" 200 35
+INFO|06/Jan/2021 13:19:24|basehttp|27002|139815454316288|"OPTIONS /get_post_notification/?email=Emptestone374377&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:19:24|basehttp|27002|139815454316288|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emptestone374377 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:19:24|basehttp|27002|139815445137152|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 13:19:25|basehttp|27002|139815445137152|"GET /get_post_notification/?email=Emptestone374377&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|06/Jan/2021 13:19:25|basehttp|27002|139815445137152|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emptestone374377 HTTP/1.1" 200 48
+INFO|06/Jan/2021 13:21:59|basehttp|27193|139860613838592|"POST /api/login/ HTTP/1.1" 200 441
+INFO|06/Jan/2021 13:21:59|basehttp|27193|139860613838592|"POST /emoloyeeinfo/ HTTP/1.1" 200 1415
+INFO|06/Jan/2021 13:22:00|basehttp|27193|139860596791040|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 13:22:01|basehttp|27193|139860613838592|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 13:22:02|basehttp|27193|139860605183744|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+INFO|06/Jan/2021 13:22:06|basehttp|27193|139860587874048|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 76
+INFO|06/Jan/2021 13:22:06|basehttp|27193|139860587874048|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 76
+INFO|06/Jan/2021 13:22:10|basehttp|27193|139860613838592|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 13:22:10|basehttp|27193|139860587874048|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 13:22:10|basehttp|27193|139860596791040|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 13:22:10|basehttp|27193|139860361078528|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 13:22:10|basehttp|27193|139860605183744|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 13:22:10|basehttp|27193|139860369471232|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 13:22:11|basehttp|27193|139860369471232|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 13:22:11|basehttp|27193|139860605183744|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 13:22:11|basehttp|27193|139860361078528|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 13:22:11|basehttp|27193|139860596791040|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 13:22:13|basehttp|27193|139860596791040|"OPTIONS /emoloyeedetails/?employee=E&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:22:13|basehttp|27193|139860596791040|"OPTIONS /emoloyeedetails/?employee=E&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:22:13|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=E&org_id=ORG150866 HTTP/1.1" 200 12686
+INFO|06/Jan/2021 13:22:14|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=E&org_id=ORG150866 HTTP/1.1" 200 12686
+INFO|06/Jan/2021 13:22:14|basehttp|27193|139860596791040|"OPTIONS /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:22:15|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 200 12691
+INFO|06/Jan/2021 13:22:15|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=t&org_id=ORG150866 HTTP/1.1" 200 12704
+INFO|06/Jan/2021 13:22:15|basehttp|27193|139860361078528|"GET /emoloyeedetails/?employee=te&org_id=ORG150866 HTTP/1.1" 200 12825
+INFO|06/Jan/2021 13:22:16|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=tes&org_id=ORG150866 HTTP/1.1" 200 12937
+INFO|06/Jan/2021 13:22:16|basehttp|27193|139860361078528|"GET /emoloyeedetails/?employee=test&org_id=ORG150866 HTTP/1.1" 200 12938
+INFO|06/Jan/2021 13:22:16|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=testn&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:22:17|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=testne&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:22:17|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=testnew&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:22:17|basehttp|27193|139860596791040|"OPTIONS /emoloyeedetails/?employee=testnewo&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:22:18|basehttp|27193|139860596791040|"OPTIONS /emoloyeedetails/?employee=testnewon&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:22:18|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=testnewo&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:22:18|basehttp|27193|139860361078528|"OPTIONS /emoloyeedetails/?employee=testnewone&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 13:22:18|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=testnewon&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:22:19|basehttp|27193|139860596791040|"GET /emoloyeedetails/?employee=testnewone&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:25:41|basehttp|27193|139860596791040|"GET /getemoloyeedata/?employee=Emptestone374377 HTTP/1.1" 200 2043
+INFO|06/Jan/2021 13:26:44|basehttp|27447|139803414820608|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 13:26:44|basehttp|27447|139803332966144|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 13:26:44|basehttp|27447|139803324573440|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 13:26:44|basehttp|27447|139803316180736|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 13:26:44|basehttp|27447|139803307788032|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 13:26:45|basehttp|27447|139803423475456|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 13:26:45|basehttp|27447|139803307788032|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 13:26:45|basehttp|27447|139803316180736|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 13:26:45|basehttp|27447|139803324573440|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 13:26:45|basehttp|27447|139803324573440|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 13:26:45|basehttp|27447|139803316180736|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 13:26:50|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=t&org_id=ORG150866 HTTP/1.1" 200 12704
+INFO|06/Jan/2021 13:26:50|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=te&org_id=ORG150866 HTTP/1.1" 200 12825
+INFO|06/Jan/2021 13:26:50|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=tes&org_id=ORG150866 HTTP/1.1" 200 12937
+INFO|06/Jan/2021 13:26:50|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=test&org_id=ORG150866 HTTP/1.1" 200 12938
+INFO|06/Jan/2021 13:26:51|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=testn&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:26:51|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=testne&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:26:51|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=testnew&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:26:52|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=testnewo&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:26:52|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=testnewon&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:26:53|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=testnewone&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:26:55|basehttp|27447|139803316180736|"GET /getemoloyeedata/?employee=Emptestone374377 HTTP/1.1" 200 1965
+INFO|06/Jan/2021 13:26:59|basehttp|27447|139803324573440|"OPTIONS /emoloyeedetails/?employee=Emptestone37437&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|06/Jan/2021 13:26:59|log|27447|139803324573440|Unauthorized: /emoloyeedetails/
+WARNING|06/Jan/2021 13:26:59|basehttp|27447|139803324573440|"GET /emoloyeedetails/?employee=Emptestone37437&org_id=ORG150866 HTTP/1.1" 401 185
+INFO|06/Jan/2021 13:27:00|basehttp|27447|139803324573440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 13:27:00|log|27447|139803324573440|Unauthorized: /emoloyeedetails/
+WARNING|06/Jan/2021 13:27:00|basehttp|27447|139803324573440|"GET /emoloyeedetails/?employee=Emptestone37437&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|06/Jan/2021 13:27:01|basehttp|27447|139803324573440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 13:27:01|basehttp|27447|139803316180736|"GET /emoloyeedetails/?employee=Emptestone37437&org_id=ORG150866 HTTP/1.1" 200 1493
+INFO|06/Jan/2021 13:27:04|basehttp|27447|139803316180736|"GET /getemoloyeedata/?employee=Emptestone374377 HTTP/1.1" 200 1965
+INFO|06/Jan/2021 13:31:07|basehttp|27447|139803316180736|"GET / HTTP/1.1" 200 44
+INFO|06/Jan/2021 13:31:07|basehttp|27447|139803324573440|"GET / HTTP/1.1" 200 44
+ERROR|06/Jan/2021 13:32:58|exception|27447|139803324573440|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 13:32:58|log|27447|139803324573440|Bad Request: /manager/html
+WARNING|06/Jan/2021 13:32:58|basehttp|27447|139803324573440|"GET /manager/html HTTP/1.1" 400 62885
+ERROR|06/Jan/2021 13:47:16|exception|27759|140607049492224|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 13:47:16|log|27759|140607049492224|Bad Request: /manager/html
+WARNING|06/Jan/2021 13:47:16|basehttp|27759|140607049492224|"GET /manager/html HTTP/1.1" 400 62886
+INFO|06/Jan/2021 14:58:28|basehttp|27759|140607049492224|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:29|basehttp|27759|140607049492224|"POST /api/login/ HTTP/1.1" 200 441
+INFO|06/Jan/2021 14:58:30|basehttp|27759|140607049492224|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:30|basehttp|27759|140607049492224|"POST /emoloyeeinfo/ HTTP/1.1" 200 1415
+INFO|06/Jan/2021 14:58:31|basehttp|27759|140607049492224|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:31|basehttp|27759|140607049492224|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:31|basehttp|27759|140607040837376|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:31|basehttp|27759|140607040837376|"GET /media/tvs-apache-rtr-160-matte-blue-1506079207989.jpg HTTP/1.1" 200 36184
+INFO|06/Jan/2021 14:58:31|basehttp|27759|140607040837376|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 14:58:32|basehttp|27759|140606953219840|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 14:58:32|basehttp|27759|140606961612544|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+INFO|06/Jan/2021 14:58:39|basehttp|27759|140606961612544|"OPTIONS /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:39|basehttp|27759|140606961612544|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 14:58:39|basehttp|27759|140606961612544|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|06/Jan/2021 14:58:49|basehttp|27759|140606953219840|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 14:58:50|basehttp|27759|140606961612544|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+INFO|06/Jan/2021 14:58:54|basehttp|27759|140606953219840|"OPTIONS /get_view_travel_request/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:54|basehttp|27759|140606953219840|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:54|basehttp|27759|140607040837376|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:54|basehttp|27759|140606936700672|"OPTIONS /get_travel_status_summary/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:54|basehttp|27759|140606961612544|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:54|basehttp|27759|140606928307968|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606928307968|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606936700672|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606928307968|"GET /get_view_travel_request/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 2617
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140607040837376|"GET /assignment_travel_request_status/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606961612544|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5284
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606953219840|"GET /get_travel_status_summary/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 967
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606961612544|"GET /assignment_travel_tax_grid/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606961612544|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:55|basehttp|27759|140606953219840|"OPTIONS /get_create_assignment/?home=United%20Kingdom&End_date=2021-01-08T00:00:00+05:30&Start_date=Thu%20Dec%2031%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:56|basehttp|27759|140606953219840|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:58:56|basehttp|27759|140606953219840|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|06/Jan/2021 14:58:56|basehttp|27759|140606961612544|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-01-08T00:00:00+05:30&Start_date=Thu%20Dec%2031%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|06/Jan/2021 14:58:56|basehttp|27759|140606961612544|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|06/Jan/2021 14:59:06|basehttp|27759|140606961612544|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=INR HTTP/1.1" 200 0
+INFO|06/Jan/2021 14:59:06|basehttp|27759|140606961612544|"GET /get_currency_conversion/?from_currency=GBP&to_currency=INR HTTP/1.1" 200 572
+INFO|06/Jan/2021 15:01:32|basehttp|27759|140606961612544|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 15:01:33|basehttp|27759|140607049492224|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+INFO|06/Jan/2021 15:01:39|basehttp|27759|140606961612544|"OPTIONS /get_view_travel_request/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:01:39|basehttp|27759|140606961612544|"OPTIONS /get_travel_status_summary/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:01:39|basehttp|27759|140606936962816|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:01:39|basehttp|27759|140606953219840|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 15:01:39|basehttp|27759|140607049492224|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|06/Jan/2021 15:01:39|basehttp|27759|140607040837376|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5284
+INFO|06/Jan/2021 15:01:39|basehttp|27759|140607040837376|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:01:40|basehttp|27759|140606953219840|"GET /assignment_travel_request_status/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|06/Jan/2021 15:01:40|basehttp|27759|140607040837376|"GET /get_view_travel_request/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 2664
+INFO|06/Jan/2021 15:01:40|basehttp|27759|140607049492224|"GET /get_travel_status_summary/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 1097
+INFO|06/Jan/2021 15:01:40|basehttp|27759|140607049492224|"GET /assignment_travel_tax_grid/?travel_req_id=TR149094&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|06/Jan/2021 15:01:40|basehttp|27759|140607049492224|"OPTIONS /get_create_assignment/?home=United%20States&End_date=2020-12-30T00:00:00+05:30&Start_date=Fri%20Dec%2025%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:01:40|basehttp|27759|140607040837376|"OPTIONS /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:01:40|basehttp|27759|140606953219840|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:01:41|basehttp|27759|140606953219840|"GET /get_create_assignment/?home=United%20States&End_date=2020-12-30T00:00:00+05:30&Start_date=Fri%20Dec%2025%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|06/Jan/2021 15:01:41|basehttp|27759|140607049492224|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|06/Jan/2021 15:01:41|basehttp|27759|140607040837376|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|06/Jan/2021 15:05:07|basehttp|27759|140607040837376|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:05:07|log|27759|140607040837376|Unauthorized: /get_currency_conversion/
+WARNING|06/Jan/2021 15:05:07|basehttp|27759|140607040837376|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:05:07|basehttp|27759|140607040837376|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:05:07|log|27759|140607049492224|Unauthorized: /get_currency_conversion/
+WARNING|06/Jan/2021 15:05:07|basehttp|27759|140607049492224|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:05:08|basehttp|27759|140607049492224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:05:08|log|27759|140607049492224|Unauthorized: /get_currency_conversion/
+WARNING|06/Jan/2021 15:05:08|basehttp|27759|140607049492224|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:05:08|basehttp|27759|140607040837376|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:05:08|basehttp|27759|140607040837376|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:05:09|basehttp|27759|140607049492224|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 63
+WARNING|06/Jan/2021 15:23:16|log|31203|140051711047424|Not Found: /http:/www.bing.com/
+WARNING|06/Jan/2021 15:23:16|basehttp|31203|140051711047424|"GET http://www.bing.com/ HTTP/1.1" 404 1665
+INFO|06/Jan/2021 15:23:46|basehttp|31203|140051711047424|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|06/Jan/2021 15:23:46|basehttp|31203|140051711047424|" " 400 -
+INFO|06/Jan/2021 15:23:57|basehttp|31203|140051702392576|code 400, message Bad request syntax ('\x04\x01\x00PÌOÅÈ\x00')
+WARNING|06/Jan/2021 15:23:57|basehttp|31203|140051702392576|" PÌOÅÈ " 400 -
+ERROR|06/Jan/2021 15:26:59|exception|31203|140051702392576|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 15:26:59|log|31203|140051702392576|Bad Request: /manager/html
+WARNING|06/Jan/2021 15:26:59|basehttp|31203|140051702392576|"GET /manager/html HTTP/1.1" 400 62885
+ERROR|06/Jan/2021 15:26:59|basehttp|31203|140051702392576|"GET /manager/html HTTP/1.1" 500 59
+INFO|06/Jan/2021 15:31:17|basehttp|31203|140051702392576|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:17|basehttp|31203|140051702392576|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:17|basehttp|31203|140051702392576|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:17|basehttp|31203|140051702392576|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:17|basehttp|31203|140051702392576|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:17|basehttp|31203|140051702392576|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:31:18|log|31203|140051677214464|Unauthorized: /get_post_notification/
+INFO|06/Jan/2021 15:31:18|basehttp|31203|140051711047424|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:18|basehttp|31203|140051693999872|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:18|basehttp|31203|140051685607168|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:18|basehttp|31203|140051702392576|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:18|basehttp|31203|140051668821760|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:31:18|basehttp|31203|140051677214464|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:18|log|31203|140051693999872|Unauthorized: /get_post_salutation/
+WARNING|06/Jan/2021 15:31:18|log|31203|140051702392576|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 15:31:18|log|31203|140051685607168|Unauthorized: /get_post_address/
+WARNING|06/Jan/2021 15:31:18|log|31203|140051677214464|Unauthorized: /get_post_marital_status/
+WARNING|06/Jan/2021 15:31:18|log|31203|140051711047424|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 15:31:18|log|31203|140051668821760|Unauthorized: /get_post_email/
+WARNING|06/Jan/2021 15:31:18|basehttp|31203|140051693999872|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:18|basehttp|31203|140051702392576|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:18|basehttp|31203|140051685607168|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:18|basehttp|31203|140051677214464|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:18|basehttp|31203|140051711047424|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:18|basehttp|31203|140051668821760|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:19|log|31203|140051668821760|Unauthorized: /get_post_phone/
+WARNING|06/Jan/2021 15:31:19|log|31203|140051685607168|Unauthorized: /get_country_master/
+WARNING|06/Jan/2021 15:31:19|log|31203|140051711047424|Unauthorized: /get_post_relation/
+WARNING|06/Jan/2021 15:31:19|log|31203|140051677214464|Unauthorized: /get_dial_code/
+WARNING|06/Jan/2021 15:31:19|log|31203|140051693999872|Unauthorized: /get_post_notification/
+INFO|06/Jan/2021 15:31:19|basehttp|31203|140051702392576|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:31:19|basehttp|31203|140051668821760|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:19|basehttp|31203|140051685607168|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:19|basehttp|31203|140051711047424|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:19|basehttp|31203|140051677214464|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:19|basehttp|31203|140051693999872|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:31:20|basehttp|31203|140051693999872|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:31:20|log|31203|140051693999872|Unauthorized: /get_post_salutation/
+INFO|06/Jan/2021 15:31:20|basehttp|31203|140051677214464|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:20|basehttp|31203|140051711047424|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:31:20|log|31203|140051685607168|Unauthorized: /get_post_email/
+WARNING|06/Jan/2021 15:31:20|log|31203|140051702392576|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 15:31:20|basehttp|31203|140051693999872|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:20|basehttp|31203|140051702392576|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:20|basehttp|31203|140051685607168|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:20|log|31203|140051702392576|Unauthorized: /get_post_marital_status/
+WARNING|06/Jan/2021 15:31:20|log|31203|140051711047424|Unauthorized: /get_post_address/
+INFO|06/Jan/2021 15:31:20|basehttp|31203|140051685607168|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:20|basehttp|31203|140051693999872|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 15:31:20|basehttp|31203|140051677214464|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:31:20|log|31203|140051668821760|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 15:31:20|basehttp|31203|140051702392576|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:20|basehttp|31203|140051711047424|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:20|basehttp|31203|140051668821760|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:21|log|31203|140051685607168|Unauthorized: /get_post_relation/
+INFO|06/Jan/2021 15:31:21|basehttp|31203|140051668821760|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:21|basehttp|31203|140051693999872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:21|log|31203|140051702392576|Unauthorized: /get_country_master/
+INFO|06/Jan/2021 15:31:21|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:21|basehttp|31203|140051677214464|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:21|basehttp|31203|140051685607168|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:21|basehttp|31203|140051702392576|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:21|log|31203|140051711047424|Unauthorized: /get_post_notification/
+WARNING|06/Jan/2021 15:31:21|log|31203|140051685607168|Unauthorized: /get_dial_code/
+INFO|06/Jan/2021 15:31:21|basehttp|31203|140051702392576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:21|basehttp|31203|140051711047424|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:21|log|31203|140051693999872|Unauthorized: /get_post_phone/
+WARNING|06/Jan/2021 15:31:21|basehttp|31203|140051685607168|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:31:21|basehttp|31203|140051677214464|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:21|basehttp|31203|140051668821760|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:21|basehttp|31203|140051693999872|"GET /get_post_phone/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:31:22|basehttp|31203|140051693999872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:22|basehttp|31203|140051668821760|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:22|log|31203|140051677214464|Unauthorized: /get_post_gender/
+WARNING|06/Jan/2021 15:31:22|log|31203|140051711047424|Unauthorized: /get_post_salutation/
+INFO|06/Jan/2021 15:31:22|basehttp|31203|140051693999872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:22|basehttp|31203|140051677214464|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:22|basehttp|31203|140051711047424|"GET /get_post_salutation/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:31:22|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:22|basehttp|31203|140051693999872|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:22|basehttp|31203|140051677214464|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:22|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:22|log|31203|140051668821760|Unauthorized: /get_post_email/
+WARNING|06/Jan/2021 15:31:22|basehttp|31203|140051668821760|"GET /get_post_email/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:31:23|basehttp|31203|140051685607168|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:23|log|31203|140051668821760|Unauthorized: /get_post_marital_status/
+INFO|06/Jan/2021 15:31:23|basehttp|31203|140051685607168|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:23|log|31203|140051702392576|Unauthorized: /get_post_address/
+INFO|06/Jan/2021 15:31:23|basehttp|31203|140051677214464|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:23|basehttp|31203|140051668821760|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:31:23|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|06/Jan/2021 15:31:23|basehttp|31203|140051702392576|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|06/Jan/2021 15:31:23|log|31203|140051702392576|Unauthorized: /get_post_suffix/
+WARNING|06/Jan/2021 15:31:23|basehttp|31203|140051702392576|"GET /get_post_suffix/ HTTP/1.1" 401 183
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051702392576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051702392576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051711047424|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051677214464|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051668821760|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051677214464|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051702392576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:24|basehttp|31203|140051668821760|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|06/Jan/2021 15:31:25|basehttp|31203|140051677214464|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|06/Jan/2021 15:31:25|basehttp|31203|140051668821760|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:25|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:25|basehttp|31203|140051702392576|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|06/Jan/2021 15:31:25|basehttp|31203|140051677214464|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|06/Jan/2021 15:31:26|basehttp|31203|140051702392576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:26|basehttp|31203|140051677214464|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|06/Jan/2021 15:31:26|basehttp|31203|140051702392576|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:26|basehttp|31203|140051677214464|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|06/Jan/2021 15:31:26|basehttp|31203|140051711047424|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|06/Jan/2021 15:31:26|basehttp|31203|140051711047424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|06/Jan/2021 15:31:26|basehttp|31203|140051711047424|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|06/Jan/2021 15:53:39|basehttp|31203|140051711047424|"OPTIONS /api/login/ HTTP/1.1" 200 0
+WARNING|06/Jan/2021 15:53:40|log|31203|140051711047424|Unauthorized: /api/login/
+WARNING|06/Jan/2021 15:53:40|basehttp|31203|140051711047424|"POST /api/login/ HTTP/1.1" 401 63
+WARNING|06/Jan/2021 15:53:47|log|31203|140051711047424|Unauthorized: /api/login/
+WARNING|06/Jan/2021 15:53:47|basehttp|31203|140051711047424|"POST /api/login/ HTTP/1.1" 401 63
+INFO|06/Jan/2021 16:00:24|basehttp|31203|140051711047424|"POST /api/login/ HTTP/1.1" 200 441
+INFO|06/Jan/2021 16:00:25|basehttp|31203|140051711047424|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|06/Jan/2021 16:00:25|basehttp|31203|140051711047424|"POST /emoloyeeinfo/ HTTP/1.1" 200 1381
+INFO|06/Jan/2021 16:00:26|basehttp|31203|140051711047424|"OPTIONS /get_post_notification/?email=nishantt001&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|06/Jan/2021 16:00:26|basehttp|31203|140051677214464|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt001 HTTP/1.1" 200 0
+INFO|06/Jan/2021 16:00:26|basehttp|31203|140051711047424|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|06/Jan/2021 16:00:27|basehttp|31203|140051677214464|"GET /get_post_notification/?email=nishantt001&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|06/Jan/2021 16:00:27|basehttp|31203|140051702392576|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|06/Jan/2021 16:00:27|basehttp|31203|140051668821760|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt001 HTTP/1.1" 200 48
+INFO|06/Jan/2021 16:00:28|basehttp|31203|140051711047424|"GET /media/Koala_8UyjVHo.jpg HTTP/1.1" 200 334173
+INFO|06/Jan/2021 16:33:17|basehttp|31203|140051677214464|"GET / HTTP/1.0" 200 75
+ERROR|06/Jan/2021 16:39:10|exception|31203|140051677214464|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 16:39:10|log|31203|140051677214464|Bad Request: /manager/html
+WARNING|06/Jan/2021 16:39:10|basehttp|31203|140051677214464|"GET /manager/html HTTP/1.1" 400 62886
+ERROR|06/Jan/2021 18:47:46|exception|31203|140051677214464|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 18:47:46|log|31203|140051677214464|Bad Request: /manager/html
+WARNING|06/Jan/2021 18:47:46|basehttp|31203|140051677214464|"GET /manager/html HTTP/1.1" 400 62887
+ERROR|06/Jan/2021 19:36:07|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 19:36:07|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|06/Jan/2021 19:36:07|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62884
+ERROR|06/Jan/2021 21:07:52|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 21:07:52|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|06/Jan/2021 21:07:52|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62883
+INFO|06/Jan/2021 21:20:05|basehttp|6761|139919042275072|"GET / HTTP/1.1" 200 44
+INFO|06/Jan/2021 21:38:56|basehttp|6761|139919042275072|"GET / HTTP/1.0" 200 75
+ERROR|06/Jan/2021 22:15:16|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 22:15:16|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|06/Jan/2021 22:15:16|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62885
+ERROR|06/Jan/2021 22:24:10|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 22:24:10|log|6761|139919042275072|Bad Request: /script
+WARNING|06/Jan/2021 22:24:10|basehttp|6761|139919042275072|"GET /script HTTP/1.1" 400 62818
+ERROR|06/Jan/2021 22:32:43|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 22:32:43|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|06/Jan/2021 22:32:43|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62884
+WARNING|06/Jan/2021 23:01:47|log|6761|139919042275072|Not Found: /login
+WARNING|06/Jan/2021 23:01:47|basehttp|6761|139919042275072|"GET /login HTTP/1.0" 404 43508
+WARNING|06/Jan/2021 23:01:48|log|6761|139919042275072|Not Found: /manager/html
+WARNING|06/Jan/2021 23:01:48|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.0" 404 43529
+WARNING|06/Jan/2021 23:06:41|log|6761|139919042275072|Not Found: /http:/123.125.114.144/
+WARNING|06/Jan/2021 23:06:41|basehttp|6761|139919042275072|"HEAD http://123.125.114.144/ HTTP/1.1" 404 1678
+ERROR|06/Jan/2021 23:45:50|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|06/Jan/2021 23:45:50|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|06/Jan/2021 23:45:50|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62883
+INFO|07/Jan/2021 00:06:46|basehttp|6761|139919042275072|"GET / HTTP/1.1" 200 44
+ERROR|07/Jan/2021 00:32:12|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 00:32:12|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|07/Jan/2021 00:32:12|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62885
+INFO|07/Jan/2021 00:36:37|basehttp|6761|139919042275072|"GET / HTTP/1.1" 200 39
+ERROR|07/Jan/2021 00:41:50|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 00:41:50|log|6761|139919042275072|Bad Request: /script
+WARNING|07/Jan/2021 00:41:50|basehttp|6761|139919042275072|"GET /script HTTP/1.1" 400 62818
+ERROR|07/Jan/2021 01:56:34|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 01:56:34|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|07/Jan/2021 01:56:34|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62883
+ERROR|07/Jan/2021 02:40:18|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 02:40:18|log|6761|139919042275072|Bad Request: /manager/html
+WARNING|07/Jan/2021 02:40:18|basehttp|6761|139919042275072|"GET /manager/html HTTP/1.1" 400 62885
+ERROR|07/Jan/2021 02:58:21|exception|6761|139919042275072|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 02:58:21|log|6761|139919042275072|Bad Request: /script
+WARNING|07/Jan/2021 02:58:21|basehttp|6761|139919042275072|"GET /script HTTP/1.1" 400 62818
+ERROR|07/Jan/2021 02:58:21|basehttp|6761|139919042275072|"GET /script HTTP/1.1" 500 59
+WARNING|07/Jan/2021 03:13:00|log|6761|139919042275072|Not Found: /http:/www.bing.com/
+WARNING|07/Jan/2021 03:13:00|basehttp|6761|139919042275072|"GET http://www.bing.com/ HTTP/1.1" 404 1665
+INFO|07/Jan/2021 03:13:30|basehttp|6761|139919042275072|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|07/Jan/2021 03:13:30|basehttp|6761|139919042275072|" " 400 -
+INFO|07/Jan/2021 03:13:40|basehttp|6761|139918961538816|code 400, message Bad request syntax ('\x04\x01\x00PÌOÅÈ\x00')
+WARNING|07/Jan/2021 03:13:40|basehttp|6761|139918961538816|" PÌOÅÈ " 400 -
+WARNING|07/Jan/2021 03:24:31|log|6761|139918961538816|Not Found: /config/getuser
+WARNING|07/Jan/2021 03:24:31|basehttp|6761|139918961538816|"GET /config/getuser?index=0 HTTP/1.1" 404 43512
+ERROR|07/Jan/2021 03:59:33|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 03:59:33|log|6761|139918961538816|Bad Request: /manager/html
+WARNING|07/Jan/2021 03:59:33|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.1" 400 62883
+ERROR|07/Jan/2021 04:27:12|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 04:27:12|log|6761|139918961538816|Bad Request: /manager/html
+WARNING|07/Jan/2021 04:27:12|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.1" 400 62884
+ERROR|07/Jan/2021 04:38:02|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 04:38:02|log|6761|139918961538816|Bad Request: /manager/html
+WARNING|07/Jan/2021 04:38:02|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.1" 400 62885
+ERROR|07/Jan/2021 05:36:19|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 05:36:19|log|6761|139918961538816|Bad Request: /script
+WARNING|07/Jan/2021 05:36:19|basehttp|6761|139918961538816|"GET /script HTTP/1.1" 400 62818
+ERROR|07/Jan/2021 05:54:34|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 05:54:34|log|6761|139918961538816|Bad Request: /manager/html
+WARNING|07/Jan/2021 05:54:34|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.1" 400 62883
+INFO|07/Jan/2021 05:54:44|basehttp|6761|139918961538816|"GET / HTTP/1.1" 200 44
+INFO|07/Jan/2021 05:56:47|basehttp|6761|139918961538816|"GET / HTTP/1.1" 200 44
+WARNING|07/Jan/2021 06:10:39|log|6761|139918961538816|Not Found: /login
+WARNING|07/Jan/2021 06:10:39|basehttp|6761|139918961538816|"GET /login HTTP/1.0" 404 43508
+WARNING|07/Jan/2021 06:10:40|log|6761|139918961538816|Not Found: /manager/html
+WARNING|07/Jan/2021 06:10:40|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.0" 404 43529
+INFO|07/Jan/2021 06:49:28|basehttp|6761|139918961538816|"GET / HTTP/1.1" 200 44
+ERROR|07/Jan/2021 07:18:47|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 07:18:47|log|6761|139918961538816|Bad Request: /manager/html
+WARNING|07/Jan/2021 07:18:47|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.1" 400 62884
+ERROR|07/Jan/2021 07:44:25|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 07:44:26|log|6761|139918961538816|Bad Request: /script
+WARNING|07/Jan/2021 07:44:26|basehttp|6761|139918961538816|"GET /script HTTP/1.1" 400 62818
+ERROR|07/Jan/2021 09:23:50|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 09:23:50|log|6761|139918961538816|Bad Request: /script
+WARNING|07/Jan/2021 09:23:50|basehttp|6761|139918961538816|"GET /script HTTP/1.1" 400 62818
+INFO|07/Jan/2021 10:01:25|basehttp|6761|139918961538816|"GET / HTTP/1.0" 200 44
+WARNING|07/Jan/2021 10:02:07|log|6761|139918961538816|Not Found: /TP/public/index.php
+WARNING|07/Jan/2021 10:02:07|basehttp|6761|139918961538816|"GET /TP/public/index.php HTTP/1.1" 404 43519
+WARNING|07/Jan/2021 10:02:08|log|6761|139918961538816|Not Found: /TP/index.php
+WARNING|07/Jan/2021 10:02:08|basehttp|6761|139918961538816|"GET /TP/index.php HTTP/1.1" 404 43498
+WARNING|07/Jan/2021 10:02:09|log|6761|139918961538816|Not Found: /thinkphp/html/public/index.php
+WARNING|07/Jan/2021 10:02:09|basehttp|6761|139918961538816|"GET /thinkphp/html/public/index.php HTTP/1.1" 404 43552
+WARNING|07/Jan/2021 10:02:10|log|6761|139918961538816|Not Found: /html/public/index.php
+WARNING|07/Jan/2021 10:02:10|basehttp|6761|139918961538816|"GET /html/public/index.php HTTP/1.1" 404 43525
+WARNING|07/Jan/2021 10:02:11|log|6761|139918961538816|Not Found: /public/index.php
+WARNING|07/Jan/2021 10:02:11|basehttp|6761|139918961538816|"GET /public/index.php HTTP/1.1" 404 43510
+WARNING|07/Jan/2021 10:02:12|log|6761|139918961538816|Not Found: /TP/html/public/index.php
+WARNING|07/Jan/2021 10:02:12|basehttp|6761|139918961538816|"GET /TP/html/public/index.php HTTP/1.1" 404 43534
+WARNING|07/Jan/2021 10:02:12|log|6761|139918961538816|Not Found: /elrekt.php
+WARNING|07/Jan/2021 10:02:12|basehttp|6761|139918961538816|"GET /elrekt.php HTTP/1.1" 404 43492
+WARNING|07/Jan/2021 10:02:13|log|6761|139918961538816|Not Found: /index.php
+WARNING|07/Jan/2021 10:02:13|basehttp|6761|139918961538816|"GET /index.php HTTP/1.1" 404 43489
+ERROR|07/Jan/2021 10:02:13|log|6761|139918961538816|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|07/Jan/2021 10:02:13|basehttp|6761|139918961538816|"POST /users?page=&size=5 HTTP/1.1" 500 65324
+INFO|07/Jan/2021 10:02:15|basehttp|6761|139918961538816|"GET / HTTP/1.1" 200 44
+ERROR|07/Jan/2021 10:15:40|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 10:15:40|log|6761|139918961538816|Bad Request: /manager/html
+WARNING|07/Jan/2021 10:15:40|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.1" 400 62884
+INFO|07/Jan/2021 10:35:23|basehttp|6761|139918961538816|"GET / HTTP/1.1" 200 44
+INFO|07/Jan/2021 10:58:31|basehttp|6761|139918961538816|"GET / HTTP/1.0" 200 75
+ERROR|07/Jan/2021 11:01:59|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 11:01:59|log|6761|139918961538816|Bad Request: /script
+WARNING|07/Jan/2021 11:01:59|basehttp|6761|139918961538816|"GET /script HTTP/1.1" 400 62818
+ERROR|07/Jan/2021 11:01:59|basehttp|6761|139918961538816|"GET /script HTTP/1.1" 500 59
+WARNING|07/Jan/2021 11:22:30|log|6761|139918961538816|Not Found: /config/getuser
+WARNING|07/Jan/2021 11:22:30|basehttp|6761|139918961538816|"GET /config/getuser?index=0 HTTP/1.1" 404 43512
+ERROR|07/Jan/2021 11:23:12|exception|6761|139918961538816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 11:23:12|log|6761|139918961538816|Bad Request: /manager/html
+WARNING|07/Jan/2021 11:23:12|basehttp|6761|139918961538816|"GET /manager/html HTTP/1.1" 400 62885

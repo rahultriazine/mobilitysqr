@@ -1,0 +1,29 @@
+{% autoescape off %}
+Hello  <span style="font-size: medium;font-weight: 700;">{{approve_first_name}}</span>,
+<br>
+
+<p>A Visa request has been submitted by {{first_name}} that requires your approval.</p>
+
+<p>The request details are:</p>
+
+<p> <span style="font-size: small;font-weight: 700;">Project ID: </span>{{project_id}}</p>
+<p><span style="font-size: small;font-weight: 700;">Billable: </span>{{billable}}</p>
+<p><span style="font-size: small;font-weight: 700;">Country Applied for: </span> {{to_country}}</p>
+<p><span style="font-size: small;font-weight: 700;">Visa Type: </span>{{visa_type}}</p>
+<p><span style="font-size: small;font-weight: 700;">From Date: </span> {{from_date}}</p>
+<!-- <p><span style="font-size: small;font-weight: 700;">Estimated Cost: </span>{{total_cost_local_currency}}</p> -->
+<p><span style="font-size: small;font-weight: 700;">To Date: </span>{{return_date}}</p>
+<br>
+<p><span style="font-size: small;font-weight: 700;">Approvals Required: </span>
+<p><span style="font-size: small;font-weight: 700;">Supervisor:</span>{{supervisor}}</p>
+<p><span style="font-size: small;font-weight: 700;">Expense Approver:</span>{{expense_approver}}</p>
+<p><span style="font-size: small;font-weight: 700;">Project Manager:</span>{{project_manager}}</p>
+<p><span style="font-size: small;font-weight: 700;">Business Lead:</span>{{business_lead}}</p>
+<p><span style="font-size: small;font-weight: 700;">Client Executive Lead:</span>{{client_executive_lead}}</p>
+<br>
+<p><span style="font-size: small;font-weight: 700;">Please provide a note if you reject.</span></p>
+<p><span style="font-size: medium;font-weight: 700;">Thanks,</span></p>
+<p>Mobility Team</p>
+
+<p style="font-size: medium;font-weight: 600;text-align: center;">This is an automatically generated email, please do not reply.</p>
+{% endautoescape %}

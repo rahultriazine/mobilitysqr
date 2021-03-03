@@ -1,0 +1,354 @@
+INFO|30/Dec/2020 16:17:08|basehttp|8909|139695501862656|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 16:17:08|basehttp|8909|139695421912832|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|30/Dec/2020 16:17:08|basehttp|8909|139695413520128|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|30/Dec/2020 16:17:09|basehttp|8909|139695421912832|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Dec/2020 16:17:11|basehttp|8909|139695405127424|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 16:17:12|basehttp|8909|139695413520128|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 24401
+INFO|30/Dec/2020 16:17:31|basehttp|8909|139695413520128|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 16:17:32|basehttp|8909|139695413520128|"POST /api/login/ HTTP/1.1" 200 441
+INFO|30/Dec/2020 16:17:32|basehttp|8909|139695413520128|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 16:17:35|basehttp|8909|139695413520128|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 16:17:36|basehttp|8909|139695421912832|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Dec/2020 16:17:36|basehttp|8909|139695421912832|"GET /media/tvs-apache-rtr-160-matte-blue-1506079207989.jpg HTTP/1.1" 200 36184
+INFO|30/Dec/2020 16:17:36|basehttp|8909|139695413520128|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 16:17:37|basehttp|8909|139695405127424|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 24401
+INFO|30/Dec/2020 17:44:41|basehttp|12689|140424181540608|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:44:42|basehttp|12689|140424181540608|"POST /api/login/ HTTP/1.1" 200 441
+INFO|30/Dec/2020 17:44:42|basehttp|12689|140424181540608|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:44:43|basehttp|12689|140424181540608|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:44:43|basehttp|12689|140424181540608|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:44:43|basehttp|12689|140424181540608|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:44:43|basehttp|12689|140424181540608|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:44:44|basehttp|12689|140424181540608|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 17:44:44|basehttp|12689|140424172361472|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Dec/2020 17:44:45|basehttp|12689|140424181540608|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 24401
+INFO|30/Dec/2020 17:46:17|basehttp|12689|140424089171712|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Dec/2020 17:46:18|basehttp|12689|140424181540608|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 17:46:19|basehttp|12689|140424172361472|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 24401
+INFO|30/Dec/2020 17:46:45|basehttp|12689|140424089171712|"OPTIONS /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:45|basehttp|12689|140424089171712|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:45|basehttp|12689|140424089171712|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:45|basehttp|12689|140424172361472|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5284
+INFO|30/Dec/2020 17:46:46|basehttp|12689|140424089171712|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 48
+INFO|30/Dec/2020 17:46:46|basehttp|12689|140424181540608|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|30/Dec/2020 17:46:49|basehttp|12689|140424181540608|"OPTIONS /get_project/?pid=400&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:50|basehttp|12689|140424181540608|"GET /get_project/?pid=400&limit=15&org_id=ORG150866 HTTP/1.1" 200 619
+INFO|30/Dec/2020 17:46:53|basehttp|12689|140424181540608|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:53|basehttp|12689|140424181540608|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:53|basehttp|12689|140424181540608|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:53|basehttp|12689|140424181540608|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Dec/2020 17:46:54|basehttp|12689|140424181540608|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Dec/2020 17:46:54|basehttp|12689|140424181540608|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424181540608|"OPTIONS /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424181540608|"OPTIONS /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424181540608|"OPTIONS /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424181540608|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424181540608|"OPTIONS /emoloyeedependent/?employee=div944&country=United%20Kingdom HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424181540608|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 558
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424089171712|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424172361472|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|30/Dec/2020 17:46:56|basehttp|12689|140424181540608|"GET /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|30/Dec/2020 17:46:57|basehttp|12689|140424076322560|"GET /emoloyeedependent/?employee=div944&country=United%20Kingdom HTTP/1.1" 200 3264
+INFO|30/Dec/2020 17:47:08|basehttp|12689|140424076322560|"OPTIONS /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:47:08|basehttp|12689|140424076322560|"GET /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|30/Dec/2020 17:47:22|basehttp|12689|140424076322560|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:47:22|basehttp|12689|140424076322560|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|30/Dec/2020 17:48:09|basehttp|12689|140424076322560|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:17|basehttp|12689|140424076322560|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|30/Dec/2020 17:48:20|basehttp|12689|140424181540608|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Dec/2020 17:48:20|basehttp|12689|140424076322560|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+INFO|30/Dec/2020 17:48:25|basehttp|12689|140424181540608|"OPTIONS /get_view_travel_request/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:25|basehttp|12689|140424181540608|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:25|basehttp|12689|140424172361472|"OPTIONS /get_travel_status_summary/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:25|basehttp|12689|140424172361472|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:25|basehttp|12689|140424181540608|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Dec/2020 17:48:25|basehttp|12689|140424076322560|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5284
+INFO|30/Dec/2020 17:48:25|basehttp|12689|140424076322560|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:26|basehttp|12689|140424181540608|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|30/Dec/2020 17:48:26|basehttp|12689|140424089171712|"GET /assignment_travel_request_status/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|30/Dec/2020 17:48:26|basehttp|12689|140424076322560|"GET /get_view_travel_request/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 2617
+INFO|30/Dec/2020 17:48:26|basehttp|12689|140424089171712|"GET /assignment_travel_tax_grid/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|30/Dec/2020 17:48:26|basehttp|12689|140424172361472|"GET /get_travel_status_summary/?travel_req_id=TR255954&org_id=ORG150866 HTTP/1.1" 200 967
+INFO|30/Dec/2020 17:48:27|basehttp|12689|140424089171712|"OPTIONS /get_create_assignment/?home=United%20Kingdom&End_date=2021-01-08T00:00:00+05:30&Start_date=Thu%20Dec%2031%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:27|basehttp|12689|140424089171712|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:48:27|basehttp|12689|140424172361472|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|30/Dec/2020 17:48:27|basehttp|12689|140424089171712|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|30/Dec/2020 17:48:27|basehttp|12689|140424172361472|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-01-08T00:00:00+05:30&Start_date=Thu%20Dec%2031%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+WARNING|30/Dec/2020 17:50:22|log|12689|140424172361472|Unauthorized: /emoloyeeinfo/
+WARNING|30/Dec/2020 17:50:22|basehttp|12689|140424172361472|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:22|basehttp|12689|140424172361472|"OPTIONS /getemoloyeedata/?employee=div944 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:22|basehttp|12689|140424172361472|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+WARNING|30/Dec/2020 17:50:22|log|12689|140424172361472|Unauthorized: /get_dial_code/
+WARNING|30/Dec/2020 17:50:22|basehttp|12689|140424172361472|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:22|basehttp|12689|140424172361472|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:22|basehttp|12689|140424172361472|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:23|basehttp|12689|140424172361472|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:23|basehttp|12689|140424172361472|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:23|basehttp|12689|140424172361472|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:23|basehttp|12689|140424172361472|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:23|basehttp|12689|140424172361472|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:23|basehttp|12689|140424172361472|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+WARNING|30/Dec/2020 17:50:23|log|12689|140424172361472|Unauthorized: /getemoloyeedata/
+WARNING|30/Dec/2020 17:50:23|log|12689|140424089171712|Unauthorized: /get_country_master/
+WARNING|30/Dec/2020 17:50:23|basehttp|12689|140424172361472|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:23|basehttp|12689|140424089171712|"GET /get_country_master/?country= HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:23|basehttp|12689|140424089171712|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|30/Dec/2020 17:50:23|log|12689|140424089171712|Unauthorized: /get_post_relation/
+WARNING|30/Dec/2020 17:50:23|basehttp|12689|140424089171712|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:23|log|12689|140424089171712|Unauthorized: /get_dial_code/
+WARNING|30/Dec/2020 17:50:23|basehttp|12689|140424089171712|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:23|log|12689|140424089171712|Unauthorized: /get_post_gender/
+WARNING|30/Dec/2020 17:50:23|basehttp|12689|140424089171712|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:24|log|12689|140424089171712|Unauthorized: /get_post_phone/
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424089171712|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:24|log|12689|140424172361472|Unauthorized: /get_post_email/
+WARNING|30/Dec/2020 17:50:24|log|12689|140424076322560|Unauthorized: /get_post_marital_status/
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424172361472|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424076322560|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:24|log|12689|140424076322560|Unauthorized: /get_post_salutation/
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424076322560|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:24|log|12689|140424076322560|Unauthorized: /get_post_suffix/
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424076322560|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:24|log|12689|140424076322560|Unauthorized: /get_post_address/
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424076322560|"GET /get_post_address/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:24|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:24|log|12689|140424089171712|Unauthorized: /emoloyeeinfo/
+INFO|30/Dec/2020 17:50:24|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424089171712|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:24|log|12689|140424172361472|Unauthorized: /getemoloyeedata/
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424172361472|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:24|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:24|log|12689|140424172361472|Unauthorized: /get_country_master/
+WARNING|30/Dec/2020 17:50:24|basehttp|12689|140424172361472|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:25|log|12689|140424089171712|Unauthorized: /get_post_relation/
+INFO|30/Dec/2020 17:50:25|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:25|log|12689|140424181540608|Unauthorized: /get_dial_code/
+INFO|30/Dec/2020 17:50:25|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:25|basehttp|12689|140424089171712|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:25|basehttp|12689|140424181540608|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:25|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:25|log|12689|140424181540608|Unauthorized: /get_post_gender/
+WARNING|30/Dec/2020 17:50:25|basehttp|12689|140424181540608|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:25|log|12689|140424089171712|Unauthorized: /get_post_phone/
+INFO|30/Dec/2020 17:50:25|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:25|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:25|basehttp|12689|140424089171712|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:25|log|12689|140424172361472|Unauthorized: /get_post_email/
+WARNING|30/Dec/2020 17:50:26|basehttp|12689|140424172361472|"GET /get_post_email/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:26|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:26|log|12689|140424089171712|Unauthorized: /get_post_marital_status/
+WARNING|30/Dec/2020 17:50:26|basehttp|12689|140424089171712|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:26|log|12689|140424076322560|Unauthorized: /get_post_salutation/
+INFO|30/Dec/2020 17:50:26|basehttp|12689|140424089171712|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:26|basehttp|12689|140424076322560|"GET /get_post_salutation/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:26|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:26|log|12689|140424076322560|Unauthorized: /get_post_suffix/
+INFO|30/Dec/2020 17:50:26|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:50:26|log|12689|140424089171712|Unauthorized: /get_post_address/
+WARNING|30/Dec/2020 17:50:26|basehttp|12689|140424076322560|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:50:26|basehttp|12689|140424089171712|"GET /get_post_address/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:50:27|basehttp|12689|140424089171712|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:27|basehttp|12689|140424089171712|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:27|basehttp|12689|140424067405568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:27|basehttp|12689|140424089171712|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:28|basehttp|12689|140424089171712|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:28|basehttp|12689|140424181540608|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|30/Dec/2020 17:50:29|basehttp|12689|140424067405568|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|30/Dec/2020 17:50:29|basehttp|12689|140424059012864|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|30/Dec/2020 17:50:29|basehttp|12689|140424059012864|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:29|basehttp|12689|140424181540608|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|30/Dec/2020 17:50:29|basehttp|12689|140424076322560|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424076322560|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424059012864|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424172361472|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7855
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424076322560|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424172361472|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|30/Dec/2020 17:50:30|basehttp|12689|140424172361472|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|30/Dec/2020 17:50:31|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:50:31|basehttp|12689|140424172361472|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|30/Dec/2020 17:50:31|basehttp|12689|140424172361472|"OPTIONS /get_national_id/?country=Afghanistan HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:31|basehttp|12689|140424172361472|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:31|basehttp|12689|140424172361472|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:31|basehttp|12689|140424172361472|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:31|basehttp|12689|140424172361472|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:50:32|basehttp|12689|140424172361472|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:50:32|basehttp|12689|140424172361472|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:50:33|basehttp|12689|140424172361472|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:50:46|basehttp|12689|140424172361472|"GET /media/user-male_QXpeL0b.png HTTP/1.1" 200 7056
+INFO|30/Dec/2020 17:50:57|basehttp|12689|140424076322560|"OPTIONS /get_post_employee_visa/ HTTP/1.1" 200 0
+INFO|30/Dec/2020 17:50:57|basehttp|12689|140424076322560|"POST /get_post_employee_visa/ HTTP/1.1" 201 723
+INFO|30/Dec/2020 17:50:58|basehttp|12689|140424076322560|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:50:59|basehttp|12689|140424059012864|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7855
+INFO|30/Dec/2020 17:50:59|basehttp|12689|140424181540608|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:50:59|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:51:00|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:51:00|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:53:03|basehttp|12689|140424059012864|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|30/Dec/2020 17:53:03|basehttp|12689|140424076322560|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|30/Dec/2020 17:53:03|basehttp|12689|140424050620160|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424067405568|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424172361472|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424181540608|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7855
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424181540608|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424172361472|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424067405568|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424067405568|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|30/Dec/2020 17:53:04|basehttp|12689|140424067405568|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|30/Dec/2020 17:53:05|basehttp|12689|140424067405568|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|30/Dec/2020 17:53:05|basehttp|12689|140424172361472|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:53:05|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:53:05|basehttp|12689|140424067405568|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 17:53:05|basehttp|12689|140424067405568|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:53:06|basehttp|12689|140424067405568|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:53:29|basehttp|12689|140424067405568|"POST /get_post_employee_visa/ HTTP/1.1" 201 816
+INFO|30/Dec/2020 17:53:29|basehttp|12689|140424067405568|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:53:31|basehttp|12689|140424067405568|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7948
+INFO|30/Dec/2020 17:53:31|basehttp|12689|140424067405568|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:53:31|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:53:32|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:53:32|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:54:25|basehttp|12689|140424076322560|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|30/Dec/2020 17:54:25|basehttp|12689|140424050620160|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|30/Dec/2020 17:54:25|basehttp|12689|140424172361472|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|30/Dec/2020 17:54:25|basehttp|12689|140424059012864|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424172361472|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424181540608|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424059012864|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424059012864|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424067405568|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7948
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424067405568|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424067405568|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|30/Dec/2020 17:54:26|basehttp|12689|140424067405568|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|30/Dec/2020 17:54:27|basehttp|12689|140424067405568|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:54:27|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:54:27|basehttp|12689|140424059012864|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 17:54:27|basehttp|12689|140424059012864|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:54:28|basehttp|12689|140424059012864|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:55:06|basehttp|12689|140424059012864|"POST /get_post_employee_visa/ HTTP/1.1" 201 723
+INFO|30/Dec/2020 17:55:07|basehttp|12689|140424059012864|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:55:07|basehttp|12689|140424059012864|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7855
+INFO|30/Dec/2020 17:55:08|basehttp|12689|140424059012864|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:55:08|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:55:08|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:55:09|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+WARNING|30/Dec/2020 17:56:45|log|12689|140424181540608|Unauthorized: /emoloyeeinfo/
+WARNING|30/Dec/2020 17:56:45|basehttp|12689|140424181540608|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:45|log|12689|140424181540608|Unauthorized: /getemoloyeedata/
+WARNING|30/Dec/2020 17:56:45|basehttp|12689|140424181540608|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:45|log|12689|140424181540608|Unauthorized: /get_country_master/
+WARNING|30/Dec/2020 17:56:45|basehttp|12689|140424181540608|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:45|log|12689|140424181540608|Unauthorized: /get_dial_code/
+WARNING|30/Dec/2020 17:56:45|basehttp|12689|140424181540608|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:45|log|12689|140424181540608|Unauthorized: /get_post_relation/
+WARNING|30/Dec/2020 17:56:45|basehttp|12689|140424181540608|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:45|log|12689|140424181540608|Unauthorized: /get_post_gender/
+WARNING|30/Dec/2020 17:56:45|basehttp|12689|140424181540608|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_post_phone/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_post_email/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_post_marital_status/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_post_salutation/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_post_salutation/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_post_suffix/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_post_address/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_post_notification/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /emoloyeeinfo/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /getemoloyeedata/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:46|log|12689|140424181540608|Unauthorized: /get_country_master/
+WARNING|30/Dec/2020 17:56:46|basehttp|12689|140424181540608|"GET /get_country_master/?country= HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:47|log|12689|140424181540608|Unauthorized: /get_dial_code/
+WARNING|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:47|log|12689|140424181540608|Unauthorized: /get_post_relation/
+WARNING|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|30/Dec/2020 17:56:47|log|12689|140424181540608|Unauthorized: /get_post_gender/
+WARNING|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"GET /get_post_gender/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:47|log|12689|140424181540608|Unauthorized: /get_post_phone/
+WARNING|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"GET /get_post_phone/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:47|log|12689|140424181540608|Unauthorized: /get_post_email/
+WARNING|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"GET /get_post_email/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:47|log|12689|140424181540608|Unauthorized: /get_post_marital_status/
+WARNING|30/Dec/2020 17:56:47|basehttp|12689|140424181540608|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:48|log|12689|140424181540608|Unauthorized: /get_post_salutation/
+WARNING|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"GET /get_post_salutation/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:48|log|12689|140424181540608|Unauthorized: /get_post_suffix/
+WARNING|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"GET /get_post_suffix/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:48|log|12689|140424181540608|Unauthorized: /get_post_address/
+WARNING|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"GET /get_post_address/ HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Dec/2020 17:56:48|log|12689|140424181540608|Unauthorized: /get_post_notification/
+WARNING|30/Dec/2020 17:56:48|basehttp|12689|140424181540608|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|30/Dec/2020 17:56:48|basehttp|12689|140424059012864|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:48|basehttp|12689|140424067405568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:49|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:49|basehttp|12689|140424172361472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:49|basehttp|12689|140424050620160|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:50|basehttp|12689|140424067405568|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|30/Dec/2020 17:56:50|basehttp|12689|140424076322560|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|30/Dec/2020 17:56:50|basehttp|12689|140424172361472|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|30/Dec/2020 17:56:50|basehttp|12689|140424059012864|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:56:50|basehttp|12689|140424076322560|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|30/Dec/2020 17:56:50|basehttp|12689|140424181540608|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7855
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424181540608|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424181540608|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424181540608|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424181540608|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424076322560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:51|basehttp|12689|140424181540608|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|30/Dec/2020 17:56:52|basehttp|12689|140424181540608|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|30/Dec/2020 17:56:52|basehttp|12689|140424181540608|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Dec/2020 17:56:52|basehttp|12689|140424076322560|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:56:52|basehttp|12689|140424076322560|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:56:52|basehttp|12689|140424181540608|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 17:56:53|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:56:53|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:57:09|basehttp|12689|140424181540608|"POST /get_post_employee_visa/ HTTP/1.1" 201 681
+INFO|30/Dec/2020 17:57:09|basehttp|12689|140424181540608|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:57:11|basehttp|12689|140424181540608|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|30/Dec/2020 17:57:11|basehttp|12689|140424181540608|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:57:11|basehttp|12689|140424076322560|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:57:11|basehttp|12689|140424076322560|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:57:12|basehttp|12689|140424076322560|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:57:35|basehttp|12689|140424067405568|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|30/Dec/2020 17:57:35|basehttp|12689|140424059012864|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|30/Dec/2020 17:57:35|basehttp|12689|140424050620160|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|30/Dec/2020 17:57:36|basehttp|12689|140424172361472|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|30/Dec/2020 17:57:36|basehttp|12689|140424076322560|"POST /emoloyeeinfo/ HTTP/1.1" 200 1423
+INFO|30/Dec/2020 17:57:36|basehttp|12689|140424076322560|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|30/Dec/2020 17:57:36|basehttp|12689|140424181540608|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7813
+INFO|30/Dec/2020 17:57:36|basehttp|12689|140424172361472|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|30/Dec/2020 17:57:36|basehttp|12689|140424172361472|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|30/Dec/2020 17:57:37|basehttp|12689|140424172361472|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|30/Dec/2020 17:57:37|basehttp|12689|140424172361472|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|30/Dec/2020 17:57:37|basehttp|12689|140424172361472|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|30/Dec/2020 17:57:37|basehttp|12689|140424076322560|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|30/Dec/2020 17:57:37|basehttp|12689|140424076322560|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:57:37|basehttp|12689|140424181540608|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|30/Dec/2020 17:57:38|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|30/Dec/2020 17:57:38|basehttp|12689|140424181540608|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712

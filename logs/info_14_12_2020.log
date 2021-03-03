@@ -1,0 +1,1192 @@
+INFO|14/Dec/2020 13:07:53|basehttp|21046|139734821906176|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:07:54|basehttp|21046|139734821906176|"POST /api/login/ HTTP/1.1" 200 441
+INFO|14/Dec/2020 13:07:54|basehttp|21046|139734821906176|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:07:55|basehttp|21046|139734821906176|"POST /emoloyeeinfo/ HTTP/1.1" 200 1363
+INFO|14/Dec/2020 13:07:55|basehttp|21046|139734821906176|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:07:55|basehttp|21046|139734821906176|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:07:55|basehttp|21046|139734821906176|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:07:56|basehttp|21046|139734821906176|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 13:07:56|basehttp|21046|139734813513472|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 13:07:57|basehttp|21046|139734821906176|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 13159
+INFO|14/Dec/2020 13:08:01|basehttp|21046|139734821906176|"OPTIONS /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:08:01|basehttp|21046|139734821906176|"OPTIONS /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:08:01|basehttp|21046|139734821906176|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:08:01|basehttp|21046|139734821906176|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:08:11|basehttp|21046|139734813513472|"OPTIONS /get_employee_group/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:08:11|basehttp|21046|139734821906176|"OPTIONS /get_add/group/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:08:12|basehttp|21046|139734813513472|"GET /get_add/group/ HTTP/1.1" 200 514
+INFO|14/Dec/2020 13:08:56|basehttp|21046|139734821906176|"GET /get_employee_group/ HTTP/1.1" 200 12923114
+INFO|14/Dec/2020 13:08:58|basehttp|21046|139734813513472|"GET /get_employee_group/ HTTP/1.1" 200 12923114
+WARNING|14/Dec/2020 13:09:09|log|21046|139734813513472|Bad Request: /get_add/group/
+WARNING|14/Dec/2020 13:09:09|basehttp|21046|139734813513472|"POST /get_add/group/ HTTP/1.1" 400 58
+INFO|14/Dec/2020 13:11:01|basehttp|21295|140316646033152|"GET /get_employee_group/ HTTP/1.1" 200 12923114
+INFO|14/Dec/2020 13:14:51|basehttp|21295|140316633184000|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:51|basehttp|21295|140316633184000|"POST /api/login/ HTTP/1.1" 200 441
+INFO|14/Dec/2020 13:14:52|basehttp|21295|140316633184000|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:52|basehttp|21295|140316633184000|"POST /emoloyeeinfo/ HTTP/1.1" 200 1363
+INFO|14/Dec/2020 13:14:53|basehttp|21295|140316633184000|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:53|basehttp|21295|140316633184000|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:53|basehttp|21295|140316633184000|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:53|basehttp|21295|140316633184000|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 13:14:54|basehttp|21295|140316646033152|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 13:14:54|basehttp|21295|140316633184000|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 13159
+INFO|14/Dec/2020 13:14:57|basehttp|21295|140316633184000|"OPTIONS /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:57|basehttp|21295|140316633184000|"OPTIONS /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:57|basehttp|21295|140316633184000|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:14:57|basehttp|21295|140316633184000|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:14:59|basehttp|21295|140316646033152|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:59|basehttp|21295|140316633184000|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:59|basehttp|21295|140316486235904|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:59|basehttp|21295|140316646033152|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:59|basehttp|21295|140316486235904|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:14:59|basehttp|21295|140316633184000|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316633184000|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316646033152|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316633184000|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316477843200|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316486235904|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316469450496|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316477843200|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316486235904|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316469450496|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316633184000|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|14/Dec/2020 13:15:00|basehttp|21295|140316646033152|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|14/Dec/2020 13:15:01|basehttp|21295|140316646033152|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|14/Dec/2020 13:15:01|basehttp|21295|140316469450496|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|14/Dec/2020 13:15:01|basehttp|21295|140316633184000|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|14/Dec/2020 13:15:02|basehttp|21295|140316633184000|"OPTIONS /emoloyeedetails/?employee=d&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:03|basehttp|21295|140316633184000|"OPTIONS /emoloyeedetails/?employee=di&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:03|basehttp|21295|140316633184000|"GET /emoloyeedetails/?employee=d&org_id=ORG150866 HTTP/1.1" 200 12512
+INFO|14/Dec/2020 13:15:03|basehttp|21295|140316646033152|"GET /emoloyeedetails/?employee=di&org_id=ORG150866 HTTP/1.1" 200 2660
+INFO|14/Dec/2020 13:15:04|basehttp|21295|140316646033152|"OPTIONS /emoloyeedetails/?employee=div&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:04|basehttp|21295|140316646033152|"OPTIONS /emoloyeedetails/?employee=divy&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:04|basehttp|21295|140316646033152|"GET /emoloyeedetails/?employee=div&org_id=ORG150866 HTTP/1.1" 200 2660
+INFO|14/Dec/2020 13:15:05|basehttp|21295|140316646033152|"GET /emoloyeedetails/?employee=divy&org_id=ORG150866 HTTP/1.1" 200 2660
+INFO|14/Dec/2020 13:15:07|basehttp|21295|140316646033152|"OPTIONS /getemoloyeedata/?employee=Emp112 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:08|basehttp|21295|140316646033152|"GET /getemoloyeedata/?employee=Emp112 HTTP/1.1" 200 16947
+INFO|14/Dec/2020 13:15:09|basehttp|21295|140316633184000|"OPTIONS /get_state_master/?country_id=101 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:09|basehttp|21295|140316646033152|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:09|basehttp|21295|140316646033152|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:09|basehttp|21295|140316646033152|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:09|basehttp|21295|140316633184000|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:09|basehttp|21295|140316646033152|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316646033152|"OPTIONS /get_state_master/?country_id=96 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316633184000|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316646033152|"OPTIONS /get_state_master/?country_id=31 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316633184000|"OPTIONS /get_state_master/?country_id=101 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316469450496|"OPTIONS /get_national_id/?country=India HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316486235904|"OPTIONS /get_state_master/?country_id=2 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316486235904|"OPTIONS /get_national_id/?country=Canada HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316486235904|"OPTIONS /get_national_id/?country=India HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316469450496|"OPTIONS /get_national_id/?country=Bosnia%20and%20Herzegovina HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316633184000|"GET /get_state_master/?country_id=31 HTTP/1.1" 200 303
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316486235904|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|14/Dec/2020 13:15:10|basehttp|21295|140316469450496|"GET /get_state_master/?country_id=101 HTTP/1.1" 200 8604
+INFO|14/Dec/2020 13:15:11|basehttp|21295|140316469450496|"GET /get_state_master/?country_id=96 HTTP/1.1" 200 301
+INFO|14/Dec/2020 13:15:11|basehttp|21295|140316486235904|"GET /get_national_id/?country=India HTTP/1.1" 200 504
+INFO|14/Dec/2020 13:15:11|basehttp|21295|140316633184000|"GET /get_state_master/?country_id=2 HTTP/1.1" 200 8426
+INFO|14/Dec/2020 13:15:11|basehttp|21295|140316646033152|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|14/Dec/2020 13:15:11|basehttp|21295|140316624791296|"GET /get_state_master/?country_id=101 HTTP/1.1" 200 8604
+INFO|14/Dec/2020 13:15:11|basehttp|21295|140316616398592|"GET /get_national_id/?country=Canada HTTP/1.1" 200 506
+INFO|14/Dec/2020 13:15:12|basehttp|21295|140316616398592|"GET /get_national_id/?country=Bosnia%20and%20Herzegovina HTTP/1.1" 200 541
+INFO|14/Dec/2020 13:15:12|basehttp|21295|140316616398592|"GET /get_national_id/?country=India HTTP/1.1" 200 504
+INFO|14/Dec/2020 13:15:12|basehttp|21295|140316616398592|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|14/Dec/2020 13:15:12|basehttp|21295|140316624791296|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|14/Dec/2020 13:15:13|basehttp|21295|140316646033152|"OPTIONS /emoloyeedetails/?employee=Emp112&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:13|basehttp|21295|140316646033152|"OPTIONS /emoloyeedetails/?employee=Emp112&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:13|basehttp|21295|140316633184000|"OPTIONS /emoloyeedetails/?employee=Emp112&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:15:13|basehttp|21295|140316646033152|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|14/Dec/2020 13:15:13|basehttp|21295|140316633184000|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|14/Dec/2020 13:15:13|basehttp|21295|140316616398592|"GET /media/Koala_74ufFrT.jpg HTTP/1.1" 200 780831
+INFO|14/Dec/2020 13:15:14|basehttp|21295|140316646033152|"GET /emoloyeedetails/?employee=Emp112&org_id=ORG150866 HTTP/1.1" 200 1393
+INFO|14/Dec/2020 13:15:14|basehttp|21295|140316646033152|"GET /emoloyeedetails/?employee=Emp112&org_id=ORG150866 HTTP/1.1" 200 1393
+INFO|14/Dec/2020 13:15:15|basehttp|21295|140316646033152|"GET /emoloyeedetails/?employee=Emp112&org_id=ORG150866 HTTP/1.1" 200 1393
+INFO|14/Dec/2020 13:19:44|basehttp|22048|140699890079488|"POST /api/login/ HTTP/1.1" 200 441
+INFO|14/Dec/2020 13:20:10|basehttp|22195|139992854304512|"POST /tax_grid_country_update/ HTTP/1.1" 200 53
+INFO|14/Dec/2020 13:22:02|basehttp|22195|139992854304512|"OPTIONS /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|14/Dec/2020 13:22:02|log|22195|139992854304512|Unauthorized: /emoloyeedetails/
+WARNING|14/Dec/2020 13:22:02|basehttp|22195|139992854304512|"GET /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 13:22:02|basehttp|22195|139992854304512|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 13:22:02|log|22195|139992845911808|Unauthorized: /emoloyeedetails/
+WARNING|14/Dec/2020 13:22:02|basehttp|22195|139992845911808|"GET /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 13:22:03|basehttp|22195|139992845911808|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 13:22:03|log|22195|139992854304512|Unauthorized: /emoloyeedetails/
+WARNING|14/Dec/2020 13:22:03|basehttp|22195|139992854304512|"GET /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 13:22:03|basehttp|22195|139992845911808|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 13:22:04|basehttp|22195|139992854304512|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 13:22:04|basehttp|22195|139992845911808|"GET /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 200 12600
+INFO|14/Dec/2020 13:23:35|basehttp|22408|140571538925312|"OPTIONS /get_add/group/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:23:35|basehttp|22408|140571538925312|"OPTIONS /get_employee_group/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:23:35|basehttp|22408|140571538925312|"GET /get_add/group/ HTTP/1.1" 200 66
+INFO|14/Dec/2020 13:24:06|basehttp|22408|140571538925312|"GET /get_employee_group/ HTTP/1.1" 200 12924404
+INFO|14/Dec/2020 13:24:15|basehttp|22408|140571538925312|"POST /get_add/group/ HTTP/1.1" 200 494
+INFO|14/Dec/2020 13:24:17|basehttp|22408|140571387197184|"GET /get_add/group/ HTTP/1.1" 200 495
+INFO|14/Dec/2020 13:25:03|basehttp|22408|140571538925312|"GET /get_employee_group/ HTTP/1.1" 200 12924404
+INFO|14/Dec/2020 13:25:05|basehttp|22408|140571435595520|"GET /get_employee_group/ HTTP/1.1" 200 12924404
+INFO|14/Dec/2020 13:25:22|basehttp|22408|140571220899584|"GET /get_employee_group/ HTTP/1.1" 200 12924404
+INFO|14/Dec/2020 13:25:43|basehttp|22408|140571387197184|"GET /get_employee_group/ HTTP/1.1" 200 12924404
+WARNING|14/Dec/2020 13:28:19|log|22719|140073396721408|Unauthorized: /get_employee_group/
+WARNING|14/Dec/2020 13:28:19|basehttp|22719|140073396721408|"GET /get_employee_group/ HTTP/1.1" 401 183
+INFO|14/Dec/2020 13:28:19|basehttp|22719|140073396721408|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 13:28:19|log|22719|140073396721408|Unauthorized: /get_employee_group/
+WARNING|14/Dec/2020 13:28:19|basehttp|22719|140073396721408|"GET /get_employee_group/ HTTP/1.1" 401 183
+INFO|14/Dec/2020 13:28:20|basehttp|22719|140073396721408|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 13:28:20|log|22719|140073388328704|Unauthorized: /get_employee_group/
+INFO|14/Dec/2020 13:28:20|basehttp|22719|140073396721408|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 13:28:20|basehttp|22719|140073388328704|"GET /get_employee_group/ HTTP/1.1" 401 183
+INFO|14/Dec/2020 13:28:20|basehttp|22719|140073388328704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 13:28:29|basehttp|22719|140073388328704|"GET /get_employee_group/ HTTP/1.1" 200 12924404
+INFO|14/Dec/2020 13:28:30|basehttp|22719|140073396721408|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 13:28:30|basehttp|22719|140073388328704|"GET /get_add/group/ HTTP/1.1" 200 495
+INFO|14/Dec/2020 13:29:17|basehttp|22719|140073396721408|"GET /get_employee_group/ HTTP/1.1" 200 12924404
+INFO|14/Dec/2020 13:29:22|basehttp|22719|140073396721408|"POST /get_add/group/ HTTP/1.1" 200 496
+INFO|14/Dec/2020 13:29:24|basehttp|22719|140073388328704|"GET /get_add/group/ HTTP/1.1" 200 927
+INFO|14/Dec/2020 13:29:51|basehttp|22719|140073396721408|"GET /get_employee_group/ HTTP/1.1" 200 12924405
+INFO|14/Dec/2020 13:29:56|basehttp|22719|140073396721408|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:29:56|basehttp|22719|140072950167296|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:29:58|basehttp|22719|140072950167296|"OPTIONS /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:29:58|basehttp|22719|140072950167296|"OPTIONS /get_action_status/?module=V HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:29:59|basehttp|22719|140073396721408|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 13:29:59|basehttp|22719|140072950167296|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 200 6211
+INFO|14/Dec/2020 13:30:01|basehttp|22719|140073388328704|"GET /get_employee_group/ HTTP/1.1" 200 12924405
+INFO|14/Dec/2020 13:30:01|basehttp|22719|140073388328704|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:30:01|basehttp|22719|140072950167296|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:30:03|basehttp|22719|140072950167296|"OPTIONS /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 0
+INFO|14/Dec/2020 13:30:03|basehttp|22719|140072950167296|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 13:30:03|basehttp|22719|140072950167296|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 13105
+INFO|14/Dec/2020 13:30:08|basehttp|22719|140073166436096|"GET /get_employee_group/ HTTP/1.1" 200 12924405
+INFO|14/Dec/2020 13:30:09|basehttp|22719|140073076176640|"GET /get_employee_group/ HTTP/1.1" 200 12924405
+INFO|14/Dec/2020 13:30:44|basehttp|22719|140073166436096|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 13:30:44|basehttp|22719|140073076176640|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 13159
+INFO|14/Dec/2020 13:30:51|basehttp|22719|140073166436096|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:30:51|basehttp|22719|140073166436096|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 13:30:55|basehttp|22719|140073076176640|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 13:30:55|basehttp|22719|140073166436096|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 13105
+WARNING|14/Dec/2020 14:28:32|log|22719|140073076176640|Unauthorized: /get_org__count_visa_requests/
+WARNING|14/Dec/2020 14:28:32|log|22719|140073166436096|Unauthorized: /get_org__count_travel_requests/
+WARNING|14/Dec/2020 14:28:32|basehttp|22719|140073076176640|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|14/Dec/2020 14:28:32|basehttp|22719|140073166436096|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 14:28:32|basehttp|22719|140073166436096|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 14:28:32|log|22719|140073166436096|Unauthorized: /get_org__count_travel_requests/
+WARNING|14/Dec/2020 14:28:32|basehttp|22719|140073166436096|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 14:28:33|basehttp|22719|140073166436096|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 14:28:33|log|22719|140073166436096|Unauthorized: /get_org__count_visa_requests/
+WARNING|14/Dec/2020 14:28:33|basehttp|22719|140073166436096|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 14:28:33|basehttp|22719|140073076176640|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 14:28:33|basehttp|22719|140073076176640|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 14:28:33|basehttp|22719|140072950167296|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:28:33|basehttp|22719|140073166436096|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:28:36|basehttp|22719|140072950167296|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 14:28:36|basehttp|22719|140073166436096|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 13105
+INFO|14/Dec/2020 14:28:53|basehttp|22719|140072950167296|"OPTIONS /get_projects/?page=1&search=&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:28:54|basehttp|22719|140072950167296|"GET /get_projects/?page=1&search=&org=ORG150866 HTTP/1.1" 200 6956
+INFO|14/Dec/2020 14:28:58|basehttp|22719|140072950167296|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:28:59|basehttp|22719|140072950167296|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:29:01|basehttp|22719|140073166436096|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 14:29:01|basehttp|22719|140072950167296|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 200 6211
+INFO|14/Dec/2020 14:29:13|basehttp|22719|140072950167296|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 14:29:13|basehttp|22719|140073166436096|"OPTIONS /get_action_status/?module=A HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:13|basehttp|22719|140073076176640|"OPTIONS /get_visa_status_summary/?visa_req_id=VR259842&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:13|basehttp|22719|140073076176640|"OPTIONS /get_view_visa_request/?visa_req_id=VR259842&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:13|basehttp|22719|140072950167296|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 14:29:14|basehttp|22719|140072950167296|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|14/Dec/2020 14:29:14|basehttp|22719|140073166436096|"GET /get_view_visa_request/?visa_req_id=VR259842&org_id=ORG150866 HTTP/1.1" 200 1236
+INFO|14/Dec/2020 14:29:14|basehttp|22719|140073076176640|"GET /get_visa_status_summary/?visa_req_id=VR259842&org_id=ORG150866 HTTP/1.1" 200 1132
+INFO|14/Dec/2020 14:29:14|basehttp|22719|140073076176640|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20Kingdom&visa_type=Business HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:14|basehttp|22719|140073076176640|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20Kingdom&visa_type=Business HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:15|basehttp|22719|140073076176640|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20Kingdom&visa_type=Business HTTP/1.1" 200 1753
+INFO|14/Dec/2020 14:29:16|basehttp|22719|140073076176640|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20Kingdom&visa_type=Business HTTP/1.1" 200 1753
+INFO|14/Dec/2020 14:29:18|basehttp|22719|140073076176640|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:29:18|basehttp|22719|140073076176640|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:29:19|basehttp|22719|140073166436096|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 14:29:20|basehttp|22719|140073076176640|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 13105
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140073166436096|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140073166436096|"OPTIONS /get_view_travel_request/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140073166436096|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140072950167296|"OPTIONS /get_active_currency/?status_type=all HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140072950167296|"OPTIONS /get_travel_status_summary/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140073076176640|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140073076176640|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:33|basehttp|22719|140073076176640|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140073166436096|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140073076176640|"GET /get_view_travel_request/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 2702
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140073166436096|"GET /get_travel_status_summary/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 1133
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140073166436096|"GET /assignment_travel_request_status/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140073076176640|"GET /assignment_travel_tax_grid/?travel_req_id=TR181858&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140072950167296|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140072950167296|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140072950167296|"OPTIONS /get_create_assignment/?home=United%20Kingdom&End_date=2020-12-24T00:00:00+05:30&Start_date=Thu%20Dec%2010%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:34|basehttp|22719|140072950167296|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:35|basehttp|22719|140072950167296|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|14/Dec/2020 14:29:35|basehttp|22719|140073076176640|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2020-12-24T00:00:00+05:30&Start_date=Thu%20Dec%2010%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|14/Dec/2020 14:29:35|basehttp|22719|140073076176640|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|14/Dec/2020 14:29:44|basehttp|22719|140073076176640|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:29:44|basehttp|22719|140072950167296|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:29:48|basehttp|22719|140072950167296|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 14:29:48|basehttp|22719|140072950167296|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:29:48|basehttp|22719|140073076176640|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 14:29:58|basehttp|22719|140073076176640|"OPTIONS /org_travel_requests/?org_id=ORG150866&travel_req_status=3 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:29:58|basehttp|22719|140073076176640|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 14:29:58|basehttp|22719|140073076176640|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=3 HTTP/1.1" 200 2194
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140072950167296|"OPTIONS /get_view_travel_request/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140073311926016|"OPTIONS /get_travel_status_summary/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140073166436096|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140072950167296|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140073076176640|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140073388328704|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140073388328704|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140073388328704|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:30:06|basehttp|22719|140073388328704|"GET /get_view_travel_request/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 2635
+INFO|14/Dec/2020 14:30:07|basehttp|22719|140073076176640|"GET /get_travel_status_summary/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 974
+INFO|14/Dec/2020 14:30:07|basehttp|22719|140073076176640|"GET /assignment_travel_request_status/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 14:30:07|basehttp|22719|140072950167296|"OPTIONS /get_create_assignment/?home=United%20Kingdom&End_date=2020-12-25T00:00:00+05:30&Start_date=Thu%20Dec%2010%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:30:07|basehttp|22719|140073076176640|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|14/Dec/2020 14:30:07|basehttp|22719|140073076176640|"OPTIONS /get_create_assignment/?home=&End_date=&Start_date=&Ticket_ID=TR174259&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 14:30:07|basehttp|22719|140073076176640|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|14/Dec/2020 14:30:07|basehttp|22719|140073388328704|"GET /assignment_travel_tax_grid/?travel_req_id=TR174259&org_id=ORG150866 HTTP/1.1" 200 38094
+INFO|14/Dec/2020 14:30:08|basehttp|22719|140073388328704|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2020-12-25T00:00:00+05:30&Start_date=Thu%20Dec%2010%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|14/Dec/2020 14:30:08|basehttp|22719|140073388328704|"GET /get_create_assignment/?home=&End_date=&Start_date=&Ticket_ID=TR174259&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|14/Dec/2020 15:17:33|basehttp|28389|139976754325248|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|14/Dec/2020 15:17:33|log|28389|139976754325248|Unauthorized: /get_add/group/
+WARNING|14/Dec/2020 15:17:33|log|28389|139976675161856|Unauthorized: /get_employee_group/
+WARNING|14/Dec/2020 15:17:33|basehttp|28389|139976754325248|"GET /get_add/group/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 15:17:33|basehttp|28389|139976675161856|"GET /get_employee_group/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 15:17:33|log|28389|139976675161856|Unauthorized: /get_post_notification/
+WARNING|14/Dec/2020 15:17:33|basehttp|28389|139976675161856|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:17:34|basehttp|28389|139976675161856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:17:34|log|28389|139976754325248|Unauthorized: /get_add/group/
+WARNING|14/Dec/2020 15:17:34|basehttp|28389|139976754325248|"GET /get_add/group/ HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:17:34|basehttp|28389|139976754325248|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:17:34|log|28389|139976754325248|Unauthorized: /get_employee_group/
+WARNING|14/Dec/2020 15:17:34|basehttp|28389|139976754325248|"GET /get_employee_group/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 15:17:34|log|28389|139976675161856|Unauthorized: /get_post_notification/
+INFO|14/Dec/2020 15:17:34|basehttp|28389|139976754325248|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:17:34|basehttp|28389|139976675161856|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:17:34|basehttp|28389|139976666769152|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:17:34|log|28389|139976675161856|Unauthorized: /get_add/group/
+INFO|14/Dec/2020 15:17:34|basehttp|28389|139976754325248|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:17:34|basehttp|28389|139976675161856|"GET /get_add/group/ HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:17:35|basehttp|28389|139976675161856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 15:17:35|basehttp|28389|139976666769152|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 15:17:36|basehttp|28389|139976675161856|"GET /get_add/group/ HTTP/1.1" 200 927
+INFO|14/Dec/2020 15:17:39|basehttp|28389|139976754325248|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:17:57|basehttp|28389|139976754325248|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 15:17:57|basehttp|28389|139976754325248|"POST /api/login/ HTTP/1.1" 200 441
+INFO|14/Dec/2020 15:17:58|basehttp|28389|139976754325248|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 15:17:58|basehttp|28389|139976754325248|"POST /emoloyeeinfo/ HTTP/1.1" 200 1363
+INFO|14/Dec/2020 15:17:59|basehttp|28389|139976754325248|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 15:17:59|basehttp|28389|139976754325248|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 15:17:59|basehttp|28389|139976754325248|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|14/Dec/2020 15:17:59|basehttp|28389|139976754325248|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:18:00|basehttp|28389|139976675161856|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 15:18:00|basehttp|28389|139976754325248|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 13159
+INFO|14/Dec/2020 15:18:02|basehttp|28389|139976754325248|"OPTIONS /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 15:18:02|basehttp|28389|139976675161856|"OPTIONS /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 15:18:03|basehttp|28389|139976675161856|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 15:18:03|basehttp|28389|139976675161856|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 15:18:05|basehttp|28389|139976754325248|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+ERROR|14/Dec/2020 15:18:05|log|28389|139976675161856|Internal Server Error: /org_travel_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/travel/views.py", line 2351, in get
+    travel_requests.data[0]['current_ticket_owner']=emp_codes[0]['emp_code']
+KeyError: 'emp_code'
+ERROR|14/Dec/2020 15:18:05|basehttp|28389|139976675161856|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 500 17351
+INFO|14/Dec/2020 15:18:10|basehttp|28389|139976658376448|"GET /get_employee_group/ HTTP/1.1" 200 12924405
+INFO|14/Dec/2020 15:20:05|basehttp|28690|140407748708096|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 15:20:05|basehttp|28690|140407757362944|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:20:05|basehttp|28690|140407765755648|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 13208
+INFO|14/Dec/2020 15:21:07|basehttp|28947|140216146405120|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 15:21:07|basehttp|28947|140216154797824|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:21:07|basehttp|28947|140216163452672|"GET /org_travel_requests/?org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 13170
+INFO|14/Dec/2020 15:21:13|basehttp|28947|140216137488128|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 15:21:13|basehttp|28947|140216137488128|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 15:21:14|basehttp|28947|140216163452672|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+ERROR|14/Dec/2020 15:21:14|log|28947|140216137488128|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=travel_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'travel_requests' is not defined
+ERROR|14/Dec/2020 15:21:14|basehttp|28947|140216137488128|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17429
+ERROR|14/Dec/2020 15:21:58|log|28998|140475695990528|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:21:58|basehttp|28998|140475695990528|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:21:58|basehttp|28998|140475678942976|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:21:58|basehttp|28998|140475687597824|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:01|log|28998|140475687597824|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:01|basehttp|28998|140475687597824|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:01|basehttp|28998|140475678942976|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:01|basehttp|28998|140475687597824|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:04|log|28998|140475687597824|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:04|basehttp|28998|140475687597824|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:04|basehttp|28998|140475687597824|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:04|basehttp|28998|140475678942976|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:06|log|28998|140475687597824|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:06|basehttp|28998|140475687597824|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:06|basehttp|28998|140475678942976|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:06|basehttp|28998|140475687597824|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:08|log|28998|140475687597824|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:08|basehttp|28998|140475687597824|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:08|basehttp|28998|140475687597824|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:08|basehttp|28998|140475678942976|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:11|log|28998|140475678942976|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:11|basehttp|28998|140475678942976|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:11|basehttp|28998|140475687597824|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:11|basehttp|28998|140475678942976|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:15|log|28998|140475678942976|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:15|basehttp|28998|140475678942976|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:15|basehttp|28998|140475695990528|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:15|basehttp|28998|140475687597824|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:17|log|28998|140475695990528|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:17|basehttp|28998|140475695990528|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:17|basehttp|28998|140475687597824|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:17|basehttp|28998|140475695990528|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:19|log|28998|140475695990528|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:19|basehttp|28998|140475695990528|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:19|basehttp|28998|140475678942976|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:19|basehttp|28998|140475687597824|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:21|log|28998|140475687597824|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_requests.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+NameError: name 'visa_requests' is not defined
+ERROR|14/Dec/2020 15:22:21|basehttp|28998|140475687597824|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17423
+INFO|14/Dec/2020 15:22:22|basehttp|28998|140475678942976|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:22|basehttp|28998|140475687597824|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:22:47|basehttp|29063|139644928857856|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+ERROR|14/Dec/2020 15:22:47|log|29063|139644945905408|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+KeyError: 0
+ERROR|14/Dec/2020 15:22:47|basehttp|29063|139644945905408|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17352
+INFO|14/Dec/2020 15:22:47|basehttp|29063|139644937512704|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:50|log|29063|139644928857856|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+KeyError: 0
+ERROR|14/Dec/2020 15:22:50|basehttp|29063|139644928857856|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17353
+INFO|14/Dec/2020 15:22:50|basehttp|29063|139644937512704|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:50|basehttp|29063|139644928857856|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:22:53|log|29063|139644928857856|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+KeyError: 0
+ERROR|14/Dec/2020 15:22:53|basehttp|29063|139644928857856|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17352
+INFO|14/Dec/2020 15:22:53|basehttp|29063|139644945905408|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:22:53|basehttp|29063|139644937512704|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+WARNING|14/Dec/2020 15:23:57|log|29063|139644945905408|Unauthorized: /org_visa_requests/
+WARNING|14/Dec/2020 15:23:57|basehttp|29063|139644945905408|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 401 183
+WARNING|14/Dec/2020 15:23:57|log|29063|139644945905408|Unauthorized: /get_post_notification/
+WARNING|14/Dec/2020 15:23:57|basehttp|29063|139644945905408|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|14/Dec/2020 15:23:57|log|29063|139644945905408|Unauthorized: /get_action_status/
+WARNING|14/Dec/2020 15:23:57|basehttp|29063|139644945905408|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:23:57|basehttp|29063|139644945905408|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:23:58|log|29063|139644945905408|Unauthorized: /org_visa_requests/
+WARNING|14/Dec/2020 15:23:58|basehttp|29063|139644945905408|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:23:58|basehttp|29063|139644945905408|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:23:58|log|29063|139644937512704|Unauthorized: /get_post_notification/
+WARNING|14/Dec/2020 15:23:58|basehttp|29063|139644937512704|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:23:58|basehttp|29063|139644937512704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 15:23:58|log|29063|139644937512704|Unauthorized: /get_action_status/
+WARNING|14/Dec/2020 15:23:58|basehttp|29063|139644937512704|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|14/Dec/2020 15:23:58|basehttp|29063|139644937512704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 15:23:58|basehttp|29063|139644937512704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 15:23:58|basehttp|29063|139644937512704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 15:23:58|basehttp|29063|139644937512704|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+ERROR|14/Dec/2020 15:23:58|log|29063|139644945905408|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+KeyError: 0
+ERROR|14/Dec/2020 15:23:58|basehttp|29063|139644945905408|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17353
+INFO|14/Dec/2020 15:23:59|basehttp|29063|139644928857856|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:25:24|log|29292|139875088295680|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+KeyError: 0
+ERROR|14/Dec/2020 15:25:24|basehttp|29292|139875088295680|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17352
+INFO|14/Dec/2020 15:25:24|basehttp|29292|139875088295680|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:25:24|basehttp|29292|139875005232896|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+ERROR|14/Dec/2020 15:25:31|log|29292|139875088295680|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+KeyError: 0
+ERROR|14/Dec/2020 15:25:31|basehttp|29292|139875088295680|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17352
+INFO|14/Dec/2020 15:25:31|basehttp|29292|139875005232896|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:25:31|basehttp|29292|139875088295680|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:26:21|basehttp|29348|140650037110528|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+ERROR|14/Dec/2020 15:26:22|log|29348|140650125977344|Internal Server Error: /org_visa_requests/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/visa/views.py", line 678, in get
+    emp_codes=Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values('email','first_name','last_name')
+KeyError: 0
+ERROR|14/Dec/2020 15:26:22|basehttp|29348|140650125977344|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 500 17354
+INFO|14/Dec/2020 15:26:22|basehttp|29348|140650045503232|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:27:51|basehttp|29502|140534333388544|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 15:27:51|basehttp|29502|140534342043392|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 15:27:51|basehttp|29502|140534350436096|"GET /org_visa_requests/?org_id=ORG150866&visa_status=2 HTTP/1.1" 200 6211
+INFO|14/Dec/2020 17:42:58|basehttp|3765|140696910927616|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:42:58|basehttp|3765|140696910927616|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+WARNING|14/Dec/2020 17:42:59|log|3765|140696910927616|Unauthorized: /get_add/travel_request/
+WARNING|14/Dec/2020 17:42:59|basehttp|3765|140696910927616|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:42:59|log|3765|140696910927616|Unauthorized: /get_action_status/
+WARNING|14/Dec/2020 17:42:59|basehttp|3765|140696910927616|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:42:59|basehttp|3765|140696910927616|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 17:42:59|log|3765|140696902534912|Unauthorized: /get_add/travel_request/
+WARNING|14/Dec/2020 17:42:59|basehttp|3765|140696902534912|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:43:00|basehttp|3765|140696902534912|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 17:43:00|log|3765|140696910927616|Unauthorized: /get_action_status/
+WARNING|14/Dec/2020 17:43:00|basehttp|3765|140696910927616|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:43:00|basehttp|3765|140696910927616|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:43:00|basehttp|3765|140696902534912|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 17:43:00|log|3765|140696820381440|Unauthorized: /get_add/travel_request/
+WARNING|14/Dec/2020 17:43:00|basehttp|3765|140696820381440|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:43:00|basehttp|3765|140696902534912|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:43:00|basehttp|3765|140696820381440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 17:43:00|log|3765|140696910927616|Unauthorized: /get_action_status/
+WARNING|14/Dec/2020 17:43:00|basehttp|3765|140696910927616|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:43:01|basehttp|3765|140696820381440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:43:01|basehttp|3765|140696820381440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:43:01|basehttp|3765|140696902534912|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 17:43:01|basehttp|3765|140696910927616|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 13159
+INFO|14/Dec/2020 17:43:03|basehttp|3765|140696910927616|"OPTIONS /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:03|basehttp|3765|140696910927616|"OPTIONS /get_active_currency/?status_type=all HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:03|basehttp|3765|140696910927616|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:04|basehttp|3765|140696910927616|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 17:43:04|basehttp|3765|140696820381440|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 48
+INFO|14/Dec/2020 17:43:04|basehttp|3765|140696902534912|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|14/Dec/2020 17:43:07|basehttp|3765|140696902534912|"OPTIONS /get_project/?pid=000&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:08|basehttp|3765|140696902534912|"GET /get_project/?pid=000&limit=15&org_id=ORG150866 HTTP/1.1" 200 10086
+INFO|14/Dec/2020 17:43:10|basehttp|3765|140696902534912|"OPTIONS /get_project/?pid=0004&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:10|basehttp|3765|140696902534912|"GET /get_project/?pid=0004&limit=15&org_id=ORG150866 HTTP/1.1" 200 2075
+INFO|14/Dec/2020 17:43:20|basehttp|3765|140696902534912|"GET /get_project/?pid=000&limit=15&org_id=ORG150866 HTTP/1.1" 200 10086
+INFO|14/Dec/2020 17:43:23|basehttp|3765|140696902534912|"OPTIONS /get_project/?pid=gar&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:25|basehttp|3765|140696902534912|"GET /get_project/?pid=gar&limit=15&org_id=ORG150866 HTTP/1.1" 200 7477
+INFO|14/Dec/2020 17:43:28|basehttp|3765|140696820381440|"OPTIONS /get_project/?pid=garb&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:28|basehttp|3765|140696820381440|"GET /get_project/?pid=garb&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 17:43:29|basehttp|3765|140696820381440|"OPTIONS /get_project/?pid=garba&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:29|basehttp|3765|140696820381440|"GET /get_project/?pid=garba&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 17:43:38|basehttp|3765|140696820381440|"OPTIONS /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:38|basehttp|3765|140696820381440|"OPTIONS /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:39|basehttp|3765|140696820381440|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 17:43:39|basehttp|3765|140696820381440|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 74
+INFO|14/Dec/2020 17:43:41|basehttp|3765|140696820381440|"OPTIONS /get_projects/?page=1&search=&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:42|basehttp|3765|140696820381440|"GET /get_projects/?page=1&search=&org=ORG150866 HTTP/1.1" 200 6956
+INFO|14/Dec/2020 17:43:45|basehttp|3765|140696820381440|"OPTIONS /get_projects/?page=1&search=g&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:45|basehttp|3765|140696820381440|"OPTIONS /get_projects/?page=1&search=ga&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:46|basehttp|3765|140696910927616|"OPTIONS /get_projects/?page=1&search=gar&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:46|basehttp|3765|140696910927616|"OPTIONS /get_projects/?page=1&search=garb&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:46|basehttp|3765|140696820381440|"GET /get_projects/?page=1&search=g&org=ORG150866 HTTP/1.1" 200 7053
+INFO|14/Dec/2020 17:43:46|basehttp|3765|140696902534912|"GET /get_projects/?page=1&search=ga&org=ORG150866 HTTP/1.1" 200 7114
+INFO|14/Dec/2020 17:43:46|basehttp|3765|140696902534912|"OPTIONS /get_projects/?page=1&search=garba&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:47|basehttp|3765|140696902534912|"GET /get_projects/?page=1&search=garb&org=ORG150866 HTTP/1.1" 200 1351
+INFO|14/Dec/2020 17:43:47|basehttp|3765|140696820381440|"GET /get_projects/?page=1&search=gar&org=ORG150866 HTTP/1.1" 200 7020
+INFO|14/Dec/2020 17:43:47|basehttp|3765|140696910927616|"GET /get_projects/?page=1&search=garba&org=ORG150866 HTTP/1.1" 200 1351
+INFO|14/Dec/2020 17:43:48|basehttp|3765|140696804648704|"OPTIONS /get_projects/?page=1&search=garbag&org=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:43:49|basehttp|3765|140696804648704|"GET /get_projects/?page=1&search=garbag&org=ORG150866 HTTP/1.1" 200 1351
+INFO|14/Dec/2020 17:44:13|basehttp|3765|140696910927616|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 17:44:13|basehttp|3765|140696804648704|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 13159
+INFO|14/Dec/2020 17:44:15|basehttp|3765|140696804648704|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 48
+INFO|14/Dec/2020 17:44:16|basehttp|3765|140696804648704|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|14/Dec/2020 17:44:16|basehttp|3765|140696910927616|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 17:44:18|basehttp|3765|140696804648704|"GET /get_project/?pid=gar&limit=15&org_id=ORG150866 HTTP/1.1" 200 7477
+INFO|14/Dec/2020 17:44:19|basehttp|3765|140696804648704|"GET /get_project/?pid=garb&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 17:44:19|basehttp|3765|140696910927616|"OPTIONS /get_project/?pid=garbag&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:19|basehttp|3765|140696804648704|"GET /get_project/?pid=garba&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 17:44:19|basehttp|3765|140696804648704|"OPTIONS /get_project/?pid=garbage&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:20|basehttp|3765|140696804648704|"GET /get_project/?pid=garbag&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 17:44:20|basehttp|3765|140696804648704|"GET /get_project/?pid=garbage&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 17:44:25|basehttp|3765|140696804648704|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:25|basehttp|3765|140696804648704|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:25|basehttp|3765|140696804648704|"OPTIONS /get_city/?city=new%20d HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:25|basehttp|3765|140696804648704|"OPTIONS /get_city/?city=new%20de HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696804648704|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696804648704|"OPTIONS /get_city/?city=new%20del HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696804648704|"GET /get_city/?city=new%20d HTTP/1.1" 200 536
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696804648704|"GET /get_city/?city=new%20de HTTP/1.1" 200 536
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696804648704|"OPTIONS /get_city/?city=new%20delh HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696820381440|"OPTIONS /get_city/?city=new%20delhi HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696804648704|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|14/Dec/2020 17:44:26|basehttp|3765|140696910927616|"GET /get_city/?city=new%20del HTTP/1.1" 200 536
+INFO|14/Dec/2020 17:44:27|basehttp|3765|140696910927616|"GET /get_city/?city=new%20delh HTTP/1.1" 200 536
+INFO|14/Dec/2020 17:44:27|basehttp|3765|140696910927616|"GET /get_city/?city=new%20delhi HTTP/1.1" 200 536
+INFO|14/Dec/2020 17:44:30|basehttp|3765|140696910927616|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|14/Dec/2020 17:44:35|basehttp|3765|140696910927616|"OPTIONS /get_perdiem/?country=United%20States HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:35|basehttp|3765|140696804648704|"OPTIONS /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:35|basehttp|3765|140696902534912|"OPTIONS /emoloyeedependent/?employee=div944&country=United%20States HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:35|basehttp|3765|140696910927616|"OPTIONS /get_add/visa_purpose_list/?country_id=JFK HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:35|basehttp|3765|140696820381440|"OPTIONS /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:35|basehttp|3765|140696820381440|"GET /get_perdiem/?country=United%20States HTTP/1.1" 200 548
+INFO|14/Dec/2020 17:44:36|basehttp|3765|140696820381440|"GET /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 53
+INFO|14/Dec/2020 17:44:36|basehttp|3765|140696902534912|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|14/Dec/2020 17:44:36|basehttp|3765|140696910927616|"GET /emoloyeedependent/?employee=div944&country=United%20States HTTP/1.1" 200 2441
+INFO|14/Dec/2020 17:44:37|basehttp|3765|140696910927616|"GET /get_add/visa_purpose_list/?country_id=JFK HTTP/1.1" 200 8278
+INFO|14/Dec/2020 17:44:43|basehttp|3765|140696910927616|"OPTIONS /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:44:44|basehttp|3765|140696910927616|"GET /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type=Work HTTP/1.1" 200 53
+INFO|14/Dec/2020 17:45:19|basehttp|3765|140696910927616|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:45:20|basehttp|3765|140696910927616|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 63
+INFO|14/Dec/2020 17:45:22|basehttp|3765|140696910927616|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
+ERROR|14/Dec/2020 17:45:24|log|3765|140696910927616|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqrapi/mobility_apps/travel/views.py", line 258, in post
+    self.sendmails(ctxt,template,emailsubject,emailto=request.data['Action_taken_by'],id=request.data['travel_req_id'])
+  File "/var/www/html/mobilitysqrapi/mobility_apps/travel/views.py", line 387, in sendmails
+    msg.send()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (454, b'4.7.0 Cannot authenticate due to temporary system problem. Try again later. r4sm3832777ooa.29 - gsmtp')
+ERROR|14/Dec/2020 17:45:24|basehttp|3765|140696910927616|"POST /get_add/travel_request/ HTTP/1.1" 500 18468
+WARNING|14/Dec/2020 17:50:36|log|3765|140696910927616|Unauthorized: /get_dial_code/
+INFO|14/Dec/2020 17:50:36|basehttp|3765|140696902534912|"OPTIONS /getemoloyeedata/?employee=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:36|basehttp|3765|140696820381440|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 17:50:36|basehttp|3765|140696910927616|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:50:36|basehttp|3765|140696804648704|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:36|basehttp|3765|140696804648704|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:36|basehttp|3765|140696804648704|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:37|basehttp|3765|140696804648704|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:37|basehttp|3765|140696902534912|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:37|basehttp|3765|140696820381440|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:37|basehttp|3765|140696793110272|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:37|basehttp|3765|140696784717568|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:37|basehttp|3765|140696910927616|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 17:50:37|log|3765|140696910927616|Unauthorized: /get_post_gender/
+WARNING|14/Dec/2020 17:50:37|log|3765|140696902534912|Unauthorized: /emoloyeeinfo/
+INFO|14/Dec/2020 17:50:37|basehttp|3765|140696804648704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 17:50:37|log|3765|140696793110272|Unauthorized: /get_country_master/
+WARNING|14/Dec/2020 17:50:37|log|3765|140696784717568|Unauthorized: /getemoloyeedata/
+WARNING|14/Dec/2020 17:50:37|log|3765|140696820381440|Unauthorized: /get_post_relation/
+WARNING|14/Dec/2020 17:50:37|basehttp|3765|140696910927616|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:37|basehttp|3765|140696902534912|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:37|basehttp|3765|140696793110272|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:37|basehttp|3765|140696784717568|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:37|basehttp|3765|140696820381440|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|log|3765|140696784717568|Unauthorized: /get_post_marital_status/
+WARNING|14/Dec/2020 17:50:38|log|3765|140696902534912|Unauthorized: /get_dial_code/
+WARNING|14/Dec/2020 17:50:38|log|3765|140696804648704|Unauthorized: /get_post_suffix/
+WARNING|14/Dec/2020 17:50:38|log|3765|140696793110272|Unauthorized: /get_post_phone/
+WARNING|14/Dec/2020 17:50:38|log|3765|140696910927616|Unauthorized: /get_post_email/
+WARNING|14/Dec/2020 17:50:38|log|3765|140696820381440|Unauthorized: /get_post_salutation/
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696784717568|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696902534912|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696804648704|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696793110272|"GET /get_post_phone/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696910927616|"GET /get_post_email/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696820381440|"GET /get_post_salutation/ HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:50:38|basehttp|3765|140696910927616|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 17:50:38|log|3765|140696820381440|Unauthorized: /get_post_relation/
+INFO|14/Dec/2020 17:50:38|basehttp|3765|140696793110272|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 17:50:38|log|3765|140696804648704|Unauthorized: /get_post_address/
+WARNING|14/Dec/2020 17:50:38|log|3765|140696902534912|Unauthorized: /get_country_master/
+INFO|14/Dec/2020 17:50:38|basehttp|3765|140696784717568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696820381440|"GET /get_post_relation/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696804648704|"GET /get_post_address/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:38|basehttp|3765|140696902534912|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:39|log|3765|140696902534912|Unauthorized: /emoloyeeinfo/
+WARNING|14/Dec/2020 17:50:39|log|3765|140696820381440|Unauthorized: /get_post_gender/
+WARNING|14/Dec/2020 17:50:39|log|3765|140696784717568|Unauthorized: /getemoloyeedata/
+INFO|14/Dec/2020 17:50:39|basehttp|3765|140696804648704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:39|basehttp|3765|140696910927616|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 17:50:39|basehttp|3765|140696820381440|"GET /get_post_gender/ HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:39|basehttp|3765|140696784717568|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 401 183
+WARNING|14/Dec/2020 17:50:39|basehttp|3765|140696902534912|"POST /emoloyeeinfo/ HTTP/1.1" 401 183
+INFO|14/Dec/2020 17:50:39|basehttp|3765|140696793110272|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696793110272|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696902534912|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696902534912|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696784717568|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696820381440|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696784717568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696784717568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696820381440|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696902534912|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696820381440|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|14/Dec/2020 17:50:40|basehttp|3765|140696820381440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696902534912|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696820381440|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696784717568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696902534912|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696784717568|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696784717568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696902534912|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696784717568|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|14/Dec/2020 17:50:41|basehttp|3765|140696820381440|"POST /emoloyeeinfo/ HTTP/1.1" 200 1363
+INFO|14/Dec/2020 17:50:42|basehttp|3765|140696784717568|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 5970
+INFO|14/Dec/2020 17:50:43|basehttp|3765|140696784717568|"OPTIONS /get_national_id/?country=Afghanistan HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:43|basehttp|3765|140696784717568|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:43|basehttp|3765|140696784717568|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|14/Dec/2020 17:50:43|basehttp|3765|140696784717568|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|14/Dec/2020 17:50:44|basehttp|3765|140696784717568|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|14/Dec/2020 17:50:44|basehttp|3765|140696784717568|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|14/Dec/2020 18:19:54|basehttp|5647|140670495610624|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:19:54|basehttp|5647|140670495610624|"POST /api/login/ HTTP/1.1" 200 441
+INFO|14/Dec/2020 18:19:55|basehttp|5647|140670495610624|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:19:55|basehttp|5647|140670495610624|"POST /emoloyeeinfo/ HTTP/1.1" 200 1363
+INFO|14/Dec/2020 18:19:56|basehttp|5647|140670495610624|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:19:56|basehttp|5647|140670495610624|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:19:56|basehttp|5647|140670495610624|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:19:56|basehttp|5647|140670495610624|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 18:19:56|basehttp|5647|140670495610624|"GET /media/tvs-apache-rtr-160-matte-blue-1506079207989.jpg HTTP/1.1" 200 36184
+INFO|14/Dec/2020 18:19:57|basehttp|5647|140670486693632|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:19:57|basehttp|5647|140670495610624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 14423
+INFO|14/Dec/2020 18:23:52|basehttp|5647|140670486693632|"OPTIONS /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:23:52|basehttp|5647|140670486693632|"OPTIONS /get_active_currency/?status_type=all HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:23:52|basehttp|5647|140670486693632|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:23:58|basehttp|5933|140189696874240|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:23:58|basehttp|5933|140189477369600|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|14/Dec/2020 18:23:58|basehttp|5933|140189705529088|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 31031
+INFO|14/Dec/2020 18:23:58|basehttp|5933|140189688481536|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 18:24:02|basehttp|5933|140189705529088|"OPTIONS /get_project/?pid=gar&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:02|basehttp|5933|140189688481536|"OPTIONS /get_project/?pid=garb&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:02|basehttp|5933|140189688481536|"OPTIONS /get_project/?pid=garba&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:03|basehttp|5933|140189477369600|"OPTIONS /get_project/?pid=garbag&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:03|basehttp|5933|140189688481536|"GET /get_project/?pid=garb&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 18:24:03|basehttp|5933|140189705529088|"GET /get_project/?pid=gar&limit=15&org_id=ORG150866 HTTP/1.1" 200 7477
+INFO|14/Dec/2020 18:24:03|basehttp|5933|140189705529088|"OPTIONS /get_project/?pid=garbage&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:04|basehttp|5933|140189696874240|"GET /get_project/?pid=garba&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 18:24:04|basehttp|5933|140189705529088|"GET /get_project/?pid=garbag&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 18:24:04|basehttp|5933|140189705529088|"GET /get_project/?pid=garbage&limit=15&org_id=ORG150866 HTTP/1.1" 200 1267
+INFO|14/Dec/2020 18:24:09|basehttp|5933|140189705529088|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:09|basehttp|5933|140189705529088|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:09|basehttp|5933|140189705529088|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|14/Dec/2020 18:24:10|basehttp|5933|140189705529088|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|14/Dec/2020 18:24:13|basehttp|5933|140189705529088|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|14/Dec/2020 18:24:14|basehttp|5933|140189696874240|"OPTIONS /get_city/?city=new%20y HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:14|basehttp|5933|140189696874240|"OPTIONS /get_city/?city=new%20yo HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:14|basehttp|5933|140189705529088|"GET /get_city/?city=new%20y HTTP/1.1" 200 1038
+INFO|14/Dec/2020 18:24:14|basehttp|5933|140189688481536|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|14/Dec/2020 18:24:15|basehttp|5933|140189688481536|"GET /get_city/?city=new%20yo HTTP/1.1" 200 1038
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189688481536|"OPTIONS /get_perdiem/?country=United%20States HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189705529088|"OPTIONS /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189705529088|"OPTIONS /get_add/visa_purpose_list/?country_id=JFK HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189688481536|"OPTIONS /emoloyeedependent/?employee=div944&country=United%20States HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189705529088|"OPTIONS /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189705529088|"GET /get_perdiem/?country=United%20States HTTP/1.1" 200 548
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189688481536|"GET /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 53
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189705529088|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189477369600|"GET /get_add/visa_purpose_list/?country_id=JFK HTTP/1.1" 200 8278
+INFO|14/Dec/2020 18:24:16|basehttp|5933|140189696874240|"GET /emoloyeedependent/?employee=div944&country=United%20States HTTP/1.1" 200 2441
+INFO|14/Dec/2020 18:24:22|basehttp|5933|140189696874240|"OPTIONS /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:24:22|basehttp|5933|140189696874240|"GET /get_employee_visa/?emp_code_id=div944&visa_country_id=United%20States&visa_type=Work HTTP/1.1" 200 53
+INFO|14/Dec/2020 18:25:03|basehttp|5933|140189696874240|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 0
+WARNING|14/Dec/2020 18:25:03|log|5933|140189696874240|Unauthorized: /get_currency_conversion/
+WARNING|14/Dec/2020 18:25:03|basehttp|5933|140189696874240|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:25:04|basehttp|5933|140189696874240|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 18:25:04|log|5933|140189696874240|Unauthorized: /get_currency_conversion/
+WARNING|14/Dec/2020 18:25:04|basehttp|5933|140189696874240|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:25:04|basehttp|5933|140189696874240|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 18:25:04|basehttp|5933|140189696874240|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 18:25:05|log|5933|140189696874240|Unauthorized: /get_currency_conversion/
+WARNING|14/Dec/2020 18:25:05|basehttp|5933|140189696874240|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:25:05|basehttp|5933|140189696874240|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 18:25:05|basehttp|5933|140189696874240|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:25:10|basehttp|5933|140189696874240|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:25:22|basehttp|5933|140189696874240|"POST /get_add/travel_request/ HTTP/1.1" 200 112
+INFO|14/Dec/2020 18:26:10|basehttp|5933|140189696874240|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:26:10|basehttp|5933|140189477369600|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 17713
+INFO|14/Dec/2020 18:26:13|basehttp|5933|140189477369600|"OPTIONS /get_view_travel_request/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:26:13|basehttp|5933|140189477369600|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:26:13|basehttp|5933|140189705529088|"OPTIONS /get_travel_status_summary/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:26:13|basehttp|5933|140189705529088|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:26:13|basehttp|5933|140189477369600|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:26:14|basehttp|5933|140189696874240|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 18:26:14|basehttp|5933|140189688481536|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:26:14|basehttp|5933|140189696874240|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|14/Dec/2020 18:26:14|basehttp|5933|140189459015424|"GET /assignment_travel_request_status/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:26:14|basehttp|5933|140189705529088|"GET /get_view_travel_request/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 3772
+INFO|14/Dec/2020 18:26:14|basehttp|5933|140189477369600|"GET /get_travel_status_summary/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 967
+INFO|14/Dec/2020 18:26:15|basehttp|5933|140189477369600|"GET /assignment_travel_tax_grid/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:26:15|basehttp|5933|140189705529088|"OPTIONS /get_create_assignment/?home=United%20States&End_date=2020-12-31T00:00:00+05:30&Start_date=Mon%20Dec%2014%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:26:15|basehttp|5933|140189459015424|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:26:15|basehttp|5933|140189477369600|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|14/Dec/2020 18:26:15|basehttp|5933|140189459015424|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:26:15|basehttp|5933|140189477369600|"GET /get_create_assignment/?home=United%20States&End_date=2020-12-31T00:00:00+05:30&Start_date=Mon%20Dec%2014%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:27:05|basehttp|5933|140189477369600|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:05|basehttp|5933|140189477369600|"POST /api/login/ HTTP/1.1" 200 441
+INFO|14/Dec/2020 18:27:06|basehttp|5933|140189477369600|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:06|basehttp|5933|140189477369600|"POST /emoloyeeinfo/ HTTP/1.1" 200 1358
+INFO|14/Dec/2020 18:27:07|basehttp|5933|140189477369600|"OPTIONS /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:07|basehttp|5933|140189477369600|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:07|basehttp|5933|140189477369600|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:07|basehttp|5933|140189459015424|"GET /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 19170
+INFO|14/Dec/2020 18:27:08|basehttp|5933|140189459015424|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:27:08|basehttp|5933|140189705529088|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:27:10|basehttp|5933|140189477369600|"GET /media/Koala_74ufFrT.jpg HTTP/1.1" 200 780831
+INFO|14/Dec/2020 18:27:10|basehttp|5933|140189705529088|"OPTIONS /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:10|basehttp|5933|140189477369600|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:27:11|basehttp|5933|140189477369600|"GET /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 4483
+INFO|14/Dec/2020 18:27:14|basehttp|5933|140189477369600|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:14|basehttp|5933|140189459015424|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:14|basehttp|5933|140189459015424|"OPTIONS /get_travel_status_summary/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:14|basehttp|5933|140189477369600|"OPTIONS /get_view_travel_request/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:14|basehttp|5933|140189696874240|"OPTIONS /get_active_currency/?status_type=all HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:14|basehttp|5933|140189705529088|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:27:14|basehttp|5933|140189705529088|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189449836288|"GET /assignment_travel_request_status/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189696874240|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189705529088|"GET /get_view_travel_request/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 3772
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189459015424|"GET /get_travel_status_summary/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 967
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189477369600|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189477369600|"GET /assignment_travel_tax_grid/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189477369600|"OPTIONS /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189477369600|"OPTIONS /get_create_assignment/?home=United%20States&End_date=2020-12-31T00:00:00+05:30&Start_date=Mon%20Dec%2014%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:15|basehttp|5933|140189459015424|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:16|basehttp|5933|140189459015424|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|14/Dec/2020 18:27:16|basehttp|5933|140189477369600|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:27:16|basehttp|5933|140189705529088|"GET /get_create_assignment/?home=United%20States&End_date=2020-12-31T00:00:00+05:30&Start_date=Mon%20Dec%2014%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:27:25|basehttp|5933|140189705529088|"OPTIONS /get_post_approve_travelvisa_request/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:32|basehttp|5933|140189705529088|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|14/Dec/2020 18:27:39|basehttp|5933|140189477369600|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:27:39|basehttp|5933|140189705529088|"GET /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 1292
+INFO|14/Dec/2020 18:27:58|basehttp|5933|140189705529088|"OPTIONS /get_travel_request_history/?email=Emp112&status=4&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:27:59|basehttp|5933|140189705529088|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:28:00|basehttp|5933|140189705529088|"GET /get_travel_request_history/?email=Emp112&status=4&type=Travel&org_id=ORG150866 HTTP/1.1" 200 31037
+INFO|14/Dec/2020 18:28:06|basehttp|5933|140189477369600|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|14/Dec/2020 18:28:06|basehttp|5933|140189705529088|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:28:06|basehttp|5933|140189696874240|"GET /assignment_travel_request_status/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:28:06|basehttp|5933|140189449836288|"GET /get_view_travel_request/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 3764
+INFO|14/Dec/2020 18:28:06|basehttp|5933|140189459015424|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 18:28:06|basehttp|5933|140189441443584|"GET /get_travel_status_summary/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 939
+INFO|14/Dec/2020 18:28:07|basehttp|5933|140189441443584|"GET /assignment_travel_tax_grid/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:28:07|basehttp|5933|140189459015424|"GET /get_create_assignment/?home=United%20States&End_date=2020-12-31T00:00:00+05:30&Start_date=Mon%20Dec%2014%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:28:07|basehttp|5933|140189441443584|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|14/Dec/2020 18:28:07|basehttp|5933|140189449836288|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:28:11|basehttp|5933|140189449836288|"OPTIONS /get_action_status/?module=V HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:11|basehttp|5933|140189449836288|"OPTIONS /get_action_status/?module=A HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:11|basehttp|5933|140189449836288|"OPTIONS /get_visa_status_summary/?visa_req_id=VR222853&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:11|basehttp|5933|140189449836288|"OPTIONS /get_view_visa_request/?visa_req_id=VR222853&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:11|basehttp|5933|140189449836288|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 18:28:12|basehttp|5933|140189449836288|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|14/Dec/2020 18:28:12|basehttp|5933|140189441443584|"GET /get_view_visa_request/?visa_req_id=VR222853&org_id=ORG150866 HTTP/1.1" 200 1139
+INFO|14/Dec/2020 18:28:12|basehttp|5933|140189459015424|"GET /get_visa_status_summary/?visa_req_id=VR222853&org_id=ORG150866 HTTP/1.1" 200 940
+INFO|14/Dec/2020 18:28:12|basehttp|5933|140189459015424|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:12|basehttp|5933|140189459015424|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:13|basehttp|5933|140189459015424|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|14/Dec/2020 18:28:13|basehttp|5933|140189459015424|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|14/Dec/2020 18:28:26|basehttp|5933|140189449836288|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:28:26|basehttp|5933|140189696874240|"GET /assignment_travel_request_status/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:28:26|basehttp|5933|140189459015424|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|14/Dec/2020 18:28:26|basehttp|5933|140189441443584|"GET /get_view_travel_request/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 3764
+INFO|14/Dec/2020 18:28:26|basehttp|5933|140189477369600|"GET /get_travel_status_summary/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 939
+INFO|14/Dec/2020 18:28:26|basehttp|5933|140189705529088|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|14/Dec/2020 18:28:27|basehttp|5933|140189705529088|"GET /assignment_travel_tax_grid/?travel_req_id=TR298741&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:28:27|basehttp|5933|140189705529088|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|14/Dec/2020 18:28:27|basehttp|5933|140189477369600|"GET /get_create_assignment/?home=United%20States&End_date=2020-12-31T00:00:00+05:30&Start_date=Mon%20Dec%2014%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:28:27|basehttp|5933|140189441443584|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:28:52|basehttp|5933|140189441443584|"POST /api/login/ HTTP/1.1" 200 441
+INFO|14/Dec/2020 18:28:52|basehttp|5933|140189441443584|"POST /emoloyeeinfo/ HTTP/1.1" 200 1394
+INFO|14/Dec/2020 18:28:53|basehttp|5933|140189441443584|"OPTIONS /get_post_notification/?email=gauravg&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:53|basehttp|5933|140189441443584|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:53|basehttp|5933|140189441443584|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:28:53|basehttp|5933|140189441443584|"GET /media/linux.png HTTP/1.1" 200 4510
+INFO|14/Dec/2020 18:28:53|basehttp|5933|140189441443584|"GET /get_post_notification/?email=gauravg&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|14/Dec/2020 18:28:54|basehttp|5933|140189441443584|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg HTTP/1.1" 200 48
+INFO|14/Dec/2020 18:28:56|basehttp|5933|140189441443584|"OPTIONS /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:56|basehttp|5933|140189441443584|"OPTIONS /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:28:56|basehttp|5933|140189441443584|"GET /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 78
+INFO|14/Dec/2020 18:28:57|basehttp|5933|140189441443584|"GET /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 78
+INFO|14/Dec/2020 18:29:00|basehttp|5933|140189441443584|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email= HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:29:00|basehttp|5933|140189441443584|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|14/Dec/2020 18:29:00|basehttp|5933|140189441443584|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email= HTTP/1.1" 200 5422
+INFO|14/Dec/2020 18:29:08|basehttp|5933|140189441443584|"OPTIONS /assignment_post_approve_travelvisa_request/ HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:29:14|basehttp|5933|140189441443584|"POST /assignment_post_approve_travelvisa_request/ HTTP/1.1" 200 77
+WARNING|14/Dec/2020 18:34:35|log|5933|140189477369600|Unauthorized: /count_travel_requests/
+WARNING|14/Dec/2020 18:34:35|log|5933|140189441443584|Unauthorized: /count_visa_requests/
+WARNING|14/Dec/2020 18:34:35|basehttp|5933|140189477369600|"GET /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|14/Dec/2020 18:34:35|basehttp|5933|140189441443584|"GET /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:34:35|basehttp|5933|140189441443584|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 18:34:35|log|5933|140189441443584|Unauthorized: /count_travel_requests/
+WARNING|14/Dec/2020 18:34:35|basehttp|5933|140189441443584|"GET /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:34:35|basehttp|5933|140189441443584|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|14/Dec/2020 18:34:35|log|5933|140189441443584|Unauthorized: /count_visa_requests/
+WARNING|14/Dec/2020 18:34:35|basehttp|5933|140189441443584|"GET /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:34:36|basehttp|5933|140189441443584|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 18:34:36|basehttp|5933|140189441443584|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 18:34:36|log|5933|140189705529088|Unauthorized: /count_travel_requests/
+INFO|14/Dec/2020 18:34:36|basehttp|5933|140189477369600|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 18:34:36|basehttp|5933|140189705529088|"GET /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:34:36|basehttp|5933|140189459015424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|14/Dec/2020 18:34:36|log|5933|140189459015424|Unauthorized: /count_visa_requests/
+WARNING|14/Dec/2020 18:34:36|basehttp|5933|140189459015424|"GET /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|14/Dec/2020 18:34:37|basehttp|5933|140189459015424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 18:34:37|basehttp|5933|140189705529088|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|14/Dec/2020 18:34:37|basehttp|5933|140189459015424|"GET /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 78
+INFO|14/Dec/2020 18:34:37|basehttp|5933|140189705529088|"GET /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 78
+INFO|14/Dec/2020 18:34:44|basehttp|5933|140189459015424|"OPTIONS /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email= HTTP/1.1" 200 0
+INFO|14/Dec/2020 18:34:44|basehttp|5933|140189459015424|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|14/Dec/2020 18:34:45|basehttp|5933|140189459015424|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email= HTTP/1.1" 200 3486
+INFO|15/Dec/2020 04:31:44|basehttp|5933|140189459015424|"GET / HTTP/1.1" 200 44
+INFO|15/Dec/2020 05:19:58|basehttp|5933|140189459015424|"GET / HTTP/1.1" 200 44
+INFO|15/Dec/2020 07:11:13|basehttp|5933|140189459015424|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|15/Dec/2020 07:11:13|basehttp|5933|140189459015424|"  /*à     Cookie: mstshash=Administr" 400 -
+INFO|15/Dec/2020 07:16:34|basehttp|5933|140189459015424|"GET / HTTP/1.1" 200 44
+INFO|15/Dec/2020 07:16:55|basehttp|5933|140189459015424|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|15/Dec/2020 07:16:55|basehttp|5933|140189459015424|"  /*à     Cookie: mstshash=Administr" 400 -

@@ -1,0 +1,462 @@
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+
+</head>
+
+<body style="background-color: #F7F6B7;">
+
+<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+
+    <div align="left">
+
+        <h4>DATED&nbsp;&nbsp;{{date}}
+            </h4>
+        <h4>Private and Confidential</h4>
+       {% for add in emp_add %}
+        <h4> {{add.address1}},{{add.address2}},{{add.address3}}
+        </br> {{add.city}},{{add.state}},{{add.zip}}</br> {{add.country}}</h4>
+            {% endfor %}
+    </div>
+ <p>
+
+        Dear
+     {% for emp_info in emp_info %}
+     {{emp_info.salutation}} {{emp_info.first_name}}:
+     {% endfor %}
+ </p>
+
+    <p>
+
+        This Letter of Assignment confirms our mutual understanding of the terms and conditions of your
+        appointment as TITLE reporting to MANAGER and located in {% for add in emp_add %}
+        {{add.city}}, {{add.country}}{% endfor %}.
+        While on assignment you will be
+        performing services for HOST LEGAL ENTITY NAME. The terms of your assignment will be in accordance with
+        the Company’s Human Resources Management Policy for Long-Term International Assignments, HRMP 250. This
+        letter highlights key points of your assignment.</p>
+
+    <p> If you accept this assignment, the effective date of your assignment will be DATE. Your initial
+        assignment will be for a period of two years, through DATE. The terms and conditions outlined in this
+        letter will be in effect only for the duration of this assignment. When you return to the {% for add in emp_add %}
+        {{add.country}}{% endfor %},
+        you will stop receiving the differentials provided under MOBILITY SQR’s international assignment
+        program.Should the term of your assignment inHOST COUNTRY extend beyond 24 months or the assignment end
+        date ofDATE, your long term assignment will become a permanent transfer and the localization process
+        will be initiated immediately, if no plans have been made to repatriate you back to your home location.
+        At such time, all elements of assignment allowances will cease and you will be eligible for a HOST
+        COUNTRY local package. Nothing in this Letter of Assignment alters the “At Will” nature of your status
+        with MOBILITY SQR, which may terminate your employment at any time for any legal reason or no reason at
+        all, as long as it is acceptable within the legally applicable jurisdiction.</p>
+
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+
+<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+
+    <p>Your compensation and benefits package is designed to provide you with a level of income and benefits
+        comparable to those you would have received in the {% for add in emp_add %}
+        {{add.country}}{% endfor %}. It also takes into consideration the
+        additional living costs that you may reasonably anticipate as a result of living in your new country of
+        assignment.</p>
+
+
+
+    <p>At the conclusion of this assignment, MOBILITY SQR HR will engage with you to discuss the various options
+        available to you, to secure a role for you which will make the fullest use of your experience and
+        skills. Six months prior to the end of your assignment, you will be contacted to discuss the options
+        available to you as the next step in your career with MOBILITY SQR.</p>
+
+    <h4 style="margin-bottom: 0;">Base Salary and Incentives:</h4>
+    <span>On the effective date of your assignment, your annual base salary will be SALARY. Your other
+                assignment compensation will be based on your salary.</span>
+
+    <p> You will be entitled to participate in the MOBILITY SQR Incentive Compensation Plan (ICP). This program
+        provides an incentive payment of up to XX% of your annual salary based on your contribution to the
+        attainment of MOBILITY SQR financial targets, combined with the achievement of mutually agreed
+        performance
+        objectives. (Additional wording may be required for sales Commission plans.)</p>
+
+    <p>Refer to your total compensation summary for further details.</p>
+
+    <h4 style="margin-bottom: 0;">UK Only</h4>
+    <span>On the effective date of your assignment, your MOBILITY SQR flex fund will be GBP xxxxx.xx, of which
+                your
+                reference base salary is GBP xxxxx.xx per annum. Your other assignment compensation will be based on
+                your reference base salary.</span>
+
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+</br>
+<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+    <h4 style="margin-bottom: 0;">Transportation: If applicable</h4>
+    <span>You will be entitled to a leased car while on assignment in HOST COUNTRY.UK Only – In Lieu of this you
+                will
+                receive a deduction from your UK Flex Fund of £xxxxx.xx.</span>
+
+    <h4 style="margin-bottom: 0;">Cost-of-Living:</h4>
+    <span>A bi-weekly/monthly cost-of-living allowance in the amount of XXX will be paid effective upon your
+                move into
+                long-term housing to offset for the higher cost of goods and services your host country. This allowance
+                will
+                be subject to quarterly review, based on data from a Company-designated independent consultant.</span>
+
+    <h4 style="margin-bottom: 0;">Hardship Allowance – If applicable:</h4>
+    <span>As an incentive for living in HOST COUNTRY, you will receive a hardship allowance of XX% of your
+                current base salary for the length of your assignment.</span>
+
+    <h4 style="margin-bottom: 0;">Housing/Utilities:</h4>
+    <span>MOBILITY SQR’s contribution to your housing cost in HOST COUNTRY is XX. The actual housing cost will
+                be agreed with you once you find suitable accommodation and may be paid directly by the Company.
+                Additionally, you will be paid a weekly/bi-weekly/monthly utility allowance, in the amount of XX, to be
+                applied
+                towards your utility expenses in HOST COUNTRY, which is based on average costs in the host
+                country.</span>
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+	</br>
+	</br>
+<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+    <h4 style="margin-bottom: 0;color:#00b050;"> Dependent Education:</h4>
+    <span style="color:#00b050;">You will be reimbursed for the actual and reasonable costs of adequate
+                kindergarten through secondary
+                education,annually, up to USD 10,000per dependent in HOST COUNTRY to cover expenses such as tuition,
+                fees, books, and uniforms while you are on assignment. Please note that host country management must
+                approve
+                all education costs in advance.</span>
+
+    <h4 style="margin-bottom: 0;">Tax Reimbursement:</h4>
+    <span>MOBILITY SQR’s tax equalization program is designed to ensure you pay an amount of income tax that is
+                comparable to what you would pay if you resided and worked in the {% for add in emp_add %}
+        {{add.country}}{% endfor %}. To accomplish this, HOME
+                COUNTRY hypothetical taxes will be subtracted from your salary, bonus payments and other
+                employment-related
+                income (but not from your assignment allowances) while on assignment. MOBILITY SQR will pay any HOST
+                COUNTRY
+                taxes or prepayments of estimated taxes on your behalf.</span>
+    <p>Under MOBILITY SQR's program, the following income is tax equalized: employment-related income (base
+        salary,
+        bonus, stock options, assignment allowances, etc.) and a portion of your outside income up to 15 percent
+        of
+        your earned-income from employment (i.e. excluding assignment related compensation). If your outside
+        income
+        exceeds the amount for which MOBILITY SQR provides tax equalization, the actual tax on such outside
+        income
+        is your responsibility and will be charged to you as part of the annual hypothetical tax adjustment
+        mentioned below.</p>
+    <p>Tax preparation services will be available to you, at MOBILITY SQR’s expense, through the Company’s
+        authorized tax service provider. The tax advisor will advise you and MOBILITY SQR of any adjustment to
+        your
+        hypothetical tax liability, based on your {% for add in emp_add %}
+        {{add.country}}{% endfor %} tax returns as filed, or as prepared on a
+        hypothetical basis. Your hypothetical tax will be subject to annual review, based on data from a
+        Company-designated tax provider.</p>
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+	</br>
+	</br>
+	</br>
+	<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+    <h4 style="margin-bottom: 0;">Employee Benefits:</h4>
+    <span>The Company will maintain your current participation in your home country benefit plans where
+                possible. Both
+                you and the Company will continue contributions to the {% for add in emp_add %}
+        {{add.country}}{% endfor %} social security programs, while
+                permitted by law.</span>
+    <p>Please contact your home country benefit helpdesk (if applicable) for information on how your benefits
+        will
+        work whilst on assignment.</p>
+    <p><b>US OUTBOUND ONLY</b>-Please contact the US Service Center at (877) 612-2211 before the departure of
+        your
+        assignment to understand how Cigna International and other benefit plans will work overseas. Should you
+        need
+        to contact the US Service Center while on assignment, you may call +1(703) 318-2800.</p>
+
+    <p><b>UK OUTBOUND ONLY</b>- You will be eligible to participate in home country (U.K.) benefit plans where
+        possible,
+        including the “My Choices” benefits program. Your expatriation is a Lifestyle Event under My Choicesand
+        a
+        fact sheet will be provided which explains the benefits that operate differently under My Choices for
+        expatriates. Please contact the My Choices Helpdesk on 0844 414 1288 or via email on <span
+                style="color: blue;text-decoration: underline;text-underline-position: under;">Mobility
+                    SQRmychoices@mobilitysqr.com</span> within one month of your expatriation if you wish to take
+        advantage of the
+        Lifestyle Event.</p>
+
+    <h4 style="margin-bottom: 0;">Emergency Assistance:</h4>
+    <span>National Center for Crisis and Continuity Coordination (NC4) assistance will be provided to all
+                employees
+                and dependents on an international assignment.</span>
+
+    <p>This will be discussed at your orientation. In the event of an emergency or crisis situation while
+        travelling, please save and use any one of these crisis hotlines to report your status and request
+        assistance:</p>
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+	</br>
+	<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+    <div style="margin-left: 6%;">
+        <div style="width: 27%;float: left;">Americas</div>
+        <div>0121 408 916 9756</div>
+        <div style="width: 27%;float: left;">Europe, Middle East, Africa</div>
+        <div>0121 203 450 6163</div>
+        <div style="width: 27%;float: left;">Asia Pacific</div>
+        <div>0121 3 6207 4581</div>
+    </div>
+
+    <p>Please ensure you identify yourself as a MOBILITY SQR employee.</p>
+
+    <h4 style="margin-bottom: 0;">Relocation:</h4>
+    <span>The Company will provide you and your eligible dependantswith economy-class airfare and will reimburse
+                travel expenses to your new location. If your long-term housing arrangements are not confirmed by the
+                time
+                you reach your location of assignment, you will be given a budget of XX to apply towards the cost of
+                temporary accommodations. These reimbursements will cease when you move into long-term housing and begin
+                to
+                receive cost-of-living and housing differentials.</span>
+
+    <p>The Company will pay the cost of shipping a size D container (approximately 400 lbs) of personal effects
+        via
+        airfreight and a 20 foot container via sea for you and your eligible dependants</p>
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+	<p>An unaccountable taxable relocation allowance of XX will be paid to cover miscellaneous expenses not
+        specifically covered by the Policy. This allowance will be paid to you through payroll following the
+        signature of this letter and start of your assignment.</p>
+
+    <p>Upon completion of your assignment, you will be eligible for relocation benefits in connection with your
+        transfer back to the HOME COUNTRY in accordance with MOBILITY SQR's Long Term Expatriate Policy. You
+        will be
+        entitled to the same allowable air shipment, and your unaccountable repatriation allowance will be XX
+    </p>
+
+    <h4 style="margin-bottom: 0;">Home Leave Expense Reimbursement:</h4>
+    <span>On an annual basis, the Company will reimburse certain expenses if your accrued vacation is used to
+                travel
+                back to the {% for add in emp_add %}
+        {{add.country}}{% endfor %}. MOBILITY SQR will reimburse the cost of(number of approved flights)XX
+                round-trip,
+                economy class tickets and ground transportation expenses for you and your eligible dependants. Expenses
+                are
+                reimbursed only for travel to your city of origin. If possible, home leave should be scheduled to
+                coincide
+                with a business trip to the {% for add in emp_add %}
+        {{add.country}}{% endfor %} to minimize overall travel costs.</span>
+
+    <h4 style="margin-bottom: 0;"> Work Schedules/Holidays/Vacation:</h4>
+    <span>You will observe the work schedule in effect at your place of assignment. Public holidays will be
+                observed
+                in accordance with the customary business practices in HOST COUNTRY. You will accrue vacation based on
+                the
+                HOME COUNTRY vacation schedule.</span>
+
+    <h4 style="margin-bottom: 0;"> Termination: </h4>
+    <span>If the Company should terminate your employment for any reason other than for cause, you will be
+                reimbursed
+                for economy class airfare back to your {% for add in emp_add %}
+        {{add.country}}{% endfor %} for you and your eligible dependants. In addition,
+                the
+                Company will pay for a size D container (approximately 400 lbs) of personal effects via airfreight and a
+                20
+                foot container via sea.</span>
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+<div style="background-color: #fff; padding: 15px;">
+<img src="http://172.104.183.68/mobilitysqrs_staging/templates/logo.png" />
+    <hr style="border-width: 1.1px!important;">
+    <h4 style="margin-bottom: 0;">Documentation:</h4>
+    <span>The terms and conditions of this assignment are subject to the proper legal documents being obtained
+                from
+                the relevant immigration authorities (i.e., work permit, visas), which authorize you to work and reside
+                in
+                HOST COUNTRY. The company will reimburse you for costs associated with obtaining documentation required
+                for
+                this assignment. You will not commence work in the assignment country until proper visas or work permits
+                have been received.</span>
+    <p>All other terms and conditions of your assignment not specifically covered by this Letter of Assignment
+        shall be governed by the MOBILITY SQR Long Term International Assignment Policy and by the general terms
+        and
+        conditions, which govern the employment of other employees.</p>
+    <p>At the end of this assignment, MOBILITY SQR will repatriate you to your {% for add in emp_add %}
+        {{add.country}}{% endfor %} and make every
+        effort
+        to find suitable alternative employment with MOBILITY SQR in your {% for add in emp_add %}
+        {{add.country}}{% endfor %}.</p>
+    <p>Signature of this letter constitutes agreement with, and acceptance of the assignment terms as outlined
+        above. Please let us know if you have questions regarding the terms and conditions of this assignment.
+    </p>
+    <!-- <div align="center">
+        <!– this can be changed to "left" if preferred–>
+            Regards <br /><br /><br />
+            Mr. Mick Karma
+    </div> -->
+	<p>All other terms and conditions of your assignment not specifically covered by this Letter of Assignment
+        shall be governed by the MOBILITY SQR Long Term International Assignment Policy and by the general terms
+        and
+        conditions, which govern the employment of other employees.</p>
+    <p>At the end of this assignment, MOBILITY SQR will repatriate you to your {% for add in emp_add %}
+        {{add.country}}{% endfor %} and make every
+        effort
+        to find suitable alternative employment with MOBILITY SQR in your {% for add in emp_add %}
+        {{add.country}}{% endfor %}.</p>
+    <p>Signature of this letter constitutes agreement with, and acceptance of the assignment terms as outlined
+        above. Please let us know if you have questions regarding the terms and conditions of this assignment.
+    </p>
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Legal Entity </div>
+	
+	<div>Signature:___________________________________ &nbsp;&nbsp; Date:_________________</div>
+	<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Assignee Manager Name <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignee Manager Legal Entity </div>
+
+
+    <p style="margin-top: 8%;">cc: Mobility SQR</p>
+	
+	<div align="center" style="height: 10%;position: relative;">
+        <div style="position: absolute;bottom: 1%;width: 100%;">
+            <hr style="border-width: 1.1px!important;">
+            246, Phase IV, Udyog Vihar,
+Gurugram, Haryana-122016 (India)<br>
+            Tel: +91 97111 89970
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

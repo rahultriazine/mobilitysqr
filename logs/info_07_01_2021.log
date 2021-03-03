@@ -1,0 +1,185 @@
+INFO|07/Jan/2021 11:38:13|basehttp|2780|140637447247616|"POST /api/login/ HTTP/1.1" 200 441
+ERROR|07/Jan/2021 11:38:32|log|2780|140637447247616|Internal Server Error: /get_upcoming_travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'emp_email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 2419, in get
+    travel_request = self.get_queryset(request.GET["emp_email"],request.GET["org_id"])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'emp_email'
+ERROR|07/Jan/2021 11:38:32|basehttp|2780|140637447247616|"GET /get_upcoming_travel_request/ HTTP/1.1" 500 17566
+INFO|07/Jan/2021 11:39:40|basehttp|2780|140637447247616|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:41|basehttp|2780|140637447247616|"POST /api/login/ HTTP/1.1" 200 441
+INFO|07/Jan/2021 11:39:41|basehttp|2780|140637447247616|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:42|basehttp|2780|140637447247616|"POST /emoloyeeinfo/ HTTP/1.1" 200 1415
+INFO|07/Jan/2021 11:39:43|basehttp|2780|140637447247616|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:43|basehttp|2780|140637438330624|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:43|basehttp|2780|140637447247616|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:43|basehttp|2780|140637447247616|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 48447
+INFO|07/Jan/2021 11:39:43|basehttp|2780|140637447247616|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|07/Jan/2021 11:39:44|basehttp|2780|140637438330624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+INFO|07/Jan/2021 11:39:54|basehttp|2780|140637447247616|"OPTIONS /getemoloyeedata/?employee=div944 HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:54|basehttp|2780|140637447247616|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:54|basehttp|2780|140637447247616|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:54|basehttp|2780|140637447247616|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:54|basehttp|2780|140637447247616|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:54|basehttp|2780|140637438330624|"POST /emoloyeeinfo/ HTTP/1.1" 200 1415
+INFO|07/Jan/2021 11:39:55|basehttp|2780|140637447247616|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:55|basehttp|2780|140637353539328|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:55|basehttp|2780|140637438330624|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:55|basehttp|2780|140637345146624|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:55|basehttp|2780|140637353539328|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:55|basehttp|2780|140637336753920|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:55|basehttp|2780|140637438330624|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637345146624|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637336753920|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637447247616|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637328361216|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637328361216|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637353539328|"GET /getemoloyeedata/?employee=div944 HTTP/1.1" 200 7805
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637328361216|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|07/Jan/2021 11:39:56|basehttp|2780|140637353539328|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637353539328|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637328361216|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637328361216|"OPTIONS /get_national_id/?country=Afghanistan HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637328361216|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637328361216|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637328361216|"OPTIONS /get_state_master/?country_id=9 HTTP/1.1" 200 0
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637328361216|"GET /get_national_id/?country=Afghanistan HTTP/1.1" 200 499
+INFO|07/Jan/2021 11:39:57|basehttp|2780|140637353539328|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|07/Jan/2021 11:39:58|basehttp|2780|140637353539328|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+INFO|07/Jan/2021 11:39:58|basehttp|2780|140637353539328|"GET /get_state_master/?country_id=9 HTTP/1.1" 200 1712
+ERROR|07/Jan/2021 11:40:14|log|2780|140637328361216|Internal Server Error: /get_upcoming_travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 2419, in get
+    travel_request = self.get_queryset(request.GET["emp_email"],request.GET["org_id"])
+TypeError: get_queryset() missing 1 required positional argument: 'org_id'
+ERROR|07/Jan/2021 11:40:14|basehttp|2780|140637328361216|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 500 17342
+ERROR|07/Jan/2021 11:40:27|log|2780|140637328361216|Internal Server Error: /get_upcoming_travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 2419, in get
+    travel_request = self.get_queryset(request.GET["emp_email"],request.GET["org_id"])
+TypeError: get_queryset() missing 1 required positional argument: 'org_id'
+ERROR|07/Jan/2021 11:40:27|basehttp|2780|140637328361216|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 500 17342
+INFO|07/Jan/2021 11:40:53|basehttp|2988|140341373957888|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 12140
+INFO|07/Jan/2021 11:41:39|basehttp|3004|139846781105920|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 28667
+ERROR|07/Jan/2021 12:05:53|exception|3004|139846781105920|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 12:05:53|log|3004|139846781105920|Bad Request: /manager/html
+WARNING|07/Jan/2021 12:05:53|basehttp|3004|139846781105920|"GET /manager/html HTTP/1.1" 400 62883
+WARNING|07/Jan/2021 12:12:23|log|5393|139770513643264|Unauthorized: /get_upcoming_travel_request/
+WARNING|07/Jan/2021 12:12:23|basehttp|5393|139770513643264|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|07/Jan/2021 12:12:34|basehttp|5393|139770513643264|"POST /api/login/ HTTP/1.1" 200 441
+INFO|07/Jan/2021 12:12:50|basehttp|5393|139770513643264|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 28054
+INFO|07/Jan/2021 12:14:41|basehttp|5533|140416936142592|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 11922
+INFO|07/Jan/2021 12:14:57|basehttp|5533|140416936142592|"GET / HTTP/1.1" 200 44
+INFO|07/Jan/2021 12:14:57|basehttp|5533|140416936142592|"GET / HTTP/1.1" 200 44
+INFO|07/Jan/2021 12:15:57|basehttp|5568|140065981097728|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 11922
+INFO|07/Jan/2021 12:16:13|basehttp|5568|140065981097728|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 11922
+INFO|07/Jan/2021 12:16:49|basehttp|5568|140065981097728|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 11922
+INFO|07/Jan/2021 12:17:25|basehttp|5626|140630589314816|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 11922
+WARNING|07/Jan/2021 12:19:15|log|5802|140636227282688|Unauthorized: /get_upcoming_travel_request/
+WARNING|07/Jan/2021 12:19:15|basehttp|5802|140636227282688|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|07/Jan/2021 12:19:19|basehttp|5802|140636227282688|"POST /api/login/ HTTP/1.1" 200 441
+INFO|07/Jan/2021 12:19:28|basehttp|5802|140636227282688|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|07/Jan/2021 12:19:30|basehttp|5802|140636227282688|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|07/Jan/2021 12:19:34|basehttp|5802|140636227282688|"GET /get_upcoming_travel_request/?emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 48
+WARNING|07/Jan/2021 12:32:36|log|6167|140105205413632|Unauthorized: /get_add/travel_request/
+WARNING|07/Jan/2021 12:32:36|basehttp|6167|140105205413632|"GET /get_add/travel_request/?emp_email=div944&org_id=ORG150866&travel_req_status=2 HTTP/1.1" 401 183
+INFO|07/Jan/2021 12:32:40|basehttp|6167|140105205413632|"POST /api/login/ HTTP/1.1" 200 441
+INFO|07/Jan/2021 12:32:56|basehttp|6167|140105205413632|"GET /get_add/travel_request/?emp_email=div944&org_id=ORG150866&travel_req_status=2 HTTP/1.1" 200 26538
+INFO|07/Jan/2021 12:33:38|basehttp|6167|140105205413632|"GET /get_add/travel_request/?emp_email=div944&org_id=ORG150866&travel_req_status= HTTP/1.1" 200 40760
+WARNING|07/Jan/2021 12:34:43|log|6167|140105205413632|Unauthorized: /get_add/travel_request/
+WARNING|07/Jan/2021 12:34:43|log|6167|140105117857536|Unauthorized: /get_action_status/
+WARNING|07/Jan/2021 12:34:43|basehttp|6167|140105205413632|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+WARNING|07/Jan/2021 12:34:43|basehttp|6167|140105117857536|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|07/Jan/2021 12:34:43|basehttp|6167|140105117857536|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|07/Jan/2021 12:34:43|log|6167|140105117857536|Unauthorized: /get_add/travel_request/
+WARNING|07/Jan/2021 12:34:43|log|6167|140105109464832|Unauthorized: /get_action_status/
+INFO|07/Jan/2021 12:34:43|basehttp|6167|140105205413632|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|07/Jan/2021 12:34:43|basehttp|6167|140105117857536|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+WARNING|07/Jan/2021 12:34:43|basehttp|6167|140105109464832|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|07/Jan/2021 12:34:43|basehttp|6167|140105109464832|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|07/Jan/2021 12:34:44|log|6167|140105117857536|Unauthorized: /get_add/travel_request/
+WARNING|07/Jan/2021 12:34:44|log|6167|140105101072128|Unauthorized: /get_action_status/
+INFO|07/Jan/2021 12:34:44|basehttp|6167|140105109464832|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|07/Jan/2021 12:34:44|basehttp|6167|140105092679424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|07/Jan/2021 12:34:44|basehttp|6167|140105205413632|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|07/Jan/2021 12:34:44|basehttp|6167|140105117857536|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+WARNING|07/Jan/2021 12:34:44|basehttp|6167|140105101072128|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|07/Jan/2021 12:34:44|basehttp|6167|140105101072128|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|07/Jan/2021 12:34:44|basehttp|6167|140105117857536|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|07/Jan/2021 12:34:45|basehttp|6167|140105101072128|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|07/Jan/2021 12:34:46|basehttp|6167|140105117857536|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 26538
+ERROR|07/Jan/2021 13:13:29|exception|6167|140105101072128|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 13:13:29|log|6167|140105101072128|Bad Request: /manager/html
+WARNING|07/Jan/2021 13:13:29|basehttp|6167|140105101072128|"GET /manager/html HTTP/1.1" 400 62886
+WARNING|07/Jan/2021 14:38:44|log|6167|140105101072128|Not Found: /login
+WARNING|07/Jan/2021 14:38:44|basehttp|6167|140105101072128|"GET /login HTTP/1.0" 404 43719
+WARNING|07/Jan/2021 14:38:44|log|6167|140105101072128|Not Found: /manager/html
+WARNING|07/Jan/2021 14:38:44|basehttp|6167|140105101072128|"GET /manager/html HTTP/1.0" 404 43740
+ERROR|07/Jan/2021 14:40:29|exception|6167|140105101072128|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 14:40:29|log|6167|140105101072128|Bad Request: /manager/html
+WARNING|07/Jan/2021 14:40:29|basehttp|6167|140105101072128|"GET /manager/html HTTP/1.1" 400 62887
+ERROR|07/Jan/2021 14:46:42|exception|6167|140105101072128|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|07/Jan/2021 14:46:42|log|6167|140105101072128|Bad Request: /manager/html
+WARNING|07/Jan/2021 14:46:42|basehttp|6167|140105101072128|"GET /manager/html HTTP/1.1" 400 62885
+WARNING|07/Jan/2021 15:09:52|log|6167|140105101072128|Not Found: /http:/www.bing.com/
+WARNING|07/Jan/2021 15:09:52|basehttp|6167|140105101072128|"GET http://www.bing.com/ HTTP/1.1" 404 1665
+INFO|07/Jan/2021 15:10:22|basehttp|6167|140105101072128|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|07/Jan/2021 15:10:22|basehttp|6167|140105101072128|" " 400 -
+INFO|07/Jan/2021 15:10:32|basehttp|6167|140105117857536|code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00P')
+WARNING|07/Jan/2021 15:10:32|basehttp|6167|140105117857536|" PkÈ " 400 -

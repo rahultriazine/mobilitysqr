@@ -1,0 +1,231 @@
+# This is an auto-generated Django model module.
+# You'll have to do the following manually to clean this up:
+#   * Rearrange models' order
+#   * Make sure each model has one field with primary_key=True
+#   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
+#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+# Feel free to rename the models, but don't rename db_table values or field names.
+from django.db import models
+
+
+class ApiUser(models.Model):
+    password = models.CharField(max_length=128)
+    last_login = models.DateTimeField(blank=True, null=True)
+    is_superuser = models.BooleanField()
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=150)
+    is_staff = models.BooleanField()
+    is_active = models.BooleanField()
+    date_joined = models.DateTimeField()
+    username = models.CharField(unique=True, max_length=100)
+    email = models.CharField(unique=True, max_length=254)
+    create_time = models.CharField(max_length=100, blank=True, null=True)
+    otp = models.IntegerField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'api_user'
+# Unable to inspect table 'api_user_groups'
+# The error was: <class 'pyodbc.Error'> returned a result with an error set
+# Unable to inspect table 'api_user_user_permissions'
+# The error was: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLPrepare)')
+# Unable to inspect table 'auth_group'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'auth_group_permissions'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'auth_permission'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'authtoken_token'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'django_admin_log'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'django_content_type'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'django_migrations'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'django_session'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_address'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_emails'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_emergency_contact'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_nationalid'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_org_info'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_passport_detail'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_phones'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_employee_visa_detail'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'employee_userinfo'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'letter_letters'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_acedmic_title'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_activity_log'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_address_type'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_approval_hierarchy'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_assignment_extension'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_assignment_group'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_assignment_status'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_assignment_type'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_city'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_country'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_country_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_country_policy'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_create_assignment'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_currency'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_currency_conversion'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_currency_conversion_history'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_department'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_designation'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_dial_code'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_email_type'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_gender'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_language'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_location_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_marital_status'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_name_suffix'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_national_id'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_notification'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_organization'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_organization_location'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_per_diem'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_phone_type'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_project'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_relation'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_request_approvals'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_request_status'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_role'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_salutation'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_secondory_assignment'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_state_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_status_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_taxgrid'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_taxgrid_country'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_taxgrid_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_termination_reasons'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_ticket_status_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_vendor'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_vendor_category'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_vendor_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_visa'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_visa_document_checklist'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_visa_master'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_visa_master_applicable'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'master_visa_purpose'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'superadmin_organization_branches'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'superadmin_organization_users'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'superadmin_organizations'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'superadmin_sub_organization_branches'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'sysdiagrams'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_address3'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_emails3'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_emergency_contact3'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_nationalid'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_org_info'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_passport_detail'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_phones3'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_employee_visa_detail'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'tmp_personal_info3'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_assignment_travel_request_status'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_assignment_travel_tax_grid'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_travel_request'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_travel_request_action_history'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_travel_request_dependent'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_travel_request_dependent_draft'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_travel_request_details'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_travel_request_details_draft'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_travel_request_draft'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'travel_visa_request_action_history'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'visa_visa_request'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'visa_visa_request_document'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'visa_visa_request_document_draft'
+# The error was: The cursor's connection has been closed.
+# Unable to inspect table 'visa_visa_request_draft'
+# The error was: The cursor's connection has been closed.

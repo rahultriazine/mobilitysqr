@@ -1,0 +1,16 @@
+{% autoescape off %}
+Hi <span style="font-size: medium;font-weight: 700;">{{preferred_first_name}}</span>,
+<br>
+
+<p>Your Visa request {{visa_request_id}} has been rejected by {{approver_name}}. Please check the reason below:</p>
+
+
+<br>
+<p><span style="font-size: small;font-weight: 700;">Rejection Reason: </span>
+<p>{{msg}}</p>
+<br>
+<p><span style="font-size: medium;font-weight: 700;">Thanks,</span></p>
+<p>Mobility Team</p>
+
+<p style="font-size: medium;font-weight: 600;text-align: center;">This is an automatically generated email, please do not reply.</p>
+{% endautoescape %}

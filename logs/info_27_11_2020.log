@@ -1,0 +1,1338 @@
+WARNING|27/Nov/2020 12:22:18|log|30856|140323559708416|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 12:22:18|basehttp|30856|140323559708416|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:22:18|basehttp|30856|140323559708416|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|27/Nov/2020 12:22:19|log|30856|140323559708416|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 12:22:19|basehttp|30856|140323559708416|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:22:19|basehttp|30856|140323559708416|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:22:19|basehttp|30856|140323559708416|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 12:22:19|log|30856|140323559708416|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 12:22:19|basehttp|30856|140323559708416|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:22:21|basehttp|30856|140323559708416|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:22:21|basehttp|30856|140323559708416|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:26:52|basehttp|30856|140323551053568|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+WARNING|27/Nov/2020 12:27:23|log|30856|140323551053568|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 12:27:23|basehttp|30856|140323551053568|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:27:23|basehttp|30856|140323551053568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 12:27:24|log|30856|140323551053568|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 12:27:24|basehttp|30856|140323551053568|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:27:24|basehttp|30856|140323551053568|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:27:25|basehttp|30856|140323559708416|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:28:15|basehttp|30856|140323559708416|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:29:11|basehttp|30856|140323559708416|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:11|basehttp|30856|140323551053568|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:11|basehttp|30856|140323541612288|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:11|basehttp|30856|140323533219584|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:11|basehttp|30856|140323559708416|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:11|basehttp|30856|140323524826880|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:12|basehttp|30856|140323559708416|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:12|basehttp|30856|140323524826880|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:12|basehttp|30856|140323533219584|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:12|basehttp|30856|140323524826880|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:12|basehttp|30856|140323533219584|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|27/Nov/2020 12:29:12|basehttp|30856|140323524826880|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|27/Nov/2020 12:29:14|basehttp|30856|140323524826880|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|27/Nov/2020 12:29:14|basehttp|30856|140323533219584|"GET /get_post_address/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:29:14|basehttp|30856|140323524826880|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|27/Nov/2020 12:29:14|basehttp|30856|140323559708416|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|27/Nov/2020 12:29:15|basehttp|30856|140323559708416|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|27/Nov/2020 12:29:15|basehttp|30856|140323524826880|"GET /get_post_email/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:29:15|basehttp|30856|140323533219584|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|27/Nov/2020 12:29:15|basehttp|30856|140323533219584|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|27/Nov/2020 12:29:23|basehttp|30856|140323533219584|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:24|basehttp|30856|140323533219584|"POST /api/login/ HTTP/1.1" 200 441
+INFO|27/Nov/2020 12:29:24|basehttp|30856|140323533219584|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:25|basehttp|30856|140323533219584|"POST /emoloyeeinfo/ HTTP/1.1" 200 1382
+INFO|27/Nov/2020 12:29:25|basehttp|30856|140323524826880|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:25|basehttp|30856|140323533219584|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:29:26|basehttp|30856|140323533219584|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:29:27|basehttp|30856|140323524826880|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com HTTP/1.1" 200 39670
+INFO|27/Nov/2020 12:29:42|basehttp|30856|140323533219584|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|27/Nov/2020 12:29:42|basehttp|30856|140323524826880|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|27/Nov/2020 12:29:45|basehttp|30856|140323524826880|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|27/Nov/2020 12:29:45|basehttp|30856|140323533219584|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|27/Nov/2020 12:29:45|basehttp|30856|140323559708416|"GET /get_post_address/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:29:45|basehttp|30856|140323524826880|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|27/Nov/2020 12:29:45|basehttp|30856|140323515123456|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|27/Nov/2020 12:29:45|basehttp|30856|140323551053568|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|27/Nov/2020 12:29:46|basehttp|30856|140323551053568|"GET /get_post_email/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:29:46|basehttp|30856|140323551053568|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|27/Nov/2020 12:29:46|basehttp|30856|140323551053568|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|27/Nov/2020 12:29:46|basehttp|30856|140323515123456|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|27/Nov/2020 12:29:55|basehttp|30856|140323515123456|"OPTIONS /emoloyeedetails/?employee=d HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:55|basehttp|30856|140323515123456|"OPTIONS /emoloyeedetails/?employee=di HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:56|basehttp|30856|140323524826880|"OPTIONS /emoloyeedetails/?employee=div HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:29:57|basehttp|30856|140323515123456|"GET /emoloyeedetails/?employee=d HTTP/1.1" 200 12327
+INFO|27/Nov/2020 12:29:59|basehttp|30856|140323551053568|"GET /emoloyeedetails/?employee=di HTTP/1.1" 200 6246
+INFO|27/Nov/2020 12:30:00|basehttp|30856|140323524826880|"GET /emoloyeedetails/?employee=div HTTP/1.1" 200 6246
+INFO|27/Nov/2020 12:33:36|basehttp|31656|139735418795776|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|27/Nov/2020 12:33:36|basehttp|31656|139735639062272|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|27/Nov/2020 12:33:36|basehttp|31656|139735630407424|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|27/Nov/2020 12:33:36|basehttp|31656|139735402010368|"GET /get_post_address/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:33:36|basehttp|31656|139735410403072|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|27/Nov/2020 12:33:36|basehttp|31656|139735647454976|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:33:37|basehttp|31656|139735410403072|"GET /get_post_email/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:33:37|basehttp|31656|139735402010368|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|27/Nov/2020 12:33:37|basehttp|31656|139735647454976|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|27/Nov/2020 12:33:37|basehttp|31656|139735639062272|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|27/Nov/2020 12:33:37|basehttp|31656|139735639062272|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735647454976|"GET /get_post_address/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735402010368|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735630407424|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735410403072|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735418795776|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735639062272|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735639062272|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|27/Nov/2020 12:34:08|basehttp|31656|139735418795776|"GET /get_post_email/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:34:09|basehttp|31656|139735418795776|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|27/Nov/2020 12:34:09|basehttp|31656|139735418795776|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|27/Nov/2020 12:34:10|basehttp|31656|139735418795776|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|27/Nov/2020 12:34:19|basehttp|31656|139735418795776|"OPTIONS /emoloyeedetails/?employee=d&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:34:19|basehttp|31656|139735418795776|"GET /emoloyeedetails/?employee=d&org_id=ORG150866 HTTP/1.1" 200 12531
+INFO|27/Nov/2020 12:34:58|basehttp|31656|139735418795776|"POST /api/login/ HTTP/1.1" 200 438
+INFO|27/Nov/2020 12:34:59|basehttp|31656|139735418795776|"POST /emoloyeeinfo/ HTTP/1.1" 200 1259
+INFO|27/Nov/2020 12:34:59|basehttp|31656|139735418795776|"OPTIONS /orgcount/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:34:59|basehttp|31656|139735639062272|"OPTIONS /get_post_notification/?email=mobilitysqradmin@gmail.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:35:00|basehttp|31656|139735639062272|"GET /orgcount/ HTTP/1.1" 200 83
+INFO|27/Nov/2020 12:35:00|basehttp|31656|139735639062272|"GET /get_post_notification/?email=mobilitysqradmin@gmail.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 12:35:02|basehttp|31656|139735639062272|"OPTIONS /organisations-list/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:35:02|basehttp|31656|139735639062272|"GET /organisations-list/ HTTP/1.1" 200 4693
+INFO|27/Nov/2020 12:35:17|basehttp|31656|139735639062272|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|27/Nov/2020 12:35:24|basehttp|31656|139735639062272|"GET /organisations-list/ HTTP/1.1" 200 4693
+INFO|27/Nov/2020 12:35:29|basehttp|31656|139735639062272|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|27/Nov/2020 12:35:30|basehttp|31656|139735639062272|"OPTIONS /get_state_master/?country_id=101 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:35:31|basehttp|31656|139735639062272|"GET /get_state_master/?country_id=101 HTTP/1.1" 200 8604
+INFO|27/Nov/2020 12:35:40|basehttp|31656|139735639062272|"GET /organisations-list/ HTTP/1.1" 200 4693
+INFO|27/Nov/2020 12:35:43|basehttp|31656|139735639062272|"OPTIONS /branch-list/?org_id=2 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:35:43|basehttp|31656|139735639062272|"GET /branch-list/?org_id=2 HTTP/1.1" 200 1394
+INFO|27/Nov/2020 12:36:22|basehttp|31656|139735639062272|"POST /api/login/ HTTP/1.1" 200 438
+INFO|27/Nov/2020 12:36:23|basehttp|31656|139735639062272|"POST /emoloyeeinfo/ HTTP/1.1" 200 1259
+INFO|27/Nov/2020 12:36:23|basehttp|31656|139735639062272|"GET /get_post_notification/?email=mobilitysqradmin@gmail.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 12:36:23|basehttp|31656|139735639062272|"GET /orgcount/ HTTP/1.1" 200 83
+INFO|27/Nov/2020 12:36:26|basehttp|31656|139735639062272|"GET /organisations-list/ HTTP/1.1" 200 4693
+INFO|27/Nov/2020 12:36:58|basehttp|31656|139735639062272|"POST /api/login/ HTTP/1.1" 200 441
+INFO|27/Nov/2020 12:36:59|basehttp|31656|139735639062272|"POST /emoloyeeinfo/ HTTP/1.1" 200 1382
+INFO|27/Nov/2020 12:36:59|basehttp|31656|139735410403072|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:36:59|basehttp|31656|139735418795776|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:37:01|basehttp|31656|139735639062272|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com HTTP/1.1" 200 39670
+INFO|27/Nov/2020 12:37:03|basehttp|31656|139735418795776|"GET /get_org__count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|27/Nov/2020 12:37:04|basehttp|31656|139735418795776|"GET /get_org__count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|27/Nov/2020 12:37:07|basehttp|31656|139735639062272|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|27/Nov/2020 12:37:07|basehttp|31656|139735410403072|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|27/Nov/2020 12:37:07|basehttp|31656|139735418795776|"GET /get_post_gender/ HTTP/1.1" 200 2072
+INFO|27/Nov/2020 12:37:07|basehttp|31656|139735630407424|"GET /get_post_address/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:37:07|basehttp|31656|139735391782656|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|27/Nov/2020 12:37:07|basehttp|31656|139735383389952|"GET /get_country_master/?country= HTTP/1.1" 200 58723
+INFO|27/Nov/2020 12:37:09|basehttp|31656|139735383389952|"GET /get_post_email/ HTTP/1.1" 200 1684
+INFO|27/Nov/2020 12:37:09|basehttp|31656|139735391782656|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|27/Nov/2020 12:37:09|basehttp|31656|139735391782656|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|27/Nov/2020 12:37:09|basehttp|31656|139735391782656|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|27/Nov/2020 12:37:11|basehttp|31656|139735391782656|"OPTIONS /emoloyeedetails/?employee=divyanshu@gmail.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:12|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=divyanshu@gmail.com&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:12|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=divyanshu@gmail.com&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:14|basehttp|31656|139735391782656|"OPTIONS /emoloyeedetails/?employee=divyanshu@gmail.co&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:14|basehttp|31656|139735383389952|"OPTIONS /emoloyeedetails/?employee=divyanshu@gmail.c&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:15|basehttp|31656|139735383389952|"OPTIONS /emoloyeedetails/?employee=divyanshu@gmail.&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:15|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=divyanshu@gmail.co&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=divyanshu@gmail.c&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735391782656|"OPTIONS /emoloyeedetails/?employee=divyanshu@gmail&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735391782656|"OPTIONS /emoloyeedetails/?employee=divyanshu@gmai&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735383389952|"GET /emoloyeedetails/?employee=divyanshu@gmail.&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735391782656|"OPTIONS /emoloyeedetails/?employee=divyanshu@gma&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735391782656|"OPTIONS /emoloyeedetails/?employee=divyanshu@gm&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735383389952|"OPTIONS /emoloyeedetails/?employee=divyanshu@g&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:16|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=divyanshu@gmail&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:17|basehttp|31656|139735418795776|"OPTIONS /emoloyeedetails/?employee=divyanshu@&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:17|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=divyanshu@gmai&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:17|basehttp|31656|139735630407424|"OPTIONS /emoloyeedetails/?employee=divyanshu&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:18|basehttp|31656|139735383389952|"GET /emoloyeedetails/?employee=divyanshu@gma&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:18|basehttp|31656|139735418795776|"GET /emoloyeedetails/?employee=divyanshu@gm&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:19|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=divyanshu@g&org_id=ORG150866 HTTP/1.1" 200 42
+INFO|27/Nov/2020 12:37:19|basehttp|31656|139735630407424|"GET /emoloyeedetails/?employee=divyanshu@&org_id=ORG150866 HTTP/1.1" 200 1417
+INFO|27/Nov/2020 12:37:19|basehttp|31656|139735383389952|"GET /emoloyeedetails/?employee=divyanshu&org_id=ORG150866 HTTP/1.1" 200 2679
+INFO|27/Nov/2020 12:37:53|basehttp|31656|139735383389952|"OPTIONS /getemoloyeedata/?employee=Emp112 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:54|basehttp|31656|139735383389952|"GET /getemoloyeedata/?employee=Emp112 HTTP/1.1" 200 16947
+INFO|27/Nov/2020 12:37:55|basehttp|31656|139735630407424|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:55|basehttp|31656|139735383389952|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:55|basehttp|31656|139735391782656|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:55|basehttp|31656|139735391782656|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:55|basehttp|31656|139735383389952|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:55|basehttp|31656|139735418795776|"GET /get_state_master/?country_id=101 HTTP/1.1" 200 8604
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735418795776|"OPTIONS /get_state_master/?country_id=96 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735418795776|"OPTIONS /get_state_master/?country_id=4 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735383389952|"OPTIONS /get_state_master/?country_id=31 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735383389952|"OPTIONS /get_national_id/?country=India HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735383389952|"OPTIONS /get_state_master/?country_id=2 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735383389952|"OPTIONS /get_national_id/?country=Canada HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735383389952|"OPTIONS /get_national_id/?country=India HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735418795776|"OPTIONS /get_national_id/?country=Bosnia%20and%20Herzegovina HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735391782656|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735418795776|"GET /get_state_master/?country_id=101 HTTP/1.1" 200 8604
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735383389952|"GET /get_state_master/?country_id=96 HTTP/1.1" 200 301
+INFO|27/Nov/2020 12:37:56|basehttp|31656|139735391782656|"GET /get_state_master/?country_id=31 HTTP/1.1" 200 303
+INFO|27/Nov/2020 12:37:57|basehttp|31656|139735391782656|"GET /get_national_id/?country=India HTTP/1.1" 200 504
+INFO|27/Nov/2020 12:37:57|basehttp|31656|139735383389952|"GET /get_state_master/?country_id=2 HTTP/1.1" 200 8426
+INFO|27/Nov/2020 12:37:57|basehttp|31656|139735418795776|"GET /get_national_id/?country=Canada HTTP/1.1" 200 506
+INFO|27/Nov/2020 12:37:57|basehttp|31656|139735418795776|"GET /get_national_id/?country=Bosnia%20and%20Herzegovina HTTP/1.1" 200 541
+INFO|27/Nov/2020 12:37:57|basehttp|31656|139735383389952|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|27/Nov/2020 12:37:58|basehttp|31656|139735383389952|"GET /get_national_id/?country=India HTTP/1.1" 200 504
+INFO|27/Nov/2020 12:37:58|basehttp|31656|139735383389952|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|27/Nov/2020 12:37:58|basehttp|31656|139735391782656|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|27/Nov/2020 12:37:59|basehttp|31656|139735391782656|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|27/Nov/2020 12:37:59|basehttp|31656|139735391782656|"GET /get_state_master/?country_id=4 HTTP/1.1" 200 990
+INFO|27/Nov/2020 12:38:01|basehttp|31656|139735391782656|"OPTIONS /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:38:01|basehttp|31656|139735391782656|"GET /emoloyeedetails/?employee=&org_id=ORG150866 HTTP/1.1" 200 12601
+INFO|27/Nov/2020 12:38:06|basehttp|31656|139735418795776|"GET /media/Koala_74ufFrT.jpg HTTP/1.1" 200 780831
+INFO|27/Nov/2020 12:38:32|basehttp|31656|139735383389952|"GET /emoloyeedetails/?employee=d&org_id=ORG150866 HTTP/1.1" 200 12531
+INFO|27/Nov/2020 12:38:32|basehttp|31656|139735383389952|"OPTIONS /emoloyeedetails/?employee=di&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:38:32|basehttp|31656|139735383389952|"GET /emoloyeedetails/?employee=di&org_id=ORG150866 HTTP/1.1" 200 2679
+INFO|27/Nov/2020 12:50:54|basehttp|32685|140304680007424|"POST /api/login/ HTTP/1.1" 200 441
+INFO|27/Nov/2020 12:50:54|basehttp|32685|140304680007424|"POST /emoloyeeinfo/ HTTP/1.1" 200 1382
+INFO|27/Nov/2020 12:50:55|basehttp|32685|140304662173440|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:50:55|basehttp|32685|140304680007424|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:50:57|basehttp|32685|140304670566144|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com HTTP/1.1" 200 39670
+INFO|27/Nov/2020 12:51:04|basehttp|32685|140304670566144|"OPTIONS /get_view_travel_request/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:04|basehttp|32685|140304680007424|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:04|basehttp|32685|140304680007424|"OPTIONS /get_travel_status_summary/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:04|basehttp|32685|140304680007424|"OPTIONS /get_active_currency/?status_type=all HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:04|basehttp|32685|140304652994304|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:51:04|basehttp|32685|140304652994304|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:05|basehttp|32685|140304670566144|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:05|basehttp|32685|140304652994304|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 12:51:05|basehttp|32685|140304652994304|"GET /assignment_travel_request_status/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 12:51:05|basehttp|32685|140304680007424|"GET /get_view_travel_request/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 3821
+INFO|27/Nov/2020 12:51:05|basehttp|32685|140304670566144|"GET /get_travel_status_summary/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 1162
+INFO|27/Nov/2020 12:51:05|basehttp|32685|140304662173440|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 12:51:06|basehttp|32685|140304662173440|"GET /assignment_travel_tax_grid/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 12:51:06|basehttp|32685|140304662173440|"OPTIONS /get_post_location/?country=Spain&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:06|basehttp|32685|140304680007424|"OPTIONS /get_create_assignment/?home=Spain&End_date=2020-11-26T13:30:00+05:30&Start_date=Thu%20Nov%2026%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=Divyanshu@mailinator.com HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:06|basehttp|32685|140304670566144|"OPTIONS /get_currency_conversion/?from_currency=EUR&to_currency= HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:51:06|basehttp|32685|140304670566144|"GET /get_post_location/?country=Spain&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 12:51:06|basehttp|32685|140304680007424|"GET /get_create_assignment/?home=Spain&End_date=2020-11-26T13:30:00+05:30&Start_date=Thu%20Nov%2026%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=Divyanshu@mailinator.com HTTP/1.1" 200 63
+INFO|27/Nov/2020 12:51:06|basehttp|32685|140304662173440|"GET /get_currency_conversion/?from_currency=EUR&to_currency= HTTP/1.1" 200 63
+WARNING|27/Nov/2020 12:52:01|log|32685|140304662173440|Unauthorized: /get_add/travel_request/
+WARNING|27/Nov/2020 12:52:01|basehttp|32685|140304662173440|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+WARNING|27/Nov/2020 12:52:01|log|32685|140304662173440|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 12:52:01|basehttp|32685|140304662173440|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:52:01|basehttp|32685|140304662173440|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:52:02|basehttp|32685|140304662173440|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|27/Nov/2020 12:52:02|log|32685|140304670566144|Unauthorized: /get_add/travel_request/
+WARNING|27/Nov/2020 12:52:02|log|32685|140304680007424|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 12:52:02|basehttp|32685|140304670566144|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+WARNING|27/Nov/2020 12:52:02|basehttp|32685|140304680007424|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:52:02|basehttp|32685|140304680007424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:52:02|basehttp|32685|140304680007424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:52:02|basehttp|32685|140304680007424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 12:52:02|log|32685|140304680007424|Unauthorized: /get_add/travel_request/
+WARNING|27/Nov/2020 12:52:02|log|32685|140304670566144|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 12:52:02|basehttp|32685|140304680007424|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:52:02|basehttp|32685|140304662173440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 12:52:02|basehttp|32685|140304670566144|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:52:03|basehttp|32685|140304662173440|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:52:03|basehttp|32685|140304680007424|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:52:03|basehttp|32685|140304670566144|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:52:03|basehttp|32685|140304680007424|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 17534
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304680007424|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304422528768|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304662173440|"GET /get_view_travel_request/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 3821
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304670566144|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304430921472|"GET /get_travel_status_summary/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 1162
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304652994304|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304652994304|"GET /assignment_travel_request_status/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 12:54:11|basehttp|32685|140304652994304|"GET /assignment_travel_tax_grid/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 12:54:12|basehttp|32685|140304652994304|"GET /get_post_location/?country=Spain&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 12:54:12|basehttp|32685|140304652994304|"GET /get_create_assignment/?home=Spain&End_date=2020-11-26T13:30:00+05:30&Start_date=Thu%20Nov%2026%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=Divyanshu@mailinator.com HTTP/1.1" 200 63
+INFO|27/Nov/2020 12:54:12|basehttp|32685|140304652994304|"GET /get_currency_conversion/?from_currency=EUR&to_currency= HTTP/1.1" 200 63
+INFO|27/Nov/2020 12:55:36|basehttp|32685|140304652994304|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:55:38|basehttp|32685|140304430921472|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com HTTP/1.1" 200 39670
+INFO|27/Nov/2020 12:59:21|basehttp|32685|140304430921472|"OPTIONS /get_action_status/?module=V HTTP/1.1" 200 0
+INFO|27/Nov/2020 12:59:21|basehttp|32685|140304652994304|"OPTIONS /get_add/visa_request/?visa_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|27/Nov/2020 12:59:21|log|32685|140304652994304|Unauthorized: /get_add/visa_request/
+WARNING|27/Nov/2020 12:59:21|basehttp|32685|140304652994304|"GET /get_add/visa_request/?visa_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 12:59:22|log|32685|140304652994304|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 12:59:22|basehttp|32685|140304652994304|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:59:22|basehttp|32685|140304652994304|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 12:59:22|log|32685|140304652994304|Unauthorized: /get_add/visa_request/
+WARNING|27/Nov/2020 12:59:22|basehttp|32685|140304652994304|"GET /get_add/visa_request/?visa_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 12:59:22|log|32685|140304652994304|Unauthorized: /get_action_status/
+INFO|27/Nov/2020 12:59:22|basehttp|32685|140304430921472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 12:59:22|basehttp|32685|140304652994304|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 12:59:23|basehttp|32685|140304430921472|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:59:23|basehttp|32685|140304670566144|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 12:59:23|basehttp|32685|140304430921472|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 12:59:24|basehttp|32685|140304652994304|"GET /get_add/visa_request/?visa_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 19163
+INFO|27/Nov/2020 12:59:27|basehttp|32685|140304652994304|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 12:59:28|basehttp|32685|140304430921472|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com HTTP/1.1" 200 39670
+INFO|27/Nov/2020 13:00:04|basehttp|1443|140598301959936|"OPTIONS /get_travel_status_summary/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 13:00:04|basehttp|1443|140598285174528|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|27/Nov/2020 13:00:04|basehttp|1443|140598276781824|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 13:00:04|basehttp|1443|140598268389120|"OPTIONS /get_view_travel_request/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|27/Nov/2020 13:00:04|log|1443|140598293567232|Unauthorized: /get_action_status/
+INFO|27/Nov/2020 13:00:04|basehttp|1443|140598301959936|"OPTIONS /get_active_currency/?status_type=all HTTP/1.1" 200 0
+WARNING|27/Nov/2020 13:00:04|basehttp|1443|140598293567232|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:05|log|1443|140598301959936|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 13:00:05|log|1443|140598293567232|Unauthorized: /get_view_travel_request/
+WARNING|27/Nov/2020 13:00:05|log|1443|140598268389120|Unauthorized: /assignment_travel_request_status/
+WARNING|27/Nov/2020 13:00:05|log|1443|140598285174528|Unauthorized: /get_active_currency/
+WARNING|27/Nov/2020 13:00:05|log|1443|140598276781824|Unauthorized: /get_travel_status_summary/
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598301959936|"GET /get_action_status/?module=A,T HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598293567232|"GET /get_view_travel_request/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598268389120|"GET /assignment_travel_request_status/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 13:00:05|basehttp|1443|140598259734272|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598285174528|"GET /get_active_currency/?status_type=all HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598276781824|"GET /get_travel_status_summary/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:05|log|1443|140598276781824|Unauthorized: /assignment_travel_tax_grid/
+WARNING|27/Nov/2020 13:00:05|log|1443|140598293567232|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 13:00:05|log|1443|140598285174528|Unauthorized: /get_view_travel_request/
+INFO|27/Nov/2020 13:00:05|basehttp|1443|140598259734272|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598276781824|"GET /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 13:00:05|basehttp|1443|140598301959936|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598293567232|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|27/Nov/2020 13:00:05|basehttp|1443|140598268389120|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 13:00:05|basehttp|1443|140598285174528|"GET /get_view_travel_request/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:06|log|1443|140598293567232|Unauthorized: /get_active_currency/
+INFO|27/Nov/2020 13:00:06|basehttp|1443|140598276781824|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 13:00:06|log|1443|140598285174528|Unauthorized: /get_travel_status_summary/
+WARNING|27/Nov/2020 13:00:06|basehttp|1443|140598293567232|"GET /get_active_currency/?status_type=all HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:06|log|1443|140598259734272|Unauthorized: /get_action_status/
+INFO|27/Nov/2020 13:00:06|basehttp|1443|140598268389120|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 13:00:06|basehttp|1443|140598301959936|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 13:00:06|basehttp|1443|140598285174528|"GET /get_travel_status_summary/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 13:00:06|basehttp|1443|140598259734272|"GET /get_action_status/?module=A,T HTTP/1.1" 401 183
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598301959936|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598285174528|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 13:00:07|log|1443|140598293567232|Unauthorized: /assignment_travel_tax_grid/
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598268389120|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 13:00:07|basehttp|1443|140598293567232|"GET /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598259734272|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598276781824|"GET /get_view_travel_request/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 2777
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598276781824|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598259734272|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598276781824|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 13:00:07|basehttp|1443|140598276781824|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 13:00:08|basehttp|1443|140598293567232|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 13:00:08|basehttp|1443|140598276781824|"GET /get_travel_status_summary/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 1202
+INFO|27/Nov/2020 13:00:08|basehttp|1443|140598276781824|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 13:00:08|basehttp|1443|140598276781824|"GET /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598250555136|"GET /assignment_travel_request_status/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598293567232|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598259734272|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598276781824|"GET /get_view_travel_request/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 3886
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598268389120|"GET /get_travel_status_summary/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 1162
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598268389120|"GET /assignment_travel_tax_grid/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598285174528|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598285174528|"GET /get_post_location/?country=Spain&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598268389120|"GET /get_create_assignment/?home=Spain&End_date=2020-11-26T13:30:00+05:30&Start_date=Thu%20Nov%2026%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=Divyanshu@mailinator.com HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:00:13|basehttp|1443|140598285174528|"GET /get_currency_conversion/?from_currency=EUR&to_currency= HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:00:19|basehttp|1443|140598285174528|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:00:19|basehttp|1443|140598268389120|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 13:00:19|basehttp|1443|140598259734272|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 13:00:19|basehttp|1443|140598285174528|"GET /get_view_travel_request/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 2777
+INFO|27/Nov/2020 13:00:19|basehttp|1443|140598297241344|"GET /get_travel_status_summary/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 1202
+INFO|27/Nov/2020 13:00:20|basehttp|1443|140598297241344|"GET /assignment_travel_request_status/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:00:20|basehttp|1443|140598297241344|"GET /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:00:20|basehttp|1443|140598276781824|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 13:03:26|basehttp|1746|140579056383744|"GET /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:27|basehttp|1746|140578960430848|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 13:03:27|basehttp|1746|140578952038144|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 13:03:27|basehttp|1746|140579056383744|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578968823552|"GET /get_view_travel_request/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 3886
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578943645440|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578935252736|"GET /get_travel_status_summary/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 1162
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578943645440|"GET /assignment_travel_request_status/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578935252736|"GET /assignment_travel_tax_grid/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578935252736|"GET /get_post_location/?country=Spain&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578943645440|"GET /get_create_assignment/?home=Spain&End_date=2020-11-26T13:30:00+05:30&Start_date=Thu%20Nov%2026%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=Divyanshu@mailinator.com HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:03:28|basehttp|1746|140578943645440|"GET /get_currency_conversion/?from_currency=EUR&to_currency= HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:03:30|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:03:30|basehttp|1746|140578943645440|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 13:03:30|basehttp|1746|140578935252736|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 13:03:30|basehttp|1746|140578977216256|"GET /get_view_travel_request/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 2777
+INFO|27/Nov/2020 13:03:30|basehttp|1746|140578968823552|"GET /get_travel_status_summary/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 1202
+INFO|27/Nov/2020 13:03:30|basehttp|1746|140578968823552|"GET /assignment_travel_request_status/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:30|basehttp|1746|140579056383744|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 13:03:31|basehttp|1746|140579056383744|"GET /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:34|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:03:34|basehttp|1746|140578968823552|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 13:03:34|basehttp|1746|140578977216256|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 13:03:34|basehttp|1746|140579056383744|"GET /get_view_travel_request/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 2777
+INFO|27/Nov/2020 13:03:35|basehttp|1746|140578957547264|"GET /get_travel_status_summary/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 1202
+INFO|27/Nov/2020 13:03:35|basehttp|1746|140578935252736|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 13:03:35|basehttp|1746|140578935252736|"GET /assignment_travel_request_status/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:35|basehttp|1746|140578957547264|"GET /assignment_travel_tax_grid/?travel_req_id=TR130000&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:52|basehttp|1746|140578935252736|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|27/Nov/2020 13:03:52|basehttp|1746|140578945746688|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 13:03:52|basehttp|1746|140578957547264|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 13:03:52|basehttp|1746|140578977216256|"GET /get_view_travel_request/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 3886
+INFO|27/Nov/2020 13:03:52|basehttp|1746|140578926860032|"GET /get_travel_status_summary/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 1162
+INFO|27/Nov/2020 13:03:53|basehttp|1746|140578926860032|"GET /assignment_travel_request_status/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:53|basehttp|1746|140579056383744|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|27/Nov/2020 13:03:53|basehttp|1746|140578926860032|"GET /assignment_travel_tax_grid/?travel_req_id=TR363972&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|27/Nov/2020 13:03:53|basehttp|1746|140578926860032|"GET /get_post_location/?country=Spain&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:03:53|basehttp|1746|140579056383744|"GET /get_create_assignment/?home=Spain&End_date=2020-11-26T13:30:00+05:30&Start_date=Thu%20Nov%2026%202020%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=Divyanshu@mailinator.com HTTP/1.1" 200 63
+INFO|27/Nov/2020 13:03:53|basehttp|1746|140578977216256|"GET /get_currency_conversion/?from_currency=EUR&to_currency= HTTP/1.1" 200 63
+INFO|27/Nov/2020 14:38:22|basehttp|1746|140578977216256|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|27/Nov/2020 14:38:22|basehttp|1746|140578977216256|"  /*à     Cookie: mstshash=Administr" 400 -
+INFO|27/Nov/2020 15:44:48|basehttp|1746|140578977216256|"GET / HTTP/1.0" 200 75
+INFO|27/Nov/2020 15:44:50|basehttp|1746|140578977216256|"GET / HTTP/1.1" 200 44
+INFO|27/Nov/2020 15:59:13|basehttp|1746|140578977216256|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 15:59:18|basehttp|1746|140578977216256|"POST /api/login/ HTTP/1.1" 200 441
+INFO|27/Nov/2020 15:59:18|basehttp|1746|140578977216256|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 15:59:19|basehttp|1746|140578977216256|"POST /emoloyeeinfo/ HTTP/1.1" 200 1382
+INFO|27/Nov/2020 15:59:20|basehttp|1746|140578977216256|"OPTIONS /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 15:59:20|basehttp|1746|140578977216256|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com HTTP/1.1" 200 0
+INFO|27/Nov/2020 15:59:20|basehttp|1746|140579056383744|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|27/Nov/2020 15:59:20|basehttp|1746|140579056383744|"GET /get_post_notification/?email=Divyanshu@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 10718
+INFO|27/Nov/2020 15:59:21|basehttp|1746|140578977216256|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 15:59:22|basehttp|1746|140579056383744|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Divyanshu@mailinator.com HTTP/1.1" 200 39670
+INFO|27/Nov/2020 16:00:07|basehttp|1746|140579056383744|"POST /api/login/ HTTP/1.1" 200 441
+INFO|27/Nov/2020 16:00:08|basehttp|1746|140579056383744|"POST /emoloyeeinfo/ HTTP/1.1" 200 1394
+INFO|27/Nov/2020 16:00:08|basehttp|1746|140579056383744|"OPTIONS /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:00:08|basehttp|1746|140579056383744|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:00:09|basehttp|1746|140579056383744|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 16:00:09|basehttp|1746|140579056383744|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 17534
+INFO|27/Nov/2020 16:00:09|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:00:20|basehttp|1746|140578977216256|"OPTIONS /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:00:20|basehttp|1746|140578977216256|"OPTIONS /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:00:21|basehttp|1746|140578977216256|"GET /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 76
+INFO|27/Nov/2020 16:00:23|basehttp|1746|140578977216256|"GET /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 75
+INFO|27/Nov/2020 16:01:14|basehttp|1746|140578977216256|"OPTIONS /get_action_status/?module=V HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:01:14|basehttp|1746|140579056383744|"OPTIONS /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:01:14|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:01:23|basehttp|1746|140579056383744|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 217074
+INFO|27/Nov/2020 16:02:14|basehttp|1746|140578926860032|"OPTIONS /get_action_status/?module=A HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:02:14|basehttp|1746|140578926860032|"OPTIONS /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:02:14|basehttp|1746|140578957547264|"OPTIONS /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:02:14|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:02:14|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:02:15|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:02:15|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:02:15|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:02:24|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:02:24|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:02:24|basehttp|1746|140578957547264|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:02:24|basehttp|1746|140579056383744|"GET /media/visaimage/bell_icon_7iqrIQN.png HTTP/1.1" 304 0
+INFO|27/Nov/2020 16:02:25|basehttp|1746|140578957547264|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:02:41|basehttp|1746|140578977216256|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 217074
+INFO|27/Nov/2020 16:03:59|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:03:59|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:03:59|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:03:59|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:04:00|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:04:14|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:04:14|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:04:15|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:04:25|basehttp|1746|140578977216256|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 217074
+WARNING|27/Nov/2020 16:08:45|log|1746|140578977216256|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:08:45|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:45|log|1746|140578957547264|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:08:45|log|1746|140578977216256|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:08:45|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:45|basehttp|1746|140578977216256|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:45|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:08:45|log|1746|140578926860032|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:08:45|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:45|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:55|log|1746|140579056383744|Unauthorized: /org_visa_request/
+WARNING|27/Nov/2020 16:08:55|basehttp|1746|140579056383744|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:55|log|1746|140579056383744|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:08:55|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:55|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:08:55|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:55|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:08:55|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:08:55|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|27/Nov/2020 16:08:56|log|1746|140578926860032|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:08:56|basehttp|1746|140578926860032|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|27/Nov/2020 16:08:56|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|27/Nov/2020 16:08:56|log|1746|140579056383744|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|27/Nov/2020 16:08:56|log|1746|140579056383744|Unauthorized: /org_visa_request/
+WARNING|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:56|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:56|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:57|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:57|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:57|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:57|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:57|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:08:57|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:08:57|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:57|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:08:58|log|1746|140578926860032|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:08:58|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:58|log|1746|140578957547264|Unauthorized: /get_view_visa_request/
+INFO|27/Nov/2020 16:08:58|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:58|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:58|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:08:58|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:58|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:08:58|log|1746|140579056383744|Unauthorized: /org_visa_request/
+WARNING|27/Nov/2020 16:08:59|log|1746|140578977216256|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:08:59|basehttp|1746|140579056383744|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:08:59|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:59|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:08:59|log|1746|140578977216256|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:08:59|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:08:59|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:08:59|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:09:00|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:09:00|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:09:00|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:09:00|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:09:00|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+WARNING|27/Nov/2020 16:09:00|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:09:00|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:09:01|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:09:01|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:09:01|log|1746|140578926860032|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:09:01|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:09:01|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:09:01|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:09:02|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:09:02|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:09:02|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:09:03|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:09:03|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:09:04|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:09:13|basehttp|1746|140579056383744|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 217074
+INFO|27/Nov/2020 16:09:30|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:09:30|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:09:30|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:09:30|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:09:30|basehttp|1746|140578977216256|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:09:40|basehttp|1746|140578957547264|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:09:40|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:09:40|basehttp|1746|140578957547264|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:09:48|basehttp|1746|140578977216256|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 217074
+INFO|27/Nov/2020 16:10:06|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:10:06|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:10:06|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:10:06|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:10:06|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:10:21|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:10:21|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:10:21|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:10:33|basehttp|1746|140578977216256|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 217074
+INFO|27/Nov/2020 16:12:41|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:12:41|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:12:41|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:12:41|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:12:41|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:13:32|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+WARNING|27/Nov/2020 16:14:18|log|1746|140579056383744|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:14:18|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:14:18|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:14:18|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:14:18|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:14:18|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:14:18|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:14:18|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:14:18|log|1746|140579056383744|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:14:18|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:14:18|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:14:19|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:14:19|log|1746|140578957547264|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:14:19|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:14:19|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:14:19|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:14:19|basehttp|1746|140578957547264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:14:19|log|1746|140578957547264|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:14:19|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:14:19|basehttp|1746|140578957547264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:14:19|log|1746|140578957547264|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:14:19|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:14:19|basehttp|1746|140578957547264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140578957547264|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140578957547264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140578957547264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:14:20|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:14:22|basehttp|1746|140578957547264|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:14:27|basehttp|1746|140578957547264|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:15:04|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:15:04|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:15:04|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:15:04|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:15:04|basehttp|1746|140578977216256|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:15:04|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:15:57|basehttp|1746|140578944435968|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:15:57|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:15:57|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:15:57|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:15:57|basehttp|1746|140578957547264|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:15:57|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:16:44|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:16:44|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:16:44|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:16:44|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:16:44|basehttp|1746|140578957547264|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:16:45|basehttp|1746|140578957547264|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:17:11|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:17:11|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:17:11|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:17:11|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:17:11|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:17:11|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+WARNING|27/Nov/2020 16:20:22|log|1746|140578926860032|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:20:22|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:20:22|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:20:22|log|1746|140578926860032|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:20:22|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:20:22|basehttp|1746|140578926860032|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:20:22|log|1746|140578926860032|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:20:22|log|1746|140579056383744|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:20:22|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:20:22|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:20:22|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:20:23|log|1746|140579056383744|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:20:23|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:20:23|log|1746|140578926860032|Unauthorized: /get_visa_status_summary/
+INFO|27/Nov/2020 16:20:23|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:20:23|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:20:23|log|1746|140579056383744|Unauthorized: /get_action_status/
+INFO|27/Nov/2020 16:20:23|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:20:23|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:20:23|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:20:23|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:20:23|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:20:24|log|1746|140578957547264|Unauthorized: /get_view_visa_request/
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:20:24|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578977216256|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578957547264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:20:24|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:20:25|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:20:25|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:20:26|basehttp|1746|140578977216256|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:22:27|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:22:27|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:22:27|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:22:27|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:22:27|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:22:28|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:23:59|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:23:59|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:23:59|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:23:59|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:23:59|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:24:00|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+WARNING|27/Nov/2020 16:25:38|log|1746|140578926860032|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:25:38|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:25:38|log|1746|140578926860032|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:25:38|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:25:38|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:25:38|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:25:38|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:25:38|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:25:39|log|1746|140579056383744|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:25:39|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:25:39|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:25:39|log|1746|140579056383744|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:25:39|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:25:39|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:25:40|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:25:40|log|1746|140579056383744|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:25:40|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:25:40|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:25:40|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:25:40|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:25:40|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:25:40|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:25:41|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:25:41|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:25:41|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:25:42|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:25:42|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:25:42|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:27:16|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:27:16|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:27:16|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:27:16|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:27:16|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:27:48|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:28:00|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:28:00|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:28:00|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:28:00|basehttp|1746|140578957547264|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:28:00|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:28:01|basehttp|1746|140578957547264|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:29:31|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:29:31|basehttp|1746|140578957547264|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:29:31|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:29:31|basehttp|1746|140578944435968|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:29:31|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:29:32|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:30:27|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:30:27|basehttp|1746|140578944435968|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:30:27|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:30:27|basehttp|1746|140578957547264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:30:27|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:30:28|basehttp|1746|140578977216256|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:30:28|basehttp|1746|140578977216256|"GET /media/visaimage/bell_icon_hF1CNHk.png HTTP/1.1" 200 1860
+INFO|27/Nov/2020 16:30:28|basehttp|1746|140578926860032|"GET /media/visaimage/approved_icon1_IDNFot0.png HTTP/1.1" 200 1672
+INFO|27/Nov/2020 16:30:28|basehttp|1746|140578926860032|"GET /media/visaimage/bell_icon_9FgDzB6.png HTTP/1.1" 200 1860
+WARNING|27/Nov/2020 16:32:12|log|1746|140578926860032|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:32:12|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:32:12|log|1746|140578957547264|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:32:12|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:32:12|log|1746|140578926860032|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:32:12|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:32:12|log|1746|140578977216256|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:32:12|log|1746|140578944435968|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:32:12|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:32:12|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:32:12|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:32:13|log|1746|140578977216256|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:32:13|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:32:13|log|1746|140578977216256|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:32:13|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:32:13|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:32:13|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:32:13|log|1746|140578944435968|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:32:13|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:32:14|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:32:14|log|1746|140578944435968|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:32:14|log|1746|140578926860032|Unauthorized: /get_view_visa_request/
+INFO|27/Nov/2020 16:32:14|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:32:14|basehttp|1746|140578944435968|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:32:14|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:32:14|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:32:14|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578926860032|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:32:15|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:32:22|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+WARNING|27/Nov/2020 16:34:32|log|1746|140578926860032|Not Found: /http:/example.com/
+WARNING|27/Nov/2020 16:34:32|basehttp|1746|140578926860032|"GET http://example.com/ HTTP/1.1" 404 1661
+INFO|27/Nov/2020 16:35:08|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:35:08|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:35:08|basehttp|1746|140578957547264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:35:08|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:35:08|basehttp|1746|140578944435968|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:35:09|basehttp|1746|140578957547264|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:35:09|basehttp|1746|140578957547264|"GET /media/visaimage/bell_icon_7iqrIQN.png HTTP/1.1" 304 0
+INFO|27/Nov/2020 16:36:47|basehttp|1746|140578957547264|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:36:47|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:36:47|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:36:47|basehttp|1746|140578944435968|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 5015
+INFO|27/Nov/2020 16:36:47|basehttp|1746|140578977216256|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:36:48|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:36:53|basehttp|1746|140579056383744|"GET /media/visaimage/approved_icon1_IDNFot0.png HTTP/1.1" 200 1672
+WARNING|27/Nov/2020 16:36:53|log|1746|140578977216256|Not Found: /favicon.ico
+WARNING|27/Nov/2020 16:36:53|basehttp|1746|140578977216256|"GET /favicon.ico HTTP/1.1" 404 42892
+INFO|27/Nov/2020 16:36:56|basehttp|1746|140579056383744|"GET /media/visaimage/bell_icon_hF1CNHk.png HTTP/1.1" 200 1860
+INFO|27/Nov/2020 16:36:59|basehttp|1746|140579056383744|"GET /media/visaimage/bell_icon_9FgDzB6.png HTTP/1.1" 200 1860
+INFO|27/Nov/2020 16:37:06|basehttp|1746|140579056383744|"OPTIONS /get_add/visa_request_document/ HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:37:06|basehttp|1746|140579056383744|"POST /get_add/visa_request_document/ HTTP/1.1" 201 70
+INFO|27/Nov/2020 16:37:15|basehttp|1746|140579056383744|"POST /get_add/visa_request_document/ HTTP/1.1" 201 70
+WARNING|27/Nov/2020 16:37:29|log|1746|140578977216256|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:37:29|log|1746|140578977216256|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:37:29|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:37:29|log|1746|140578977216256|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:37:29|log|1746|140578977216256|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:37:29|log|1746|140578977216256|Unauthorized: /get_post_notification/
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:37:29|log|1746|140579056383744|Unauthorized: /get_action_status/
+INFO|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:37:29|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:37:29|log|1746|140578977216256|Unauthorized: /get_action_status/
+WARNING|27/Nov/2020 16:37:29|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:37:30|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|27/Nov/2020 16:37:30|log|1746|140578977216256|Unauthorized: /get_view_visa_request/
+WARNING|27/Nov/2020 16:37:30|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|27/Nov/2020 16:37:30|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|27/Nov/2020 16:37:30|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|27/Nov/2020 16:37:30|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:37:30|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:37:30|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:37:30|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:37:30|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:37:30|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:37:31|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:37:31|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|27/Nov/2020 16:37:31|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6281
+INFO|27/Nov/2020 16:37:31|basehttp|1746|140578977216256|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:37:33|basehttp|1746|140578977216256|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:37:34|basehttp|1746|140578977216256|"GET /media/visaimage/csv_icon.png HTTP/1.1" 200 1394
+INFO|27/Nov/2020 16:37:39|basehttp|1746|140579056383744|"GET /media/visaimage/csv_icon.png HTTP/1.1" 200 1394
+INFO|27/Nov/2020 16:38:18|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|27/Nov/2020 16:38:19|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|27/Nov/2020 16:38:19|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|27/Nov/2020 16:38:19|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6281
+INFO|27/Nov/2020 16:38:19|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|27/Nov/2020 16:38:19|basehttp|1746|140578977216256|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|27/Nov/2020 16:38:20|basehttp|1746|140578977216256|"GET /media/visaimage/csv_icon.png HTTP/1.1" 304 0
+INFO|27/Nov/2020 16:38:38|basehttp|1746|140578977216256|"GET /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 76
+INFO|27/Nov/2020 16:38:39|basehttp|1746|140579056383744|"GET /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 75
+INFO|27/Nov/2020 16:38:46|basehttp|1746|140579056383744|"OPTIONS /org_travel_request/?travel_req_status=3&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:38:46|basehttp|1746|140579056383744|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 16:38:51|basehttp|1746|140579056383744|"GET /org_travel_request/?travel_req_status=3&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 133217
+INFO|27/Nov/2020 16:38:59|basehttp|1746|140579056383744|"GET /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 76
+INFO|27/Nov/2020 16:39:00|basehttp|1746|140578977216256|"GET /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 75
+INFO|27/Nov/2020 16:39:10|basehttp|1746|140578926860032|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|27/Nov/2020 16:39:10|basehttp|1746|140578926860032|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|27/Nov/2020 16:39:19|basehttp|1746|140578926860032|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 200080
+INFO|27/Nov/2020 20:45:59|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+INFO|27/Nov/2020 20:46:00|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+WARNING|27/Nov/2020 20:46:01|log|1746|140578926860032|Not Found: /favicon.ico
+WARNING|27/Nov/2020 20:46:01|basehttp|1746|140578926860032|"GET /favicon.ico HTTP/1.1" 404 42892
+INFO|27/Nov/2020 21:24:09|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+INFO|28/Nov/2020 03:07:52|basehttp|1746|140578926860032|"GET / HTTP/1.0" 200 75
+INFO|28/Nov/2020 04:22:43|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+WARNING|28/Nov/2020 05:43:49|log|1746|140578926860032|Not Found: /http:/example.com/
+WARNING|28/Nov/2020 05:43:49|basehttp|1746|140578926860032|"GET http://example.com/ HTTP/1.1" 404 1661
+INFO|28/Nov/2020 09:13:56|basehttp|1746|140578926860032|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|28/Nov/2020 09:13:56|basehttp|1746|140578926860032|"  /*à     Cookie: mstshash=Administr" 400 -
+INFO|28/Nov/2020 09:24:13|basehttp|1746|140578926860032|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|28/Nov/2020 09:24:13|basehttp|1746|140578926860032|"  /*à     Cookie: mstshash=Administr" 400 -
+INFO|28/Nov/2020 09:49:04|basehttp|1746|140578926860032|"GET / HTTP/1.0" 200 75
+INFO|28/Nov/2020 16:16:06|basehttp|1746|140578926860032|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+WARNING|28/Nov/2020 16:16:06|basehttp|1746|140578926860032|"  +&à     Cookie: mstshash=hello" 400 -
+INFO|28/Nov/2020 17:45:20|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+WARNING|28/Nov/2020 19:38:35|log|1746|140578926860032|Not Found: /http:/example.com/
+WARNING|28/Nov/2020 19:38:35|basehttp|1746|140578926860032|"GET http://example.com/ HTTP/1.1" 404 1661
+INFO|28/Nov/2020 20:43:19|basehttp|1746|140578926860032|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|28/Nov/2020 20:43:19|basehttp|1746|140578926860032|"  /*à     Cookie: mstshash=Administr" 400 -
+INFO|28/Nov/2020 22:42:29|basehttp|1746|140578926860032|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|28/Nov/2020 22:42:29|basehttp|1746|140578926860032|"  /*à     Cookie: mstshash=Administr" 400 -
+WARNING|29/Nov/2020 03:12:11|log|1746|140578926860032|Not Found: /http:/example.com/
+WARNING|29/Nov/2020 03:12:11|basehttp|1746|140578926860032|"GET http://example.com/ HTTP/1.1" 404 1661
+INFO|29/Nov/2020 03:15:26|basehttp|1746|140578926860032|"GET / HTTP/1.0" 200 75
+INFO|29/Nov/2020 06:19:08|basehttp|1746|140578926860032|code 400, message Bad request syntax ('{"method":"login","params":{"login":"MEOWWWW","pass":"MIAOU","agent":"XMRig/0.8.2"},"id":1}')
+WARNING|29/Nov/2020 06:19:08|basehttp|1746|140578926860032|"{"method":"login","params":{"login":"MEOWWWW","pass":"MIAOU","agent":"XMRig/0.8.2"},"id":1}" 400 -
+WARNING|29/Nov/2020 06:56:58|log|1746|140578926860032|Not Found: /favicon.ico
+WARNING|29/Nov/2020 06:56:58|basehttp|1746|140578926860032|"GET /favicon.ico HTTP/1.1" 404 42892
+INFO|29/Nov/2020 08:52:24|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+INFO|29/Nov/2020 09:49:50|basehttp|1746|140578926860032|code 400, message Bad request syntax ("\x16\x03\x01\x00{\x01\x00\x00w\x03\x03¨\x1a\xa0\x9dõ\x17SÀÄO&Ùµ®±søF\x1c0oÐL'ö\x10íû¯©mC\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\tÀ\x14À")
+ERROR|29/Nov/2020 09:49:50|basehttp|1746|140578926860032|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+INFO|29/Nov/2020 09:49:51|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+INFO|29/Nov/2020 09:49:51|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+INFO|29/Nov/2020 11:23:34|basehttp|1746|140578926860032|"GET / HTTP/1.1" 200 44
+INFO|29/Nov/2020 12:07:36|basehttp|1746|140578926860032|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:07:37|basehttp|1746|140578926860032|"POST /api/login/ HTTP/1.1" 200 441
+INFO|29/Nov/2020 12:07:38|basehttp|1746|140578926860032|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:07:38|basehttp|1746|140578926860032|"POST /emoloyeeinfo/ HTTP/1.1" 200 1394
+INFO|29/Nov/2020 12:07:39|basehttp|1746|140578926860032|"OPTIONS /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:07:39|basehttp|1746|140578926860032|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:07:39|basehttp|1746|140578977216256|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:07:39|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:07:40|basehttp|1746|140578926860032|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|29/Nov/2020 12:07:40|basehttp|1746|140578977216256|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 17534
+INFO|29/Nov/2020 12:07:48|basehttp|1746|140578977216256|"OPTIONS /get_add/visa_request/?visa_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:07:48|basehttp|1746|140578977216256|"OPTIONS /get_action_status/?module=V HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:07:49|basehttp|1746|140578977216256|"GET /get_add/visa_request/?visa_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 8944
+INFO|29/Nov/2020 12:07:49|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:08:13|basehttp|1746|140578926860032|"OPTIONS /get_travel_request_approver/?emp_email=gauravg@triazinesoft.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:13|basehttp|1746|140578926860032|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|29/Nov/2020 12:08:15|basehttp|1746|140578926860032|"GET /get_travel_request_approver/?emp_email=gauravg@triazinesoft.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 2310
+INFO|29/Nov/2020 12:08:20|basehttp|1746|140578926860032|"OPTIONS /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:20|basehttp|1746|140578977216256|"OPTIONS /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:21|basehttp|1746|140578977216256|"GET /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 76
+INFO|29/Nov/2020 12:08:22|basehttp|1746|140578926860032|"GET /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 75
+INFO|29/Nov/2020 12:08:31|basehttp|1746|140578977216256|"OPTIONS /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:31|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:08:40|basehttp|1746|140578926860032|"GET /org_visa_request/?visa_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 217074
+INFO|29/Nov/2020 12:08:54|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:08:54|basehttp|1746|140579056383744|"OPTIONS /get_action_status/?module=A HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:54|basehttp|1746|140578977216256|"OPTIONS /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:54|basehttp|1746|140578944435968|"OPTIONS /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:54|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:08:54|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6281
+INFO|29/Nov/2020 12:08:55|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:08:55|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:08:55|basehttp|1746|140578944435968|"GET /media/visaimage/cbimage_Xi5y5b1.jpg HTTP/1.1" 304 0
+INFO|29/Nov/2020 12:08:55|basehttp|1746|140579056383744|"OPTIONS /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:08:55|basehttp|1746|140578926860032|"GET /media/visaimage/bell_icon_7iqrIQN.png HTTP/1.1" 304 0
+INFO|29/Nov/2020 12:08:56|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:08:56|basehttp|1746|140578944435968|"GET /media/visaimage/bell_icon_hF1CNHk.png HTTP/1.1" 304 0
+INFO|29/Nov/2020 12:08:56|basehttp|1746|140578977216256|"GET /media/visaimage/bell_icon_9FgDzB6.png HTTP/1.1" 304 0
+INFO|29/Nov/2020 12:08:56|basehttp|1746|140578926860032|"GET /media/visaimage/csv_icon.png HTTP/1.1" 304 0
+INFO|29/Nov/2020 12:10:09|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:10:09|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:10:09|basehttp|1746|140578926860032|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:10:09|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6281
+INFO|29/Nov/2020 12:10:10|basehttp|1746|140578944435968|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:10:10|basehttp|1746|140578977216256|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:11:21|basehttp|1746|140578977216256|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:11:21|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:11:21|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:11:21|basehttp|1746|140578936043264|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6281
+INFO|29/Nov/2020 12:11:21|basehttp|1746|140578944435968|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:11:22|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:12:06|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:12:06|basehttp|1746|140578936043264|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:12:06|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:12:06|basehttp|1746|140578944435968|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6281
+INFO|29/Nov/2020 12:12:06|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:12:07|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+WARNING|29/Nov/2020 12:13:21|log|1746|140579056383744|Unauthorized: /get_post_notification/
+WARNING|29/Nov/2020 12:13:21|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:13:21|log|1746|140578926860032|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:13:21|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:13:21|basehttp|1746|140578926860032|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:13:21|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:13:21|log|1746|140578926860032|Unauthorized: /get_visa_status_summary/
+WARNING|29/Nov/2020 12:13:21|log|1746|140579056383744|Unauthorized: /get_view_visa_request/
+WARNING|29/Nov/2020 12:13:21|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:13:21|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:21|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|29/Nov/2020 12:13:22|log|1746|140579056383744|Unauthorized: /get_post_notification/
+WARNING|29/Nov/2020 12:13:22|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:22|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|29/Nov/2020 12:13:22|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:13:22|log|1746|140578944435968|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:13:22|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:22|basehttp|1746|140578926860032|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|29/Nov/2020 12:13:22|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:22|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|29/Nov/2020 12:13:22|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|29/Nov/2020 12:13:22|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:22|basehttp|1746|140579056383744|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:13:22|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|29/Nov/2020 12:13:22|log|1746|140578944435968|Unauthorized: /get_view_visa_request/
+WARNING|29/Nov/2020 12:13:22|basehttp|1746|140578944435968|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:22|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|29/Nov/2020 12:13:23|log|1746|140578926860032|Unauthorized: /get_post_notification/
+WARNING|29/Nov/2020 12:13:23|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:23|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:23|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:23|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:23|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|29/Nov/2020 12:13:23|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:13:23|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:13:23|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:13:23|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:23|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|29/Nov/2020 12:13:24|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|29/Nov/2020 12:13:24|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6281
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:24|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:13:25|basehttp|1746|140578944435968|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:13:25|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:13:25|basehttp|1746|140578926860032|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:13:25|basehttp|1746|140578944435968|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:13:26|basehttp|1746|140578944435968|"GET /media/visaimage/attachment_BeWj3cu.png HTTP/1.1" 200 4513
+INFO|29/Nov/2020 12:15:03|basehttp|1746|140578944435968|"OPTIONS /get_add/visa_request_document/ HTTP/1.1" 200 0
+INFO|29/Nov/2020 12:15:04|basehttp|1746|140578944435968|"POST /get_add/visa_request_document/ HTTP/1.1" 201 70
+INFO|29/Nov/2020 12:15:17|basehttp|1746|140578944435968|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:15:17|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:15:17|basehttp|1746|140578936043264|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:15:17|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6904
+INFO|29/Nov/2020 12:15:17|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:15:18|basehttp|1746|140578936043264|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:15:18|basehttp|1746|140578936043264|"GET /media/visaimage/plist.zip HTTP/1.1" 200 1861
+INFO|29/Nov/2020 12:17:30|basehttp|1746|140578936043264|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:17:39|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:17:39|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:17:39|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:17:39|basehttp|1746|140579056383744|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6904
+INFO|29/Nov/2020 12:17:39|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:17:40|basehttp|1746|140578977216256|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:17:43|basehttp|1746|140578977216256|"GET /media/visaimage/plist.zip HTTP/1.1" 200 1861
+WARNING|29/Nov/2020 12:21:07|log|1746|140578926860032|Unauthorized: /get_add/visa_request_document/
+WARNING|29/Nov/2020 12:21:07|basehttp|1746|140578926860032|"POST /get_add/visa_request_document/ HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:23|log|1746|140578926860032|Unauthorized: /get_post_notification/
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140578926860032|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:23|log|1746|140578926860032|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:21:23|log|1746|140578977216256|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:21:23|log|1746|140579056383744|Unauthorized: /get_visa_status_summary/
+WARNING|29/Nov/2020 12:21:23|log|1746|140578944435968|Unauthorized: /get_view_visa_request/
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140578926860032|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140578977216256|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140578944435968|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:21:23|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|29/Nov/2020 12:21:23|log|1746|140578944435968|Unauthorized: /get_post_notification/
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140578944435968|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:23|log|1746|140578944435968|Unauthorized: /get_action_status/
+INFO|29/Nov/2020 12:21:23|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:21:23|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140578944435968|"GET /get_action_status/?module=A HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:23|log|1746|140578926860032|Unauthorized: /get_view_visa_request/
+WARNING|29/Nov/2020 12:21:23|basehttp|1746|140578926860032|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:21:23|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|29/Nov/2020 12:21:24|log|1746|140578926860032|Unauthorized: /get_visa_status_summary/
+WARNING|29/Nov/2020 12:21:24|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|29/Nov/2020 12:21:24|log|1746|140578944435968|Unauthorized: /get_action_status/
+WARNING|29/Nov/2020 12:21:24|basehttp|1746|140578944435968|"GET /get_action_status/?module=V HTTP/1.1" 401 183
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140579056383744|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:21:24|basehttp|1746|140578977216256|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 6904
+INFO|29/Nov/2020 12:21:25|basehttp|1746|140578977216256|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|29/Nov/2020 12:21:25|basehttp|1746|140579056383744|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:21:25|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:21:25|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:21:33|basehttp|1746|140579056383744|"POST /get_add/visa_request_document/ HTTP/1.1" 201 70
+INFO|29/Nov/2020 12:21:48|basehttp|1746|140579056383744|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|29/Nov/2020 12:21:48|basehttp|1746|140578977216256|"GET /get_action_status/?module=A HTTP/1.1" 200 3669
+INFO|29/Nov/2020 12:21:48|basehttp|1746|140579056383744|"GET /get_action_status/?module=V HTTP/1.1" 200 1507
+INFO|29/Nov/2020 12:21:48|basehttp|1746|140578944435968|"GET /get_view_visa_request/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 7529
+INFO|29/Nov/2020 12:21:48|basehttp|1746|140578926860032|"GET /get_visa_status_summary/?visa_req_id=VR663861&org_id=ORG150866 HTTP/1.1" 200 1060
+INFO|29/Nov/2020 12:21:48|basehttp|1746|140579056383744|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Work HTTP/1.1" 200 7409
+INFO|29/Nov/2020 12:21:49|basehttp|1746|140579056383744|"GET /media/visaimage/cart_VOxxqPa.png HTTP/1.1" 200 346
+INFO|29/Nov/2020 13:00:47|basehttp|1746|140579056383744|"GET / HTTP/1.1" 200 44
+INFO|29/Nov/2020 14:38:26|basehttp|1746|140579056383744|"GET / HTTP/1.1" 200 44
+INFO|29/Nov/2020 21:18:29|basehttp|1746|140579056383744|"HEAD / HTTP/1.0" 200 75
+WARNING|29/Nov/2020 21:18:33|log|1746|140579056383744|Not Found: /system_api.php
+WARNING|29/Nov/2020 21:18:33|basehttp|1746|140579056383744|"GET /system_api.php HTTP/1.1" 404 42901
+WARNING|29/Nov/2020 21:18:34|log|1746|140579056383744|Not Found: /c/version.js
+WARNING|29/Nov/2020 21:18:34|basehttp|1746|140579056383744|"GET /c/version.js HTTP/1.1" 404 42895
+WARNING|29/Nov/2020 21:18:34|log|1746|140579056383744|Not Found: /streaming/clients_live.php
+WARNING|29/Nov/2020 21:18:34|basehttp|1746|140579056383744|"GET /streaming/clients_live.php HTTP/1.1" 404 42937
+WARNING|29/Nov/2020 21:18:34|log|1746|140579056383744|Not Found: /stalker_portal/c/version.js
+WARNING|29/Nov/2020 21:18:34|basehttp|1746|140579056383744|"GET /stalker_portal/c/version.js HTTP/1.1" 404 42940
+WARNING|29/Nov/2020 21:18:35|log|1746|140579056383744|Not Found: /client_area/
+WARNING|29/Nov/2020 21:18:35|basehttp|1746|140579056383744|"GET /client_area/ HTTP/1.1" 404 42895
+WARNING|29/Nov/2020 21:18:35|log|1746|140579056383744|Not Found: /stalker_portal/c/
+WARNING|29/Nov/2020 21:18:35|basehttp|1746|140579056383744|"GET /stalker_portal/c/ HTTP/1.1" 404 42910
+INFO|30/Nov/2020 01:33:27|basehttp|1746|140579056383744|"GET / HTTP/1.0" 200 75
+INFO|30/Nov/2020 03:32:53|basehttp|1746|140579056383744|"GET / HTTP/1.1" 200 44
+INFO|30/Nov/2020 04:35:30|basehttp|1746|140579056383744|"GET / HTTP/1.1" 200 44
+INFO|30/Nov/2020 05:08:02|basehttp|1746|140579056383744|"GET / HTTP/1.1" 200 44
+INFO|30/Nov/2020 05:58:07|basehttp|1746|140579056383744|code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03zk>ÀJhÂ¨ÅØ\x1d¬èà"äu§8µÒª\x87d\x19è\x9f æjH1\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\tÀ\x14À')
+ERROR|30/Nov/2020 05:58:07|basehttp|1746|140579056383744|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+INFO|30/Nov/2020 05:58:08|basehttp|1746|140579056383744|"GET / HTTP/1.1" 200 44
+INFO|30/Nov/2020 05:58:08|basehttp|1746|140579056383744|"GET / HTTP/1.1" 200 44
+WARNING|30/Nov/2020 06:01:12|log|1746|140579056383744|Not Found: /logs
+WARNING|30/Nov/2020 06:01:12|basehttp|1746|140579056383744|"GET /logs HTTP/1.0" 404 42871
+WARNING|30/Nov/2020 07:22:19|log|1746|140579056383744|Not Found: /http:/example.com/
+WARNING|30/Nov/2020 07:22:19|basehttp|1746|140579056383744|"GET http://example.com/ HTTP/1.1" 404 1661
+WARNING|30/Nov/2020 07:42:07|log|1746|140579056383744|Not Found: /http:/example.com/
+WARNING|30/Nov/2020 07:42:07|basehttp|1746|140579056383744|"GET http://example.com/ HTTP/1.1" 404 1661
+INFO|30/Nov/2020 11:31:43|basehttp|1746|140579056383744|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|30/Nov/2020 11:31:43|basehttp|1746|140579056383744|"  /*à     Cookie: mstshash=Administr" 400 -
+INFO|30/Nov/2020 11:53:23|basehttp|1746|140579056383744|"OPTIONS /api/login/ HTTP/1.1" 200 0
+WARNING|30/Nov/2020 11:53:24|log|1746|140578926860032|Unauthorized: /api/login/
+WARNING|30/Nov/2020 11:53:24|basehttp|1746|140578926860032|"POST /api/login/ HTTP/1.1" 401 63
+INFO|30/Nov/2020 11:54:19|basehttp|1746|140578926860032|"POST /api/login/ HTTP/1.1" 200 441
+INFO|30/Nov/2020 11:54:19|basehttp|1746|140578926860032|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|30/Nov/2020 11:54:20|basehttp|1746|140578926860032|"POST /emoloyeeinfo/ HTTP/1.1" 200 1358
+INFO|30/Nov/2020 11:54:20|basehttp|1746|140578926860032|"OPTIONS /get_post_notification/?email=divyanshuk@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 11:54:21|basehttp|1746|140579056383744|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|30/Nov/2020 11:54:21|basehttp|1746|140578926860032|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=divyanshuk@triazinesoft.com HTTP/1.1" 200 0
+INFO|30/Nov/2020 11:54:21|basehttp|1746|140578977216256|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 11:54:23|basehttp|1746|140579056383744|"GET /media/Koala_74ufFrT.jpg HTTP/1.1" 200 780831
+INFO|30/Nov/2020 11:54:24|basehttp|1746|140578926860032|"GET /get_post_notification/?email=divyanshuk@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 191365
+INFO|30/Nov/2020 11:54:24|basehttp|1746|140578944435968|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=divyanshuk@triazinesoft.com HTTP/1.1" 200 54574
+INFO|30/Nov/2020 12:00:41|basehttp|1746|140578936043264|"OPTIONS /get_travel_request_approver/?emp_email=divyanshuk@triazinesoft.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:00:41|log|1746|140578944435968|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:00:41|basehttp|1746|140578944435968|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:00:41|log|1746|140578944435968|Unauthorized: /get_travel_request_approver/
+WARNING|30/Nov/2020 12:00:41|basehttp|1746|140578944435968|"GET /get_travel_request_approver/?emp_email=divyanshuk@triazinesoft.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:00:41|basehttp|1746|140578936043264|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:00:41|log|1746|140578944435968|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:00:41|basehttp|1746|140578944435968|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:00:42|basehttp|1746|140578944435968|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:00:42|log|1746|140578936043264|Unauthorized: /get_travel_request_approver/
+WARNING|30/Nov/2020 12:00:42|basehttp|1746|140578936043264|"GET /get_travel_request_approver/?emp_email=divyanshuk@triazinesoft.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:00:42|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:00:42|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:00:42|log|1746|140578926860032|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:00:42|basehttp|1746|140578926860032|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:00:42|log|1746|140578944435968|Unauthorized: /get_travel_request_approver/
+INFO|30/Nov/2020 12:00:42|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:00:42|basehttp|1746|140578944435968|"GET /get_travel_request_approver/?emp_email=divyanshuk@triazinesoft.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:00:42|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:00:43|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:00:43|basehttp|1746|140578936043264|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:00:43|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:00:47|basehttp|1746|140578926860032|"GET /get_travel_request_approver/?emp_email=divyanshuk@triazinesoft.com&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 147331
+INFO|30/Nov/2020 12:01:53|basehttp|1746|140578936043264|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:01:54|basehttp|1746|140578926860032|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=divyanshuk@triazinesoft.com HTTP/1.1" 200 54574
+INFO|30/Nov/2020 12:04:22|basehttp|1746|140578936043264|"POST /api/login/ HTTP/1.1" 200 441
+INFO|30/Nov/2020 12:04:22|basehttp|1746|140578936043264|"POST /emoloyeeinfo/ HTTP/1.1" 200 1394
+INFO|30/Nov/2020 12:04:23|basehttp|1746|140578936043264|"OPTIONS /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:04:23|basehttp|1746|140578936043264|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:04:23|basehttp|1746|140578936043264|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:04:23|basehttp|1746|140578936043264|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|30/Nov/2020 12:04:24|basehttp|1746|140578936043264|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 17534
+INFO|30/Nov/2020 12:04:43|basehttp|1746|140578936043264|"OPTIONS /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:04:43|basehttp|1746|140578926860032|"OPTIONS /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:04:44|basehttp|1746|140578926860032|"GET /count_visa_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 76
+INFO|30/Nov/2020 12:04:45|basehttp|1746|140578936043264|"GET /count_travel_requests/?assignment_email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 75
+INFO|30/Nov/2020 12:04:51|basehttp|1746|140578936043264|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:04:51|basehttp|1746|140578936043264|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:04:58|basehttp|1746|140578936043264|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=gauravg@triazinesoft.com HTTP/1.1" 200 200080
+INFO|30/Nov/2020 12:05:16|basehttp|1746|140578936043264|"GET /get_post_notification/?email=gauravg@triazinesoft.com&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|30/Nov/2020 12:05:16|basehttp|1746|140578936043264|"OPTIONS /get_view_travel_request/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:05:16|basehttp|1746|140578926860032|"OPTIONS /get_action_status/?module=A,T HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:05:16|basehttp|1746|140578936043264|"OPTIONS /get_active_currency/?status_type=all HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:05:16|basehttp|1746|140578936043264|"OPTIONS /get_travel_status_summary/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:05:16|basehttp|1746|140578944435968|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140578944435968|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140579056383744|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140579056383744|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140578926860032|"GET /get_view_travel_request/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 2725
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140578574563072|"GET /get_travel_status_summary/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 1128
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140578574563072|"GET /assignment_travel_request_status/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140578926860032|"GET /assignment_travel_tax_grid/?travel_req_id=TR247696&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|30/Nov/2020 12:05:17|basehttp|1746|140578936043264|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+WARNING|30/Nov/2020 12:28:35|log|1746|140578936043264|Unauthorized: /get_add/travel_request/
+WARNING|30/Nov/2020 12:28:35|basehttp|1746|140578936043264|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:28:35|log|1746|140578936043264|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:28:35|basehttp|1746|140578936043264|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:28:36|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:28:36|log|1746|140578936043264|Unauthorized: /get_add/travel_request/
+INFO|30/Nov/2020 12:28:36|basehttp|1746|140578926860032|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:28:36|basehttp|1746|140578936043264|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:28:36|log|1746|140578936043264|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:28:36|basehttp|1746|140578936043264|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:28:36|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:28:36|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:28:37|basehttp|1746|140578574563072|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:28:37|basehttp|1746|140578926860032|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 17534
+INFO|30/Nov/2020 12:28:39|basehttp|1746|140578936043264|"OPTIONS /get_employee_passport/?emp_id=gauravg HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:28:39|basehttp|1746|140578926860032|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:28:39|basehttp|1746|140578926860032|"GET /get_employee_passport/?emp_id=gauravg HTTP/1.1" 200 1489
+INFO|30/Nov/2020 12:28:40|basehttp|1746|140578936043264|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|30/Nov/2020 12:28:40|basehttp|1746|140578926860032|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|30/Nov/2020 12:30:26|basehttp|1746|140578926860032|"OPTIONS /get_project/?pid=100&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:26|basehttp|1746|140578936043264|"OPTIONS /get_project/?pid=1000&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:26|basehttp|1746|140578926860032|"GET /get_project/?pid=100&limit=15&org_id=ORG150866 HTTP/1.1" 200 10227
+INFO|30/Nov/2020 12:30:27|basehttp|1746|140578926860032|"GET /get_project/?pid=1000&limit=15&org_id=ORG150866 HTTP/1.1" 200 6826
+INFO|30/Nov/2020 12:30:32|basehttp|1746|140578926860032|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:32|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:34|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:34|basehttp|1746|140578926860032|"OPTIONS /get_city/?city=new%20r HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:35|basehttp|1746|140578926860032|"GET /get_city/?city=new%20r HTTP/1.1" 200 37
+INFO|30/Nov/2020 12:30:35|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:36|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:38|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:39|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:39|basehttp|1746|140578926860032|"OPTIONS /get_city/?city=new%20d HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:40|basehttp|1746|140578926860032|"OPTIONS /get_city/?city=new%20de HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:40|basehttp|1746|140578926860032|"GET /get_city/?city=new%20d HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:30:40|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=new%20del HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:41|basehttp|1746|140578926860032|"GET /get_city/?city=new%20de HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:30:41|basehttp|1746|140578926860032|"OPTIONS /get_city/?city=new%20delh HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:41|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=new%20delhi HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:41|basehttp|1746|140578926860032|"GET /get_city/?city=new%20del HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:30:41|basehttp|1746|140578926860032|"GET /get_city/?city=new%20delh HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:30:42|basehttp|1746|140578926860032|"GET /get_city/?city=new%20delhi HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:30:47|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:47|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:30:47|basehttp|1746|140578926860032|"OPTIONS /get_city/?city=new%20y HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:48|basehttp|1746|140578926860032|"OPTIONS /get_city/?city=new%20yo HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:48|basehttp|1746|140578926860032|"GET /get_city/?city=new%20y HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:30:48|basehttp|1746|140578936043264|"GET /get_city/?city=new%20yo HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:30:48|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=new%20yor HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:49|basehttp|1746|140578936043264|"GET /get_city/?city=new%20yor HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:30:49|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=new%20york HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:50|basehttp|1746|140578936043264|"GET /get_city/?city=new%20york HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140578936043264|"OPTIONS /get_perdiem/?country=United%20States HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140578936043264|"OPTIONS /get_add/visa_purpose_list/?country_id=JFK HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140578926860032|"OPTIONS /get_employee_visa/?emp_code_id=gauravg&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140578574563072|"OPTIONS /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140579056383744|"OPTIONS /emoloyeedependent/?employee=gauravg&country=United%20States HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140579056383744|"GET /get_perdiem/?country=United%20States HTTP/1.1" 200 548
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140578926860032|"GET /get_employee_visa/?emp_code_id=gauravg&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 53
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140578574563072|"GET /get_add/visa_purpose_list/?country_id=JFK HTTP/1.1" 200 8278
+INFO|30/Nov/2020 12:30:55|basehttp|1746|140578936043264|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|30/Nov/2020 12:30:56|basehttp|1746|140579056383744|"GET /emoloyeedependent/?employee=gauravg&country=United%20States HTTP/1.1" 200 1679
+INFO|30/Nov/2020 12:38:01|basehttp|1746|140579056383744|"OPTIONS /get_city/?city=New%20York,%20N HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:01|basehttp|1746|140579056383744|"OPTIONS /get_city/?city=New%20York, HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:38:01|log|1746|140578936043264|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:38:01|basehttp|1746|140578936043264|"GET /get_city/?city=New%20York,%20N HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:38:02|log|1746|140579056383744|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:38:02|basehttp|1746|140579056383744|"GET /get_city/?city=New%20York,%20N HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:38:02|log|1746|140578574563072|Unauthorized: /get_city/
+INFO|30/Nov/2020 12:38:02|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:38:02|basehttp|1746|140578574563072|"GET /get_city/?city=New%20York, HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:38:03|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:38:03|log|1746|140578574563072|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:38:03|basehttp|1746|140578574563072|"GET /get_city/?city=New%20York,%20N HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:38:03|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:38:03|basehttp|1746|140578574563072|"GET /get_city/?city=New%20York, HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:38:03|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:38:03|basehttp|1746|140578574563072|"GET /get_city/?city=New%20York,%20N HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:38:10|basehttp|1746|140578574563072|"GET /get_city/?city=New%20York,%20N HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:38:10|basehttp|1746|140578574563072|"GET /get_city/?city=New%20York, HTTP/1.1" 200 1038
+INFO|30/Nov/2020 12:38:24|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=tok HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:25|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=toky HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:25|basehttp|1746|140578574563072|"GET /get_city/?city=tok HTTP/1.1" 200 1481
+INFO|30/Nov/2020 12:38:25|basehttp|1746|140578574563072|"OPTIONS /get_city/?city=tokyo HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:25|basehttp|1746|140578574563072|"GET /get_city/?city=toky HTTP/1.1" 200 990
+INFO|30/Nov/2020 12:38:26|basehttp|1746|140578574563072|"GET /get_city/?city=tokyo HTTP/1.1" 200 990
+INFO|30/Nov/2020 12:38:27|basehttp|1746|140578574563072|"OPTIONS /get_perdiem/?country=Japan HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:27|basehttp|1746|140579056383744|"OPTIONS /get_add/visa_purpose_list/?country_id=NRT HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:27|basehttp|1746|140578574563072|"OPTIONS /get_employee_visa/?emp_code_id=gauravg&visa_country_id=Japan&visa_type= HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:27|basehttp|1746|140578926860032|"OPTIONS /emoloyeedependent/?employee=gauravg&country=Japan HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:27|basehttp|1746|140578936043264|"OPTIONS /get_post_location/?country=Japan&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:38:27|basehttp|1746|140578936043264|"GET /get_add/visa_purpose_list/?country_id=NRT HTTP/1.1" 200 8278
+INFO|30/Nov/2020 12:38:28|basehttp|1746|140578936043264|"GET /get_employee_visa/?emp_code_id=gauravg&visa_country_id=Japan&visa_type= HTTP/1.1" 200 53
+INFO|30/Nov/2020 12:38:28|basehttp|1746|140578936043264|"GET /get_post_location/?country=Japan&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|30/Nov/2020 12:38:28|basehttp|1746|140578926860032|"GET /get_perdiem/?country=Japan HTTP/1.1" 200 550
+INFO|30/Nov/2020 12:38:28|basehttp|1746|140578926860032|"GET /emoloyeedependent/?employee=gauravg&country=Japan HTTP/1.1" 200 1679
+INFO|30/Nov/2020 12:38:33|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:38:33|basehttp|1746|140578926860032|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|30/Nov/2020 12:38:34|basehttp|1746|140578926860032|"GET /get_city/?city=new%20d HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:38:34|basehttp|1746|140578926860032|"GET /get_city/?city=new%20de HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:38:35|basehttp|1746|140578926860032|"GET /get_city/?city=new%20del HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:38:35|basehttp|1746|140578926860032|"GET /get_city/?city=new%20delh HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:38:35|basehttp|1746|140578936043264|"GET /get_city/?city=new%20delhi HTTP/1.1" 200 536
+INFO|30/Nov/2020 12:39:14|basehttp|1746|140578936043264|"OPTIONS /get_employee_visa/?emp_code_id=gauravg&visa_country_id=Japan&visa_type=Work HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:39:14|basehttp|1746|140578936043264|"GET /get_employee_visa/?emp_code_id=gauravg&visa_country_id=Japan&visa_type=Work HTTP/1.1" 200 53
+INFO|30/Nov/2020 12:48:33|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=lon HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:48:33|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=lond HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:48:33|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=londo HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:48:33|log|1746|140578936043264|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:48:33|basehttp|1746|140578936043264|"GET /get_city/?city=lon HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:48:33|log|1746|140578926860032|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:48:33|basehttp|1746|140578926860032|"GET /get_city/?city=lond HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:48:34|log|1746|140578926860032|Unauthorized: /get_city/
+INFO|30/Nov/2020 12:48:34|basehttp|1746|140578936043264|"OPTIONS /get_city/?city=london HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:48:34|basehttp|1746|140578926860032|"GET /get_city/?city=londo HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:48:34|log|1746|140578926860032|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:48:34|basehttp|1746|140578926860032|"GET /get_city/?city=lon HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:48:34|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:48:34|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:48:34|log|1746|140578936043264|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:48:34|basehttp|1746|140578936043264|"GET /get_city/?city=lond HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:48:34|log|1746|140578936043264|Unauthorized: /get_city/
+WARNING|30/Nov/2020 12:48:34|basehttp|1746|140578936043264|"GET /get_city/?city=london HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:48:34|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:48:35|log|1746|140578926860032|Unauthorized: /get_city/
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:48:35|basehttp|1746|140578926860032|"GET /get_city/?city=londo HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140579056383744|"GET /get_city/?city=lon HTTP/1.1" 200 3503
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140579056383744|"GET /get_city/?city=lond HTTP/1.1" 200 1972
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140578574563072|"GET /get_city/?city=londo HTTP/1.1" 200 1972
+INFO|30/Nov/2020 12:48:35|basehttp|1746|140578936043264|"GET /get_city/?city=london HTTP/1.1" 200 1972
+INFO|30/Nov/2020 12:48:36|basehttp|1746|140578574563072|"OPTIONS /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:48:36|basehttp|1746|140578936043264|"OPTIONS /get_employee_visa/?emp_code_id=gauravg&visa_country_id=United%20Kingdom&visa_type=undefined HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:48:36|basehttp|1746|140579056383744|"OPTIONS /get_add/visa_purpose_list/?country_id=LGW HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:48:36|basehttp|1746|140578926860032|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:48:36|basehttp|1746|140578926860032|"OPTIONS /emoloyeedependent/?employee=gauravg&country=United%20Kingdom HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:48:37|basehttp|1746|140578926860032|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 558
+INFO|30/Nov/2020 12:48:37|basehttp|1746|140578926860032|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|30/Nov/2020 12:48:37|basehttp|1746|140579056383744|"GET /get_employee_visa/?emp_code_id=gauravg&visa_country_id=United%20Kingdom&visa_type=undefined HTTP/1.1" 200 53
+INFO|30/Nov/2020 12:48:37|basehttp|1746|140578574563072|"GET /get_add/visa_purpose_list/?country_id=LGW HTTP/1.1" 200 8278
+INFO|30/Nov/2020 12:48:37|basehttp|1746|140578936043264|"GET /emoloyeedependent/?employee=gauravg&country=United%20Kingdom HTTP/1.1" 200 1679
+INFO|30/Nov/2020 12:51:48|basehttp|1746|140578936043264|"OPTIONS /get_employee_visa/?emp_code_id=gauravg&visa_country_id=United%20Kingdom&visa_type=Work HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:51:48|basehttp|1746|140578936043264|"GET /get_employee_visa/?emp_code_id=gauravg&visa_country_id=United%20Kingdom&visa_type=Work HTTP/1.1" 200 53
+INFO|30/Nov/2020 12:51:51|basehttp|1746|140578936043264|"OPTIONS /get_currency_conversion/?from_currency=JPY&to_currency=USD HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:51:51|basehttp|1746|140578936043264|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:51:51|basehttp|1746|140578936043264|"GET /get_currency_conversion/?from_currency=JPY&to_currency=USD HTTP/1.1" 200 575
+INFO|30/Nov/2020 12:51:51|basehttp|1746|140578936043264|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|30/Nov/2020 12:52:58|basehttp|1746|140578936043264|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:53:07|basehttp|1746|140578936043264|"POST /get_add/travel_request/ HTTP/1.1" 200 101
+INFO|30/Nov/2020 12:53:13|basehttp|1746|140578574563072|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:53:14|basehttp|1746|140578936043264|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg@triazinesoft.com HTTP/1.1" 200 20825
+INFO|30/Nov/2020 12:54:34|basehttp|1746|140578574563072|"OPTIONS /get_view_travel_request/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:54:34|log|1746|140579056383744|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:54:34|basehttp|1746|140579056383744|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:34|log|1746|140578936043264|Unauthorized: /get_active_currency/
+INFO|30/Nov/2020 12:54:34|basehttp|1746|140578574563072|"OPTIONS /get_travel_status_summary/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:54:34|basehttp|1746|140578944435968|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:54:34|log|1746|140578926860032|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:54:34|basehttp|1746|140578936043264|"GET /get_active_currency/?status_type=all HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:34|basehttp|1746|140578926860032|"GET /get_action_status/?module=A,T HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:34|log|1746|140578936043264|Unauthorized: /get_travel_status_summary/
+INFO|30/Nov/2020 12:54:34|basehttp|1746|140578926860032|"OPTIONS /assignment_travel_tax_grid/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|30/Nov/2020 12:54:34|log|1746|140578574563072|Unauthorized: /get_view_travel_request/
+WARNING|30/Nov/2020 12:54:34|log|1746|140578944435968|Unauthorized: /assignment_travel_request_status/
+WARNING|30/Nov/2020 12:54:34|basehttp|1746|140578936043264|"GET /get_travel_status_summary/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:54:34|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:54:34|log|1746|140578566170368|Unauthorized: /get_action_status/
+WARNING|30/Nov/2020 12:54:34|basehttp|1746|140578574563072|"GET /get_view_travel_request/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:34|basehttp|1746|140578566170368|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:34|basehttp|1746|140578944435968|"GET /assignment_travel_request_status/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:35|log|1746|140578927650560|Unauthorized: /assignment_travel_tax_grid/
+WARNING|30/Nov/2020 12:54:35|log|1746|140578944435968|Unauthorized: /get_active_currency/
+INFO|30/Nov/2020 12:54:35|basehttp|1746|140578566170368|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:54:35|log|1746|140579056383744|Unauthorized: /get_action_status/
+INFO|30/Nov/2020 12:54:35|basehttp|1746|140578936043264|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:54:35|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:54:35|basehttp|1746|140578927650560|"GET /assignment_travel_tax_grid/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:35|basehttp|1746|140579056383744|"GET /get_action_status/?module=A,T HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:35|basehttp|1746|140578944435968|"GET /get_active_currency/?status_type=all HTTP/1.1" 401 183
+WARNING|30/Nov/2020 12:54:36|log|1746|140578944435968|Unauthorized: /get_travel_status_summary/
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578927650560|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140579056383744|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|30/Nov/2020 12:54:36|basehttp|1746|140578944435968|"GET /get_travel_status_summary/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578919257856|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578936043264|"GET /get_view_travel_request/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 200 4244
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578574563072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578944435968|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578919257856|"GET /assignment_travel_tax_grid/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|30/Nov/2020 12:54:36|basehttp|1746|140578919257856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:54:37|basehttp|1746|140578919257856|"GET /get_action_status/?module=A,T HTTP/1.1" 200 3064
+INFO|30/Nov/2020 12:54:37|basehttp|1746|140578919257856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|30/Nov/2020 12:54:37|basehttp|1746|140578936043264|"GET /get_active_currency/?status_type=all HTTP/1.1" 200 124700
+INFO|30/Nov/2020 12:54:37|basehttp|1746|140578944435968|"GET /get_post_location/?country=Japan&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|30/Nov/2020 12:54:37|basehttp|1746|140578936043264|"OPTIONS /get_create_assignment/?home=United%20Kingdom&End_date=2021-02-25T00:00:00+05:30&Start_date=Thu%20Feb%2025%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:54:37|basehttp|1746|140578919257856|"GET /get_travel_status_summary/?travel_req_id=TR482223&org_id=ORG150866 HTTP/1.1" 200 1156
+INFO|30/Nov/2020 12:54:37|basehttp|1746|140578919257856|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|30/Nov/2020 12:54:38|basehttp|1746|140578919257856|"OPTIONS /get_create_assignment/?home=United%20Kingdom&End_date=2021-02-25T00:00:00+05:30&Start_date=Thu%20Feb%2025%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=gauravg@triazinesoft.com HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:54:38|basehttp|1746|140578919257856|"OPTIONS /get_currency_conversion/?from_currency=JPY&to_currency= HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:54:38|basehttp|1746|140578919257856|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 0
+INFO|30/Nov/2020 12:54:38|basehttp|1746|140578919257856|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-02-25T00:00:00+05:30&Start_date=Thu%20Feb%2025%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=gauravg@triazinesoft.com HTTP/1.1" 200 63
+INFO|30/Nov/2020 12:54:38|basehttp|1746|140578919257856|"GET /get_currency_conversion/?from_currency=JPY&to_currency= HTTP/1.1" 200 63
+INFO|30/Nov/2020 12:54:38|basehttp|1746|140578919257856|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-02-25T00:00:00+05:30&Start_date=Thu%20Feb%2025%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=gauravg@triazinesoft.com HTTP/1.1" 200 63
+INFO|30/Nov/2020 12:54:39|basehttp|1746|140578919257856|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+WARNING|30/Nov/2020 21:45:09|log|1746|140578919257856|Not Found: /ip.ws.126.net:443
+WARNING|30/Nov/2020 21:45:09|basehttp|1746|140578919257856|"CONNECT ip.ws.126.net:443 HTTP/1.1" 404 1666
+INFO|30/Nov/2020 21:53:42|basehttp|1746|140578919257856|code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ä`\x0b×r\x83\x8e<\x96Ë£Õ\x13l\x1dI8ÚÚ*\x08µÌðk,4C\x00Ë\x87{\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\tÀ\x14À')
+ERROR|30/Nov/2020 21:53:42|basehttp|1746|140578919257856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+INFO|30/Nov/2020 21:53:43|basehttp|1746|140578919257856|"GET / HTTP/1.1" 200 44
+INFO|30/Nov/2020 21:53:43|basehttp|1746|140578919257856|"GET / HTTP/1.1" 200 44
+INFO|30/Nov/2020 22:58:07|basehttp|1746|140578919257856|"GET / HTTP/1.1" 200 44
+INFO|01/Dec/2020 01:15:33|basehttp|1746|140578919257856|"GET / HTTP/1.1" 200 44
+INFO|01/Dec/2020 01:26:47|basehttp|1746|140578919257856|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|01/Dec/2020 01:26:47|basehttp|1746|140578919257856|"  /*à     Cookie: mstshash=Administr" 400 -
+INFO|01/Dec/2020 01:56:35|basehttp|1746|140578919257856|"GET / HTTP/1.0" 200 75
+INFO|01/Dec/2020 03:06:50|basehttp|1746|140578919257856|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|01/Dec/2020 03:06:50|basehttp|1746|140578919257856|"  /*à     Cookie: mstshash=Administr" 400 -

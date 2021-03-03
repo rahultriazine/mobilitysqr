@@ -1,0 +1,95 @@
+ERROR|09/Jan/2021 22:00:44|log|6676|140016447698688|Internal Server Error: /tax_grid_country_update/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/country.py", line 653, in post
+    for data in CursorByName(cursor):
+NameError: name 'CursorByName' is not defined
+ERROR|09/Jan/2021 22:00:44|basehttp|6676|140016447698688|"POST /tax_grid_country_update/ HTTP/1.1" 500 17308
+ERROR|09/Jan/2021 22:12:33|exception|7087|140328201959168|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Jan/2021 22:48:15|log|9796|140337971975936|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/country.py", line 850, in get
+    criterion2 = Q(bv_threshold<days)
+NameError: name 'bv_threshold' is not defined
+ERROR|09/Jan/2021 22:48:15|basehttp|9796|140337971975936|"GET /get_post_country_policy/?days=1614&country_code=United%20States HTTP/1.1" 500 17237
+ERROR|09/Jan/2021 22:48:17|log|9796|140337971975936|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/country.py", line 850, in get
+    criterion2 = Q(bv_threshold<days)
+NameError: name 'bv_threshold' is not defined
+ERROR|09/Jan/2021 22:48:17|basehttp|9796|140337971975936|"GET /get_post_country_policy/?days=1614&country_code=United%20States HTTP/1.1" 500 17237
+ERROR|09/Jan/2021 23:01:26|exception|10289|140281314895616|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 01:07:28|exception|10289|140281314895616|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 01:38:40|exception|10289|140281314895616|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 03:08:14|exception|10289|140281314895616|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 04:06:14|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 04:09:35|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 04:32:39|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 05:06:20|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 06:08:30|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 06:37:58|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 07:22:36|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 08:05:34|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 08:05:34|basehttp|10289|140281306502912|"GET /manager/html HTTP/1.1" 500 59
+ERROR|10/Jan/2021 08:11:28|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 08:35:30|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 10:04:13|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 10:04:13|basehttp|10289|140281306502912|"GET /manager/html HTTP/1.1" 500 59
+ERROR|10/Jan/2021 10:11:25|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 11:11:51|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 12:19:43|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 12:56:37|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 13:03:32|exception|10289|140281306502912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 15:00:57|exception|10289|140281201293056|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 15:54:22|exception|10289|140281201293056|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 17:56:36|exception|10289|140281201293056|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 18:15:17|exception|10289|140281201293056|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 18:42:14|exception|10289|140281201293056|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Jan/2021 20:17:32|exception|10289|140281174021888|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

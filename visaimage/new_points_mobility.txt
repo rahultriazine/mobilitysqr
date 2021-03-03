@@ -1,0 +1,33 @@
+1.Terms and Conditions and support page in login --api
+2.forgot password --api
+3.dropdown size,default --done
+4.travelling_country along with city details  --done
+5.notification  -api
+6.visa_request_id against travel_id and pulldown popup with status. --id done popoup rest
+7.from and to city with country. --done
+8.n/a if data is not available.--done
+9.if visa is not remove hide visa details --done
+10.office location data is not coming.--done
+11.color of header approximate cost should be lighter --done
+12.remove save button from visa. --done
+13.main action button fill by purple color --done(some page)
+14.second button color by logo with outline --done(some page)
+15.third button purple outline --done(some page)
+16.travel and visa action has history (current_owner=inprogress) --done(partial)
+17.purpose of travel ui should be same as request  --done
+18.country guide data validate  --done
+19.project search list should be left align.--done
+20.from and to search should be same as MMT. --time taking
+21.popup of alert color symmetry.  --done(purpose of travel pending)
+22.when we added agenda should be edit agenda  --done
+23.Action in header in view details(icon) and take ownership. --done
+24.inprogress visa request list should be visa request list.  --done
+25.current owner add in visa lists. --done
+26.from and to of every request should be same--done
+27.add data for document by employer  -api 
+
+
+
+forgot passwor api
+notiifacrion api
+document by employer data api
