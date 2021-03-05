@@ -475,3 +475,32 @@ class Calender_Events(TimeStampedModel, GeneratedByModel, Status):
 
     def __unicode__(self):
         return self.emp_code
+
+
+class Calender_Activity(models.Model):
+    activity_name = models.CharField(max_length=100, null=True, blank=True)
+    activity_sort_name = models.CharField(max_length=100, null=True, blank=True)
+    is_visible = models.CharField(max_length=50, default=True)
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('Calender Activity')
+        verbose_name_plural = _('Calender Activity')
+
+    def __str__(self):
+        return self.activity_name
+
+    def __unicode__(self):
+        return self.activity_name

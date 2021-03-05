@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from . models import Employee, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events
+from . models import Employee, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events,Calender_Activity
 
 
 class EmployeeSerializers(serializers.ModelSerializer):
@@ -86,4 +86,10 @@ class Employee_Org_InfoSerializers(serializers.ModelSerializer):
 class Calender_EventsSerializers(serializers.ModelSerializer):
     class Meta:
         model = Calender_Events
+        fields = '__all__'
+
+
+class Calender_ActivitySerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Calender_Activity
         fields = '__all__'

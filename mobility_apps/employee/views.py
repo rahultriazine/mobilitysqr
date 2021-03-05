@@ -8,8 +8,8 @@ from rest_framework import status
 from rest_framework import settings
 from api.models import User
 from mobility_apps.master.models import Project
-from mobility_apps.employee.models import Employee, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events
-from mobility_apps.employee.serializer import EmployeeSerializers,Employee_Passport_DetailSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers,Employee_Org_InfoSerializers,Calender_EventsSerializers
+from mobility_apps.employee.models import Employee, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events,Calender_Activity
+from mobility_apps.employee.serializer import EmployeeSerializers,Employee_Passport_DetailSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers,Employee_Org_InfoSerializers,Calender_EventsSerializers,Calender_ActivitySerializers
 from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
 from mobility_apps.travel.serializers import Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
 
@@ -1992,7 +1992,7 @@ class calender_event_update_delete(APIView):
             serializer.save()
             dict = {'massage': 'Successfully Updated', 'status': True, 'data': serializer.data}
         else:
-            dict = {'massage': 'Failed to update calender event', 'status': False, 'data': []}
+            dict = {'massage': 'Failed to update calender event', 'status': False}
         return Response(dict, status=status.HTTP_200_OK)
 
 
@@ -2015,7 +2015,7 @@ class jwt_custom_login(ListCreateAPIView):
                     # return True
                     access_token = generate_access_token(user_id)
                     refresh_token = generate_refresh_token(user_id)
-                    response.data = {"refresh": refresh_token,"access": access_token,'status': True}
+                    response.data = {"access": access_token, "refresh": refresh_token,'status': True}
                 else:
                     response.data = {'massage': 'Incorrect login credentials. Please try again', 'status': False}
             else:
@@ -2024,3 +2024,20 @@ class jwt_custom_login(ListCreateAPIView):
             response.data = {'massage': 'Please enter Username and Password', 'status': False}
         return response
         return response
+
+
+" get calender event api"
+
+
+class calender_activity(APIView):
+    serializer_class = Calender_ActivitySerializers
+
+    def get(self, request):
+        calender_activity = Calender_Activity.objects.filter(is_visible=True)
+        serializer = Calender_ActivitySerializers(calender_activity, many=True)
+        if serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data': serializer.data}
+        else:
+            dict = {'massage': 'data not found', 'status': False, 'data': []}
+        return Response(dict, status=status.HTTP_200_OK)
+

@@ -11,10 +11,16 @@ from mobility_apps.master.serializers.country import CountrySerializers ,CitySer
 from rest_framework.generics import RetrieveDestroyAPIView, ListCreateAPIView
 from rest_framework.permissions import  (AllowAny,IsAuthenticated)
 from django.db.models.deletion import ProtectedError
+from rest_framework.parsers import MultiPartParser, FormParser
 import pandas as pd
 from mobility_apps.response_message import *
 from django.db import connection
 from django.db.models import Q
+# from rest_framework_bulk import (
+#     BulkListSerializer,
+#     BulkSerializerMixin,
+#     ListBulkCreateUpdateDestroyAPIView,
+# )
 import math
 from dateutil import tz
 from datetime import datetime,date
@@ -919,4 +925,25 @@ class post_country_policy(ListCreateAPIView):
             return Response(dict, status=status.HTTP_200_OK)
         except Exception as e:
             dict = {'message':MSG_FAILED, 'status': 'False','status_code':406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
+
+###########################################################
+" Upload country json data"
+###########################################################
+
+class json_upload_country(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = CountrySerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = CountrySerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message':e, 'status': False,'status_code':406}
             return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)

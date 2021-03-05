@@ -1,0 +1,485 @@
+INFO|04/Mar/2021 11:44:35|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 11:44:54|basehttp|7257|140549617833728|"POST /api/custom/login/ HTTP/1.1" 200 450
+INFO|04/Mar/2021 11:45:07|basehttp|7257|140549617833728|"POST /api/custom/login/ HTTP/1.1" 200 450
+INFO|04/Mar/2021 11:46:02|basehttp|7257|140549617833728|"POST /api/custom/login/ HTTP/1.1" 200 450
+WARNING|04/Mar/2021 11:46:32|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:32|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:34|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:34|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:35|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:35|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:36|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:36|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:37|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:37|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:37|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:37|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:38|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:38|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:38|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:38|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:39|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:39|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:40|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:40|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:41|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:41|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:49|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:49|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:46:49|log|7257|140549617833728|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:46:49|basehttp|7257|140549617833728|"POST /api/token/refresh/ HTTP/1.1" 401 58
+INFO|04/Mar/2021 11:47:59|basehttp|7451|140481719686912|"POST /api/custom/login/ HTTP/1.1" 200 452
+WARNING|04/Mar/2021 11:48:15|log|7451|140481719686912|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:48:15|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:48:18|log|7451|140481719686912|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:48:18|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:48:23|log|7451|140481719686912|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:48:23|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:48:24|log|7451|140481719686912|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:48:24|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:48:26|log|7451|140481719686912|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:48:26|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 401 58
+WARNING|04/Mar/2021 11:56:57|log|7451|140481719686912|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:56:57|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 401 58
+INFO|04/Mar/2021 11:57:25|basehttp|7451|140481719686912|"POST /api/custom/login/ HTTP/1.1" 200 452
+WARNING|04/Mar/2021 11:57:41|log|7451|140481719686912|Unauthorized: /api/token/refresh/
+WARNING|04/Mar/2021 11:57:41|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 401 58
+INFO|04/Mar/2021 11:58:18|basehttp|7451|140481719686912|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|04/Mar/2021 11:58:48|basehttp|7451|140481719686912|"POST /api/login/ HTTP/1.1" 200 438
+INFO|04/Mar/2021 11:59:17|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 12:00:24|basehttp|7451|140481719686912|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|04/Mar/2021 12:00:58|basehttp|7451|140481719686912|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 12:01:50|basehttp|8576|140555145922304|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|04/Mar/2021 12:02:09|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 12:04:21|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 12:04:23|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 12:15:01|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|04/Mar/2021 12:15:07|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|04/Mar/2021 12:15:08|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|04/Mar/2021 12:15:09|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|04/Mar/2021 12:15:14|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|04/Mar/2021 12:15:39|basehttp|8576|140555145922304|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|04/Mar/2021 12:15:53|basehttp|8576|140555145922304|"POST /api/token/refresh/ HTTP/1.1" 200 218
+WARNING|04/Mar/2021 13:31:24|log|11213|140088212498176|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 13:31:24|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 401 58
+INFO|04/Mar/2021 13:31:29|basehttp|11213|140088212498176|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 13:31:45|basehttp|11213|140088212498176|"POST /api/custom/login/ HTTP/1.1" 200 452
+ERROR|04/Mar/2021 13:32:13|log|11213|140088212498176|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+ERROR|04/Mar/2021 13:32:13|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 500 109026
+ERROR|04/Mar/2021 13:32:41|log|11213|140088212498176|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+ERROR|04/Mar/2021 13:32:41|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 500 109025
+INFO|04/Mar/2021 13:33:12|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 201 239
+INFO|04/Mar/2021 13:37:26|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 201 239
+INFO|04/Mar/2021 13:37:55|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 201 239
+INFO|04/Mar/2021 14:48:50|basehttp|11617|139766137870080|"OPTIONS /api/login/ HTTP/1.1" 200 0
+INFO|04/Mar/2021 14:48:54|basehttp|11617|139766137870080|"POST /api/login/ HTTP/1.1" 200 438
+INFO|04/Mar/2021 14:48:55|basehttp|11617|139766137870080|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|04/Mar/2021 14:49:06|basehttp|11617|139766137870080|"POST /emoloyeeinfo/ HTTP/1.1" 200 1351
+INFO|04/Mar/2021 14:49:06|basehttp|11617|139766137870080|"OPTIONS /get_post_notification/?email=Tspl1045&org_id=ORG120681 HTTP/1.1" 200 0
+INFO|04/Mar/2021 14:49:06|basehttp|11617|139766221764352|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|04/Mar/2021 14:49:06|basehttp|11617|139766213371648|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG120681&emp_email=Tspl1045 HTTP/1.1" 200 0
+INFO|04/Mar/2021 14:49:11|basehttp|11617|139766213371648|"GET /get_action_status/?module=T, HTTP/1.1" 200 2
+INFO|04/Mar/2021 14:49:11|basehttp|11617|139766137870080|"GET /get_post_notification/?email=Tspl1045&org_id=ORG120681 HTTP/1.1" 200 63
+INFO|04/Mar/2021 14:49:11|basehttp|11617|139766221764352|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG120681&emp_email=Tspl1045 HTTP/1.1" 200 48
+INFO|04/Mar/2021 14:49:16|basehttp|11617|139766137870080|"OPTIONS /get_org_count_travel_requests/?org_id=ORG120681 HTTP/1.1" 200 0
+INFO|04/Mar/2021 14:49:16|basehttp|11617|139766221764352|"OPTIONS /get_org_count_visa_requests/?org_id=ORG120681 HTTP/1.1" 200 0
+INFO|04/Mar/2021 14:49:22|basehttp|11617|139766137870080|"GET /get_org_count_visa_requests/?org_id=ORG120681 HTTP/1.1" 200 77
+INFO|04/Mar/2021 14:49:22|basehttp|11617|139766221764352|"GET /get_org_count_travel_requests/?org_id=ORG120681 HTTP/1.1" 200 77
+WARNING|04/Mar/2021 15:22:45|log|13428|139943683507968|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 15:22:45|basehttp|13428|139943683507968|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 15:23:24|basehttp|13428|139943683507968|"POST /api/token/refresh/ HTTP/1.1" 200 218
+WARNING|04/Mar/2021 15:23:39|log|13428|139943683507968|Bad Request: /json_upload/country/
+WARNING|04/Mar/2021 15:23:39|basehttp|13428|139943683507968|"POST /json_upload/country/ HTTP/1.1" 400 75
+ERROR|04/Mar/2021 15:42:55|log|14577|140089185314560|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 393, in initialize_request
+    parsers=self.get_parsers(),
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 266, in get_parsers
+    return [parser() for parser in self.parser_classes]
+TypeError: 'type' object is not iterable
+ERROR|04/Mar/2021 15:42:55|basehttp|14577|140089185314560|"POST /json_upload/country/ HTTP/1.1" 500 90025
+WARNING|04/Mar/2021 15:49:07|log|14892|139659701020416|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 15:49:07|basehttp|14892|139659701020416|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 15:49:12|basehttp|14892|139659701020416|"POST /api/token/refresh/ HTTP/1.1" 200 218
+ERROR|04/Mar/2021 15:49:28|log|14892|139659701020416|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+ERROR|04/Mar/2021 15:49:28|basehttp|14892|139659701020416|"POST /json_upload/country/ HTTP/1.1" 500 109086
+WARNING|04/Mar/2021 16:07:55|log|15505|140098033895168|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 16:07:55|basehttp|15505|140098033895168|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 16:07:59|basehttp|15505|140098033895168|"POST /api/token/refresh/ HTTP/1.1" 200 218
+ERROR|04/Mar/2021 16:08:17|log|15505|140098033895168|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+ERROR|04/Mar/2021 16:08:17|basehttp|15505|140098033895168|"POST /json_upload/country/ HTTP/1.1" 500 109086
+WARNING|04/Mar/2021 16:33:11|log|16425|140309776770816|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 16:33:11|basehttp|16425|140309776770816|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 16:33:14|basehttp|16425|140309776770816|"POST /api/token/refresh/ HTTP/1.1" 200 218
+ERROR|04/Mar/2021 16:33:29|log|16425|140309776770816|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+ERROR|04/Mar/2021 16:33:29|basehttp|16425|140309776770816|"POST /json_upload/country/ HTTP/1.1" 500 109086
+WARNING|04/Mar/2021 16:57:02|log|17916|139984703276800|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 16:57:02|basehttp|17916|139984703276800|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 16:57:05|basehttp|17916|139984703276800|"POST /api/token/refresh/ HTTP/1.1" 200 218
+ERROR|04/Mar/2021 16:57:19|log|17916|139984703276800|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+ERROR|04/Mar/2021 16:57:19|basehttp|17916|139984703276800|"POST /json_upload/country/ HTTP/1.1" 500 109086
+WARNING|04/Mar/2021 17:08:30|log|17916|139984703276800|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 17:08:30|basehttp|17916|139984703276800|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 17:08:34|basehttp|17916|139984703276800|"POST /api/token/refresh/ HTTP/1.1" 200 218
+ERROR|04/Mar/2021 17:08:56|log|17916|139984703276800|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnsupportedMediaType is not JSON serializable
+ERROR|04/Mar/2021 17:08:56|basehttp|17916|139984703276800|"POST /json_upload/country/ HTTP/1.1" 500 109085
+INFO|04/Mar/2021 17:55:41|basehttp|19751|140285141800704|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 17:55:58|basehttp|19751|140285141800704|"POST /json_upload/country/ HTTP/1.1" 201 241
+INFO|04/Mar/2021 17:56:35|basehttp|19751|140285141800704|"POST /json_upload/country/ HTTP/1.1" 201 481
+INFO|04/Mar/2021 17:59:42|basehttp|19848|139640632289024|"POST /json_upload/country/ HTTP/1.1" 201 481
+INFO|04/Mar/2021 18:00:09|basehttp|19848|139640632289024|"POST /json_upload/country/ HTTP/1.1" 201 481
+WARNING|04/Mar/2021 18:21:34|log|19848|139640632289024|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 18:21:34|basehttp|19848|139640632289024|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 18:21:36|basehttp|19848|139640632289024|"POST /api/token/refresh/ HTTP/1.1" 200 218
+INFO|04/Mar/2021 18:21:58|basehttp|19848|139640632289024|"POST /json_upload/country/ HTTP/1.1" 201 479
+WARNING|04/Mar/2021 18:39:21|log|21151|140101373482752|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 18:39:21|basehttp|21151|140101373482752|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 18:39:25|basehttp|21151|140101373482752|"POST /api/token/refresh/ HTTP/1.1" 200 218
+ERROR|04/Mar/2021 18:39:48|log|21151|140101373482752|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IntegrityError is not JSON serializable
+ERROR|04/Mar/2021 18:39:48|basehttp|21151|140101373482752|"POST /json_upload/country/ HTTP/1.1" 500 111411
+ERROR|04/Mar/2021 18:42:55|log|21387|139951979845376|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IntegrityError is not JSON serializable
+ERROR|04/Mar/2021 18:42:55|basehttp|21387|139951979845376|"POST /json_upload/country/ HTTP/1.1" 500 111411
+INFO|04/Mar/2021 18:44:16|basehttp|21460|140559029843712|"POST /json_upload/country/ HTTP/1.1" 201 481
+WARNING|04/Mar/2021 18:46:34|log|21544|139699029006080|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 18:46:34|basehttp|21544|139699029006080|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 18:46:37|basehttp|21544|139699029006080|"POST /api/token/refresh/ HTTP/1.1" 200 218
+ERROR|04/Mar/2021 18:46:56|log|21544|139699029006080|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IntegrityError is not JSON serializable
+ERROR|04/Mar/2021 18:46:56|basehttp|21544|139699029006080|"POST /json_upload/country/ HTTP/1.1" 500 111411
+ERROR|04/Mar/2021 18:48:16|log|21544|139699029006080|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IntegrityError is not JSON serializable
+ERROR|04/Mar/2021 18:48:16|basehttp|21544|139699029006080|"POST /json_upload/country/ HTTP/1.1" 500 111410
+WARNING|04/Mar/2021 18:48:28|log|21544|139699029006080|Bad Request: /json_upload/country/
+WARNING|04/Mar/2021 18:48:28|basehttp|21544|139699029006080|"POST /json_upload/country/ HTTP/1.1" 400 72
+ERROR|04/Mar/2021 18:50:23|log|21799|139998443595520|Internal Server Error: /json_upload/country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type IntegrityError is not JSON serializable
+ERROR|04/Mar/2021 18:50:23|basehttp|21799|139998443595520|"POST /json_upload/country/ HTTP/1.1" 500 111410
+INFO|04/Mar/2021 18:51:42|basehttp|21799|139998443595520|"POST /json_upload/country/ HTTP/1.1" 201 467
+WARNING|04/Mar/2021 18:52:36|log|21799|139998443595520|Unauthorized: /json_upload/country/
+WARNING|04/Mar/2021 18:52:36|basehttp|21799|139998443595520|"POST /json_upload/country/ HTTP/1.1" 401 183
+INFO|04/Mar/2021 18:52:39|basehttp|21799|139998443595520|"POST /api/token/refresh/ HTTP/1.1" 200 218
+WARNING|04/Mar/2021 18:52:54|log|21799|139998443595520|Bad Request: /json_upload/country/
+WARNING|04/Mar/2021 18:52:54|basehttp|21799|139998443595520|"POST /json_upload/country/ HTTP/1.1" 400 75
+WARNING|04/Mar/2021 18:53:35|log|21946|139743137060608|Bad Request: /json_upload/country/
+WARNING|04/Mar/2021 18:53:35|basehttp|21946|139743137060608|"POST /json_upload/country/ HTTP/1.1" 400 137

@@ -51,6 +51,7 @@ urlpatterns = [
         path('access_token/', access_token.as_view(), name='access_token'),
         path('post_get_calender_event/', calender_event_get_post.as_view(), name="post_get_calender_event"),
         path('delete_update_calender_event/<int:pk>/', calender_event_update_delete.as_view(), name="delete_update_calender_event"),
+        path('get_calender_activity/',calender_activity.as_view(),name="get_calender_activity")
            ]
 
 
