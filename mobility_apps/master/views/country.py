@@ -930,7 +930,7 @@ class post_country_policy(ListCreateAPIView):
 
 
 ###########################################################
-" Upload country json data"
+" bulk Upload country json"
 ###########################################################
 
 class json_upload_country(APIView):
@@ -940,6 +940,25 @@ class json_upload_country(APIView):
     def post(self, request, *args, **kwargs):
         try:
             serializer = CountrySerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message':e, 'status': False,'status_code':406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
+##########################################################
+" json upload city"
+##########################################################
+
+class json_upload_city(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = CitySerializers
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = CitySerializers(data=request.data, many=True)
             if serializer.is_valid():
                 serializer.save()
                 return Response(serializer.data, status=status.HTTP_201_CREATED)

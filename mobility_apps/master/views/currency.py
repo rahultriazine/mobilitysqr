@@ -346,3 +346,44 @@ class currency_conversion_history(ListCreateAPIView):
         print(serializer.data)
         dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
+
+
+
+########################################################
+" bulk json upload currency"
+########################################################
+
+class json_upload_currency(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = CurrencySerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = CurrencySerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message': e, 'status': False, 'status_code': 406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
+################################################################
+" bulk upload json data for currency conversion"
+################################################################
+
+class json_upload_currency_conversion(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Currency_ConversionSerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = Currency_ConversionSerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message': e, 'status': False, 'status_code': 406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)

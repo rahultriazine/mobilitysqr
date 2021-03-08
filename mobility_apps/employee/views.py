@@ -1967,12 +1967,12 @@ class calender_event_get_post(ListCreateAPIView):
 
 
     " get all calender event data by emp_id"
-    def get(self, request):
-        emp_code = request.data['emp_code']
+    def get(self, request, emp_code=None):
+        emp_code = request.GET.get('emp_code', '')
         if (emp_code is None) or (emp_code == ''):
             dict = {'massage': 'Please send me employee code', 'status': False,'data':[]}
         else:
-            calender_event_data = Calender_Events.objects.filter(emp_code=emp_code, is_visible=True, is_deleted=False)
+            calender_event_data = Calender_Events.objects.filter(emp_code_id=emp_code, is_visible=True, is_deleted=False)
             serializer = Calender_EventsSerializers(calender_event_data, many=True)
             dict = {'massage': 'data found', 'status': True, 'data': serializer.data}
         return Response(dict, status=status.HTTP_200_OK)

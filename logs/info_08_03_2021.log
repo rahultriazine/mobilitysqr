@@ -6,3 +6,414 @@ INFO|08/Mar/2021 10:18:20|basehttp|5027|140534668580608|"POST /api/custom/login/
 INFO|08/Mar/2021 10:19:01|basehttp|5027|140534668580608|"GET /get_calender_activity/ HTTP/1.1" 200 1106
 INFO|08/Mar/2021 11:19:24|basehttp|8407|140355305776896|"POST /api/custom/login/ HTTP/1.1" 200 455
 INFO|08/Mar/2021 11:23:42|basehttp|8770|139878822045440|"POST /api/custom/login/ HTTP/1.1" 200 455
+WARNING|08/Mar/2021 15:35:23|log|16932|140440187692800|Unauthorized: /json_upload/currency/
+WARNING|08/Mar/2021 15:35:23|basehttp|16932|140440187692800|"POST /json_upload/currency/ HTTP/1.1" 401 58
+INFO|08/Mar/2021 15:37:49|basehttp|16932|140440187692800|"POST /api/custom/login/ HTTP/1.1" 200 452
+ERROR|08/Mar/2021 15:38:10|log|16932|140440187692800|Internal Server Error: /json_upload/currency/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ParseError is not JSON serializable
+ERROR|08/Mar/2021 15:38:10|basehttp|16932|140440187692800|"POST /json_upload/currency/ HTTP/1.1" 500 109558
+ERROR|08/Mar/2021 15:39:09|log|16932|140440187692800|Internal Server Error: /json_upload/currency/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ParseError is not JSON serializable
+ERROR|08/Mar/2021 15:39:09|basehttp|16932|140440187692800|"POST /json_upload/currency/ HTTP/1.1" 500 109549
+ERROR|08/Mar/2021 15:40:26|log|16932|140440187692800|Internal Server Error: /json_upload/currency/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ParseError is not JSON serializable
+ERROR|08/Mar/2021 15:40:26|basehttp|16932|140440187692800|"POST /json_upload/currency/ HTTP/1.1" 500 109684
+ERROR|08/Mar/2021 15:42:42|log|16932|140440187692800|Internal Server Error: /json_upload/currency/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ParseError is not JSON serializable
+ERROR|08/Mar/2021 15:42:42|basehttp|16932|140440187692800|"POST /json_upload/currency/ HTTP/1.1" 500 109702
+ERROR|08/Mar/2021 15:43:53|log|16932|140440187692800|Internal Server Error: /json_upload/currency/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ParseError is not JSON serializable
+ERROR|08/Mar/2021 15:43:53|basehttp|16932|140440187692800|"POST /json_upload/currency/ HTTP/1.1" 500 109684
+INFO|08/Mar/2021 15:47:53|basehttp|16932|140440187692800|"POST /json_upload/currency/ HTTP/1.1" 201 981
+INFO|08/Mar/2021 16:28:33|basehttp|18601|139788360042240|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|08/Mar/2021 16:28:56|basehttp|18601|139788360042240|"POST /json_upload/currency_conversion/ HTTP/1.1" 201 1024
+INFO|08/Mar/2021 16:51:06|basehttp|19395|139862179047168|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|08/Mar/2021 16:51:31|basehttp|19395|139862179047168|"POST /json_upload/project/ HTTP/1.1" 201 1215
+INFO|08/Mar/2021 17:51:27|basehttp|21019|140321506412288|"POST /api/custom/login/ HTTP/1.1" 200 452
+WARNING|08/Mar/2021 17:51:45|log|21019|140321506412288|Method Not Allowed: /json_upload_city/
+WARNING|08/Mar/2021 17:51:45|basehttp|21019|140321506412288|"GET /json_upload_city/ HTTP/1.1" 405 40
+INFO|08/Mar/2021 17:51:58|basehttp|21019|140321506412288|"POST /json_upload_city/ HTTP/1.1" 201 946
+WARNING|08/Mar/2021 18:08:42|log|22024|140518159800064|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 18:08:42|basehttp|22024|140518159800064|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53150
+WARNING|08/Mar/2021 18:28:34|log|23160|140418703017728|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 18:28:34|basehttp|23160|140418703017728|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53136
+WARNING|08/Mar/2021 18:28:45|log|23160|140418703017728|Not Found: /post_get_calender_event/emp_code=Emp112
+WARNING|08/Mar/2021 18:28:45|basehttp|23160|140418703017728|"GET /post_get_calender_event/emp_code=Emp112 HTTP/1.1" 404 53167
+INFO|08/Mar/2021 18:35:48|basehttp|23526|140460103915264|"GET /post_get_calender_event/Emp112 HTTP/1.1" 200 48
+INFO|08/Mar/2021 18:38:34|basehttp|23816|140277339641600|"GET /post_get_calender_event/Emp112 HTTP/1.1" 200 48
+INFO|08/Mar/2021 18:40:27|basehttp|23816|140277339641600|"GET /post_get_calender_event/Emp112 HTTP/1.1" 200 48
+INFO|08/Mar/2021 18:40:33|basehttp|23816|140277339641600|"GET /post_get_calender_event/Emp112 HTTP/1.1" 200 48
+INFO|08/Mar/2021 18:41:40|basehttp|24058|140150949234432|"GET /post_get_calender_event/Emp112 HTTP/1.1" 200 2858
+WARNING|08/Mar/2021 18:45:22|log|24058|140150949234432|Not Found: /post_get_calender_event/Emp112/
+WARNING|08/Mar/2021 18:45:22|basehttp|24058|140150949234432|"GET /post_get_calender_event/Emp112/ HTTP/1.1" 404 53151
+INFO|08/Mar/2021 18:45:37|basehttp|24058|140150949234432|"GET /post_get_calender_event/Emp112 HTTP/1.1" 200 2858
+WARNING|08/Mar/2021 18:51:48|log|24471|139789743990528|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 18:51:48|basehttp|24471|139789743990528|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53146
+WARNING|08/Mar/2021 18:52:22|log|24532|140071021831936|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 18:52:22|basehttp|24532|140071021831936|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53147
+WARNING|08/Mar/2021 18:53:05|log|24581|140270724867840|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 18:53:05|basehttp|24581|140270724867840|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53135
+WARNING|08/Mar/2021 18:57:10|log|24881|140461000578816|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 18:57:10|basehttp|24881|140461000578816|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53145
+WARNING|08/Mar/2021 18:57:19|log|24881|140461000578816|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 18:57:19|basehttp|24881|140461000578816|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53145
+WARNING|08/Mar/2021 19:00:31|log|25141|140230917838592|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 19:00:31|basehttp|25141|140230917838592|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53150
+WARNING|08/Mar/2021 19:01:42|log|25215|140028307785472|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 19:01:42|basehttp|25215|140028307785472|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53152
+WARNING|08/Mar/2021 19:02:57|log|25215|140028307785472|Not Found: /post_get_calender_event/Emp112
+WARNING|08/Mar/2021 19:02:57|basehttp|25215|140028307785472|"GET /post_get_calender_event/Emp112 HTTP/1.1" 404 53154
+WARNING|08/Mar/2021 19:03:12|log|25215|140028307785472|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 19:03:12|basehttp|25215|140028307785472|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53152
+WARNING|08/Mar/2021 19:05:04|log|25363|140308439144192|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 19:05:04|basehttp|25363|140308439144192|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53152
+WARNING|08/Mar/2021 19:10:33|log|25694|140499118413568|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 19:10:33|basehttp|25694|140499118413568|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53149
+WARNING|08/Mar/2021 19:10:36|log|25694|140499118413568|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 19:10:36|basehttp|25694|140499118413568|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53149
+WARNING|08/Mar/2021 19:12:58|log|25827|140529063544576|Not Found: /post_get_calender_event/
+WARNING|08/Mar/2021 19:12:58|basehttp|25827|140529063544576|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 404 53152
+INFO|08/Mar/2021 19:17:18|basehttp|26016|140211892475648|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 48
+INFO|08/Mar/2021 19:18:21|basehttp|26116|140639991392000|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 48
+INFO|08/Mar/2021 19:19:22|basehttp|26220|139767296251648|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 2858
+INFO|08/Mar/2021 19:19:54|basehttp|26267|140666764048128|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 2858
+ERROR|08/Mar/2021 19:20:46|log|26362|139773352818432|Internal Server Error: /post_get_calender_event/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "employee_calender_events_emp_code_id_360c4e4f_fk_employee_employee_emp_code". The conflict occurred in database "mob_test", table "dbo.employee_employee", column \'emp_code\'. (547) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1956, in post
+    serializer.save()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1322, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "employee_calender_events_emp_code_id_360c4e4f_fk_employee_employee_emp_code". The conflict occurred in database "mob_test", table "dbo.employee_employee", column \'emp_code\'. (547) (SQLExecDirectW)')
+ERROR|08/Mar/2021 19:20:46|basehttp|26362|139773352818432|"POST /post_get_calender_event/ HTTP/1.1" 500 23925
+WARNING|08/Mar/2021 19:22:30|log|26362|139773352818432|Unauthorized: /post_get_calender_event/
+WARNING|08/Mar/2021 19:22:30|basehttp|26362|139773352818432|"POST /post_get_calender_event/ HTTP/1.1" 401 183
+INFO|08/Mar/2021 19:22:41|basehttp|26362|139773352818432|"POST /api/custom/login/ HTTP/1.1" 200 452
+WARNING|08/Mar/2021 19:22:57|log|26362|139773352818432|Unsupported Media Type: /post_get_calender_event/
+WARNING|08/Mar/2021 19:22:57|basehttp|26362|139773352818432|"POST /post_get_calender_event/ HTTP/1.1" 415 62
+WARNING|08/Mar/2021 19:23:14|log|26362|139773352818432|Bad Request: /post_get_calender_event/
+WARNING|08/Mar/2021 19:23:14|basehttp|26362|139773352818432|"POST /post_get_calender_event/ HTTP/1.1" 400 60
+ERROR|08/Mar/2021 19:23:53|log|26362|139773352818432|Internal Server Error: /post_get_calender_event/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "employee_calender_events_emp_code_id_360c4e4f_fk_employee_employee_emp_code". The conflict occurred in database "mob_test", table "dbo.employee_employee", column \'emp_code\'. (547) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1956, in post
+    serializer.save()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1322, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "employee_calender_events_emp_code_id_360c4e4f_fk_employee_employee_emp_code". The conflict occurred in database "mob_test", table "dbo.employee_employee", column \'emp_code\'. (547) (SQLExecDirectW)')
+ERROR|08/Mar/2021 19:23:53|basehttp|26362|139773352818432|"POST /post_get_calender_event/ HTTP/1.1" 500 24179
+ERROR|08/Mar/2021 19:25:43|log|26362|139773352818432|Internal Server Error: /post_get_calender_event/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "employee_calender_events_emp_code_id_360c4e4f_fk_employee_employee_emp_code". The conflict occurred in database "mob_test", table "dbo.employee_employee", column \'emp_code\'. (547) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1956, in post
+    serializer.save()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1322, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: ('23000', '[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "employee_calender_events_emp_code_id_360c4e4f_fk_employee_employee_emp_code". The conflict occurred in database "mob_test", table "dbo.employee_employee", column \'emp_code\'. (547) (SQLExecDirectW)')
+ERROR|08/Mar/2021 19:25:43|basehttp|26362|139773352818432|"POST /post_get_calender_event/ HTTP/1.1" 500 24179
+INFO|08/Mar/2021 19:26:12|basehttp|26362|139773352818432|"POST /post_get_calender_event/ HTTP/1.1" 200 586

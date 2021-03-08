@@ -609,7 +609,7 @@ class Currency(TimeStampedModel, GeneratedByModel, Status):
     currency_name = models.CharField(max_length=100, blank=True)
     currency_description = models.CharField(max_length=200, blank=True)
     status_type = models.CharField(max_length=200, blank=True)
-    organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)
