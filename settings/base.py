@@ -141,7 +141,8 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'mob_test',
+        # 'NAME': 'mob_test',
+        'NAME': 'mobilitysqr_staging',
         'HOST': 'mobilitysqrdev.database.windows.net',
 	    'PORT': '1433',
         'USER': 'mobilitysqr_admin',

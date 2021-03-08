@@ -1,0 +1,8 @@
+INFO|08/Mar/2021 10:09:05|basehttp|5027|140534668580608|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|08/Mar/2021 10:09:33|basehttp|5027|140534668580608|"GET /get_calender_activity/ HTTP/1.1" 200 1106
+WARNING|08/Mar/2021 10:17:45|log|5027|140534668580608|Unauthorized: /get_calender_activity/
+WARNING|08/Mar/2021 10:17:45|basehttp|5027|140534668580608|"GET /get_calender_activity/ HTTP/1.1" 401 51
+INFO|08/Mar/2021 10:18:20|basehttp|5027|140534668580608|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|08/Mar/2021 10:19:01|basehttp|5027|140534668580608|"GET /get_calender_activity/ HTTP/1.1" 200 1106
+INFO|08/Mar/2021 11:19:24|basehttp|8407|140355305776896|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|08/Mar/2021 11:23:42|basehttp|8770|139878822045440|"POST /api/custom/login/ HTTP/1.1" 200 455

@@ -1996,7 +1996,10 @@ class calender_event_update_delete(APIView):
         return Response(dict, status=status.HTTP_200_OK)
 
 
+#################################################
 "jwt custome login "
+#################################################
+
 class jwt_custom_login(ListCreateAPIView):
     serializer_class = EmployeeSerializers
 
@@ -2026,8 +2029,9 @@ class jwt_custom_login(ListCreateAPIView):
         return response
 
 
+#############################################
 " get calender event api"
-
+#############################################
 
 class calender_activity(APIView):
     serializer_class = Calender_ActivitySerializers
@@ -2040,4 +2044,200 @@ class calender_activity(APIView):
         else:
             dict = {'massage': 'data not found', 'status': False, 'data': []}
         return Response(dict, status=status.HTTP_200_OK)
+
+
+#################################################
+" get employee information "
+#################################################
+
+class getEmployeePersonalInfo(APIView):
+    serializer_class = EmployeeSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        employee = request.GET['employee']
+        emp = Employee.objects.filter(Q(email__contains=employee)|Q(emp_code__contains=employee))
+        emp_serializer = EmployeeSerializers(emp,many=True)
+        dicts=[]
+        for employees in emp_serializer.data:
+            alldata={}
+            emp_code=employees['emp_code']
+            emp = Employee.objects.filter(emp_code__contains=emp_code)
+            emp_serializers = EmployeeSerializers(emp,many=True)
+            emp_serializers.data[0]['password']=""
+            i=0
+            for datas in emp_serializers.data:
+                emp_serializers.data[i]['supervisor_name']=self.employee_name(emp_code=datas['supervisor'])
+                i=i+1
+        if emp_serializers.data:
+            dict = {'massage': 'data found', 'status': True, 'data':emp_serializers.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+    def employee_name(self,emp_code):
+        if emp_code:
+            emp_code=Employee.objects.filter(emp_code=emp_code).values('emp_code','preferred_first_name','first_name','last_name')
+            if emp_code[0]['first_name']:
+                first_name=emp_code[0]['first_name']
+            else:
+                first_name=''
+
+            if emp_code[0]['last_name']:
+                last_name=emp_code[0]['last_name']
+            else:
+                last_name=""
+            name=first_name+" "+last_name
+            return name
+
+
+#################################################
+" get employee Org information "
+#################################################
+
+class getEmployeeOrgInfo(APIView):
+    serializer_class = Employee_Org_InfoSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Org_Info.objects.filter(emp_code__exact=emp_code)
+        emporg_serializer = Employee_Org_InfoSerializers(empadd,many=True)
+        dicts = []
+        if emporg_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':emporg_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+
+#################################################
+" get employee address information "
+#################################################
+
+class getEmployeeAddressInfo(APIView):
+    serializer_class = Employee_AddressSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Address.objects.filter(emp_code=emp_code)
+        empadd_serializer = Employee_AddressSerializers(empadd,many=True)
+        dicts = []
+        if empadd_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':empadd_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+
+#################################################
+" get employee Email information "
+#################################################
+
+class getEmployeeEmailInfo(APIView):
+    serializer_class = Employee_EmailsSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Emails.objects.filter(emp_code=emp_code)
+        empemails_serializer = Employee_EmailsSerializers(empadd,many=True)
+        dicts = []
+        if empemails_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':empemails_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+
+#################################################
+" get employee phone information "
+#################################################
+
+class getEmployeePhoneInfo(APIView):
+    serializer_class = Employee_PhonesSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Phones.objects.filter(emp_code=emp_code)
+        empphones_serializer = Employee_PhonesSerializers(empadd,many=True)
+        dicts = []
+        if empphones_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':empphones_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+
+#################################################
+" get employee national id "
+#################################################
+
+class getEmployeeNationalId(APIView):
+    serializer_class = Employee_NationalidSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Nationalid.objects.filter(emp_code=emp_code)
+        empnational_serializer = Employee_NationalidSerializers(empadd,many=True)
+        dicts = []
+        if empnational_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':empnational_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+#################################################
+" get employee Emergency contact "
+#################################################
+
+class getEmployeeEmergencyContact(APIView):
+    serializer_class = Employee_Emergency_ContactSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Emergency_Contact.objects.filter(emp_code=emp_code)
+        empemergency_serializer = Employee_Emergency_ContactSerializers(empadd,many=True)
+        dicts = []
+        if empemergency_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':empemergency_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+
+#################################################
+" get employee passport information "
+#################################################
+
+class getEmployeePassportInfo(APIView):
+    serializer_class = Employee_Passport_DetailSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Passport_Detail.objects.filter(emp_code=emp_code)
+        emppassport_serializer = Employee_Passport_DetailSerializers(empadd,many=True)
+        dicts = []
+        if emppassport_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':emppassport_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+
+#################################################
+" get employee vissa information "
+#################################################
+
+class getEmployeeVisaInfo(APIView):
+    serializer_class = Employee_Visa_DetailSerializers
+    permission_classes = (IsAuthenticated,)
+    def get(self, request):
+        emp_code = request.GET['employee']
+        empadd = Employee_Visa_Detail.objects.filter(emp_code=emp_code)
+        empvisa_serializer = Employee_Visa_DetailSerializers(empadd,many=True)
+        dicts = []
+        if empvisa_serializer.data:
+            dict = {'massage': 'data found', 'status': True, 'data':empvisa_serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {'massage': 'data not found', 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
 

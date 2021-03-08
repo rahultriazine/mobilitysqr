@@ -51,7 +51,21 @@ urlpatterns = [
         path('access_token/', access_token.as_view(), name='access_token'),
         path('post_get_calender_event/', calender_event_get_post.as_view(), name="post_get_calender_event"),
         path('delete_update_calender_event/<int:pk>/', calender_event_update_delete.as_view(), name="delete_update_calender_event"),
-        path('get_calender_activity/',calender_activity.as_view(),name="get_calender_activity")
+        path('get_calender_activity/',calender_activity.as_view(),name="get_calender_activity"),
+
+
+        path('getemployee_personal_info/', getEmployeePersonalInfo.as_view(), name="getemployee_personal_info"),
+        path('getemployee_org_info/', getEmployeeOrgInfo.as_view(), name="getemployee_org_info"),
+        path('getemployee_address_info/', getEmployeeAddressInfo.as_view(), name="getemployee_address_info"),
+        path('getemployee_email_info/', getEmployeeEmailInfo.as_view(), name="getemployee_email_info"),
+        path('getemployee_phone_info/', getEmployeePhoneInfo.as_view(), name="getemployee_phone_info"),
+        path('getemployee_national_id/', getEmployeeNationalId.as_view(), name="getemployee_national_id"),
+        path('getemployee_emergency_contact/', getEmployeeEmergencyContact.as_view(), name="getemployee_emergency_contact"),
+        path('getemployee_passport_info/', getEmployeePassportInfo.as_view(), name="getemployee_passport_info"),
+        path('getemployee_visa_info/', getEmployeeVisaInfo.as_view(), name="getemployee_visa_info"),
+
+
+
            ]
 
 
