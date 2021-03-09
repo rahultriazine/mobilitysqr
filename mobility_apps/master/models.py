@@ -426,7 +426,7 @@ class Role(TimeStampedModel, GeneratedByModel, Status):
     role_id = models.CharField(unique=True, max_length=4)
     role_name = models.CharField(max_length=100, blank=True, )
     role_description = models.CharField(max_length=200, blank=True, )
-    organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)

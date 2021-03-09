@@ -141,5 +141,23 @@ class bulk_upload_organization_location(ListCreateAPIView):
             return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
 
 
+#################################################
+" json upload organization location"
+#################################################
 
+
+class json_upload_organization_location(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Organization_LocationSerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = Organization_LocationSerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message': e, 'status': False, 'status_code': 406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
 

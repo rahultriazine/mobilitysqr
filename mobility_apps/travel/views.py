@@ -271,7 +271,7 @@ class get_post_travel_request(ListCreateAPIView):
                         'business_lead':self.employee_name(emp_code=employee[0]['business_lead']),
                         'client_executive_lead':self.employee_name(emp_code=employee[0]['client_executive_lead'])
 
-                    }
+                    }   
                     template='email/approve_travel_request.html'
                     emptemail=self.approver_name(emp_code=request.data['emp_email'])
                     emailsubject='Travel request for '+emptemail+' requires approval'

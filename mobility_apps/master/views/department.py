@@ -141,3 +141,23 @@ class bulk_upload_department(ListCreateAPIView):
             dict = {'message': MSG_EXCELF,'status_code':406, 'status': 'False'}
             return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
 
+
+###########################################################
+" json upload department"
+###########################################################
+
+class json_upload_department(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = DepartmentSerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = DepartmentSerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message': e, 'status': False, 'status_code': 406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
