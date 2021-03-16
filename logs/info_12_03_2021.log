@@ -1,0 +1,512 @@
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538351404800|"GET / HTTP/1.1" 200 5267
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538393351936|"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538401744640|"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140537994077952|"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538351404800|"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538010863360|"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538002470656|"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538393351936|"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538401744640|"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140537994077952|"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538010863360|"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO|12/Mar/2021 10:30:25|basehttp|4609|140538401744640|"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING|12/Mar/2021 10:30:25|log|4609|140538401744640|Not Found: /favicon.ico
+WARNING|12/Mar/2021 10:30:25|basehttp|4609|140538401744640|"GET /favicon.ico HTTP/1.1" 404 49686
+INFO|12/Mar/2021 10:35:27|basehttp|5119|140700797318912|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:35:32|basehttp|5119|140700797318912|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 10:35:32|basehttp|5119|140700797318912|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:35:42|basehttp|5119|140700797318912|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 10:35:42|basehttp|5119|140700797318912|"OPTIONS /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:35:46|basehttp|5119|140700797318912|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 10:35:48|basehttp|5119|140700797318912|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=raju01 HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:35:48|basehttp|5119|140700797318912|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:35:52|basehttp|5119|140700797318912|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 10:36:51|basehttp|5119|140700872820480|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=raju01 HTTP/1.1" 200 13333
+INFO|12/Mar/2021 10:37:22|basehttp|5119|140700872820480|"OPTIONS /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:37:22|basehttp|5119|140700797318912|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:37:22|basehttp|5119|140700881213184|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:37:26|basehttp|5119|140700872820480|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 10:37:26|basehttp|5119|140700881213184|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 10:37:27|basehttp|5119|140700797318912|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 10:37:32|basehttp|5119|140700872820480|"OPTIONS /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:37:59|basehttp|5119|140700872820480|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 10:38:08|basehttp|5119|140700872820480|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:16|basehttp|5119|140700872820480|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 10:38:19|basehttp|5119|140700872820480|"OPTIONS /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:19|basehttp|5119|140700881213184|"OPTIONS /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:19|basehttp|5119|140700797318912|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:19|basehttp|5119|140700496688896|"OPTIONS /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:19|basehttp|5119|140700872820480|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:23|basehttp|5119|140700872820480|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 10:38:23|basehttp|5119|140700797318912|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 10:38:23|basehttp|5119|140700488296192|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 10:38:23|basehttp|5119|140700881213184|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 10:38:24|basehttp|5119|140700496688896|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 10:38:31|basehttp|5119|140700496688896|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:31|basehttp|5119|140700881213184|"OPTIONS /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:38:35|basehttp|5119|140700496688896|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 10:38:36|basehttp|5119|140700881213184|"GET /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 10:39:13|basehttp|5119|140700881213184|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:39:17|basehttp|5119|140700881213184|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|12/Mar/2021 10:39:20|basehttp|5119|140700881213184|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 10:40:31|basehttp|5119|140700881213184|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|12/Mar/2021 10:40:52|basehttp|5373|139998855386880|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 10:42:05|basehttp|5481|139814708664064|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 10:42:15|basehttp|5481|139814708664064|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 10:42:20|basehttp|5481|139814708664064|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 10:44:24|basehttp|5585|139880525674240|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 10:44:34|basehttp|5585|139880525674240|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 10:44:39|basehttp|5585|139880525674240|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 10:46:53|basehttp|5585|139880525674240|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 10:47:03|basehttp|5585|139880525674240|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 10:47:07|basehttp|5585|139880525674240|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 10:47:12|basehttp|5585|139880534066944|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 10:48:19|basehttp|5585|139880525674240|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=raju01 HTTP/1.1" 200 15571
+INFO|12/Mar/2021 10:48:29|basehttp|5585|139880542459648|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 10:48:30|basehttp|5585|139880534066944|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 10:48:30|basehttp|5585|139880525674240|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 10:49:03|basehttp|5585|139880525674240|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 10:49:16|basehttp|5585|139880525674240|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 10:49:24|basehttp|5585|139880542459648|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 10:49:24|basehttp|5585|139880534066944|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 10:49:24|basehttp|5585|139880525674240|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 10:49:24|basehttp|5585|139880154924800|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 10:49:25|basehttp|5585|139880146532096|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 10:49:34|basehttp|5585|139880146532096|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 10:49:35|basehttp|5585|139880154924800|"GET /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 10:50:01|basehttp|5585|139880154924800|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 10:50:26|log|5585|139880146532096|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 278, in post
+    ctxt = {'custom_token': encryptDtata(ctxt)}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2498, in encryptDtata
+    encMessage = fernet.encrypt(data.encode())
+AttributeError: 'dict' object has no attribute 'encode'
+ERROR|12/Mar/2021 10:50:26|basehttp|5585|139880146532096|"POST /get_add/travel_request/ HTTP/1.1" 500 19801
+INFO|12/Mar/2021 10:51:47|basehttp|5966|139897602688768|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|12/Mar/2021 10:53:01|basehttp|5966|139897602688768|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|12/Mar/2021 10:53:12|basehttp|5966|139897644635904|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 11:08:37|basehttp|6528|139620956980992|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 11:08:37|basehttp|6528|139620965373696|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 11:08:37|basehttp|6528|139621076215552|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 11:09:08|basehttp|6528|139621076215552|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 11:09:26|basehttp|6528|139621076215552|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 11:09:34|basehttp|6528|139620956980992|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 11:09:34|basehttp|6528|139621076215552|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 11:09:34|basehttp|6528|139620965373696|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 11:09:34|basehttp|6528|139620584769280|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 11:09:35|basehttp|6528|139620576376576|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 11:09:59|basehttp|6528|139620576376576|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 11:09:59|basehttp|6528|139620965373696|"GET /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 11:10:27|basehttp|6528|139620965373696|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|12/Mar/2021 11:11:18|basehttp|6528|139620576376576|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|12/Mar/2021 11:11:25|basehttp|6528|139620965373696|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 11:14:44|basehttp|6528|139620584769280|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 11:14:44|basehttp|6528|139620965373696|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 11:14:44|basehttp|6528|139621076215552|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 11:15:15|basehttp|6528|139621076215552|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 11:15:30|basehttp|6528|139621076215552|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 11:15:37|basehttp|6528|139620584769280|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 11:15:38|basehttp|6528|139621076215552|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 11:15:38|basehttp|6528|139620965373696|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 11:15:38|basehttp|6528|139620956980992|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 11:15:38|basehttp|6528|139620576376576|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 11:15:47|basehttp|6528|139620576376576|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 11:15:48|basehttp|6528|139620956980992|"GET /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 11:16:14|basehttp|6528|139620956980992|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|12/Mar/2021 11:17:20|basehttp|6528|139620576376576|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|12/Mar/2021 11:17:30|basehttp|6528|139620956980992|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+ERROR|12/Mar/2021 12:50:45|log|12587|139651817920256|Internal Server Error: /delete_update_calender_event/36/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1993, in patch
+    emp_code = serializer.data[0]['emp_code']
+KeyError: 0
+ERROR|12/Mar/2021 12:50:45|basehttp|12587|139651817920256|"PATCH /delete_update_calender_event/36/ HTTP/1.1" 500 19394
+INFO|12/Mar/2021 12:51:51|basehttp|12643|139809172182784|"PATCH /delete_update_calender_event/36/ HTTP/1.1" 200 12074
+INFO|12/Mar/2021 17:25:05|basehttp|24790|139764345120512|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:25:09|basehttp|24790|139764345120512|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 17:25:09|basehttp|24790|139764345120512|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:25:19|basehttp|24790|139764345120512|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 17:25:19|basehttp|24790|139764345120512|"OPTIONS /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:25:23|basehttp|24790|139764361905920|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:25:23|basehttp|24790|139764353513216|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=raju01 HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:25:23|basehttp|24790|139764345120512|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 17:25:27|basehttp|24790|139764353513216|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 17:27:23|basehttp|24790|139764353513216|"OPTIONS /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:27:24|basehttp|24790|139764345120512|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:27:24|basehttp|24790|139764353513216|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:27:28|basehttp|24790|139764361905920|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 17:27:28|basehttp|24790|139764353513216|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 17:27:28|basehttp|24790|139764345120512|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 17:27:31|basehttp|24790|139764353513216|"OPTIONS /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:27:58|basehttp|24790|139764353513216|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 17:28:02|basehttp|24790|139764353513216|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:10|basehttp|24790|139764353513216|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 17:28:16|basehttp|24790|139764345120512|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:16|basehttp|24790|139764361905920|"OPTIONS /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:16|basehttp|24790|139764353513216|"OPTIONS /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:16|basehttp|24790|139763970287360|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:16|basehttp|24790|139763961894656|"OPTIONS /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:20|basehttp|24790|139763961894656|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 17:28:20|basehttp|24790|139764345120512|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 17:28:20|basehttp|24790|139763970287360|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 17:28:20|basehttp|24790|139764353513216|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 17:28:21|basehttp|24790|139764361905920|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 17:28:27|basehttp|24790|139764361905920|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:27|basehttp|24790|139764353513216|"OPTIONS /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:28:46|basehttp|24790|139764361905920|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 17:28:46|basehttp|24790|139764353513216|"GET /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 17:29:03|basehttp|24790|139764353513216|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:29:04|basehttp|24790|139764361905920|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 17:29:07|basehttp|24790|139764353513216|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|12/Mar/2021 17:30:15|basehttp|24790|139764361905920|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|12/Mar/2021 17:30:35|basehttp|24790|139764353513216|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 17:46:38|basehttp|26611|140135633471232|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 17:46:53|basehttp|26611|140135633471232|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 17:47:00|basehttp|26611|140135633471232|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 17:47:11|basehttp|26611|140135675418368|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 17:50:12|basehttp|26611|140135633471232|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 17:50:12|basehttp|26611|140135675418368|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 17:50:13|basehttp|26611|140135683811072|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 17:50:49|basehttp|26611|140135683811072|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 17:51:01|basehttp|26611|140135683811072|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 17:51:07|basehttp|26611|140135633471232|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 17:51:08|basehttp|26611|140135675418368|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 17:51:08|basehttp|26611|140135683811072|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 17:51:08|basehttp|26611|140135291930368|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 17:51:08|basehttp|26611|140135283537664|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 17:51:29|basehttp|26611|140135283537664|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 17:51:29|basehttp|26611|140135291930368|"GET /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 17:51:48|basehttp|26611|140135291930368|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|12/Mar/2021 17:52:58|basehttp|26611|140135283537664|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|12/Mar/2021 17:53:10|basehttp|26611|140135291930368|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 18:06:06|basehttp|28216|140646522070784|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 18:06:06|basehttp|28216|140646564017920|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 18:06:06|basehttp|28216|140646572410624|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 18:06:39|basehttp|28216|140646572410624|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 18:06:52|basehttp|28216|140646572410624|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 18:07:01|basehttp|28216|140646522070784|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 18:07:02|basehttp|28216|140646572410624|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 18:07:02|basehttp|28216|140646564017920|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 18:07:02|basehttp|28216|140646181054208|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 18:07:02|basehttp|28216|140646172661504|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 18:07:08|basehttp|28216|140646181054208|"OPTIONS /get_post_country_policy/?days=6&country_code=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 18:07:12|basehttp|28216|140646172661504|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 18:07:12|basehttp|28216|140646181054208|"GET /get_post_country_policy/?days=6&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 18:07:32|basehttp|28216|140646181054208|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 18:07:54|log|28216|140646172661504|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 279, in post
+    ctxt = {'custom_token': encryptDtata(ctxt_data)}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2500, in encryptDtata
+    custom_token_ = custom_token+'['+key+']'
+TypeError: can't concat str to bytes
+ERROR|12/Mar/2021 18:07:54|basehttp|28216|140646172661504|"POST /get_add/travel_request/ HTTP/1.1" 500 19766
+INFO|12/Mar/2021 18:13:01|basehttp|28547|139925387949824|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 18:13:23|log|28547|139925429896960|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 279, in post
+    ctxt = {'custom_token': encryptDtata(ctxt_data)}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2500, in encryptDtata
+    custom_token_ = custom_token+"/"+key
+TypeError: can't concat str to bytes
+ERROR|12/Mar/2021 18:13:23|basehttp|28547|139925429896960|"POST /get_add/travel_request/ HTTP/1.1" 500 19762
+INFO|12/Mar/2021 18:15:46|basehttp|28664|139946232899328|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 18:17:09|log|28664|139946274846464|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 271, in post
+    'project_manager': self.employee_name(emp_code=employee[0]['project_manager']),
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 437, in employee_name
+    if emp_code[0]['first_name']:
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 302, in __getitem__
+    qs._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1050, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1101, in execute_sql
+    cursor.close()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 500, in close
+    self.cursor.close()
+pyodbc.ProgrammingError: The cursor's connection has been closed.
+ERROR|12/Mar/2021 18:17:09|basehttp|28664|139946274846464|"POST /get_add/travel_request/ HTTP/1.1" 500 23136
+INFO|12/Mar/2021 18:17:31|basehttp|28664|139946274846464|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|12/Mar/2021 18:18:45|basehttp|28664|139946232899328|"POST /get_add/travel_request/ HTTP/1.1" 200 90
+INFO|12/Mar/2021 18:19:01|basehttp|28664|139946274846464|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 19:12:18|basehttp|31559|140578767496960|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 19:12:28|basehttp|31559|140578767496960|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 19:12:32|basehttp|31559|140578767496960|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 19:12:35|basehttp|31559|140578854029056|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 19:31:14|basehttp|1003|140037822301952|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:31:18|basehttp|1003|140037822301952|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|12/Mar/2021 19:31:18|basehttp|1003|140037822301952|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:31:28|basehttp|1003|140037822301952|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
+INFO|12/Mar/2021 19:31:28|basehttp|1003|140037822301952|"OPTIONS /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:31:30|basehttp|1003|140037830694656|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=raju01 HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:31:30|basehttp|1003|140037830694656|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:31:32|basehttp|1003|140037822301952|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|12/Mar/2021 19:31:34|basehttp|1003|140037830694656|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
+INFO|12/Mar/2021 19:33:03|basehttp|1003|140037830694656|"OPTIONS /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:03|basehttp|1003|140037822301952|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:03|basehttp|1003|140037830694656|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:07|basehttp|1003|140037822301952|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|12/Mar/2021 19:33:07|basehttp|1003|140037447993088|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
+INFO|12/Mar/2021 19:33:07|basehttp|1003|140037830694656|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|12/Mar/2021 19:33:09|basehttp|1003|140037830694656|"OPTIONS /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:37|basehttp|1003|140037830694656|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
+INFO|12/Mar/2021 19:33:42|basehttp|1003|140037830694656|"OPTIONS /get_city/?city=new HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:50|basehttp|1003|140037830694656|"GET /get_city/?city=new HTTP/1.1" 200 3014
+INFO|12/Mar/2021 19:33:52|basehttp|1003|140037830694656|"OPTIONS /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:52|basehttp|1003|140037830694656|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:52|basehttp|1003|140037822301952|"OPTIONS /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:52|basehttp|1003|140037447993088|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:52|basehttp|1003|140037438813952|"OPTIONS /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:33:56|basehttp|1003|140037447993088|"GET /get_add/visa_purpose_list/?country_id=NCL HTTP/1.1" 200 8278
+INFO|12/Mar/2021 19:33:57|basehttp|1003|140037830694656|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type= HTTP/1.1" 200 53
+INFO|12/Mar/2021 19:33:57|basehttp|1003|140037822301952|"GET /get_perdiem/?country=United%20Kingdom HTTP/1.1" 200 613
+INFO|12/Mar/2021 19:33:57|basehttp|1003|140037430421248|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|12/Mar/2021 19:33:57|basehttp|1003|140037438813952|"GET /emoloyeedependent/?employee=raju01&country=United%20Kingdom HTTP/1.1" 200 43
+INFO|12/Mar/2021 19:34:02|basehttp|1003|140037438813952|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:34:02|basehttp|1003|140037822301952|"OPTIONS /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:34:06|basehttp|1003|140037438813952|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20Kingdom&visa_type=Business HTTP/1.1" 200 53
+INFO|12/Mar/2021 19:34:07|basehttp|1003|140037822301952|"GET /get_post_country_policy/?days=7&country_code=United%20Kingdom HTTP/1.1" 200 78
+INFO|12/Mar/2021 19:34:21|basehttp|1003|140037822301952|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:34:22|basehttp|1003|140037438813952|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
+INFO|12/Mar/2021 19:34:25|basehttp|1003|140037822301952|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 19:34:47|log|1003|140037438813952|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 281, in post
+    ctxt = {'custom_token': encryptDtata(ctxt_data)}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2503, in encryptDtata
+    custom_token_ = encode(data,"triazine")
+  File "/usr/lib/python3.7/base64.py", line 487, in encode
+    s = input.read(MAXBINSIZE)
+AttributeError: 'dict' object has no attribute 'read'
+ERROR|12/Mar/2021 19:34:47|basehttp|1003|140037438813952|"POST /get_add/travel_request/ HTTP/1.1" 500 19888
+INFO|12/Mar/2021 19:35:21|basehttp|1003|140037438813952|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 19:35:44|log|1003|140037822301952|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 281, in post
+    ctxt = {'custom_token': encryptDtata(ctxt_data)}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2503, in encryptDtata
+    custom_token_ = encode(data,"triazine")
+  File "/usr/lib/python3.7/base64.py", line 487, in encode
+    s = input.read(MAXBINSIZE)
+AttributeError: 'dict' object has no attribute 'read'
+ERROR|12/Mar/2021 19:35:44|basehttp|1003|140037822301952|"POST /get_add/travel_request/ HTTP/1.1" 500 19888
+INFO|12/Mar/2021 19:36:09|basehttp|1003|140037822301952|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 19:36:31|log|1003|140037438813952|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 281, in post
+    ctxt = {'custom_token': encryptDtata(ctxt_data)}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2503, in encryptDtata
+    custom_token_ = encode(data,"triazine")
+  File "/usr/lib/python3.7/base64.py", line 487, in encode
+    s = input.read(MAXBINSIZE)
+AttributeError: 'dict' object has no attribute 'read'
+ERROR|12/Mar/2021 19:36:31|basehttp|1003|140037438813952|"POST /get_add/travel_request/ HTTP/1.1" 500 19888
+INFO|12/Mar/2021 19:37:57|basehttp|1299|140187567171328|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+ERROR|12/Mar/2021 19:38:19|log|1299|140187609118464|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 281, in post
+    ctxt = {'custom_token': encryptDtata(ctxt_data)}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2503, in encryptDtata
+    custom_token_ = encode(str(data),"triazine")
+  File "/usr/lib/python3.7/base64.py", line 487, in encode
+    s = input.read(MAXBINSIZE)
+AttributeError: 'str' object has no attribute 'read'
+ERROR|12/Mar/2021 19:38:19|basehttp|1299|140187609118464|"POST /get_add/travel_request/ HTTP/1.1" 500 19891

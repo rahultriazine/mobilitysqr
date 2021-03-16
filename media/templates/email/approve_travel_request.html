@@ -2,8 +2,16 @@
 Hello  <span style="font-size: medium;font-weight: 700;">{{approve_first_name}}</span>,
 <br>
 
-<p>A travel request has been submitted by {{first_name}} that requires your approval.</p>
-
+<p>A travel request has been submitted by {{first_name}} that requires your approval and rejection.</p>
+<div>
+    <a href="mailto:triazineraju@gmail.com?subject=Travel request for requires {{first_name}} approval&body=%0D%0A%0D%0A ------Please type your comments above this line------
+        %0D%0A Note: You can also add attachments to the task by attaching them to this email.
+        %0D%0A -----Do not edit below this line-----%0D%0A Approve:{{custom_token}}" target="_blank">
+        <button style="border-radius: 5px;background: #139553;color:white;font-family:Arial,sans-serif;font-weight:600;padding: 1% 2%;font-size: 1rem;border: none;margin-right:0.4%;cursor: pointer;">Approve</button></a>
+    <a href="mailto:triazineraju@gmail.com?subject=Travel request for requires {{first_name}} rejection&body=%0D%0A%0D%0A ------Please type your comments above this line------
+        %0D%0A Note: You can also add attachments to the task by attaching them to this email.
+        %0D%0A -----Do not edit below this line-----%0D%0A Reject:{{custom_token}}" target="_blank"><button style="border-radius: 5px;background:#c9165f;color:white;font-family:Arial,sans-serif;font-weight:600;padding: 1% 2%;font-size: 1rem;border: none;cursor: pointer;">Reject</button></a>
+</div>
 <p>The request details are:</p>
 
 <p> <span style="font-size: medium;font-weight: 700;">Project ID: </span>{{project_id}}</p>

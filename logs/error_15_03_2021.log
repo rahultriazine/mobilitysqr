@@ -1,0 +1,1315 @@
+ERROR|15/Mar/2021 10:39:38|log|6465|139629754201856|Internal Server Error: /get_city/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 37, in authenticate
+    return self.get_user(validated_token), validated_token
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 110, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1096, in execute_sql
+    cursor = self.connection.cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+ERROR|15/Mar/2021 10:39:38|basehttp|6465|139629754201856|"GET /get_city/?city=del HTTP/1.1" 500 23656
+ERROR|15/Mar/2021 10:39:39|log|6465|139629763643136|Internal Server Error: /get_city/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 464, in _set_autocommit
+    self.connection.autocommit = autocommit
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLSetConnectAttr)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 37, in authenticate
+    return self.get_user(validated_token), validated_token
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 110, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1096, in execute_sql
+    cursor = self.connection.cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.set_autocommit(self.settings_dict['AUTOCOMMIT'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 404, in set_autocommit
+    self._set_autocommit(autocommit)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 464, in _set_autocommit
+    self.connection.autocommit = autocommit
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 464, in _set_autocommit
+    self.connection.autocommit = autocommit
+django.db.utils.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLSetConnectAttr)')
+ERROR|15/Mar/2021 10:39:42|log|6465|139629745809152|Internal Server Error: /get_city/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 37, in authenticate
+    return self.get_user(validated_token), validated_token
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 110, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1096, in execute_sql
+    cursor = self.connection.cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.OperationalError: ('HYT00', '[HYT00] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0) (SQLDriverConnect)')
+ERROR|15/Mar/2021 10:39:42|basehttp|6465|139629745809152|"GET /get_city/?city=new HTTP/1.1" 500 23656
+ERROR|15/Mar/2021 10:40:32|log|6465|139630146344704|Internal Server Error: /get_city/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 233, in get
+    if country:
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1101, in execute_sql
+    cursor.close()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 500, in close
+    self.cursor.close()
+pyodbc.ProgrammingError: The cursor's connection has been closed.
+ERROR|15/Mar/2021 12:17:37|log|10345|139671119849216|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 242, in post
+    if serializer.is_valid():
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 419, in run_validation
+    value = self.to_internal_value(data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 476, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/fields.py", line 799, in run_validation
+    return super().run_validation(data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/fields.py", line 569, in run_validation
+    self.run_validators(value)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/fields.py", line 591, in run_validators
+    validator(value, self)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/validators.py", line 73, in __call__
+    if qs_exists(queryset):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/validators.py", line 21, in qs_exists
+    return queryset.exists()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 718, in exists
+    return self.query.has_results(using=self.db)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 516, in has_results
+    return compiler.has_results()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1068, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1101, in execute_sql
+    cursor.close()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 500, in close
+    self.cursor.close()
+pyodbc.ProgrammingError: The cursor's connection has been closed.
+ERROR|15/Mar/2021 12:17:37|basehttp|10345|139671119849216|"POST /get_add/travel_request/ HTTP/1.1" 500 24038
+ERROR|15/Mar/2021 12:18:21|log|10345|139671341176576|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 282, in post
+    ctxt = {'custom_token': encryptDtata(custom_data    )}
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2501, in encryptDtata
+    encMessage = fernet.encrypt(data.encode())
+AttributeError: 'dict' object has no attribute 'encode'
+ERROR|15/Mar/2021 12:18:21|basehttp|10345|139671341176576|"POST /get_add/travel_request/ HTTP/1.1" 500 19812
+ERROR|15/Mar/2021 12:23:28|log|10631|140195633153792|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 369, in post
+    'business_lead':self.employee_name(emp_code=employee[0]['business_lead']),
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 446, in employee_name
+    last_name=emp_code[0]['last_name']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 302, in __getitem__
+    qs._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1050, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1101, in execute_sql
+    cursor.close()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 500, in close
+    self.cursor.close()
+pyodbc.ProgrammingError: The cursor's connection has been closed.
+ERROR|15/Mar/2021 12:50:36|log|10631|140195675100928|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2551, in get
+    data = get_post_approve_travelvisa_request_by_mail.as_view()(request, *args, **kwargs)
+NameError: name 'args' is not defined
+ERROR|15/Mar/2021 12:50:36|basehttp|10631|140195675100928|"GET /get_approve_reject_request_by_mail/?travel_req_id=TR204723&request_notes=System&approve_action=A&org_id=ORG150866 HTTP/1.1" 500 19416
+ERROR|15/Mar/2021 12:58:24|log|13257|139863842572032|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2529, in post
+    id = request.GET['travel_req_id']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|15/Mar/2021 12:58:24|basehttp|13257|139863842572032|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19671
+ERROR|15/Mar/2021 13:02:20|log|13561|140247169656576|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Post'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2530, in post
+    id = request.Post['travel_req_id']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Post'
+ERROR|15/Mar/2021 13:02:20|basehttp|13561|140247169656576|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19731
+ERROR|15/Mar/2021 13:02:49|log|13617|140132997613312|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 426, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'str'>`
+ERROR|15/Mar/2021 13:02:49|basehttp|13617|140132997613312|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 87813
+ERROR|15/Mar/2021 13:04:06|log|13691|140471284258560|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2530, in post
+    id = request.data.get['travel_req_id']
+TypeError: 'method' object is not subscriptable
+ERROR|15/Mar/2021 13:04:06|basehttp|13691|140471284258560|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19256
+ERROR|15/Mar/2021 13:06:15|log|13881|139655703684864|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2530, in post
+    id = request.data.get['travel_req_id']
+TypeError: 'method' object is not subscriptable
+ERROR|15/Mar/2021 13:06:15|basehttp|13881|139655703684864|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19256
+ERROR|15/Mar/2021 13:10:41|log|14264|140673339041536|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    data = request.get['travel_req_id']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'get'
+ERROR|15/Mar/2021 13:10:41|basehttp|14264|140673339041536|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19729
+ERROR|15/Mar/2021 13:15:51|log|14626|140336396187392|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2519, in post
+    travel_request = Travel_Request.objects.filter(travel_req_id=request.GET['travel_req_id'],
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|15/Mar/2021 13:15:51|basehttp|14626|140336396187392|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19728
+ERROR|15/Mar/2021 13:17:31|log|14822|139743320856320|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2519, in post
+    travel_request = Travel_Request.objects.filter(travel_req_id=request.GET['travel_req_id'],
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|15/Mar/2021 13:17:31|basehttp|14822|139743320856320|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19728
+ERROR|15/Mar/2021 13:18:15|log|14883|140699349927680|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2519, in post
+    travel_request = Travel_Request.objects.filter(travel_req_id=request.GET['travel_req_id'],
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|15/Mar/2021 13:18:15|basehttp|14883|140699349927680|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19728
+ERROR|15/Mar/2021 13:23:00|log|15113|139921248003840|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2519, in post
+    travel_request = Travel_Request.objects.filter(travel_req_id=request.POST.get['travel_req_id'],
+TypeError: 'method' object is not subscriptable
+ERROR|15/Mar/2021 13:23:00|basehttp|15113|139921248003840|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19313
+ERROR|15/Mar/2021 13:27:21|log|15460|140126151763712|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2532, in post
+    request.POST('travel_req_status',travel_request_serializer.data[0]['travel_req_status'])
+TypeError: 'QueryDict' object is not callable
+ERROR|15/Mar/2021 13:27:21|basehttp|15460|140126151763712|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19306
+ERROR|15/Mar/2021 13:37:55|log|15881|140011252995840|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2519, in post
+    travel_request = Travel_Request.objects.filter(travel_req_id=request.data.get['travel_req_id'],
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR|15/Mar/2021 13:37:55|basehttp|15881|140011252995840|"POST /get_approve_reject_request_by_mail/?travel_req_id=TR204723&request_notes=System&approve_action=A&org_id=ORG150866 HTTP/1.1" 500 19485
+ERROR|15/Mar/2021 14:39:25|log|15881|140011252995840|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2519, in post
+    travel_request = Travel_Request.objects.filter(travel_req_id=request.data.get['travel_req_id'],
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR|15/Mar/2021 14:39:25|basehttp|15881|140011252995840|"POST /get_approve_reject_request_by_mail/?%7B%22travel_req_id%22:%20%22TR204723%22,%20%22request_notes%22:%20%22System%22,%20%22approve_action%22:%20%22A%22,%20%22org_id%22:%20%22ORG150866%22%7D HTTP/1.1" 500 19655
+ERROR|15/Mar/2021 14:42:59|log|18047|140606551312128|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    dict = request.data.get['travel_req_id']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR|15/Mar/2021 14:42:59|basehttp|18047|140606551312128|"POST /get_approve_reject_request_by_mail/?%7B%22travel_req_id%22:%20%22TR204723%22,%20%22request_notes%22:%20%22System%22,%20%22approve_action%22:%20%22A%22,%20%22org_id%22:%20%22ORG150866%22%7D HTTP/1.1" 500 19600
+ERROR|15/Mar/2021 14:43:24|log|18176|139669173954304|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    dict = request.POST['travel_req_id']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|15/Mar/2021 14:43:24|basehttp|18176|139669173954304|"POST /get_approve_reject_request_by_mail/?%7B%22travel_req_id%22:%20%22TR204723%22,%20%22request_notes%22:%20%22System%22,%20%22approve_action%22:%20%22A%22,%20%22org_id%22:%20%22ORG150866%22%7D HTTP/1.1" 500 19976
+ERROR|15/Mar/2021 14:45:50|log|18176|139669173954304|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    dict = request.POST['travel_req_id']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|15/Mar/2021 14:45:50|basehttp|18176|139669173954304|"POST /get_approve_reject_request_by_mail/?%7B%22travel_req_id%22:%20%22TR204723%22,%20%22request_notes%22:%20%22System%22,%20%22approve_action%22:%20%22A%22,%20%22org_id%22:%20%22ORG150866%22%7D HTTP/1.1" 500 19976
+ERROR|15/Mar/2021 14:46:36|log|18176|139669173954304|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    dict = request.POST['travel_req_id']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|15/Mar/2021 14:46:36|basehttp|18176|139669173954304|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19577
+ERROR|15/Mar/2021 14:48:56|log|18517|140403269424896|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 66, in default
+    return tuple(item for item in obj)
+TypeError: 'Request' object is not iterable
+ERROR|15/Mar/2021 14:48:56|basehttp|18517|140403269424896|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 105043
+ERROR|15/Mar/2021 14:56:11|log|19052|140535590070016|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    dict = request.data.get['travel_req_id']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR|15/Mar/2021 14:56:11|basehttp|19052|140535590070016|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19201
+ERROR|15/Mar/2021 14:59:00|log|19052|140535590070016|Internal Server Error: /get_approve_reject_request_by_mail
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 192.168.1.230:8000/get_approve_reject_request_by_mail/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|15/Mar/2021 14:59:00|basehttp|19052|140535590070016|"POST /get_approve_reject_request_by_mail HTTP/1.1" 500 71148
+ERROR|15/Mar/2021 14:59:53|log|19409|140714784220928|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    dict = request.data.get['travel_req_id']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR|15/Mar/2021 14:59:53|basehttp|19409|140714784220928|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19201
+ERROR|15/Mar/2021 15:00:45|log|19478|140224827700992|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2517, in post
+    d= request.data.get['travel_req_id']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+ERROR|15/Mar/2021 15:00:45|basehttp|19478|140224827700992|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19197
+ERROR|15/Mar/2021 15:03:32|log|19795|140066211350272|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type builtin_function_or_method is not JSON serializable
+ERROR|15/Mar/2021 15:03:32|basehttp|19795|140066211350272|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 108454
+ERROR|15/Mar/2021 15:04:04|log|19851|140451183707904|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 66, in default
+    return tuple(item for item in obj)
+TypeError: 'Request' object is not iterable
+ERROR|15/Mar/2021 15:04:04|basehttp|19851|140451183707904|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 105043
+ERROR|15/Mar/2021 15:15:18|log|20950|140014407857920|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2519, in post
+    return Response(d, status=status.HTTP_200_OK)
+NameError: name 'd' is not defined
+ERROR|15/Mar/2021 15:15:18|basehttp|20950|140014407857920|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19140
+ERROR|15/Mar/2021 15:16:03|log|21013|140292179838720|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type builtin_function_or_method is not JSON serializable
+ERROR|15/Mar/2021 15:16:03|basehttp|21013|140292179838720|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 109082
+ERROR|15/Mar/2021 15:35:42|log|22112|139697888900864|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2545, in post
+    data = get_post_approve_travelvisa_request_by_mail.as_view()(request, travel_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    request = self.initialize_request(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 396, in initialize_request
+    parser_context=parser_context
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 157, in __init__
+    .format(request.__class__.__module__, request.__class__.__name__)
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `rest_framework.request.Request`.
+ERROR|15/Mar/2021 15:35:42|basehttp|22112|139697888900864|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 20277
+ERROR|15/Mar/2021 16:05:16|log|22637|139874871760640|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: post() missing 1 required positional argument: 'travel_data'
+ERROR|15/Mar/2021 16:05:16|basehttp|22637|139874871760640|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19044
+ERROR|15/Mar/2021 16:11:15|log|23424|140716442076928|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2554, in post
+    return Response(d, status=status.HTTP_200_OK)
+NameError: name 'd' is not defined
+ERROR|15/Mar/2021 16:11:15|basehttp|23424|140716442076928|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 19140
+ERROR|15/Mar/2021 18:44:30|log|26734|140116085434112|Internal Server Error: /get_approve_reject_request_by_mail/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1098, in execute_sql
+    cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2636, in post
+    costs = travelid[0]['expence_estimatedCost'] + ' ' + travelid[0]['expence_cureency']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 302, in __getitem__
+    qs._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1050, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1101, in execute_sql
+    cursor.close()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 500, in close
+    self.cursor.close()
+pyodbc.ProgrammingError: The cursor's connection has been closed.
+ERROR|15/Mar/2021 18:44:30|basehttp|26734|140116085434112|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 22543

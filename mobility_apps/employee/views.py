@@ -475,16 +475,18 @@ class get_post_employee(ListCreateAPIView):
         # import ipdb;ipdb.set_trace()
         employe = Employee.objects.filter(
             emp_code=request.data.get('emp_code')).first()
-        
+        print('############ emp ##########')
+        print(employe)
         try:
             if (employe):
                 businessemail=Employee_Emails.objects.filter(emp_code=request.data.get('emp_code'),email_type="business").values("id")
-                
-                if businessemail[0]['id']:
-                    cursor = connection.cursor()
-                    sqlemails ="UPDATE employee_employee_emails SET email_address='"+request.data['email']+"' WHERE id='"+str(businessemail[0]['id'])+"'"
-                    print(sqlemails)
-                    cursor.execute(sqlemails)
+
+                if businessemail:
+                    if businessemail[0]['id']:
+                        cursor = connection.cursor()
+                        sqlemails ="UPDATE employee_employee_emails SET email_address='"+request.data['email']+"' WHERE id='"+str(businessemail[0]['id'])+"'"
+                        print(sqlemails)
+                        cursor.execute(sqlemails)
                 serializer = EmployeeSerializers(employe, data=request.data)
                 if request.data.get('old_username'):
                    cursor = connection.cursor()
@@ -521,7 +523,7 @@ class get_post_employee(ListCreateAPIView):
                 res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
                 request.data['password'] = make_password(str(res))
                 serializer = EmployeeSerializers(data=request.data)
-                
+
                 if serializer.is_valid():
                     serializer.save()
                     if request.data['preferred_first_name']:
@@ -553,7 +555,7 @@ class get_post_employee(ListCreateAPIView):
                     dict = {'massage code': '201', 'massage': 'unsuccessful', 'status': False, 'data': serializer.errors}
                     return Response(dict, status=status.HTTP_201_CREATED)
         except Exception as e:
-            dict = {'massage code': 'already exists', 'massage': 'unsuccessful', 'status': False}
+            dict = {'massage code': 'Exception', 'massage': e, 'status': False}
             return Response(dict, status=status.HTTP_200_OK)
         # return  Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -1368,7 +1370,7 @@ class FileUploadView(ListCreateAPIView):
             df = df.append(sheet, ignore_index=True)
             params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};"
                                  "SERVER=mobilitysqrdev.database.windows.net;"
-                                 "DATABASE=mobilitysqrdevnew;"
+                                     "DATABASE=mobilitysqrdevnew;"
                                  "UID=mobilitysqr_admin;"
                                  "PWD=mob!@sqr1123573121")
             sqlEngine= create_engine("mssql+pyodbc:///?odbc_connect={}".format(params))
@@ -1990,7 +1992,10 @@ class calender_event_update_delete(APIView):
         serializer = Calender_EventsSerializers(instance, data=request.data, partial=True)  # set partial=True to update a data partially
         if serializer.is_valid():
             serializer.save()
-            dict = {'massage': 'Successfully Updated', 'status': True, 'data': serializer.data}
+            emp_code = serializer.data['emp_code']
+            calender_event_data = Calender_Events.objects.filter(emp_code_id=emp_code, is_visible=True,is_deleted=False)
+            serializer_data = Calender_EventsSerializers(calender_event_data, many=True)
+            dict = {'massage': 'data found', 'status': True, 'data': serializer_data.data}
         else:
             dict = {'massage': 'Failed to update calender event', 'status': False}
         return Response(dict, status=status.HTTP_200_OK)
@@ -2000,7 +2005,7 @@ class calender_event_update_delete(APIView):
 "jwt custome login "
 #################################################
 
-class jwt_custom_login(ListCreateAPIView):
+class jwt_custom_login(APIView):
     serializer_class = EmployeeSerializers
 
     def post(self, request):

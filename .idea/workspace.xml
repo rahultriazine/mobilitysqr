@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bd26d484-af20-43bd-ae4c-447b075e89cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/department.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/department.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/organization_location.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/organization_location.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/role.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/role.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/templates/email/approve_travel_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/templates/email/approve_travel_request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/travel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/base.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

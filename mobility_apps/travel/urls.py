@@ -22,6 +22,7 @@ urlpatterns = [
         path('delete_save/', delete_save.as_view(), name='delete_save'),
         path('get_upcoming_travel_request/', get_upcoming_travel_request.as_view(), name='get_upcoming_travel_request'),
         
-
+        path('get_approve_reject_request_by_mail/', approved_Reject_TravelRequestByMail.as_view(), name='get_approve_reject_request_by_mail'),
+        re_path(r'^get_travel_count_user/$', getTravelCountUser.as_view(), name='get_travel_count_user'),
 
 ]
