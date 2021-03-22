@@ -3204,6 +3204,7 @@ class getTravelCountUser(APIView):
         emp_code = request.GET.get('emp_code', '')
         if (emp_code is None) or (emp_code == ''):
             dict = {'massage': 'Please send me employee code', 'status': False, 'data': []}
+
         else:
             inprogress = Travel_Request.objects.filter(created_by=emp_code,travel_req_status=2).count()
             close = Travel_Request.objects.filter(created_by=emp_code, travel_req_status=3).count()
@@ -3213,6 +3214,152 @@ class getTravelCountUser(APIView):
                     'close':close,
                     'saved':saved,
             }
+            # data = Travel_Request.objects.values('travel_req_status').filter(created_by=emp_code).annotate(total=Count('travel_req_status'))
             dict = {'massage': 'data found', 'status': True, 'data': data}
         return Response(dict, status=status.HTTP_200_OK)
+
+
+#######################################################
+# get travel request approver top
+#######################################################
+
+class get_travel_request_approver_top(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Travel_RequestSerializers
+
+    def get(self, request):
+        alldata = []
+        limit = int(request.GET['limit'])
+        if request.GET['type'] == "Travel":
+            travel_request = Travel_Request.objects.filter(
+                Q(expense_approver=request.GET['emp_email']) | Q(project_manager=request.GET['emp_email']) | Q(
+                    business_lead=request.GET['emp_email']) | Q(client_executive_lead=request.GET['emp_email']) | Q(
+                    supervisor=request.GET['emp_email']),
+                Q(travel_req_status=request.GET['travel_req_status']) | Q(travel_req_status="6"),
+                current_ticket_owner=request.GET['emp_email'], organization_id=request.GET['org_id']).values(
+                "travel_req_id").order_by('-date_modified')[:limit]
+            for data in travel_request:
+                print(data)
+                travel_request = Travel_Request.objects.filter(travel_req_id=data['travel_req_id'])
+                travel_requests = Travel_RequestSerializers(travel_request, many=True)
+                emp_code = Employee.objects.filter(emp_code=travel_requests.data[0]['emp_email']).values('emp_code',
+                                                                                                         'first_name',
+                                                                                                         'last_name',
+                                                                                                         'email')
+                if emp_code[0]['emp_code']:
+                    travel_requests.data[0]['emp_code'] = emp_code[0]['emp_code']
+                else:
+                    travel_requests.data[0]['emp_code'] = ""
+                # emp_codes = Employee.objects.filter(emp_code=travel_requests.data[0]['current_ticket_owner']).values(
+                #     'email')
+                # if emp_codes[0]['email']:
+                #     travel_requests.data[0]['current_ticket_owner'] = emp_codes[0]['email']
+                # else:
+                #     travel_requests.data[0]['current_ticket_owner'] = ""
+                if emp_code[0]['first_name']:
+                    travel_requests.data[0]['first_name'] = emp_code[0]['first_name']
+                else:
+                    travel_requests.data[0]['first_name'] = ""
+
+                if emp_code[0]['last_name']:
+                    travel_requests.data[0]['last_name'] = emp_code[0]['last_name']
+                else:
+                    travel_requests.data[0]['last_name'] = ""
+                travel_request_detail = Travel_Request_Details.objects.filter(
+                    travel_req_id=travel_requests.data[0]['travel_req_id']).values('id', 'travel_req_id_id',
+                                                                                   'travelling_country',
+                                                                                   'travelling_country_to',
+                                                                                   # 'office_location', 'client_number',
+                                                                                   # 'organization', 'source_city',
+                                                                                   # 'destination_city',
+                                                                                   'departure_date',
+                                                                                   'return_date',
+                                                                                   # 'is_accmodation_required',
+                                                                                   # 'accmodation_start_date',
+                                                                                   # 'accmodation_end_date',
+                                                                                   # 'travel_purpose', 'assignment_type',
+                                                                                   # 'applicable_visa', 'visa_number',
+                                                                                   # 'visa_expiry_date', 'host_hr_name',
+                                                                                   # 'host_country_head', 'host_attorney',
+                                                                                   # 'host_phone_no',
+                                                                                   # 'is_client_location', 'client_name',
+                                                                                   # 'client_address', 'hotel_cost',
+                                                                                   # 'per_diem_cost', 'airfare_cost',
+                                                                                   # 'transportation_cost', 'total_cost',
+                                                                                   'travel_request_status',
+                                                                                   # 'travel_request_status_notes',
+                                                                                   # 'is_dependent',
+                                                                                   )
+                # travel_request_detail=Travel_RequestSerializers(travel_request_detail,many=True).values('id','travel_req_id_id','travelling_country', 'travelling_country_to','office_location','client_number','organization','source_city','destination_city','departure_date','return_date','is_accmodation_required','accmodation_start_date','accmodation_end_date','travel_purpose','assignment_type','applicable_visa','visa_number','visa_expiry_date','host_hr_name','host_country_head','host_attorney','host_phone_no','is_client_location','client_name','client_address','hotel_cost','per_diem_cost','airfare_cost','transportation_cost','total_cost','travel_request_status','travel_request_status_notes','is_dependent',)
+                travel_requests.data[0]['details'] = travel_request_detail
+                travel_request_dependent = Travel_Request_Dependent.objects.filter(
+                    travel_req_id=travel_requests.data[0]['travel_req_id'])
+                travel_request_dependent = Travel_Request_DependentSerializers(travel_request_dependent, many=True)
+                travel_requests.data[0]['dependent'] = travel_request_dependent.data
+                alldata.append(travel_requests.data[0])
+            dict = {'massage': 'data found', 'status': True, 'data': alldata}
+        elif request.GET['type'] == "Visa":
+            visa_request = Visa_Request.objects.filter(
+                Q(expense_approver=request.GET['emp_email']) | Q(project_manager=request.GET['emp_email']) | Q(
+                    business_lead=request.GET['emp_email']) | Q(client_executive_lead=request.GET['emp_email']) | Q(
+                    client_executive_lead=request.GET['emp_email']) | Q(supervisor=request.GET['emp_email']),
+                Q(visa_status=request.GET['visa_status']) | Q(visa_status="6"),
+                current_ticket_owner=request.GET['emp_email'], organization_id=request.GET['org_id']).values(
+                "visa_req_id").order_by('-date_modified')[:limit]
+            for data in visa_request:
+                visa_request = Visa_Request.objects.filter(visa_req_id=data['visa_req_id'])
+                visa_request = Visa_RequestSerializers(visa_request, many=True)
+                emp_code = Employee.objects.filter(emp_code=visa_request.data[0]['emp_email']).values('emp_code',
+                                                                                                      'first_name',
+                                                                                                      'last_name')
+                if emp_code[0]['emp_code']:
+                    visa_request.data[0]['emp_code'] = emp_code[0]['emp_code']
+                else:
+                    visa_request.data[0]['emp_code'] = ""
+                emp_codes = Employee.objects.filter(emp_code=visa_request.data[0]['current_ticket_owner']).values(
+                    'email')
+                if emp_codes[0]['email']:
+                    visa_request.data[0]['current_ticket_owner'] = emp_codes[0]['email']
+                else:
+                    visa_request.data[0]['current_ticket_owner'] = ""
+                if emp_code[0]['first_name']:
+                    visa_request.data[0]['first_name'] = emp_code[0]['first_name']
+                else:
+                    visa_request.data[0]['first_name'] = ""
+
+                if emp_code[0]['last_name']:
+                    visa_request.data[0]['last_name'] = emp_code[0]['last_name']
+                else:
+                    visa_request.data[0]['last_name'] = ""
+                alldata.append(visa_request.data[0])
+            dict = {'massage': 'data found', 'status': True, 'data': alldata}
+        # responseList = [dict]
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+
+
+##################################################
+# Travel request priority update
+##################################################
+
+
+class travel_request_priority(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Travel_RequestSerializers
+
+    def get_object(self, travel_req_id):
+        return Travel_Request.objects.filter(travel_req_id=travel_req_id).first()
+
+    def patch(self, request):
+        travel_req_id = request.GET.get('travel_req_id','')
+        instance = self.get_object(travel_req_id)
+        serializer = Travel_RequestSerializers(instance, data=request.data,partial=True)  # set partial=True to update a data partially
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'massage': 'Updated', 'status': True, 'data': serializer.data}
+        else:
+            dict = {'massage': 'Failed to update', 'status': False}
+        return Response(dict, status=status.HTTP_200_OK)
+
 

@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'mobility_apps.travel',
     'mobility_apps.visa',
     'mobility_apps.letter',
+    'mobility_apps.vault',
     # 'mobility_apps.base',
     'mobility_apps.superadmin',
     # 'mobility_apps.reports',
@@ -141,8 +142,8 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        # 'NAME': 'mob_test',
-        'NAME': 'mobilitysqr_staging',
+        'NAME': 'mob_test',
+        # 'NAME': 'mobilitysqr_staging',
         'HOST': 'mobilitysqrdev.database.windows.net',
 	    'PORT': '1433',
         'USER': 'mobilitysqr_admin',

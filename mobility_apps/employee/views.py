@@ -1304,6 +1304,7 @@ class reset_password(APIView):
             else:
                 dict = {'massage': 'data not found', 'status': False}
         return Response(dict, status=status.HTTP_200_OK)
+
 class uploadDoc(APIView):
     def post(self, request, format=None):
         file = request.FILES['file']
@@ -1862,25 +1863,28 @@ class Otp_Generate(ListCreateAPIView):
         sql ="UPDATE api_user SET otp='"+otp+"' WHERE username='"+username+"'"
         if cursor.execute(sql):
             email = Employee.objects.filter(user_name=username).values("email")
-            ctxt = {
-                'OTP': otp,
-                'email': self.employee_name(email=email[0]['email'])
-            }
+            if email:
+                ctxt = {
+                    'OTP': otp,
+                    'email': self.employee_name(email=email[0]['email'])
+                }
 
-            subject, from_email, to = 'OTP Generated Successful',"",email[0]['email']
-            html_content = render_to_string('email/otp.html', ctxt)
-            print(html_content)
-            # render with dynamic value
-            text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
-            
-            # create the email, and attach the HTML version as well.
-            
-            msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
-            msg.attach_alternative(html_content, "text/html")
-            msg.send()
-            dict = {'massage': 'OTP has been sent in your email', 'status': True}
+                subject, from_email, to = 'OTP Generated Successful',"",email[0]['email']
+                html_content = render_to_string('email/otp.html', ctxt)
+                print(html_content)
+                # render with dynamic value
+                text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
+
+                # create the email, and attach the HTML version as well.
+
+                msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+                msg.attach_alternative(html_content, "text/html")
+                msg.send()
+                dict = {'massage': 'OTP has been sent to your email', 'status': True}
+            else:
+                dict = {'massage': 'Wrong username', 'status': False}
         else:
-            dict = {'massage': 'User Not Available', 'status': False}
+            dict = {'massage': 'Wrong username', 'status': False}
         return Response(dict, status=status.HTTP_200_OK)
 
     def employee_name(self,email):
@@ -1909,11 +1913,8 @@ class access_token(ListCreateAPIView):
             otp = request.data['otp']
             response = Response()
             if (username is None) or (otp is None):
-                response.data = {
-                    'message': 'username and otp required',
-
-                }
-                return response
+                dict = {'massage': 'Username and OTP required', 'status': False}
+                return Response(dict, status=status.HTTP_200_OK)
             userss=User.objects.filter(username=username).values("id")
             
             if userss:
@@ -1932,24 +1933,18 @@ class access_token(ListCreateAPIView):
                         'access': access_token,
                         'refresh': refresh_token,
                     }
-                    return response   
-                else:
-                    response.data = {
-                    'message': "Wrong OTP",
-                    
-                    }
                     return response
+                else:
+                    dict = {'massage': 'Wrong OTP', 'status': False}
+                    return Response(dict, status=status.HTTP_200_OK)
             else:
-                response.data = {
-                'message': "Wrong Email",
-                
-                }
-                return response
+                dict = {'massage': 'Wrong Email', 'status': False}
+                return Response(dict, status=status.HTTP_200_OK)
 
 
 class calender_event_get_post(ListCreateAPIView):
+    permission_classes = (IsAuthenticated,)
     serializer_class = Calender_EventsSerializers
-
 
     " create clalener event"
     def post(self, request):
@@ -1981,6 +1976,7 @@ class calender_event_get_post(ListCreateAPIView):
 
 
 class calender_event_update_delete(APIView):
+    permission_classes = (IsAuthenticated,)
     serializer_class = Calender_EventsSerializers
 
     def get_object(self, pk):
@@ -2014,7 +2010,7 @@ class jwt_custom_login(APIView):
         response = Response()
         if (username is not None) and (password is not None):
             user_pass = User.objects.filter(username=username).values('password','id')
-            if user_pass[0]['password']:
+            if user_pass:
                 user_data = check_password(password, user_pass[0]['password'])
                 if user_data:
                     user_id = user_pass[0]['id']
@@ -2039,6 +2035,7 @@ class jwt_custom_login(APIView):
 #############################################
 
 class calender_activity(APIView):
+    permission_classes = (IsAuthenticated,)
     serializer_class = Calender_ActivitySerializers
 
     def get(self, request):

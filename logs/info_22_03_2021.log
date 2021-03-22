@@ -1,0 +1,194 @@
+WARNING|22/Mar/2021 16:54:01|log|20536|140539311986432|Not Found: //api/custom/login/
+WARNING|22/Mar/2021 16:54:01|basehttp|20536|140539311986432|"POST //api/custom/login/ HTTP/1.1" 404 51370
+INFO|22/Mar/2021 16:55:32|basehttp|20808|140463533930240|"POST /api/custom/login/ HTTP/1.1" 200 452
+ERROR|22/Mar/2021 16:55:51|log|20808|140463533930240|Internal Server Error: /travel_request_priority/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: patch() missing 1 required positional argument: 'travel_req_id'
+ERROR|22/Mar/2021 16:55:51|basehttp|20808|140463533930240|"PATCH /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 500 19419
+ERROR|22/Mar/2021 16:57:46|log|20917|140429048366848|Internal Server Error: /travel_request_priority/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: patch() missing 1 required positional argument: 'travel_req_id'
+ERROR|22/Mar/2021 16:57:46|basehttp|20917|140429048366848|"PATCH /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 500 19419
+WARNING|22/Mar/2021 17:01:31|log|21226|139782466873088|Not Found: /travel_request_priority/
+WARNING|22/Mar/2021 17:01:31|basehttp|21226|139782466873088|"PATCH /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 404 51444
+WARNING|22/Mar/2021 17:01:42|log|21226|139782466873088|Not Found: /travel_request_priority/TR214242
+WARNING|22/Mar/2021 17:01:42|basehttp|21226|139782466873088|"PATCH /travel_request_priority/TR214242 HTTP/1.1" 404 51445
+WARNING|22/Mar/2021 17:01:51|log|21226|139782466873088|Not Found: /travel_request_priority/TR214242/
+WARNING|22/Mar/2021 17:01:51|basehttp|21226|139782466873088|"PATCH /travel_request_priority/TR214242/ HTTP/1.1" 404 51448
+WARNING|22/Mar/2021 17:02:23|log|21311|140601935210240|Not Found: /travel_request_priority/TR214242/
+WARNING|22/Mar/2021 17:02:23|basehttp|21311|140601935210240|"PATCH /travel_request_priority/TR214242/ HTTP/1.1" 404 51444
+WARNING|22/Mar/2021 17:02:31|log|21311|140601935210240|Not Found: /travel_request_priority/TR214242
+WARNING|22/Mar/2021 17:02:31|basehttp|21311|140601935210240|"PATCH /travel_request_priority/TR214242 HTTP/1.1" 404 51441
+WARNING|22/Mar/2021 17:03:25|log|21311|140601935210240|Not Found: /travel_request_priority/travel_req_id
+WARNING|22/Mar/2021 17:03:25|basehttp|21311|140601935210240|"PATCH /travel_request_priority/travel_req_id HTTP/1.1" 404 51456
+ERROR|22/Mar/2021 17:05:58|log|21532|140416469210880|Internal Server Error: /travel_request_priority/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: post() missing 1 required positional argument: 'travel_req_id'
+ERROR|22/Mar/2021 17:05:58|basehttp|21532|140416469210880|"POST /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 500 19415
+ERROR|22/Mar/2021 17:07:11|log|21607|139908835960576|Internal Server Error: /travel_request_priority/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3361, in post
+    serializer.save()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 200, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 970, in update
+    info = model_meta.get_field_info(instance)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+ERROR|22/Mar/2021 17:07:11|basehttp|21607|139908835960576|"POST /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 500 20075
+ERROR|22/Mar/2021 17:08:18|log|21659|140259665594112|Internal Server Error: /travel_request_priority/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3361, in patch
+    serializer.save()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 200, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 970, in update
+    info = model_meta.get_field_info(instance)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'QuerySet' object has no attribute '_meta'
+ERROR|22/Mar/2021 17:08:18|basehttp|21659|140259665594112|"PATCH /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 500 20078
+ERROR|22/Mar/2021 17:11:05|log|22157|140671260509952|Internal Server Error: /travel_request_priority/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3358, in patch
+    instance = self.get_object(travel_req_id)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3352, in get_object
+    return Travel_Request.objects.filter(pk=self.kwargs['travel_req_id']).first()
+KeyError: 'travel_req_id'
+ERROR|22/Mar/2021 17:11:05|basehttp|22157|140671260509952|"PATCH /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 500 19688
+ERROR|22/Mar/2021 17:15:09|log|22335|140243492357888|Internal Server Error: /travel_request_priority/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3359, in patch
+    instance = self.get_object(travel_req_id)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3352, in get_object
+    return Travel_Request.objects.filter(travel_req_id=self.kwargs['travel_req_id']).first()
+KeyError: 'travel_req_id'
+ERROR|22/Mar/2021 17:15:09|basehttp|22335|140243492357888|"PATCH /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 500 19699
+INFO|22/Mar/2021 17:17:44|basehttp|22669|139917343278848|"PATCH /travel_request_priority/?travel_req_id=TR214242 HTTP/1.1" 200 1132

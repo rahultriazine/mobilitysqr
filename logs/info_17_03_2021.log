@@ -1,0 +1,378 @@
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757716453120|"GET / HTTP/1.1" 200 5267
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757401118464|"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757409511168|"GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757401118464|"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757409511168|"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757409511168|"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757417903872|"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757800347392|"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757791954688|"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757417903872|"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757716453120|"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO|17/Mar/2021 10:44:57|basehttp|5729|139757417903872|"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING|17/Mar/2021 10:44:58|log|5729|139757417903872|Not Found: /favicon.ico
+WARNING|17/Mar/2021 10:44:58|basehttp|5729|139757417903872|"GET /favicon.ico HTTP/1.1" 404 50112
+WARNING|17/Mar/2021 11:25:39|log|5729|139757800347392|Unauthorized: /get_travel_count_user/
+WARNING|17/Mar/2021 11:25:39|basehttp|5729|139757800347392|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 401 183
+INFO|17/Mar/2021 11:26:16|basehttp|5729|139757800347392|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 83
+INFO|17/Mar/2021 11:32:59|basehttp|8734|139898640516864|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 77
+INFO|17/Mar/2021 11:34:48|basehttp|8855|140613622159104|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 58
+INFO|17/Mar/2021 11:35:25|basehttp|8908|140505292429056|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 58
+INFO|17/Mar/2021 11:36:30|basehttp|8999|139630336534272|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 192
+INFO|17/Mar/2021 11:37:46|basehttp|9060|139859804858112|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 192
+INFO|17/Mar/2021 12:11:53|basehttp|10357|140461067687680|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 48
+ERROR|17/Mar/2021 12:20:48|log|10891|140132819257088|Internal Server Error: /get_travel_request_approver_top/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3239, in get
+    "travel_req_id").order_by('-date_modified')[:limit]
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 281, in __getitem__
+    (k.stop is None or k.stop >= 0))), \
+TypeError: '>=' not supported between instances of 'str' and 'int'
+ERROR|17/Mar/2021 12:20:48|basehttp|10891|140132819257088|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 500 19916
+INFO|17/Mar/2021 12:22:57|basehttp|10970|140497523824384|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 11134
+INFO|17/Mar/2021 17:07:14|basehttp|18718|140319124047616|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|17/Mar/2021 17:07:44|basehttp|18718|140319124047616|"POST /api/custom/login/ HTTP/1.1" 200 74
+ERROR|17/Mar/2021 17:08:00|log|18718|140319124047616|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2017, in post
+    if user_pass[0]['password']:
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|17/Mar/2021 17:08:00|basehttp|18718|140319124047616|"POST /api/custom/login/ HTTP/1.1" 500 19272
+INFO|17/Mar/2021 17:10:41|basehttp|18911|139714531899136|"POST /api/custom/login/ HTTP/1.1" 200 74
+INFO|17/Mar/2021 17:11:01|basehttp|18911|139714531899136|"POST /api/custom/login/ HTTP/1.1" 200 74
+INFO|17/Mar/2021 17:31:10|basehttp|18911|139714531899136|"GET /Otp_Generate HTTP/1.1" 301 0
+ERROR|17/Mar/2021 17:31:10|log|18911|139714531899136|Internal Server Error: /Otp_Generate/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'Otp_Generate' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR|17/Mar/2021 17:31:10|basehttp|18911|139714531899136|"GET /Otp_Generate/ HTTP/1.1" 500 19661
+ERROR|17/Mar/2021 17:31:56|log|18911|139714531899136|Internal Server Error: /Otp_Generate/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'Otp_Generate' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR|17/Mar/2021 17:31:56|basehttp|18911|139714531899136|"GET /Otp_Generate/ HTTP/1.1" 500 19613
+ERROR|17/Mar/2021 17:32:50|log|18911|139714531899136|Internal Server Error: /Otp_Generate/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+    return self.list(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'Otp_Generate' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR|17/Mar/2021 17:32:50|basehttp|18911|139714531899136|"GET /Otp_Generate/ HTTP/1.1" 500 19613
+WARNING|17/Mar/2021 17:33:50|log|19998|140528338802432|Bad Request: /Otp_Generate/
+WARNING|17/Mar/2021 17:33:50|basehttp|19998|140528338802432|"POST /Otp_Generate/ HTTP/1.1" 400 107
+ERROR|17/Mar/2021 17:34:11|log|19998|140528338802432|Internal Server Error: /Otp_Generate/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1867, in post
+    'email': self.employee_name(email=email[0]['email'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|17/Mar/2021 17:34:11|basehttp|19998|140528338802432|"POST /Otp_Generate/ HTTP/1.1" 500 19284
+INFO|17/Mar/2021 17:40:14|basehttp|20376|140087262922496|"POST /Otp_Generate/ HTTP/1.1" 200 42
+INFO|17/Mar/2021 17:44:00|basehttp|20376|140087262922496|"POST /access_token/ HTTP/1.1" 200 25
+ERROR|17/Mar/2021 17:48:20|log|20730|140330473838336|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1923, in post
+    otp=User.objects.filter(otp=otp).values("id")
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1807, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'sssw'
+ERROR|17/Mar/2021 17:48:20|basehttp|20730|140330473838336|"POST /access_token/ HTTP/1.1" 500 20983
+INFO|17/Mar/2021 17:53:28|basehttp|20799|139831759546112|"POST /access_token/ HTTP/1.1" 200 23
+ERROR|17/Mar/2021 17:54:13|log|20937|140545146701568|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1912, in post
+    otp = int(request.data['otp'])
+ValueError: invalid literal for int() with base 10: '1a11'
+ERROR|17/Mar/2021 17:54:13|basehttp|20937|140545146701568|"POST /access_token/ HTTP/1.1" 500 19155
+ERROR|17/Mar/2021 17:54:18|log|20937|140545146701568|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1912, in post
+    otp = int(request.data['otp'])
+ValueError: invalid literal for int() with base 10: '1a11'
+ERROR|17/Mar/2021 17:54:18|basehttp|20937|140545146701568|"POST /access_token/ HTTP/1.1" 500 19155
+ERROR|17/Mar/2021 17:57:50|log|21025|139928760178432|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1923, in post
+    otp=User.objects.filter(otp=otp).values("id")
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1807, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR|17/Mar/2021 17:57:50|basehttp|21025|139928760178432|"POST /access_token/ HTTP/1.1" 500 20975
+WARNING|17/Mar/2021 17:58:05|log|21025|139928760178432|Bad Request: /access_token/
+WARNING|17/Mar/2021 17:58:05|basehttp|21025|139928760178432|"POST /access_token/ HTTP/1.1" 400 75
+ERROR|17/Mar/2021 17:58:21|log|21025|139928760178432|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 1923, in post
+    otp=User.objects.filter(otp=otp).values("id")
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 844, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1807, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR|17/Mar/2021 17:58:21|basehttp|21025|139928760178432|"POST /access_token/ HTTP/1.1" 500 20975
