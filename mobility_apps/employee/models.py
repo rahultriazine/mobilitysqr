@@ -104,6 +104,9 @@ class Employee(TimeStampedModel, GeneratedByModel, Status, ):
     column10 = models.CharField(max_length=100,null=True,blank=True)
     column11 = models.CharField(max_length=100,null=True,blank=True)
     column12 = models.CharField(max_length=100,null=True,blank=True)
+    is_visa_denied = models.BooleanField(default=False)
+    visa_denied_country = models.CharField(max_length=100, null=True, blank=True)
+
 
 
     class Meta:
@@ -387,6 +390,8 @@ class Employee_Visa_Detail(models.Model):
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
+    visa_entry_type = models.CharField(max_length=100, null=True, blank=True)
+
 
     class Meta:
         managed = True
@@ -427,6 +432,10 @@ class Employee_Org_Info(models.Model):
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
+    current_working_country = models.CharField(max_length=100, null=True, blank=True)
+    current_working_city = models.CharField(max_length=100, null=True, blank=True)
+    home_country_band = models.CharField(max_length=100, null=True, blank=True)
+    host_country_band = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True

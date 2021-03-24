@@ -910,7 +910,10 @@ class get_post_employee_visa(ListCreateAPIView):
                     serializer.save()
                 dicts.append(serializer.data)
                 dict = {'massage code': '201', 'massage': MSG_ADDED, 'status': True, 'data': dicts}
-        return Response(dict, status=status.HTTP_201_CREATED)#
+        return Response(dict, status=status.HTTP_201_CREATED)
+
+
+        #
 # bulk upload api(import employee)
 class bulk_upload_employee(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -1213,14 +1216,15 @@ class forget_password(APIView):
             cursorss=sql="UPDATE employee_employee SET istemporary='"+request.data['istemporary']+"' WHERE email='"+request.data['email']+"'"
             cursor=cursor.execute(cursorss)
             user_serializer = EmployeeSerializers(userinfo,data=request.data)
-            
+
             if user_serializer.is_valid():
                 user_serializer.save()
+            usename_ = Employee.objects.filter(email=request.data['email']).values('user_name').first()
             subject = 'New Password'
             message = ''
             newpassword = '123456'
             html_message = '<h3>Your New Password:</h3>'
-            html_message += '<p> User Name <b>: '+request.data['email']+'</b> </p>'
+            html_message += '<p> Username <b>: '+usename_['user_name']+'</b> </p>'
             html_message += '<p>Temporary Password : <b>' +password+ '</b> </p>'
             email_from = settings.EMAIL_HOST_USER
             recipient_list = [request.data['email'],]
@@ -2243,3 +2247,472 @@ class getEmployeeVisaInfo(APIView):
             dict = {'massage': 'data not found', 'status': False}
             return Response(dict, status=status.HTTP_200_OK)
 
+
+
+##################################################
+# bulk json employee add
+##################################################
+
+class bulk_json_upload_employee(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = EmployeeSerializers
+
+
+    def post(self, request):
+
+        dicts = []
+        for empdata in request.data:
+
+            employe = Employee.objects.filter(emp_code=empdata['emp_code']).first()
+            print('############ emp ##########')
+            print(employe)
+
+            try:
+                if (employe):
+                    personid = Employee.objects.filter(emp_code=empdata['emp_code']).values('person_id').first()
+                    # print(personid['person_id'])
+                    empdata['person_id'] = personid['person_id']
+                    businessemail = Employee_Emails.objects.filter(emp_code=empdata['emp_code'],
+                                                                   email_type="business").values("id")
+                    if businessemail:
+                        if businessemail[0]['id']:
+                            cursor = connection.cursor()
+                            sqlemails = "UPDATE employee_employee_emails SET email_address='" + empdata[
+                                'email'] + "' WHERE id='" + str(businessemail[0]['id']) + "'"
+                            print(sqlemails)
+                            cursor.execute(sqlemails)
+                    print(empdata)
+                    serializer = EmployeeSerializers(employe, data=empdata)
+                    if empdata['old_username']:
+                        cursor = connection.cursor()
+                        sql = "UPDATE api_user SET username='" + empdata['user_name'] + "' WHERE username='" + empdata['old_username'] + "'"
+                        cursor = cursor.execute(sql)
+                        if empdata['preferred_first_name']:
+                            name = empdata['preferred_first_name']
+                        else:
+                            name = empdata['first_name']
+                        ctxt = {'first_name': name, 'user_name': empdata['user_name']}
+                        subject, from_email, to = 'Updated Username', '', empdata['email']
+                        html_content = render_to_string('email/emailanduserupdate.html', ctxt)
+                        # render with dynamic value
+                        text_content = strip_tags(
+                            html_content)  # Strip the html tag. So people can see the pure text at least.
+
+                        # create the email, and attach the HTML version as well.
+
+                        msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+                        msg.attach_alternative(html_content, "text/html")
+                        msg.send()
+
+                    if empdata['old_email']:
+                        cursor = connection.cursor()
+                        sql = "UPDATE api_user SET email='" + empdata['email'] + "' WHERE email='" + empdata['old_email'] + "'"
+                        cursor = cursor.execute(sql)
+                    if serializer.is_valid():
+                        serializer.save()
+                        dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                                'emp_code': empdata['emp_code']}
+                    else:
+                        print(serializer.errors)
+                        dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                                'emp_code': empdata['emp_code']}
+
+                    dicts.append(dict)
+                else:
+                    empdata['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
+                    res = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
+                    empdata['password'] = make_password(str(res))
+                    serializer = EmployeeSerializers(data=empdata)
+
+                    if serializer.is_valid():
+                        serializer.save()
+                        if empdata['preferred_first_name']:
+                            name = empdata['preferred_first_name']
+                        else:
+                            name = empdata['first_name']
+                        ctxt = {
+                            'password': empdata['password'],
+                            'first_name': name,
+                            'user_name': empdata['user_name']
+
+                        }
+
+                        subject, from_email, to = 'Welcome to MobilitySQR- Registration Successful', '', empdata['email']
+
+                        html_content = render_to_string('email/registration.html', ctxt)
+
+                        # render with dynamic value
+                        text_content = strip_tags(
+                            html_content)  # Strip the html tag. So people can see the pure text at least.
+
+                        # create the email, and attach the HTML version as well.
+
+                        msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+                        msg.attach_alternative(html_content, "text/html")
+                        msg.send()
+                        dict = {'massage code': '201', 'massage': 'Insert', 'status': True,
+                                'emp_code': empdata['emp_code']}
+                    else:
+                        dict = {'massage code': '201', 'massage': 'Insert failed', 'status': False,
+                                'emp_code': empdata['emp_code']}
+                    dicts.append(dict)
+            except Exception as e:
+                dict = {'massage code': 'Exception', 'massage': e, 'status': False,'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_200_OK)
+
+
+
+#########################################
+#    bulk json upload employee org information
+#########################################
+
+class bulk_json_upload_employee_orginfo(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_Org_InfoSerializers
+
+    def post(self, request):
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Org_Info.objects.filter(emp_code=empdata['emp_code']).first()
+            if employee:
+                serializer = Employee_Org_InfoSerializers(employee,data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                            'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+            else:
+                serializer = Employee_Org_InfoSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Insert', 'status': True,
+                            'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Insert', 'status': False,
+                            'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+###########################################
+# bulk json employee address upload
+###########################################
+
+class bulk_json_upload_employee_address(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_AddressSerializers
+
+
+    def post(self, request):
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Address.objects.filter(emp_code=empdata['emp_code']).first()
+            if employee:
+                serializer = Employee_AddressSerializers(employee,data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                            'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                            'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+                if empdata['is_primary']==True:
+                    employeess=Employee_Emergency_Contact.objects.filter(emp_code=empdata['emp_code'],isAddSameAsEmployee=True)
+                    empdatas={}
+                    if employeess:
+                        for employees in employeess:
+                            empdatas.update({"address1":empdata['address1']})
+                            empdatas.update({"address2":empdata['address2']})
+                            empdatas.update({"address3":empdata['address3']})
+                            empdatas.update({"city":empdata['city']})
+                            empdatas.update({"state":empdata['state']})
+                            empdatas.update({"zip":empdata['zip']})
+                            empdatas.update({"country":empdata['country']})
+                            serializers = Employee_Emergency_ContactSerializers(employees,data=empdatas)
+                            if serializers.is_valid():
+                               serializers.save()
+            else:
+                serializer = Employee_AddressSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+##################################################
+# bulk json upload employee email
+##################################################
+class bulk_json_upload_employee_emails(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_EmailsSerializers
+
+    def post(self, request):
+
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Emails.objects.filter(emp_code=empdata['emp_code']).first()
+            if employee:
+                if empdata['email_type']=="business":
+                    cursor = connection.cursor()
+                    sql ="UPDATE employee_employee SET email='"+empdata['email_address']+"' WHERE emp_code='"+empdata['emp_code']+"'"
+                    print(sql)
+                    cursor.execute(sql)
+                serializer = Employee_EmailsSerializers(employee,data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+
+            else:
+                serializer = Employee_EmailsSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+##############################################
+#  bulk json upload employee phoneinfo
+##############################################
+
+class bulk_json_upload_phoneinfo(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_PhonesSerializers
+
+
+    def post(self, request):
+
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Phones.objects.filter(emp_code=empdata['emp_code']).first()
+            if employee:
+                serializer = Employee_PhonesSerializers(employee,data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+            else:
+                serializer = Employee_PhonesSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+##########################################
+#  bulk json employee emergency contact upload
+##########################################
+
+
+class bulk_json_upload_employee_emergencycontact(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_Emergency_ContactSerializers
+
+
+    def post(self, request):
+
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Emergency_Contact.objects.filter(emp_code_id=empdata['emp_code']).first()
+            if employee:
+                if empdata['isAddSameAsEmployee']==True:
+                    emp=empdata['emp_code']
+                    emp_add=Employee_Address.objects.filter(emp_code_id=emp,is_primary=True)
+                    if emp_add:
+                        emp_add=Employee_AddressSerializers(emp_add,many=True)
+                        empdata.update({"address1":emp_add.data[0]['address1']})
+                        empdata.update({"address2":emp_add.data[0]['address2']})
+                        empdata.update({"address3":emp_add.data[0]['address3']})
+                        empdata.update({"city":emp_add.data[0]['city']})
+                        empdata.update({"state":emp_add.data[0]['state']})
+                        empdata.update({"zip":emp_add.data[0]['zip']})
+                        empdata.update({"country":emp_add.data[0]['country']})
+                        serializer = Employee_Emergency_ContactSerializers(employee,data=empdata)
+                        if serializer.is_valid():
+                            serializer.save()
+                    else:
+                        serializer = Employee_Emergency_ContactSerializers(employee,data=empdata)
+                        if serializer.is_valid():
+                            serializer.save()
+                            dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                                    'emp_code': empdata['emp_code']}
+                        else:
+                            dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                                    'emp_code': empdata['emp_code']}
+                        dicts.append(dict)
+                else:
+                    serializer = Employee_Emergency_ContactSerializers(employee,data=empdata)
+                    if serializer.is_valid():
+                        serializer.save()
+                        dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                            'emp_code': empdata['emp_code']}
+                    else:
+                        dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                            'emp_code': empdata['emp_code']}
+                    dicts.append(dict)
+            else:
+                if empdata['isAddSameAsEmployee']==True:
+                    emp=empdata['emp_code']
+                    emp_add=Employee_Address.objects.filter(emp_code_id=emp,is_primary=True)
+                    if emp_add:
+                        emp_add=Employee_AddressSerializers(emp_add,many=True)
+                        empdata.update({"address1":emp_add.data[0]['address1']})
+                        empdata.update({"address2":emp_add.data[0]['address2']})
+                        empdata.update({"address3":emp_add.data[0]['address3']})
+                        empdata.update({"city":emp_add.data[0]['city']})
+                        empdata.update({"state":emp_add.data[0]['state']})
+                        empdata.update({"zip":emp_add.data[0]['zip']})
+                        empdata.update({"country":emp_add.data[0]['country']})
+                serializer = Employee_Emergency_ContactSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+#################################################
+#  json bulk upload employee passport
+#################################################
+
+class bulk_json_upload_employee_passport(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_Passport_DetailSerializers
+
+
+    def post(self, request):
+
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Passport_Detail.objects.filter(emp_code_id=empdata['emp_code']).first()
+            if employee:
+                serializer = Employee_Passport_DetailSerializers(employee,data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+
+            else:
+                serializer = Employee_Passport_DetailSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+
+################################
+# bulk json vija upload
+################################
+
+class bulk_json_upload_employee_visa(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_Visa_DetailSerializers
+
+    def post(self, request):
+
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Visa_Detail.objects.filter(emp_code_id=empdata['emp_code']).first()
+            if employee:
+                serializer = Employee_Visa_DetailSerializers(employee,data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+            else:
+                serializer = Employee_Visa_DetailSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+
+
+##################################################
+#   json bulk upload employee national id
+##################################################
+
+
+class bulk_json_upload_employee_nationalid(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_NationalidSerializers
+
+
+    def post(self, request):
+
+        dicts=[]
+        for empdata in request.data:
+            employee = Employee_Nationalid.objects.filter(emp_code_id=empdata['emp_code']).first()
+            if employee:
+                serializer = Employee_NationalidSerializers(employee,data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Updated', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+            else:
+                serializer = Employee_NationalidSerializers(data=empdata)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': True,
+                        'emp_code': empdata['emp_code']}
+                else:
+                    dict = {'massage code': '201', 'massage': 'Inserted', 'status': False,
+                        'emp_code': empdata['emp_code']}
+                dicts.append(dict)
+        return Response(dicts, status=status.HTTP_201_CREATED)

@@ -65,6 +65,17 @@ urlpatterns = [
         path('getemployee_visa_info/', getEmployeeVisaInfo.as_view(), name="getemployee_visa_info"),
 
 
+        path('bulk_json_upload/employee/', bulk_json_upload_employee.as_view(), name='bulk_json_upload_employee'),
+        path('bulk_json_upload/employee_orginfo/', bulk_json_upload_employee_orginfo.as_view(), name='bulk_json_upload_employee_orginfo'),
+        path('bulk_json_upload/employee_address/', bulk_json_upload_employee_address.as_view(), name='bulk_json_upload_employee_address'),
+        path('bulk_json_upload/employee_emails/', bulk_json_upload_employee_emails.as_view(), name='bulk_json_upload_employee_emails'),
+        path('bulk_json_upload/employee_phoneinfo/', bulk_json_upload_phoneinfo.as_view(), name='bulk_json_upload_employee_phoneinfo'),
+        path('bulk_json_upload/employee_nationalid/', bulk_json_upload_employee_nationalid.as_view(), name='bulk_json_upload_employee_nationalid'),
+        path('bulk_json_upload/employee_visa/', bulk_json_upload_employee_visa.as_view(), name='get_post_employee_visa'),
+        path('bulk_json_upload/employee_emergencycontact/', bulk_json_upload_employee_emergencycontact.as_view(), name='bulk_json_upload_employee_emergencycontact'),
+        path('bulk_json_upload/employee_passport/', bulk_json_upload_employee_passport.as_view(), name='bulk_json_upload_employee_passport'),
+
+
 
            ]
 
