@@ -1161,24 +1161,24 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
 
             request.data['current_ticket_owner']=""
             teemp_status=employee[0]['approval_level']
-            if request.data['approve_action']=="A":
+            if request.data['approve_action'] == "A":
                 travel_req_status=Status_Master.objects.filter(name="Approved").values("value")
                 if employee[0]['approval_level']=="0":
                     if employee[0]['expense_approver']:
-                        request.data['current_ticket_owner'] =employee[0]['expense_approver']
-                        request.data['approval_level']="1"
+                        request.data['current_ticket_owner'] = employee[0]['expense_approver']
+                        request.data['approval_level'] = "1"
                     elif employee[0]['project_manager']:
-                        request.data['current_ticket_owner'] =employee[0]['project_manager']
-                        request.data['approval_level']="2"
+                        request.data['current_ticket_owner'] = employee[0]['project_manager']
+                        request.data['approval_level'] = "2"
                     elif employee[0]['business_lead']:
-                        request.data['current_ticket_owner'] =employee[0]['business_lead']
-                        request.data['approval_level']="3"
+                        request.data['current_ticket_owner'] = employee[0]['business_lead']
+                        request.data['approval_level'] = "3"
                     elif employee[0]['client_executive_lead']:
-                        request.data['current_ticket_owner'] =employee[0]['client_executive_lead']
-                        request.data['approval_level']="4"
+                        request.data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                        request.data['approval_level'] = "4"
                     else:
                         request.data['current_ticket_owner'] = ""
-                elif employee[0]['approval_level']=="1":
+                elif employee[0]['approval_level'] == "1":
                     if employee[0]['project_manager']:
                         request.data['current_ticket_owner'] =employee[0]['project_manager']
                         request.data['approval_level']="2"
@@ -1405,6 +1405,7 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
             serializeraction=Travel_Request_Action_HistorySerializers(data=request.data)
             if serializeraction.is_valid():
                 serializeraction.save()
+                self.nextLevelApproveTravel_if_sameEmp_to_Approve(self, request.data['travel_req_id'],request.data['org_id'],request.data['modified_by'])
             else:
                 dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data':  serializeraction.errors}
 
@@ -1681,6 +1682,107 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
         else:
             dict = {'massage code': '200', 'massage': 'successful', 'status': True}
         return Response(dict, status=status.HTTP_200_OK)
+
+    def nextLevelApproveTravel_if_sameEmp_to_Approve(self, travel_req_id, org_id, modified_by):
+
+        check_data = self.checkTravelRequestTicketOwner(travel_req_id)
+        if check_data:
+            if check_data[0]['expense_approver']:
+                if check_data[0]['expense_approver'] == modified_by and check_data[0]['approval_level'] == '1':
+                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
+            elif check_data[0]['project_manager']:
+                if check_data[0]['project_manager'] == modified_by and check_data[0]['approval_level'] == '2':
+                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
+            elif check_data[0]['business_lead']:
+                if check_data[0]['business_lead'] == modified_by and check_data[0]['approval_level'] == '3':
+                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
+            elif check_data[0]['client_executive_lead']:
+                if check_data[0]['client_executive_lead'] == modified_by and check_data[0]['approval_level'] == '4':
+                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
+                else:
+                    return True
+            else:
+                return True
+
+
+    def travelApproveAutomatic(self, travel_req_id, org_id, modified_by,travel_data):
+
+            data = dict()
+            if travel_data:
+                if travel_data[0]['approval_level'] == "1":
+                    if travel_data[0]['project_manager']:
+                        data['current_ticket_owner'] = travel_data[0]['project_manager']
+                        data['approval_level'] = "2"
+                    elif travel_data[0]['business_lead']:
+                        data['current_ticket_owner'] = travel_data[0]['business_lead']
+                        data['approval_level'] = "3"
+                    elif travel_data[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = travel_data[0]['client_executive_lead']
+                        data['approval_level'] = "4"
+                    else:
+                        data['current_ticket_owner'] = ""
+
+                elif travel_data[0]['approval_level'] == "2":
+                    if travel_data[0]['business_lead']:
+                        data['current_ticket_owner'] = travel_data[0]['business_lead']
+                        data['approval_level'] = "3"
+                    elif travel_data[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = travel_data[0]['client_executive_lead']
+                        data['approval_level'] = "4"
+                    else:
+                        data['current_ticket_owner'] = ""
+                elif travel_data[0]['approval_level'] == "3":
+                    if travel_data[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = travel_data[0]['client_executive_lead']
+                        data['approval_level'] = "4"
+                    else:
+                        data['current_ticket_owner'] = ""
+                elif travel_data[0]['approval_level'] == "4":
+                    if travel_data[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = ""
+                        data['approval_level'] = "5"
+                    else:
+                        data['current_ticket_owner'] = ""
+
+                # update Travel request status
+                data['travel_req_status'] = "2"
+                travel_request = Travel_Request.objects.filter(travel_req_id=travel_req_id).first()
+                serializer = Travel_RequestSerializers(travel_request, data=data)
+                if serializer.is_valid():
+                    serializer.save()
+                else:
+                    dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
+                            'data': serializer.errors}
+                    return Response(dict, status=status.HTTP_200_OK)
+
+                # insert travel request history data
+                data['modified_by'] = modified_by
+                data['module'] = "Travel"
+                data['action'] = "4"
+                data['org_id'] = org_id
+                data['request_notes'] = "test approve"
+                # data['take_ownership'] = ""
+                # data['transfer_to'] = ""
+                data['travel_req_id'] = travel_req_id
+                data['approval_level'] = travel_data[0]['approval_level']
+                serializeraction = Travel_Request_Action_HistorySerializers(data=data)
+                if serializeraction.is_valid():
+                    serializeraction.save()
+                    return True
+                else:
+                    dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
+                            'data': serializeraction.errors}
+                    return Response(dict, status=status.HTTP_200_OK)
+
+
+
+    def checkTravelRequestTicketOwner(travel_req_id):
+        employee = Travel_Request.objects.filter(travel_req_id=travel_req_id).values('supervisor', 'business_lead', 'project_manager', 'expense_approver', 'client_executive_lead', 'emp_email_id', 'approval_level')
+        if employee:
+            return employee
+        else:
+            return False
+
 
 
     def sendmails(self,ctxt,template,emailsubject,emailto,id):
