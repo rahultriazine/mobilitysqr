@@ -5,6 +5,7 @@ from django.db.models.signals import post_delete,post_save,pre_save
 from mobility_apps.base.models import TimeStampedModel, GeneratedByModel, Status
 from django.utils.translation import ugettext_lazy as _
 from mobility_apps.superadmin.models import *
+from datetime import datetime
 
 class Userinfo(TimeStampedModel, GeneratedByModel, Status, ):
     emp_code = models.CharField(unique=True,default="emp001", max_length=100)
@@ -89,7 +90,7 @@ class Employee(TimeStampedModel, GeneratedByModel, Status, ):
     photo = models.CharField(max_length=255, null=True, blank=True)
     assignment_role = models.CharField(max_length=100,null=True,blank=True)
     organization = models.CharField(max_length=100, null=True, blank=True)
-    supervisor= models.CharField(max_length=100, null=True, blank=True)
+    supervisor= models.CharField(max_length=100, default="demo_supervisor_1", blank=True)
     last_login = models.CharField(max_length=100, null=True, blank=True)
     recent_login= models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100,null=True,blank=True)
@@ -106,6 +107,7 @@ class Employee(TimeStampedModel, GeneratedByModel, Status, ):
     column12 = models.CharField(max_length=100,null=True,blank=True)
     is_visa_denied = models.BooleanField(default=False)
     visa_denied_country = models.CharField(max_length=100, null=True, blank=True)
+    date_of_join = models.CharField(max_length=50, null=True, blank=True)
 
 
 
@@ -500,8 +502,8 @@ class Calender_Activity(models.Model):
     column8 = models.CharField(max_length=100, null=True, blank=True)
     column9 = models.CharField(max_length=100, null=True, blank=True)
     column10 = models.CharField(max_length=100, null=True, blank=True)
-    column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
+    # column11 = models.CharField(max_length=100, null=True, blank=True)
+    # column12 = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True
@@ -513,3 +515,16 @@ class Calender_Activity(models.Model):
 
     def __unicode__(self):
         return self.activity_name
+
+
+
+class Message_Chat(models.Model):
+    sender_emp_code = models.CharField(max_length=200,null=True,)
+    receiver_emp_code = models.CharField(max_length=200,null=True,)
+    thread = models.CharField(max_length=200,null=True,)
+    chat_message = models.CharField(max_length=200,null=True,)
+    created_date = models.DateTimeField(default=datetime.now, blank=True)
+    ticket_id = models.CharField(max_length=150,null=True,)
+
+
+

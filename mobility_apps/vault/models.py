@@ -30,6 +30,12 @@ class Vault_type_info(TimeStampedModel, GeneratedByModel, Status):
     doc_description = models.CharField(max_length=250, null=True, blank=True)
     document_url = models.CharField(max_length=250, null=True, blank=True)
 
+
+
+
+
+
+
     class Meta:
         managed = True
         verbose_name = _('Vault Type Info')

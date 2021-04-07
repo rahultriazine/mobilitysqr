@@ -76,6 +76,9 @@ urlpatterns = [
         path('bulk_json_upload/employee_passport/', bulk_json_upload_employee_passport.as_view(), name='bulk_json_upload_employee_passport'),
 
 
+        path('employee_chat/', employee_chat.as_view(), name='employee_chat'),
+
+
 
            ]
 

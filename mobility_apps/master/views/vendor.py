@@ -213,7 +213,7 @@ class get_vendors_type(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = Vendor_MasterSerializers
     def get(self, request):
-        vendor = Vendor_Master.objects.all()
+        vendor = Vendor_Master.objects.all().order_by('vendor_type')
         # paginate_queryset = self.paginate_queryset(employee)
         serializer = Vendor_MasterSerializers(vendor,many=True)
         dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}

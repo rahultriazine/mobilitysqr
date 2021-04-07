@@ -1,0 +1,99 @@
+INFO|31/Mar/2021 11:50:49|basehttp|5235|139860258051840|"POST /api/custom/login/ HTTP/1.1" 200 452
+ERROR|31/Mar/2021 11:51:25|log|5235|139860258051840|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'thread'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2743, in post
+    print(request.GET['thread'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'thread'
+ERROR|31/Mar/2021 11:51:25|basehttp|5235|139860258051840|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 500 19949
+ERROR|31/Mar/2021 11:53:36|log|5790|140395984307968|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'thread'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2746, in post
+    print(request.GET['thread'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'thread'
+ERROR|31/Mar/2021 11:53:36|basehttp|5790|140395984307968|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 500 19949
+INFO|31/Mar/2021 11:54:38|basehttp|5872|139691905459968|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 201 150
+INFO|31/Mar/2021 12:13:52|basehttp|6856|140719034160896|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 201 150
+ERROR|31/Mar/2021 12:19:38|log|7549|140122218247936|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2747, in post
+    message_data.create()
+AttributeError: 'Message_Chat' object has no attribute 'create'
+ERROR|31/Mar/2021 12:19:38|basehttp|7549|140122218247936|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 500 19575
+INFO|31/Mar/2021 12:21:06|basehttp|7650|140514551351040|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 201 163
+INFO|31/Mar/2021 12:24:40|basehttp|7650|140514551351040|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 201 163
+INFO|31/Mar/2021 12:26:18|basehttp|7650|140514551351040|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 201 172
+INFO|31/Mar/2021 12:27:07|basehttp|7650|140514551351040|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 201 179
+INFO|31/Mar/2021 12:33:22|basehttp|4139|140090490693376|"GET /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 200 176
+INFO|31/Mar/2021 12:42:05|basehttp|5017|139806521382656|"GET /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 200 432

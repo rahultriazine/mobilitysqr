@@ -8,8 +8,8 @@ from rest_framework import status
 from rest_framework import settings
 from api.models import User
 from mobility_apps.master.models import Project
-from mobility_apps.employee.models import Employee, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events,Calender_Activity
-from mobility_apps.employee.serializer import EmployeeSerializers,Employee_Passport_DetailSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers,Employee_Org_InfoSerializers,Calender_EventsSerializers,Calender_ActivitySerializers
+from mobility_apps.employee.models import Employee,Message_Chat, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events,Calender_Activity
+from mobility_apps.employee.serializer import EmployeeSerializers,Message_ChatSerializers, Employee_Passport_DetailSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers,Employee_Org_InfoSerializers,Calender_EventsSerializers,Calender_ActivitySerializers
 from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
 from mobility_apps.travel.serializers import Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
 
@@ -177,7 +177,7 @@ class emoloyeedetails(ListCreateAPIView):
                 'data': data
             }
             dict = {'massage': 'data found', 'status': True, 'data':data}
-        
+
         else:
             dict = {'massage': 'data not found', 'status': False}
         return Response(dict, status=status.HTTP_200_OK)
@@ -186,7 +186,7 @@ class transfer_emoloyeedetails(APIView):
     serializer_class = EmployeeSerializers
     permission_classes = (IsAuthenticated,)
     def get(self, request):
-        
+
         #limits= "15"
         #emp = Employee.objects.raw("select * from employee_userinfo where email LIKE '%"+employee+"%' or emp_code LIKE '%"+employee+"%'")
         travel=Travel_Request.objects.filter(travel_req_id=request.GET['travel']).values('approval_level')
@@ -400,12 +400,12 @@ class get_post_employee_info(ListCreateAPIView):
                 request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
                 res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
                 request.data['password'] = str(res)
-                
+
                 serializer = UserinfoSerializers(data=request.data)
                 if request.data['preferred_first_name']:
                    name=request.data['preferred_first_name']
                 else:
-                   name=request.data['first_name'] 
+                   name=request.data['first_name']
                 ctxt = {
                             'password':request.data['password'],
                             'first_name':name,
@@ -413,7 +413,7 @@ class get_post_employee_info(ListCreateAPIView):
 
                         }
 
-                
+
                 subject, from_email, to = 'Welcome to MobilitySQR - Registration Successful', request.data['email']
 
                 html_content = render_to_string('email/registration.html', ctxt)
@@ -495,7 +495,7 @@ class get_post_employee(ListCreateAPIView):
                    if request.data['preferred_first_name']:
                         name=request.data['preferred_first_name']
                    else:
-                        name=request.data['first_name'] 
+                        name=request.data['first_name']
                    ctxt = {'first_name':name,'user_name':request.data['user_name'] }
                    subject, from_email, to = 'Updated Username','',request.data['email']
                    html_content = render_to_string('email/emailanduserupdate.html', ctxt)
@@ -510,12 +510,12 @@ class get_post_employee(ListCreateAPIView):
                 if request.data.get('old_email'):
                    cursor = connection.cursor()
                    sql="UPDATE api_user SET email='"+request.data.get('email')+"' WHERE email='"+request.data.get('old_email')+"'"
-                   cursor=cursor.execute(sql)   
+                   cursor=cursor.execute(sql)
                 if serializer.is_valid():
                     serializer.save()
                     dict = {'massage code': '201', 'massage':  MSG_DETAILSUPDATE, 'status': True, 'data': serializer.data}
                 else:
-                    
+
                     dict = {'massage code': '201', 'massage': 'Unsuccessfully', 'status': False, 'data': serializer.errors}
                 return Response(dict, status=status.HTTP_201_CREATED)
             else:
@@ -529,7 +529,7 @@ class get_post_employee(ListCreateAPIView):
                     if request.data['preferred_first_name']:
                         name=request.data['preferred_first_name']
                     else:
-                        name=request.data['first_name'] 
+                        name=request.data['first_name']
                     ctxt = {
                                 'password':request.data['password'],
                                 'first_name':name,
@@ -538,9 +538,9 @@ class get_post_employee(ListCreateAPIView):
                             }
 
                     subject, from_email, to = 'Welcome to MobilitySQR- Registration Successful','',request.data['email']
-                   
+
                     html_content = render_to_string('email/registration.html', ctxt)
-                    
+
                     # render with dynamic value
                     text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
 
@@ -559,7 +559,7 @@ class get_post_employee(ListCreateAPIView):
             return Response(dict, status=status.HTTP_200_OK)
         # return  Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    
+
 
 class get_post_employee_address(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -968,14 +968,14 @@ class bulk_upload_employee(ListCreateAPIView):
                     alldata.append(serializer.data)
             data1=pd.read_excel(request.data.get("file"),sheet_name=['address'])
             df3 = pd.concat(data1[frame] for frame in data1.keys())
-            
+
             alldata1=[]
             infosucessCount = 0
             infofailureCount = 0
             for i, values in df3.iterrows():
                 #employess = Employee_Address.objects.filter(emp_code=values['emp_code']).first()
                 values=values.to_dict()
-                
+
                 infosucessCount += 1
                 print(values['is_primary'])
                 serializer = Employee_AddressSerializers(data=values)
@@ -1274,7 +1274,7 @@ class reset_password(APIView):
                 passwords = make_password(request.data['password'])
                 request.data['istemporary'] = "0"
                 userinfo=Userinfo.objects.filter(email=request.data['email']).first()
-                
+
                 cursor = connection.cursor()
                 sql="UPDATE api_user SET password='"+passwords+"' WHERE email='"+request.data['email']+"'"
                 cursor=cursor.execute(sql)
@@ -1283,9 +1283,9 @@ class reset_password(APIView):
                 user_serializer = EmployeeSerializers(userinfo,data=request.data)
                 if cursor:
                     dict = {'massage': 'success', 'status': True}
-                    
+
                 else:
-                    dict = {'massage': 'data not found', 'status': False}      
+                    dict = {'massage': 'data not found', 'status': False}
             else:
                 dict = {'massage': 'Old Password Does Not Match', 'status': False}
         else:
@@ -1295,7 +1295,7 @@ class reset_password(APIView):
             passwords = make_password(request.data['password'])
             request.data['istemporary'] = "0"
             userinfo=Userinfo.objects.filter(email=request.data['email']).first()
-            
+
             cursor = connection.cursor()
             sql="UPDATE api_user SET password='"+passwords+"' WHERE email='"+request.data['email']+"'"
             cursor=cursor.execute(sql)
@@ -1304,7 +1304,7 @@ class reset_password(APIView):
             user_serializer = EmployeeSerializers(userinfo,data=request.data)
             if cursor:
                 dict = {'massage': 'success', 'status': True}
-                
+
             else:
                 dict = {'massage': 'data not found', 'status': False}
         return Response(dict, status=status.HTTP_200_OK)
@@ -1312,12 +1312,23 @@ class reset_password(APIView):
 class uploadDoc(APIView):
     def post(self, request, format=None):
         file = request.FILES['file']
-        fs = FileSystemStorage()
-        filename = fs.save(file.name, file)
-        uploaded_file_url = fs.url(filename)
-        dict = {'massage': 'File uploaded', 'status': True, 'data': uploaded_file_url}
+        fil_size = file_size(request)
+        if fil_size:
+            fs = FileSystemStorage()
+            filename = fs.save(file.name, file)
+            uploaded_file_url = fs.url(filename)
+            dict = {'massage': 'File uploaded', 'status': True, 'data': uploaded_file_url}
+        else:
+            dict = {'message': 'Exceeds the maximum file size 10MB', 'status': False}
         return Response(dict, status=status.HTTP_200_OK)
 
+
+def file_size(request):
+    if request.FILES['file'].size <= 10000000:
+        result = True
+    else:
+        result = False
+    return result
 
 
 class checkemployeeuser(APIView):
@@ -1352,20 +1363,20 @@ class checkemployeeempcode(APIView):
 
 
 
-class FileUploadView(ListCreateAPIView):    
+class FileUploadView(ListCreateAPIView):
     def post(self, request):
-        
-        file_obj = request.FILES['file']     
+
+        file_obj = request.FILES['file']
         data={"status":"true","s":str(file_obj.name)}
-        xl = pd.ExcelFile(file_obj)  
+        xl = pd.ExcelFile(file_obj)
         #df2 = pd.concat(data[frame] for frame in data.keys())
-        #personal_info = pd.read_excel(file_obj, sheet_name='personal_info') 
+        #personal_info = pd.read_excel(file_obj, sheet_name='personal_info')
         #print(personal_info.info())
 
         for idx, name in enumerate(xl.sheet_names):
             df = pd.DataFrame()
-            
-            sheet = xl.parse(name)            
+
+            sheet = xl.parse(name)
             if idx == 0:
               columns = sheet.columns
             #sheet.columns = columns
@@ -1380,7 +1391,7 @@ class FileUploadView(ListCreateAPIView):
                                  "PWD=mob!@sqr1123573121")
             sqlEngine= create_engine("mssql+pyodbc:///?odbc_connect={}".format(params))
             dbConnection= sqlEngine.connect()
-            
+
             if name == 'personal_info':
                 dataadded =  df.to_sql(con=dbConnection, name='tmp_personal_info3', if_exists='replace')
             if name == 'address':
@@ -1400,26 +1411,26 @@ class FileUploadView(ListCreateAPIView):
             if name == 'employee_nationalid':
                 dataadded =  df.to_sql(con=dbConnection, name='tmp_employee_nationalid', if_exists='replace')
 
-            dbConnection.close()    
-            
+            dbConnection.close()
+
         data={"df":"success","status":"true","s":str(file_obj.name)}
         return Response(data,status=status.HTTP_200_OK)
 
-class FileUploadView2(ListCreateAPIView):    
+class FileUploadView2(ListCreateAPIView):
     def post(self, request):
-        
-        file_obj = request.FILES['file']     
+
+        file_obj = request.FILES['file']
         data={"status":"true","s":str(file_obj.name)}
-        xl = pd.ExcelFile(file_obj)  
-       
+        xl = pd.ExcelFile(file_obj)
+
         for idx, name in enumerate(xl.sheet_names):
             df = pd.DataFrame()
-            
-            sheet = xl.parse(name)            
+
+            sheet = xl.parse(name)
             if idx == 0:
               columns = sheet.columns
 
-            df = df.append(sheet, ignore_index=True)  
+            df = df.append(sheet, ignore_index=True)
             if name == 'address':
                 #print(df)
                 for item in df.to_dict('records'):
@@ -1442,13 +1453,13 @@ class FileUploadView2(ListCreateAPIView):
             data={"df":df,"status":"true","s":str(file_obj.name)}
         return Response(data,status=status.HTTP_200_OK)
 
-class GETData(ListCreateAPIView):    
+class GETData(ListCreateAPIView):
     def get(self, request):
         cursor = connection.cursor()
         sql = "select * From tmp_personal_info3"
         cursor=cursor.execute(sql)
         myresult=cursor.fetchone()
-        
+
         data={"status":"true","s":myresult}
         return Response(data,status=status.HTTP_200_OK)
 
@@ -1511,18 +1522,18 @@ class import_employee(ListCreateAPIView):
             def __next__(self):
                 row = self._cursor.__next__()
                 return { description[0]: row[col] for col, description in enumerate(self._cursor.description) }
-                
+
         sql ="SELECT * FROM tmp_personal_info3"
         cursor=cursor.execute(sql)
-        
+
         #sql ="TRUNCATE TABLE letter_letters"tmp_personal_info3
         errordata=[]
         datas=[]
         for data in CursorByName(cursor):
-            
+
             list={}
             res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
-        
+
             list['emp_code']=data['emp_code']
             list['person_id']="PER" + str(uuid.uuid4().int)[:6]
             list['role']=data['role']
@@ -1570,33 +1581,33 @@ class import_employee(ListCreateAPIView):
             for datass in datas:
                 personalinfoerror={}
                 employee=Employee.objects.filter(emp_code=datass['emp_code']).first()
-            
+
                 if employee:
                     employeeserializer=EmployeeSerializers(employee,data=datass)
                     emp_code=datass['emp_code']
                     if employeeserializer.is_valid():
-                        employeeserializer.save()  
+                        employeeserializer.save()
                     else:
                         personalinfoerror[emp_code]=employeeserializer.errors
                 else:
                     employeeserializer=EmployeeSerializers(data=datass)
                     emp_code=datass['emp_code']
                     if employeeserializer.is_valid():
-                        employeeserializer.save()   
+                        employeeserializer.save()
                     else:
                         personalinfoerror[emp_code]=employeeserializer.errors
                         personal_data.append(personalinfoerror)
             errordata.append({'Personal_Info_Error':personal_data})
-                
-        #Emplyee Personal Info Inserted 
-                     
-        #Employee address insert start..    
-                    
+
+        #Emplyee Personal Info Inserted
+
+        #Employee address insert start..
+
         sql ="SELECT * FROM tmp_employee_address3"
         cursor=cursor.execute(sql)
         dataaddress=[]
         for dataadd in CursorByName(cursor):
-    
+
             lists={}
             lists['emp_code']=dataadd['emp_code_id']
             lists['address1']=dataadd['address1']
@@ -1614,19 +1625,19 @@ class import_employee(ListCreateAPIView):
             emp_code=dataad['emp_code']
             if address.is_valid():
                 id=address.save().id
-                
+
             else:
                addresserror[emp_code]=address.errors
                address_data.append(addresserror)
         errordata.append({'Address_Errors':address_data})
-        #Employee address insert start..  
+        #Employee address insert start..
 
-        #Employee emails insert start..                
+        #Employee emails insert start..
         sql ="SELECT * FROM tmp_employee_emails3"
         cursor=cursor.execute(sql)
         dataemails=[]
         for dataemail in CursorByName(cursor):
-          
+
             listeamil={}
             listeamil['emp_code']=dataemail['emp_code_id']
             listeamil['email_type']=dataemail['email_type']
@@ -1645,8 +1656,8 @@ class import_employee(ListCreateAPIView):
               emails_data.append(emails_error)
         errordata.append({'Emails_Errors':emails_data})
 
-        # #Employee email inserted.. 
-        # #Employee emergency insert start..                
+        # #Employee email inserted..
+        # #Employee emergency insert start..
         sql ="SELECT * FROM tmp_employee_emergency_contact3"
         cursor=cursor.execute(sql)
         dataemergencys=[]
@@ -1680,19 +1691,19 @@ class import_employee(ListCreateAPIView):
             emergency=Employee_Emergency_ContactSerializers(data=dataemergencyss)
             emp_code=dataemergencyss['emp_code']
             if emergency.is_valid():
-               id=emergency.save().id 
+               id=emergency.save().id
             else:
                 emergency_contact[emp_code]=emergency.errors
                 emergency_data.append(emergency_contact)
         errordata.append({'Emergency_Contact_Error':emergency_data})
         #Employee email inserted..
 
-        # #Employee phone insert start..                
+        # #Employee phone insert start..
         sql ="SELECT * FROM tmp_employee_phones3"
         cursor=cursor.execute(sql)
         dataphones=[]
         for dataphone in CursorByName(cursor):
-            
+
             listp={}
             listp['emp_code']=dataphone['emp_code_id']
             listp['phone_type']=dataphone['phone_type']
@@ -1713,9 +1724,9 @@ class import_employee(ListCreateAPIView):
                 phonerror[emp_code]=phone.errors
                 phone_data.append(phonerror)
         errordata.append({'Phone':phone_data})
-        
 
-        # #Employee passport insert start..                
+
+        # #Employee passport insert start..
         sql ="SELECT * FROM tmp_employee_passport_detail"
         cursor=cursor.execute(sql)
         datapassports=[]
@@ -1748,9 +1759,9 @@ class import_employee(ListCreateAPIView):
                 passport_data.append(passporterror)
         errordata.append({'Passport_Error':passport_data})
         # #Employee passport inserted..
-        
 
-        # #Employee visa insert start..                
+
+        # #Employee visa insert start..
         sql ="SELECT * FROM tmp_employee_visa_detail"
         cursor=cursor.execute(sql)
         datavisas=[]
@@ -1780,7 +1791,7 @@ class import_employee(ListCreateAPIView):
             visa=Employee_Visa_DetailSerializers(data=datavis)
             emp_code=datavis['emp_code']
             if visa.is_valid():
-               id=visa.save().id 
+               id=visa.save().id
             else:
                visa_error[emp_code]=visa.errors
                visas_data.append(visa_error)
@@ -1788,7 +1799,7 @@ class import_employee(ListCreateAPIView):
         # #Employee visa inserted..
 
 
-        # #Employee org insert start..                
+        # #Employee org insert start..
         sql ="SELECT * FROM tmp_employee_org_info"
         cursor=cursor.execute(sql)
         dataorgs=[]
@@ -1813,14 +1824,14 @@ class import_employee(ListCreateAPIView):
             org=Employee_Org_InfoSerializers(data=dataorg)
             emp_code=dataorg['emp_code']
             if org.is_valid():
-               id=org.save().id   
+               id=org.save().id
             else:
                 org_error[emp_code]=org.errors
                 org_data.append(org_error)
         errordata.append({'Organization_Error':org_data})
         # #Employee org inserted..
 
-        # #Employee visa insert start..                
+        # #Employee visa insert start..
         sql ="SELECT * FROM tmp_employee_nationalid"
         cursor=cursor.execute(sql)
         datanationalids=[]
@@ -1846,7 +1857,7 @@ class import_employee(ListCreateAPIView):
         errordata.append({'NationalID_Error':national_data})
         #Employee visa inserted..
         logger.error(errordata)
-        
+
         text_file = open("uploadpdf/error_report.txt", "w")
         text_file.write(str(errordata))
 
@@ -1920,13 +1931,13 @@ class access_token(ListCreateAPIView):
                 dict = {'massage': 'Username and OTP required', 'status': False}
                 return Response(dict, status=status.HTTP_200_OK)
             userss=User.objects.filter(username=username).values("id")
-            
+
             if userss:
                 otp=User.objects.filter(otp=otp).values("id")
                 print(otp)
                 if otp:
                     user=otp[0]['id']
-                    
+
                     #serialized_user = UserSerializer(user).data
 
                     access_token = generate_access_token(user)
@@ -2322,6 +2333,9 @@ class bulk_json_upload_employee(APIView):
                     empdata['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
                     res = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
                     empdata['password'] = make_password(str(res))
+                    if empdata['supervisor'] == '':
+                        empdata['supervisor'] = 'demo_supervisor_1'
+
                     serializer = EmployeeSerializers(data=empdata)
 
                     if serializer.is_valid():
@@ -2716,3 +2730,69 @@ class bulk_json_upload_employee_nationalid(APIView):
                         'emp_code': empdata['emp_code']}
                 dicts.append(dict)
         return Response(dicts, status=status.HTTP_201_CREATED)
+
+
+
+############################################
+# employee chat
+#############################################
+
+class employee_chat(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Message_ChatSerializers
+
+
+    def post(self, request):
+        sender_emp_code = request.data.get('sender_emp_code', None)
+        receiver_emp_code = request.data.get('receiver_emp_code', None)
+        chat_message = request.data.get('chat_message', None)
+        ticket_id = request.data.get('ticket_id', None)
+        thread_data = sender_emp_code + receiver_emp_code
+
+
+        if (sender_emp_code is None) or (receiver_emp_code is None) or (chat_message is None) or (ticket_id is None) or (ticket_id == '') or (sender_emp_code == '') or (receiver_emp_code == '') or (chat_message == ''):
+            dict = {'message code': '201', 'status': False,
+                    'message': 'Message sender emp id, receiver emp id, ticket id and message required'}
+        else:
+            message_data = Message_Chat()
+            message_data.thread = thread_data
+            message_data.sender_emp_code = sender_emp_code
+            message_data.receiver_emp_code = receiver_emp_code
+            message_data.chat_message = chat_message
+            message_data.ticket_id = ticket_id
+            message_data.save()
+            result_data = Message_Chat.objects.get(pk=message_data.id)
+            serializer = Message_ChatSerializers(result_data)
+            if serializer.data:
+                dict = {'message code': '201', 'status': True, 'data': serializer.data}
+            else:
+                dict = {'message code': '201', 'status': F, 'data': serializer.errors}
+
+            return Response(dict, status=status.HTTP_201_CREATED)
+        return Response(dict, status=status.HTTP_201_CREATED)
+
+
+    def get(self, request):
+        sender_emp_code = request.GET['sender_emp_code']
+        receiver_emp_code = request.GET['receiver_emp_code']
+        ticket_id = request.GET['ticket_id']
+        thread_data = sender_emp_code + receiver_emp_code
+        thread_data1 = receiver_emp_code + sender_emp_code
+
+
+        if (sender_emp_code is None) or (receiver_emp_code is None) or (ticket_id is None) or (ticket_id == '') or (sender_emp_code == '') or (receiver_emp_code == ''):
+            dict = {'message code': '201', 'status': True,
+                    'message': 'Message sender emp id, receiver emp id, ticket id and message required'}
+
+        else:
+            message_query = Message_Chat.objects.filter(Q(thread=thread_data) | Q(thread=thread_data1), ticket_id=ticket_id).order_by('created_date')
+            serializer = Message_ChatSerializers(message_query, many=True)
+            if serializer.data:
+                dict = {'massage': 'data found', 'status': True, 'data': serializer.data}
+            else:
+                dict = {'massage': 'data not found', 'status': False, 'data': []}
+            return Response(dict, status=status.HTTP_200_OK)
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+

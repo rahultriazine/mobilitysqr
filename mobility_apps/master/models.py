@@ -25,7 +25,6 @@ class Country(TimeStampedModel, GeneratedByModel, Status):
     column9 = models.CharField(max_length=100, null=True, blank=True)
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True
@@ -55,8 +54,8 @@ class Country_Policy(TimeStampedModel, GeneratedByModel, Status):
     column8 = models.CharField(max_length=100, null=True, blank=True)
     column9 = models.CharField(max_length=100, null=True, blank=True)
     column10 = models.CharField(max_length=100, null=True, blank=True)
-    column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
+    # column11 = models.CharField(max_length=100, null=True, blank=True)
+    # column12 = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True

@@ -360,9 +360,18 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
     column7 = models.CharField(max_length=100, null=True, blank=True)
     column8 = models.CharField(max_length=100, null=True, blank=True)
     column9 = models.CharField(max_length=100, null=True, blank=True)
-    column10 = models.CharField(max_length=100, null=True, blank=True)
-    column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
+    # column10 = models.CharField(max_length=100, null=True, blank=True)
+    # column11 = models.CharField(max_length=100, null=True, blank=True)
+    currency = models.CharField(max_length=100, null=True, blank=True)
+    invoice_amount = models.CharField(max_length=100, null=True, blank=True)
+    po_number = models.CharField(max_length=100, null=True, blank=True)
+    invoice_number = models.CharField(max_length=100, null=True, blank=True)
+    invoice_date = models.CharField(max_length=100, null=True, blank=True)
+    services = models.CharField(max_length=250, null=True, blank=True)
+    file_attachments = models.CharField(max_length=1000, null=True, blank=True)
+    vendor_status = models.CharField(max_length=100, null=True, blank=True)
+    vendor_remark = models.CharField(max_length=200, null=True, blank=True)
+
 
     class Meta:
         managed = True
@@ -390,8 +399,8 @@ class Assignment_Travel_Tax_Grid(TimeStampedModel, GeneratedByModel, Status):
     column8 = models.CharField(max_length=100, null=True, blank=True)
     column9 = models.CharField(max_length=100, null=True, blank=True)
     column10 = models.CharField(max_length=100, null=True, blank=True)
-    column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
+    # column11 = models.CharField(max_length=100, null=True, blank=True)
+    # column12 = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True
