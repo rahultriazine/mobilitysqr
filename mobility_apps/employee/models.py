@@ -522,7 +522,7 @@ class Message_Chat(models.Model):
     sender_emp_code = models.CharField(max_length=200,null=True,)
     receiver_emp_code = models.CharField(max_length=200,null=True,)
     thread = models.CharField(max_length=200,null=True,)
-    chat_message = models.CharField(max_length=200,null=True,)
+    chat_message = models.TextField(max_length=1000,null=True,)
     created_date = models.DateTimeField(default=datetime.now, blank=True)
     ticket_id = models.CharField(max_length=150,null=True,)
 

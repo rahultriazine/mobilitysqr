@@ -81,7 +81,7 @@ class bulk_upload_Gender(ListCreateAPIView):
 
 
 class get_post_marital_status(ListCreateAPIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = Marital_StatusSerializers
 
     def get_queryset(self):
@@ -91,12 +91,42 @@ class get_post_marital_status(ListCreateAPIView):
     # Get all department
     def get(self, request):
         marital_status = self.get_queryset()
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = Marital_StatusSerializers(marital_status,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+
+    def post(self, request):
+        serializer = Marital_StatusSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+##################################################
+# update master marital status
+##################################################
+
+class update_master_marital_status(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Marital_StatusSerializers
+
+    def get_object(self, pk):
+        return Marital_Status.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = Marital_StatusSerializers(instance,data=request.data,partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+
 
 class bulk_upload_marital_status(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -164,7 +194,39 @@ class get_post_salutation(ListCreateAPIView):
         serializer = SalutationSerializers(salutation,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+
+    def post(self, request):
+        serializer = SalutationSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+##############################################
+# update solution
+##############################################
+
+class update_master_salutation(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = SalutationSerializers
+
+    def get_object(self, pk):
+        return Salutation.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = SalutationSerializers(instance,data=request.data,partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+
 
 class bulk_upload_salutation(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -286,7 +348,7 @@ class bulk_upload_acedmic(ListCreateAPIView):
 
 
 class get_post_suffix(ListCreateAPIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = Name_SuffixSerializers
 
     def get_queryset(self):
@@ -301,7 +363,38 @@ class get_post_suffix(ListCreateAPIView):
         serializer = Name_SuffixSerializers(suffix,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+
+    def post(self, request):
+        serializer = Name_SuffixSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+##############################################
+# update suffix
+##############################################
+
+class update_master_suffix(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Name_SuffixSerializers
+
+    def get_object(self, pk):
+        return Name_Suffix.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = Name_SuffixSerializers(instance, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+
 
 class bulk_upload_suffix(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -354,7 +447,7 @@ class bulk_upload_suffix(ListCreateAPIView):
 
 
 class get_post_email(ListCreateAPIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = Email_TypeSerializers
 
     def get_queryset(self):
@@ -370,6 +463,38 @@ class get_post_email(ListCreateAPIView):
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
         #return self.get_paginated_response(serializer.data)
+
+    def post(self, request):
+        serializer = Email_TypeSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+##############################################
+# update master email type
+##############################################
+
+class update_master_email(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Email_TypeSerializers
+
+    def get_object(self, pk):
+        return Email_Type.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = Email_TypeSerializers(instance, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
 
 class bulk_upload_email(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -439,6 +564,39 @@ class get_post_phone(ListCreateAPIView):
         return Response(dict, status=status.HTTP_200_OK)
         #return self.get_paginated_response(serializer.data)
 
+    def post(self, request):
+        serializer = Phone_TypeSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+##############################################
+# update master phone type
+##############################################
+
+class update_master_phone_type(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Phone_TypeSerializers
+
+    def get_object(self, pk):
+        return Phone_Type.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = Phone_TypeSerializers(instance, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+
+
 class bulk_upload_phone(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = Phone_TypeSerializers
@@ -491,7 +649,7 @@ class bulk_upload_phone(ListCreateAPIView):
 
 
 class get_post_relation(ListCreateAPIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = RelationSerializers
 
     def get_queryset(self):
@@ -507,6 +665,38 @@ class get_post_relation(ListCreateAPIView):
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
         #return self.get_paginated_response(serializer.data)
+
+    def post(self, request):
+        serializer = RelationSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+##############################################
+# update master relationship type
+##############################################
+
+class update_master_relation_type(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = RelationSerializers
+
+    def get_object(self, pk):
+        return Relation.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = RelationSerializers(instance, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
 
 class bulk_upload_relation(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -644,7 +834,39 @@ class get_post_address(ListCreateAPIView):
         serializer = Address_TypeSerializers(address,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+
+    def post(self, request):
+        serializer = Address_TypeSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+##################################################
+# update master address type
+##################################################
+
+class update_master_address(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Address_TypeSerializers
+
+    def get_object(self, pk):
+        return Address_Type.objects.get(pk=pk)
+
+    def patch(self, request,pk):
+        instance = self.get_object(pk)
+        serializer = Address_TypeSerializers(instance,data=request.data,partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+
 
 class bulk_upload_address(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)

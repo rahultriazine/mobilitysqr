@@ -28,4 +28,9 @@ urlpatterns = [
         path('travel_request_priority/', travel_request_priority.as_view(),
              name='travel_request_priority'),
 
+
+
+
+        path('bulk_approve_travelvisa_request/', bulk_approve_travelvisa_request.as_view(),name='bulk_approve_travelvisa_request'),
+
 ]

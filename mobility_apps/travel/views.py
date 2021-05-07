@@ -37,6 +37,7 @@ from cryptography.fernet import Fernet
 from pagination import CustomPagination
 import string
 import random
+
 class get_delete_update_travel_request(RetrieveDestroyAPIView):
     http_method_names = ['get', 'put', 'delete', 'head', 'options', 'trace']
     #permission_classes = (IsAuthenticated,)
@@ -335,6 +336,7 @@ class get_post_travel_request(ListCreateAPIView):
                 elif data['client_executive_lead'] !="":
                     curerent_vstatus =employee[0]['client_executive_lead']
                 data['current_ticket_owner']=curerent_vstatus
+                data['approval_level'] = "0"
                 visa_request = Visa_RequestSerializers(data=data)
                 if visa_request.is_valid():
                     visa_req_id=visa_request.save().visa_req_id
@@ -1377,6 +1379,8 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
                     serializernotifications.save()
                     msg="Travel request  assigned"
                     self.sendmails(msg,request.data['Message'],request.data['Action_taken_by'])
+            print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@REquest')
+            print(request.data)
             travel_request_id_ids=Travel_Request.objects.filter(travel_req_id=request.data['travel_req_id']).first()
             serializer = Travel_RequestSerializers(travel_request_id_ids,data=request.data)
             if serializer.is_valid():
@@ -1402,15 +1406,18 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
             # recipient_list = [emp_email_id,current_ticket_owner,]
             # send_mail(subject, message, email_from, recipient_list, fail_silently=False, html_message=html_message)
             request.data['approval_level']=teemp_status
+            print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@history')
+            print(request.data)
             serializeraction=Travel_Request_Action_HistorySerializers(data=request.data)
             if serializeraction.is_valid():
                 serializeraction.save()
-                self.nextLevelApproveTravel_if_sameEmp_to_Approve(self, request.data['travel_req_id'],request.data['org_id'],request.data['modified_by'])
+                self.nextLevelApproveTravel_if_sameEmp_to_Approve(request.data['travel_req_id'],request.data['org_id'],request.data['modified_by'],request.data['request_notes'])
             else:
                 dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data':  serializeraction.errors}
 
         visa_request_id=Visa_Request.objects.filter(travel_req_id=request.data['travel_req_id']).values("visa_req_id")
         if visa_request_id:
+            flag = False
             for data in visa_request_id:
                 employee=Visa_Request.objects.filter(visa_req_id=data['visa_req_id']).values('supervisor','business_lead','project_manager','expense_approver','client_executive_lead','current_ticket_owner','emp_email_id','approval_level','country','travel_start_date','travel_end_date','applied_visa','is_billable','project_id')
 
@@ -1430,6 +1437,7 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
                 teemp_status=employee[0]['approval_level']
                 emp_email_id=employee[0]['emp_email_id']
                 data['module']="Visa"
+                approval_level_back_level = employee[0]['approval_level']
                 if data['approve_action']=="A":
                     if employee[0]['approval_level']=="0":
                         if employee[0]['expense_approver']:
@@ -1648,6 +1656,8 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
 
                 visa_request_ids=Visa_Request.objects.filter(visa_req_id=data['visa_req_id']).first()
                 serializer = Visa_RequestSerializers(visa_request_ids,data=data)
+                print('########################### visa request data')
+                print(data)
                 if serializer.is_valid():
                     serializer.save()
                 else:
@@ -1670,44 +1680,178 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
                 # email_from = settings.EMAIL_HOST_USER
                 # recipient_list = [emp_email_id,current_ticket_owner,]
                 # send_mail(subject, message, email_from, recipient_list, fail_silently=False, html_message=html_message)
-                data['approval_level']=request.data['approval_level']
+                data['approval_level']=approval_level_back_level
                 data['email_id']=request.data['modified_by']
                 print(data['email_id'])
                 actionserializer =Visa_Request_Action_HistorySerializers(data=data)
+                print('########################### visa request Action history')
+                print(data)
                 if actionserializer.is_valid():
                     actionserializer.save()
                     dict = {'massage code': '200', 'massage': 'successful', 'status': True}
+                    flag = True
                 else:
                     dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data': actionserializer.errors}
+                    flag = False
+
+            if (flag == True) and (request.data['approve_action'] == "A"):
+                self.nextLevelApproveVisa_if_sameEmp_to_Approve(request.data['travel_req_id'], request.data['org_id'],
+                                                                request.data['modified_by'],
+                                                                request.data['request_notes'])
+                dict = {'massage code': '200', 'massage': 'successful', 'status': True}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                dict = {'massage code': '200', 'massage': 'successful', 'status': True}
+                return Response(dict, status=status.HTTP_200_OK)
+
         else:
             dict = {'massage code': '200', 'massage': 'successful', 'status': True}
         return Response(dict, status=status.HTTP_200_OK)
 
-    def nextLevelApproveTravel_if_sameEmp_to_Approve(self, travel_req_id, org_id, modified_by):
+    def nextLevelApproveVisa_if_sameEmp_to_Approve(self,travel_req_id, org_id, modified_by,action_notes):
+        print('nextLevelApproveVisa_if_sameEmp_to_Approve')
+        check_visa_data = self.checkVisaRequest(travel_req_id)
+        print('################################')
+        print(check_visa_data)
+        if check_visa_data:
+            for visa_data in check_visa_data:
+                employee=Visa_Request.objects.filter(visa_req_id=visa_data['visa_req_id']).values('supervisor','business_lead','project_manager','expense_approver','client_executive_lead','current_ticket_owner','emp_email_id','approval_level','country','travel_start_date','travel_end_date','applied_visa','is_billable','project_id')
 
+                if employee:
+                    approval_level = employee[0]['approval_level']
+                    if employee[0]['approval_level'] == '1':
+                        if employee[0]['expense_approver'] == modified_by:
+                            self.VisaApproveAutomatic(travel_req_id, visa_data['visa_req_id'], org_id, modified_by, employee,action_notes, approval_level)
+                        else:
+                            return True
+                    elif employee[0]['approval_level'] == '2':
+                        if employee[0]['project_manager'] == modified_by:
+                            self.VisaApproveAutomatic(travel_req_id, visa_data['visa_req_id'], org_id, modified_by, employee,action_notes, approval_level)
+                        else:
+                            return True
+                    elif employee[0]['approval_level'] == '3':
+                        if employee[0]['business_lead'] == modified_by:
+                            self.VisaApproveAutomatic(travel_req_id, visa_data['visa_req_id'], org_id, modified_by, employee,action_notes, approval_level)
+                        else:
+                            return True
+                    elif employee[0]['approval_level'] == '4':
+                        if employee[0]['client_executive_lead'] == modified_by:
+                            self.VisaApproveAutomatic(travel_req_id, visa_data['visa_req_id'], org_id, modified_by, employee,action_notes, approval_level)
+                        else:
+                            return True
+                    else:
+                        return True
+        self.nextLevelApproveVisa_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by, action_notes)
+
+
+
+    def VisaApproveAutomatic(self, travel_req_id, visa_req_id, org_id, modified_by,employee,action_notes, approval_level):
+            print('VisaApproveAutomatic')
+            data = {}
+            if employee:
+                if employee[0]['approval_level'] == "1":
+                    if employee[0]['project_manager']:
+                        data['current_ticket_owner'] = employee[0]['project_manager']
+                        data['approval_level'] = "2"
+                    elif employee[0]['business_lead']:
+                        data['current_ticket_owner'] = employee[0]['business_lead']
+                        data['approval_level'] = "3"
+                    elif employee[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                        data['approval_level'] = "4"
+                    else:
+                        data['current_ticket_owner'] = ""
+
+                elif employee[0]['approval_level'] == "2":
+                    if employee[0]['business_lead']:
+                        data['current_ticket_owner'] = employee[0]['business_lead']
+                        data['approval_level'] = "3"
+                    elif employee[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                        data['approval_level'] = "4"
+                    else:
+                        data['current_ticket_owner'] = ""
+                elif employee[0]['approval_level'] == "3":
+                    if employee[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                        data['approval_level'] = "4"
+                    else:
+                        data['current_ticket_owner'] = ""
+                elif employee[0]['approval_level'] == "4":
+                    if employee[0]['client_executive_lead']:
+                        data['current_ticket_owner'] = ""
+                        data['approval_level'] = "5"
+                    else:
+                        data['current_ticket_owner'] = ""
+
+                # update visa request status
+                # data['travel_req_status'] = "2"
+                data['visa_status_notes'] = action_notes
+                data['modified_by'] = modified_by
+                data['emp_email'] = modified_by
+                print('########################## Visa request data inserted')
+                print(data)
+                visa_request_ids = Visa_Request.objects.filter(visa_req_id=visa_req_id).first()
+                serializer = Visa_RequestSerializers(visa_request_ids, data=data)
+                if serializer.is_valid():
+                    serializer.save()
+                else:
+                    dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
+                            'data': serializer.errors}
+                    return Response(dict, status=status.HTTP_200_OK)
+
+                # insert travel request history data
+
+                data['module'] = "Visa"
+                data['action'] = "4"
+                data['organization'] = org_id
+                data['action_notes'] = action_notes
+                data['visa_req_id'] = visa_req_id
+                data['travel_req_id'] = travel_req_id
+                data['email'] = modified_by
+                # data['transfer_to'] = ""
+
+                data['approval_level'] = approval_level
+                print('######################################### visa history data inserted')
+                print(data)
+                actionserializer = Visa_Request_Action_HistorySerializers(data=data)
+                if actionserializer.is_valid():
+                    actionserializer.save()
+                else:
+                    dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
+                            'data': actionserializer.errors}
+                    return Response(dict, status=status.HTTP_200_OK)
+
+
+# Travel approve
+    def nextLevelApproveTravel_if_sameEmp_to_Approve(self,travel_req_id, org_id, modified_by,action_notes):
+        print('nextLevelApproveTravel_if_sameEmp_to_Approve')
         check_data = self.checkTravelRequestTicketOwner(travel_req_id)
+        print('################################')
+        print(check_data)
         if check_data:
-            if check_data[0]['expense_approver']:
-                if check_data[0]['expense_approver'] == modified_by and check_data[0]['approval_level'] == '1':
-                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
-            elif check_data[0]['project_manager']:
-                if check_data[0]['project_manager'] == modified_by and check_data[0]['approval_level'] == '2':
-                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
-            elif check_data[0]['business_lead']:
-                if check_data[0]['business_lead'] == modified_by and check_data[0]['approval_level'] == '3':
-                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
-            elif check_data[0]['client_executive_lead']:
-                if check_data[0]['client_executive_lead'] == modified_by and check_data[0]['approval_level'] == '4':
-                    self.travelApproveAutomatic(self, travel_req_id, org_id, modified_by, check_data)
+            approval_level = check_data[0]['approval_level']
+            if check_data[0]['approval_level'] == '1':
+                if check_data[0]['expense_approver'] == modified_by:
+                    self.travelApproveAutomatic(travel_req_id, org_id, modified_by, check_data,action_notes, approval_level)
+            elif check_data[0]['approval_level'] == '2':
+                if check_data[0]['project_manager'] == modified_by:
+                    self.travelApproveAutomatic(travel_req_id, org_id, modified_by, check_data,action_notes, approval_level)
+            elif check_data[0]['approval_level'] == '3':
+                if check_data[0]['business_lead'] == modified_by:
+                    self.travelApproveAutomatic(travel_req_id, org_id, modified_by, check_data,action_notes, approval_level)
+            elif check_data[0]['approval_level'] == '4':
+                if check_data[0]['client_executive_lead'] == modified_by:
+                    self.travelApproveAutomatic(travel_req_id, org_id, modified_by, check_data,action_notes, approval_level)
                 else:
                     return True
             else:
                 return True
 
 
-    def travelApproveAutomatic(self, travel_req_id, org_id, modified_by,travel_data):
-
-            data = dict()
+    def travelApproveAutomatic(self, travel_req_id, org_id, modified_by,travel_data,action_notes, approval_level):
+            print('travelApproveAutomatic')
+            data = {}
             if travel_data:
                 if travel_data[0]['approval_level'] == "1":
                     if travel_data[0]['project_manager']:
@@ -1747,6 +1891,8 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
                 # update Travel request status
                 data['travel_req_status'] = "2"
                 travel_request = Travel_Request.objects.filter(travel_req_id=travel_req_id).first()
+                print('########################## travel request data')
+                print(data)
                 serializer = Travel_RequestSerializers(travel_request, data=data)
                 if serializer.is_valid():
                     serializer.save()
@@ -1759,16 +1905,18 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
                 data['modified_by'] = modified_by
                 data['module'] = "Travel"
                 data['action'] = "4"
-                data['org_id'] = org_id
-                data['request_notes'] = "test approve"
-                # data['take_ownership'] = ""
+                data['organization'] = org_id
+                data['action_notes'] = action_notes
+                data['email'] = modified_by
                 # data['transfer_to'] = ""
                 data['travel_req_id'] = travel_req_id
-                data['approval_level'] = travel_data[0]['approval_level']
+                data['approval_level'] = approval_level
+                print('######################################### travel history data')
+                print(data)
                 serializeraction = Travel_Request_Action_HistorySerializers(data=data)
                 if serializeraction.is_valid():
                     serializeraction.save()
-                    return True
+                    self.nextLevelApproveTravel_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by,action_notes)
                 else:
                     dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
                             'data': serializeraction.errors}
@@ -1776,10 +1924,18 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
 
 
 
-    def checkTravelRequestTicketOwner(travel_req_id):
+    def checkTravelRequestTicketOwner(self, travel_req_id):
         employee = Travel_Request.objects.filter(travel_req_id=travel_req_id).values('supervisor', 'business_lead', 'project_manager', 'expense_approver', 'client_executive_lead', 'emp_email_id', 'approval_level')
         if employee:
             return employee
+        else:
+            return False
+
+
+    def checkVisaRequest(self, travel_req_id):
+        visa_request_id = Visa_Request.objects.filter(travel_req_id=travel_req_id).values("visa_req_id")
+        if visa_request_id:
+            return visa_request_id
         else:
             return False
 
@@ -3465,3 +3621,516 @@ class travel_request_priority(APIView):
         return Response(dict, status=status.HTTP_200_OK)
 
 
+
+
+############################################
+# Travel request bulk approve and reject
+############################################
+
+class bulk_approve_travelvisa_request(ListCreateAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Travel_RequestSerializers
+
+    # Create a new employee
+    def post(self, request):
+        # import ipdb;ipdb.set_trace()
+        for approvel_data in request.data:
+            if approvel_data['travel_req_id']:
+                notificationid = "NOTIF" + str(uuid.uuid4().int)[:6]
+                travel_request_id = approvel_data['travel_req_id']
+                travel_request_id = Travel_Request.objects.filter(travel_req_id=approvel_data['travel_req_id'],
+                                                                  organization_id=approvel_data['org_id']).first()
+                employee = Travel_Request.objects.filter(travel_req_id=approvel_data['travel_req_id']).values(
+                    'supervisor', 'business_lead', 'project_manager', 'expense_approver', 'client_executive_lead',
+                    'emp_email_id', 'approval_level')
+                supervisor = employee[0]['supervisor']
+                business_lead = employee[0]['business_lead']
+                project_manager = employee[0]['project_manager']
+                expense_approver = employee[0]['expense_approver']
+                client_executive_lead = employee[0]['client_executive_lead']
+                current_ticket_owner = approvel_data['current_ticket_owner']
+                emp_email_id = employee[0]['emp_email_id']
+
+                approvel_data['current_ticket_owner'] = ""
+                teemp_status = employee[0]['approval_level']
+                if approvel_data['approve_action'] == "A":
+                    if employee[0]['approval_level'] == "0":
+                        if employee[0]['expense_approver']:
+                            approvel_data['current_ticket_owner'] = employee[0]['expense_approver']
+                            approvel_data['approval_level'] = "1"
+                        elif employee[0]['project_manager']:
+                            approvel_data['current_ticket_owner'] = employee[0]['project_manager']
+                            approvel_data['approval_level'] = "2"
+                        elif employee[0]['business_lead']:
+                            approvel_data['current_ticket_owner'] = employee[0]['business_lead']
+                            approvel_data['approval_level'] = "3"
+                        elif employee[0]['client_executive_lead']:
+                            approvel_data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                            approvel_data['approval_level'] = "4"
+                        else:
+                            approvel_data['current_ticket_owner'] = ""
+                    elif employee[0]['approval_level'] == "1":
+                        if employee[0]['project_manager']:
+                            approvel_data['current_ticket_owner'] = employee[0]['project_manager']
+                            approvel_data['approval_level'] = "2"
+                        elif employee[0]['business_lead']:
+                            approvel_data['current_ticket_owner'] = employee[0]['business_lead']
+                            approvel_data['approval_level'] = "3"
+                        elif employee[0]['client_executive_lead']:
+                            approvel_data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                            approvel_data['approval_level'] = "4"
+                        else:
+                            approvel_data['current_ticket_owner'] = ""
+
+                    elif employee[0]['approval_level'] == "2":
+                        if employee[0]['business_lead']:
+                            approvel_data['current_ticket_owner'] = employee[0]['business_lead']
+                            approvel_data['approval_level'] = "3"
+                        elif employee[0]['client_executive_lead']:
+                            approvel_data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                            approvel_data['approval_level'] = "4"
+                        else:
+                            approvel_data['current_ticket_owner'] = ""
+                    elif employee[0]['approval_level'] == "3":
+                        if employee[0]['client_executive_lead']:
+                            approvel_data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                            approvel_data['approval_level'] = "4"
+                        else:
+                            approvel_data['current_ticket_owner'] = ""
+                    elif employee[0]['approval_level'] == "4":
+                        if employee[0]['client_executive_lead']:
+                            approvel_data['current_ticket_owner'] = ""
+                            approvel_data['approval_level'] = "5"
+                        else:
+                            approvel_data['current_ticket_owner'] = ""
+                        approvel_data['travel_req_status'] = "4"
+                    approvel_data['travel_req_status'] = "2"
+                    approvel_data['Entity_Type'] = "Travel"
+                    approvel_data['Entity_ID'] = approvel_data['travel_req_id']
+                    approvel_data['Action_taken_by'] = approvel_data['current_ticket_owner']
+                    approvel_data['Notification_Date'] = ""
+                    approvel_data['Message'] = approvel_data['travel_req_id'] + " New travel request for approval"
+                    approvel_data['Notification_ID'] = notificationid
+                    approvel_data['organization'] = approvel_data['org_id']
+                    serializernotificationss = NotificationSerializers(data=approvel_data)
+                    if serializernotificationss.is_valid():
+                        serializernotificationss.save()
+                        travelid = Travel_Request.objects.filter(travel_req_id=approvel_data['travel_req_id']).values(
+                            'is_billable', 'project', 'expence_cureency', 'expence_departureDate', 'expence_estimatedCost',
+                            'expence_fromCountry', 'expence_returnDate', 'expence_toCountry')
+
+                        if travelid[0]['expence_estimatedCost']:
+                            costs = travelid[0]['expence_estimatedCost'] + ' ' + travelid[0]['expence_cureency']
+                        else:
+                            costs = '0'
+                        if travelid[0]['is_billable'] == True:
+                            is_billable = 'Yes'
+                        else:
+                            is_billable = 'No'
+                        ctxt = {
+                            'first_name': self.employee_name(emp_code=employee[0]['emp_email_id']),
+                            'approve_first_name': self.approver_name(emp_code=approvel_data['Action_taken_by']),
+                            'project_id': travelid[0]['project'],
+                            'billable': is_billable,
+                            'from_country': travelid[0]['expence_fromCountry'],
+                            'to_country': travelid[0]['expence_toCountry'],
+                            'departure_date': travelid[0]['expence_departureDate'],
+                            'return_date': travelid[0]['expence_returnDate'],
+                            'total_cost_master_currency': costs,
+                            'supervisor': self.employee_name(emp_code=employee[0]['supervisor']),
+                            'expense_approver': self.employee_name(emp_code=employee[0]['expense_approver']),
+                            'project_manager': self.employee_name(emp_code=employee[0]['project_manager']),
+                            'business_lead': self.employee_name(emp_code=employee[0]['business_lead']),
+                            'client_executive_lead': self.employee_name(emp_code=employee[0]['client_executive_lead'])
+                        }
+                        if approvel_data['current_ticket_owner'] != "":
+                            template = 'email/approve_travel_request.html'
+                            emailsubject = 'Travel request for ' + self.employee_name(
+                                emp_code=employee[0]['emp_email_id']) + ' requires approval'
+                            self.sendmails(ctxt, template, emailsubject, emailto=approvel_data['current_ticket_owner'],
+                                           id=approvel_data['travel_req_id'])
+                        notificationid = "NOTIF" + str(uuid.uuid4().int)[:6]
+                        approvel_data['Entity_Type'] = "Travel"
+                        approvel_data['Entity_ID'] = approvel_data['travel_req_id']
+                        approvel_data['Action_taken_by'] = emp_email_id
+                        approvel_data['Notification_Date'] = ""
+                        approvel_data['Message'] = approvel_data['travel_req_id'] + " Travel request approved by " + \
+                                                  approvel_data['modified_by']
+                        approvel_data['Notification_ID'] = notificationid
+                        approvel_data['organization'] = approvel_data['org_id']
+                        serializernotifications = NotificationSerializers(data=approvel_data)
+                        if serializernotifications.is_valid():
+                            serializernotifications.save()
+                            if current_ticket_owner != "":
+                                approver_name = self.employee_name(emp_code=current_ticket_owner)
+                            else:
+                                approver_name = "Assignment Team"
+                            ctxt = {
+                                'approver_name': approver_name,
+                                'next_approver_name': self.employee_name(emp_code=approvel_data['current_ticket_owner']),
+                                'preferred_first_name': self.approver_name(emp_code=approvel_data['Action_taken_by']),
+                                'travel_request_id': approvel_data['travel_req_id'],
+
+                            }
+                            template = 'email/approvedtravelrequest.html'
+                            emailsubject = 'Your travel request ' + approvel_data['travel_req_id'] + ' have been approved'
+                            self.sendmails(ctxt, template, emailsubject, emailto=employee[0]['emp_email_id'],
+                                           id=approvel_data['travel_req_id'])
+                elif approvel_data['approve_action'] == "R":
+                    travel_req_status = Status_Master.objects.filter(name="Rejected").values("value")
+                    approvel_data['travel_req_status'] = travel_req_status[0]['value']
+                    approvel_data['current_ticket_owner'] = current_ticket_owner
+                    approvel_data['Entity_Type'] = "Travel"
+                    approvel_data['Entity_ID'] = approvel_data['travel_req_id']
+                    approvel_data['Action_taken_by'] = emp_email_id
+                    approvel_data['Notification_Date'] = ""
+                    approvel_data['Message'] = approvel_data['travel_req_id'] + " Travel Request Rejected"
+                    approvel_data['Notification_ID'] = notificationid
+                    approvel_data['organization'] = approvel_data['org_id']
+                    serializernotification = NotificationSerializers(data=approvel_data)
+                    if serializernotification.is_valid():
+                        serializernotification.save()
+                        ctxt = {
+                            'approver_name': self.employee_name(emp_code=current_ticket_owner),
+                            'preferred_first_name': self.approver_name(emp_code=approvel_data['Action_taken_by']),
+                            'travel_request_id': approvel_data['travel_req_id'],
+                            'msg': approvel_data['request_notes']
+
+                        }
+                        template = 'email/travelreject.html'
+                        emailsubject = 'Your travel request ' + approvel_data['travel_req_id'] + ' has been rejected'
+                        self.sendmails(ctxt, template, emailsubject, emailto=employee[0]['emp_email_id'],
+                                       id=approvel_data['travel_req_id'])
+                print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@REquest')
+                print(approvel_data)
+                travel_request_id_ids = Travel_Request.objects.filter(travel_req_id=approvel_data['travel_req_id']).first()
+                serializer = Travel_RequestSerializers(travel_request_id_ids, data=approvel_data)
+                if serializer.is_valid():
+                    serializer.save()
+                else:
+                    dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data': serializer.errors}
+                if approvel_data['approve_action'] == "A":
+                    # travel_req_status = Status_Master.objects.filter(name="Approved").values("value")
+                    approvel_data['action'] = "4"
+                else:
+                    approvel_data['action'] = approvel_data['travel_req_status']
+                approvel_data['action_notes'] = approvel_data['request_notes']
+                approvel_data['email'] = current_ticket_owner
+                approvel_data['module'] = approvel_data['module']
+                approvel_data['travel_req_id_id'] = approvel_data['travel_req_id']
+                approvel_data['organization'] = approvel_data['org_id']
+
+                approvel_data['approval_level'] = teemp_status
+                print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@history')
+                print(approvel_data)
+                serializeraction = Travel_Request_Action_HistorySerializers(data=approvel_data)
+                if serializeraction.is_valid():
+                    serializeraction.save()
+                    # self.nextLevelApproveTravel_if_sameEmp_to_Approve(approvel_data['travel_req_id'], approvel_data['org_id'],
+                    #                                                   approvel_data['modified_by'],
+                    #                                                   approvel_data['request_notes'])
+                else:
+                    dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
+                            'data': serializeraction.errors}
+
+            visa_request_id = Visa_Request.objects.filter(travel_req_id=approvel_data['travel_req_id']).values("visa_req_id")
+            if visa_request_id:
+                flag = False
+                for data in visa_request_id:
+                    employee = Visa_Request.objects.filter(visa_req_id=data['visa_req_id']).values('supervisor',
+                                                                                                   'business_lead',
+                                                                                                   'project_manager',
+                                                                                                   'expense_approver',
+                                                                                                   'client_executive_lead',
+                                                                                                   'current_ticket_owner',
+                                                                                                   'emp_email_id',
+                                                                                                   'approval_level',
+                                                                                                   'country',
+                                                                                                   'travel_start_date',
+                                                                                                   'travel_end_date',
+                                                                                                   'applied_visa',
+                                                                                                   'is_billable',
+                                                                                                   'project_id')
+
+                    supervisor = employee[0]['supervisor']
+                    business_lead = employee[0]['business_lead']
+                    project_manager = employee[0]['project_manager']
+                    expense_approver = employee[0]['expense_approver']
+                    client_executive_lead = employee[0]['client_executive_lead']
+                    current_ticket_owner = employee[0]['current_ticket_owner']
+                    data['current_ticket_owner'] = approvel_data['current_ticket_owner']
+                    data['request_notes'] = approvel_data['request_notes']
+                    data['approve_action'] = approvel_data['approve_action']
+                    data['take_ownership'] = approvel_data['take_ownership']
+                    data['transfer_to'] = approvel_data['transfer_to']
+                    data['organization'] = approvel_data['org_id']
+                    data['modified_by'] = approvel_data['modified_by']
+                    teemp_status = employee[0]['approval_level']
+                    emp_email_id = employee[0]['emp_email_id']
+                    data['module'] = "Visa"
+                    approval_level_back_level = employee[0]['approval_level']
+                    if data['approve_action'] == "A":
+                        if employee[0]['approval_level'] == "0":
+                            if employee[0]['expense_approver']:
+                                data['current_ticket_owner'] = employee[0]['expense_approver']
+                                data['approval_level'] = "1"
+                            elif employee[0]['project_manager']:
+                                data['current_ticket_owner'] = employee[0]['project_manager']
+                                data['approval_level'] = "2"
+                            elif employee[0]['business_lead']:
+                                data['current_ticket_owner'] = employee[0]['business_lead']
+                                data['approval_level'] = "3"
+                            elif employee[0]['client_executive_lead']:
+                                data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                                data['approval_level'] = "4"
+                            else:
+                                data['current_ticket_owner'] = ""
+                        elif employee[0]['approval_level'] == "1":
+                            if employee[0]['project_manager']:
+                                data['current_ticket_owner'] = employee[0]['project_manager']
+                                data['approval_level'] = "2"
+                            elif employee[0]['business_lead']:
+                                data['current_ticket_owner'] = employee[0]['business_lead']
+                                data['approval_level'] = "3"
+                            elif employee[0]['client_executive_lead']:
+                                data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                                data['approval_level'] = "4"
+                            else:
+                                data['current_ticket_owner'] = ""
+
+                        elif employee[0]['approval_level'] == "2":
+                            if employee[0]['business_lead']:
+                                data['current_ticket_owner'] = employee[0]['business_lead']
+                                data['approval_level'] = "3"
+                            elif employee[0]['client_executive_lead']:
+                                data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                                data['approval_level'] = "4"
+                            else:
+                                data['current_ticket_owner'] = ""
+                        elif employee[0]['approval_level'] == "3":
+                            if employee[0]['client_executive_lead']:
+                                data['current_ticket_owner'] = employee[0]['client_executive_lead']
+                                data['approval_level'] = "4"
+                            else:
+                                data['current_ticket_owner'] = ""
+                        elif employee[0]['approval_level'] == "4":
+                            if employee[0]['client_executive_lead']:
+                                data['current_ticket_owner'] = ""
+                                data['approval_level'] = "5"
+                            else:
+                                data['current_ticket_owner'] = ""
+                            data['visa_status'] = "4"
+                        data['visa_status'] = "2"
+                        data['Entity_Type'] = "Visa"
+                        notificationid = "NOTIF" + str(uuid.uuid4().int)[:6]
+                        data['Entity_ID'] = data['visa_req_id']
+                        data['Action_taken_by'] = data['current_ticket_owner']
+                        data['Notification_Date'] = ""
+                        data['Message'] = data['visa_req_id'] + " New Visa request for approval"
+                        data['Notification_ID'] = notificationid
+                        data['organization'] = data['organization']
+                        serializernotificationss = NotificationSerializers(data=data)
+                        if serializernotificationss.is_valid():
+                            serializernotificationss.save()
+                            country = Country_Master.objects.filter(country_id=employee[0]['country']).values("name")
+                            if employee[0]['is_billable'] == True:
+                                is_billable = 'Yes'
+                            else:
+                                is_billable = 'No'
+                            ctxt = {
+                                'first_name': self.employee_name(emp_code=employee[0]['emp_email_id']),
+                                'approve_first_name': self.approver_name(emp_code=data['current_ticket_owner']),
+                                'project_id': employee[0]['project_id'],
+                                'billable': is_billable,
+                                'to_country': country[0]['name'],
+                                'from_date': self.date_format(date=employee[0]['travel_start_date']),
+                                'return_date': self.date_format(date=employee[0]['travel_end_date']),
+                                'visa_type': employee[0]['applied_visa'],
+                                'supervisor': self.employee_name(emp_code=employee[0]['supervisor']),
+                                'expense_approver': self.employee_name(emp_code=employee[0]['expense_approver']),
+                                'project_manager': self.employee_name(emp_code=employee[0]['project_manager']),
+                                'business_lead': self.employee_name(emp_code=employee[0]['business_lead']),
+                                'client_executive_lead': self.employee_name(emp_code=employee[0]['client_executive_lead'])
+                            }
+                            if data['current_ticket_owner'] != "":
+                                template = 'email/approve_visa_request.html'
+                                emailsubject = 'Visa request for ' + self.employee_name(
+                                    emp_code=employee[0]['emp_email_id']) + ' requires approval'
+                                self.sendmails(ctxt, template, emailsubject, emailto=data['current_ticket_owner'],
+                                               id=data['visa_req_id'])
+                            notificationid = "NOTIF" + str(uuid.uuid4().int)[:6]
+                            data['Entity_Type'] = "Visa"
+                            data['Entity_ID'] = data['visa_req_id']
+                            data['Action_taken_by'] = emp_email_id
+                            data['Notification_Date'] = ""
+                            data['Message'] = data['visa_req_id'] + " Visa request approved by " + data['modified_by']
+                            data['Notification_ID'] = notificationid
+                            data['organization'] = data['organization']
+
+                            serializernotifications = NotificationSerializers(data=data)
+                            if serializernotifications.is_valid():
+                                serializernotifications.save()
+                                if current_ticket_owner != "":
+                                    approver_name = self.employee_name(emp_code=current_ticket_owner)
+                                else:
+                                    approver_name = "Assignment Team"
+                                ctxt = {
+                                    'approver_name': approver_name,
+                                    'next_approver_name': self.employee_name(emp_code=data['current_ticket_owner']),
+                                    'preferred_first_name': self.approver_name(emp_code=data['Action_taken_by']),
+                                    'visa_request_id': data['visa_req_id'],
+                                }
+                                template = 'email/approvedvisarequest.html'
+                                emailsubject = 'Your visa request ' + data['visa_req_id'] + ' have been approved'
+                                self.sendmails(ctxt, template, emailsubject, emailto=employee[0]['emp_email_id'],
+                                               id=data['visa_req_id'])
+                    elif data['approve_action'] == "R":
+                        visa_status = Status_Master.objects.filter(name="Rejected").values("value")
+                        data['approval_level'] = approvel_data['approval_level']
+                        data['visa_status'] = visa_status[0]['value']
+                        data['current_ticket_owner'] = approvel_data['current_ticket_owner']
+                        notificationid = "NOTIF" + str(uuid.uuid4().int)[:6]
+                        data['Entity_Type'] = "Visa"
+                        data['Entity_ID'] = data['visa_req_id']
+                        data['Action_taken_by'] = emp_email_id
+                        data['Notification_Date'] = ""
+                        data['Message'] = data['visa_req_id'] + " Visa Request Rejected"
+                        data['Notification_ID'] = notificationid
+                        data['organization'] = data['organization']
+                        serializernotification = NotificationSerializers(data=data)
+                        if serializernotification.is_valid():
+                            serializernotification.save()
+                            ctxt = {
+                                'approver_name': self.employee_name(emp_code=current_ticket_owner),
+                                'preferred_first_name': self.approver_name(emp_code=data['Action_taken_by']),
+                                'visa_request_id': data['visa_req_id'],
+                                'msg': approvel_data['request_notes']
+
+                            }
+                            template = 'email/visareject.html'
+                            emailsubject = 'Your visa request ' + data['visa_req_id'] + ' has been rejected'
+                            self.sendmails(ctxt, template, emailsubject, emailto=employee[0]['emp_email_id'],
+                                           id=data['visa_req_id'])
+                    visa_request_ids = Visa_Request.objects.filter(visa_req_id=data['visa_req_id']).first()
+                    serializer = Visa_RequestSerializers(visa_request_ids, data=data)
+                    print('########################### visa request data')
+                    print(data)
+                    if serializer.is_valid():
+                        serializer.save()
+                    else:
+                        # print(serializer.errors)
+                        dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
+                                'data': serializer.errors}
+                    if data['approve_action'] == "A":
+                        visa_status = Status_Master.objects.filter(name="Approved").values("value")
+                        data['action'] = "4"
+                    else:
+                        data['action'] = visa_status[0]['value']
+                    data['action_notes'] = approvel_data['request_notes']
+                    data['email'] = current_ticket_owner
+                    data['visa_req_id'] = data['visa_req_id']
+                    data['organization'] = data['organization']
+                    data['approval_level'] = approval_level_back_level
+                    data['email_id'] = approvel_data['modified_by']
+                    print(data['email_id'])
+                    actionserializer = Visa_Request_Action_HistorySerializers(data=data)
+                    print('########################### visa request Action history')
+                    print(data)
+                    if actionserializer.is_valid():
+                        actionserializer.save()
+                        dict = {'massage code': '200', 'massage': 'successful', 'status': True}
+                        flag = True
+                    else:
+                        dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False,
+                                'data': actionserializer.errors}
+                        flag = False
+
+                if (flag == True) and (approvel_data['approve_action'] == "A"):
+                    pass
+                    # self.nextLevelApproveVisa_if_sameEmp_to_Approve(approvel_data['travel_req_id'], approvel_data['org_id'],
+                    #                                                 approvel_data['modified_by'],
+                    #                                                 approvel_data['request_notes'])
+                else:
+                    pass
+
+            else:
+                dict = {'massage code': '200', 'massage': 'successful', 'status': True}
+        return Response(dict, status=status.HTTP_200_OK)
+
+    def sendmails(self,ctxt,template,emailsubject,emailto,id):
+        #Action_taken_by=Action_taken_by
+        #"rahulr@triazinesoft.com"
+        ctxt = ctxt
+        template=template
+        travel_req_id=id
+        emailsubject=emailsubject
+        emp_code=Employee.objects.filter(emp_code=emailto).values('email','preferred_first_name','first_name','last_name')
+        print(emp_code)
+        if emp_code[0]['email']:
+            toemail=emp_code[0]['email']
+        else:
+            toemail=""
+        subject, from_email, to = emailsubject,'',toemail
+        print(toemail)
+        html_content = render_to_string(template, ctxt)
+        print(html_content)
+        # render with dynamic value
+        text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
+
+        # create the email, and attach the HTML version as well.
+
+        msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+        msg.attach_alternative(html_content, "text/html")
+        msg.send()
+
+
+    def approver_name(self,emp_code):
+        if emp_code:
+            emp_code=Employee.objects.filter(emp_code=emp_code).values('emp_code','preferred_first_name','first_name','last_name')
+            if emp_code[0]['preferred_first_name']:
+                first_name=emp_code[0]['preferred_first_name']
+            else:
+                first_name=emp_code[0]['first_name']
+
+            # if emp_code[0]['last_name']:
+            #     last_name=emp_code[0]['last_name']
+            # else:
+            #     last_name=""
+            name=first_name
+            return name
+        else:
+            name=''
+            return name
+    def employee_name(self,emp_code):
+        if emp_code:
+            emp_code=Employee.objects.filter(emp_code=emp_code).values('emp_code','preferred_first_name','first_name','last_name')
+            if emp_code[0]['first_name']:
+                first_name=emp_code[0]['first_name']
+            else:
+                first_name=''
+
+            if emp_code[0]['last_name']:
+                last_name=emp_code[0]['last_name']
+            else:
+                last_name=""
+            name=first_name+" "+last_name
+            return name
+        else:
+            name=''
+            return name
+    def date_format(self,date):
+        print(date)
+        from_zone = tz.tzutc()
+        to_zone = tz.tzlocal()
+        date=str(date)[0:19]
+        # utc = datetime.utcnow()
+        utc = datetime.strptime(date, '%Y-%m-%d %H:%M:%S')
+        # Tell the datetime object that it's in UTC time zone since
+        # datetime objects are 'naive' by default
+        utc = utc.replace(tzinfo=from_zone)
+        # Convert time zone
+        central = utc.astimezone(to_zone)
+        string=str(central)
+        demo= string[0:10].split("-")
+        new_case_date = demo[2]+"/"+demo[1]+"/"+demo[0]
+        return new_case_date

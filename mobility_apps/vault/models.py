@@ -31,11 +31,6 @@ class Vault_type_info(TimeStampedModel, GeneratedByModel, Status):
     document_url = models.CharField(max_length=250, null=True, blank=True)
 
 
-
-
-
-
-
     class Meta:
         managed = True
         verbose_name = _('Vault Type Info')
@@ -46,3 +41,23 @@ class Vault_type_info(TimeStampedModel, GeneratedByModel, Status):
 
     def __unicode__(self):
         return self.emp_code
+
+
+class Compliance(TimeStampedModel, GeneratedByModel, Status):
+    compl_ques = models.CharField(max_length=200, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('Compliance')
+        verbose_name_plural = _('Compliance')
+
+
+class Employee_compliance(TimeStampedModel, GeneratedByModel, Status):
+    emp_code = models.ForeignKey(Employee,to_field='emp_code', default="emp001", on_delete=models.CASCADE)
+    compl_ques = models.CharField(max_length=200, null=True, blank=True)
+    compl_ans = models.BooleanField(default=False)
+
+    class Meta:
+        managed = True
+        verbose_name = _('Employee Compliance')
+        verbose_name_plural = _('Employee Compliance')

@@ -1,0 +1,2 @@
+INFO|19/Apr/2021 13:43:41|autoreload|15090|139785582659328|Watching for file changes with StatReloader
+INFO|19/Apr/2021 13:47:21|basehttp|15508|140307189597952|"POST /api/custom/login/ HTTP/1.1" 200 452

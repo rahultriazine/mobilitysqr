@@ -926,7 +926,7 @@ class Taxgrid(TimeStampedModel, GeneratedByModel, Status):
     tax_label= models.CharField(max_length=100,null=True, blank=True)
     tax_country= models.CharField(max_length=100,null=True, blank=True)
     group_by= models.CharField(max_length=100,null=True, blank=True)
-    organization  = models.CharField(max_length=100, null=True, blank=True)
+    organization = models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)

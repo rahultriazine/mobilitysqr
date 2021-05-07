@@ -87,7 +87,6 @@ urlpatterns = [
         path('get_taxgridmaster/', get_taxgridmaster.as_view(), name='get_taxgridmaster'),
         path('get_taxgridcountry/', get_taxgridcountry.as_view(), name='get_taxgridcountry'),
         path('add_taxgrid/', add_taxgrid.as_view(), name='add_taxgrid'),
-		
 		path('get_post_gender/', get_post_gender.as_view(), name='get_post_gender'),
         path('bulk_upload_Gender/', bulk_upload_Gender.as_view(), name='bulk_upload_Gender'),
 
@@ -159,29 +158,23 @@ urlpatterns = [
         path('json_upload/currency_conversion/', json_upload_currency_conversion.as_view(), name='json_upload_currency_conversion'),
         path('json_upload/project/', json_upload_project.as_view(), name='json_upload_project'),
         path('json_upload/department/', json_upload_department.as_view(), name='json_upload_department'),
-        #path('bulkupload/organization/', bulk_upload_organization.as_view(), name='get_post_organization'),
         path('json_upload/organization_location/', json_upload_organization_location.as_view(), name='json_upload_organization_location'),
         path('json_upload/role/', json_upload_role.as_view(), name='json_upload_role'),
-        #path('bulkupload/visa/', bulk_upload_visa.as_view(), name='get_post_visa'),
-        #path('bulkupload/visa_document_checklist/', bulk_upload_visa_document_checklist.as_view(), name='get_post_visa_document_checklist'),
-        #path('bulkupload/visa_purpose/', bulk_upload_visa_purpose.as_view(), name='get_post_visa_purpose'),
 
-        #path('bulk_upload_perdiem/', bulk_upload_perdiem.as_view(), name='bulk_upload_perdiem'),
-        #path('bulk_upload_taxgrid/', bulk_upload_taxgrid.as_view(), name='bulk_upload_taxgrid'),
 
-        # path('bulk_upload_email/', bulk_upload_email.as_view(), name='bulk_upload_email'),
-        # path('bulk_upload_phone/', bulk_upload_phone.as_view(), name='bulk_upload_phone'),
-        # path('bulk_upload_relation/', bulk_upload_relation.as_view(), name='bulk_upload_relation'),
-        # path('bulk_upload_termination/', bulk_upload_termination.as_view(), name='bulk_upload_termination'),
-        # path('bulk_upload_address/', bulk_upload_address.as_view(), name='bulk_upload_address'),
-        # path('bulk_upload_language/', bulk_upload_language.as_view(), name='bulk_upload_language'),
-        # path('bulk_upload_national_id/', bulk_upload_national_id.as_view(), name='bulk_upload_national_id'),
-        # path('bulk_upload_country_master/', bulk_upload_country_master.as_view(), name='bulk_upload_country_master'),
-        # path('bulk_upload_designation/', bulk_upload_designation.as_view(), name='bulk_upload_designation'),
+        path('update_master_vendors_type/<int:pk>/', update_master_vendors_type.as_view(), name='update_post_master_vendors_type'),
+        path('get_post_master_vendors_type/', get_post_master_vendors_type.as_view(), name='get_post_master_vendors_type'),
+        path('update_purpose_of_travel/<int:pk>/', update_purpose_of_travel.as_view(), name='update_purpose_of_travel'),
+        path('update_master_location/<int:pk>/', update_master_location.as_view(), name='update_master_location'),
+        path('update_master_salutation/<int:pk>/', update_master_salutation.as_view(), name='update_master_salutation'),
+        path('update_master_suffix/<int:pk>/', update_master_suffix.as_view(), name='update_master_suffix'),
+        path('update_master_marital_status/<int:pk>/', update_master_marital_status.as_view(), name='update_master_marital_status'),
+        path('update_master_address/<int:pk>/', update_master_address.as_view(), name='update_master_address'),
+        path('update_master_email/<int:pk>/', update_master_email.as_view(), name='update_master_email'),
+        path('update_master_phone_type/<int:pk>/', update_master_phone_type.as_view(), name='update_master_phone_type'),
+        path('update_master_relation_type/<int:pk>/', update_master_relation_type.as_view(), name='update_master_relation_type'),
+        path('update_master_national_id/<int:pk>/', update_master_national_id.as_view(), name='update_master_national_id'),
 
-        #path('post_currency_conversion/', post_currency_conversion.as_view(), name='post_currency_conversion'),
-
-        # path('bulk_upload_country_policy/', bulk_upload_country_policy.as_view(), name='bulk_upload_country_policy'),
 
 
 

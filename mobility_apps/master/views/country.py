@@ -474,7 +474,7 @@ class bulk_upload_taxgrid(ListCreateAPIView):
 
 
 class get_post_location(ListCreateAPIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = Organization_branchesSerializers
 
     # def get_queryset(self,country,org_id):
@@ -493,15 +493,36 @@ class get_post_location(ListCreateAPIView):
     #     else:
     #         dict = {'message':"Organization not found",'status_code':200, 'status': True,}
     #     return Response(dict, status=status.HTTP_200_OK)
-	
+
     def get(self, request):
         country = Location_Master.objects.filter(country=request.GET['country']).order_by('location_name')
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = Location_MasterSerializers(country,many=True)
         dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)	
+
+##############################################
+# update purpose of travel
+##############################################
+
+class update_master_location(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Location_MasterSerializers
+
+    def get_object(self, pk):
+        return Location_Master.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = Location_MasterSerializers(instance,data=request.data,partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+
+
 class get_taxgridcountry(ListCreateAPIView):
     #permission_classes = (IsAuthenticated,)
     serializer_class = Location_MasterSerializers
@@ -536,7 +557,8 @@ class get_taxgridmaster(ListCreateAPIView):
         serializer = Taxgrid_MasterSerializers(taxgrid,many=True)
         dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
-		
+
+
 class add_taxgrid(ListCreateAPIView):
     serializer_class = TaxgridSerializers
     def get_queryset(self):
@@ -556,12 +578,11 @@ class add_taxgrid(ListCreateAPIView):
         alldata=[]
         for data in request.data:
 
-            taxgrid=Taxgrid.objects.filter(tax_label=data['tax_label']).first()
+            taxgrid=Taxgrid.objects.filter(tax_label=data['tax_label'],organization=data['organization']).first()
             print(taxgrid)
             if taxgrid:
                 print(data)
                 serializer = TaxgridSerializers(taxgrid,data=data)
-
                 if serializer.is_valid():
                     serializer.save()
                     print(serializer.data)
@@ -578,7 +599,7 @@ class add_taxgrid(ListCreateAPIView):
                 else:
                     dict = {'status': "False", 'Message':MSG_FAILED}
         return Response(dict, status=status.HTTP_200_OK)
-		
+
 
 class bulk_upload_national_id(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
@@ -631,6 +652,38 @@ class get_national_id(ListCreateAPIView):
         else:
            dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': []}
         return Response(dict, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        serializer = National_IdSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+##############################################
+# update master National id
+##############################################
+
+class update_master_national_id(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = National_IdSerializers
+
+    def get_object(self, pk):
+        return National_Id.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = National_IdSerializers(instance, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
 
 
 

@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import settings
 from api.models import User
-from mobility_apps.master.models import Project
+from mobility_apps.master.models import Project, Vendor
 from mobility_apps.employee.models import Employee,Message_Chat, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events,Calender_Activity
 from mobility_apps.employee.serializer import EmployeeSerializers,Message_ChatSerializers, Employee_Passport_DetailSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers,Employee_Org_InfoSerializers,Calender_EventsSerializers,Calender_ActivitySerializers
 from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
@@ -32,10 +32,11 @@ from collections import Counter
 import pprint
 from django.contrib.auth.hashers import make_password
 from django.db import connection
-from  collections import namedtuple
+from collections import namedtuple
 from rest_framework.parsers import FileUploadParser,MultiPartParser,FormParser
 from django.core.files.storage import FileSystemStorage
 from datetime import date
+from datetime import datetime, timedelta
 from sqlalchemy import create_engine,Table, MetaData, Column, Integer
 import pyodbc
 import urllib
@@ -54,6 +55,7 @@ from django.contrib.auth import get_user_model
 from rest_framework.response import Response
 from rest_framework import exceptions
 from mobility_apps.employee.tests import generate_access_token, generate_refresh_token
+from django.db.models import F
 import datetime
 import jwt
 from django.conf import settings
@@ -283,16 +285,19 @@ class getemoloyeedata(APIView):
     def employee_name(self,emp_code):
         if emp_code:
             emp_code=Employee.objects.filter(emp_code=emp_code).values('emp_code','preferred_first_name','first_name','last_name')
-            if emp_code[0]['first_name']:
-                first_name=emp_code[0]['first_name']
-            else:
-                first_name=''
+            if emp_code:
+                if emp_code[0]['first_name']:
+                    first_name=emp_code[0]['first_name']
+                else:
+                    first_name=''
 
-            if emp_code[0]['last_name']:
-                last_name=emp_code[0]['last_name']
+                if emp_code[0]['last_name']:
+                    last_name=emp_code[0]['last_name']
+                else:
+                    last_name=""
+                name=first_name+" "+last_name
             else:
-                last_name=""
-            name=first_name+" "+last_name
+                name = ""
             return name
 
 
@@ -491,7 +496,7 @@ class get_post_employee(ListCreateAPIView):
                 if request.data.get('old_username'):
                    cursor = connection.cursor()
                    sql="UPDATE api_user SET username='"+request.data.get('user_name')+"' WHERE username='"+request.data.get('old_username')+"'"
-                   cursor=cursor.execute(sql)
+                   cursor.execute(sql)
                    if request.data['preferred_first_name']:
                         name=request.data['preferred_first_name']
                    else:
@@ -510,7 +515,7 @@ class get_post_employee(ListCreateAPIView):
                 if request.data.get('old_email'):
                    cursor = connection.cursor()
                    sql="UPDATE api_user SET email='"+request.data.get('email')+"' WHERE email='"+request.data.get('old_email')+"'"
-                   cursor=cursor.execute(sql)
+                   cursor.execute(sql)
                 if serializer.is_valid():
                     serializer.save()
                     dict = {'massage code': '201', 'massage':  MSG_DETAILSUPDATE, 'status': True, 'data': serializer.data}
@@ -1186,7 +1191,7 @@ class emoloyee_search_info(APIView):
         employee = request.GET['employee']
         limits= "15"
         #emp = Employee.objects.raw("select * from employee_employee where email LIKE '%"+employee+"%' or emp_code LIKE '%"+employee+"%'  limit '"+limits+"'")
-        emp = Employee.objects.filter(Q(email__contains=employee)|Q(emp_code__contains=employee))[:10]
+        emp = Employee.objects.filter(Q(email__contains=employee)|Q(emp_code__icontains=employee))[:10]
         emp_serializer =EmployeeSerializers(emp,many=True)
         if emp_serializer:
             dict = {'massage': 'data found', 'status': True, 'data':emp_serializer.data}
@@ -1212,9 +1217,9 @@ class forget_password(APIView):
         if userinfo:
             cursor = connection.cursor()
             sql="UPDATE api_user SET password='"+request.data['password']+"' WHERE email='"+request.data['email']+"'"
-            cursor=cursor.execute(sql)
-            cursorss=sql="UPDATE employee_employee SET istemporary='"+request.data['istemporary']+"' WHERE email='"+request.data['email']+"'"
-            cursor=cursor.execute(cursorss)
+            cursor1=cursor.execute(sql)
+            sql1="UPDATE employee_employee SET istemporary='"+request.data['istemporary']+"' WHERE email='"+request.data['email']+"'"
+            cursor2=cursor.execute(sql1)
             user_serializer = EmployeeSerializers(userinfo,data=request.data)
 
             if user_serializer.is_valid():
@@ -1273,15 +1278,16 @@ class reset_password(APIView):
                 #empcode=request.data['empcode']
                 passwords = make_password(request.data['password'])
                 request.data['istemporary'] = "0"
-                userinfo=Userinfo.objects.filter(email=request.data['email']).first()
+                # userinfo=Userinfo.objects.filter(email=request.data['email']).first()
 
                 cursor = connection.cursor()
                 sql="UPDATE api_user SET password='"+passwords+"' WHERE email='"+request.data['email']+"'"
-                cursor=cursor.execute(sql)
-                cursorss=sql="UPDATE employee_employee SET istemporary='"+request.data['istemporary']+"' WHERE email='"+request.data['email']+"'"
-                cursor=cursor.execute(cursorss)
-                user_serializer = EmployeeSerializers(userinfo,data=request.data)
-                if cursor:
+                cursor.execute(sql)
+                cursorss="UPDATE employee_employee SET istemporary='"+request.data['istemporary']+"' WHERE email='"+request.data['email']+"'"
+                cursor.execute(cursorss)
+                update_result = cursor.rowcount
+                # user_serializer = EmployeeSerializers(userinfo,data=request.data)
+                if update_result:
                     dict = {'massage': 'success', 'status': True}
 
                 else:
@@ -1294,15 +1300,16 @@ class reset_password(APIView):
             #empcode=request.data['empcode']
             passwords = make_password(request.data['password'])
             request.data['istemporary'] = "0"
-            userinfo=Userinfo.objects.filter(email=request.data['email']).first()
+            # userinfo=Userinfo.objects.filter(email=request.data['email']).first()
 
             cursor = connection.cursor()
             sql="UPDATE api_user SET password='"+passwords+"' WHERE email='"+request.data['email']+"'"
-            cursor=cursor.execute(sql)
-            cursorss=sql="UPDATE employee_employee SET istemporary='"+request.data['istemporary']+"' WHERE email='"+request.data['email']+"'"
-            cursor=cursor.execute(cursorss)
-            user_serializer = EmployeeSerializers(userinfo,data=request.data)
-            if cursor:
+            cursor.execute(sql)
+            cursorss = "UPDATE employee_employee SET istemporary='"+request.data['istemporary']+"' WHERE email='"+request.data['email']+"'"
+            cursor.execute(cursorss)
+            updated_result = cursor.rowcount
+            # user_serializer = EmployeeSerializers(userinfo,data=request.data)
+            if updated_result:
                 dict = {'massage': 'success', 'status': True}
 
             else:
@@ -1384,12 +1391,12 @@ class FileUploadView(ListCreateAPIView):
             #cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='mobilitysqrdev.database.windows.net';DATABASE='mobilitysqrdevnew';UID='mobilitysqr_admin';PWD='mob!@sqr1123573121')
             #cursor = cnxn.cursor()
             df = df.append(sheet, ignore_index=True)
-            params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};"
-                                 "SERVER=mobilitysqrdev.database.windows.net;"
-                                     "DATABASE=mobilitysqrdevnew;"
-                                 "UID=mobilitysqr_admin;"
-                                 "PWD=mob!@sqr1123573121")
-            sqlEngine= create_engine("mssql+pyodbc:///?odbc_connect={}".format(params))
+            # params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};"
+            #                      "SERVER=mobilitysqrdev.database.windows.net;"
+            #                          "DATABASE=mobilitysqrdevnew;"
+            #                      "UID=mobilitysqr_admin;"
+            #                      "PWD=mob!@sqr1123573121")
+            sqlEngine= create_engine('postgresql+psycopg2://postgres:admin@123@172.104.183.68/mobilitysqr_staging')
             dbConnection= sqlEngine.connect()
 
             if name == 'personal_info':
@@ -1457,7 +1464,7 @@ class GETData(ListCreateAPIView):
     def get(self, request):
         cursor = connection.cursor()
         sql = "select * From tmp_personal_info3"
-        cursor=cursor.execute(sql)
+        cursor.execute(sql)
         myresult=cursor.fetchone()
 
         data={"status":"true","s":myresult}
@@ -1524,7 +1531,7 @@ class import_employee(ListCreateAPIView):
                 return { description[0]: row[col] for col, description in enumerate(self._cursor.description) }
 
         sql ="SELECT * FROM tmp_personal_info3"
-        cursor=cursor.execute(sql)
+        cursor.execute(sql)
 
         #sql ="TRUNCATE TABLE letter_letters"tmp_personal_info3
         errordata=[]
@@ -1876,7 +1883,9 @@ class Otp_Generate(ListCreateAPIView):
         otp=str(uuid.uuid4().int)[:6]
         cursor = connection.cursor()
         sql ="UPDATE api_user SET otp='"+otp+"' WHERE username='"+username+"'"
-        if cursor.execute(sql):
+        cursor.execute(sql)
+        updated_record = cursor.rowcount
+        if updated_record:
             email = Employee.objects.filter(user_name=username).values("email")
             if email:
                 ctxt = {
@@ -1905,17 +1914,22 @@ class Otp_Generate(ListCreateAPIView):
     def employee_name(self,email):
         if email:
             emp_code=Employee.objects.filter(email=email).values('emp_code','preferred_first_name','first_name','last_name')
-            if emp_code[0]['first_name']:
-                first_name=emp_code[0]['first_name']
-            else:
-                first_name=''
+            if emp_code:
+                if emp_code[0]['first_name']:
+                    first_name=emp_code[0]['first_name']
+                else:
+                    first_name=''
 
-            if emp_code[0]['last_name']:
-                last_name=emp_code[0]['last_name']
+                if emp_code[0]['last_name']:
+                    last_name=emp_code[0]['last_name']
+                else:
+                    last_name=""
+                name=first_name+" "+last_name
+                return name
             else:
-                last_name=""
-            name=first_name+" "+last_name
-            return name
+                name = " "
+                return name
+
         else:
             name=''
             return name
@@ -2094,16 +2108,19 @@ class getEmployeePersonalInfo(APIView):
     def employee_name(self,emp_code):
         if emp_code:
             emp_code=Employee.objects.filter(emp_code=emp_code).values('emp_code','preferred_first_name','first_name','last_name')
-            if emp_code[0]['first_name']:
-                first_name=emp_code[0]['first_name']
-            else:
-                first_name=''
+            if emp_code:
+                if emp_code[0]['first_name']:
+                    first_name=emp_code[0]['first_name']
+                else:
+                    first_name=''
 
-            if emp_code[0]['last_name']:
-                last_name=emp_code[0]['last_name']
+                if emp_code[0]['last_name']:
+                    last_name=emp_code[0]['last_name']
+                else:
+                    last_name=""
+                name=first_name+" "+last_name
             else:
-                last_name=""
-            name=first_name+" "+last_name
+                name = ""
             return name
 
 
@@ -2297,7 +2314,7 @@ class bulk_json_upload_employee(APIView):
                     if empdata['old_username']:
                         cursor = connection.cursor()
                         sql = "UPDATE api_user SET username='" + empdata['user_name'] + "' WHERE username='" + empdata['old_username'] + "'"
-                        cursor = cursor.execute(sql)
+                        cursor.execute(sql)
                         if empdata['preferred_first_name']:
                             name = empdata['preferred_first_name']
                         else:
@@ -2318,7 +2335,7 @@ class bulk_json_upload_employee(APIView):
                     if empdata['old_email']:
                         cursor = connection.cursor()
                         sql = "UPDATE api_user SET email='" + empdata['email'] + "' WHERE email='" + empdata['old_email'] + "'"
-                        cursor = cursor.execute(sql)
+                        cursor.execute(sql)
                     if serializer.is_valid():
                         serializer.save()
                         dict = {'massage code': '201', 'massage': 'Updated', 'status': True,
@@ -2748,21 +2765,35 @@ class employee_chat(APIView):
         chat_message = request.data.get('chat_message', None)
         ticket_id = request.data.get('ticket_id', None)
         thread_data = sender_emp_code + receiver_emp_code
+        thread_data1 = receiver_emp_code + sender_emp_code
 
 
         if (sender_emp_code is None) or (receiver_emp_code is None) or (chat_message is None) or (ticket_id is None) or (ticket_id == '') or (sender_emp_code == '') or (receiver_emp_code == '') or (chat_message == ''):
             dict = {'message code': '201', 'status': False,
                     'message': 'Message sender emp id, receiver emp id, ticket id and message required'}
         else:
-            message_data = Message_Chat()
-            message_data.thread = thread_data
-            message_data.sender_emp_code = sender_emp_code
-            message_data.receiver_emp_code = receiver_emp_code
-            message_data.chat_message = chat_message
-            message_data.ticket_id = ticket_id
-            message_data.save()
-            result_data = Message_Chat.objects.get(pk=message_data.id)
-            serializer = Message_ChatSerializers(result_data)
+            checkThread = Message_Chat.objects.filter(Q(thread=thread_data) | Q(thread=thread_data1),ticket_id=ticket_id).values('thread').distinct()
+            if checkThread:
+                message_data = Message_Chat()
+                message_data.thread = checkThread[0]['thread']
+                message_data.sender_emp_code = sender_emp_code
+                message_data.receiver_emp_code = receiver_emp_code
+                message_data.chat_message = chat_message
+                message_data.ticket_id = ticket_id
+                message_data.save()
+                result_data = Message_Chat.objects.get(pk=message_data.id)
+                serializer = Message_ChatSerializers(result_data)
+            else:
+                message_data = Message_Chat()
+                message_data.thread = thread_data
+                message_data.sender_emp_code = sender_emp_code
+                message_data.receiver_emp_code = receiver_emp_code
+                message_data.chat_message = chat_message
+                message_data.ticket_id = ticket_id
+                message_data.save()
+                result_data = Message_Chat.objects.get(pk=message_data.id)
+                serializer = Message_ChatSerializers(result_data)
+
             if serializer.data:
                 dict = {'message code': '201', 'status': True, 'data': serializer.data}
             else:
@@ -2785,14 +2816,18 @@ class employee_chat(APIView):
                     'message': 'Message sender emp id, receiver emp id, ticket id and message required'}
 
         else:
-            message_query = Message_Chat.objects.filter(Q(thread=thread_data) | Q(thread=thread_data1), ticket_id=ticket_id).order_by('created_date')
-            serializer = Message_ChatSerializers(message_query, many=True)
-            if serializer.data:
-                dict = {'massage': 'data found', 'status': True, 'data': serializer.data}
+            checkThread = Message_Chat.objects.filter(Q(thread=thread_data) | Q(thread=thread_data1),
+                                                      ticket_id=ticket_id).values('thread').distinct()
+            if checkThread:
+                thr_id = checkThread[0]['thread']
+                message_query = Message_Chat.objects.filter(thread=thr_id, ticket_id=ticket_id).order_by('created_date')
+                serializer = Message_ChatSerializers(message_query, many=True)
+                if serializer.data:
+                    dict = {'massage': 'data found', 'status': True, 'data': serializer.data}
+                else:
+                    dict = {'massage': 'data not found', 'status': False, 'data': []}
             else:
-                dict = {'massage': 'data not found', 'status': False, 'data': []}
+                dict = {'massage': 'Thread not found', 'status': False, 'data':[]}
             return Response(dict, status=status.HTTP_200_OK)
         return Response(dict, status=status.HTTP_200_OK)
-
-
 

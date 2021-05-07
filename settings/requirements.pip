@@ -44,7 +44,7 @@ djangorestframework-oauth==1.1.0
 djangorestframework-simplejwt==4.3.0
 ecdsa==0.13.2
 Fabric3==1.14.post1
-get==2019.4.13
+#get==2019.4.13
 gunicorn==19.1.1
 importlib-metadata==0.21
 ipdb==0.12.2
@@ -60,7 +60,7 @@ pexpect==4.7.0
 pickleshare==0.7.5
 Pillow==5.4.1
 pip==19.2.3
-post==2019.4.13
+#post==2019.4.13
 prompt-toolkit==2.0.9
 ptyprocess==0.6.0
 public==2019.4.13
@@ -75,7 +75,7 @@ python-dateutil==2.8.0
 pytz==2019.2
 query-string==2019.4.13
 redis==3.3.8
-request==2019.4.13
+#request==2019.4.13
 setuptools==41.2.0
 six==1.12.0
 traitlets==4.3.2

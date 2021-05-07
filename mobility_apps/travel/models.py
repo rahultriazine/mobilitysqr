@@ -332,8 +332,8 @@ class Visa_Request_Action_History(TimeStampedModel, GeneratedByModel, Status):
     email=models.ForeignKey(Employee,to_field="emp_code", null=True, blank=True, on_delete=models.CASCADE)
     visa_req_id = models.ForeignKey(Visa_Request,to_field="visa_req_id",null=True, blank=True,  on_delete=models.CASCADE)
     action = models.CharField(max_length=100,null=True, blank=True)
-    action_notes  = models.CharField(max_length=200,null=True, blank=True)
-    module  = models.CharField(max_length=100,null=True, blank=True)
+    action_notes = models.CharField(max_length=200,null=True, blank=True)
+    module = models.CharField(max_length=100,null=True, blank=True)
     approval_level = models.CharField(max_length=100, null=True, blank=True)
     
     organization= models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)

@@ -221,7 +221,58 @@ class get_vendors_type(ListCreateAPIView):
         #return self.get_paginated_response(serializer.data)
 
 
+##################################################
+# post  master vendor type
+##################################################
 
+
+class get_post_master_vendors_type(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Vendor_MasterSerializers
+
+    def post(self,request):
+        serializer = Vendor_MasterSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+    def get(self, request):
+        org_id = request.GET.get('org_id', None)
+        if org_id is None:
+            data = Vendor_Master.objects.all()
+            serializer = Vendor_MasterSerializers(data, many=True)
+            dict = {"status": True, 'status_code': 200, "data": serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            data = Vendor_Master.objects.filter(organization=org_id)
+            serializer = Vendor_MasterSerializers(data, many=True)
+            dict = {"status": True, 'status_code': 200, "data": serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+
+
+##################################################
+# update master vendor type
+##################################################
+
+class update_master_vendors_type(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Vendor_MasterSerializers
+
+    def get_object(self, pk):
+        return Vendor_Master.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = Vendor_MasterSerializers(instance,data=request.data,partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
 
 
 

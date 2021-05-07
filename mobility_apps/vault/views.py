@@ -5,8 +5,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.core.files.storage import FileSystemStorage
-from mobility_apps.vault.models import Vault_type,Vault_type_info
-from mobility_apps.vault.serializer import Vault_type_infoSerializers,Vault_typeSerializers
+from mobility_apps.vault.models import Vault_type,Vault_type_info, Compliance, Employee_compliance
+from mobility_apps.vault.serializer import Vault_type_infoSerializers,Vault_typeSerializers,ComplianceSerializers,Employee_complianceSerializers
 from rest_framework.permissions import (AllowAny,IsAuthenticated)
 from django.conf import settings
 import os
@@ -187,3 +187,79 @@ def vaultUpoadDoc(request, foldername):
     return uploaded_file_url
 
 
+##########################################
+#  get post Compliance
+##########################################
+
+class getPostCompliance(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = ComplianceSerializers
+
+    def post(self,request):
+        try:
+            compl_ques = request.data.get('compl_ques', None)
+            if compl_ques is None:
+                dict = {'message':'Please enter compliance question','status':False}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                serializer = ComplianceSerializers(data=request.data)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+                    return Response(dict, status=status.HTTP_200_OK)
+                else:
+                    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'status': False, 'error': str(e)}
+            return Response(dict, status=status.HTTP_200_OK)
+
+    def get(self,request):
+        compserilizer = Compliance.objects.all()
+        serializer = ComplianceSerializers(compserilizer, many=True)
+        dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+
+
+##########################################
+#  get post Compliance by employee
+##########################################
+
+class getPostComplianceAnswer(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_complianceSerializers
+
+    def post(self,request):
+        try:
+            alldata = []
+            for data in request.data:
+                serializer = Employee_complianceSerializers(data=data)
+                if serializer.is_valid():
+                    serializer.save()
+                    dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+                    alldata.append(dict)
+                else:
+                    dict = {'message': 'Failed', 'status': False, 'data': serializer.errors}
+                    alldata.append(dict)
+            return Response(alldata, status=status.HTTP_200_OK)
+        except Exception as e:
+            dict = {'status': False, 'error': str(e)}
+            return Response(dict, status=status.HTTP_200_OK)
+
+
+    def get(self,request):
+        try:
+            emp_code = request.GET.get('emp_code', None)
+            if emp_code is None:
+                dict = {'message': 'Please enter employee code ', 'status': False}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                compserilizer = Employee_compliance.objects.filter(emp_code=emp_code)
+                serializer = Employee_complianceSerializers(compserilizer, many=True)
+                dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+
+        except Exception as e:
+            dict = {'status': False, 'error': str(e)}
+            return Response(dict, status=status.HTTP_200_OK)

@@ -37,7 +37,7 @@ SECRET_KEY = '=n1)7@ws=@^f&_xbq!q(v15aj29gd4ex+dv49f)ou80&0q6x%q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','192.168.1.230']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 
 # Application definition
@@ -65,6 +65,7 @@ INSTALLED_APPS = [
      # 'rest-auth',
     'api',
     # 'oauth2_provider',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -139,34 +140,31 @@ REST_FRAMEWORK = {
 # }
 
 # staging_database
-DATABASES = {
-    'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'mob_test',
-        # 'NAME': 'mobilitysqr_staging',
-        'HOST': 'mobilitysqrdev.database.windows.net',
-	    'PORT': '1433',
-        'USER': 'mobilitysqr_admin',
-        'PASSWORD': 'mob!@sqr1123573121',
-        'OPTIONS': {
-             'host_is_server': True,
-             'driver':'ODBC Driver 17 for SQL Server',
-        }
-    }
-}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'sql_server.pyodbc',
-#         'NAME': 'mobilitysqrpreprod',
+#         # 'NAME': 'mob_test',
+#         'NAME': 'mobilitysqr_staging',
 #         'HOST': 'mobilitysqrdev.database.windows.net',
-# 	'PORT': '1433',
+# 	    'PORT': '1433',
 #         'USER': 'mobilitysqr_admin',
 #         'PASSWORD': 'mob!@sqr1123573121',
 #         'OPTIONS': {
-# 		 'host_is_server': True,'driver':'ODBC Driver 17 for SQL Server',
+#              'host_is_server': True,
+#              'driver':'ODBC Driver 17 for SQL Server',
 #         }
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mob_test',
+        'USER': 'postgres',
+        'PASSWORD': 'admin@123',
+        'HOST': '172.104.183.68',
+        'PORT': '5432',
+    }
+}
 
 CORS_ORIGIN_ALLOW_ALL = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -218,6 +216,8 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
@@ -243,3 +243,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 102400
 
 from settings.settings_log import *
+
+
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
+CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'

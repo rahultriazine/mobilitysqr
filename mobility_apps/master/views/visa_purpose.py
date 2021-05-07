@@ -130,10 +130,66 @@ class get_post_visa_purpose_list(ListCreateAPIView):
 
     # Get all visa_purpose
     def get(self, request):
-           visa_purpose= Visa_Purpose.objects.all()
-           serializer = Visa_PurposeSerializers(visa_purpose,many=True)
-           if serializer.data:
-              dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
-           else:
-               dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
-           return Response(dict, status=status.HTTP_200_OK)
+        org_id = request.GET.get('organization', None)
+        country_id = request.GET.get('country_id', None)
+        if org_id is not None and country_id is not None:
+               visa_purpose = Visa_Purpose.objects.filter(organization=org_id, country_id=country_id)
+               serializer = Visa_PurposeSerializers(visa_purpose,many=True)
+               if serializer.data:
+                  dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
+               else:
+                   dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
+        elif country_id is None and org_id is not None:
+            visa_purpose = Visa_Purpose.objects.filter(organization=org_id)
+            serializer = Visa_PurposeSerializers(visa_purpose, many=True)
+            if serializer.data:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+            else:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+        elif country_id is not None and org_id is None:
+            visa_purpose = Visa_Purpose.objects.filter(country_id=country_id)
+            serializer = Visa_PurposeSerializers(visa_purpose, many=True)
+            if serializer.data:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+            else:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+        else:
+            visa_purpose = Visa_Purpose.objects.all()
+            serializer = Visa_PurposeSerializers(visa_purpose, many=True)
+            if serializer.data:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+            else:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+        return Response(dict, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        serializer = Visa_PurposeSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)
+
+
+
+##############################################
+# update purpose of travel
+##############################################
+
+class update_purpose_of_travel(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Visa_PurposeSerializers
+
+    def get_object(self, pk):
+        return Visa_Purpose.objects.get(pk=pk)
+
+    def patch(self, request, pk):
+        instance = self.get_object(pk)
+        serializer = Visa_PurposeSerializers(instance,data=request.data,partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(serializer.errors, status=status.HTTP_200_OK)

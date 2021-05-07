@@ -1,0 +1,49 @@
+INFO|29/Apr/2021 14:24:40|basehttp|23582|139971283363584|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|29/Apr/2021 14:25:04|basehttp|23582|139971283363584|"GET /post_master_vendors_type HTTP/1.1" 301 0
+WARNING|29/Apr/2021 14:25:08|log|23582|139971283363584|Method Not Allowed: /post_master_vendors_type/
+WARNING|29/Apr/2021 14:25:08|basehttp|23582|139971283363584|"GET /post_master_vendors_type/ HTTP/1.1" 405 40
+ERROR|29/Apr/2021 14:26:20|log|23582|139971283363584|Internal Server Error: /post_master_vendors_type
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/post_master_vendors_type/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|29/Apr/2021 14:26:20|basehttp|23582|139971283363584|"POST /post_master_vendors_type HTTP/1.1" 500 72384
+WARNING|29/Apr/2021 14:27:56|log|24080|140124266333952|Bad Request: /post_master_vendors_type/
+WARNING|29/Apr/2021 14:27:56|basehttp|24080|140124266333952|"POST /post_master_vendors_type/ HTTP/1.1" 400 67
+INFO|29/Apr/2021 14:45:53|basehttp|24336|139775232194304|"PATCH /update_master_vendors_type/?id=1 HTTP/1.1" 200 493
+WARNING|29/Apr/2021 14:54:04|log|25111|140158479910656|Method Not Allowed: /update_master_vendors_type/
+WARNING|29/Apr/2021 14:54:04|basehttp|25111|140158479910656|"UPDATE /update_master_vendors_type/?id=1 HTTP/1.1" 405 43
+WARNING|29/Apr/2021 15:48:00|log|28736|140606888453888|Not Found: /update_master_vendors_type/
+WARNING|29/Apr/2021 15:48:00|basehttp|28736|140606888453888|"GET /update_master_vendors_type/?id=1 HTTP/1.1" 404 56434
+WARNING|29/Apr/2021 15:48:19|log|28736|140606888453888|Unauthorized: /get_post_master_vendors_type/
+WARNING|29/Apr/2021 15:48:19|basehttp|28736|140606888453888|"GET /get_post_master_vendors_type/ HTTP/1.1" 401 183
+INFO|29/Apr/2021 15:48:27|basehttp|28736|140606888453888|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|29/Apr/2021 15:48:43|basehttp|28736|140606888453888|"GET /get_post_master_vendors_type/ HTTP/1.1" 200 1326
+INFO|29/Apr/2021 15:51:18|basehttp|28931|139948923094784|"GET /get_post_master_vendors_type/ HTTP/1.1" 200 8297
+INFO|29/Apr/2021 16:06:28|basehttp|28931|139948923094784|"GET /get_post_master_vendors_type HTTP/1.1" 301 0
+INFO|29/Apr/2021 16:06:33|basehttp|28931|139948923094784|"GET /get_post_master_vendors_type/ HTTP/1.1" 200 8297
+WARNING|29/Apr/2021 16:07:41|log|28931|139948923094784|Bad Request: /update_master_vendors_type/1/
+WARNING|29/Apr/2021 16:07:41|basehttp|28931|139948923094784|"PATCH /update_master_vendors_type/1/ HTTP/1.1" 400 109
+INFO|29/Apr/2021 16:07:55|basehttp|28931|139948923094784|"PATCH /update_master_vendors_type/1/ HTTP/1.1" 200 494
+INFO|29/Apr/2021 16:16:24|basehttp|30068|139976652760832|"PATCH /update_master_vendors_type/?id=1 HTTP/1.1" 200 494
+WARNING|29/Apr/2021 16:52:01|log|31401|140166551062272|Unauthorized: /update_master_vendors_type/
+WARNING|29/Apr/2021 16:52:01|basehttp|31401|140166551062272|"PATCH /update_master_vendors_type/?id=1 HTTP/1.1" 401 183
+WARNING|29/Apr/2021 16:52:03|log|31401|140166551062272|Unauthorized: /update_master_vendors_type/
+WARNING|29/Apr/2021 16:52:03|basehttp|31401|140166551062272|"PATCH /update_master_vendors_type/?id=1 HTTP/1.1" 401 183
+INFO|29/Apr/2021 16:52:10|basehttp|31401|140166551062272|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|29/Apr/2021 16:52:33|basehttp|31401|140166551062272|"PATCH /update_master_vendors_type/?id=1 HTTP/1.1" 200 494
+INFO|29/Apr/2021 17:49:06|basehttp|5515|139892069664512|"GET /get_add/visa_purpose_list/ HTTP/1.1" 200 8278
+INFO|29/Apr/2021 17:49:30|basehttp|5515|139892069664512|"GET /get_add/visa_purpose_list/?organization=1 HTTP/1.1" 200 8278
+WARNING|29/Apr/2021 18:04:10|log|6311|140524673165056|Unauthorized: /get_add/visa_purpose_list/
+WARNING|29/Apr/2021 18:04:10|basehttp|6311|140524673165056|"GET /get_add/visa_purpose_list/ HTTP/1.1" 401 183
+INFO|29/Apr/2021 18:04:18|basehttp|6311|140524673165056|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|29/Apr/2021 18:04:33|basehttp|6311|140524673165056|"GET /get_add/visa_purpose_list/ HTTP/1.1" 200 8278
+INFO|29/Apr/2021 18:05:12|basehttp|6311|140524673165056|"GET /get_add/visa_purpose_list/?organization=1 HTTP/1.1" 200 8278
+INFO|29/Apr/2021 18:05:52|basehttp|6311|140524673165056|"GET /get_add/visa_purpose_list/?organization=1&country=1225 HTTP/1.1" 200 8278
+INFO|29/Apr/2021 18:06:29|basehttp|6311|140524673165056|"GET /get_add/visa_purpose_list/?organization=1&country=1225 HTTP/1.1" 200 8278

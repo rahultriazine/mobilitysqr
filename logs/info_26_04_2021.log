@@ -1,0 +1,178 @@
+INFO|26/Apr/2021 12:20:23|basehttp|7705|139881519646464|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|26/Apr/2021 12:21:12|basehttp|7705|139881519646464|"GET /get_vendors_type HTTP/1.1" 301 0
+INFO|26/Apr/2021 12:21:17|basehttp|7705|139881519646464|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|26/Apr/2021 13:16:39|basehttp|10442|140151415887616|"POST /api/custom/login/ HTTP/1.1" 200 452
+WARNING|26/Apr/2021 13:16:55|log|10442|140151415887616|Not Found: /get_post_master_vendors_type
+WARNING|26/Apr/2021 13:16:55|basehttp|10442|140151415887616|"POST /get_post_master_vendors_type HTTP/1.1" 404 54031
+INFO|26/Apr/2021 13:41:08|basehttp|11670|139783435437824|"POST /api/custom/login/ HTTP/1.1" 200 452
+ERROR|26/Apr/2021 13:41:30|log|11670|139783435437824|Internal Server Error: /post_master_vendors_type
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/post_master_vendors_type/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|26/Apr/2021 13:41:30|basehttp|11670|139783435437824|"POST /post_master_vendors_type HTTP/1.1" 500 72371
+INFO|26/Apr/2021 13:42:21|basehttp|11670|139783435437824|"POST /post_master_vendors_type/ HTTP/1.1" 200 481
+INFO|26/Apr/2021 13:43:00|basehttp|11670|139783435437824|"POST /post_master_vendors_type/ HTTP/1.1" 200 467
+INFO|26/Apr/2021 13:43:42|basehttp|11670|139783435437824|"POST /post_master_vendors_type/ HTTP/1.1" 200 473
+WARNING|26/Apr/2021 13:44:27|log|11670|139783435437824|Not Found: /update_master_vendors_type/
+WARNING|26/Apr/2021 13:44:27|basehttp|11670|139783435437824|"PATCH /update_master_vendors_type/?pk=2 HTTP/1.1" 404 54240
+WARNING|26/Apr/2021 13:45:00|log|11670|139783435437824|Not Found: /update_master_vendors_type/
+WARNING|26/Apr/2021 13:45:00|basehttp|11670|139783435437824|"PATCH /update_master_vendors_type/?pk=2/ HTTP/1.1" 404 54241
+WARNING|26/Apr/2021 13:46:09|log|11670|139783435437824|Not Found: /update_master_vendors_type/
+WARNING|26/Apr/2021 13:46:09|basehttp|11670|139783435437824|"PATCH /update_master_vendors_type/?id=2/ HTTP/1.1" 404 54241
+WARNING|26/Apr/2021 13:50:47|log|11670|139783435437824|Not Found: /update_master_vendors_type/
+WARNING|26/Apr/2021 13:50:47|basehttp|11670|139783435437824|"PATCH /update_master_vendors_type/?pk=2 HTTP/1.1" 404 54240
+WARNING|26/Apr/2021 13:52:18|log|11670|139783435437824|Not Found: /update_master_vendors_type/
+WARNING|26/Apr/2021 13:52:18|basehttp|11670|139783435437824|"PATCH /update_master_vendors_type/?pk=%222%22/ HTTP/1.1" 404 54247
+WARNING|26/Apr/2021 13:52:45|log|11670|139783435437824|Not Found: /update_master_vendors_type/pk=2/
+WARNING|26/Apr/2021 13:52:45|basehttp|11670|139783435437824|"PATCH /update_master_vendors_type/pk=2/ HTTP/1.1" 404 54252
+INFO|26/Apr/2021 14:02:20|basehttp|12472|139955848505088|"PATCH /update_master_vendors_type/2/ HTTP/1.1" 200 466
+INFO|26/Apr/2021 14:02:49|basehttp|12472|139955848505088|"PATCH /update_master_vendors_type/1/ HTTP/1.1" 200 480
+INFO|26/Apr/2021 19:08:47|basehttp|20392|139875808438016|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|26/Apr/2021 19:09:39|basehttp|20392|139875808438016|"GET /get_post_salutation HTTP/1.1" 301 0
+INFO|26/Apr/2021 19:09:48|basehttp|20392|139875808438016|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|26/Apr/2021 19:20:26|basehttp|20928|139939533096704|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+WARNING|26/Apr/2021 20:25:25|log|22368|140079413720832|Not Found: /update_master_suffix/
+WARNING|26/Apr/2021 20:25:25|basehttp|22368|140079413720832|"GET /update_master_suffix/ HTTP/1.1" 404 55083
+WARNING|26/Apr/2021 20:26:08|log|22421|140215949526784|Not Found: /update_master_suffix/
+WARNING|26/Apr/2021 20:26:08|basehttp|22421|140215949526784|"GET /update_master_suffix/ HTTP/1.1" 404 55086
+WARNING|26/Apr/2021 20:28:40|log|22696|139822183196416|Not Found: /update_master_suffix/
+WARNING|26/Apr/2021 20:28:40|basehttp|22696|139822183196416|"GET /update_master_suffix/ HTTP/1.1" 404 55087
+WARNING|26/Apr/2021 20:30:50|log|22822|139659567834880|Not Found: /update_master_suffix/
+WARNING|26/Apr/2021 20:30:50|basehttp|22822|139659567834880|"GET /update_master_suffix/ HTTP/1.1" 404 55087
+WARNING|26/Apr/2021 20:30:51|log|22822|139659567834880|Not Found: /update_master_suffix/
+WARNING|26/Apr/2021 20:30:51|basehttp|22822|139659567834880|"GET /update_master_suffix/ HTTP/1.1" 404 55087
+WARNING|26/Apr/2021 20:44:56|log|23485|139960536860416|Not Found: /update_master_suffix/
+WARNING|26/Apr/2021 20:44:56|basehttp|23485|139960536860416|"GET /update_master_suffix/ HTTP/1.1" 404 55087
+WARNING|26/Apr/2021 20:52:26|log|23485|139960536860416|Not Found: /update_master_suffix/
+WARNING|26/Apr/2021 20:52:26|basehttp|23485|139960536860416|"GET /update_master_suffix/?pk=1 HTTP/1.1" 404 55092
+WARNING|26/Apr/2021 20:52:49|log|23867|140515785328384|Unauthorized: /update_master_suffix/
+WARNING|26/Apr/2021 20:52:49|basehttp|23867|140515785328384|"GET /update_master_suffix/?pk=1 HTTP/1.1" 401 183
+INFO|26/Apr/2021 20:52:57|basehttp|23867|140515785328384|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|26/Apr/2021 20:53:17|basehttp|23867|140515785328384|"GET /update_master_suffix/?pk=1 HTTP/1.1" 200 2818
+ERROR|26/Apr/2021 20:54:29|log|23924|140504915265280|Internal Server Error: /update_master_suffix/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: patch() missing 1 required positional argument: 'pk'
+ERROR|26/Apr/2021 20:54:29|basehttp|23924|140504915265280|"PATCH /update_master_suffix/?pk=1 HTTP/1.1" 500 19639
+ERROR|26/Apr/2021 20:56:32|log|24050|140691689506560|Internal Server Error: /update_master_suffix/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 357, in patch
+    print(request.get('id'))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'get'
+ERROR|26/Apr/2021 20:56:32|basehttp|24050|140691689506560|"PATCH /update_master_suffix/?pk=1 HTTP/1.1" 500 20237
+ERROR|26/Apr/2021 20:57:27|log|24106|140424536368896|Internal Server Error: /update_master_suffix/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 359, in patch
+    instance = self.get_object(pk)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 354, in get_object
+    return Name_Suffix.objects.get(pk=pk)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+mobility_apps.master.models.Name_Suffix.DoesNotExist: Name_Suffix matching query does not exist.
+ERROR|26/Apr/2021 20:57:27|basehttp|24106|140424536368896|"PATCH /update_master_suffix/?pk=1 HTTP/1.1" 500 20323
+ERROR|26/Apr/2021 20:58:23|log|24106|140424536368896|Internal Server Error: /update_master_suffix/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 359, in patch
+    instance = self.get_object(pk)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 354, in get_object
+    return Name_Suffix.objects.get(pk=pk)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+mobility_apps.master.models.Name_Suffix.DoesNotExist: Name_Suffix matching query does not exist.
+ERROR|26/Apr/2021 20:58:23|basehttp|24106|140424536368896|"PATCH /update_master_suffix/?id=1 HTTP/1.1" 500 20323
+INFO|26/Apr/2021 21:00:24|basehttp|24260|140415090534144|"PATCH /update_master_suffix/?id=1 HTTP/1.1" 200 440
+INFO|26/Apr/2021 21:00:46|basehttp|24260|140415090534144|"PATCH /update_master_suffix/?id=1 HTTP/1.1" 200 441
+INFO|26/Apr/2021 21:01:36|basehttp|24321|139676524910336|"GET /update_master_suffix/?id=1 HTTP/1.1" 200 2818
+INFO|26/Apr/2021 21:05:06|basehttp|24453|140008151561984|"GET /update_master_suffix/ HTTP/1.1" 200 2818
+INFO|26/Apr/2021 21:05:23|basehttp|24453|140008151561984|"PATCH /update_master_suffix/ HTTP/1.1" 200 59

@@ -36,6 +36,7 @@ import os
 from zipfile import ZipFile
 from django.utils.html import strip_tags
 from dateutil import tz
+
 class getassignmentletter(APIView):
     
    def get(self,request, *args, **kwargs):
@@ -371,9 +372,9 @@ class getassignmentletter(APIView):
                         inviteattachments=""
                      email = EmailMessage(subject='Letters',
                                           body='Please Find the attachment Letters for travel id'+id+datas['travelling_country_to'],
-                                          from_email='vikasy@triazinesoft.com',
-                                          to=[emp_code,'vikasy@triazinesoft.com'],
-                                          headers = {'Reply-To': 'vikasy@triazinesoft.com'})
+                                          from_email='alert_imap@mobilitysqr.com',
+                                          to=[emp_code,'alert_imap@mobilitysqr.com'],
+                                          headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
 
                      # Open PDF file
                   
@@ -594,7 +595,7 @@ class getassignmentletter(APIView):
                         files= open("uploadpdf/"+invitefilenamess, "w+b")
                         #current_url = request.path_info
                         #print(current_url)
-                        emp_codess="vikasy@triazinesoft.com"
+                        emp_codess="alert_imap@mobilitysqr.com"
                         pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=files, encoding='utf-8')
                         inviteattachments = open('uploadpdf/'+invitefilenamess, 'rb')
                      else:
@@ -603,9 +604,9 @@ class getassignmentletter(APIView):
                      print(emp_code)
                      email = EmailMessage(subject='Letters',
                                        body='Please Find the attachment Letters for travel id'+id+datas['travelling_country_to'],
-                                       from_email='vikasy@triazinesoft.com',
-                                       to=[emp_code,'vikasy@triazinesoft.com'],
-                                       headers = {'Reply-To': 'vikasy@triazinesoft.com'})
+                                       from_email='alert_imap@mobilitysqr.com',
+                                       to=[emp_code,'alert_imap@mobilitysqr.com'],
+                                       headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
 
                      # Open PDF file
                   
@@ -827,9 +828,9 @@ class getinviteletter(APIView):
             pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file, encoding='utf-8')
             email = EmailMessage(subject='Invite Letter',
                                  body='Please Find the attachment report Below',
-                                 from_email='vikasy@triazinesoft.com',
-                                 to=[emp_code,'vikasy@triazinesoft.com'],
-                                 headers = {'Reply-To': 'vikasy@triazinesoft.com'})
+                                 from_email='alert_imap@mobilitysqr.com',
+                                 to=[emp_code,'alert_imap@mobilitysqr.com'],
+                                 headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
 
             # Open PDF file
             attachment = open('uploadpdf/'+filename, 'rb')
@@ -1011,9 +1012,9 @@ class getvisaletter(APIView):
             pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file, encoding='utf-8')
             email = EmailMessage(subject='Visa Letter',
                                  body='Please Find the attachment report Below',
-                                 from_email='vikasy@triazinesoft.com',
-                                 to=[emp_code,'vikasy@triazinesoft.com'],
-                                 headers = {'Reply-To': 'vikasy@triazinesoft.com'})
+                                 from_email='alert_imap@mobilitysqr.com',
+                                 to=[emp_code,'alert_imap@mobilitysqr.com'],
+                                 headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
 
             # Open PDF file
             attachment = open('uploadpdf/'+filename, 'rb')
