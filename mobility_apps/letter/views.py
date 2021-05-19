@@ -33,15 +33,16 @@ from mobility_apps.response_message import *
 from collections import Counter
 from django.db.models import Q
 import os
+import json
 from zipfile import ZipFile
 from django.utils.html import strip_tags
 from dateutil import tz
-
 class getassignmentletter(APIView):
     
    def get(self,request, *args, **kwargs):
       travel_status=Travel_Request.objects.filter(travel_req_id =request.GET['travel_req_id'],travel_req_status="3")
-      
+      print('#################')
+      print(travel_status)
       letter=[]
       if travel_status.exists(): 
          id=request.GET['travel_req_id']
@@ -68,8 +69,8 @@ class getassignmentletter(APIView):
                   emp = Employee.objects.filter(emp_code=emp_code)
                   
                   emp_serializer = EmployeeSerializers(emp,many=True)
-                  #print(emp_serializer.data)
                   travel_request_serializer.data[0]['emp_info']=emp_serializer.data
+
                   empcode=emp_serializer.data[0]['emp_code']
                   empadd = Employee_Address.objects.filter(emp_code=empcode,address_type="host")
                   empadd_serializer = Employee_AddressSerializers(empadd,many=True)
@@ -91,8 +92,14 @@ class getassignmentletter(APIView):
                   emppassport_serializer = Employee_Passport_DetailSerializers(empadd,many=True)
                   travel_request_serializer.data[0]['emp_passport']=emppassport_serializer.data
                   datas={}
-                  
+
+                  # print("###############emp_serializer.data")
+                  # print(travel_request_serializer.data[0]['emp_info'])
+                  # print("############### length travel_request_serializer.data #########")
+                  # print(len(travel_request_serializer.data))
                   for data in travel_request_serializer.data:
+                     print("############### length travel_request_serializer.data #########")
+                     print(data)
                      if data['emp_info']:
                         if data['emp_info'][0]['first_name']:
                            first_name=data['emp_info'][0]['first_name']
@@ -138,7 +145,7 @@ class getassignmentletter(APIView):
                         else:
                            datas['Host City']=""
                         if data['details'][i]['host_hr_name']:
-                           datas['Host Contact Name']=data['details'][i]['host_hr_name']
+                           datas['HostContactName']=data['details'][i]['host_hr_name']
                         else:
                            datas['HostContactName']=""
 
@@ -164,8 +171,8 @@ class getassignmentletter(APIView):
                            datas['VisaValidity']=self.date_format(date=data['details'][i]['visa_expiry_date'])
                         else:
                            datas['VisaValidity']=""
-                        if data['details'][i]['visa_expiry_date']:
-                           datas['VisaCategory']=self.date_format(date=data['details'][i]['visa_expiry_date'])
+                        if data['details'][i]['applicable_visa']:
+                           datas['VisaCategory']=data['details'][i]['applicable_visa']
                         else:
                            datas['VisaCategory']=""
                         if data['details'][i]['agenda']:
@@ -186,13 +193,14 @@ class getassignmentletter(APIView):
                      datas['HostCountry']=datas['travelling_country_to'] 
                      datas['HomeCountry']=datas['travelling_country']
                      if data['emp_passport']:
+                        print('#########################################################')
                         print(data['emp_passport'])
                         if data['emp_passport'][0]['passport_number']:
-                           datas['PassportNumber']=data['emp_passport'][0]['passport_number']
+                           datas['PassportNo']=data['emp_passport'][0]['passport_number']
                         else:
-                           datas['PassportNumber']=""
-                        if data['emp_passport'][0]['passport_expiry_date']:
-                           datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['passport_expiry_date'])
+                           datas['PassportNo']=""
+                        if data['emp_passport'][0]['date_of_expiration']:
+                           datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['date_of_expiration'])
                         else:
                            datas['PassportValidity']=""
                         if data['emp_passport'][0]['nationality']:
@@ -303,7 +311,7 @@ class getassignmentletter(APIView):
                      
                      school=Assignment_Travel_Tax_Grid.objects.filter(travel_req_id =id,tax_label='School Tuition - Self').values('annual_ammount')
                      
-                     if hosthousing:
+                     if school:
                         datas['SchoolTuitionSelf']=school[0]['annual_ammount']
                      else:
                         datas['SchoolTuitionSelf']=""
@@ -312,6 +320,9 @@ class getassignmentletter(APIView):
                      country=Country_Master.objects.filter(name=datas['travelling_country_to']).values("country_id")
                      print(country[0]['country_id'])
                      lettername=Letters.objects.filter(letter_type="Assignment Letter",country=country[0]['country_id'],letter_term=datas['AssignmentType']).values("letter_name")
+                     print('############# leter name ##')
+                     print(lettername)
+                     print(datas['AssignmentType'])
                      if lettername:
                         lettername=lettername[0]['letter_name'].lstrip('templates/')
                         template = get_template(lettername)
@@ -320,6 +331,8 @@ class getassignmentletter(APIView):
                         html = template.render(datas)
                         result = BytesIO()
                         file = open("uploadpdf/"+filename, "w+b")
+                        print('############## file')
+                        print(file)
                         #current_url = request.path_info
                         #print(current_url)
                         emp_codess="vikasy@triazinesoft.com"
@@ -372,9 +385,9 @@ class getassignmentletter(APIView):
                         inviteattachments=""
                      email = EmailMessage(subject='Letters',
                                           body='Please Find the attachment Letters for travel id'+id+datas['travelling_country_to'],
-                                          from_email='alert_imap@mobilitysqr.com',
-                                          to=[emp_code,'alert_imap@mobilitysqr.com'],
-                                          headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
+                                          from_email='vikasy@triazinesoft.com',
+                                          to=[emp_code,'vikasy@triazinesoft.com'],
+                                          headers = {'Reply-To': 'vikasy@triazinesoft.com'})
 
                      # Open PDF file
                   
@@ -466,7 +479,7 @@ class getassignmentletter(APIView):
                            else:
                               datas['Host City']=""
                            if data['details'][i]['host_hr_name']:
-                              datas['Host Contact Name']=data['details'][i]['host_hr_name']
+                              datas['HostContactName']=data['details'][i]['host_hr_name']
                            else:
                               datas['HostContactName']=""
 
@@ -492,8 +505,8 @@ class getassignmentletter(APIView):
                               datas['VisaValidity']=self.date_format(date=data['details'][i]['visa_expiry_date'])
                            else:
                               datas['VisaValidity']=""
-                           if data['details'][i]['visa_expiry_date']:
-                              datas['VisaCategory']=self.date_format(date=data['details'][i]['visa_expiry_date'])
+                           if data['details'][i]['applicable_visa']:
+                              datas['VisaCategory']=data['details'][i]['applicable_visa']
                            else:
                               datas['VisaCategory']=""
                            if data['details'][i]['agenda']:
@@ -517,11 +530,11 @@ class getassignmentletter(APIView):
                         if data['emp_passport']:
                            #print(data['emp_passport'][0]['passort_number'])
                            if data['emp_passport'][0]['passport_number']:
-                              datas['PassportNumber']=data['emp_passport'][0]['passport_number']
+                              datas['PassportNo']=data['emp_passport'][0]['passport_number']
                            else:
-                              datas['PassportNumber']=""
-                           if data['emp_passport'][0]['passport_expiry_date']:
-                              datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['passport_expiry_date'])
+                              datas['PassportNo']=""
+                           if data['emp_passport'][0]['date_of_expiration']:
+                              datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['date_of_expiration'])
                            else:
                               datas['PassportValidity']=""
                            if data['emp_passport'][0]['nationality']:
@@ -595,7 +608,7 @@ class getassignmentletter(APIView):
                         files= open("uploadpdf/"+invitefilenamess, "w+b")
                         #current_url = request.path_info
                         #print(current_url)
-                        emp_codess="alert_imap@mobilitysqr.com"
+                        emp_codess="vikasy@triazinesoft.com"
                         pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=files, encoding='utf-8')
                         inviteattachments = open('uploadpdf/'+invitefilenamess, 'rb')
                      else:
@@ -604,9 +617,9 @@ class getassignmentletter(APIView):
                      print(emp_code)
                      email = EmailMessage(subject='Letters',
                                        body='Please Find the attachment Letters for travel id'+id+datas['travelling_country_to'],
-                                       from_email='alert_imap@mobilitysqr.com',
-                                       to=[emp_code,'alert_imap@mobilitysqr.com'],
-                                       headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
+                                       from_email='vikasy@triazinesoft.com',
+                                       to=[emp_code,'vikasy@triazinesoft.com'],
+                                       headers = {'Reply-To': 'vikasy@triazinesoft.com'})
 
                      # Open PDF file
                   
@@ -633,10 +646,10 @@ class getassignmentletter(APIView):
             #                            from_email='vikasy@triazinesoft.com',
             #                            to=['vikasy@triazinesoft.com','vikasy@triazinesoft.com'],
             #                            headers = {'Reply-To': 'vikasy@triazinesoft.com'}) 
-            # email.attach('http://52.165.220.40/mobilitysqrapi/uploadpdf/sample1.zip','application/rar') 
+            # email.attach('http://52.165.220.40/mobilitysqrapi/uploadpdf/sample1.zip','application/rar')
             
             # email.send()               
-            dict = {'massage': 'data found', 'status': True, 'data': 'uploadpdf/letters_'+id+'.zip' }
+            dict = {'massage': 'data found', 'status': True, 'data': 'http://api.mobilitysqr.net/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/uploadpdf/letters_'+id+'.zip' }
       else:
          dict = {'massage': 'Assignment Not Generated', 'status': False}
       return Response(dict, status=status.HTTP_200_OK)
@@ -748,7 +761,7 @@ class getinviteletter(APIView):
                   else:
                      datas['Host City']=""
                   if data['details'][0]['host_hr_name']:
-                     datas['Host Contact Name']=data['details'][0]['host_hr_name']
+                     datas['HostContactName']=data['details'][0]['host_hr_name']
                   else:
                      datas['HostContactName']=""
 
@@ -774,8 +787,8 @@ class getinviteletter(APIView):
                      datas['VisaValidity']=data['details'][0]['visa_expiry_date']
                   else:
                      datas['VisaValidity']=""
-                  if data['details'][0]['visa_expiry_date']:
-                     datas['VisaCategory']=data['details'][0]['visa_expiry_date']
+                  if data['details'][0]['applicable_visa']:
+                     datas['VisaCategory']=data['details'][0]['applicable_visa']
                   else:
                      datas['VisaCategory']=""
                   if data['details'][0]['agenda']:
@@ -791,11 +804,11 @@ class getinviteletter(APIView):
                datas['HomeCountry']= data['Home_Country']
                if data['emp_passport']:
                   if data['emp_passport'][0]['passort_number']:
-                     datas['PassportNumber']=data['emp_passport'][0]['passort_number']
+                     datas['PassportNo']=data['emp_passport'][0]['passort_number']
                   else:
-                     datas['PassportNumber']=""
-                  if data['emp_passport'][0]['passort_expiry_date']:
-                     datas['PassportValidity']=data['emp_passport'][0]['passort_expiry_date']
+                     datas['PassportNo']=""
+                  if data['emp_passport'][0]['date_of_expiration']:
+                     datas['PassportValidity']=data['emp_passport'][0]['date_of_expiration']
                   else:
                      datas['PassportValidity']=""
                if data['travel']:
@@ -828,9 +841,9 @@ class getinviteletter(APIView):
             pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file, encoding='utf-8')
             email = EmailMessage(subject='Invite Letter',
                                  body='Please Find the attachment report Below',
-                                 from_email='alert_imap@mobilitysqr.com',
-                                 to=[emp_code,'alert_imap@mobilitysqr.com'],
-                                 headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
+                                 from_email='vikasy@triazinesoft.com',
+                                 to=[emp_code,'vikasy@triazinesoft.com'],
+                                 headers = {'Reply-To': 'vikasy@triazinesoft.com'})
 
             # Open PDF file
             attachment = open('uploadpdf/'+filename, 'rb')
@@ -934,7 +947,7 @@ class getvisaletter(APIView):
                   else:
                      datas['Host City']=""
                   if data['details'][0]['host_hr_name']:
-                     datas['Host Contact Name']=data['details'][0]['host_hr_name']
+                     datas['HostContactName']=data['details'][0]['host_hr_name']
                   else:
                      datas['HostContactName']=""
 
@@ -977,11 +990,11 @@ class getvisaletter(APIView):
                datas['HomeCountry']= data['Home_Country']
                if data['emp_passport']:
                   if data['emp_passport'][0]['passort_number']:
-                     datas['PassportNumber']=data['emp_passport'][0]['passort_number']
+                     datas['PassportNo']=data['emp_passport'][0]['passort_number']
                   else:
-                     datas['PassportNumber']=""
-                  if data['emp_passport'][0]['passort_expiry_date']:
-                     datas['PassportValidity']=data['emp_passport'][0]['passort_expiry_date']
+                     datas['PassportNo']=""
+                  if data['emp_passport'][0]['date_of_expiration']:
+                     datas['PassportValidity']=data['emp_passport'][0]['date_of_expiration']
                   else:
                      datas['PassportValidity']=""
                if data['travel']:
@@ -1012,9 +1025,9 @@ class getvisaletter(APIView):
             pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file, encoding='utf-8')
             email = EmailMessage(subject='Visa Letter',
                                  body='Please Find the attachment report Below',
-                                 from_email='alert_imap@mobilitysqr.com',
-                                 to=[emp_code,'alert_imap@mobilitysqr.com'],
-                                 headers = {'Reply-To': 'alert_imap@mobilitysqr.com'})
+                                 from_email='vikasy@triazinesoft.com',
+                                 to=[emp_code,'vikasy@triazinesoft.com'],
+                                 headers = {'Reply-To': 'vikasy@triazinesoft.com'})
 
             # Open PDF file
             attachment = open('uploadpdf/'+filename, 'rb')

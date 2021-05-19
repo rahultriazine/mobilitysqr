@@ -140,28 +140,15 @@ REST_FRAMEWORK = {
 # }
 
 # staging_database
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'sql_server.pyodbc',
-#         # 'NAME': 'mob_test',
-#         'NAME': 'mobilitysqr_staging',
-#         'HOST': 'mobilitysqrdev.database.windows.net',
-# 	    'PORT': '1433',
-#         'USER': 'mobilitysqr_admin',
-#         'PASSWORD': 'mob!@sqr1123573121',
-#         'OPTIONS': {
-#              'host_is_server': True,
-#              'driver':'ODBC Driver 17 for SQL Server',
-#         }
-#     }
-# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mob_test',
+        # 'NAME': 'mobilitysqr_staging',
         'USER': 'postgres',
         'PASSWORD': 'admin@123',
-        'HOST': '172.104.183.68',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

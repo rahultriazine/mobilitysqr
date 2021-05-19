@@ -63,7 +63,7 @@ class get_post_currency(ListCreateAPIView):
     serializer_class = CurrencySerializers
 
     def get_queryset(self):
-        currency = Currency.objects.all()
+        currency = Currency.objects.all().order_by('id')
         return currency
 
     # Get all currency
@@ -99,19 +99,36 @@ class get_post_per_diem(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = Per_DiemSerializers
 
-    def get_queryset(self):
-        currency = Per_Diem.objects.all()
-        return currency
-
     # Get all currency
     def get(self, request):
-        currency = self.get_queryset()
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
-        serializer = Per_DiemSerializers(currency,many=True)
-        dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+        band = request.GET.get('band', None)
+        organization = request.GET.get('organization', None)
+        home_country = request.GET.get('home_country', None)
+        if organization is None:
+            dict = {'message': "Organization id is required", 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            if band is None and home_country is None:
+                currency = Per_Diem.objects.filter(organization=organization)
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data':serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            elif band is not None and home_country is None:
+                currency = Per_Diem.objects.filter(organization=organization,band=band)
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            elif band is None and home_country is not None:
+                currency = Per_Diem.objects.filter(organization=organization,home_country=home_country)
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                currency = Per_Diem.objects.filter(organization=organization, home_country=home_country,band=band)
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+
 
     # Create a new currency
     def post(self, request):
@@ -258,7 +275,7 @@ class get_currency_conversion(ListCreateAPIView):
     serializer_class = Currency_ConversionSerializers
 
     def get_queryset(self,from_currency,to_currency):
-        currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency)
+        currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency).order_by('conversion_date')
         return currency
 
     # Get all currency
@@ -277,7 +294,7 @@ class post_currency_conversion(ListCreateAPIView):
     serializer_class = Currency_ConversionSerializers
     # post all currency
     def get(self, request):
-        currency = Currency_Conversion.objects.all()
+        currency = Currency_Conversion.objects.all().order_by('id')
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = Currency_ConversionSerializers(currency,many=True)

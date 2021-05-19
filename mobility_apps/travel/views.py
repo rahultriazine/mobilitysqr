@@ -12,8 +12,9 @@ from mobility_apps.visa.models import Visa_Request , Visa_Request_Document,Visa_
 from mobility_apps.visa.serializers import Visa_RequestSerializers,Visa_Request_DocumentSerializers,Visa_Request_DraftSerializers
 from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
 from mobility_apps.travel.serializers import Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
-from mobility_apps.master.models import Country,City,Per_Diem,Dial_Code,Country_Master,State_Master,Location_Master,Taxgrid_Master,Taxgrid_Country,Taxgrid,National_Id
+from mobility_apps.master.models import Country,City,Per_Diem,Dial_Code,Country_Master,State_Master,Location_Master,Taxgrid_Master,Taxgrid_Country,Taxgrid,National_Id,Secondory_Assignment
 from mobility_apps.master.models import Notification
+from mobility_apps.master.serializers.assinment_type import Secondory_AssignmentSerializers
 from mobility_apps.master.serializers.notification import NotificationSerializers
 from rest_framework.generics import RetrieveDestroyAPIView, ListCreateAPIView
 from django.core.mail import send_mail
@@ -239,7 +240,7 @@ class get_post_travel_request(ListCreateAPIView):
             request.data['current_ticket_owner']=curerent_status
             request.data['travel_req_status']="2"
             serializer =Travel_RequestSerializers(data=request.data)
-            data=request.data.copy()
+            # data=request.data.copy()
             if serializer.is_valid():
                 travel_id=serializer.save().travel_req_id
                 print(travel_id)
@@ -634,6 +635,13 @@ class get_view_travel_request(ListCreateAPIView):
                 travel_request_serializer.data[0]['dependents']=travel_request_serializerss.data
             else:
                 travel_request_serializer.data[0]['dependents']=""
+            assignment_type_id = Secondory_Assignment.objects.filter(organization=request.GET['org_id'],Ticket_ID=request.GET['travel_req_id']).last()
+            assignment_type_serializer = Secondory_AssignmentSerializers(assignment_type_id)
+            if assignment_type_serializer.data:
+                travel_request_serializer.data[0]['secondory_assignment'] = assignment_type_serializer.data
+            else:
+                travel_request_serializer.data[0]['secondory_assignment'] = ""
+
             dict = {'massage': 'data found', 'status': True, 'data':travel_request_serializer.data[0]}
         else:
             dict = {'massage': 'data not found', 'status': False, 'data':[]}
@@ -2020,44 +2028,42 @@ class get_post_approve_travelvisa_request(ListCreateAPIView):
         return new_case_date
 
 
-class assignment_travel_request_status(ListCreateAPIView):
-    permission_classes = (IsAuthenticated,)
-    serializer_class = Assignment_Travel_Request_StatusSerializers
-    def get(self, request):
-        travel_requests=Assignment_Travel_Request_Status.objects.filter(travel_req_id=request.GET["travel_req_id"],organization=request.GET["org_id"])
-        travel_request_dependent=Assignment_Travel_Request_StatusSerializers(travel_requests,many=True)
-        dict = {'massage': 'data found', 'status': True, 'data': travel_request_dependent.data}
-        # responseList = [dict]
-        return Response(dict, status=status.HTTP_200_OK)
-    # Create a new employee
-    def post(self, request):
-        # import ipdb;ipdb.set_trace()
-
-
-        try:
-            ditsct=[]
-            for data in request.data:
-                if data['update_id']:
-
-                    ditsct.append(data['update_id'])
-                    assignments=Assignment_Travel_Request_Status.objects.filter(id=data['update_id']).first()
-                    assignment_update=Assignment_Travel_Request_StatusSerializers(assignments,data=data)
-                    if assignment_update.is_valid():
-                        assignment_update.save()
-                        dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':ditsct}
-                    else:
-                        dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':assignment_update.errors}
-                else:
-                    assignment_travel=Assignment_Travel_Request_StatusSerializers(data=data)
-                    if assignment_travel.is_valid():
-                        assignment_travel.save()
-                        dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':data['travel_req_id']}
-                    else:
-                        dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data':assignment_travel.errors}
-            return Response(dict, status=status.HTTP_200_OK)
-        except Exception as e:
-            dict = {'massage code': 'already exists', 'massage': 'unsuccessful', 'status': False,data:str(e)}
-            return Response(dict, status=status.HTTP_200_OK)
+# class assignment_travel_request_status(ListCreateAPIView):
+#     permission_classes = (IsAuthenticated,)
+#     serializer_class = Assignment_Travel_Request_StatusSerializers
+#     def get(self, request):
+#         travel_requests=Assignment_Travel_Request_Status.objects.filter(travel_req_id=request.GET["travel_req_id"],organization=request.GET["org_id"])
+#         travel_request_dependent=Assignment_Travel_Request_StatusSerializers(travel_requests,many=True)
+#         dict = {'massage': 'data found', 'status': True, 'data': travel_request_dependent.data}
+#         # responseList = [dict]
+#         return Response(dict, status=status.HTTP_200_OK)
+#     # Create a new employee
+#     def post(self, request):
+#         # import ipdb;ipdb.set_trace()
+#         try:
+#             ditsct=[]
+#             for data in request.data:
+#                 if data['update_id']:
+#
+#                     ditsct.append(data['update_id'])
+#                     assignments=Assignment_Travel_Request_Status.objects.filter(id=data['update_id']).first()
+#                     assignment_update=Assignment_Travel_Request_StatusSerializers(assignments,data=data)
+#                     if assignment_update.is_valid():
+#                         assignment_update.save()
+#                         dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':ditsct}
+#                     else:
+#                         dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':assignment_update.errors}
+#                 else:
+#                     assignment_travel=Assignment_Travel_Request_StatusSerializers(data=data)
+#                     if assignment_travel.is_valid():
+#                         assignment_travel.save()
+#                         dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':data['travel_req_id']}
+#                     else:
+#                         dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data':assignment_travel.errors}
+#             return Response(dict, status=status.HTTP_200_OK)
+#         except Exception as e:
+#             dict = {'massage code': 'already exists', 'massage': 'unsuccessful', 'status': False,data:str(e)}
+#             return Response(dict, status=status.HTTP_200_OK)
 
 class assignment_travel_request_status(ListCreateAPIView):
     # permission_classes = (IsAuthenticated,)
@@ -2070,29 +2076,25 @@ class assignment_travel_request_status(ListCreateAPIView):
         return Response(dict, status=status.HTTP_200_OK)
     # Create a new employee
     def post(self, request):
-        # import ipdb;ipdb.set_trace()
-
-
         try:
             ditsct=[]
             for data in request.data:
-                if data['update_id']:
-
+                if data['update_id'] != '':
                     ditsct.append(data['update_id'])
                     assignments=Assignment_Travel_Request_Status.objects.filter(id=data['update_id']).first()
                     assignment_update=Assignment_Travel_Request_StatusSerializers(assignments,data=data)
                     if assignment_update.is_valid():
                         assignment_update.save()
-                        notificationid="NOTIF"+str(uuid.uuid4().int)[:6]
-                        data['Entity_Type']="Travel"
-                        data['Entity_ID']=data['travel_req_id']
-                        data['Action_taken_by']="employee@gmail.com"
-                        data['Notification_Date']=""
-                        data['Message']="Updated by Assignment"
-                        data['Notification_ID']=notificationid
-                        serializernotification = NotificationSerializers(data=data)
-                        if serializernotification.is_valid():
-                            serializernotification.save()
+                        # notificationid="NOTIF"+str(uuid.uuid4().int)[:6]
+                        # data['Entity_Type']="Travel"
+                        # data['Entity_ID']=data['travel_req_id']
+                        # data['Action_taken_by']="employee@gmail.com"
+                        # data['Notification_Date']=""
+                        # data['Message']="Updated by Assignment"
+                        # data['Notification_ID']=notificationid
+                        # serializernotification = NotificationSerializers(data=data)
+                        # if serializernotification.is_valid():
+                        #     serializernotification.save()
                         dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':ditsct}
                     else:
                         dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':assignment_update.errors}
@@ -2100,22 +2102,22 @@ class assignment_travel_request_status(ListCreateAPIView):
                     assignment_travel=Assignment_Travel_Request_StatusSerializers(data=data)
                     if assignment_travel.is_valid():
                         assignment_travel.save()
-                        notificationid="NOTIF"+str(uuid.uuid4().int)[:6]
-                        data['Entity_Type']="Travel"
-                        data['Entity_ID']=data['travel_req_id']
-                        data['Action_taken_by']="employee@gmail.com"
-                        data['Notification_Date']=""
-                        data['Message']="Approved by Assignment"
-                        data['Notification_ID']=notificationid
-                        serializernotification = NotificationSerializers(data=data)
-                        if serializernotification.is_valid():
-                            serializernotification.save()
+                        # notificationid="NOTIF"+str(uuid.uuid4().int)[:6]
+                        # data['Entity_Type']="Travel"
+                        # data['Entity_ID']=data['travel_req_id']
+                        # data['Action_taken_by']="employee@gmail.com"
+                        # data['Notification_Date']=""
+                        # data['Message']="Approved by Assignment"
+                        # data['Notification_ID']=notificationid
+                        # serializernotification = NotificationSerializers(data=data)
+                        # if serializernotification.is_valid():
+                        #     serializernotification.save()
                         dict = {'massage code': '200', 'massage': 'successful', 'status': True, 'data':data['travel_req_id']}
                     else:
                         dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data':assignment_travel.errors}
             return Response(dict, status=status.HTTP_200_OK)
         except Exception as e:
-            dict = {'massage code': 'already exists', 'massage': 'unsuccessful', 'status': False}
+            dict = {'massage code': 'already exists', 'massage': 'unsuccessful', 'status': False,'data': str(e)}
             return Response(dict, status=status.HTTP_200_OK)
 
 

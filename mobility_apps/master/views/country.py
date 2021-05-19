@@ -346,7 +346,7 @@ class get_dial_code(ListCreateAPIView):
     def get(self, request):
         # import ipdb;ipdb.set_trace()
         print(request.GET['dial_code'])
-        dial=Dial_Code.objects.filter(Q(name__icontains=request.GET['dial_code'])|Q(code__icontains=request.GET['dial_code']))
+        dial=Dial_Code.objects.filter(Q(name__icontains=request.GET['dial_code'])|Q(code__icontains=request.GET['dial_code'])).order_by('name')
         serializer = Dial_CodeSerializers(dial,many=True)
         if serializer.data:
             dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
@@ -473,26 +473,19 @@ class bulk_upload_taxgrid(ListCreateAPIView):
 
 
 
-class get_post_location(ListCreateAPIView):
+class get_post_location(APIView):
     permission_classes = (IsAuthenticated,)
-    serializer_class = Organization_branchesSerializers
+    serializer_class = Location_MasterSerializers
 
-    # def get_queryset(self,country,org_id):
-    #     country = Organization_branches.objects.filter(country=country,org_id=org_id)
-    #     return country
-
-    # # Get all country:
-    # def get(self, request):
-    #     countryorg = Organizations.objects.filter(org_id=request.GET['org_id']).values("id")
-    #     if countryorg:
-    #         country = Organization_branches.objects.filter(country=request.GET['country'],org_id_id=countryorg[0]['id']).exclude(status="0")
-    #         # paginate_queryset = self.paginate_queryset(employee)
-    #         # serializer = self.serializer_class(paginate_queryset, many=True)
-    #         serializer = Organization_branchesSerializers(country,many=True)
-    #         dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': serializer.data}
-    #     else:
-    #         dict = {'message':"Organization not found",'status_code':200, 'status': True,}
-    #     return Response(dict, status=status.HTTP_200_OK)
+    def post(self, request):
+        serializers_data = Location_MasterSerializers(data=request.data)
+        if serializers_data.is_valid():
+           serializers_data.save()
+           dict = {'message': MSG_SUCESS, 'status_code': 200, 'status': True, 'data': serializers_data.data}
+           return Response(dict, status=status.HTTP_200_OK)
+        else:
+           dict = {'message': MSG_FAILED, 'status_code': 400, 'status': False, 'data': serializers_data.errors}
+           return Response(dict, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request):
         country = Location_Master.objects.filter(country=request.GET['country']).order_by('location_name')
@@ -903,7 +896,6 @@ class get_post_country_policy(ListCreateAPIView):
     
     # Get all country:
     def get(self, request):
-        
         days=int(request.GET['days'])
         criterion1 = Q(country_name=request.GET['country_code'])
         country = Country_Policy.objects.filter(criterion1).values('bv_threshold')
@@ -913,7 +905,6 @@ class get_post_country_policy(ListCreateAPIView):
         else:
            dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'policy_violations': 'No'}
         return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
 
     def post(self, request):
         try:
@@ -949,12 +940,23 @@ class post_country_policy(ListCreateAPIView):
     
     # Get all country:
     def get(self, request):
-        country = Country_Policy.objects.all()
-        serializer = Country_PolicySerializers(country,many=True)
-        dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
-        
-        #return self.get_paginated_response(serializer.data)
+        organization_id = request.GET.get('organization_id', None)
+        home_country = request.GET.get('home_country', None)
+        if organization_id is None:
+            dict = {'message': "Organization id is required", 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            if home_country is None:
+                country = Country_Policy.objects.filter(organization_id=organization_id)
+                serializer = Country_PolicySerializers(country,many=True)
+                dict = {'message':MSG_SUCESS,'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                country = Country_Policy.objects.filter(organization_id=organization_id,home_country=home_country)
+                serializer = Country_PolicySerializers(country, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+
 
     def post(self, request):
         try:

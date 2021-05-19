@@ -1,0 +1,136 @@
+ERROR|19/May/2021 16:01:44|log|3768|140541284693760|Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 401, in initial
+    self.check_permissions(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 333, in check_permissions
+    for permission in self.get_permissions():
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
+    permission_classes = []
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
+    permission_classes = []
+  File "/usr/lib/python3.7/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.7/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib/python3.7/pdb.py", line 259, in user_line
+    self.interaction(frame, None)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/core/debugger.py", line 294, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib/python3.7/pdb.py", line 350, in interaction
+    self._cmdloop()
+  File "/usr/lib/python3.7/pdb.py", line 319, in _cmdloop
+    self.cmdloop()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/terminal/debugger.py", line 91, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+ERROR|19/May/2021 16:01:44|basehttp|3768|140541284693760|"GET /users/ HTTP/1.1" 500 171383
+ERROR|19/May/2021 16:01:52|log|3768|140541007771392|Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 401, in initial
+    self.check_permissions(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 333, in check_permissions
+    for permission in self.get_permissions():
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
+    permission_classes = []
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
+    permission_classes = []
+  File "/usr/lib/python3.7/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.7/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib/python3.7/pdb.py", line 259, in user_line
+    self.interaction(frame, None)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/core/debugger.py", line 294, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "/usr/lib/python3.7/pdb.py", line 350, in interaction
+    self._cmdloop()
+  File "/usr/lib/python3.7/pdb.py", line 319, in _cmdloop
+    self.cmdloop()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/terminal/debugger.py", line 91, in cmdloop
+    line = self.pt_app.prompt() # reset_current_buffer=True)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
+    return run_sync()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
+    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 709, in run
+    return run()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 682, in run
+    run_until_complete(f, inputhook=inputhook)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
+    return get_event_loop().run_until_complete(future, inputhook=inputhook)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
+    raise Exception('Event loop is already running')
+Exception: Event loop is already running
+ERROR|19/May/2021 16:01:52|basehttp|3768|140541007771392|"GET /users/ HTTP/1.1" 500 171384
+ERROR|19/May/2021 16:21:58|log|5676|140477563193088|Internal Server Error: /get_currency_conversion/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 283, in get
+    currency = self.get_queryset(request.GET['from_currency'],request.GET['to_currency'])
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 278, in get_queryset
+    currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency).order_by('~conversion_date')
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1023, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1776, in add_ordering
+    raise FieldError('Invalid order_by arguments: %s' % errors)
+django.core.exceptions.FieldError: Invalid order_by arguments: ['~conversion_date']
+ERROR|19/May/2021 16:21:58|basehttp|5676|140477563193088|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 500 20269

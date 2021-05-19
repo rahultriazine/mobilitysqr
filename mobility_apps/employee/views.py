@@ -83,18 +83,25 @@ class emoloyeeinfo(APIView):
         employees=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email'])).values("active_start_date","active_end_date")
         cursor = connection.cursor()
         employees_recent = Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email'])).values("last_login","recent_login")
-        if not employees_recent[0]['last_login']:
-            sql = "UPDATE employee_employee SET last_login='"+str(employees_recent[0]['recent_login'])+"' WHERE email='"+request.data['email']+"'"
-            cursor.execute(sql)
+        if employees_recent:
+            if not employees_recent[0]['last_login']:
+                sql = "UPDATE employee_employee SET last_login='"+str(employees_recent[0]['recent_login'])+"' WHERE email='"+request.data['email']+"'"
+                cursor.execute(sql)
+            else:
+                sql = "UPDATE employee_employee SET recent_login='" + recent_login + "' WHERE email='" + request.data[
+                    'email'] + "'"
+                cursor.execute(sql)
         else:
             sql = "UPDATE employee_employee SET recent_login='" +recent_login+ "' WHERE email='" + request.data['email'] + "'"
             cursor.execute(sql)
-
-        if employees[0]['active_start_date']:
-            if employees[0]['active_start_date'] and employees[0]['active_end_date']=="":
-                employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']),active_start_date__lte=t)
+        if employees:
+            if employees[0]['active_start_date']:
+                if employees[0]['active_start_date'] and employees[0]['active_end_date']=="":
+                    employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']),active_start_date__lte=t)
+                else:
+                    employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']),active_start_date__lte=t,active_end_date__gte=t)
             else:
-                employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']),active_start_date__lte=t,active_end_date__gte=t)
+                employee = Employee.objects.filter(Q(emp_code=request.data['email']) | Q(user_name=request.data['email']))
         else:
             employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']))
         if employee:

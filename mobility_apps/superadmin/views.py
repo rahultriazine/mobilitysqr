@@ -234,17 +234,18 @@ class OrgUsers(APIView):
             if (int(user_id) > 0):
                 #orgdata = Userinfo.objects.filter(id=user_id)
                 #orgdata2 = Userinfo.objects.filter(id=user_id)
-                psql =  "  and U.id = "+user_id
+                psql =  '  and U.id = '+user_id
             else:
                 #orgdata = Userinfo.objects.all().order_by('-id')
                 #orgdata2 = Userinfo.objects.count()
-                psql = " "
+                psql = ''
             #org_serializer = UserinfoSerializers(orgdata,many=True)
 
             cursor = connection.cursor()
-            cursor.execute('SELECT U.*,O.org_name from employee_employee as U '
-                           'JOIN superadmin_organizations O '
-                           'ON U.organization=O.org_id  '+psql+' WHERE U.role=7  ORDER BY ID DESC')
+            # cursor.execute('SELECT U.*,O.org_name from employee_employee as U '
+            #                'JOIN superadmin_organizations O '
+            #                'ON U.organization=O.org_id  '+psql+' WHERE U.role=7  ORDER BY ID DESC')
+            cursor.execute("SELECT U.*,O.org_name from employee_employee as U JOIN superadmin_organizations O ON U.organization=O.org_id " + psql + " WHERE U.role='7'  ORDER BY ID DESC")
             results = self.dictfetchall(cursor)
 
             if results:

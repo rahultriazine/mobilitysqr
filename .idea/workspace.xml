@@ -2,147 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd26d484-af20-43bd-ae4c-447b075e89cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mobility_apps/employee/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobilitysqr_live/celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_01_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_01_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_05_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_05_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_05_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_05_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_06_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_06_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_07_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_07_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_08_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_08_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_09_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_09_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_10_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_10_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_12_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_12_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_15_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_15_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_16_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_16_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_17_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_17_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_18_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_18_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_19_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_19_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_22_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_22_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_23_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_23_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_24_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_24_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_25_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_25_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_26_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_26_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_30_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_30_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error_31_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_31_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_01_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_01_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_05_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_05_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_05_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_05_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_06_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_06_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_07_04_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_07_04_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_08_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_08_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_09_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_09_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_10_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_10_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_12_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_12_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_15_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_15_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_16_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_16_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_17_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_17_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_18_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_18_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_19_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_19_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_22_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_22_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_23_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_23_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_24_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_24_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_25_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_25_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_26_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_26_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_30_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_30_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info_31_03_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_31_03_2021.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/download.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/download.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/download_2gJlfVH.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/download_2gJlfVH.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/download_kwEWj0i.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/download_kwEWj0i.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_2NL3YQT.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_2NL3YQT.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_51XNUP6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_51XNUP6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_6KqFCTe.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_6KqFCTe.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_8jL8Jzx.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_8jL8Jzx.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_EDZnO4l.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_EDZnO4l.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_XJlriDq.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_XJlriDq.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_a6fuIUB.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_a6fuIUB.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_bgx4ycm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_bgx4ycm.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/Schedule_l59dnUh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/Schedule_l59dnUh.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_1nrFqcn.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_1nrFqcn.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_4L73OEf.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_4L73OEf.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_52PmyWU.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_52PmyWU.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_5PIHpqe.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_5PIHpqe.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_6Kxlp1C.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_6Kxlp1C.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_7goW0Fh.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_7goW0Fh.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_7tnLmd9.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_7tnLmd9.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_8TnYCuO.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_8TnYCuO.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_GyQHuNC.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_GyQHuNC.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_HvRCzQv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_HvRCzQv.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_I7jzhra.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_I7jzhra.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_LYvygNv.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_LYvygNv.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_Qkk1sWR.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_Qkk1sWR.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_RMAbCXn.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_RMAbCXn.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_RbeczcK.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_RbeczcK.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_T83byrO.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_T83byrO.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_ZXU7anf.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_ZXU7anf.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_lyQz5qX.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_lyQz5qX.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_otKqri0.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_otKqri0.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_rgN1xqR.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_rgN1xqR.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_wArnSV0.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_wArnSV0.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument/download_zdaYx3Q.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument/download_zdaYx3Q.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument_1eP57cj" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument_1eP57cj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/vaultDocument_yKDNC7e" beforeDir="false" afterPath="$PROJECT_DIR$/media/vaultDocument_yKDNC7e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0002_auto_20210325_1851.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0002_auto_20210325_1851.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0003_auto_20210325_1855.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0003_auto_20210325_1855.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0004_auto_20210325_1900.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0004_auto_20210325_1900.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0005_delete_empmessage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0005_delete_empmessage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0006_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0006_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0007_remove_message_column2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0007_remove_message_column2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0008_message_column2.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0008_message_column2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0009_auto_20210325_1946.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0009_auto_20210325_1946.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0010_auto_20210325_1947.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0010_auto_20210325_1947.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0011_message_column1.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0011_message_column1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0012_auto_20210326_1011.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0012_auto_20210326_1011.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0013_auto_20210326_1108.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0013_auto_20210326_1108.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0014_auto_20210326_1111.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0014_auto_20210326_1111.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0015_message_chat_ticket_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0015_message_chat_ticket_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/0016_auto_20210406_1233.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/0016_auto_20210406_1233.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/employee/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/employee/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/employee/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/letter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/letter/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/migrations/0002_auto_20210325_1802.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/migrations/0002_auto_20210325_1802.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/master/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/country.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/country.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/currency.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/currency.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/dropdown.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/dropdown.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/vendor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/visa_purpose.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/visa_purpose.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/migrations/0002_auto_20210325_1836.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/migrations/0002_auto_20210325_1836.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/migrations/0003_auto_20210325_1841.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/migrations/0003_auto_20210325_1841.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/superadmin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/superadmin/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/travel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/migrations/0002_remove_vault_type_info_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/migrations/0002_remove_vault_type_info_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/vault/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/visa/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/visa/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/visa/migrations/0002_auto_20210325_1838.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/visa/migrations/0002_auto_20210325_1838.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/visa/migrations/0003_auto_20210325_1839.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/visa/migrations/0003_auto_20210325_1839.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/visa/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/visa/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobilitysqr_live/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobilitysqr_live/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/requirements.pip" beforeDir="false" afterPath="$PROJECT_DIR$/settings/requirements.pip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

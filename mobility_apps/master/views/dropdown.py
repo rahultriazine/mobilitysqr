@@ -85,7 +85,7 @@ class get_post_marital_status(ListCreateAPIView):
     serializer_class = Marital_StatusSerializers
 
     def get_queryset(self):
-        marital_status = Marital_Status.objects.all()
+        marital_status = Marital_Status.objects.all().order_by('id')
         return marital_status
 
     # Get all department
@@ -183,7 +183,7 @@ class get_post_salutation(ListCreateAPIView):
     serializer_class = SalutationSerializers
 
     def get_queryset(self):
-        salutation = Salutation.objects.all()
+        salutation = Salutation.objects.all().order_by('id')
         return salutation
 
     # Get all department
@@ -352,7 +352,7 @@ class get_post_suffix(ListCreateAPIView):
     serializer_class = Name_SuffixSerializers
 
     def get_queryset(self):
-        suffix = Name_Suffix.objects.all()
+        suffix = Name_Suffix.objects.all().order_by('id')
         return suffix
 
     # Get all department

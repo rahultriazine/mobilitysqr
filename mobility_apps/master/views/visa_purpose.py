@@ -132,29 +132,29 @@ class get_post_visa_purpose_list(ListCreateAPIView):
     def get(self, request):
         org_id = request.GET.get('organization', None)
         country_id = request.GET.get('country_id', None)
-        if org_id is not None and country_id is not None:
-               visa_purpose = Visa_Purpose.objects.filter(organization=org_id, country_id=country_id)
+        if org_id is None and country_id is not None:
+            visa_purpose = Visa_Purpose.objects.all().order_by('id')
+            serializer = Visa_PurposeSerializers(visa_purpose, many=True)
+            if serializer.data:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+            else:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+        elif org_id is not None and country_id is not None:
+               visa_purpose = Visa_Purpose.objects.filter(organization=org_id, country=country_id).order_by('id')
                serializer = Visa_PurposeSerializers(visa_purpose,many=True)
                if serializer.data:
                   dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
                else:
                    dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
         elif country_id is None and org_id is not None:
-            visa_purpose = Visa_Purpose.objects.filter(organization=org_id)
+            visa_purpose = Visa_Purpose.objects.filter(organization=org_id).order_by('id')
             serializer = Visa_PurposeSerializers(visa_purpose, many=True)
             if serializer.data:
                 dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
             else:
                 dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
-        elif country_id is not None and org_id is None:
-            visa_purpose = Visa_Purpose.objects.filter(country_id=country_id)
-            serializer = Visa_PurposeSerializers(visa_purpose, many=True)
-            if serializer.data:
-                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
-            else:
-                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
-        else:
-            visa_purpose = Visa_Purpose.objects.all()
+        elif org_id is not None and country_id is None:
+            visa_purpose = Visa_Purpose.objects.filter(country=country_id).order_by('id')
             serializer = Visa_PurposeSerializers(visa_purpose, many=True)
             if serializer.data:
                 dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
