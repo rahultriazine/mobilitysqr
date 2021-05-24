@@ -14,7 +14,8 @@ from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,T
 from mobility_apps.travel.serializers import Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
 from mobility_apps.master.models import Country,City,Per_Diem,Dial_Code,Country_Master,State_Master,Location_Master,Taxgrid_Master,Taxgrid_Country,Taxgrid,National_Id,Secondory_Assignment
 from mobility_apps.master.models import Notification
-from mobility_apps.master.serializers.assinment_type import Secondory_AssignmentSerializers
+from mobility_apps.master.models import Create_Assignment
+from mobility_apps.master.serializers.assinment_type import Secondory_AssignmentSerializers,Create_AssignmentSerializers
 from mobility_apps.master.serializers.notification import NotificationSerializers
 from rest_framework.generics import RetrieveDestroyAPIView, ListCreateAPIView
 from django.core.mail import send_mail
@@ -298,7 +299,7 @@ class get_post_travel_request(ListCreateAPIView):
             else:
                 print(serializer.errors)
                 dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data': serializer.errors}
-            for data in data['travel_city']:
+            for data in request.data['travel_city']:
                 data["travel_req_id"] = travel_id
                 travel_request_detail = Travel_Request_DetailsSerializers(data=data)
                 if travel_request_detail.is_valid():
@@ -641,6 +642,13 @@ class get_view_travel_request(ListCreateAPIView):
                 travel_request_serializer.data[0]['secondory_assignment'] = assignment_type_serializer.data
             else:
                 travel_request_serializer.data[0]['secondory_assignment'] = ""
+            assignment_typeid = Create_Assignment.objects.filter(Ticket_ID=request.GET['travel_req_id'],organization=request.GET['org_id']).order_by('date_modified').last()
+            Create_Assignment_seria = Create_AssignmentSerializers(assignment_typeid)
+            if Create_Assignment_seria.data:
+                travel_request_serializer.data[0]['primary_assignment'] = Create_Assignment_seria.data
+            else:
+                travel_request_serializer.data[0]['primary_assignment'] = ""
+
 
             dict = {'massage': 'data found', 'status': True, 'data':travel_request_serializer.data[0]}
         else:
@@ -2133,13 +2141,10 @@ class assignment_travel_tax_grid(ListCreateAPIView):
     # Create a new employee
     def post(self, request):
         # import ipdb;ipdb.set_trace()
-
-
         try:
             ditsct=[]
             for data in request.data:
                 if data['update_id']:
-
                     ditsct.append(data['update_id'])
                     assignments=Assignment_Travel_Tax_Grid.objects.filter(id=data['update_id']).first()
                     assignment_update=Assignment_Travel_Tax_GridSerializers(assignments,data=data)
@@ -2157,7 +2162,7 @@ class assignment_travel_tax_grid(ListCreateAPIView):
                         dict = {'massage code': '200', 'massage': 'unsuccessful', 'status': False, 'data':assignment_travel.errors}
             return Response(dict, status=status.HTTP_200_OK)
         except Exception as e:
-            dict = {'massage code': 'already exists', 'massage': 'unsuccessful', 'status': False}
+            dict = {'massage': 'unsuccessful', 'status': False,'data': str(e)}
             return Response(dict, status=status.HTTP_200_OK)
 
 class get_org_count_travel_requests(ListCreateAPIView):
@@ -2566,7 +2571,8 @@ class assignment_post_approve_travelvisa_request(ListCreateAPIView):
             else:
                 visa_status=Status_Master.objects.filter(name="Approved").values("value")
                 request.data['action']=visa_status[0]['value']
-            request.data['action_notes']=request.data['request_notes']
+            # request.data['action_notes']=request.data['request_notes']
+            request.data['action_notes'] = ''
             request.data['email']=current_ticket_owner
             request.data['visa_req_id_id']=request.data['visa_req_id']
             request.data['organization']=request.data['org_id']

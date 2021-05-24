@@ -109,22 +109,22 @@ class get_post_per_diem(ListCreateAPIView):
             return Response(dict, status=status.HTTP_200_OK)
         else:
             if band is None and home_country is None:
-                currency = Per_Diem.objects.filter(organization=organization)
+                currency = Per_Diem.objects.filter(organization=organization).order_by('id')
                 serializer = Per_DiemSerializers(currency, many=True)
                 dict = {'message': MSG_SUCESS, 'status': True, 'data':serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
             elif band is not None and home_country is None:
-                currency = Per_Diem.objects.filter(organization=organization,band=band)
+                currency = Per_Diem.objects.filter(organization=organization,band=band).order_by('id')
                 serializer = Per_DiemSerializers(currency, many=True)
                 dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
             elif band is None and home_country is not None:
-                currency = Per_Diem.objects.filter(organization=organization,home_country=home_country)
+                currency = Per_Diem.objects.filter(organization=organization,home_country=home_country).order_by('id')
                 serializer = Per_DiemSerializers(currency, many=True)
                 dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
             else:
-                currency = Per_Diem.objects.filter(organization=organization, home_country=home_country,band=band)
+                currency = Per_Diem.objects.filter(organization=organization, home_country=home_country,band=band).order_by('id')
                 serializer = Per_DiemSerializers(currency, many=True)
                 dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
@@ -275,7 +275,7 @@ class get_currency_conversion(ListCreateAPIView):
     serializer_class = Currency_ConversionSerializers
 
     def get_queryset(self,from_currency,to_currency):
-        currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency).order_by('conversion_date')
+        currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency).order_by('-conversion_date')
         return currency
 
     # Get all currency

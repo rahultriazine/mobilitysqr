@@ -305,9 +305,9 @@ class bulk_upload_perdiem(ListCreateAPIView):
 class get_perdiem(ListCreateAPIView):
     serializer_class = Per_DiemSerializers
 
-    def get_queryset(self,country):
+    def get_queryset(self,country,home_country,organization):
         try:
-            per_diem = Per_Diem.objects.filter(country__icontains=country)
+            per_diem = Per_Diem.objects.filter(country__icontains=country,home_country__icontains=home_country,organization=organization).order_by('effective_date').last()
         # print(visa)
         except Per_Diem.DoesNotExist:
 
@@ -316,11 +316,11 @@ class get_perdiem(ListCreateAPIView):
 
     # Get all country:
     def get(self, request):
-        # import ipdb;ipdb.set_trace()
-        per_diem= self.get_queryset(request.GET['country'])
+
+        per_diem= self.get_queryset(request.GET['country'],request.GET['home_country'],request.GET['organization'])
         # print(visa)
         if per_diem:
-            serializer = Per_DiemSerializers(per_diem,many=True)
+            serializer = Per_DiemSerializers(per_diem)
             dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
             return Response(dict, status=status.HTTP_200_OK)
         else:
@@ -947,12 +947,12 @@ class post_country_policy(ListCreateAPIView):
             return Response(dict, status=status.HTTP_200_OK)
         else:
             if home_country is None:
-                country = Country_Policy.objects.filter(organization_id=organization_id)
+                country = Country_Policy.objects.filter(organization_id=organization_id).order_by('id')
                 serializer = Country_PolicySerializers(country,many=True)
                 dict = {'message':MSG_SUCESS,'status': True, 'data': serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
             else:
-                country = Country_Policy.objects.filter(organization_id=organization_id,home_country=home_country)
+                country = Country_Policy.objects.filter(organization_id=organization_id,home_country=home_country).order_by('id')
                 serializer = Country_PolicySerializers(country, many=True)
                 dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)

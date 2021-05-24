@@ -110,12 +110,12 @@ class get_update_project(ListCreateAPIView):
             serializer = ProjectSerializers(projectpid, data=request.data)
             if serializer.is_valid():
                 serializer.save()
-                dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
+                dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
             else:
-                dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.errors}
+                dict={"status":False, 'status_code':201,"message":MSG_FAILED,"data":serializer.errors}
         else:
-            dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":"Project ID is not in database"}
-        return Response(dict, status=status.HTTP_201_CREATED)
+            dict={"status":False,'status_code':201,"message":MSG_FAILED,"data":"Project ID is not in database"}
+        return Response(dict, status=status.HTTP_200_OK)
 
 
 

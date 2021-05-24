@@ -71,18 +71,15 @@ class emoloyeeinfo(APIView):
     serializer_class = UserinfoSerializers
     permission_classes = (IsAuthenticated,)
 
-
-
-    # Get all employee
-    # import ipdb;ipdb.set_trace()
     def post(self, request):
         t = date.today()
         logindata={}
         recent_login=str(date.today())
 
-        employees=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email'])).values("active_start_date","active_end_date")
+        employees=Employee.objects.filter(Q(emp_code__iexact=request.data['email'])|Q(user_name__iexact=request.data['email'])).values("active_start_date","active_end_date")
         cursor = connection.cursor()
-        employees_recent = Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email'])).values("last_login","recent_login")
+
+        employees_recent = Employee.objects.filter(Q(emp_code__iexact=request.data['email'])|Q(user_name__iexact=request.data['email'])).values("last_login","recent_login")
         if employees_recent:
             if not employees_recent[0]['last_login']:
                 sql = "UPDATE employee_employee SET last_login='"+str(employees_recent[0]['recent_login'])+"' WHERE email='"+request.data['email']+"'"
@@ -97,13 +94,13 @@ class emoloyeeinfo(APIView):
         if employees:
             if employees[0]['active_start_date']:
                 if employees[0]['active_start_date'] and employees[0]['active_end_date']=="":
-                    employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']),active_start_date__lte=t)
+                    employee=Employee.objects.filter(Q(emp_code__iexact=request.data['email'])|Q(user_name__iexact=request.data['email']),active_start_date__lte=t)
                 else:
-                    employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']),active_start_date__lte=t,active_end_date__gte=t)
+                    employee=Employee.objects.filter(Q(emp_code__iexact=request.data['email'])|Q(user_name__iexact=request.data['email']),active_start_date__lte=t,active_end_date__gte=t)
             else:
-                employee = Employee.objects.filter(Q(emp_code=request.data['email']) | Q(user_name=request.data['email']))
+                employee = Employee.objects.filter(Q(emp_code__iexact=request.data['email']) | Q(user_name__iexact=request.data['email']))
         else:
-            employee=Employee.objects.filter(Q(emp_code=request.data['email'])|Q(user_name=request.data['email']))
+            employee=Employee.objects.filter(Q(emp_code__iexact=request.data['email'])|Q(user_name__iexact=request.data['email']))
         if employee:
             emp_serializer = EmployeeSerializers(employee,many=True)
             infoemail=emp_serializer.data[0]['emp_code']
@@ -111,7 +108,7 @@ class emoloyeeinfo(APIView):
             emp_serializer.data[0]['org_id']=emp_serializer.data[0]['organization']
             emp_serializerss = Project.objects.filter(Q(business_lead=infoemail)|Q(client_executive_lead=infoemail)|Q(expense_approver=infoemail)|Q(project_manager=infoemail))
             emp_serializersss = Travel_Request.objects.filter(Q(business_lead=infoemail)|Q(client_executive_lead=infoemail)|Q(expense_approver=infoemail)|Q(project_manager=infoemail))
-            employeedeatils_serializerss = Employee.objects.filter(emp_code=emp_code).values('nationality')
+            employeedeatils_serializerss = Employee.objects.filter(emp_code__iexact=emp_code).values('nationality')
             print(employeedeatils_serializerss)
             if employeedeatils_serializerss:
                 emp_serializer.data[0]['home']=employeedeatils_serializerss[0]['nationality']
@@ -1348,11 +1345,11 @@ def file_size(request):
 class checkemployeeuser(APIView):
     def get(self, request):
         # import ipdb;ipdb.set_trace()
-        employees1 = Employee.objects.filter(user_name=request.GET['user_name'])
+        employees1 = Employee.objects.filter(user_name__iexact=request.GET['user_name'])
         if employees1:
             dict = {'massage': 'User Name Already Exist', 'status': True,'isUser':0}
         else:
-            dict = {'massage': 'User Name Available', 'status': True,'isUser':1}
+            dict = {'massage': 'User Name not Available', 'status': True,'isUser':1}
         return Response(dict, status=status.HTTP_200_OK)
 
 class checkemployeeemail(APIView):
@@ -1889,11 +1886,11 @@ class Otp_Generate(ListCreateAPIView):
         username=request.data.get('username')
         otp=str(uuid.uuid4().int)[:6]
         cursor = connection.cursor()
-        sql ="UPDATE api_user SET otp='"+otp+"' WHERE username='"+username+"'"
+        sql ="UPDATE api_user SET otp='"+otp+"' WHERE username ILIKE '"+username+"'"
         cursor.execute(sql)
         updated_record = cursor.rowcount
         if updated_record:
-            email = Employee.objects.filter(user_name=username).values("email")
+            email = Employee.objects.filter(user_name__iexact=username).values("email")
             if email:
                 ctxt = {
                     'OTP': otp,
@@ -1951,15 +1948,13 @@ class access_token(ListCreateAPIView):
             if (username is None) or (otp is None):
                 dict = {'massage': 'Username and OTP required', 'status': False}
                 return Response(dict, status=status.HTTP_200_OK)
-            userss=User.objects.filter(username=username).values("id")
+            userss=User.objects.filter(username__iexact=username,otp=otp).values("id")
 
             if userss:
                 otp=User.objects.filter(otp=otp).values("id")
                 print(otp)
                 if otp:
                     user=otp[0]['id']
-
-                    #serialized_user = UserSerializer(user).data
 
                     access_token = generate_access_token(user)
                     refresh_token = generate_refresh_token(user)
@@ -1974,7 +1969,7 @@ class access_token(ListCreateAPIView):
                     dict = {'massage': 'Wrong OTP', 'status': False}
                     return Response(dict, status=status.HTTP_200_OK)
             else:
-                dict = {'massage': 'Wrong Email', 'status': False}
+                dict = {'massage': 'Wrong Username and OTP', 'status': False}
                 return Response(dict, status=status.HTTP_200_OK)
 
 
@@ -2045,7 +2040,7 @@ class jwt_custom_login(APIView):
         password = request.data.get('password')
         response = Response()
         if (username is not None) and (password is not None):
-            user_pass = User.objects.filter(username=username).values('password','id')
+            user_pass = User.objects.filter(username__iexact=username).values('password','id')
             if user_pass:
                 user_data = check_password(password, user_pass[0]['password'])
                 if user_data:
