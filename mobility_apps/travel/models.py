@@ -377,7 +377,7 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
         managed = True
         verbose_name = _('Assignment Travel Request Status')
 		
-class Assignment_Travel_Tax_Grid(TimeStampedModel, GeneratedByModel, Status):
+class   Assignment_Travel_Tax_Grid(TimeStampedModel, GeneratedByModel, Status):
     travel_req_id = models.ForeignKey(Travel_Request,to_field="travel_req_id",null=True, blank=True,  on_delete=models.CASCADE)
     tax_label_id = models.CharField(max_length=100,null=True, blank=True)
     amount = models.CharField(max_length=100, blank=True, null=True)

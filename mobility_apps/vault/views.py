@@ -10,6 +10,7 @@ from mobility_apps.vault.serializer import Vault_type_infoSerializers,Vault_type
 from rest_framework.permissions import (AllowAny,IsAuthenticated)
 from django.conf import settings
 import os
+import datetime
 
 
 
@@ -232,17 +233,21 @@ class getPostComplianceAnswer(APIView):
 
     def post(self,request):
         try:
+            emp_code = request.data[0]['emp_code']
+            check = self.permission_check(emp_code)
+            if check is False:
+                dict = {'status': False, 'message': 'Already answered, you are eligible to answer in next month'}
+                return Response(dict, status=status.HTTP_200_OK)
             alldata = []
             for data in request.data:
                 serializer = Employee_complianceSerializers(data=data)
                 if serializer.is_valid():
                     serializer.save()
-                    dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
-                    alldata.append(dict)
+                    alldata.append(serializer.data)
                 else:
-                    dict = {'message': 'Failed', 'status': False, 'data': serializer.errors}
-                    alldata.append(dict)
-            return Response(alldata, status=status.HTTP_200_OK)
+                    alldata.append(serializer.errors)
+                dict = {'message': 'Successful', 'status': True, 'data': alldata}
+            return Response(dict, status=status.HTTP_200_OK)
         except Exception as e:
             dict = {'status': False, 'error': str(e)}
             return Response(dict, status=status.HTTP_200_OK)
@@ -255,11 +260,31 @@ class getPostComplianceAnswer(APIView):
                 dict = {'message': 'Please enter employee code ', 'status': False}
                 return Response(dict, status=status.HTTP_200_OK)
             else:
-                compserilizer = Employee_compliance.objects.filter(emp_code=emp_code)
+                compserilizer = Employee_compliance.objects.filter(emp_code=emp_code).order_by('date_created')[:5]
                 serializer = Employee_complianceSerializers(compserilizer, many=True)
-                dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+                if serializer.data:
+                    dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+                else:
+                    compserilizer = Compliance.objects.all()
+                    serializer = ComplianceSerializers(compserilizer, many=True)
+                    dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
 
         except Exception as e:
             dict = {'status': False, 'error': str(e)}
             return Response(dict, status=status.HTTP_200_OK)
+
+
+    def permission_check(self,emp_code):
+        data = Employee_compliance.objects.filter(emp_code=emp_code).last()
+        if data:
+            date_time = str(data.date_created)
+            date = date_time.split(' ')
+            atee = datetime.datetime.strptime(date[0], "%Y-%m-%d")
+            todays_date = datetime.date.today()
+            if atee.month == todays_date.month:
+                return False
+            else:
+                return True
+        else:
+            return True

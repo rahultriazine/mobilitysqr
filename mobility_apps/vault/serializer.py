@@ -16,12 +16,25 @@ class Vault_type_infoSerializers(serializers.ModelSerializer):
 
 
 class ComplianceSerializers(serializers.ModelSerializer):
+    compl_ans = serializers.SerializerMethodField()
+    emp_code = serializers.SerializerMethodField()
+    date_created = serializers.SerializerMethodField()
     class Meta:
         model = Compliance
-        fields = '__all__'
+        fields = ['id','emp_code','compl_ques','compl_ans','date_created']
+
+    def get_compl_ans(self, instance):
+        return False
+
+    def get_emp_code(self, instance):
+        return ''
+    def get_date_created(selfs,instance):
+        return ''
+
 
 
 class Employee_complianceSerializers(serializers.ModelSerializer):
     class Meta:
         model = Employee_compliance
-        fields ='__all__'
+        # fields ='__all__'
+        fields = ['id', 'emp_code', 'compl_ques', 'compl_ans','date_created']
