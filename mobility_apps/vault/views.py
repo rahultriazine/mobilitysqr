@@ -236,7 +236,7 @@ class getPostComplianceAnswer(APIView):
             emp_code = request.data[0]['emp_code']
             check = self.permission_check(emp_code)
             if check is False:
-                dict = {'status': False, 'message': 'Already answered, you are eligible to answer in next month'}
+                dict = {'status': False, 'message': 'Already answered, you are eligible to answer in next month.'}
                 return Response(dict, status=status.HTTP_200_OK)
             alldata = []
             for data in request.data:
@@ -246,7 +246,7 @@ class getPostComplianceAnswer(APIView):
                     alldata.append(serializer.data)
                 else:
                     alldata.append(serializer.errors)
-                dict = {'message': 'Successful', 'status': True, 'data': alldata}
+                dict = {'message': 'successfully registered your response.', 'status': True, 'data': alldata}
             return Response(dict, status=status.HTTP_200_OK)
         except Exception as e:
             dict = {'status': False, 'error': str(e)}

@@ -227,8 +227,8 @@ class get_project_list_user(ListCreateAPIView):
 class get_projects(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = ProjectSerializers
-    
     pagination_class = CustomPagination
+
     def get(self, request):
         if request.GET['search']:
            queryset = Project.objects.filter(Q(pid__icontains=request.GET['search'])|Q(project_name__icontains=request.GET['search']),organization=request.GET['org'])
@@ -262,20 +262,25 @@ class get_projects(ListCreateAPIView):
         else:
             dict = {'status': "False", 'Message':MSG_FAILED}
         return Response(dict, status=status.HTTP_200_OK)
+
     def employee_name(self,emp_code):
         if emp_code:
             emp_code=Employee.objects.filter(emp_code=emp_code).values('emp_code','preferred_first_name','first_name','last_name')
-            if emp_code[0]['first_name']:
-                first_name=emp_code[0]['first_name']
-            else:
-                first_name=''
+            if emp_code:
+                if emp_code[0]['first_name']:
+                    first_name=emp_code[0]['first_name']
+                else:
+                    first_name=''
 
-            if emp_code[0]['last_name']:
-                last_name=emp_code[0]['last_name']
+                if emp_code[0]['last_name']:
+                    last_name=emp_code[0]['last_name']
+                else:
+                    last_name=""
+                name=first_name+" "+last_name
+                return name
             else:
-                last_name=""
-            name=first_name+" "+last_name
-            return name
+                name = ''
+                return name
 
 ##################################################
 " bulk upload json project"

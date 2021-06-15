@@ -93,14 +93,31 @@ class get_post_vendor(ListCreateAPIView):
 
     # Create a new vendor
     def post(self, request):
+
         vendorid = Vendor.objects.filter(
            vendor_id=request.data.get('vendor_id')).first()
         if (vendorid):
+            # data = Vendor.object.get(~Q(vendor_id=request.data.get('vendor_id')),vendor_email__iexact=request.data['vendor_email'])
+            # if data is None:
+            #     dict = {"status": False, "message": 'This email id is already being used'}
+            #     return Response(dict, status=status.HTTP_201_CREATED)
+            # data1 = Employee.object.get(email__iexact=request.data['vendor_email'])
+            # if data1 is None:
+            #     dict = {"status": False, "message": 'This email id is already being used'}
+            #     return Response(dict, status=status.HTTP_201_CREATED)
             serializer = VendorSerializers(
                 vendorid, data=request.data)
         else:
             request.data['vendor_id']="VN"+str(uuid.uuid4().int)[:6]
             serializer = VendorSerializers(data=request.data)
+            # data = Vendor.objects.get(vendor_email__iexact=request.data['vendor_email'])
+            # if data is None:
+            #     dict = {"status": False, "message": 'This email id is already being used'}
+            #     return Response(dict, status=status.HTTP_201_CREATED)
+            # data1 = Employee.objects.get(email__iexact=request.data['vendor_email'])
+            # if data1 is None:
+            #     dict = {"status": False, "message": 'This email id is already being used'}
+            #     return Response(dict, status=status.HTTP_201_CREATED)
         if serializer.is_valid():
             serializer.save()
             request.data['user_name']=request.data['vendor_email']
@@ -200,7 +217,7 @@ class get_vendors(ListCreateAPIView):
 
     # Get all vendor
     def get(self, request):
-        vendor = Vendor.objects.all()
+        vendor = Vendor.objects.all().order_by('id')
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = VendorSerializers(vendor,many=True)

@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="bd26d484-af20-43bd-ae4c-447b075e89cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobility_apps/travel/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/travel/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error_03_06_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error_03_06_2021.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info_03_06_2021.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info_03_06_2021.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/templates/email/vendor_registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/media/templates/email/vendor_registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/letter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/letter/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/approve_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/approve_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/assignment_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/assignment_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/country.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/country.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/currency.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/currency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/project.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobility_apps/master/views/vendor.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/master/views/vendor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/vault/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/vault/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobility_apps/vault/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mobility_apps/vault/views.py" afterDir="false" />

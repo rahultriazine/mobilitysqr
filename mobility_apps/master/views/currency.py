@@ -11,6 +11,10 @@ from rest_framework.permissions import  (AllowAny,IsAuthenticated)
 from django.db.models.deletion import ProtectedError
 import pandas as pd
 from mobility_apps.response_message import *
+from django.db.models import Q
+import datetime
+
+from django.db.models import Max
 
 class get_delete_update_currency(RetrieveDestroyAPIView):
     http_method_names = ['get', 'put', 'delete', 'head', 'options', 'trace']
@@ -356,9 +360,31 @@ class currency_conversion_history(ListCreateAPIView):
     serializer_class = Currency_Conversion_HistorySerializers
     # post all currency
     def get(self, request):
-        currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
+        from_currency = request.GET.get('from_currency', None)
+        to_currency = request.GET.get('to_currency', None)
+        from_date = request.GET.get('from_date', None)
+        to_date = request.GET.get('to_date', None)
+        print('#######from_currency####',from_currency)
+        print('#######to_currency####',to_currency)
+        print('#######from_date####',from_date)
+        print('#######to_date####',to_date)
+
+        filter_query = Q()
+        if from_currency is not None and from_currency !='':
+            filter_query.add(Q(from_currency=from_currency), Q.AND)
+        if to_currency is not None and to_currency !='':
+            filter_query.add(Q(to_currency__iexact=to_currency), Q.AND)
+        if from_date is not None and from_date !='':
+            filter_query.add(Q(conversion_date__gte=from_date), Q.AND)
+        if to_date is not None and to_date !='':
+            to_date = to_date+" "+"23:59:00"
+            filter_query.add(Q(conversion_date__lte=to_date), Q.AND)
+        currency = Currency_Conversion_History.objects.filter(filter_query)
+        # currency = currency1.annotate(Max('conversion_date'))
+        # print("##########",currency)
+        # .values('acct_id').annotate(count=Count('id')).order_by('month').last()
+        # currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+
         serializer = Currency_Conversion_HistorySerializers(currency,many=True)
         print(serializer.data)
         dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}

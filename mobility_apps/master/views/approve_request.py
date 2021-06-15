@@ -10,6 +10,7 @@ from mobility_apps.master.models import Approval_Hierarchy ,Request_Approvals,St
 from mobility_apps.master.serializers.approve_request import Approve_RequestSerializers ,Request_ApprovalsSerializers,Status_MasterSerializers
 from rest_framework.generics import RetrieveDestroyAPIView, ListCreateAPIView
 from rest_framework.permissions import  (AllowAny,IsAuthenticated)
+from mobility_apps.employee.models import *
 from django.db.models.deletion import ProtectedError
 import pandas as pd
 import json
@@ -72,7 +73,9 @@ class get_action_status(ListCreateAPIView):
     # Get all employee_detail
     def get(self, request):
         employee = self.get_queryset(request.GET['module'])
-        #print(employee)
+        # user_id = self.request.user.id
+        # empl = Employee.objects.get(id=int(user_id))
+        # print(empl.role)
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = Status_MasterSerializers(employee,many=True)

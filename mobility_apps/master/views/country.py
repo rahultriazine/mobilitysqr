@@ -488,7 +488,7 @@ class get_post_location(APIView):
            return Response(dict, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request):
-        country = Location_Master.objects.filter(country=request.GET['country']).order_by('location_name')
+        country = Location_Master.objects.filter(country=request.GET['country']).order_by('location_name').order_by('id')
         serializer = Location_MasterSerializers(country,many=True)
         dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
@@ -631,11 +631,12 @@ class get_national_id(ListCreateAPIView):
     serializer_class = Taxgrid_MasterSerializers
 
     def get_queryset(self,country):
-        country = National_Id.objects.filter(country=country)
+        country = National_Id.objects.filter(country=country).order_by('id')
         return country
 
     # Get all country:
     def get(self, request):
+
         taxgrid = self.get_queryset(request.GET['country'])
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
@@ -896,15 +897,22 @@ class get_post_country_policy(ListCreateAPIView):
     
     # Get all country:
     def get(self, request):
-        days=int(request.GET['days'])
-        criterion1 = Q(country_name=request.GET['country_code'])
-        country = Country_Policy.objects.filter(criterion1).values('bv_threshold')
-        print(country[0]['bv_threshold'])
-        if int(country[0]['bv_threshold'])<days:
-           dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'policy_violations': 'Yes'}
+        days = int(request.GET['days'])
+        country_name = request.GET['country_code']
+        home_country = request.GET['home_country']
+        organization_id = request.GET['organization_id']
+        country = Country_Policy.objects.filter(country_name=country_name,home_country=home_country,organization_id=organization_id).values('bv_threshold').last()
+        # print('##############',country)
+        if country:
+            if int(country['bv_threshold'])<days:
+               dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'policy_violations': 'Yes'}
+            else:
+               dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'policy_violations': 'No'}
+            return Response(dict, status=status.HTTP_200_OK)
         else:
-           dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'policy_violations': 'No'}
-        return Response(dict, status=status.HTTP_200_OK)
+            dict = {'message': "Master country policy is not for this country", 'status_code': 200, 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+
 
     def post(self, request):
         try:

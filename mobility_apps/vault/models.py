@@ -44,6 +44,7 @@ class Vault_type_info(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Compliance(TimeStampedModel, GeneratedByModel, Status):
+    ques_id = models.CharField(max_length=200,null=True, blank=True)
     compl_ques = models.CharField(max_length=200, null=True, blank=True)
 
     class Meta:
@@ -55,6 +56,7 @@ class Compliance(TimeStampedModel, GeneratedByModel, Status):
 
 class Employee_compliance(TimeStampedModel, GeneratedByModel, Status):
     emp_code = models.ForeignKey(Employee,to_field='emp_code', default="emp001", on_delete=models.CASCADE)
+    ques_id = models.CharField(max_length=200, null=True, blank=True)
     compl_ques = models.CharField(max_length=200, null=True, blank=True)
     compl_ans = models.BooleanField(default=False)
 
