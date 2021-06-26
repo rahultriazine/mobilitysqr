@@ -1,106 +1,123 @@
-ERROR|08/Apr/2021 13:32:59|log|10795|140351296198400|Internal Server Error: /get_post_approve_travelvisa_request/
+ERROR|08/Apr/2021 13:07:50|exception|26709|140264226154240|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Apr/2021 13:11:27|basehttp|26709|140264234546944|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|08/Apr/2021 16:31:09|exception|26709|140263825598208|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Apr/2021 19:51:34|exception|26709|140264181573376|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Apr/2021 23:17:56|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Apr/2021 02:08:51|log|26709|140263833990912|Internal Server Error: /users
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1408, in post
-    self.nextLevelApproveTravel_if_sameEmp_to_Approve(self, request.data['travel_req_id'],request.data['org_id'],request.data['modified_by'])
-TypeError: nextLevelApproveTravel_if_sameEmp_to_Approve() takes 4 positional arguments but 5 were given
-ERROR|08/Apr/2021 13:32:59|basehttp|10795|140351296198400|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 500 19923
-ERROR|08/Apr/2021 14:37:03|log|11902|140225440073472|Internal Server Error: /get_post_approve_travelvisa_request/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1408, in post
-    self.nextLevelApproveTravel_if_sameEmp_to_Approve(request.data['travel_req_id'],request.data['org_id'],request.data['modified_by'])
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1688, in nextLevelApproveTravel_if_sameEmp_to_Approve
-    check_data = self.checkTravelRequestTicketOwner(travel_req_id)
-TypeError: checkTravelRequestTicketOwner() takes 1 positional argument but 2 were given
-ERROR|08/Apr/2021 14:37:03|basehttp|11902|140225440073472|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 500 20108
-ERROR|08/Apr/2021 14:47:58|log|12345|140130067793664|Internal Server Error: /get_post_approve_travelvisa_request/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1408, in post
-    self.nextLevelApproveTravel_if_sameEmp_to_Approve(request.data['travel_req_id'],request.data['org_id'],request.data['modified_by'])
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1692, in nextLevelApproveTravel_if_sameEmp_to_Approve
-    self.travelApproveAutomatic(travel_req_id, org_id, modified_by, check_data)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1710, in travelApproveAutomatic
-    data = dict()
-UnboundLocalError: local variable 'dict' referenced before assignment
-ERROR|08/Apr/2021 14:47:58|basehttp|12345|140130067793664|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 500 20253
-ERROR|08/Apr/2021 14:56:56|log|12656|140433612867328|Internal Server Error: /get_post_approve_travelvisa_request/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1408, in post
-    self.nextLevelApproveTravel_if_sameEmp_to_Approve(request.data['travel_req_id'],request.data['org_id'],request.data['modified_by'])
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1692, in nextLevelApproveTravel_if_sameEmp_to_Approve
-    self.travelApproveAutomatic(travel_req_id, org_id, modified_by, check_data)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 1714, in travelApproveAutomatic
-    data['current_ticket_owner'] = travel_data[0]['project_manager']
-TypeError: list indices must be integers or slices, not str
-ERROR|08/Apr/2021 14:56:56|basehttp|12656|140433612867328|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 500 20296
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|09/Apr/2021 02:08:51|basehttp|26709|140263833990912|"POST /users?page=&size=5 HTTP/1.1" 500 65390
+ERROR|09/Apr/2021 02:37:42|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Apr/2021 06:00:28|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Apr/2021 09:20:33|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Apr/2021 11:58:23|basehttp|26709|140264181573376|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|09/Apr/2021 12:50:05|exception|26709|140264193111808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Apr/2021 16:15:09|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Apr/2021 19:32:35|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Apr/2021 20:59:46|basehttp|26709|140264193111808|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|09/Apr/2021 22:56:00|exception|26709|140264193111808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 02:13:36|exception|26709|140264193111808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 04:54:58|basehttp|26709|140264193111808|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Apr/2021 05:35:14|exception|26709|140264193111808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 08:09:36|exception|26709|140264193111808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 08:22:47|basehttp|26709|140264193111808|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Apr/2021 08:22:47|basehttp|26709|140264193111808|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Apr/2021 09:04:24|exception|26709|140264193111808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 11:25:45|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 12:18:49|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 14:43:22|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 15:41:38|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 17:37:00|basehttp|26709|140263817205504|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|10/Apr/2021 17:59:43|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 19:01:01|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 21:18:42|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Apr/2021 22:19:08|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 00:37:10|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 00:37:10|basehttp|26709|140263833990912|"GET /manager/html HTTP/1.1" 500 59
+ERROR|11/Apr/2021 01:41:42|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 01:48:01|basehttp|26709|140263833990912|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|11/Apr/2021 02:35:58|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 02:55:12|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|11/Apr/2021 03:14:07|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 03:46:45|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 05:00:02|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 05:07:10|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 05:42:34|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 06:31:39|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 06:57:02|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 07:12:28|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 08:20:27|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 08:38:53|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 10:06:36|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 10:13:54|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 11:35:01|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 13:13:54|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 14:16:20|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 14:47:26|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 16:12:47|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 16:24:29|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 16:24:29|basehttp|26709|140263833990912|"GET /manager/html HTTP/1.1" 500 59
+ERROR|11/Apr/2021 17:59:00|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 18:03:01|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 19:39:44|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 20:29:58|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 20:54:05|basehttp|26709|140263833990912|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|11/Apr/2021 21:25:42|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 21:37:38|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|11/Apr/2021 22:06:19|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/Apr/2021 22:58:08|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 00:44:40|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 01:55:47|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 02:06:38|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 03:46:55|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 04:05:01|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 04:05:57|basehttp|26709|140263817205504|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 05:15:47|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 05:38:14|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 07:04:29|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 07:24:55|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 08:24:05|exception|26709|140263817205504|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 09:35:47|exception|26709|140263800420096|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 09:51:00|exception|26709|140263800420096|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 10:45:58|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 11:37:48|exception|26709|140263833990912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:56:46|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 12:58:58|basehttp|26709|140263833990912|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|12/Apr/2021 13:14:53|basehttp|26709|140264193111808|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|12/Apr/2021 14:01:21|exception|26709|140264181573376|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 14:14:39|exception|26709|140264181573376|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/Apr/2021 14:54:34|exception|26709|140264181573376|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

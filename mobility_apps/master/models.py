@@ -104,7 +104,8 @@ class Organization(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Project(TimeStampedModel, GeneratedByModel):
-    pid = models.CharField(max_length=20, unique=True)
+    pid = models.CharField(max_length=50, unique=True)
+    pid_disp = models.CharField(max_length=100, null=True, blank=True)
     project_name = models.CharField(max_length=100, blank=True)
     start_date = models.CharField(max_length=100, null=True, blank=True)
     End_Date = models.CharField(max_length=100, null=True, blank=True)  # plus the time for last date
@@ -130,13 +131,14 @@ class Project(TimeStampedModel, GeneratedByModel):
         managed = True
         verbose_name = _('Project')
         verbose_name_plural = _('Project')
+        unique_together = ('pid_disp','organization')
 
     def __str__(self):
         return self.project_name
 
 
 class Visa_Purpose(TimeStampedModel, GeneratedByModel, Status):
-    VPID = models.CharField(max_length=10, unique=True)
+    VPID = models.CharField(max_length=50)
     country = models.CharField(max_length=100,default="231",blank=True)
     purpose_name = models.CharField(max_length=100)
     applicable_visa = models.CharField(max_length=15)
@@ -158,12 +160,14 @@ class Visa_Purpose(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Visa Purpose')
         verbose_name_plural = _('Visa Purpose')
+        unique_together = ('VPID','organization')
 
     def __str__(self):
         return self.VPID
 
     def __unicode__(self):
         return self.VPID
+        
 
 
 #
@@ -366,7 +370,7 @@ class Vendor(TimeStampedModel, GeneratedByModel, Status):
 class Vendor_Category(TimeStampedModel, GeneratedByModel, Status):
     vendor_id = models.CharField(max_length=100, blank=True)
     vendor_name = models.CharField(max_length=100, blank=True)
-    category_id = models.CharField(max_length=200, blank=True)
+    category_id = models.IntegerField(max_length=200, blank=True)
     category_name = models.CharField(max_length=200, blank=True)
     organization = models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100, null=True, blank=True)
@@ -395,7 +399,7 @@ class Vendor_Category(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Vendor_Master(TimeStampedModel, GeneratedByModel, Status):
-    vendor_id = models.CharField(unique=True, max_length=100)
+    vendor_id = models.IntegerField(max_length=100)
     vendor_type = models.CharField(max_length=100, blank=True)
     action=models.CharField(max_length=100, blank=True)
     organization = models.CharField(max_length=100, null=True, blank=True)
@@ -416,6 +420,7 @@ class Vendor_Master(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Vendor Master')
         verbose_name_plural = _('Vendor Master')
+        unique_together = ('vendor_type','organization')
 
     def __str__(self):
         return self.vendor_id
@@ -546,7 +551,7 @@ class Assignment_Group(TimeStampedModel, GeneratedByModel, Status):
 class Currency_Conversion(TimeStampedModel, GeneratedByModel, Status):
     from_currency= models.CharField(max_length=10, null=True,blank=True)
     to_currency = models.CharField(max_length=100,null=True, blank=True)
-    conversion_date =  models.DateTimeField(max_length=10,null=True, blank=True)
+    conversion_date=  models.DateTimeField(max_length=10,null=True, blank=True)
     conversion_rate = models.CharField(max_length=200, null=True, blank=True)
     status_code = models.CharField(max_length=200,null=True, blank=True)
     organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
@@ -578,7 +583,7 @@ class Currency_Conversion(TimeStampedModel, GeneratedByModel, Status):
 class Currency_Conversion_History(TimeStampedModel, GeneratedByModel, Status):
     from_currency= models.CharField(max_length=10, null=True,blank=True)
     to_currency = models.CharField(max_length=100,null=True, blank=True)
-    conversion_date =  models.DateTimeField(max_length=10,null=True, blank=True)
+    conversion_date=  models.DateTimeField(max_length=10,null=True, blank=True)
     conversion_rate = models.CharField(max_length=200, null=True, blank=True)
     status_code = models.CharField(max_length=200,null=True, blank=True)
     organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
@@ -607,7 +612,7 @@ class Currency_Conversion_History(TimeStampedModel, GeneratedByModel, Status):
         return self.from_currency
 
 class Currency(TimeStampedModel, GeneratedByModel, Status):
-    currency_code = models.CharField(unique=True, max_length=4)
+    currency_code = models.CharField(max_length=4,unique=True)
     currency_name = models.CharField(max_length=100, blank=True)
     currency_description = models.CharField(max_length=200, blank=True)
     status_type = models.CharField(max_length=200, blank=True)
@@ -629,6 +634,7 @@ class Currency(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Currency')
         verbose_name_plural = _('Currency')
+        # unique_together = ('currency_code','organization')
 
     def __str__(self):
         return self.currency_name
@@ -850,7 +856,7 @@ class State_Master(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Location_Master(TimeStampedModel, GeneratedByModel, Status):
-    location_code= models.CharField(unique=True,max_length=100,null=True, blank=True)
+    location_code= models.CharField(max_length=100,null=True, blank=True)
     location_name= models.CharField(max_length=100,null=True, blank=True)
     description= models.CharField(max_length=500,null=True, blank=True)
     status = models.CharField(max_length=100,null=True, blank=True)

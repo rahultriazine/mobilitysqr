@@ -508,3 +508,1723 @@ ERROR|24/Feb/2021 10:55:21|basehttp|13079|140143826556672|"GET /get_travel_statu
 ERROR|24/Feb/2021 12:08:58|exception|13079|140143826556672|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
 ERROR|24/Feb/2021 12:14:10|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
 ERROR|24/Feb/2021 13:01:38|exception|13079|140144193410816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 13:52:34|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 14:51:00|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 15:24:17|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 16:17:17|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 16:32:26|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 17:04:40|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 18:03:48|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 20:20:15|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 22:07:27|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Feb/2021 22:40:04|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 00:30:16|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 00:39:52|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 01:14:40|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 01:14:40|basehttp|13079|140143818163968|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|25/Feb/2021 01:15:48|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 02:04:10|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 02:09:15|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 02:45:53|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 02:48:16|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 02:48:59|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 03:14:14|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 04:09:35|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 04:09:35|basehttp|13079|140144201803520|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Feb/2021 04:17:22|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 04:17:22|basehttp|13079|140144201803520|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Feb/2021 04:43:43|log|13079|140143818163968|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 04:43:43|basehttp|13079|140143818163968|"POST /users?page=&size=5 HTTP/1.1" 500 65447
+ERROR|25/Feb/2021 04:45:26|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 05:05:26|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 05:05:26|basehttp|13079|140144201803520|"GET /script HTTP/1.1" 500 59
+ERROR|25/Feb/2021 05:11:25|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 05:54:52|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 05:54:52|basehttp|13079|140144201803520|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Feb/2021 06:05:29|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 07:29:47|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 08:31:56|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 08:47:44|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 09:10:10|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 09:12:55|exception|13079|140144201803520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 10:53:15|exception|13079|140143818163968|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 11:01:27|exception|13079|140143834949376|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 11:03:28|log|13079|140144193410816|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:03:28|log|13079|140143843342080|Internal Server Error: /get_action_status/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:03:28|log|13079|140143818163968|Internal Server Error: /get_post_notification/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:03:28|basehttp|13079|140144193410816|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 500 21479
+ERROR|25/Feb/2021 11:03:28|basehttp|13079|140143843342080|"GET /get_action_status/?module=T, HTTP/1.1" 500 21319
+ERROR|25/Feb/2021 11:03:28|basehttp|13079|140143818163968|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 500 21399
+ERROR|25/Feb/2021 11:07:28|log|13079|140144193410816|Internal Server Error: /get_action_status/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:07:28|log|13079|140143818163968|Internal Server Error: /get_post_notification/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:07:28|log|13079|140143843342080|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:07:28|basehttp|13079|140144193410816|"GET /get_action_status/?module=T, HTTP/1.1" 500 21319
+ERROR|25/Feb/2021 11:07:28|basehttp|13079|140143818163968|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 500 21399
+ERROR|25/Feb/2021 11:07:28|basehttp|13079|140143843342080|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 500 21479
+ERROR|25/Feb/2021 11:08:16|log|13079|140143834949376|Internal Server Error: /get_post_notification/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:08:16|basehttp|13079|140143834949376|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 500 21399
+ERROR|25/Feb/2021 11:08:16|log|13079|140143809771264|Internal Server Error: /get_action_status/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:08:16|log|13079|140143826556672|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:08:16|basehttp|13079|140143809771264|"GET /get_action_status/?module=T, HTTP/1.1" 500 21319
+ERROR|25/Feb/2021 11:08:16|basehttp|13079|140143826556672|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 500 21479
+ERROR|25/Feb/2021 11:09:58|log|13079|140143801378560|Internal Server Error: /get_post_notification/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:09:58|log|13079|140143373580032|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:09:58|log|13079|140143792985856|Internal Server Error: /get_action_status/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 400, in initial
+    self.perform_authentication(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 326, in perform_authentication
+    request.user
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 223, in user
+    self._authenticate()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/request.py", line 376, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 38, in authenticate
+    return self.get_user(validated_token), None
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/authentication.py", line 111, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:09:58|basehttp|13079|140143801378560|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 500 21399
+ERROR|25/Feb/2021 11:09:58|basehttp|13079|140143373580032|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 500 21479
+ERROR|25/Feb/2021 11:09:58|basehttp|13079|140143792985856|"GET /get_action_status/?module=T, HTTP/1.1" 500 21319
+ERROR|25/Feb/2021 11:10:41|log|13079|140143818163968|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:10:41|basehttp|13079|140143818163968|"POST /api/login/ HTTP/1.1" 500 21483
+ERROR|25/Feb/2021 11:13:29|log|13079|140143818163968|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:13:29|basehttp|13079|140143818163968|"POST /api/login/ HTTP/1.1" 500 21483
+ERROR|25/Feb/2021 11:15:47|log|13079|140143818163968|Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 11:15:47|basehttp|13079|140143818163968|"POST /api/login HTTP/1.1" 500 64460
+ERROR|25/Feb/2021 11:21:20|log|13079|140143843342080|Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 11:21:20|basehttp|13079|140143843342080|"POST /api/login HTTP/1.1" 500 64460
+ERROR|25/Feb/2021 11:23:55|log|13079|140143792985856|Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 11:23:55|basehttp|13079|140143792985856|"POST /api/login HTTP/1.1" 500 64460
+ERROR|25/Feb/2021 11:24:56|log|13079|140143792985856|Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 11:24:56|basehttp|13079|140143792985856|"POST /api/login HTTP/1.1" 500 64460
+ERROR|25/Feb/2021 11:26:20|log|13079|140143843342080|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:26:20|basehttp|13079|140143843342080|"POST /api/login/ HTTP/1.1" 500 21483
+ERROR|25/Feb/2021 11:27:12|log|13079|140143843342080|Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 11:27:12|basehttp|13079|140143843342080|"POST /api/login HTTP/1.1" 500 64460
+ERROR|25/Feb/2021 11:27:22|log|13079|140143843342080|Internal Server Error: /api/login
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 11:27:22|basehttp|13079|140143843342080|"POST /api/login HTTP/1.1" 500 64460
+ERROR|25/Feb/2021 11:29:53|log|13079|140143843342080|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:29:53|basehttp|13079|140143843342080|"POST /api/login/ HTTP/1.1" 500 21483
+ERROR|25/Feb/2021 11:35:26|log|13079|140143843342080|Internal Server Error: /checkemployeeuser/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 1320, in get
+    if employees1:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:35:26|basehttp|13079|140143843342080|"GET /checkemployeeuser/?user_name=divyanshu094 HTTP/1.1" 500 19659
+ERROR|25/Feb/2021 11:37:59|log|13079|140143843342080|Internal Server Error: /checkemployeeuser/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 1320, in get
+    if employees1:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:37:59|basehttp|13079|140143843342080|"GET /checkemployeeuser/?user_name=divyanshu094 HTTP/1.1" 500 19659
+ERROR|25/Feb/2021 11:41:40|log|13079|140143843342080|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:41:40|basehttp|13079|140143843342080|"POST /api/login/ HTTP/1.1" 500 21483
+ERROR|25/Feb/2021 11:47:43|log|13079|140143843342080|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:47:43|basehttp|13079|140143843342080|"POST /api/login/ HTTP/1.1" 500 21279
+ERROR|25/Feb/2021 11:52:54|log|13079|140143843342080|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:52:54|basehttp|13079|140143843342080|"POST /api/login/ HTTP/1.1" 500 21483
+ERROR|25/Feb/2021 11:53:15|log|13079|140143792985856|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:53:15|basehttp|13079|140143792985856|"POST /api/login/ HTTP/1.1" 500 21279
+ERROR|25/Feb/2021 11:55:39|log|13079|140143843342080|Internal Server Error: /api/login/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+pyodbc.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/views.py", line 27, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 71, in validate
+    data = super().validate(attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework_simplejwt/serializers.py", line 43, in validate
+    self.user = authenticate(**authenticate_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 307, in get_new_connection
+    timeout=timeout)
+django.db.utils.ProgrammingError: ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "mobilitysqrpreprod" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+ERROR|25/Feb/2021 11:55:39|basehttp|13079|140143843342080|"POST /api/login/ HTTP/1.1" 500 21279
+ERROR|25/Feb/2021 11:55:41|exception|13079|140143843342080|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

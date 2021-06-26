@@ -71,22 +71,43 @@ class get_post_currency(ListCreateAPIView):
         return currency
 
     # Get all currency
+    # def get(self, request):
+    #     currency = self.get_queryset()
+    #     # paginate_queryset = self.paginate_queryset(employee)
+    #     # serializer = self.serializer_class(paginate_queryset, many=True)''
+    #     # org_id = self.request.GET.get('org_id',None)
+    #     # currency = Currency.objects.filter(Q(organization=org_id) | Q(organization='null')).order_by('id')
+    #     serializer = CurrencySerializers(currency,many=True)
+    #     dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+    #     return Response(dict, status=status.HTTP_200_OK)
+    #     #return self.get_paginated_response(serializer.data)
     def get(self, request):
-        currency = self.get_queryset()
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
-        serializer = CurrencySerializers(currency,many=True)
-        dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+        org_id = self.request.GET.get('org_id',None)
+        if org_id:
+            currency = Currency.objects.filter(organization__isnull=True).order_by('id')
+            serializer = CurrencySerializers(currency,many=True)
+            currency_org = Currency.objects.filter(organization=org_id).order_by('id')
+            serializer_org = CurrencySerializers(currency_org,many=True)
+            null_org=serializer.data
+            org_data = serializer_org.data
+            for i in org_data:
+                null_org.append(i)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':null_org}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            currency = Currency.objects.filter(organization__isnull=True).order_by('id')
+            serializer = CurrencySerializers(currency,many=True)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+
 
     # Create a new currency
     def post(self, request):
-        currencyid = Currency.objects.filter(
-            currency_code=request.data.get('currency_code')).first()
-        if (currencyid):
-            serializer = CurrencySerializers(
-                currencyid, data=request.data)
+        currencyid = Currency.objects.filter(currency_code=request.data.get('currency_code')).first()
+        if currencyid:
+            data=request.data
+            data.pop('organization')
+            serializer = CurrencySerializers(currencyid, data=data)
         else:
             serializer = CurrencySerializers(data=request.data)
         if serializer.is_valid():
@@ -266,16 +287,35 @@ class get_active_currency(ListCreateAPIView):
 
     # Get all currency
     def get(self, request):
-        currency = self.get_queryset(request.GET['status_type'])
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
-        serializer = CurrencySerializers(currency,many=True)
-        dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+        # currency = self.get_queryset(request.GET['status_type'])
+        # # paginate_queryset = self.paginate_queryset(employee)
+        # # serializer = self.serializer_class(paginate_queryset, many=True)
+        # serializer = CurrencySerializers(currency,many=True)
+        # dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+        # return Response(dict, status=status.HTTP_200_OK)
+        # #return self.get_paginated_response(serializer.data)
+
+        #============ajay code============
+        status_type = request.GET.get('status_type', None)
+        org_id = self.request.GET.get('org_id',None)
+        filter_query = Q()
+        if status_type is not None and status_type !='':
+            filter_query.add(Q(status_type=status_type), Q.AND)
+        if org_id:
+            currency = Currency.objects.filter(organization__isnull=True).filter(filter_query)
+            currency_org = Currency.objects.filter(organization=org_id).filter(filter_query)
+            records = (currency | currency_org)
+            serializer_org = CurrencySerializers(records,many=True)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer_org.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            currency = Currency.objects.all()
+            serializer = CurrencySerializers(currency,many=True)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
 
 class get_currency_conversion(ListCreateAPIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
     serializer_class = Currency_ConversionSerializers
 
     def get_queryset(self,from_currency,to_currency):
@@ -283,27 +323,74 @@ class get_currency_conversion(ListCreateAPIView):
         return currency
 
     # Get all currency
+    # def get(self, request):
+    #     currency = self.get_queryset(request.GET['from_currency'],request.GET['to_currency'])
+    #     # paginate_queryset = self.paginate_queryset(employee)
+    #     # serializer = self.serializer_class(paginate_queryset, many=True)
+    #     serializer = Currency_ConversionSerializers(currency,many=True)
+    #     dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+    #     return Response(dict, status=status.HTTP_200_OK)
+    #     #return self.get_paginated_response(serializer.data)
+
     def get(self, request):
-        currency = self.get_queryset(request.GET['from_currency'],request.GET['to_currency'])
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
-        serializer = Currency_ConversionSerializers(currency,many=True)
-        dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+        from_currency = request.GET.get('from_currency', None)
+        to_currency = request.GET.get('to_currency', None)
+        org_id = self.request.GET.get('org_id',None)
+        filter_query = Q()
+        if from_currency is not None and from_currency !='':
+            filter_query.add(Q(from_currency=from_currency), Q.AND)
+        if to_currency is not None and to_currency !='':
+            filter_query.add(Q(to_currency__iexact=to_currency), Q.AND)
+        if org_id:
+            currency = Currency_Conversion.objects.filter(organization__isnull=True).filter(filter_query)
+            # serializer = Currency_ConversionSerializers(currency,many=True)
+
+            currency_org = Currency_Conversion.objects.filter(organization=org_id).filter(filter_query)
+            # serializer_org = Currency_ConversionSerializers(currency_org,many=True)
+            records = (currency | currency_org).order_by('-conversion_date')
+            serializer_org = Currency_ConversionSerializers(records,many=True)
+            # null_org=serializer.data
+            # org_data = serializer_org.data
+            # for i in org_data:
+            #     null_org.append(i)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer_org.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            currency = Currency_Conversion.objects.filter(filter_query)
+            serializer = Currency_ConversionSerializers(currency,many=True)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
 
 
 class post_currency_conversion(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = Currency_ConversionSerializers
     # post all currency
+    # def get(self, request):
+    #     currency = Currency_Conversion.objects.all().order_by('id')
+    #     # paginate_queryset = self.paginate_queryset(employee)
+    #     # serializer = self.serializer_class(paginate_queryset, many=True)
+    #     serializer = Currency_ConversionSerializers(currency,many=True)
+    #     dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+    #     return Response(dict, status=status.HTTP_200_OK)
     def get(self, request):
-        currency = Currency_Conversion.objects.all().order_by('id')
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
-        serializer = Currency_ConversionSerializers(currency,many=True)
-        dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
+        org_id = self.request.GET.get('org_id',None)
+        if org_id:
+            currency = Currency_Conversion.objects.filter(organization__isnull=True).order_by('id')
+            serializer = Currency_ConversionSerializers(currency,many=True)
+            currency_org = Currency_Conversion.objects.filter(organization=org_id).order_by('id')
+            serializer_org = Currency_ConversionSerializers(currency_org,many=True)
+            null_org=serializer.data
+            org_data = serializer_org.data
+            for i in org_data:
+                null_org.append(i)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':null_org}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            currency = Currency_Conversion.objects.filter(organization__isnull=True).order_by('id')
+            serializer = Currency_ConversionSerializers(currency,many=True)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
     def post(self, request):
         editId  = request.data.get("id", 0)
         if editId:
@@ -358,17 +445,12 @@ class post_currency_conversion(ListCreateAPIView):
 class currency_conversion_history(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = Currency_Conversion_HistorySerializers
-    # post all currency
     def get(self, request):
         from_currency = request.GET.get('from_currency', None)
         to_currency = request.GET.get('to_currency', None)
         from_date = request.GET.get('from_date', None)
         to_date = request.GET.get('to_date', None)
-        print('#######from_currency####',from_currency)
-        print('#######to_currency####',to_currency)
-        print('#######from_date####',from_date)
-        print('#######to_date####',to_date)
-
+        org_id = self.request.GET.get('org_id',None)
         filter_query = Q()
         if from_currency is not None and from_currency !='':
             filter_query.add(Q(from_currency=from_currency), Q.AND)
@@ -379,16 +461,59 @@ class currency_conversion_history(ListCreateAPIView):
         if to_date is not None and to_date !='':
             to_date = to_date+" "+"23:59:00"
             filter_query.add(Q(conversion_date__lte=to_date), Q.AND)
-        currency = Currency_Conversion_History.objects.filter(filter_query)
-        # currency = currency1.annotate(Max('conversion_date'))
-        # print("##########",currency)
-        # .values('acct_id').annotate(count=Count('id')).order_by('month').last()
-        # currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+        if org_id:
+            currency = Currency_Conversion_History.objects.filter(organization__isnull=True).filter(filter_query)
+            serializer = Currency_Conversion_HistorySerializers(currency,many=True)
 
-        serializer = Currency_Conversion_HistorySerializers(currency,many=True)
-        print(serializer.data)
-        dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
+            currency_org = Currency_Conversion_History.objects.filter(organization=org_id).filter(filter_query)
+            serializer_org = Currency_Conversion_HistorySerializers(currency_org,many=True)
+            null_org=serializer.data
+            org_data = serializer_org.data
+            for i in org_data:
+                null_org.append(i)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':null_org}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            currency = Currency_Conversion_History.objects.filter(filter_query)
+            serializer = Currency_Conversion_HistorySerializers(currency,many=True)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+class currency_conversion_history_new(ListCreateAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Currency_Conversion_HistorySerializers
+    def get(self, request):
+        from_currency = request.GET.get('from_currency', None)
+        to_currency = request.GET.get('to_currency', None)
+        from_date = request.GET.get('from_date', None)
+        to_date = request.GET.get('to_date', None)
+        org_id = self.request.GET.get('org_id',None)
+        filter_query = Q()
+        if from_currency is not None and from_currency !='':
+            filter_query.add(Q(from_currency=from_currency), Q.AND)
+        if to_currency is not None and to_currency !='':
+            filter_query.add(Q(to_currency__iexact=to_currency), Q.AND)
+        if from_date is not None and from_date !='':
+            filter_query.add(Q(conversion_date__gte=from_date), Q.AND)
+        if to_date is not None and to_date !='':
+            to_date = to_date+" "+"23:59:00"
+            filter_query.add(Q(conversion_date__lte=to_date), Q.AND)
+        if org_id:
+            currency = Currency_Conversion.objects.filter(organization__isnull=True).filter(filter_query)
+            serializer = Currency_ConversionSerializers(currency,many=True)
+
+            currency_org = Currency_Conversion.objects.filter(organization=org_id).filter(filter_query)
+            serializer_org = Currency_ConversionSerializers(currency_org,many=True)
+            null_org=serializer.data
+            org_data = serializer_org.data
+            for i in org_data:
+                null_org.append(i)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':null_org}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            currency = Currency_Conversion.objects.filter(filter_query)
+            serializer = Currency_ConversionSerializers(currency,many=True)
+            dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
 
 
 

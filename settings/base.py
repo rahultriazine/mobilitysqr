@@ -37,7 +37,7 @@ SECRET_KEY = '=n1)7@ws=@^f&_xbq!q(v15aj29gd4ex+dv49f)ou80&0q6x%q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -51,21 +51,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',  # https://django-extensions.readthedocs.io/en/latest/
     'mobility_apps.employee',
-    # 'rest_framework.authtoken',
+    'rest_framework.authtoken',
     'mobility_apps.master',
     'mobility_apps.travel',
     'mobility_apps.visa',
     'mobility_apps.letter',
     'mobility_apps.vault',
-    # 'mobility_apps.base',
+    'mobility_apps.base',
     'mobility_apps.superadmin',
-    # 'mobility_apps.reports',
+    'mobility_apps.reports',
     'rest_framework',
 	'corsheaders',
      # 'rest-auth',
     'api',
     # 'oauth2_provider',
-    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -139,19 +138,28 @@ REST_FRAMEWORK = {
     # }
 # }
 
-# staging_database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'mobilitysqr_dev',
+#         'USER': 'postgres',
+#         'PASSWORD': 'X^5F<\Qrc+S3SW?',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mob_test',
-        # 'NAME': 'mobilitysqr_staging',
+        'NAME': 'mobilitysqr_dev',
         'USER': 'postgres',
-        'PASSWORD': 'admin@123',
+        'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+
 
 CORS_ORIGIN_ALLOW_ALL = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -203,8 +211,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
@@ -230,10 +236,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 102400
 
 from settings.settings_log import *
-
-
-CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
-CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
-CELERY_ACCEPT_CONTENT = ['application/json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'

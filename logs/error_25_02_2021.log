@@ -1,12 +1,245 @@
-ERROR|25/Feb/2021 11:37:48|log|14095|140625098520320|Internal Server Error: /api/login
+ERROR|25/Feb/2021 13:37:25|exception|27791|140106993284864|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 13:41:24|exception|27791|140106993284864|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 13:41:24|basehttp|27791|140106993284864|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Feb/2021 14:12:53|exception|27791|140106953164544|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 14:12:53|basehttp|27791|140106953164544|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Feb/2021 15:15:17|log|27791|140107002988288|Internal Server Error: /Otp_Generate/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/deprecation.py", line 90, in __call__
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 1865, in post
+    'email': self.employee_name(email=email[0]['email'])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|25/Feb/2021 15:15:17|basehttp|27791|140107002988288|"POST /Otp_Generate/ HTTP/1.1" 500 17192
+ERROR|25/Feb/2021 15:25:17|log|27791|140106984892160|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 1918, in post
+    otp=User.objects.filter(otp=otp).values("id")
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1807, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '217936e'
+ERROR|25/Feb/2021 15:25:17|basehttp|27791|140106984892160|"POST /access_token/ HTTP/1.1" 500 18742
+ERROR|25/Feb/2021 15:25:54|log|27791|140106984892160|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 1918, in post
+    otp=User.objects.filter(otp=otp).values("id")
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1807, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '217936e'
+ERROR|25/Feb/2021 15:25:54|basehttp|27791|140106984892160|"POST /access_token/ HTTP/1.1" 500 18742
+ERROR|25/Feb/2021 15:37:28|exception|27791|140106993284864|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 15:43:47|exception|27791|140106993284864|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 16:05:16|log|27791|140106993284864|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
     response = self.process_request(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
     path = self.get_full_path_with_slash(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
     'url': request.get_host() + new_path,
-RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
-ERROR|25/Feb/2021 11:37:48|basehttp|14095|140625098520320|"POST /api/login HTTP/1.1" 500 71022
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 16:05:16|basehttp|27791|140106993284864|"POST /users?page=&size=5 HTTP/1.1" 500 65322
+ERROR|25/Feb/2021 16:54:54|exception|27791|140106993284864|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 17:29:11|exception|27791|140106993284864|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 17:59:26|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 18:12:00|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 18:12:00|basehttp|27791|140106950805248|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Feb/2021 19:02:03|log|27791|140106597922560|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|25/Feb/2021 19:02:03|basehttp|27791|140106597922560|"POST /users?page=&size=5 HTTP/1.1" 500 65323
+ERROR|25/Feb/2021 19:48:07|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 19:52:31|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Feb/2021 19:52:31|basehttp|27791|140106950805248|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Feb/2021 20:54:13|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 00:18:34|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 00:27:35|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 00:29:03|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 00:29:03|basehttp|27791|140106950805248|"GET /manager/html HTTP/1.1" 500 59
+ERROR|26/Feb/2021 00:41:19|exception|27791|140106950805248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 01:06:00|log|27791|140106950805248|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|26/Feb/2021 01:06:00|basehttp|27791|140106950805248|"POST /users?page=&size=5 HTTP/1.1" 500 65323
+ERROR|26/Feb/2021 02:09:17|basehttp|27791|140106950805248|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|26/Feb/2021 02:41:49|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 03:11:56|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 03:36:59|log|27791|140107002988288|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|26/Feb/2021 03:36:59|basehttp|27791|140107002988288|"POST /users?page=&size=5 HTTP/1.1" 500 65324
+ERROR|26/Feb/2021 04:13:21|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 05:47:17|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 05:48:42|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 07:38:14|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 08:08:16|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 08:17:40|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 08:21:38|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 09:26:44|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 11:29:32|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 13:25:51|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 13:47:42|basehttp|27791|140107002988288|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|26/Feb/2021 15:14:00|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 16:30:27|basehttp|27791|140107002988288|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|26/Feb/2021 16:59:27|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 18:40:04|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 18:40:04|basehttp|27791|140107002988288|"GET /manager/html HTTP/1.1" 500 59
+ERROR|26/Feb/2021 19:41:31|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 22:00:12|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 22:45:47|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 23:09:06|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Feb/2021 23:29:16|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 00:49:02|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 00:53:21|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 00:56:31|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 01:33:59|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 02:20:11|basehttp|27791|140107002988288|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Feb/2021 02:20:12|basehttp|27791|140107002988288|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Feb/2021 02:23:51|basehttp|27791|140107002988288|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|27/Feb/2021 03:00:42|exception|27791|140107002988288|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 04:20:54|basehttp|27791|140106597922560|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Feb/2021 04:57:34|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 05:17:24|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 05:17:24|basehttp|27791|140106597922560|"GET /manager/html HTTP/1.1" 500 59
+ERROR|27/Feb/2021 05:51:19|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 06:21:51|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 07:04:59|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 07:56:15|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 08:42:35|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 08:57:38|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 08:57:38|basehttp|27791|140106597922560|"GET /script HTTP/1.1" 500 59
+ERROR|27/Feb/2021 09:09:59|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 09:17:57|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 09:39:48|log|27791|140106597922560|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|27/Feb/2021 09:39:48|basehttp|27791|140106597922560|"POST /users?page=&size=5 HTTP/1.1" 500 65323
+ERROR|27/Feb/2021 10:16:42|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 10:16:42|basehttp|27791|140106597922560|"GET /script HTTP/1.1" 500 59
+ERROR|27/Feb/2021 10:24:23|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 10:26:36|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 10:50:43|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 10:57:29|exception|27791|140106597922560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Feb/2021 11:43:26|basehttp|27791|140106597922560|"GET /config/getuser?index=0 HTTP/1.1" 500 59

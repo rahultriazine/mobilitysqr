@@ -1,0 +1,418 @@
+ERROR|03/May/2021 12:04:28|log|18858|140137488299776|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 84, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|03/May/2021 12:04:28|basehttp|18858|140137488299776|"POST /emoloyeeinfo/ HTTP/1.1" 500 17721
+ERROR|03/May/2021 12:04:39|log|18858|140137488299776|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 84, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|03/May/2021 12:04:39|basehttp|18858|140137488299776|"POST /emoloyeeinfo/ HTTP/1.1" 500 17751
+ERROR|03/May/2021 15:47:55|log|18858|140137034663680|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 2086, in get
+    emp_serializers.data[i]['supervisor_name']=self.employee_name(emp_code=datas['supervisor'])
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 2097, in employee_name
+    if emp_code[0]['first_name']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|03/May/2021 15:47:55|basehttp|18858|140137034663680|"GET /getemployee_personal_info/?employee=MST1 HTTP/1.1" 500 18029
+ERROR|03/May/2021 15:50:21|log|18858|140137034663680|Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 1282, in post
+    cursor=cursor.execute(cursorss)
+AttributeError: 'NoneType' object has no attribute 'execute'
+ERROR|03/May/2021 15:50:21|basehttp|18858|140137034663680|"POST /reset_password/ HTTP/1.1" 500 17642
+ERROR|03/May/2021 15:56:54|log|18858|140137026270976|Internal Server Error: /forget_password/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 1217, in post
+    cursor=cursor.execute(cursorss)
+AttributeError: 'NoneType' object has no attribute 'execute'
+ERROR|03/May/2021 15:56:54|basehttp|18858|140137026270976|"POST /forget_password/ HTTP/1.1" 500 17407
+ERROR|03/May/2021 15:58:52|log|18858|140137026270976|Internal Server Error: /forget_password/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 1217, in post
+    cursor=cursor.execute(cursorss)
+AttributeError: 'NoneType' object has no attribute 'execute'
+ERROR|03/May/2021 15:58:52|basehttp|18858|140137026270976|"POST /forget_password/ HTTP/1.1" 500 17432
+ERROR|03/May/2021 15:59:15|log|18858|140137026270976|Internal Server Error: /forget_password/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 1217, in post
+    cursor=cursor.execute(cursorss)
+AttributeError: 'NoneType' object has no attribute 'execute'
+ERROR|03/May/2021 15:59:15|basehttp|18858|140137026270976|"POST /forget_password/ HTTP/1.1" 500 17432
+ERROR|03/May/2021 17:27:19|log|27142|140044521174784|Internal Server Error: /forget_password/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 1219, in post
+    cursor=cursor.execute(cursorss)
+AttributeError: 'NoneType' object has no attribute 'execute'
+ERROR|03/May/2021 17:27:19|basehttp|27142|140044521174784|"POST /forget_password/ HTTP/1.1" 500 17436
+ERROR|03/May/2021 17:35:29|log|27351|140539083523840|Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 1305, in post
+    cursor=cursor.execute(cursorss)
+AttributeError: 'NoneType' object has no attribute 'execute'
+ERROR|03/May/2021 17:35:29|basehttp|27351|140539083523840|"POST /reset_password/ HTTP/1.1" 500 17665
+ERROR|03/May/2021 17:39:20|log|27582|139808045475584|Internal Server Error: /reset_password/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 1305, in post
+    cursor=cursor.execute(cursorss)
+AttributeError: 'NoneType' object has no attribute 'execute'
+ERROR|03/May/2021 17:39:20|basehttp|27582|139808045475584|"POST /reset_password/ HTTP/1.1" 500 17665
+ERROR|03/May/2021 18:35:13|log|28051|140439149881088|Internal Server Error: /getemoloyeedata/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 251, in get
+    emp_serializers.data[i]['supervisor_name']=self.employee_name(emp_code=datas['supervisor'])
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 288, in employee_name
+    if emp_code[0]['first_name']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|03/May/2021 18:35:13|basehttp|28051|140439149881088|"GET /getemoloyeedata/?employee=MST1 HTTP/1.1" 500 17977
+ERROR|03/May/2021 18:35:42|log|28051|140439158273792|Internal Server Error: /getemoloyeedata/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 251, in get
+    emp_serializers.data[i]['supervisor_name']=self.employee_name(emp_code=datas['supervisor'])
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 288, in employee_name
+    if emp_code[0]['first_name']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|03/May/2021 18:35:42|basehttp|28051|140439158273792|"GET /getemoloyeedata/?employee=MST1 HTTP/1.1" 500 17977
+ERROR|03/May/2021 19:18:15|log|29954|140060896786176|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/master/views/country.py", line 933, in get
+    print(country[0]['bv_threshold'])
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|03/May/2021 19:18:15|basehttp|29954|140060896786176|"GET /get_post_country_policy/?days=14&country_code=United%20States HTTP/1.1" 500 17852
+ERROR|03/May/2021 22:14:38|basehttp|31876|140490239395584|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|04/May/2021 01:26:28|basehttp|31876|140490239395584|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|04/May/2021 07:40:52|log|31876|140490209761024|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/travel/views.py", line 262, in post
+    'approve_first_name':self.approver_name(emp_code=request.data['Action_taken_by']),
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/travel/views.py", line 425, in approver_name
+    if emp_code[0]['preferred_first_name']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|04/May/2021 07:40:52|basehttp|31876|140490209761024|"POST /get_add/travel_request/ HTTP/1.1" 500 17958
+ERROR|04/May/2021 07:41:05|log|31876|140490209761024|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/travel/views.py", line 262, in post
+    'approve_first_name':self.approver_name(emp_code=request.data['Action_taken_by']),
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/travel/views.py", line 425, in approver_name
+    if emp_code[0]['preferred_first_name']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|04/May/2021 07:41:05|basehttp|31876|140490209761024|"POST /get_add/travel_request/ HTTP/1.1" 500 17958
+ERROR|04/May/2021 07:43:39|log|31876|140490209761024|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/travel/views.py", line 262, in post
+    'approve_first_name':self.approver_name(emp_code=request.data['Action_taken_by']),
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/travel/views.py", line 425, in approver_name
+    if emp_code[0]['preferred_first_name']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|04/May/2021 07:43:39|basehttp|31876|140490209761024|"POST /get_add/travel_request/ HTTP/1.1" 500 17958
+ERROR|04/May/2021 20:11:41|log|31876|140490201368320|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/mobilitysqr_staging_env/mobilitysqr_staging/mobility_apps/employee/views.py", line 86, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/mobilitysqr_staging_env/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|04/May/2021 20:11:41|basehttp|31876|140490201368320|"POST /emoloyeeinfo/ HTTP/1.1" 500 17693
+ERROR|04/May/2021 20:29:04|basehttp|31876|140489848252160|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/May/2021 01:35:11|basehttp|31876|140489839859456|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/May/2021 01:35:17|basehttp|31876|140489839859456|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/May/2021 01:59:35|basehttp|31876|140489839859456|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/May/2021 01:59:38|basehttp|31876|140489839859456|You're accessing the development server over HTTPS, but it only supports HTTP.
+

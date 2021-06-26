@@ -908,6 +908,11 @@ class get_post_employee_visa(ListCreateAPIView):
         for empdata in request.data:
             if empdata['update_id']:
                 employee=Employee_Visa_Detail.objects.filter(id=empdata['update_id']).first()
+                ##################
+                if empdata['relation']=='':
+                    emp=Employee_Visa_Detail.objects.filter(id=empdata['update_id']).first()
+                    empdata['relation']=emp.relation
+                ##############
                 serializer = Employee_Visa_DetailSerializers(employee,data=empdata)
                 if serializer.is_valid():
                     serializer.save()
@@ -2154,7 +2159,7 @@ class getEmployeeAddressInfo(APIView):
     permission_classes = (IsAuthenticated,)
     def get(self, request):
         emp_code = request.GET['employee']
-        empadd = Employee_Address.objects.filter(emp_code=emp_code)
+        empadd = Employee_Address.objects.filter(emp_code=emp_code).order_by('id')
         empadd_serializer = Employee_AddressSerializers(empadd,many=True)
         dicts = []
         if empadd_serializer.data:
@@ -2173,7 +2178,7 @@ class getEmployeeEmailInfo(APIView):
     permission_classes = (IsAuthenticated,)
     def get(self, request):
         emp_code = request.GET['employee']
-        empadd = Employee_Emails.objects.filter(emp_code=emp_code)
+        empadd = Employee_Emails.objects.filter(emp_code=emp_code).order_by('id')
         empemails_serializer = Employee_EmailsSerializers(empadd,many=True)
         dicts = []
         if empemails_serializer.data:
@@ -2192,7 +2197,7 @@ class getEmployeePhoneInfo(APIView):
     permission_classes = (IsAuthenticated,)
     def get(self, request):
         emp_code = request.GET['employee']
-        empadd = Employee_Phones.objects.filter(emp_code=emp_code)
+        empadd = Employee_Phones.objects.filter(emp_code=emp_code).order_by('id')
         empphones_serializer = Employee_PhonesSerializers(empadd,many=True)
         dicts = []
         if empphones_serializer.data:
@@ -2211,7 +2216,7 @@ class getEmployeeNationalId(APIView):
     permission_classes = (IsAuthenticated,)
     def get(self, request):
         emp_code = request.GET['employee']
-        empadd = Employee_Nationalid.objects.filter(emp_code=emp_code)
+        empadd = Employee_Nationalid.objects.filter(emp_code=emp_code).order_by('id')
         empnational_serializer = Employee_NationalidSerializers(empadd,many=True)
         dicts = []
         if empnational_serializer.data:
@@ -2229,7 +2234,7 @@ class getEmployeeEmergencyContact(APIView):
     permission_classes = (IsAuthenticated,)
     def get(self, request):
         emp_code = request.GET['employee']
-        empadd = Employee_Emergency_Contact.objects.filter(emp_code=emp_code)
+        empadd = Employee_Emergency_Contact.objects.filter(emp_code=emp_code).order_by('id')
         empemergency_serializer = Employee_Emergency_ContactSerializers(empadd,many=True)
         dicts = []
         if empemergency_serializer.data:
@@ -2248,7 +2253,7 @@ class getEmployeePassportInfo(APIView):
     permission_classes = (IsAuthenticated,)
     def get(self, request):
         emp_code = request.GET['employee']
-        empadd = Employee_Passport_Detail.objects.filter(emp_code=emp_code)
+        empadd = Employee_Passport_Detail.objects.filter(emp_code=emp_code).order_by('id')
         emppassport_serializer = Employee_Passport_DetailSerializers(empadd,many=True)
         dicts = []
         if emppassport_serializer.data:
@@ -2267,7 +2272,7 @@ class getEmployeeVisaInfo(APIView):
     permission_classes = (IsAuthenticated,)
     def get(self, request):
         emp_code = request.GET['employee']
-        empadd = Employee_Visa_Detail.objects.filter(emp_code=emp_code)
+        empadd = Employee_Visa_Detail.objects.filter(emp_code=emp_code).order_by('id')
         empvisa_serializer = Employee_Visa_DetailSerializers(empadd,many=True)
         dicts = []
         if empvisa_serializer.data:

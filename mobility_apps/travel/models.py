@@ -43,7 +43,7 @@ class Travel_Request(TimeStampedModel, GeneratedByModel, Status):
     expence_fromCountry = models.CharField(max_length=100, null=True, blank=True)
     expence_returnDate = models.CharField(max_length=100, null=True, blank=True)
     expence_toCountry = models.CharField(max_length=100, null=True, blank=True)
-    column1 = models.CharField(max_length=100, null=True, blank=True)
+    attachments = models.CharField(max_length=1000, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)
     column4 = models.CharField(max_length=100, null=True, blank=True)
@@ -332,8 +332,8 @@ class Visa_Request_Action_History(TimeStampedModel, GeneratedByModel, Status):
     email=models.ForeignKey(Employee,to_field="emp_code", null=True, blank=True, on_delete=models.CASCADE)
     visa_req_id = models.ForeignKey(Visa_Request,to_field="visa_req_id",null=True, blank=True,  on_delete=models.CASCADE)
     action = models.CharField(max_length=100,null=True, blank=True)
-    action_notes = models.CharField(max_length=200,null=True, blank=True)
-    module = models.CharField(max_length=100,null=True, blank=True)
+    action_notes  = models.CharField(max_length=200,null=True, blank=True)
+    module  = models.CharField(max_length=100,null=True, blank=True)
     approval_level = models.CharField(max_length=100, null=True, blank=True)
     
     organization= models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
@@ -360,8 +360,9 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
     column7 = models.CharField(max_length=100, null=True, blank=True)
     column8 = models.CharField(max_length=100, null=True, blank=True)
     column9 = models.CharField(max_length=100, null=True, blank=True)
-    # column10 = models.CharField(max_length=100, null=True, blank=True)
-    # column11 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
     currency = models.CharField(max_length=100, null=True, blank=True)
     invoice_amount = models.CharField(max_length=100, null=True, blank=True)
     po_number = models.CharField(max_length=100, null=True, blank=True)
@@ -377,7 +378,7 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
         managed = True
         verbose_name = _('Assignment Travel Request Status')
 		
-class   Assignment_Travel_Tax_Grid(TimeStampedModel, GeneratedByModel, Status):
+class Assignment_Travel_Tax_Grid(TimeStampedModel, GeneratedByModel, Status):
     travel_req_id = models.ForeignKey(Travel_Request,to_field="travel_req_id",null=True, blank=True,  on_delete=models.CASCADE)
     tax_label_id = models.CharField(max_length=100,null=True, blank=True)
     amount = models.CharField(max_length=100, blank=True, null=True)
@@ -399,8 +400,8 @@ class   Assignment_Travel_Tax_Grid(TimeStampedModel, GeneratedByModel, Status):
     column8 = models.CharField(max_length=100, null=True, blank=True)
     column9 = models.CharField(max_length=100, null=True, blank=True)
     column10 = models.CharField(max_length=100, null=True, blank=True)
-    # column11 = models.CharField(max_length=100, null=True, blank=True)
-    # column12 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True

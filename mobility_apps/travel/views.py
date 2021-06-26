@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from mobility_apps.master.models import Approval_Hierarchy ,Request_Approvals,Status_Master
-from mobility_apps.employee.models import Employee
+from mobility_apps.employee.models import Employee,Employee_Emergency_Contact
 from mobility_apps.employee.serializer import EmployeeSerializers
 from mobility_apps.master.models import Project
 from mobility_apps.visa.models import Visa_Request , Visa_Request_Document,Visa_Request_Draft
@@ -631,9 +631,19 @@ class get_view_travel_request(ListCreateAPIView):
             else:
                 travel_request_serializer.data[0]['details']=""
             travel_requestss=Travel_Request_Dependent.objects.filter(travel_req_id_id =id)
-            travel_request_serializerss = Travel_Request_DependentSerializers(travel_requestss,many=True)
+            list1=[]
+            if travel_requestss:
+                for i in travel_requestss:
+                    travel_request_serializerss = Travel_Request_DependentSerializers(i)
+                    a = travel_request_serializerss.data
+                    dependent_relation = a['dependent_relation']
+                    dependent_name = a['dependent_name']
+                    dobobj=Employee_Emergency_Contact.objects.filter(emp_code_id=emp_code[0]['emp_code'],name__iexact=dependent_name,relationship__iexact=dependent_relation).last()
+                    dob=dobobj.column1
+                    a['dob']=dob
+                    list1.append(a)
             if travel_request_serializer.data:
-                travel_request_serializer.data[0]['dependents']=travel_request_serializerss.data
+                travel_request_serializer.data[0]['dependents']=list1
             else:
                 travel_request_serializer.data[0]['dependents']=""
             assignment_type_id = Secondory_Assignment.objects.filter(organization=request.GET['org_id'],Ticket_ID=request.GET['travel_req_id']).last()

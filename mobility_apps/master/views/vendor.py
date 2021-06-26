@@ -73,6 +73,87 @@ class get_delete_update_vendor(RetrieveDestroyAPIView):
             return Response(content, status=status.HTTP_401_UNAUTHORIZED)
 
 
+# class get_post_vendor(ListCreateAPIView):
+#     permission_classes = (IsAuthenticated,)
+#     serializer_class = VendorSerializers
+
+#     def get_queryset(self):
+#         vendor = Vendor.objects.all()
+#         return vendor
+
+#     # Get all vendor
+#     def get(self, request):
+#         vendor = Vendor.objects.filter(vendor_type=request.GET['vendor_type'])
+#         # paginate_queryset = self.paginate_queryset(employee)
+#         # serializer = self.serializer_class(paginate_queryset, many=True)
+#         serializer = VendorSerializers(vendor,many=True)
+#         dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
+#         return Response(dict, status=status.HTTP_200_OK)
+#         #return self.get_paginated_response(serializer.data)
+
+#     # Create a new vendor
+#     def post(self, request):
+
+#         vendorid = Vendor.objects.filter(vendor_id=request.data.get('vendor_id')).first()
+#         if (vendorid):
+#             # data = Vendor.object.get(~Q(vendor_id=request.data.get('vendor_id')),vendor_email__iexact=request.data['vendor_email'])
+#             # if data is None:
+#             #     dict = {"status": False, "message": 'This email id is already being used'}
+#             #     return Response(dict, status=status.HTTP_201_CREATED)
+#             # data1 = Employee.object.get(email__iexact=request.data['vendor_email'])
+#             # if data1 is None:
+#             #     dict = {"status": False, "message": 'This email id is already being used'}
+#             #     return Response(dict, status=status.HTTP_201_CREATED)
+#             serializer = VendorSerializers(vendorid, data=request.data)
+#         else:
+#             request.data['vendor_id']="VN"+str(uuid.uuid4().int)[:6]
+#             serializer = VendorSerializers(data=request.data)
+#             # data = Vendor.objects.get(vendor_email__iexact=request.data['vendor_email'])
+#             # if data is None:
+#             #     dict = {"status": False, "message": 'This email id is already being used'}
+#             #     return Response(dict, status=status.HTTP_201_CREATED)
+#             # data1 = Employee.objects.get(email__iexact=request.data['vendor_email'])
+#             # if data1 is None:
+#             #     dict = {"status": False, "message": 'This email id is already being used'}
+#             #     return Response(dict, status=status.HTTP_201_CREATED)
+#         if serializer.is_valid():
+#             serializer.save()
+#             request.data['user_name']=request.data['vendor_email']
+#             request.data['email']=request.data['vendor_email']
+#             request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
+#             request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
+#             request.data['first_name']=""
+#             request.data['last_name']=""
+#             request.data['role'] = "9"
+#             res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
+#             print(res)
+#             request.data['password'] = make_password(str(res))
+#             emailserializer=EmployeeSerializers(data=request.data)
+#             if emailserializer.is_valid():
+#                 emailserializer.save()
+#                 #email = Employee.objects.filter(user_name=username).values("email")
+#                 ctxt = {
+#                     'user_name': request.data['user_name'],
+#                     'password': request.data['password']
+#                 }
+
+#                 subject, from_email, to = 'Welcome to MobilitySQR - Vendor Registration Successful',"",request.data['user_name']
+#                 html_content = render_to_string('email/vendor_registration.html', ctxt)
+#                 # render with dynamic value
+#                 text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
+                
+#                 # create the email, and attach the HTML version as well.
+                
+#                 msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+#                 msg.attach_alternative(html_content, "text/html")
+#                 msg.send()
+#             else:
+#                 print(emailserializer.errors)
+#             dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
+#             return Response(dict, status=status.HTTP_201_CREATED)
+#         dict={"status":False,'status_code':400,"message":MSG_FAILED,"data":serializer.errors}
+#         return Response(dict, status=status.HTTP_400_BAD_REQUEST)
+
 class get_post_vendor(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = VendorSerializers
@@ -92,69 +173,111 @@ class get_post_vendor(ListCreateAPIView):
         #return self.get_paginated_response(serializer.data)
 
     # Create a new vendor
+
     def post(self, request):
-
-        vendorid = Vendor.objects.filter(
-           vendor_id=request.data.get('vendor_id')).first()
-        if (vendorid):
-            # data = Vendor.object.get(~Q(vendor_id=request.data.get('vendor_id')),vendor_email__iexact=request.data['vendor_email'])
-            # if data is None:
-            #     dict = {"status": False, "message": 'This email id is already being used'}
-            #     return Response(dict, status=status.HTTP_201_CREATED)
-            # data1 = Employee.object.get(email__iexact=request.data['vendor_email'])
-            # if data1 is None:
-            #     dict = {"status": False, "message": 'This email id is already being used'}
-            #     return Response(dict, status=status.HTTP_201_CREATED)
-            serializer = VendorSerializers(
-                vendorid, data=request.data)
-        else:
-            request.data['vendor_id']="VN"+str(uuid.uuid4().int)[:6]
-            serializer = VendorSerializers(data=request.data)
-            # data = Vendor.objects.get(vendor_email__iexact=request.data['vendor_email'])
-            # if data is None:
-            #     dict = {"status": False, "message": 'This email id is already being used'}
-            #     return Response(dict, status=status.HTTP_201_CREATED)
-            # data1 = Employee.objects.get(email__iexact=request.data['vendor_email'])
-            # if data1 is None:
-            #     dict = {"status": False, "message": 'This email id is already being used'}
-            #     return Response(dict, status=status.HTTP_201_CREATED)
-        if serializer.is_valid():
-            serializer.save()
-            request.data['user_name']=request.data['vendor_email']
-            request.data['email']=request.data['vendor_email']
-            request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
-            request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
-            request.data['first_name']=""
-            request.data['last_name']=""
-            request.data['role'] = "9"
-            res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
-            print(res)
-            request.data['password'] = make_password(str(res))
-            emailserializer=EmployeeSerializers(data=request.data)
-            if emailserializer.is_valid():
-                emailserializer.save()
-                #email = Employee.objects.filter(user_name=username).values("email")
-                ctxt = {
-                    'user_name': request.data['user_name'],
-                    'password': request.data['password']
-                }
-
-                subject, from_email, to = 'Welcome to MobilitySQR - Vendor Registration Successful',"",request.data['user_name']
-                html_content = render_to_string('email/vendor_registration.html', ctxt)
-                # render with dynamic value
-                text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
-                
-                # create the email, and attach the HTML version as well.
-                
-                msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
-                msg.attach_alternative(html_content, "text/html")
-                msg.send()
+        if request.data['id']=='':
+            vendorid = Vendor.objects.filter(
+               vendor_id=request.data.get('vendor_id')).first()
+            if (vendorid):
+                data = Vendor.objects.filter(vendor_email__iexact=request.data['vendor_email'],organization=request.data['organization'])
+                if (data)>0:
+                    dict = {"status": False, "message": 'This email id is already being used in this organization'}
+                    return Response(dict, status=status.HTTP_200_OK)
+                serializer = VendorSerializers(vendorid, data=request.data)
             else:
-                print(emailserializer.errors)
-            dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
-            return Response(dict, status=status.HTTP_201_CREATED)
-        dict={"status":False,'status_code':400,"message":MSG_FAILED,"data":serializer.errors}
-        return Response(dict, status=status.HTTP_400_BAD_REQUEST)
+                data = Vendor.objects.filter(vendor_email__iexact=request.data['vendor_email'],organization=request.data['organization'])
+                if len(data)>0:
+                    dict = {"status": False, "message": 'This email id is already being used in this organization'}
+                    return Response(dict, status=status.HTTP_200_OK)
+                request.data['vendor_id']="VN"+str(uuid.uuid4().int)[:6]
+                serializer = VendorSerializers(data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                request.data['user_name']=request.data['vendor_email']
+                request.data['email']=request.data['vendor_email']
+                request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
+                request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
+                request.data['first_name']=""
+                request.data['last_name']=""
+                request.data['role'] = "9"
+                res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
+                print(res)
+                request.data['password'] = make_password(str(res))
+                emailserializer=EmployeeSerializers(data=request.data)
+                if emailserializer.is_valid():
+                    emailserializer.save()
+                    #email = Employee.objects.filter(user_name=username).values("email")
+                    ctxt = {
+                        'user_name': request.data['user_name'],
+                        'password': request.data['password']
+                    }
+
+                    subject, from_email, to = 'Welcome to MobilitySQR - Vendor Registration Successful',"",request.data['user_name']
+                    html_content = render_to_string('email/vendor_registration.html', ctxt)
+                    # render with dynamic value
+                    text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
+                    
+                    # create the email, and attach the HTML version as well.
+                    
+                    msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+                    msg.attach_alternative(html_content, "text/html")
+                    msg.send()
+                else:
+                    print(emailserializer.errors)
+                dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
+                return Response(dict, status=status.HTTP_201_CREATED)
+            dict={"status":False,'status_code':400,"message":MSG_FAILED,"data":serializer.errors}
+            return Response(dict, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            email=Vendor.objects.filter(vendor_email__iexact=request.data['vendor_email'],organization=request.data['organization']).last()
+            if email.id != request.data['id']:
+                dict = {"status": False, "message": 'This email id is already being used in this organization'}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                vendorid = Vendor.objects.filter(
+                   vendor_id=request.data.get('vendor_id')).first()
+                if (vendorid):
+                    serializer = VendorSerializers(vendorid, data=request.data)
+                else:
+                    request.data['vendor_id']="VN"+str(uuid.uuid4().int)[:6]
+                    serializer = VendorSerializers(data=request.data)
+                if serializer.is_valid():
+                    serializer.save()
+                    request.data['user_name']=request.data['vendor_email']
+                    request.data['email']=request.data['vendor_email']
+                    request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
+                    request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
+                    request.data['first_name']=""
+                    request.data['last_name']=""
+                    request.data['role'] = "9"
+                    res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
+                    print(res)
+                    request.data['password'] = make_password(str(res))
+                    emailserializer=EmployeeSerializers(data=request.data)
+                    if emailserializer.is_valid():
+                        emailserializer.save()
+                        #email = Employee.objects.filter(user_name=username).values("email")
+                        ctxt = {
+                            'user_name': request.data['user_name'],
+                            'password': request.data['password']
+                        }
+
+                        subject, from_email, to = 'Welcome to MobilitySQR - Vendor Registration Successful',"",request.data['user_name']
+                        html_content = render_to_string('email/vendor_registration.html', ctxt)
+                        # render with dynamic value
+                        text_content = strip_tags(html_content)  # Strip the html tag. So people can see the pure text at least.
+                        
+                        # create the email, and attach the HTML version as well.
+                        
+                        msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
+                        msg.attach_alternative(html_content, "text/html")
+                        msg.send()
+                    else:
+                        print(emailserializer.errors)
+                    dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
+                    return Response(dict, status=status.HTTP_201_CREATED)
+                dict={"status":False,'status_code':400,"message":MSG_FAILED,"data":serializer.errors}
+                return Response(dict, status=status.HTTP_400_BAD_REQUEST)
 
 
 class bulk_upload_Vendor(ListCreateAPIView):
@@ -217,7 +340,8 @@ class get_vendors(ListCreateAPIView):
 
     # Get all vendor
     def get(self, request):
-        vendor = Vendor.objects.all().order_by('id')
+        org_id=self.request.GET.get('org_id',None)
+        vendor = Vendor.objects.filter(organization=org_id).order_by('id')
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = VendorSerializers(vendor,many=True)
@@ -230,7 +354,8 @@ class get_vendors_type(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = Vendor_MasterSerializers
     def get(self, request):
-        vendor = Vendor_Master.objects.all().order_by('vendor_type')
+        org_id=self.request.GET.get('org_id',None)
+        vendor = Vendor_Master.objects.filter(status=True,organization=org_id).order_by('vendor_type')
         # paginate_queryset = self.paginate_queryset(employee)
         serializer = Vendor_MasterSerializers(vendor,many=True)
         dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
@@ -242,29 +367,50 @@ class get_vendors_type(ListCreateAPIView):
 # post  master vendor type
 ##################################################
 
-
+from django.db.models import Max
 class get_post_master_vendors_type(APIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
     serializer_class = Vendor_MasterSerializers
 
     def post(self,request):
-        serializer = Vendor_MasterSerializers(data=request.data)
+        data=request.data
+        a=Vendor_Master.objects.aggregate(Max('vendor_id'))
+        if a['vendor_id__max']==None:
+            data['vendor_id'] = 1
+        else:
+            data['vendor_id'] = int(a['vendor_id__max'])+1
+        serializer = Vendor_MasterSerializers(data=data)
         if serializer.is_valid():
-            serializer.save()
-            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
-            return Response(dict, status=status.HTTP_200_OK)
+            savedata=serializer.save()
         else:
             return Response(serializer.errors, status=status.HTTP_200_OK)
+        if savedata:
+            for i in data['category_name']:
+                b=Vendor_Category.objects.aggregate(Max('category_id'))
+                if b['category_id__max']==None:
+                    data['category_id'] = 1
+                else:
+                    data['category_id'] = int(b['category_id__max'])+1
+                data['category_name']=i
+                data['vendor_name']=data['vendor_type']
+                vendor_category_serializers = Vendor_CategorySerializers(data=data)
+                if vendor_category_serializers.is_valid():
+                    vendor_category_serializers.save()
+
+            dict = {'message': 'Successful', 'status': True, 'data': {"message":"success"}}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            return Response(vendor_category_serializers.errors, status=status.HTTP_200_OK)
 
     def get(self, request):
         org_id = request.GET.get('org_id', None)
         if org_id is None:
-            data = Vendor_Master.objects.all()
+            data = Vendor_Master.objects.all().order_by('id')
             serializer = Vendor_MasterSerializers(data, many=True)
             dict = {"status": True, 'status_code': 200, "data": serializer.data}
             return Response(dict, status=status.HTTP_200_OK)
         else:
-            data = Vendor_Master.objects.filter(organization=org_id)
+            data = Vendor_Master.objects.filter(organization=org_id).order_by('id')
             serializer = Vendor_MasterSerializers(data, many=True)
             dict = {"status": True, 'status_code': 200, "data": serializer.data}
             return Response(dict, status=status.HTTP_200_OK)
@@ -275,7 +421,7 @@ class get_post_master_vendors_type(APIView):
 ##################################################
 
 class update_master_vendors_type(APIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
     serializer_class = Vendor_MasterSerializers
 
     def get_object(self, pk):
@@ -283,10 +429,33 @@ class update_master_vendors_type(APIView):
 
     def patch(self, request, pk):
         instance = self.get_object(pk)
-        serializer = Vendor_MasterSerializers(instance,data=request.data,partial=True)
+        # serializer = Vendor_MasterSerializers(instance,data=request.data,partial=True)
+        # if serializer.is_valid():
+        #     serializer.save()
+        #     dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+        #     return Response(dict, status=status.HTTP_200_OK)
+        # else:
+        #     return Response(serializer.errors, status=status.HTTP_200_OK)
+        data=request.data
+        serializer = Vendor_MasterSerializers(instance,data=data,partial=True)
         if serializer.is_valid():
-            serializer.save()
-            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+            savedata=serializer.save()
+        if savedata:
+            abc=Vendor_Category.objects.filter(vendor_id=instance.vendor_id).delete()
+            for i in data['category_name']:
+                data['vendor_id'] = instance.vendor_id
+                b=Vendor_Category.objects.aggregate(Max('category_id'))
+                if b['category_id__max']==None:
+                    data['category_id'] = 1
+                else:
+                    data['category_id'] = int(b['category_id__max'])+1
+                data['category_name']=i
+                data['vendor_name']=data['vendor_type']
+                vendor_category_serializers = Vendor_CategorySerializers(data=data)
+                if vendor_category_serializers.is_valid():
+                    vendor_category_serializers.save()
+
+            dict = {'message': 'Successful', 'status': True, 'data': {"message":"success"}}
             return Response(dict, status=status.HTTP_200_OK)
         else:
             return Response(serializer.errors, status=status.HTTP_200_OK)

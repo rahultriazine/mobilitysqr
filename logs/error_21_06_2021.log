@@ -1,0 +1,720 @@
+ERROR|21/Jun/2021 17:38:21|log|26312|21824|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 375, in post
+    a=Book.objects.aggregate(Max('vendor_id'))
+NameError: name 'Book' is not defined
+ERROR|21/Jun/2021 17:38:21|basehttp|26312|21824|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18010
+ERROR|21/Jun/2021 17:40:23|log|23492|27416|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 375, in post
+    a=Vendor_Master.objects.filter(Max('vendor_id'))
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1315, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\query.py", line 1187, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable Max object
+ERROR|21/Jun/2021 17:40:23|basehttp|23492|27416|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 19187
+ERROR|21/Jun/2021 17:42:20|log|7896|21544|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 376, in post
+    print("=========",a['vendor_id__max']+1)
+TypeError: can only concatenate str (not "int") to str
+ERROR|21/Jun/2021 17:42:20|basehttp|7896|21544|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18042
+ERROR|21/Jun/2021 17:44:08|log|23480|26652|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 377, in post
+    request.data=request.data['vendor_id']=int(a['vendor_id__max'])+1
+AttributeError: can't set attribute
+ERROR|21/Jun/2021 17:44:08|basehttp|23480|26652|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18029
+ERROR|21/Jun/2021 17:45:04|log|8552|12216|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 378, in post
+    request.data=request.data['vendor_id']=b
+AttributeError: can't set attribute
+ERROR|21/Jun/2021 17:45:04|basehttp|8552|12216|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18004
+ERROR|21/Jun/2021 17:46:00|log|8552|12216|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 378, in post
+    request.data=request.data['vendor_id']=b
+AttributeError: can't set attribute
+ERROR|21/Jun/2021 17:46:00|basehttp|8552|12216|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18004
+ERROR|21/Jun/2021 17:46:02|log|8552|12216|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 378, in post
+    request.data=request.data['vendor_id']=b
+AttributeError: can't set attribute
+ERROR|21/Jun/2021 17:46:02|basehttp|8552|12216|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18004
+ERROR|21/Jun/2021 17:46:39|log|22084|11904|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 378, in post
+    request.data=request.data['vendor_id']=b
+AttributeError: can't set attribute
+ERROR|21/Jun/2021 17:46:39|basehttp|22084|11904|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18004
+ERROR|21/Jun/2021 17:47:20|log|6932|14244|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 379, in post
+    request.data=request.data['vendor_id']=b
+AttributeError: can't set attribute
+ERROR|21/Jun/2021 17:47:20|basehttp|6932|14244|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18004
+ERROR|21/Jun/2021 17:48:08|log|26444|13280|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 380, in post
+    request.data=request.data['vendor_id']=b
+AttributeError: can't set attribute
+ERROR|21/Jun/2021 17:48:08|basehttp|26444|13280|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18004
+ERROR|21/Jun/2021 17:53:48|log|5556|26696|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 380, in post
+    serializer = Vendor_MasterSerializers(data=data1)
+NameError: name 'data1' is not defined
+ERROR|21/Jun/2021 17:53:48|basehttp|5556|26696|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18019
+ERROR|21/Jun/2021 18:05:50|log|15132|16816|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 378, in post
+    b=int(a['vendor_id__max'])+1
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR|21/Jun/2021 18:05:50|basehttp|15132|16816|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18104
+ERROR|21/Jun/2021 18:06:03|log|15132|16816|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 378, in post
+    b=int(a['vendor_id__max'])+1
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR|21/Jun/2021 18:06:03|basehttp|15132|16816|"POST /get_post_master_vendors_type/ HTTP/1.1" 500 18104
+ERROR|21/Jun/2021 19:29:29|log|8956|5716|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 406, in get
+    print("======data======",data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:29:29|basehttp|8956|5716|"GET /get_post_master_vendors_type/ HTTP/1.1" 500 18399
+ERROR|21/Jun/2021 19:30:07|log|27352|21276|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 406, in get
+    print("======data======",data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:30:07|basehttp|27352|21276|"GET /get_post_master_vendors_type/ HTTP/1.1" 500 18399
+ERROR|21/Jun/2021 19:30:57|log|88|22364|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 407, in get
+    print("======data======",data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:30:57|basehttp|88|22364|"GET /get_post_master_vendors_type/ HTTP/1.1" 500 18399
+ERROR|21/Jun/2021 19:32:00|log|24220|7604|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 407, in get
+    print("======data======",data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:32:00|basehttp|24220|7604|"GET /get_post_master_vendors_type/ HTTP/1.1" 500 18399
+ERROR|21/Jun/2021 19:32:54|log|24680|27536|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 407, in get
+    print(data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:32:54|basehttp|24680|27536|"GET /get_post_master_vendors_type/ HTTP/1.1" 500 18380
+ERROR|21/Jun/2021 19:35:38|log|8668|6932|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 411, in get
+    print("============data===",data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:35:38|basehttp|8668|6932|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18444
+ERROR|21/Jun/2021 19:37:12|log|11424|22480|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 411, in get
+    print("============data===",int(data))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'QuerySet'
+ERROR|21/Jun/2021 19:37:12|basehttp|11424|22480|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18157
+ERROR|21/Jun/2021 19:37:42|log|4320|3664|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 411, in get
+    print("============data===",data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:37:42|basehttp|4320|3664|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18444
+ERROR|21/Jun/2021 19:39:36|log|20824|11956|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 412, in get
+    print("============data===",i)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:39:36|basehttp|20824|11956|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18069
+ERROR|21/Jun/2021 19:42:40|log|8500|18708|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 412, in get
+    print("============data===",i)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:42:40|basehttp|8500|18708|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18069
+ERROR|21/Jun/2021 19:43:34|log|15744|19396|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 412, in get
+    print("============data===",i)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:43:34|basehttp|15744|19396|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18069
+ERROR|21/Jun/2021 19:44:32|log|15568|2136|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 411, in get
+    print("============data===",data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:44:32|basehttp|15568|2136|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18444
+ERROR|21/Jun/2021 19:44:57|log|22108|13272|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 411, in get
+    print("============data===",str(data))
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 253, in __repr__
+    return '<%s %r>' % (self.__class__.__name__, data)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 519, in __repr__
+    return '<%s: %s>' % (self.__class__.__name__, self)
+TypeError: __str__ returned non-string (type int)
+ERROR|21/Jun/2021 19:44:57|basehttp|22108|13272|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18449
+ERROR|21/Jun/2021 19:49:58|log|23812|24680|Internal Server Error: /get_post_master_vendors_type/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 411, in get
+    print("============data===",data.vendor_name)
+AttributeError: 'QuerySet' object has no attribute 'vendor_name'
+ERROR|21/Jun/2021 19:49:58|basehttp|23812|24680|"GET /get_post_master_vendors_type/?org_id=ORG150866 HTTP/1.1" 500 18110
+ERROR|21/Jun/2021 20:14:47|log|24768|26732|Internal Server Error: /update_master_vendors_type/87/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 446, in patch
+    abc=Vendor_Category.objects.filter(vendor_id=instance.vendor_id).delete()()
+TypeError: 'tuple' object is not callable
+ERROR|21/Jun/2021 20:14:47|basehttp|24768|26732|"PATCH /update_master_vendors_type/87/ HTTP/1.1" 500 18062
