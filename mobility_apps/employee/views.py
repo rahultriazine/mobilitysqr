@@ -12,7 +12,7 @@ from mobility_apps.employee.models import Employee,Message_Chat, Employee_Passpo
 from mobility_apps.employee.serializer import EmployeeSerializers,Message_ChatSerializers, Employee_Passport_DetailSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers,Employee_Org_InfoSerializers,Calender_EventsSerializers,Calender_ActivitySerializers
 from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
 from mobility_apps.travel.serializers import Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
-
+from mobility_apps.employee.serializer import *
 from mobility_apps.master.models import Assignment_Group
 from mobility_apps.master.serializers.assignment_group import Assignment_GroupSerializers
 from rest_framework.generics import RetrieveDestroyAPIView, ListCreateAPIView
@@ -59,6 +59,8 @@ from django.db.models import F
 import datetime
 import jwt
 from django.conf import settings
+from mobility_apps.master.models import *
+
 logger = logging.getLogger(__name__)
 class employeeList(APIView):
     def get(self, request):
@@ -2838,3 +2840,24 @@ class employee_chat(APIView):
             return Response(dict, status=status.HTTP_200_OK)
         return Response(dict, status=status.HTTP_200_OK)
 
+
+class get_post_employee_address(ListCreateAPIView):
+    #permission_classes = (IsAuthenticated,)
+    serializer_class = Employee_AddressSerializers
+
+    # Get all department
+    def get(self, request):
+        # org_id = self.request.GET.get('org_id',None)
+        emp_address = Employee_Address.objects.all().order_by('id')
+        serializer = Employee_AddressSerializers(emp_address,many=True)
+        dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+        return Response(dict, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        serializer = Employee_AddressSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)

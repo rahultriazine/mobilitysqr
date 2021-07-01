@@ -359,6 +359,7 @@ class Vendor(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Vendor')
         verbose_name_plural = _('Vendor')
+        unique_together = ('vendor_email','organization')
 
     def __str__(self):
         return self.vendor_name
@@ -1694,3 +1695,58 @@ class Designation(TimeStampedModel, GeneratedByModel, Status):
 
     def __unicode__(self):
         return self.code
+from mobility_apps.travel.models import Travel_Request 
+TYPE_CHOICES = (('Tax Payer','Tax Payer'),('Spouse','Spouse'),('Joint','Joint'))
+class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
+    income_type = models.CharField(max_length=100,null=True, blank=True)
+    amount = models.CharField(max_length=100, null=True,blank=True)
+    account_type = models.CharField(max_length=100, choices=TYPE_CHOICES,null=True,blank=True)
+    attachment = models.CharField(max_length=300, null=True,blank=True)
+    vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
+    travel_req = models.ForeignKey(Travel_Request,null=True, blank=True,  on_delete=models.CASCADE)
+    employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE) 
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('income_type')
+        verbose_name_plural = _('income_type')
+
+
+class Employee_Address(TimeStampedModel, GeneratedByModel, Status):
+    pickup_address = models.TextField(null=True, blank=True)
+    delivery_address = models.TextField(null=True,blank=True)
+    move_date  = models.CharField(max_length=100, null=True,blank=True)
+    delivery_date  = models.CharField(max_length=100, null=True,blank=True)
+    vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE,related_name="organization")
+    employee= models.ForeignKey(Employee,related_name="Employee_name", null=True, blank=True,on_delete=models.CASCADE)
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('pickup_address')
+        verbose_name_plural = _('pickup_address')

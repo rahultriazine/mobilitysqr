@@ -178,6 +178,9 @@ urlpatterns = [
         path('currency_conversion_history_new/', currency_conversion_history_new.as_view(), name='currency_conversion_history'),
 
 
+        path('get_post_vendor_income/', get_post_vendor_income.as_view(), name='get_post_vendor_income'),
+
+
 
 
 
