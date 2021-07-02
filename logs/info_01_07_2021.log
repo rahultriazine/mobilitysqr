@@ -70,3 +70,25 @@ INFO|01/Jul/2021 12:08:45|autoreload|568|15008|C:\Users\younity-2\Desktop\mobili
 INFO|01/Jul/2021 12:08:46|autoreload|32260|24948|Watching for file changes with StatReloader
 INFO|01/Jul/2021 12:09:41|basehttp|32260|20752|"GET /get_post_employee_address/ HTTP/1.1" 200 63
 INFO|01/Jul/2021 12:09:46|basehttp|32260|20752|"POST /get_post_employee_address/ HTTP/1.1" 200 543
+INFO|01/Jul/2021 16:49:04|autoreload|32260|24948|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|01/Jul/2021 16:49:06|autoreload|11216|27532|Watching for file changes with StatReloader
+INFO|01/Jul/2021 16:52:54|autoreload|11216|27532|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|01/Jul/2021 16:52:55|autoreload|28876|28944|Watching for file changes with StatReloader
+INFO|01/Jul/2021 16:57:49|autoreload|28876|28944|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|01/Jul/2021 16:57:51|autoreload|29932|29864|Watching for file changes with StatReloader
+INFO|01/Jul/2021 17:08:26|autoreload|17104|15220|Watching for file changes with StatReloader
+INFO|01/Jul/2021 17:10:14|autoreload|17104|15220|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|01/Jul/2021 17:10:15|autoreload|32796|29784|Watching for file changes with StatReloader
+INFO|01/Jul/2021 17:11:55|autoreload|32796|29784|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|01/Jul/2021 17:11:57|autoreload|33704|30796|Watching for file changes with StatReloader
+INFO|01/Jul/2021 17:12:46|autoreload|33704|30796|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\urls.py changed, reloading.
+INFO|01/Jul/2021 17:12:47|autoreload|19832|32388|Watching for file changes with StatReloader
+INFO|01/Jul/2021 17:12:55|autoreload|19832|32388|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\urls.py changed, reloading.
+INFO|01/Jul/2021 17:12:56|autoreload|27412|11480|Watching for file changes with StatReloader
+INFO|01/Jul/2021 17:13:02|autoreload|27412|11480|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\urls.py changed, reloading.
+INFO|01/Jul/2021 17:13:03|autoreload|32548|33264|Watching for file changes with StatReloader
+INFO|01/Jul/2021 17:13:33|basehttp|32548|32184|"GET /get_post_capital_gainsI_income/ HTTP/1.1" 200 63
+INFO|01/Jul/2021 17:13:39|basehttp|32548|32184|"POST /get_post_capital_gainsI_income/ HTTP/1.1" 200 669
+INFO|01/Jul/2021 17:13:58|basehttp|32548|32184|"GET /get_post_capital_gainsI_income/ HTTP/1.1" 200 675
+INFO|01/Jul/2021 17:24:43|basehttp|32548|32184|"POST /get_post_capital_gainsI_income/ HTTP/1.1" 200 669
+INFO|02/Jul/2021 11:38:54|autoreload|32548|33264|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.

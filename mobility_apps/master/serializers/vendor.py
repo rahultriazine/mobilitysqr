@@ -30,3 +30,19 @@ class Vendor_IncomeSerializers(serializers.ModelSerializer):
     class Meta:
         model =  Vendor_Income
         fields = '__all__'
+
+class Capital_GainsI_IncomeSerializers(serializers.ModelSerializer):
+    class Meta:
+        model =  Capital_GainsI_Income
+        fields = '__all__'
+
+class Vendor_StatusSerializers(serializers.ModelSerializer):
+    class Meta:
+        model =  Vendor_Status
+        fields = '__all__'
+
+
+class vendor_Service_ListSerializers(serializers.ModelSerializer):
+    class Meta:
+        model =  vendor_Service_List
+        fields = '__all__'
