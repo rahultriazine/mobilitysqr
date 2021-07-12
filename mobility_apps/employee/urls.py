@@ -77,7 +77,7 @@ urlpatterns = [
 
 
         path('employee_chat/', employee_chat.as_view(), name='employee_chat'),
-
+        path('get_post_employee_address/', get_post_employee_address.as_view(), name='get_post_employee_address'),
 
 
 

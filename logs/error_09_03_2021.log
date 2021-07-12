@@ -1,28 +1,56 @@
-ERROR|09/Mar/2021 12:42:52|log|9486|140206976743168|Internal Server Error: /json_upload/role/
+ERROR|09/Mar/2021 18:57:59|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Mar/2021 18:57:59|basehttp|24140|139976115009280|"GET /manager/html HTTP/1.1" 500 59
+ERROR|09/Mar/2021 19:02:02|basehttp|24140|139976115009280|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|09/Mar/2021 19:39:09|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Mar/2021 21:06:23|exception|24140|139976085374720|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Mar/2021 21:12:45|exception|24140|139976085374720|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Mar/2021 21:26:43|exception|24140|139976085374720|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Mar/2021 23:21:00|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Mar/2021 23:41:54|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|09/Mar/2021 23:41:54|basehttp|24140|139976115009280|"GET /script HTTP/1.1" 500 59
+ERROR|10/Mar/2021 01:01:24|basehttp|24140|139976115009280|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Mar/2021 01:49:23|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 02:23:43|basehttp|24140|139976115009280|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Mar/2021 03:16:50|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 03:20:57|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 04:06:54|basehttp|24140|139976115009280|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Mar/2021 04:46:58|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 04:52:18|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 05:12:00|basehttp|24140|139976115009280|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Mar/2021 06:24:25|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 06:38:52|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 07:02:36|basehttp|24140|139976115009280|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|10/Mar/2021 07:04:27|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 08:12:35|exception|24140|139976115009280|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/Mar/2021 10:24:27|log|24140|139976106354432|Internal Server Error: /api/custom/login/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 239, in get
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
     return self.list(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/mixins.py", line 38, in list
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/mixins.py", line 40, in list
     queryset = self.filter_queryset(self.get_queryset())
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/generics.py", line 66, in get_queryset
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/generics.py", line 68, in get_queryset
     % self.__class__.__name__
-AssertionError: 'json_upload_role' should either include a `queryset` attribute, or override the `get_queryset()` method.
-ERROR|09/Mar/2021 12:42:52|basehttp|9486|140206976743168|"GET /json_upload/role/ HTTP/1.1" 500 19862
+AssertionError: 'jwt_custom_login' should either include a `queryset` attribute, or override the `get_queryset()` method.
+ERROR|10/Mar/2021 10:24:27|basehttp|24140|139976106354432|"GET /api/custom/login/ HTTP/1.1" 500 17333
+ERROR|10/Mar/2021 10:24:43|exception|24140|139976106354432|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

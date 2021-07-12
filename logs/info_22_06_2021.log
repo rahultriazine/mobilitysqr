@@ -1,0 +1,59 @@
+INFO|22/Jun/2021 12:02:58|autoreload|10812|11244|Watching for file changes with StatReloader
+INFO|22/Jun/2021 12:19:52|autoreload|10812|11244|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 12:19:53|autoreload|3152|1820|Watching for file changes with StatReloader
+INFO|22/Jun/2021 13:05:39|autoreload|3152|1820|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|22/Jun/2021 13:05:40|autoreload|2344|10732|Watching for file changes with StatReloader
+INFO|22/Jun/2021 13:10:24|autoreload|2344|10732|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\project.py changed, reloading.
+INFO|22/Jun/2021 13:10:25|autoreload|25940|7652|Watching for file changes with StatReloader
+INFO|22/Jun/2021 13:12:23|autoreload|25940|7652|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\project.py changed, reloading.
+INFO|22/Jun/2021 13:12:24|autoreload|584|23420|Watching for file changes with StatReloader
+INFO|22/Jun/2021 13:12:51|autoreload|584|23420|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|22/Jun/2021 13:12:53|autoreload|1380|6208|Watching for file changes with StatReloader
+INFO|22/Jun/2021 13:13:36|autoreload|9804|1324|Watching for file changes with StatReloader
+INFO|22/Jun/2021 13:45:04|autoreload|9804|1324|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|22/Jun/2021 13:45:05|autoreload|20472|16300|Watching for file changes with StatReloader
+INFO|22/Jun/2021 15:50:35|autoreload|20472|16300|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 15:50:36|autoreload|16820|1072|Watching for file changes with StatReloader
+INFO|22/Jun/2021 15:50:42|autoreload|16820|1072|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 15:50:43|autoreload|3544|24276|Watching for file changes with StatReloader
+INFO|22/Jun/2021 15:51:03|autoreload|3544|24276|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 15:51:04|autoreload|3420|28456|Watching for file changes with StatReloader
+INFO|22/Jun/2021 16:56:50|autoreload|3420|28456|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 16:56:51|autoreload|28580|24376|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:01:55|autoreload|28580|24376|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:01:56|autoreload|11240|28616|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:02:53|autoreload|11240|28616|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:02:54|autoreload|28652|14884|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:04:06|autoreload|28652|14884|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:04:08|autoreload|20020|16816|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:20:40|autoreload|20020|16816|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:20:41|autoreload|27884|12332|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:25:54|autoreload|27884|12332|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:25:55|autoreload|12888|21740|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:32:51|autoreload|12888|21740|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:32:52|autoreload|8508|23060|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:33:46|autoreload|8508|23060|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:33:47|autoreload|28560|24972|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:36:19|autoreload|28560|24972|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:36:20|autoreload|28340|25356|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:41:26|autoreload|28340|25356|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:41:27|autoreload|17788|27248|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:48:29|autoreload|17788|27248|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:48:30|autoreload|10392|24328|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:48:46|autoreload|10392|24328|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:48:47|autoreload|28656|17024|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:49:18|autoreload|28656|17024|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\visa\models.py changed, reloading.
+INFO|22/Jun/2021 17:49:19|autoreload|21068|20800|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:53:41|autoreload|21068|20800|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\travel\models.py changed, reloading.
+INFO|22/Jun/2021 17:53:42|autoreload|24544|19136|Watching for file changes with StatReloader
+INFO|22/Jun/2021 17:56:52|autoreload|24544|19136|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\travel\models.py changed, reloading.
+INFO|22/Jun/2021 17:56:53|autoreload|26656|24056|Watching for file changes with StatReloader
+INFO|22/Jun/2021 18:13:17|autoreload|26656|24056|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\project.py changed, reloading.
+INFO|22/Jun/2021 18:13:18|autoreload|13216|11772|Watching for file changes with StatReloader
+INFO|22/Jun/2021 18:13:29|autoreload|13216|11772|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\project.py changed, reloading.
+INFO|22/Jun/2021 18:13:30|autoreload|23520|10504|Watching for file changes with StatReloader
+INFO|22/Jun/2021 18:30:52|autoreload|23520|10504|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\project.py changed, reloading.
+INFO|22/Jun/2021 18:30:53|autoreload|6436|14012|Watching for file changes with StatReloader
+INFO|22/Jun/2021 18:36:06|autoreload|6436|14012|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\project.py changed, reloading.
+INFO|22/Jun/2021 18:36:07|autoreload|26328|14944|Watching for file changes with StatReloader
+INFO|23/Jun/2021 11:17:00|autoreload|26328|14944|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.

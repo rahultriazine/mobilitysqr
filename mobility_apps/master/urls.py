@@ -91,6 +91,7 @@ urlpatterns = [
         path('bulk_upload_Gender/', bulk_upload_Gender.as_view(), name='bulk_upload_Gender'),
 
         path('get_post_marital_status/', get_post_marital_status.as_view(), name='get_post_marital_status'),
+        path('get_marital_status/', get_marital_status.as_view(), name='get_marital_status'),
         path('bulk_upload_marital_status/', bulk_upload_marital_status.as_view(), name='bulk_upload_marital_status'),
 
         path('get_post_salutation/', get_post_salutation.as_view(), name='get_post_salutation'),
@@ -174,6 +175,13 @@ urlpatterns = [
         path('update_master_phone_type/<int:pk>/', update_master_phone_type.as_view(), name='update_master_phone_type'),
         path('update_master_relation_type/<int:pk>/', update_master_relation_type.as_view(), name='update_master_relation_type'),
         path('update_master_national_id/<int:pk>/', update_master_national_id.as_view(), name='update_master_national_id'),
+        path('currency_conversion_history_new/', currency_conversion_history_new.as_view(), name='currency_conversion_history'),
+
+
+        path('get_post_vendor_income/', get_post_vendor_income.as_view(), name='get_post_vendor_income'),
+        path('get_post_capital_gainsI_income/', get_post_capital_gainsI_income.as_view(), name='get_post_capital_gainsI_income'),
+        path('get_post_Vendor_Status_history/', get_post_Vendor_Status_history.as_view(), name='get_post_Vendor_Status_history'),
+        path('get_post_vendor_Service_List/', get_post_vendor_Service_List.as_view(), name='get_post_vendor_Service_List'),
 
 
 

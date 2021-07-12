@@ -27,6 +27,7 @@ urlpatterns = [
         path('get_travel_request_approver_top/', get_travel_request_approver_top.as_view(), name='get_travel_request_approver_top'),
         path('travel_request_priority/', travel_request_priority.as_view(),
              name='travel_request_priority'),
+        path('assignment_travel_request_status_count/', assignment_travel_request_status_count.as_view(), name='assignment_travel_request_status_count'),
 
 
 

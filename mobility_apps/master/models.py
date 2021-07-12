@@ -104,7 +104,8 @@ class Organization(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Project(TimeStampedModel, GeneratedByModel):
-    pid = models.CharField(max_length=20, unique=True)
+    pid = models.CharField(max_length=50, unique=True)
+    pid_disp = models.CharField(max_length=100, null=True, blank=True)
     project_name = models.CharField(max_length=100, blank=True)
     start_date = models.CharField(max_length=100, null=True, blank=True)
     End_Date = models.CharField(max_length=100, null=True, blank=True)  # plus the time for last date
@@ -130,13 +131,14 @@ class Project(TimeStampedModel, GeneratedByModel):
         managed = True
         verbose_name = _('Project')
         verbose_name_plural = _('Project')
+        unique_together = ('pid_disp','organization')
 
     def __str__(self):
         return self.project_name
 
 
 class Visa_Purpose(TimeStampedModel, GeneratedByModel, Status):
-    VPID = models.CharField(max_length=10, unique=True)
+    VPID = models.CharField(max_length=50)
     country = models.CharField(max_length=100,default="231",blank=True)
     purpose_name = models.CharField(max_length=100)
     applicable_visa = models.CharField(max_length=15)
@@ -158,12 +160,14 @@ class Visa_Purpose(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Visa Purpose')
         verbose_name_plural = _('Visa Purpose')
+        unique_together = ('VPID','organization')
 
     def __str__(self):
         return self.VPID
 
     def __unicode__(self):
         return self.VPID
+        
 
 
 #
@@ -355,6 +359,7 @@ class Vendor(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Vendor')
         verbose_name_plural = _('Vendor')
+        unique_together = ('vendor_email','organization')
 
     def __str__(self):
         return self.vendor_name
@@ -366,7 +371,7 @@ class Vendor(TimeStampedModel, GeneratedByModel, Status):
 class Vendor_Category(TimeStampedModel, GeneratedByModel, Status):
     vendor_id = models.CharField(max_length=100, blank=True)
     vendor_name = models.CharField(max_length=100, blank=True)
-    category_id = models.CharField(max_length=200, blank=True)
+    category_id = models.IntegerField(max_length=200, blank=True)
     category_name = models.CharField(max_length=200, blank=True)
     organization = models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100, null=True, blank=True)
@@ -395,7 +400,7 @@ class Vendor_Category(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Vendor_Master(TimeStampedModel, GeneratedByModel, Status):
-    vendor_id = models.CharField(unique=True, max_length=100)
+    vendor_id = models.IntegerField(max_length=100)
     vendor_type = models.CharField(max_length=100, blank=True)
     action=models.CharField(max_length=100, blank=True)
     organization = models.CharField(max_length=100, null=True, blank=True)
@@ -416,6 +421,7 @@ class Vendor_Master(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Vendor Master')
         verbose_name_plural = _('Vendor Master')
+        unique_together = ('vendor_type','organization')
 
     def __str__(self):
         return self.vendor_id
@@ -546,7 +552,7 @@ class Assignment_Group(TimeStampedModel, GeneratedByModel, Status):
 class Currency_Conversion(TimeStampedModel, GeneratedByModel, Status):
     from_currency= models.CharField(max_length=10, null=True,blank=True)
     to_currency = models.CharField(max_length=100,null=True, blank=True)
-    conversion_date =  models.DateTimeField(max_length=10,null=True, blank=True)
+    conversion_date=  models.DateTimeField(max_length=10,null=True, blank=True)
     conversion_rate = models.CharField(max_length=200, null=True, blank=True)
     status_code = models.CharField(max_length=200,null=True, blank=True)
     organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
@@ -578,7 +584,7 @@ class Currency_Conversion(TimeStampedModel, GeneratedByModel, Status):
 class Currency_Conversion_History(TimeStampedModel, GeneratedByModel, Status):
     from_currency= models.CharField(max_length=10, null=True,blank=True)
     to_currency = models.CharField(max_length=100,null=True, blank=True)
-    conversion_date =  models.DateTimeField(max_length=10,null=True, blank=True)
+    conversion_date=  models.DateTimeField(max_length=10,null=True, blank=True)
     conversion_rate = models.CharField(max_length=200, null=True, blank=True)
     status_code = models.CharField(max_length=200,null=True, blank=True)
     organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
@@ -607,7 +613,7 @@ class Currency_Conversion_History(TimeStampedModel, GeneratedByModel, Status):
         return self.from_currency
 
 class Currency(TimeStampedModel, GeneratedByModel, Status):
-    currency_code = models.CharField(unique=True, max_length=4)
+    currency_code = models.CharField(max_length=4,unique=True)
     currency_name = models.CharField(max_length=100, blank=True)
     currency_description = models.CharField(max_length=200, blank=True)
     status_type = models.CharField(max_length=200, blank=True)
@@ -629,6 +635,7 @@ class Currency(TimeStampedModel, GeneratedByModel, Status):
         managed = True
         verbose_name = _('Currency')
         verbose_name_plural = _('Currency')
+        # unique_together = ('currency_code','organization')
 
     def __str__(self):
         return self.currency_name
@@ -850,7 +857,7 @@ class State_Master(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Location_Master(TimeStampedModel, GeneratedByModel, Status):
-    location_code= models.CharField(unique=True,max_length=100,null=True, blank=True)
+    location_code= models.CharField(max_length=100,null=True, blank=True)
     location_name= models.CharField(max_length=100,null=True, blank=True)
     description= models.CharField(max_length=500,null=True, blank=True)
     status = models.CharField(max_length=100,null=True, blank=True)
@@ -1688,3 +1695,142 @@ class Designation(TimeStampedModel, GeneratedByModel, Status):
 
     def __unicode__(self):
         return self.code
+from mobility_apps.travel.models import Travel_Request 
+TYPE_CHOICES = (('Tax Payer','Tax Payer'),('Spouse','Spouse'),('Joint','Joint'))
+class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
+    income_type = models.CharField(max_length=100,null=True, blank=True)
+    amount = models.CharField(max_length=100, null=True,blank=True)
+    account_type = models.CharField(max_length=100, choices=TYPE_CHOICES,null=True,blank=True)
+    attachment = models.CharField(max_length=300, null=True,blank=True)
+    vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
+    travel_req = models.ForeignKey(Travel_Request,null=True, blank=True,  on_delete=models.CASCADE)
+    employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE) 
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('income_type')
+        verbose_name_plural = _('income_type')
+
+
+class Employee_Address(TimeStampedModel, GeneratedByModel, Status):
+    pickup_address = models.TextField(null=True, blank=True)
+    delivery_address = models.TextField(null=True,blank=True)
+    move_date  = models.CharField(max_length=100, null=True,blank=True)
+    delivery_date  = models.CharField(max_length=100, null=True,blank=True)
+    vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE,related_name="organization")
+    employee= models.ForeignKey(Employee,related_name="Employee_name", null=True, blank=True,on_delete=models.CASCADE)
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('pickup_address')
+        verbose_name_plural = _('pickup_address')
+
+class Capital_GainsI_Income(TimeStampedModel, GeneratedByModel, Status):
+    company_name = models.CharField(max_length=200,null=True, blank=True)
+    class_of_share = models.CharField(max_length=100, null=True,blank=True)
+    share_sold = models.CharField(max_length=100, choices=TYPE_CHOICES,null=True,blank=True)
+    date_purchased = models.CharField(max_length=100, null=True,blank=True)
+    date_sold = models.CharField(max_length=100, null=True,blank=True)
+    purchase_price = models.CharField(max_length=100, null=True,blank=True)
+    sale_price = models.CharField(max_length=100, null=True,blank=True)
+    sale_expenses = models.CharField(max_length=100, null=True,blank=True)
+    tex_paid = models.CharField(max_length=100, null=True,blank=True)
+    currency = models.ForeignKey(Currency,null=True, blank=True,on_delete=models.CASCADE)
+    vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
+    travel_req = models.ForeignKey(Travel_Request,null=True, blank=True,  on_delete=models.CASCADE)
+    employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE) 
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('company_name')
+        verbose_name_plural = _('company_name')
+
+class Vendor_Status(TimeStampedModel, GeneratedByModel, Status):
+    status = models.CharField(max_length=200,null=True, blank=True)
+    selecting_status = models.CharField(max_length=200, null=True,blank=True)
+    histry = models.TextField(null=True,blank=True)
+    vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
+    # travel_req = models.ForeignKey(Travel_Request,null=True, blank=True,  on_delete=models.CASCADE)
+    employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE) 
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('status')
+        verbose_name_plural = _('status')
+
+
+class vendor_Service_List(TimeStampedModel, GeneratedByModel, Status):
+    services_list = models.CharField(max_length=200,null=True, blank=True)
+    status_audit_history = models.CharField(max_length=200, null=True,blank=True)
+    histry = models.TextField(null=True,blank=True)
+    date = models.CharField(max_length=100,null=True, blank=True)
+    estimated_visa_approve_date=models.CharField(max_length=100,null=True, blank=True)
+    vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
+    vendor_status = models.ForeignKey(Vendor_Status,null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
+    # travel_req = models.ForeignKey(Travel_Request,null=True, blank=True,  on_delete=models.CASCADE)
+    employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE) 
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)

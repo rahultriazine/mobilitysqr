@@ -1,0 +1,135 @@
+ERROR|11/May/2021 20:56:07|basehttp|1176|139977748903680|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|11/May/2021 23:14:45|exception|1176|139977748903680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/May/2021 03:05:10|exception|1176|139977748903680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/May/2021 06:38:50|exception|1176|139977748903680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/May/2021 10:11:11|exception|1176|139977366415104|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/May/2021 13:52:35|exception|1176|139977360385792|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/May/2021 13:52:36|basehttp|1176|139977360385792|"GET /manager/html HTTP/1.1" 500 59
+ERROR|12/May/2021 15:42:23|log|1176|139977068902144|Internal Server Error: /get_update_project/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+psycopg2.errors.ForeignKeyViolation: update or delete on table "master_project" violates foreign key constraint "visa_visa_request_project_id_id_9af6fe6d_fk_master_project_pid" on table "visa_visa_request"
+DETAIL:  Key (pid)=(300014) is still referenced from table "visa_visa_request".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/project.py", line 112, in post
+    serializer.save()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/serializers.py", line 986, in update
+    instance.save()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/transaction.py", line 212, in __exit__
+    connection.commit()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 261, in commit
+    self._commit()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: update or delete on table "master_project" violates foreign key constraint "visa_visa_request_project_id_id_9af6fe6d_fk_master_project_pid" on table "visa_visa_request"
+DETAIL:  Key (pid)=(300014) is still referenced from table "visa_visa_request".
+
+ERROR|12/May/2021 15:42:23|basehttp|1176|139977068902144|"POST /get_update_project/ HTTP/1.1" 500 20541
+ERROR|12/May/2021 15:42:32|log|1176|139977068902144|Internal Server Error: /get_update_project/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+psycopg2.errors.ForeignKeyViolation: update or delete on table "master_project" violates foreign key constraint "visa_visa_request_project_id_id_9af6fe6d_fk_master_project_pid" on table "visa_visa_request"
+DETAIL:  Key (pid)=(300014) is still referenced from table "visa_visa_request".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/project.py", line 112, in post
+    serializer.save()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/serializers.py", line 986, in update
+    instance.save()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/transaction.py", line 212, in __exit__
+    connection.commit()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 261, in commit
+    self._commit()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: update or delete on table "master_project" violates foreign key constraint "visa_visa_request_project_id_id_9af6fe6d_fk_master_project_pid" on table "visa_visa_request"
+DETAIL:  Key (pid)=(300014) is still referenced from table "visa_visa_request".
+
+ERROR|12/May/2021 15:42:32|basehttp|1176|139977068902144|"POST /get_update_project/ HTTP/1.1" 500 20541
+ERROR|12/May/2021 17:27:33|exception|1176|139977035331328|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|12/May/2021 18:00:19|log|1176|139977360385792|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2767, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|12/May/2021 18:00:19|basehttp|1176|139977360385792|"POST /employee_chat/ HTTP/1.1" 500 17876
+ERROR|12/May/2021 18:52:00|basehttp|1176|139977060509440|You're accessing the development server over HTTPS, but it only supports HTTP.
+

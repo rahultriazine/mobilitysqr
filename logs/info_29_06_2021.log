@@ -1,0 +1,82 @@
+INFO|29/Jun/2021 16:15:52|autoreload|8724|19284|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:16:39|autoreload|23956|22436|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:16:49|autoreload|23956|22436|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|29/Jun/2021 16:16:50|autoreload|32372|17772|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:19:47|autoreload|24820|22152|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:20:00|autoreload|12436|30268|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:21:03|autoreload|28852|25876|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:24:56|autoreload|2632|13656|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:25:48|autoreload|17316|3488|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:48:51|autoreload|17316|3488|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 16:48:52|autoreload|28396|14212|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:49:00|autoreload|28396|14212|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 16:49:01|autoreload|33340|22912|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:52:13|autoreload|33340|22912|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 16:52:14|autoreload|28316|12044|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:56:41|autoreload|28316|12044|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 16:56:42|autoreload|32712|7984|Watching for file changes with StatReloader
+INFO|29/Jun/2021 16:58:49|autoreload|32712|7984|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 16:58:50|autoreload|32932|27532|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:00:59|autoreload|32932|27532|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:01:01|autoreload|23440|7960|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:03:44|autoreload|23440|7960|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:03:45|autoreload|33364|20752|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:04:24|autoreload|33364|20752|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:04:25|autoreload|15548|31804|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:07:54|autoreload|15548|31804|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:07:55|autoreload|24588|23496|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:10:33|autoreload|24588|23496|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:10:34|autoreload|34184|8280|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:16:59|autoreload|34184|8280|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:17:00|autoreload|24444|29352|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:18:11|autoreload|24444|29352|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:18:12|autoreload|8956|34576|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:20:56|autoreload|8956|34576|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:20:57|autoreload|22552|20388|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:36:38|autoreload|22552|20388|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|29/Jun/2021 17:36:39|autoreload|18904|12960|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:47:19|autoreload|7580|12892|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:49:19|autoreload|24980|16332|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:49:48|autoreload|7424|396|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:50:24|autoreload|28744|24056|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:52:44|autoreload|4236|28908|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:54:07|autoreload|4236|28908|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\serializers\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:54:08|autoreload|33432|31308|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:54:27|autoreload|32304|22392|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:55:33|autoreload|17988|15028|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:56:31|autoreload|21612|10200|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:57:51|autoreload|21612|10200|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\urls.py changed, reloading.
+INFO|29/Jun/2021 17:57:52|autoreload|17336|12388|Watching for file changes with StatReloader
+ERROR|29/Jun/2021 17:58:32|log|17336|5556|Internal Server Error: /get_post_vendor_income/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py", line 593, in get
+    vendor_income = Vendor_Income.objects.filter(organization=org_id).order_by('id')
+NameError: name 'Vendor_Income' is not defined
+ERROR|29/Jun/2021 17:58:32|basehttp|17336|5556|"GET /get_post_vendor_income/ HTTP/1.1" 500 17933
+INFO|29/Jun/2021 17:59:05|autoreload|17336|12388|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\vendor.py changed, reloading.
+INFO|29/Jun/2021 17:59:06|autoreload|29460|4428|Watching for file changes with StatReloader
+INFO|29/Jun/2021 17:59:12|basehttp|29460|12548|"GET /get_post_vendor_income/ HTTP/1.1" 200 63
+INFO|29/Jun/2021 17:59:18|basehttp|29460|12548|"POST /get_post_vendor_income/ HTTP/1.1" 200 102
+INFO|29/Jun/2021 17:59:57|autoreload|29460|4428|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|29/Jun/2021 17:59:58|autoreload|12192|33556|Watching for file changes with StatReloader
+INFO|29/Jun/2021 18:00:28|autoreload|32888|31332|Watching for file changes with StatReloader
+INFO|29/Jun/2021 18:01:27|basehttp|32888|20264|"POST /get_post_vendor_income/ HTTP/1.1" 200 331
+INFO|29/Jun/2021 18:01:39|basehttp|32888|20264|"GET /get_post_vendor_income/ HTTP/1.1" 200 337

@@ -1,0 +1,19 @@
+ERROR|07/Apr/2021 10:22:03|exception|4820|140672048817920|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Apr/2021 11:45:38|basehttp|4820|140672057210624|"GET /favicon.ico HTTP/1.1" 500 59
+ERROR|07/Apr/2021 11:46:15|basehttp|4820|140672013149952|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|07/Apr/2021 11:46:17|basehttp|4820|140672003708672|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|07/Apr/2021 13:43:28|exception|4820|140672048817920|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Apr/2021 15:48:43|basehttp|4820|140672057210624|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|07/Apr/2021 17:08:45|exception|4820|140671646164736|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Apr/2021 20:25:47|exception|4820|140672048817920|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Apr/2021 22:18:55|basehttp|4820|140672013149952|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|07/Apr/2021 23:48:52|exception|4820|140672013149952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Apr/2021 03:10:19|exception|4820|140672013149952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Apr/2021 06:08:25|basehttp|4820|140672013149952|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|08/Apr/2021 06:27:41|exception|4820|140672013149952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Apr/2021 06:55:57|basehttp|4820|140672013149952|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|08/Apr/2021 09:45:52|exception|4820|140672013149952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

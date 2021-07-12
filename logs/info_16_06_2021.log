@@ -1,0 +1,618 @@
+INFO|16/Jun/2021 12:18:03|autoreload|18488|20280|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:19:15|autoreload|18488|20280|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:19:16|autoreload|23288|20300|Watching for file changes with StatReloader
+WARNING|16/Jun/2021 12:19:43|log|23288|17020|Unauthorized: /get_post_location/
+WARNING|16/Jun/2021 12:19:43|basehttp|23288|17020|"POST /get_post_location/ HTTP/1.1" 401 183
+WARNING|16/Jun/2021 12:20:16|log|23288|17020|Unauthorized: /get_post_location/
+WARNING|16/Jun/2021 12:20:16|basehttp|23288|17020|"POST /get_post_location/ HTTP/1.1" 401 183
+INFO|16/Jun/2021 12:20:32|autoreload|23288|20300|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\urls.py changed, reloading.
+INFO|16/Jun/2021 12:20:33|autoreload|21892|21940|Watching for file changes with StatReloader
+WARNING|16/Jun/2021 12:20:40|log|21892|21260|Unauthorized: /get_post_location/
+WARNING|16/Jun/2021 12:20:40|basehttp|21892|21260|"POST /get_post_location/ HTTP/1.1" 401 183
+INFO|16/Jun/2021 12:21:23|autoreload|21892|21940|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:21:24|autoreload|476|17152|Watching for file changes with StatReloader
+WARNING|16/Jun/2021 12:21:32|log|476|24308|Unauthorized: /get_post_location/
+WARNING|16/Jun/2021 12:21:32|basehttp|476|24308|"POST /get_post_location/ HTTP/1.1" 401 183
+ERROR|16/Jun/2021 12:21:45|log|476|24308|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:21:45|basehttp|476|24308|"POST /get_post_location/ HTTP/1.1" 500 18960
+INFO|16/Jun/2021 12:22:27|autoreload|476|17152|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:22:28|autoreload|20772|22740|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:22:33|log|20772|23404|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 481, in post
+    print("-----------------------",request.data['organization'])
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:22:33|basehttp|20772|23404|"POST /get_post_location/ HTTP/1.1" 500 18891
+INFO|16/Jun/2021 12:23:03|autoreload|20772|22740|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:23:04|autoreload|22224|5092|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:23:13|log|22224|21120|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 481, in post
+    print("-----------------------",request.data['organization'])
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:23:13|basehttp|22224|21120|"POST /get_post_location/ HTTP/1.1" 500 18891
+INFO|16/Jun/2021 12:23:35|autoreload|22224|5092|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:23:36|autoreload|22400|8360|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:23:41|log|22400|9888|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 481, in post
+    print("-----------------------",request.data["organization"])
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:23:41|basehttp|22400|9888|"POST /get_post_location/ HTTP/1.1" 500 18891
+INFO|16/Jun/2021 12:24:58|autoreload|22400|8360|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:24:59|autoreload|20004|20664|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:25:04|log|20004|20536|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:25:04|basehttp|20004|20536|"POST /get_post_location/ HTTP/1.1" 500 18960
+INFO|16/Jun/2021 12:26:41|autoreload|20004|20664|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:26:42|autoreload|1880|12716|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:26:48|log|1880|8908|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\request.py", line 409, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 481, in post
+    print("-----------------------",request.get('organization'))
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\request.py", line 411, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'get'
+ERROR|16/Jun/2021 12:26:48|basehttp|1880|8908|"POST /get_post_location/ HTTP/1.1" 500 18949
+INFO|16/Jun/2021 12:27:04|autoreload|1880|12716|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:27:05|autoreload|14148|15512|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:27:09|log|14148|9396|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:27:09|basehttp|14148|9396|"POST /get_post_location/ HTTP/1.1" 500 18960
+INFO|16/Jun/2021 12:27:44|autoreload|14148|15512|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:27:45|autoreload|21964|17932|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:27:50|log|21964|24356|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:27:50|basehttp|21964|24356|"POST /get_post_location/ HTTP/1.1" 500 18960
+INFO|16/Jun/2021 12:28:35|autoreload|21964|17932|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:28:36|autoreload|22364|1180|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:28:41|log|22364|23924|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'organization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'organization'
+ERROR|16/Jun/2021 12:28:41|basehttp|22364|23924|"POST /get_post_location/ HTTP/1.1" 500 18960
+INFO|16/Jun/2021 12:29:19|autoreload|22364|1180|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:29:20|autoreload|24180|24196|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:29:27|autoreload|24180|24196|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:29:28|autoreload|18616|21580|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:29:32|basehttp|18616|19844|"POST /get_post_location/ HTTP/1.1" 200 718
+INFO|16/Jun/2021 12:30:17|autoreload|18616|21580|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:30:18|autoreload|4400|17328|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:30:25|basehttp|4400|18176|"POST /get_post_location/ HTTP/1.1" 200 718
+WARNING|16/Jun/2021 12:32:25|log|4400|18176|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:32:25|basehttp|4400|18176|"POST /get_post_location/ HTTP/1.1" 400 126
+INFO|16/Jun/2021 12:32:51|basehttp|4400|18176|"POST /get_post_location/ HTTP/1.1" 200 788
+WARNING|16/Jun/2021 12:33:01|log|4400|18176|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:33:01|basehttp|4400|18176|"POST /get_post_location/ HTTP/1.1" 400 138
+WARNING|16/Jun/2021 12:33:02|log|4400|18176|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:33:02|basehttp|4400|18176|"POST /get_post_location/ HTTP/1.1" 400 138
+INFO|16/Jun/2021 12:33:58|autoreload|4400|17328|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:33:59|autoreload|19736|22860|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:36:35|autoreload|14416|8940|Watching for file changes with StatReloader
+WARNING|16/Jun/2021 12:36:41|log|14416|11744|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:36:41|basehttp|14416|11744|"POST /get_post_location/ HTTP/1.1" 400 194
+INFO|16/Jun/2021 12:36:57|autoreload|14416|8940|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:36:58|autoreload|5864|2764|Watching for file changes with StatReloader
+WARNING|16/Jun/2021 12:37:12|log|5864|284|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:37:12|basehttp|5864|284|"POST /get_post_location/ HTTP/1.1" 400 194
+WARNING|16/Jun/2021 12:37:42|log|5864|284|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:37:42|basehttp|5864|284|"POST /get_post_location/ HTTP/1.1" 400 194
+INFO|16/Jun/2021 12:38:22|autoreload|5864|2764|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:38:23|autoreload|23176|14560|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:38:48|basehttp|23176|22928|"POST /get_post_location/ HTTP/1.1" 200 87
+INFO|16/Jun/2021 12:39:12|autoreload|23176|14560|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:39:13|autoreload|23328|17164|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:39:16|log|23328|17292|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+KeyError: 'organization'
+ERROR|16/Jun/2021 12:39:16|basehttp|23328|17292|"POST /get_post_location/ HTTP/1.1" 500 18029
+WARNING|16/Jun/2021 12:39:38|log|23328|17292|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:39:38|basehttp|23328|17292|"POST /get_post_location/ HTTP/1.1" 400 202
+ERROR|16/Jun/2021 12:40:06|log|23328|17292|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+KeyError: 'organization'
+ERROR|16/Jun/2021 12:40:06|basehttp|23328|17292|"POST /get_post_location/ HTTP/1.1" 500 18029
+INFO|16/Jun/2021 12:40:18|autoreload|23328|17164|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:40:19|autoreload|5252|10152|Watching for file changes with StatReloader
+WARNING|16/Jun/2021 12:40:21|log|5252|20076|Bad Request: /get_post_location/
+WARNING|16/Jun/2021 12:40:21|basehttp|5252|20076|"POST /get_post_location/ HTTP/1.1" 400 138
+INFO|16/Jun/2021 12:41:53|autoreload|5252|10152|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:41:54|autoreload|12716|7372|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:43:39|autoreload|6412|10188|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:44:46|autoreload|20572|11700|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:44:52|log|20572|1556|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 482, in post
+    if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+KeyError: 'organization'
+ERROR|16/Jun/2021 12:44:52|basehttp|20572|1556|"POST /get_post_location/ HTTP/1.1" 500 18029
+INFO|16/Jun/2021 12:45:05|autoreload|20572|11700|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:45:06|autoreload|312|24284|Watching for file changes with StatReloader
+ERROR|16/Jun/2021 12:45:12|log|312|23308|Internal Server Error: /get_post_location/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py", line 483, in post
+    message1={"message": "FAILED","status_code": 400,"status": false,"data": {"location_code": ["Location Master with this location code already exists."]}}
+NameError: name 'false' is not defined
+ERROR|16/Jun/2021 12:45:12|basehttp|312|23308|"POST /get_post_location/ HTTP/1.1" 500 18083
+INFO|16/Jun/2021 12:45:39|autoreload|312|24284|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:45:40|autoreload|19292|12104|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:45:46|basehttp|19292|17340|"POST /get_post_location/ HTTP/1.1" 200 138
+INFO|16/Jun/2021 12:46:24|autoreload|19292|12104|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:46:25|autoreload|20944|5728|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:46:34|autoreload|20944|5728|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:46:35|autoreload|19028|5144|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:52:06|autoreload|19028|5144|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:52:07|autoreload|2420|11472|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:52:11|autoreload|2420|11472|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:52:12|autoreload|24476|15240|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:53:37|autoreload|24476|15240|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:53:38|autoreload|17336|18764|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:53:50|autoreload|17336|18764|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:53:51|autoreload|10860|16236|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:55:51|autoreload|10860|16236|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:55:52|autoreload|16848|15576|Watching for file changes with StatReloader
+INFO|16/Jun/2021 12:59:09|autoreload|16848|15576|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 12:59:10|autoreload|24416|22252|Watching for file changes with StatReloader
+INFO|16/Jun/2021 13:25:34|autoreload|24416|22252|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 13:25:35|autoreload|11184|17452|Watching for file changes with StatReloader
+INFO|16/Jun/2021 13:26:28|autoreload|11184|17452|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 13:26:29|autoreload|19140|21744|Watching for file changes with StatReloader
+INFO|16/Jun/2021 14:31:42|autoreload|19140|21744|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 14:31:43|autoreload|14632|13732|Watching for file changes with StatReloader
+INFO|16/Jun/2021 14:34:26|autoreload|14632|13732|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 14:34:27|autoreload|20696|4996|Watching for file changes with StatReloader
+INFO|16/Jun/2021 14:39:25|autoreload|20696|4996|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 14:39:26|autoreload|21740|15132|Watching for file changes with StatReloader
+INFO|16/Jun/2021 14:56:55|autoreload|21740|15132|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 14:56:57|autoreload|23036|15852|Watching for file changes with StatReloader
+INFO|16/Jun/2021 15:00:58|autoreload|23036|15852|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 15:00:59|autoreload|12536|16204|Watching for file changes with StatReloader
+INFO|16/Jun/2021 15:01:08|autoreload|12536|16204|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 15:01:10|autoreload|18664|20968|Watching for file changes with StatReloader
+INFO|16/Jun/2021 15:03:04|autoreload|18664|20968|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 15:03:06|autoreload|1456|10192|Watching for file changes with StatReloader
+INFO|16/Jun/2021 15:03:17|autoreload|1456|10192|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|16/Jun/2021 15:03:19|autoreload|17952|17424|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:02:09|autoreload|17952|17424|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 16:02:11|autoreload|19616|3876|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:02:49|autoreload|19616|3876|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 16:02:51|autoreload|9516|4388|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:09:32|autoreload|9516|4388|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 16:09:34|autoreload|13876|9420|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:09:42|autoreload|13876|9420|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 16:09:43|autoreload|23884|2764|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:09:46|basehttp|23884|13536|"GET /get_post_location/?organization=ORG150866&country=United%20States HTTP/1.1" 200 63
+INFO|16/Jun/2021 16:10:03|autoreload|23884|2764|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 16:10:05|autoreload|17876|18308|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:10:11|basehttp|17876|13124|"GET /get_post_location/?organization=ORG150866&country=United%20States HTTP/1.1" 200 63
+INFO|16/Jun/2021 16:31:36|autoreload|17876|18308|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 16:31:37|autoreload|14568|2840|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:31:41|autoreload|14568|2840|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 16:31:42|autoreload|6152|8308|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:32:39|autoreload|6152|8308|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\models.py changed, reloading.
+INFO|16/Jun/2021 16:32:40|autoreload|13752|21836|Watching for file changes with StatReloader
+INFO|16/Jun/2021 16:33:25|autoreload|23212|24284|Watching for file changes with StatReloader
+INFO|16/Jun/2021 17:18:17|autoreload|21060|7404|Watching for file changes with StatReloader
+INFO|16/Jun/2021 17:26:30|autoreload|21060|7404|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 17:26:31|autoreload|3224|17980|Watching for file changes with StatReloader
+INFO|16/Jun/2021 17:29:45|autoreload|3224|17980|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 17:29:46|autoreload|1064|3936|Watching for file changes with StatReloader
+INFO|16/Jun/2021 17:53:02|autoreload|1064|3936|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 17:53:03|autoreload|20048|14480|Watching for file changes with StatReloader
+INFO|16/Jun/2021 17:54:24|autoreload|20048|14480|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 17:54:25|autoreload|18552|24404|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:00:09|autoreload|18552|24404|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:00:10|autoreload|23604|23584|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:03:40|autoreload|23604|23584|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:03:41|autoreload|18388|19192|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:07:21|autoreload|18388|19192|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:07:22|autoreload|15284|268|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:07:46|autoreload|9900|11892|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:18:11|autoreload|9900|11892|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:18:12|autoreload|12420|10228|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:19:19|autoreload|12420|10228|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:19:20|autoreload|3096|20572|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:28:54|autoreload|3096|20572|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:28:55|autoreload|17928|22764|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:29:53|autoreload|17928|22764|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:29:55|autoreload|19780|19624|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:35:08|autoreload|19780|19624|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:35:09|autoreload|22712|5956|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:35:22|autoreload|22712|5956|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:35:23|autoreload|23988|24476|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:39:04|autoreload|23988|24476|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:39:05|autoreload|23020|24356|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:57:02|autoreload|23020|24356|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:57:03|autoreload|23280|21304|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:59:19|autoreload|23280|21304|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:59:20|autoreload|20648|21808|Watching for file changes with StatReloader
+INFO|16/Jun/2021 18:59:35|autoreload|20648|21808|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 18:59:36|autoreload|20176|22656|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:00:20|autoreload|20176|22656|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:00:22|autoreload|15384|1708|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:00:40|autoreload|15384|1708|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:00:42|autoreload|19220|11608|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:01:51|autoreload|19220|11608|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:01:52|autoreload|21600|16480|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:03:30|autoreload|11464|17440|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:05:09|autoreload|11464|17440|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:05:11|autoreload|17740|5852|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:08:42|autoreload|17740|5852|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:08:43|autoreload|23496|12144|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:09:04|autoreload|23496|12144|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:09:05|autoreload|21880|21672|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:09:16|autoreload|21880|21672|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:09:18|autoreload|6012|13260|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:11:15|autoreload|6012|13260|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:11:16|autoreload|24104|19736|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:16:08|autoreload|24104|19736|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:16:10|autoreload|1604|10320|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:16:32|autoreload|21756|20284|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:19:43|autoreload|21756|20284|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:19:44|autoreload|22856|22156|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:27:33|autoreload|22856|22156|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:27:35|autoreload|1860|4300|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:33:02|autoreload|1860|4300|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:33:03|autoreload|23176|20272|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:35:44|autoreload|14392|21820|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:42:13|autoreload|14392|21820|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:42:15|autoreload|21124|17984|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:51:23|autoreload|21124|17984|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:51:25|autoreload|3252|14916|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:52:04|autoreload|3252|14916|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:52:05|autoreload|13416|23388|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:52:27|autoreload|13416|23388|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:52:29|autoreload|16244|612|Watching for file changes with StatReloader
+INFO|16/Jun/2021 19:59:31|autoreload|16244|612|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 19:59:33|autoreload|23332|13464|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:00:00|autoreload|23332|13464|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:00:02|autoreload|7788|12956|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:07:51|autoreload|7788|12956|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:07:52|autoreload|12300|9504|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:08:37|autoreload|17008|21084|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:12:18|autoreload|17008|21084|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:12:19|autoreload|17500|13032|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:12:31|autoreload|16648|18652|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:15:52|autoreload|16648|18652|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:15:53|autoreload|10476|20028|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:21:07|autoreload|10476|20028|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:21:08|autoreload|18080|19820|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:22:40|autoreload|18080|19820|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:22:42|autoreload|16900|10356|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:22:47|autoreload|16900|10356|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:22:48|autoreload|21684|19796|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:25:08|autoreload|21684|19796|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:25:09|autoreload|21476|21848|Watching for file changes with StatReloader
+INFO|16/Jun/2021 20:25:56|autoreload|21476|21848|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\country.py changed, reloading.
+INFO|16/Jun/2021 20:25:58|autoreload|20932|9688|Watching for file changes with StatReloader

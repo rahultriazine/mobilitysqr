@@ -1,0 +1,20 @@
+INFO|26/May/2021 22:41:43|basehttp|1768307|140535762773760|"GET /checkemployeeuser/?user_name=divyanshu09433332 HTTP/1.1" 200 62
+INFO|26/May/2021 22:45:23|basehttp|1768307|140535762773760|"GET /checkemployeeuser/?user_name=divyanshu09433332 HTTP/1.1" 200 62
+INFO|26/May/2021 22:45:24|basehttp|1768307|140535762773760|"GET /checkemployeeuser/?user_name=divyanshu09433332 HTTP/1.1" 200 62
+WARNING|26/May/2021 23:28:48|log|1768307|140535762773760|Not Found: /_ignition/execute-solution
+WARNING|26/May/2021 23:28:48|basehttp|1768307|140535762773760|"POST /_ignition/execute-solution HTTP/1.1" 404 56839
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535754118912|"GET / HTTP/1.1" 200 9579
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535754118912|"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535754118912|"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535743891200|"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535754118912|"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535762773760|"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535762773760|"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535743891200|"GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535743891200|"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535754118912|"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO|26/May/2021 23:52:44|basehttp|1768307|140535762773760|"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+INFO|26/May/2021 23:52:45|basehttp|1768307|140535762773760|"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING|26/May/2021 23:52:45|log|1768307|140535762773760|Not Found: /favicon.ico
+WARNING|26/May/2021 23:52:45|basehttp|1768307|140535762773760|"GET /favicon.ico HTTP/1.1" 404 56795
+INFO|27/May/2021 00:04:16|basehttp|1768307|140535762773760|"GET /checkemployeeuser/?user_name=divyanshu09433332 HTTP/1.1" 200 62
