@@ -1,62 +1,1155 @@
-ERROR|25/Mar/2021 14:56:34|log|12786|140016579241728|Internal Server Error: /employee_chat/
+ERROR|25/Mar/2021 12:00:59|log|29159|140138197804800|Internal Server Error: /emoloyeedetails/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2739, in post
-    serializer.save()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 205, in save
-    self.instance = self.create(validated_data)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 939, in create
-    instance = ModelClass._default_manager.create(**validated_data)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 413, in create
-    obj.save(force_insert=True, using=self.db)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 718, in save
-    force_update=force_update, update_fields=update_fields)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 748, in save_base
-    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 831, in _save_table
-    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/base.py", line 869, in _do_insert
-    using=using, raw=raw)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1136, in _insert
-    return query.get_compiler(using=using).execute_sql(return_id)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1321, in execute_sql
-    for sql, params in self.as_sql():
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/compiler.py", line 416, in as_sql
-    for obj in self.query.objs
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/compiler.py", line 416, in <listcomp>
-    for obj in self.query.objs
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/compiler.py", line 415, in <listcomp>
-    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1215, in prepare_value
-    value = field.get_db_prep_save(value, connection=self.connection)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/related.py", line 937, in get_db_prep_save
-    return self.target_field.get_db_prep_save(value, connection=connection)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 790, in get_db_prep_save
-    return self.get_db_prep_value(value, connection=connection, prepared=False)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 956, in get_db_prep_value
-    value = self.get_prep_value(value)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 965, in get_prep_value
-    return int(value)
-ValueError: invalid literal for int() with base 10: 'emp001'
-ERROR|25/Mar/2021 14:56:34|basehttp|12786|140016579241728|"POST /employee_chat/ HTTP/1.1" 500 23142
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:00:59|log|29159|140138206197504|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:00:59|basehttp|29159|140138197804800|"GET /emoloyeedetails/?employee=t&org_id=ORG150866 HTTP/1.1" 500 20122
+ERROR|25/Mar/2021 12:00:59|basehttp|29159|140138206197504|"GET /emoloyeedetails/?employee=tu&org_id=ORG150866 HTTP/1.1" 500 20126
+ERROR|25/Mar/2021 12:00:59|log|29159|140138206197504|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:00:59|basehttp|29159|140138206197504|"GET /emoloyeedetails/?employee=tus&org_id=ORG150866 HTTP/1.1" 500 20128
+ERROR|25/Mar/2021 12:00:59|log|29159|140138206197504|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:00:59|basehttp|29159|140138206197504|"GET /emoloyeedetails/?employee=tush&org_id=ORG150866 HTTP/1.1" 500 20131
+ERROR|25/Mar/2021 12:01:00|log|29159|140138206197504|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:00|basehttp|29159|140138206197504|"GET /emoloyeedetails/?employee=tusha&org_id=ORG150866 HTTP/1.1" 500 20134
+ERROR|25/Mar/2021 12:01:00|log|29159|140138206197504|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:00|basehttp|29159|140138206197504|"GET /emoloyeedetails/?employee=tushaa&org_id=ORG150866 HTTP/1.1" 500 20137
+ERROR|25/Mar/2021 12:01:01|log|29159|140138206197504|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:01|basehttp|29159|140138206197504|"GET /emoloyeedetails/?employee=tushaar&org_id=ORG150866 HTTP/1.1" 500 20140
+ERROR|25/Mar/2021 12:01:13|log|29159|140138197804800|Internal Server Error: /getemployee_org_info/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'emp_code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 2111, in get
+    if emporg_serializer.data:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 517, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/relations.py", line 192, in get_attribute
+    return super(RelatedField, self).get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:13|basehttp|29159|140138197804800|"GET /getemployee_org_info/?employee=div944 HTTP/1.1" 500 22293
+ERROR|25/Mar/2021 12:01:19|log|29159|140138170791680|Internal Server Error: /getemployee_passport_info/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'emp_code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 2224, in get
+    if emppassport_serializer.data:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 517, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/relations.py", line 192, in get_attribute
+    return super(RelatedField, self).get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:19|basehttp|29159|140138170791680|"GET /getemployee_passport_info/?employee=div944 HTTP/1.1" 500 22318
+ERROR|25/Mar/2021 12:01:19|log|29159|140138180495104|Internal Server Error: /org_travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'emp_email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 525, in get
+    emp_code=Employee.objects.filter(emp_code=travel_requests.data[0]['emp_email']).values('emp_code','first_name','last_name')
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 517, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/relations.py", line 192, in get_attribute
+    return super(RelatedField, self).get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:19|log|29159|140138197804800|Internal Server Error: /get_add/travel_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'emp_email'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 128, in get
+    emp_code=Employee.objects.filter(emp_code=travel_requests.data[0]['emp_email']).values('emp_code','first_name','last_name')
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 517, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/relations.py", line 192, in get_attribute
+    return super(RelatedField, self).get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:19|basehttp|29159|140138180495104|"GET /org_travel_request/?travel_req_status=2&org_id=ORG150866&current_ticket_email=div944 HTTP/1.1" 500 22543
+ERROR|25/Mar/2021 12:01:19|basehttp|29159|140138197804800|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=div944 HTTP/1.1" 500 22521
+ERROR|25/Mar/2021 12:01:19|log|29159|140138188887808|Internal Server Error: /getemployee_visa_info/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'emp_code'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 2243, in get
+    if empvisa_serializer.data:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/serializers.py", line 517, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/relations.py", line 192, in get_attribute
+    return super(RelatedField, self).get_attribute(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/fields.py", line 102, in get_attribute
+    instance = getattr(instance, attr)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:19|basehttp|29159|140138188887808|"GET /getemployee_visa_info/?employee=div944 HTTP/1.1" 500 22298
+ERROR|25/Mar/2021 12:01:46|log|29159|140138180495104|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:46|basehttp|29159|140138180495104|"GET /emoloyeedetails/?employee=t&org_id=ORG150866 HTTP/1.1" 500 20122
+ERROR|25/Mar/2021 12:01:46|log|29159|140138180495104|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:46|basehttp|29159|140138180495104|"GET /emoloyeedetails/?employee=tu&org_id=ORG150866 HTTP/1.1" 500 20125
+ERROR|25/Mar/2021 12:01:46|log|29159|140138282731264|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:46|basehttp|29159|140138282731264|"GET /emoloyeedetails/?employee=tus&org_id=ORG150866 HTTP/1.1" 500 20129
+ERROR|25/Mar/2021 12:01:46|log|29159|140138282731264|Internal Server Error: /emoloyeedetails/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 160, in get
+    print(queryset)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 244, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 268, in __iter__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/base.py", line 546, in execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'date_of_join'. (207) (SQLExecDirectW)")
+ERROR|25/Mar/2021 12:01:46|basehttp|29159|140138282731264|"GET /emoloyeedetails/?employee=tush&org_id=ORG150866 HTTP/1.1" 500 20131
+ERROR|25/Mar/2021 12:29:07|exception|29159|140138170791680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Mar/2021 12:44:03|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Mar/2021 13:19:06|basehttp|29159|140138180495104|"GET /media/vaultDocument/dsc02547_jm60mld.jpg HTTP/1.1" 500 59
+ERROR|25/Mar/2021 13:19:06|basehttp|29159|140138154006272|"GET /media/vaultDocument/image_cropper_31FFCB74-6F11-48B7-ADD7-70431A63C170-409-000000232D697707_PxQiIHY.png HTTP/1.1" 500 59
+ERROR|25/Mar/2021 13:19:06|basehttp|29159|140138170791680|"GET /media/vaultDocument/ahhn102.pdf HTTP/1.1" 500 59
+ERROR|25/Mar/2021 13:25:34|basehttp|29159|140137803544320|"GET /media/image_cropper_1616591386549.png HTTP/1.1" 500 59
+ERROR|25/Mar/2021 14:25:16|exception|29159|140138170791680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Mar/2021 16:17:36|exception|29159|140138170791680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Mar/2021 16:21:22|exception|29159|140138188887808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Mar/2021 16:23:19|basehttp|29159|140138188887808|"GET /media/vaultDocument/dsc02547_jm60mld.jpg HTTP/1.1" 500 59
+ERROR|25/Mar/2021 16:23:19|basehttp|29159|140138170791680|"GET /media/vaultDocument/ahhn101.pdf HTTP/1.1" 500 59
+ERROR|25/Mar/2021 17:17:04|log|29159|140138170791680|Internal Server Error: /get_travel_status_summary/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 971, in get
+    travelserializersssts=Travel_Request_Action_History.objects.filter(travel_req_id_id=request.GET['travel_req_id'],email_id=travelserializerss[0]['supervisor'],approval_level="0").values(
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|25/Mar/2021 17:17:04|basehttp|29159|140138170791680|"GET /get_travel_status_summary/?travel_req_id=undefined&org_id=ORG150866 HTTP/1.1" 500 17748
+ERROR|25/Mar/2021 17:27:32|log|29159|140137786758912|Internal Server Error: /get_travel_status_summary/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 971, in get
+    travelserializersssts=Travel_Request_Action_History.objects.filter(travel_req_id_id=request.GET['travel_req_id'],email_id=travelserializerss[0]['supervisor'],approval_level="0").values(
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|25/Mar/2021 17:27:32|basehttp|29159|140137786758912|"GET /get_travel_status_summary/?travel_req_id=No%20Record(s)%20Found&org_id=ORG150866 HTTP/1.1" 500 17785
+ERROR|25/Mar/2021 17:42:57|exception|29159|140138170791680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Mar/2021 19:21:56|exception|29159|140138180495104|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Mar/2021 20:11:10|basehttp|29159|140138180495104|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|25/Mar/2021 20:16:19|exception|29159|140138180495104|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 00:12:45|exception|29159|140138188887808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 01:29:18|exception|29159|140138188887808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 03:36:39|exception|29159|140138188887808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 04:06:05|exception|29159|140138188887808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 05:03:18|basehttp|29159|140138188887808|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|26/Mar/2021 06:04:56|exception|29159|140138188887808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 06:57:23|exception|29159|140138188887808|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 07:59:51|exception|29159|140138180495104|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 08:24:52|exception|29159|140138180495104|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 09:33:08|basehttp|29159|140138180495104|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|26/Mar/2021 10:03:18|exception|29159|140138170791680|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 11:51:53|exception|29159|140137795151616|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 15:46:20|exception|29159|140137795151616|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 16:34:05|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 17:35:21|basehttp|29159|140137786758912|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|26/Mar/2021 19:39:20|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 19:43:34|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 21:21:02|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Mar/2021 22:49:42|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 00:25:39|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 01:18:26|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 02:18:24|basehttp|29159|140137803544320|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Mar/2021 04:49:22|basehttp|29159|140137803544320|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Mar/2021 06:35:51|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 08:09:30|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 08:41:55|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 09:19:52|basehttp|29159|140137803544320|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|27/Mar/2021 10:27:38|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 11:56:32|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 11:59:37|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 13:07:31|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 13:19:47|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 14:09:22|basehttp|29159|140137803544320|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|27/Mar/2021 15:46:46|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 16:04:58|basehttp|29159|140137803544320|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|27/Mar/2021 17:46:03|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 19:38:53|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 19:56:20|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 19:56:20|basehttp|29159|140137803544320|"GET /manager/html HTTP/1.1" 500 59
+ERROR|27/Mar/2021 21:38:18|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 23:06:08|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Mar/2021 23:33:16|exception|29159|140137786758912|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 00:48:09|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 03:20:50|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 04:08:32|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 04:47:12|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 04:54:36|basehttp|29159|140137803544320|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|28/Mar/2021 06:57:29|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 07:09:48|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 07:12:04|basehttp|29159|140137803544320|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|28/Mar/2021 07:12:05|basehttp|29159|140137803544320|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|28/Mar/2021 08:29:51|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 10:06:24|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 10:57:31|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 11:40:38|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 12:45:28|basehttp|29159|140137803544320|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|28/Mar/2021 14:49:43|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 16:19:40|exception|29159|140137803544320|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 18:09:40|exception|29159|140137778366208|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 19:47:16|exception|29159|140137778366208|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 21:08:05|exception|29159|140137778366208|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|28/Mar/2021 22:35:59|exception|29159|140137795151616|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

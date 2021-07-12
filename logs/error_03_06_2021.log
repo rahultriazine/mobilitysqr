@@ -1,56 +1,138 @@
-ERROR|03/Jun/2021 12:56:50|log|14989|139840602986240|Internal Server Error: /get_post_compliance_answer/
+ERROR|03/Jun/2021 18:42:24|basehttp|2804221|140492666300160|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|03/Jun/2021 18:42:24|basehttp|2804221|140492666300160|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|03/Jun/2021 19:23:40|basehttp|2804221|140492666300160|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|03/Jun/2021 22:51:29|basehttp|2804221|140492666300160|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|04/Jun/2021 01:24:14|basehttp|2804221|140492666300160|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|04/Jun/2021 02:19:25|basehttp|2804221|140492646369024|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|04/Jun/2021 07:24:27|basehttp|2804221|140492646369024|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|04/Jun/2021 13:23:12|basehttp|2804221|140492646369024|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|04/Jun/2021 14:07:02|basehttp|2804221|140492401874688|"GET /get_add/currency/ HTTP/1.1" 500 59
+ERROR|04/Jun/2021 14:47:53|basehttp|2804221|140492376696576|"GET /post_currency_conversion/ HTTP/1.1" 500 59
+ERROR|04/Jun/2021 14:48:00|basehttp|2804221|140492651353856|"GET /get_add/currency/ HTTP/1.1" 500 59
+ERROR|04/Jun/2021 14:53:19|basehttp|2804221|140492393481984|"GET /get_post_notification/?email=div944&org_id=ORG150866 HTTP/1.1" 500 59
+ERROR|04/Jun/2021 14:58:27|log|2804221|140492376696576|Internal Server Error: /currency_conversion_history/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 72, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 107, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 28, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 68, in default
-    return super(JSONEncoder, self).default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type Compliance is not JSON serializable
-ERROR|03/Jun/2021 12:56:50|basehttp|14989|139840602986240|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 500 125227
-ERROR|03/Jun/2021 15:32:34|log|25388|140414971578112|Internal Server Error: /get_post_compliance_answer/
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|04/Jun/2021 14:58:27|basehttp|2804221|140492376696576|"GET /currency_conversion_history/?from_date=2021-6-4&to_date=&from_currency=&to_currency= HTTP/1.1" 500 21621
+ERROR|04/Jun/2021 15:11:46|log|2804221|140492376696576|Internal Server Error: /currency_conversion_history/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 72, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 107, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 28, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 68, in default
-    return super(JSONEncoder, self).default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type Compliance is not JSON serializable
-ERROR|03/Jun/2021 15:32:34|basehttp|25388|140414971578112|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 500 127264
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|04/Jun/2021 15:11:46|basehttp|2804221|140492376696576|"GET /currency_conversion_history/?from_date=&to_date=&from_currency=ADP&to_currency= HTTP/1.1" 500 21606
+ERROR|04/Jun/2021 15:37:48|log|2804221|140492376696576|Internal Server Error: /get_projects/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/project.py", line 245, in get
+    serializer.data[i]['client_executive_name']=self.employee_name(emp_code=data['client_executive_lead'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/project.py", line 268, in employee_name
+    if emp_code[0]['first_name']:
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|04/Jun/2021 15:37:48|basehttp|2804221|140492376696576|"GET /get_projects/?page=305&search=&org=ORG150866 HTTP/1.1" 500 19177

@@ -1,0 +1,127 @@
+INFO|15/Jun/2021 16:13:41|autoreload|12636|14472|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:15:36|autoreload|9040|8544|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:17:16|autoreload|1068|1772|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:20:35|autoreload|8760|9748|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:22:04|autoreload|5364|11536|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:22:44|autoreload|13948|11796|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:24:54|autoreload|15112|9452|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:25:38|autoreload|7728|3020|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:29:00|autoreload|13436|15080|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:31:32|autoreload|2296|10368|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:33:38|autoreload|9840|10400|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:35:11|autoreload|9236|280|Watching for file changes with StatReloader
+INFO|15/Jun/2021 16:53:52|autoreload|10600|15244|Watching for file changes with StatReloader
+INFO|15/Jun/2021 19:14:21|autoreload|3644|12016|Watching for file changes with StatReloader
+INFO|15/Jun/2021 19:16:55|autoreload|3644|12016|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:16:56|autoreload|17580|15468|Watching for file changes with StatReloader
+WARNING|15/Jun/2021 19:17:10|log|17580|16476|Unauthorized: /get_post_marital_status/
+WARNING|15/Jun/2021 19:17:10|basehttp|17580|16476|"POST /get_post_marital_status/ HTTP/1.1" 401 58
+INFO|15/Jun/2021 19:17:19|autoreload|17580|15468|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:17:20|autoreload|16064|6188|Watching for file changes with StatReloader
+INFO|15/Jun/2021 19:17:29|basehttp|16064|9420|"POST /get_post_marital_status/ HTTP/1.1" 200 460
+ERROR|15/Jun/2021 19:17:44|log|16064|9420|Internal Server Error: /get_post_marital_status/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py", line 94, in get
+    marital_status = self.get_queryset(organization_id)
+TypeError: get_queryset() takes 1 positional argument but 2 were given
+ERROR|15/Jun/2021 19:17:44|basehttp|16064|9420|"GET /get_post_marital_status/ HTTP/1.1" 500 18054
+ERROR|15/Jun/2021 19:19:13|log|16064|9420|Internal Server Error: /get_post_marital_status/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py", line 94, in get
+    marital_status = self.get_queryset(organization_id)
+TypeError: get_queryset() takes 1 positional argument but 2 were given
+ERROR|15/Jun/2021 19:19:13|basehttp|16064|9420|"GET /get_post_marital_status/?organization_id=1 HTTP/1.1" 500 18099
+INFO|15/Jun/2021 19:20:00|autoreload|16064|6188|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:20:01|autoreload|15664|16984|Watching for file changes with StatReloader
+INFO|15/Jun/2021 19:20:05|autoreload|15664|16984|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:20:06|autoreload|15608|14560|Watching for file changes with StatReloader
+ERROR|15/Jun/2021 19:20:10|log|15608|15596|Internal Server Error: /get_post_marital_status/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py", line 95, in get
+    marital_status = self.get_queryset(organization_id)
+TypeError: get_queryset() takes 1 positional argument but 2 were given
+ERROR|15/Jun/2021 19:20:10|basehttp|15608|15596|"GET /get_post_marital_status/?organization_id=1 HTTP/1.1" 500 18099
+INFO|15/Jun/2021 19:20:57|autoreload|15608|14560|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:20:58|autoreload|17516|2924|Watching for file changes with StatReloader
+INFO|15/Jun/2021 19:21:04|basehttp|17516|14644|"GET /get_post_marital_status/?organization_id=1 HTTP/1.1" 200 63
+INFO|15/Jun/2021 19:21:25|autoreload|17516|2924|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:21:26|autoreload|15996|17352|Watching for file changes with StatReloader
+INFO|15/Jun/2021 19:21:32|basehttp|15996|17768|"GET /get_post_marital_status/?organization_id=1 HTTP/1.1" 200 63
+INFO|15/Jun/2021 19:21:37|basehttp|15996|17768|"GET /get_post_marital_status/?organization_id=1 HTTP/1.1" 200 63
+INFO|15/Jun/2021 19:23:21|autoreload|15996|17352|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:23:22|autoreload|16964|15376|Watching for file changes with StatReloader
+INFO|15/Jun/2021 19:23:36|autoreload|16964|15376|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 19:23:37|autoreload|14272|624|Watching for file changes with StatReloader
+INFO|15/Jun/2021 20:22:09|autoreload|14272|624|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 20:22:10|autoreload|14976|9504|Watching for file changes with StatReloader
+INFO|15/Jun/2021 20:23:10|autoreload|14976|9504|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 20:23:11|autoreload|8916|7780|Watching for file changes with StatReloader
+INFO|15/Jun/2021 20:23:21|autoreload|8916|7780|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 20:23:22|autoreload|16272|15308|Watching for file changes with StatReloader
+INFO|15/Jun/2021 20:26:12|autoreload|16272|15308|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\urls.py changed, reloading.
+INFO|15/Jun/2021 20:26:13|autoreload|15956|17336|Watching for file changes with StatReloader
+WARNING|15/Jun/2021 20:26:42|log|15956|15416|Unauthorized: /get_marital_status/
+WARNING|15/Jun/2021 20:26:42|basehttp|15956|15416|"GET /get_marital_status/?organization_id=1 HTTP/1.1" 401 58
+INFO|15/Jun/2021 20:26:55|autoreload|15956|17336|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 20:26:56|autoreload|5156|3232|Watching for file changes with StatReloader
+INFO|15/Jun/2021 20:27:04|basehttp|5156|13264|"GET /get_marital_status/?organization_id=1 HTTP/1.1" 200 63
+INFO|15/Jun/2021 20:27:33|autoreload|5156|3232|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 20:27:34|autoreload|4924|916|Watching for file changes with StatReloader
+INFO|15/Jun/2021 20:27:52|basehttp|4924|14680|"GET /get_marital_status/?organization_id=1 HTTP/1.1" 200 63
+INFO|15/Jun/2021 20:27:54|basehttp|4924|14680|"GET /get_marital_status/?organization_id=1 HTTP/1.1" 200 63
+INFO|15/Jun/2021 20:46:35|autoreload|4924|916|C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py changed, reloading.
+INFO|15/Jun/2021 20:46:36|autoreload|11164|12852|Watching for file changes with StatReloader

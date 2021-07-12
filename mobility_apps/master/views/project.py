@@ -83,8 +83,10 @@ class get_post_project(ListCreateAPIView):
 
     # Create a new project
     def post(self, request):
-        projectpid = Project.objects.filter(
-           pid=request.data.get('pid')).first()
+        request.data['pid_disp']=request.data.get('pid')
+        pid_nwe=request.data.get('pid')+request.data.get('organization')
+        request.data['pid']=pid_nwe
+        projectpid = Project.objects.filter(pid=request.data.get('pid')).first()
         if projectpid:
            dict={"status":True,'status_code':201,"message":"Project ID is already exists"}
             #serializer = ProjectSerializers(
@@ -104,6 +106,9 @@ class get_update_project(ListCreateAPIView):
     serializer_class = ProjectSerializers
     # Create a new project
     def post(self, request):
+        # request.data['pid_disp']=request.data['pid_disp']
+        pid_nwe=request.data.get('pid_disp')+request.data.get('organization')
+        request.data['pid']=pid_nwe
         projectpid = Project.objects.filter(id=request.data['uid']).first()
         print(projectpid)
         if projectpid:

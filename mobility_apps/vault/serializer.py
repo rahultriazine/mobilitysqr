@@ -22,7 +22,7 @@ class ComplianceSerializers(serializers.ModelSerializer):
 
     class Meta:
         model = Compliance
-        fields = ['id','emp_code','ques_id','compl_ques','compl_ans','date_created']
+        fields = ['id','emp_code','question_id','compl_ques','compl_ans','date_created']
 
     def get_compl_ans(self, instance):
         return False
@@ -38,4 +38,4 @@ class Employee_complianceSerializers(serializers.ModelSerializer):
     class Meta:
         model = Employee_compliance
         # fields ='__all__'
-        fields = ['id', 'emp_code', 'ques_id', 'compl_ques', 'compl_ans','date_created']
+        fields = ['id', 'emp_code', 'question_id', 'compl_ques', 'compl_ans','date_created']

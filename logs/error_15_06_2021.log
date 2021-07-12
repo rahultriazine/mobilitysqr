@@ -1,0 +1,72 @@
+ERROR|15/Jun/2021 19:17:44|log|16064|9420|Internal Server Error: /get_post_marital_status/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py", line 94, in get
+    marital_status = self.get_queryset(organization_id)
+TypeError: get_queryset() takes 1 positional argument but 2 were given
+ERROR|15/Jun/2021 19:17:44|basehttp|16064|9420|"GET /get_post_marital_status/ HTTP/1.1" 500 18054
+ERROR|15/Jun/2021 19:19:13|log|16064|9420|Internal Server Error: /get_post_marital_status/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py", line 94, in get
+    marital_status = self.get_queryset(organization_id)
+TypeError: get_queryset() takes 1 positional argument but 2 were given
+ERROR|15/Jun/2021 19:19:13|basehttp|16064|9420|"GET /get_post_marital_status/?organization_id=1 HTTP/1.1" 500 18099
+ERROR|15/Jun/2021 19:20:10|log|15608|15596|Internal Server Error: /get_post_marital_status/
+Traceback (most recent call last):
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\younity-2\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\younity-2\Desktop\mobilitysqr_staging\mobility_apps\master\views\dropdown.py", line 95, in get
+    marital_status = self.get_queryset(organization_id)
+TypeError: get_queryset() takes 1 positional argument but 2 were given
+ERROR|15/Jun/2021 19:20:10|basehttp|15608|15596|"GET /get_post_marital_status/?organization_id=1 HTTP/1.1" 500 18099

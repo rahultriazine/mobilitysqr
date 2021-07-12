@@ -1,0 +1,325 @@
+ERROR|28/May/2021 13:08:28|basehttp|1967905|140427952789248|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 13:13:31|basehttp|1967905|140427936003840|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 13:16:00|basehttp|1967905|140427952789248|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 13:31:10|basehttp|1975395|139998686869248|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 13:55:26|log|1975395|139998686869248|Internal Server Error: /add_taxgrid/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'org'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 563, in get
+    taxgrid = Taxgrid.objects.filter(organization=request.GET['org'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'org'
+ERROR|28/May/2021 13:55:26|basehttp|1975395|139998686869248|"GET /add_taxgrid/ HTTP/1.1" 500 19131
+ERROR|28/May/2021 13:55:52|log|1975395|139998770988800|Internal Server Error: /add_taxgrid/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'org'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 563, in get
+    taxgrid = Taxgrid.objects.filter(organization=request.GET['org'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'org'
+ERROR|28/May/2021 13:55:52|basehttp|1975395|139998770988800|"GET /add_taxgrid/ HTTP/1.1" 500 19131
+ERROR|28/May/2021 14:11:09|log|1975395|139998418433792|Internal Server Error: /assignment_travel_tax_grid/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'travel_req_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/travel/views.py", line 2136, in get
+    travel_requests=Assignment_Travel_Tax_Grid.objects.filter(travel_req_id=request.GET["travel_req_id"],organization=request.GET["org_id"])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'travel_req_id'
+ERROR|28/May/2021 14:11:09|basehttp|1975395|139998418433792|"GET /assignment_travel_tax_grid/ HTTP/1.1" 500 18817
+ERROR|28/May/2021 14:28:41|basehttp|1975395|139998403225344|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:41:08|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:42:32|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:44:31|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:45:02|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:45:34|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:46:25|basehttp|1975395|139998386439936|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:46:51|basehttp|1975395|139998405322496|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:48:45|basehttp|1975395|139998405322496|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 14:58:11|basehttp|1975395|139998686869248|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 15:06:45|basehttp|1975395|139998633367296|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 15:07:22|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 15:11:07|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 15:36:01|basehttp|1975395|139998633367296|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 15:39:19|basehttp|1975395|139998405322496|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 16:03:33|basehttp|1975395|139998405322496|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 16:09:44|basehttp|1975395|139998418433792|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 16:13:10|basehttp|1975395|139998418433792|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 16:15:00|basehttp|1975395|139998649628416|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 17:15:19|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 17:22:37|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 17:36:55|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 17:46:43|basehttp|1975395|139998418433792|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|28/May/2021 17:47:17|basehttp|1975395|139998418433792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 17:47:42|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:08:39|basehttp|1975395|139998633367296|"GET /org_travel_request/?travel_req_status=3&org_id=ORG150866&current_ticket_email=gauravg HTTP/1.1" 500 59
+ERROR|28/May/2021 18:27:31|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:31:53|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:38:42|basehttp|1975395|139998649628416|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:46:38|basehttp|1975395|139998649628416|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:46:38|basehttp|1975395|139998418433792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:51:34|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:51:49|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:51:58|basehttp|1975395|139998649628416|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:53:57|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:57:00|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:57:10|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 18:59:20|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:04:43|basehttp|1975395|139998418433792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:06:06|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:06:16|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:07:37|basehttp|1975395|139998418433792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:07:59|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:10:06|basehttp|1975395|139998649628416|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:10:06|basehttp|1975395|139998649628416|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:15:13|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:15:13|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:32:45|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:39:25|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:39:25|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 19:41:15|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:02:00|basehttp|1975395|139998649628416|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:02:00|basehttp|1975395|139998649628416|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:04:26|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:12:37|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:17:51|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:18:02|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:18:13|basehttp|1975395|139998686869248|"GET /assignment_travel_tax_grid/?travel_req_id=TR429268&org_id=ORG150866 HTTP/1.1" 500 59
+ERROR|28/May/2021 20:19:11|basehttp|1975395|139998633367296|"GET /org_travel_request/?travel_req_status=3&org_id=ORG150866&current_ticket_email=gauravg HTTP/1.1" 500 59
+ERROR|28/May/2021 20:23:54|basehttp|1975395|139998405322496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:26:49|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:27:00|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:29:26|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|28/May/2021 20:42:56|basehttp|1975395|139998418433792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:13:44|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:18:21|basehttp|1975395|139998418433792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:27:14|basehttp|1975395|139998405322496|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:29:41|basehttp|1975395|139998418433792|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:30:12|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:30:20|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:35:05|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:36:52|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:44:58|basehttp|1975395|139998633367296|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:48:23|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:49:25|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:55:07|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 11:58:48|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 12:01:42|log|1975395|139998388537088|Internal Server Error: /add_taxgrid/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'org'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 563, in get
+    taxgrid = Taxgrid.objects.filter(organization=request.GET['org'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'org'
+ERROR|29/May/2021 12:01:42|basehttp|1975395|139998388537088|"GET /add_taxgrid/ HTTP/1.1" 500 18601
+ERROR|29/May/2021 12:07:31|basehttp|1975395|139998388537088|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 12:08:50|basehttp|1975395|139998686869248|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 12:28:21|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 12:35:36|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 12:37:05|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 12:39:01|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 12:49:29|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:04:01|basehttp|1975395|139998371751680|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:08:08|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 13:08:45|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:09:21|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:11:46|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:11:47|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:18:46|basehttp|1975395|139998363358976|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:20:08|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:21:51|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:24:43|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:26:31|basehttp|1975395|139998363358976|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:32:22|basehttp|1975395|139998371751680|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 13:32:23|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:32:40|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:37:09|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:37:30|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:40:09|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:43:07|basehttp|1975395|139998217107200|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 13:44:09|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:48:48|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:49:32|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:51:33|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:53:48|basehttp|1975395|139998363358976|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 13:54:36|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:54:36|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:54:37|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 13:58:06|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:02:24|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:09:53|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:11:01|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:11:02|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:11:20|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:12:02|basehttp|1975395|139998371751680|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:12:04|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:12:30|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:16:01|basehttp|1975395|139998388537088|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:16:13|basehttp|1975395|139998217107200|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:16:50|basehttp|1975395|139998633367296|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:18:57|basehttp|1975395|139998191929088|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:18:58|basehttp|1975395|139998191929088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:20:22|basehttp|1975395|139998183536384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:21:44|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:23:56|basehttp|1975395|139998191929088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:26:25|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:28:09|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:28:26|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:33:54|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:35:46|basehttp|1975395|139998388537088|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:35:47|basehttp|1975395|139998183536384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:36:50|basehttp|1975395|139998217107200|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:39:18|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:39:27|basehttp|1975395|139998217107200|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:40:39|basehttp|1975395|139998208714496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:40:39|basehttp|1975395|139998371751680|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:42:09|basehttp|1975395|139998183536384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:42:17|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:46:17|basehttp|1975395|139998371751680|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:47:41|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:48:35|basehttp|1975395|139998200321792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:51:34|basehttp|1975395|139998371751680|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:52:03|basehttp|1975395|139998208714496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:53:16|basehttp|1975395|139998208714496|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:53:16|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:55:42|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:55:58|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:56:33|basehttp|1975395|139998208714496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 14:58:12|basehttp|1975395|139998208714496|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 14:58:41|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:00:47|basehttp|1975395|139998396929792|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:02:31|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:03:35|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:03:48|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:05:14|basehttp|1975395|139998396929792|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:05:16|basehttp|1975395|139998191929088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:05:26|basehttp|1975395|139998200321792|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:05:29|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:10:30|basehttp|1975395|139998200321792|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:10:31|basehttp|1975395|139998191929088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:10:44|basehttp|1975395|139998200321792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:14:21|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:14:23|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:14:36|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:15:28|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:18:05|basehttp|1975395|139998217107200|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:18:06|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:18:20|basehttp|1975395|139998191929088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:19:34|basehttp|1975395|139998388537088|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:19:36|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:19:48|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:20:33|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:21:52|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:23:08|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:23:09|basehttp|1975395|139998380144384|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:23:24|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:23:56|basehttp|1975395|139998200321792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:23:56|basehttp|1975395|139998208714496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:24:10|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:25:36|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:25:37|basehttp|1975395|139998371751680|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:26:53|basehttp|1975395|139998208714496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:27:55|basehttp|1975395|139998208714496|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:31:25|basehttp|1975395|139998380144384|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:33:42|basehttp|1975395|139998388537088|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:36:51|basehttp|1975395|139998371751680|"GET //media/Koala_IEVhUeb.jpg HTTP/1.1" 500 59
+ERROR|29/May/2021 15:37:33|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:39:45|basehttp|1975395|139998217107200|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:43:25|basehttp|1975395|139998388537088|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:45:20|basehttp|1975395|139998396929792|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:48:15|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|29/May/2021 15:55:57|basehttp|1975395|139998217107200|"GET //media/user-male_scrQjC4.png HTTP/1.1" 500 59
+ERROR|29/May/2021 16:10:58|basehttp|1975395|139998633367296|"GET //media/Roy_LUnejwh.png HTTP/1.1" 500 59
+ERROR|30/May/2021 10:16:16|basehttp|1975395|139998396929792|You're accessing the development server over HTTPS, but it only supports HTTP.
+

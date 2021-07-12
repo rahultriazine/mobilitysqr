@@ -1,127 +1,295 @@
-ERROR|26/Apr/2021 13:41:30|log|11670|139783435437824|Internal Server Error: /post_master_vendors_type
+ERROR|26/Apr/2021 12:57:16|exception|13614|140059546216192|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 13:05:11|log|13614|140059526547200|Internal Server Error: /bulk_approve_travelvisa_request/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/deprecation.py", line 90, in __call__
-    response = self.process_request(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
-    path = self.get_full_path_with_slash(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
-    'url': request.get_host() + new_path,
-RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/post_master_vendors_type/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
-ERROR|26/Apr/2021 13:41:30|basehttp|11670|139783435437824|"POST /post_master_vendors_type HTTP/1.1" 500 72371
-ERROR|26/Apr/2021 20:54:29|log|23924|140504915265280|Internal Server Error: /update_master_suffix/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-TypeError: patch() missing 1 required positional argument: 'pk'
-ERROR|26/Apr/2021 20:54:29|basehttp|23924|140504915265280|"PATCH /update_master_suffix/?pk=1 HTTP/1.1" 500 19639
-ERROR|26/Apr/2021 20:56:32|log|24050|140691689506560|Internal Server Error: /update_master_suffix/
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:05:11|basehttp|13614|140059526547200|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17441
+ERROR|26/Apr/2021 13:07:28|log|13614|140059772552960|Internal Server Error: /bulk_approve_travelvisa_request/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 416, in __getattr__
-    return getattr(self._request, attr)
-AttributeError: 'WSGIRequest' object has no attribute 'get'
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:07:28|basehttp|13614|140059772552960|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17441
+ERROR|26/Apr/2021 13:07:28|log|13614|140059526547200|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:07:28|basehttp|13614|140059526547200|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17442
+ERROR|26/Apr/2021 13:07:29|log|13614|140059554608896|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:07:29|basehttp|13614|140059554608896|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17442
+ERROR|26/Apr/2021 13:07:29|log|13614|140059526547200|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:07:29|basehttp|13614|140059526547200|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17442
+ERROR|26/Apr/2021 13:07:30|log|13614|140059772552960|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:07:30|basehttp|13614|140059772552960|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17442
+ERROR|26/Apr/2021 13:12:46|log|13614|140059526547200|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:12:46|basehttp|13614|140059526547200|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17442
+ERROR|26/Apr/2021 13:20:46|log|13614|140059772552960|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3754, in post
+    request.data['Entity_Type'] = "Travel"
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:20:46|basehttp|13614|140059772552960|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17441
+ERROR|26/Apr/2021 13:23:46|log|14714|140376740218624|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3715, in post
+    serializernotificationss = NotificationSerializers(data=approvel_data)
+NameError: name 'Notificatio' is not defined
+ERROR|26/Apr/2021 13:23:46|basehttp|14714|140376740218624|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17436
+ERROR|26/Apr/2021 13:53:31|log|15404|139777294726912|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 4024, in post
+    if request.data['approve_action'] == "A":
+TypeError: list indices must be integers or slices, not str
+ERROR|26/Apr/2021 13:53:31|basehttp|15404|139777294726912|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17437
+ERROR|26/Apr/2021 15:17:00|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 15:45:13|exception|16244|139771863414528|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 17:01:53|exception|16244|139771824338688|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 17:35:14|exception|16244|139771861579520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 18:43:28|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 19:00:06|exception|16244|139771447863040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 20:01:52|exception|16244|139771447863040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 21:39:32|exception|16244|139771800209152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 21:39:32|basehttp|16244|139771800209152|"GET /manager/html HTTP/1.1" 500 59
+ERROR|26/Apr/2021 22:30:07|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 22:52:28|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 23:07:09|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
 
-During handling of the above exception, another exception occurred:
+ERROR|27/Apr/2021 00:42:08|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 00:56:49|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 02:28:41|basehttp|16244|139771808601856|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|27/Apr/2021 03:10:59|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
 
+ERROR|27/Apr/2021 03:10:59|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:00|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:00|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:01|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:01|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:02|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:02|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:03|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:11:03|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:12:32|basehttp|16244|139771808601856|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/Apr/2021 03:14:49|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 03:20:17|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 03:31:56|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 03:31:56|basehttp|16244|139771808601856|"GET /manager/html HTTP/1.1" 500 59
+ERROR|27/Apr/2021 04:57:18|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 05:41:51|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 06:23:58|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 07:59:36|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 08:18:11|basehttp|16244|139771808601856|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|27/Apr/2021 09:05:35|exception|16244|139771808601856|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 09:59:26|log|16244|139771447863040|Internal Server Error: /getassignmentletter/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 357, in patch
-    print(request.get('id'))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 418, in __getattr__
-    return self.__getattribute__(attr)
-AttributeError: 'Request' object has no attribute 'get'
-ERROR|26/Apr/2021 20:56:32|basehttp|24050|140691689506560|"PATCH /update_master_suffix/?pk=1 HTTP/1.1" 500 20237
-ERROR|26/Apr/2021 20:57:27|log|24106|140424536368896|Internal Server Error: /update_master_suffix/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 359, in patch
-    instance = self.get_object(pk)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 354, in get_object
-    return Name_Suffix.objects.get(pk=pk)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 399, in get
-    self.model._meta.object_name
-mobility_apps.master.models.Name_Suffix.DoesNotExist: Name_Suffix matching query does not exist.
-ERROR|26/Apr/2021 20:57:27|basehttp|24106|140424536368896|"PATCH /update_master_suffix/?pk=1 HTTP/1.1" 500 20323
-ERROR|26/Apr/2021 20:58:23|log|24106|140424536368896|Internal Server Error: /update_master_suffix/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 359, in patch
-    instance = self.get_object(pk)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/dropdown.py", line 354, in get_object
-    return Name_Suffix.objects.get(pk=pk)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
-    return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 399, in get
-    self.model._meta.object_name
-mobility_apps.master.models.Name_Suffix.DoesNotExist: Name_Suffix matching query does not exist.
-ERROR|26/Apr/2021 20:58:23|basehttp|24106|140424536368896|"PATCH /update_master_suffix/?id=1 HTTP/1.1" 500 20323
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|27/Apr/2021 09:59:26|basehttp|16244|139771447863040|"GET /getassignmentletter/?travel_req_id=TR101700 HTTP/1.1" 500 17548
+ERROR|27/Apr/2021 10:16:59|exception|16244|139771447863040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|27/Apr/2021 10:35:34|exception|16244|139771447863040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

@@ -1,0 +1,678 @@
+ERROR|23/Apr/2021 15:26:07|log|9080|140381664569088|Internal Server Error: /get_post_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1699, in post
+    request.data['request_notes'])
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1734, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    self.nextLevelApproveVisa_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by, action_notes)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1734, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    self.nextLevelApproveVisa_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by, action_notes)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1734, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    self.nextLevelApproveVisa_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by, action_notes)
+  [Previous line repeated 893 more times]
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1709, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    check_visa_data = self.checkVisaRequest(travel_req_id)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1927, in checkVisaRequest
+    if visa_request_id:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1048, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/compiler.py", line 188, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/compiler.py", line 357, in compile
+    return super().compile(node, select_format)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/compiler.py", line 357, in compile
+    return super().compile(node, select_format)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 162, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 153, in process_lhs
+    lhs_sql, params = super().process_lhs(compiler, connection, lhs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 79, in process_lhs
+    lhs = lhs.resolve_expression(compiler.query)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/expressions.py", line 236, in resolve_expression
+    c = self.copy()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/expressions.py", line 330, in copy
+    return copy.copy(self)
+  File "/usr/lib/python3.6/copy.py", line 106, in copy
+    return _reconstruct(x, None, *rv)
+  File "/usr/lib/python3.6/copy.py", line 274, in _reconstruct
+    y = func(*args)
+  File "/usr/lib/python3.6/copyreg.py", line 88, in __newobj__
+    return cls.__new__(cls, *args)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deconstruct.py", line 16, in __new__
+    obj = super(klass, cls).__new__(cls)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR|23/Apr/2021 15:26:08|basehttp|9080|140381664569088|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 500 228865
+ERROR|23/Apr/2021 15:54:24|log|10408|140695973988096|Internal Server Error: /get_post_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1700, in post
+    request.data['request_notes'])
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1738, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    self.nextLevelApproveVisa_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by, action_notes)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1738, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    self.nextLevelApproveVisa_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by, action_notes)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1738, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    self.nextLevelApproveVisa_if_sameEmp_to_Approve(travel_req_id, org_id, modified_by, action_notes)
+  [Previous line repeated 893 more times]
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1713, in nextLevelApproveVisa_if_sameEmp_to_Approve
+    check_visa_data = self.checkVisaRequest(travel_req_id)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 1931, in checkVisaRequest
+    if visa_request_id:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1048, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/compiler.py", line 188, in as_sql
+    where, w_params = self.compile(self.where) if self.where is not None else ("", [])
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/compiler.py", line 357, in compile
+    return super().compile(node, select_format)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/where.py", line 81, in as_sql
+    sql, params = compiler.compile(child)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/sql_server/pyodbc/compiler.py", line 357, in compile
+    return super().compile(node, select_format)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 390, in compile
+    sql, params = node.as_sql(self, self.connection)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 162, in as_sql
+    lhs_sql, params = self.process_lhs(compiler, connection)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 153, in process_lhs
+    lhs_sql, params = super().process_lhs(compiler, connection, lhs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/lookups.py", line 79, in process_lhs
+    lhs = lhs.resolve_expression(compiler.query)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/expressions.py", line 236, in resolve_expression
+    c = self.copy()
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/expressions.py", line 330, in copy
+    return copy.copy(self)
+  File "/usr/lib/python3.6/copy.py", line 106, in copy
+    return _reconstruct(x, None, *rv)
+  File "/usr/lib/python3.6/copy.py", line 274, in _reconstruct
+    y = func(*args)
+  File "/usr/lib/python3.6/copyreg.py", line 88, in __newobj__
+    return cls.__new__(cls, *args)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deconstruct.py", line 16, in __new__
+    obj = super(klass, cls).__new__(cls)
+RecursionError: maximum recursion depth exceeded while calling a Python object
+ERROR|23/Apr/2021 15:54:26|basehttp|10408|140695973988096|"POST /get_post_approve_travelvisa_request/ HTTP/1.1" 500 228865
+ERROR|23/Apr/2021 18:46:16|exception|11097|139784844986112|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|23/Apr/2021 19:35:31|exception|11097|139784844986112|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|23/Apr/2021 20:56:40|exception|11097|139784844986112|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|23/Apr/2021 21:48:46|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|23/Apr/2021 21:48:46|basehttp|11097|139785119549184|"GET /manager/html HTTP/1.1" 500 59
+ERROR|24/Apr/2021 00:10:26|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 00:25:48|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 00:42:53|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 01:12:13|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 01:43:35|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 02:17:18|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 02:48:24|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 02:50:00|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 03:04:19|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 03:14:02|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 03:45:15|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 04:10:20|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 04:34:42|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 04:55:46|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 04:58:44|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 05:23:35|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 05:37:07|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 05:49:57|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 06:15:02|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 06:44:23|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 06:54:33|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 07:14:48|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 07:40:12|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 08:05:32|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 08:10:22|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 08:31:04|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 08:35:55|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 08:58:24|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 09:09:23|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:09:23|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:25:19|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 09:30:57|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:33|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:33|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:34|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:34|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:35|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:35|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:36|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:36|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:37|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:48:37|basehttp|11097|139785119549184|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 09:50:39|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 10:02:45|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 10:19:18|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 10:45:34|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 10:55:52|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 11:15:10|exception|11097|139785119549184|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 11:24:54|log|11097|139785119549184|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 84, in post
+    if not employees_recent[0]['last_login']:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 11:24:54|basehttp|11097|139785119549184|"POST /emoloyeeinfo/ HTTP/1.1" 500 17447
+ERROR|24/Apr/2021 11:25:20|log|11097|139785119549184|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 84, in post
+    if not employees_recent[0]['last_login']:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 11:25:20|basehttp|11097|139785119549184|"POST /emoloyeeinfo/ HTTP/1.1" 500 17446
+ERROR|24/Apr/2021 11:25:30|log|11097|139784853378816|Internal Server Error: /emoloyeeinfo/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 84, in post
+    if not employees_recent[0]['last_login']:
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 11:25:30|basehttp|11097|139784853378816|"POST /emoloyeeinfo/ HTTP/1.1" 500 17446
+ERROR|24/Apr/2021 11:41:16|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 12:06:47|exception|11097|139784844986112|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 12:06:47|basehttp|11097|139784844986112|"GET /script HTTP/1.1" 500 59
+ERROR|24/Apr/2021 12:07:59|log|11097|139785119549184|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 12:07:59|basehttp|11097|139785119549184|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17552
+ERROR|24/Apr/2021 12:08:35|log|11097|139784870164224|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 12:08:35|basehttp|11097|139784870164224|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17552
+ERROR|24/Apr/2021 12:11:46|basehttp|11097|139784870164224|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|24/Apr/2021 12:32:31|log|11097|139784828200704|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 12:32:31|basehttp|11097|139784828200704|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17551
+ERROR|24/Apr/2021 12:34:21|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 12:38:16|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 13:00:33|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 13:24:38|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 13:31:27|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 13:32:19|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 13:32:19|basehttp|11097|139784828200704|"GET /manager/html HTTP/1.1" 500 59
+ERROR|24/Apr/2021 13:51:35|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 14:05:41|log|11097|139784828200704|Internal Server Error: /users
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|24/Apr/2021 14:05:41|basehttp|11097|139784828200704|"POST /users?page=&size=5 HTTP/1.1" 500 65395
+ERROR|24/Apr/2021 14:07:12|log|11097|139784861771520|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 14:07:12|basehttp|11097|139784861771520|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17552
+ERROR|24/Apr/2021 14:07:18|log|11097|139784853378816|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 14:07:18|basehttp|11097|139784853378816|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17552
+ERROR|24/Apr/2021 14:17:27|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 14:44:40|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 15:12:11|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 15:38:46|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 16:05:27|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 16:07:38|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 16:11:41|log|11097|139784861771520|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 16:11:41|basehttp|11097|139784861771520|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17552
+ERROR|24/Apr/2021 16:34:49|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 17:03:57|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 17:29:02|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 17:54:59|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 18:20:29|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 18:43:11|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 18:46:26|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 19:13:21|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 19:13:21|basehttp|11097|139784861771520|"GET /script HTTP/1.1" 500 59
+ERROR|24/Apr/2021 19:39:58|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 19:56:07|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 19:56:07|basehttp|11097|139784861771520|"GET /manager/html HTTP/1.1" 500 59
+ERROR|24/Apr/2021 20:06:10|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 20:35:27|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 21:01:53|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 21:23:03|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 21:23:03|basehttp|11097|139784861771520|"GET /manager/html HTTP/1.1" 500 59
+ERROR|24/Apr/2021 21:34:24|log|11097|139784853378816|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|24/Apr/2021 21:34:24|basehttp|11097|139784853378816|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17552
+ERROR|24/Apr/2021 21:35:07|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 22:05:00|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 22:32:11|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 22:42:58|basehttp|11097|139784861771520|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|24/Apr/2021 23:01:21|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 23:01:58|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 23:27:20|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|24/Apr/2021 23:27:20|basehttp|11097|139784853378816|"GET /script HTTP/1.1" 500 59
+ERROR|24/Apr/2021 23:58:52|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 00:26:09|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 00:28:42|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 00:58:26|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 01:01:13|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 01:26:07|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 01:26:07|basehttp|11097|139784853378816|"GET /script HTTP/1.1" 500 59
+ERROR|25/Apr/2021 01:49:27|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 01:53:24|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 01:53:24|basehttp|11097|139784853378816|"GET /script HTTP/1.1" 500 59
+ERROR|25/Apr/2021 02:20:24|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 02:51:49|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 03:16:52|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 03:23:00|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 03:50:28|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 03:52:06|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 04:16:29|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 04:42:06|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 05:12:10|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 05:42:54|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 05:59:08|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 06:10:15|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 06:23:04|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 06:39:34|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 07:04:30|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 07:30:02|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 07:58:05|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 08:24:33|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 08:41:06|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 08:57:15|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 09:29:40|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 10:03:28|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 10:31:44|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 10:31:44|basehttp|11097|139784853378816|"GET /script HTTP/1.1" 500 59
+ERROR|25/Apr/2021 10:58:47|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 11:26:18|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 11:26:42|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 11:52:18|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 12:20:15|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 12:21:09|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 12:45:22|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 13:12:24|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 13:37:20|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 14:03:21|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 14:11:56|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 14:11:56|basehttp|11097|139784853378816|"GET /manager/html HTTP/1.1" 500 59
+ERROR|25/Apr/2021 14:31:17|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 14:36:13|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 15:00:04|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 15:25:22|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 15:49:52|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 16:18:07|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 16:25:24|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 16:45:40|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 16:55:12|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 17:11:58|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 17:37:02|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 17:51:25|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 18:03:19|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 18:23:43|basehttp|11097|139784853378816|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|25/Apr/2021 18:29:43|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 18:56:06|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 19:24:26|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 19:32:42|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 19:50:19|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 20:17:23|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 20:29:06|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 20:44:04|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 20:44:04|basehttp|11097|139784853378816|"GET /script HTTP/1.1" 500 59
+ERROR|25/Apr/2021 21:17:45|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 21:44:27|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 22:12:22|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 22:26:36|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 22:47:13|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 23:16:26|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|25/Apr/2021 23:47:42|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 00:15:25|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 00:44:29|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 01:10:38|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 01:25:00|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 01:39:08|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 03:22:18|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 04:17:53|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 05:11:52|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 05:11:52|basehttp|11097|139784861771520|"GET /manager/html HTTP/1.1" 500 59
+ERROR|26/Apr/2021 06:16:34|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 06:40:50|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 07:06:13|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 07:10:12|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 07:32:47|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 07:32:47|basehttp|11097|139784861771520|"GET /script HTTP/1.1" 500 59
+ERROR|26/Apr/2021 08:09:12|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 08:56:13|exception|11097|139784861771520|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 09:57:33|log|11097|139784853378816|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 306, in get
+    datas['SchoolTuitionSelf']=school[0]['annual_ammount']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|26/Apr/2021 09:57:33|basehttp|11097|139784853378816|"GET /getassignmentletter/?travel_req_id=TR116937 HTTP/1.1" 500 17552
+ERROR|26/Apr/2021 10:05:35|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 10:21:13|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 10:27:57|exception|11097|139784853378816|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 12:37:34|log|11097|139784844986112|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 4060, in post
+    return Response(dict, status=status.HTTP_200_OK)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|26/Apr/2021 12:37:34|basehttp|11097|139784844986112|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17453
+ERROR|26/Apr/2021 12:41:53|log|11097|139784828200704|Internal Server Error: /bulk_approve_travelvisa_request/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/travel/views.py", line 3731, in post
+    'first_name': self.employee_name(emp_code=employee[0]['emp_email_id']),
+AttributeError: 'bulk_approve_travelvisa_request' object has no attribute 'employee_name'
+ERROR|26/Apr/2021 12:41:53|basehttp|11097|139784828200704|"POST /bulk_approve_travelvisa_request/ HTTP/1.1" 500 17538
+ERROR|26/Apr/2021 12:47:35|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 12:47:35|basehttp|11097|139784828200704|"GET /manager/html HTTP/1.1" 500 59
+ERROR|26/Apr/2021 12:47:54|exception|11097|139784828200704|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|26/Apr/2021 12:47:54|basehttp|11097|139784828200704|"GET /manager/html HTTP/1.1" 500 59

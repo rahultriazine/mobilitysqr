@@ -1,356 +1,164 @@
-ERROR|04/Mar/2021 13:32:13|log|11213|140088212498176|Internal Server Error: /json_upload/country/
+ERROR|04/Mar/2021 12:39:25|exception|24156|140417721079552|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|04/Mar/2021 14:30:15|exception|24156|140417666270976|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|04/Mar/2021 15:03:44|log|24156|140417711638272|Internal Server Error: /users
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type UnsupportedMediaType is not JSON serializable
-ERROR|04/Mar/2021 13:32:13|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 500 109026
-ERROR|04/Mar/2021 13:32:41|log|11213|140088212498176|Internal Server Error: /json_upload/country/
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|04/Mar/2021 15:03:44|basehttp|24156|140417711638272|"POST /users?page=&size=5 HTTP/1.1" 500 65321
+ERROR|04/Mar/2021 16:28:15|basehttp|24156|140417169352448|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|04/Mar/2021 20:34:35|basehttp|24156|140417160959744|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|05/Mar/2021 01:43:22|exception|24156|140417177745152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 03:50:51|exception|24156|140417177745152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 05:46:48|exception|24156|140417177745152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 06:58:46|basehttp|24156|140417177745152|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|05/Mar/2021 07:43:22|exception|24156|140417177745152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 08:45:38|exception|24156|140417177745152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 09:42:30|exception|24156|140417177745152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 11:37:22|exception|24156|140417177745152|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 12:13:06|log|24156|140417711638272|Internal Server Error: /getassignmentletter/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type UnsupportedMediaType is not JSON serializable
-ERROR|04/Mar/2021 13:32:41|basehttp|11213|140088212498176|"POST /json_upload/country/ HTTP/1.1" 500 109025
-ERROR|04/Mar/2021 15:42:55|log|14577|140089185314560|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    request = self.initialize_request(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 393, in initialize_request
-    parsers=self.get_parsers(),
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 266, in get_parsers
-    return [parser() for parser in self.parser_classes]
-TypeError: 'type' object is not iterable
-ERROR|04/Mar/2021 15:42:55|basehttp|14577|140089185314560|"POST /json_upload/country/ HTTP/1.1" 500 90025
-ERROR|04/Mar/2021 15:49:28|log|14892|139659701020416|Internal Server Error: /json_upload/country/
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/letter/views.py", line 95, in get
+    if data['emp_info']:
+KeyError: 'emp_info'
+ERROR|05/Mar/2021 12:13:06|basehttp|24156|140417711638272|"GET /getassignmentletter/?travel_req_id=TR652036 HTTP/1.1" 500 17320
+ERROR|05/Mar/2021 12:41:51|basehttp|24156|140417177745152|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|05/Mar/2021 13:23:58|basehttp|24156|140417160959744|"GET /get_travel_request_approver/?emp_email=Emp112&travel_req_status=2&type=Travel&org_id=ORG150866 HTTP/1.1" 500 59
+ERROR|05/Mar/2021 13:34:22|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 13:35:48|basehttp|24156|140417683056384|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/Mar/2021 15:31:26|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 17:30:05|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 19:24:52|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 20:29:37|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 21:21:07|basehttp|24156|140417668634368|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|05/Mar/2021 21:23:21|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 22:21:39|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Mar/2021 22:24:06|basehttp|24156|140417683056384|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/Mar/2021 22:24:06|basehttp|24156|140417683056384|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/Mar/2021 23:14:30|basehttp|24156|140417683056384|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/Mar/2021 23:14:30|basehttp|24156|140417683056384|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/Mar/2021 23:19:05|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 01:13:43|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 01:21:22|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 01:37:50|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 02:28:33|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 03:06:20|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 03:20:31|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 04:29:02|basehttp|24156|140417668634368|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|06/Mar/2021 04:53:07|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 04:59:12|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 06:06:21|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 06:16:41|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 06:16:41|basehttp|24156|140417668634368|"GET /manager/html HTTP/1.1" 500 59
+ERROR|06/Mar/2021 06:55:27|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 08:32:12|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 08:52:49|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 08:54:16|basehttp|24156|140417152567040|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|06/Mar/2021 09:43:54|log|24156|140417152567040|Internal Server Error: /users
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type UnsupportedMediaType is not JSON serializable
-ERROR|04/Mar/2021 15:49:28|basehttp|14892|139659701020416|"POST /json_upload/country/ HTTP/1.1" 500 109086
-ERROR|04/Mar/2021 16:08:17|log|15505|140098033895168|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type UnsupportedMediaType is not JSON serializable
-ERROR|04/Mar/2021 16:08:17|basehttp|15505|140098033895168|"POST /json_upload/country/ HTTP/1.1" 500 109086
-ERROR|04/Mar/2021 16:33:29|log|16425|140309776770816|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type UnsupportedMediaType is not JSON serializable
-ERROR|04/Mar/2021 16:33:29|basehttp|16425|140309776770816|"POST /json_upload/country/ HTTP/1.1" 500 109086
-ERROR|04/Mar/2021 16:57:19|log|17916|139984703276800|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type UnsupportedMediaType is not JSON serializable
-ERROR|04/Mar/2021 16:57:19|basehttp|17916|139984703276800|"POST /json_upload/country/ HTTP/1.1" 500 109086
-ERROR|04/Mar/2021 17:08:56|log|17916|139984703276800|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type UnsupportedMediaType is not JSON serializable
-ERROR|04/Mar/2021 17:08:56|basehttp|17916|139984703276800|"POST /json_upload/country/ HTTP/1.1" 500 109085
-ERROR|04/Mar/2021 18:39:48|log|21151|140101373482752|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IntegrityError is not JSON serializable
-ERROR|04/Mar/2021 18:39:48|basehttp|21151|140101373482752|"POST /json_upload/country/ HTTP/1.1" 500 111411
-ERROR|04/Mar/2021 18:42:55|log|21387|139951979845376|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IntegrityError is not JSON serializable
-ERROR|04/Mar/2021 18:42:55|basehttp|21387|139951979845376|"POST /json_upload/country/ HTTP/1.1" 500 111411
-ERROR|04/Mar/2021 18:46:56|log|21544|139699029006080|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IntegrityError is not JSON serializable
-ERROR|04/Mar/2021 18:46:56|basehttp|21544|139699029006080|"POST /json_upload/country/ HTTP/1.1" 500 111411
-ERROR|04/Mar/2021 18:48:16|log|21544|139699029006080|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IntegrityError is not JSON serializable
-ERROR|04/Mar/2021 18:48:16|basehttp|21544|139699029006080|"POST /json_upload/country/ HTTP/1.1" 500 111410
-ERROR|04/Mar/2021 18:50:23|log|21799|139998443595520|Internal Server Error: /json_upload/country/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
-    response = response.render()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
-    self.content = self.rendered_content
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 103, in render
-    allow_nan=not self.strict, separators=separators
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 67, in default
-    return super().default(obj)
-  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type IntegrityError is not JSON serializable
-ERROR|04/Mar/2021 18:50:23|basehttp|21799|139998443595520|"POST /json_upload/country/ HTTP/1.1" 500 111410
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 90, in __call__
+    response = self.process_request(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 52.165.220.40:8080/users/?page=&size=5 (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR|06/Mar/2021 09:43:54|basehttp|24156|140417152567040|"POST /users?page=&size=5 HTTP/1.1" 500 65324
+ERROR|06/Mar/2021 10:47:47|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 11:54:25|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 12:53:35|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 14:46:10|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 14:48:29|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 15:07:18|basehttp|24156|140417152567040|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|06/Mar/2021 16:23:32|basehttp|24156|140417152567040|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|06/Mar/2021 16:32:01|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 17:25:01|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 17:25:01|basehttp|24156|140417152567040|"GET /manager/html HTTP/1.1" 500 59
+ERROR|06/Mar/2021 18:22:56|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 18:58:37|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 19:14:24|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 19:14:24|basehttp|24156|140417152567040|"GET /script HTTP/1.1" 500 59
+ERROR|06/Mar/2021 20:16:46|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 20:40:21|exception|24156|140417668634368|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 21:47:17|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 22:14:40|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 22:28:29|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|06/Mar/2021 23:42:54|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 00:10:34|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 01:00:53|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 02:12:39|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 04:01:22|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 04:12:02|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 05:15:42|basehttp|24156|140417152567040|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|07/Mar/2021 06:11:19|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 07:58:11|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 08:03:13|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 09:39:11|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 09:39:11|basehttp|24156|140417152567040|"GET /manager/html HTTP/1.1" 500 59
+ERROR|07/Mar/2021 09:57:00|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 10:13:23|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 11:53:03|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 13:22:22|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 13:46:25|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 14:53:45|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 15:29:35|basehttp|24156|140417683056384|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|07/Mar/2021 15:38:21|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 17:29:04|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 17:57:01|basehttp|24156|140417683056384|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|07/Mar/2021 18:31:52|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 18:31:52|basehttp|24156|140417683056384|"GET /manager/html HTTP/1.1" 500 59
+ERROR|07/Mar/2021 19:24:09|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 20:55:37|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 21:14:52|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 22:36:59|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 22:36:59|basehttp|24156|140417152567040|"GET /manager/html HTTP/1.1" 500 59
+ERROR|07/Mar/2021 23:13:47|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|07/Mar/2021 23:54:41|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 00:11:09|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 02:18:52|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 03:13:49|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 03:41:51|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 03:41:51|basehttp|24156|140417152567040|"GET /script HTTP/1.1" 500 59
+ERROR|08/Mar/2021 05:35:19|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 05:40:31|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 06:41:57|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 07:11:41|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 07:25:59|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 07:38:17|exception|24156|140417152567040|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 08:55:55|basehttp|24156|140417683056384|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|08/Mar/2021 09:36:00|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 09:36:57|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|08/Mar/2021 09:36:57|basehttp|24156|140417683056384|"GET /script HTTP/1.1" 500 59
+ERROR|08/Mar/2021 09:39:38|exception|24156|140417683056384|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

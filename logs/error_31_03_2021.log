@@ -1,90 +1,96 @@
-ERROR|31/Mar/2021 11:51:25|log|5235|139860258051840|Internal Server Error: /employee_chat/
+ERROR|31/Mar/2021 12:45:51|exception|17695|140289326688000|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Mar/2021 13:17:03|exception|17695|140289309902592|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Mar/2021 13:46:58|log|17695|140288932706048|Internal Server Error: /employee_chat/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
-    list_ = super().__getitem__(key)
-KeyError: 'thread'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2743, in post
-    print(request.GET['thread'])
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
-    raise MultiValueDictKeyError(key)
-django.utils.datastructures.MultiValueDictKeyError: 'thread'
-ERROR|31/Mar/2021 11:51:25|basehttp|5235|139860258051840|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 500 19949
-ERROR|31/Mar/2021 11:53:36|log|5790|140395984307968|Internal Server Error: /employee_chat/
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 2735, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|31/Mar/2021 13:46:58|basehttp|17695|140288932706048|"POST /employee_chat/ HTTP/1.1" 500 17316
+ERROR|31/Mar/2021 13:47:01|log|17695|140288932706048|Internal Server Error: /employee_chat/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
-    list_ = super().__getitem__(key)
-KeyError: 'thread'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2746, in post
-    print(request.GET['thread'])
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
-    raise MultiValueDictKeyError(key)
-django.utils.datastructures.MultiValueDictKeyError: 'thread'
-ERROR|31/Mar/2021 11:53:36|basehttp|5790|140395984307968|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 500 19949
-ERROR|31/Mar/2021 12:19:38|log|7549|140122218247936|Internal Server Error: /employee_chat/
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 2735, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|31/Mar/2021 13:47:01|basehttp|17695|140288932706048|"POST /employee_chat/ HTTP/1.1" 500 17316
+ERROR|31/Mar/2021 13:47:09|log|17695|140288932706048|Internal Server Error: /employee_chat/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2747, in post
-    message_data.create()
-AttributeError: 'Message_Chat' object has no attribute 'create'
-ERROR|31/Mar/2021 12:19:38|basehttp|7549|140122218247936|"POST /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 500 19575
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 2735, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|31/Mar/2021 13:47:09|basehttp|17695|140288932706048|"POST /employee_chat/ HTTP/1.1" 500 17316
+ERROR|31/Mar/2021 14:32:18|log|17695|140288932706048|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 2735, in post
+    thread_data = sender_emp_code + receiver_emp_code
+TypeError: must be str, not NoneType
+ERROR|31/Mar/2021 14:32:18|basehttp|17695|140288932706048|"POST /employee_chat/ HTTP/1.1" 500 17314
+ERROR|31/Mar/2021 15:00:57|exception|17695|140289277650688|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Mar/2021 16:41:32|exception|17695|140288906479360|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Mar/2021 16:58:22|exception|17695|140289325901568|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Mar/2021 17:59:30|exception|17695|140289325901568|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|31/Mar/2021 18:40:13|basehttp|17695|140289325901568|"GET /config/getuser?index=0 HTTP/1.1" 500 59
+ERROR|31/Mar/2021 20:40:59|exception|17695|140289286043392|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

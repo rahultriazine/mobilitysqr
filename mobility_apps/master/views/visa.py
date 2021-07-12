@@ -182,9 +182,12 @@ class get_post_visa_master(ListCreateAPIView):
 
     # Get all visa
     def get(self, request):
-        visa = self.get_queryset()
+        # visa = self.get_queryset()
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
+        org_id = self.request.GET.get('org_id',None)
+        visa = Visa_Master.objects.filter(organization=org_id)
+
         serializer = Visa_MasterSerializers(visa,many=True)
         if serializer:
            dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}

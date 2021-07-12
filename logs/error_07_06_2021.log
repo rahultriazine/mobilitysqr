@@ -1,0 +1,676 @@
+ERROR|07/Jun/2021 15:33:06|log|3360117|139654035613440|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'home_country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 902, in get
+    home_country = request.GET['home_country']
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'home_country'
+ERROR|07/Jun/2021 15:33:06|basehttp|3360117|139654035613440|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country101&organization_idORG150866 HTTP/1.1" 500 19386
+ERROR|07/Jun/2021 15:34:31|log|3360117|139653928441600|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 905, in get
+    print(country[0]['bv_threshold'])
+TypeError: 'NoneType' object is not subscriptable
+ERROR|07/Jun/2021 15:34:31|basehttp|3360117|139653928441600|"GET /get_post_country_policy/?days=9&country_code=Brazil&home_country=101&organization_id=ORG150866 HTTP/1.1" 500 18924
+ERROR|07/Jun/2021 15:37:10|log|3360610|140605954979584|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 905, in get
+    print(country[0]['bv_threshold'])
+KeyError: 0
+ERROR|07/Jun/2021 15:37:10|basehttp|3360610|140605954979584|"GET /get_post_country_policy/?days=7&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18854
+ERROR|07/Jun/2021 15:43:40|log|3360610|140606168127232|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 905, in get
+    print(country[0]['bv_threshold'])
+KeyError: 0
+ERROR|07/Jun/2021 15:43:40|basehttp|3360610|140606168127232|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18854
+ERROR|07/Jun/2021 15:45:01|log|3360610|140606168127232|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 905, in get
+    print(country[0]['bv_threshold'])
+KeyError: 0
+ERROR|07/Jun/2021 15:45:01|basehttp|3360610|140606168127232|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18646
+ERROR|07/Jun/2021 15:49:39|log|3361994|140220505642752|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 905, in get
+    print(country[0]['bv_threshold'])
+KeyError: 0
+ERROR|07/Jun/2021 15:49:39|basehttp|3361994|140220505642752|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18854
+ERROR|07/Jun/2021 15:49:48|log|3361994|140220505642752|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 905, in get
+    print(country[0]['bv_threshold'])
+KeyError: 0
+ERROR|07/Jun/2021 15:49:48|basehttp|3361994|140220505642752|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18646
+ERROR|07/Jun/2021 15:50:24|log|3362094|140195341375232|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 907, in get
+    if int(country[0]['bv_threshold'])<days:
+KeyError: 0
+ERROR|07/Jun/2021 15:50:24|basehttp|3362094|140195341375232|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18657
+ERROR|07/Jun/2021 15:50:25|log|3362094|140195341375232|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 907, in get
+    if int(country[0]['bv_threshold'])<days:
+KeyError: 0
+ERROR|07/Jun/2021 15:50:25|basehttp|3362094|140195341375232|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18657
+ERROR|07/Jun/2021 15:50:27|log|3362094|140195341375232|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 907, in get
+    if int(country[0]['bv_threshold'])<days:
+KeyError: 0
+ERROR|07/Jun/2021 15:50:27|basehttp|3362094|140195341375232|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18657
+ERROR|07/Jun/2021 15:50:29|log|3362094|140195332196096|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 907, in get
+    if int(country[0]['bv_threshold'])<days:
+KeyError: 0
+ERROR|07/Jun/2021 15:50:29|basehttp|3362094|140195332196096|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18865
+ERROR|07/Jun/2021 15:51:16|log|3362094|140195332196096|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 907, in get
+    if int(country[0]['bv_threshold'])<days:
+KeyError: 0
+ERROR|07/Jun/2021 15:51:16|basehttp|3362094|140195332196096|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18657
+ERROR|07/Jun/2021 15:52:24|log|3362320|139942929917696|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 908, in get
+    if int(country[0]['bv_threshold'])<days:
+KeyError: 0
+ERROR|07/Jun/2021 15:52:24|basehttp|3362320|139942929917696|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18657
+ERROR|07/Jun/2021 15:52:25|log|3362320|139942929917696|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 908, in get
+    if int(country[0]['bv_threshold'])<days:
+KeyError: 0
+ERROR|07/Jun/2021 15:52:25|basehttp|3362320|139942929917696|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18657
+ERROR|07/Jun/2021 15:54:25|log|3362526|140342353504000|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 908, in get
+    if int(country.bv_threshold)<days:
+AttributeError: 'dict' object has no attribute 'bv_threshold'
+ERROR|07/Jun/2021 15:54:25|basehttp|3362526|140342353504000|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18751
+ERROR|07/Jun/2021 15:54:27|log|3362526|140342353504000|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 908, in get
+    if int(country.bv_threshold)<days:
+AttributeError: 'dict' object has no attribute 'bv_threshold'
+ERROR|07/Jun/2021 15:54:27|basehttp|3362526|140342353504000|"GET /get_post_country_policy/?days=8&country_code=Brazil&home_country=India&organization_id=ORG150866 HTTP/1.1" 500 18751
+ERROR|07/Jun/2021 16:02:16|basehttp|3362590|139929392023296|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|07/Jun/2021 16:02:16|basehttp|3362590|139929392023296|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|07/Jun/2021 16:14:53|basehttp|3362590|139929383368448|"GET /post_currency_conversion/ HTTP/1.1" 500 59
+ERROR|08/Jun/2021 14:51:10|log|3362590|139929136916224|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 751, in post
+    return Response(dict, status=status.HTTP_201_CREATED)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|08/Jun/2021 14:51:10|basehttp|3362590|139929136916224|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18788
+ERROR|08/Jun/2021 15:06:26|log|3362590|139929136916224|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+KeyError: 'update_id'
+ERROR|08/Jun/2021 15:06:26|basehttp|3362590|139929136916224|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18667
+ERROR|08/Jun/2021 15:23:40|log|3362590|139929136916224|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 751, in post
+    return Response(dict, status=status.HTTP_201_CREATED)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|08/Jun/2021 15:23:40|basehttp|3362590|139929136916224|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18788
+ERROR|08/Jun/2021 15:38:49|log|3362590|139929110767360|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: list indices must be integers or slices, not str
+ERROR|08/Jun/2021 15:38:49|basehttp|3362590|139929110767360|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18745
+ERROR|08/Jun/2021 15:54:12|log|3362590|139929110767360|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: list indices must be integers or slices, not str
+ERROR|08/Jun/2021 15:54:12|basehttp|3362590|139929110767360|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18745
+ERROR|08/Jun/2021 15:55:20|log|3362590|139928876865280|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: list indices must be integers or slices, not str
+ERROR|08/Jun/2021 15:55:20|basehttp|3362590|139928876865280|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18745
+ERROR|08/Jun/2021 15:56:07|log|3362590|139928893650688|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: list indices must be integers or slices, not str
+ERROR|08/Jun/2021 15:56:07|basehttp|3362590|139928893650688|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18745
+ERROR|08/Jun/2021 15:57:53|log|3362590|139929119160064|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: 'NoneType' object is not subscriptable
+ERROR|08/Jun/2021 15:57:53|basehttp|3362590|139929119160064|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18723
+ERROR|08/Jun/2021 16:01:53|log|3362590|139929119160064|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: 'NoneType' object is not subscriptable
+ERROR|08/Jun/2021 16:01:53|basehttp|3362590|139929119160064|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18723
+ERROR|08/Jun/2021 16:03:54|log|3362590|139928893650688|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: string indices must be integers
+ERROR|08/Jun/2021 16:03:54|basehttp|3362590|139928893650688|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18711
+ERROR|08/Jun/2021 16:05:33|log|3362590|139929110767360|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+TypeError: string indices must be integers
+ERROR|08/Jun/2021 16:05:33|basehttp|3362590|139929110767360|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18711
+ERROR|08/Jun/2021 16:07:59|log|3362590|139929136916224|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+KeyError: 'update_id'
+ERROR|08/Jun/2021 16:07:59|basehttp|3362590|139929136916224|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18669
+ERROR|08/Jun/2021 16:12:10|log|3362590|139928893650688|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+KeyError: 'update_id'
+ERROR|08/Jun/2021 16:12:10|basehttp|3362590|139928893650688|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18669
+ERROR|08/Jun/2021 16:19:19|log|3362590|139928893650688|Internal Server Error: /get_add/employee_phoneinfo/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 738, in post
+    if empdata['update_id']:
+KeyError: 'update_id'
+ERROR|08/Jun/2021 16:19:19|basehttp|3362590|139928893650688|"POST /get_add/employee_phoneinfo/ HTTP/1.1" 500 18669
+ERROR|09/Jun/2021 07:13:17|basehttp|3362590|139929110767360|You're accessing the development server over HTTPS, but it only supports HTTP.
+

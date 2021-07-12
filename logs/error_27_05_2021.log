@@ -1,0 +1,39 @@
+ERROR|27/May/2021 00:33:18|basehttp|1776035|139956687496960|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|27/May/2021 11:36:03|basehttp|1776035|139956587321088|"GET //media/Roy_vkMwXiw.png HTTP/1.1" 500 59
+ERROR|27/May/2021 11:36:51|basehttp|1776035|139956599908096|"GET //media/Roy_vkMwXiw.png HTTP/1.1" 500 59
+ERROR|27/May/2021 11:51:07|basehttp|1776035|139956608825088|"GET //media/Roy_vkMwXiw.png HTTP/1.1" 500 59
+ERROR|27/May/2021 12:15:15|basehttp|1776035|139956565817088|"GET //media/Roy_vkMwXiw.png HTTP/1.1" 500 59
+ERROR|27/May/2021 13:02:30|basehttp|1776035|139956599908096|"GET //media/Roy_vkMwXiw.png HTTP/1.1" 500 59
+ERROR|27/May/2021 13:02:52|basehttp|1776035|139956181780224|"GET //media/Roy_vkMwXiw.png HTTP/1.1" 500 59
+ERROR|28/May/2021 10:25:50|log|1868342|140664091735808|Internal Server Error: /add_taxgrid/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'org'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 563, in get
+    taxgrid = Taxgrid.objects.filter(organization=request.GET['org'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'org'
+ERROR|28/May/2021 10:25:50|basehttp|1868342|140664091735808|"GET /add_taxgrid/ HTTP/1.1" 500 19085

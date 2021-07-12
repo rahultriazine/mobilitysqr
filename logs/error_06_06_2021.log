@@ -1,302 +1,645 @@
-ERROR|06/Jun/2021 11:13:44|log|26216|140160722233088|Internal Server Error: /currency_conversion_history/
+ERROR|06/Jun/2021 13:05:22|log|3201874|139861507958528|Internal Server Error: /currency_conversion_history/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 384, in get
-    print(serializer.data)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 768, in data
-    ret = super(ListSerializer, self).data
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 686, in to_representation
-    self.child.to_representation(item) for item in iterable
-TypeError: 'Currency_Conversion_History' object is not iterable
-ERROR|06/Jun/2021 11:13:44|basehttp|26216|140160722233088|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2021-01-20&to_date=2021-01-20 HTTP/1.1" 500 20281
-ERROR|06/Jun/2021 12:20:11|log|28435|140318946838272|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 378, in get
-    currency = Currency_Conversion_History.objects.filter(filter_query).order_by('-date_modified').latest()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 598, in latest
-    return self.reverse()._earliest_or_latest(*fields, field_name=field_name)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 582, in _earliest_or_latest
-    "earliest() and latest() require either fields as positional "
-ValueError: earliest() and latest() require either fields as positional arguments or 'get_latest_by' in the model's Meta.
-ERROR|06/Jun/2021 12:20:11|basehttp|28435|140318946838272|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 20331
-ERROR|06/Jun/2021 12:20:51|log|28520|140153022785280|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 378, in get
-    currency = Currency_Conversion_History.objects.filter(filter_query).get_latest_by('-date_modified').latest()
-AttributeError: 'QuerySet' object has no attribute 'get_latest_by'
-ERROR|06/Jun/2021 12:20:51|basehttp|28520|140153022785280|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 19812
-ERROR|06/Jun/2021 12:20:53|log|28520|140153022785280|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 378, in get
-    currency = Currency_Conversion_History.objects.filter(filter_query).get_latest_by('-date_modified').latest()
-AttributeError: 'QuerySet' object has no attribute 'get_latest_by'
-ERROR|06/Jun/2021 12:20:53|basehttp|28520|140153022785280|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 19812
-ERROR|06/Jun/2021 12:21:39|log|28601|139939715172096|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 384, in get
-    print(serializer.data)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 768, in data
-    ret = super(ListSerializer, self).data
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 686, in to_representation
-    self.child.to_representation(item) for item in iterable
-TypeError: 'Currency_Conversion_History' object is not iterable
-ERROR|06/Jun/2021 12:21:39|basehttp|28601|139939715172096|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 20281
-ERROR|06/Jun/2021 12:21:40|log|28601|139939715172096|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 384, in get
-    print(serializer.data)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 768, in data
-    ret = super(ListSerializer, self).data
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 686, in to_representation
-    self.child.to_representation(item) for item in iterable
-TypeError: 'Currency_Conversion_History' object is not iterable
-ERROR|06/Jun/2021 12:21:40|basehttp|28601|139939715172096|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 20281
-ERROR|06/Jun/2021 12:30:30|log|29193|140485783828224|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 378, in get
-    currency = Currency_Conversion_History.objects.filter(filter_query).annotate(Max=Max('conversion_date')).order_by('date_modified').last()
-NameError: name 'Max' is not defined
-ERROR|06/Jun/2021 12:30:30|basehttp|29193|140485783828224|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 19781
-ERROR|06/Jun/2021 12:32:16|log|29393|139701672748800|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 385, in get
-    print(serializer.data)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 768, in data
-    ret = super(ListSerializer, self).data
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 686, in to_representation
-    self.child.to_representation(item) for item in iterable
-TypeError: 'Currency_Conversion_History' object is not iterable
-ERROR|06/Jun/2021 12:32:16|basehttp|29393|139701672748800|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 20281
-ERROR|06/Jun/2021 12:34:30|log|29554|140656806639360|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 385, in get
-    print(serializer.data)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 768, in data
-    ret = super(ListSerializer, self).data
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 262, in data
-    self._data = self.to_representation(self.instance)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 686, in to_representation
-    self.child.to_representation(item) for item in iterable
-TypeError: 'Currency_Conversion_History' object is not iterable
-ERROR|06/Jun/2021 12:34:30|basehttp|29554|140656806639360|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2000-09-27&to_date=2021-01-20 HTTP/1.1" 500 20281
-ERROR|06/Jun/2021 13:02:34|log|31178|139904989927168|Internal Server Error: /currency_conversion_history/
-Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
-    response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
-    response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 380, in get
-    currency = Currency_Conversion_History.objects.filter(filter_query)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 841, in filter
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
     return self._filter_or_exclude(False, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
     clone.query.add_q(Q(*args, **kwargs))
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
     clause, _ = self._add_q(q_object, self.used_aliases)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1281, in _add_q
-    current_negated, allow_joins, split_subq)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
     split_subq=split_subq,
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
     condition = self.build_lookup(lookups, col, value)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
     lookup = lookup_class(lhs, rhs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 20, in __init__
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
     self.rhs = self.get_prep_lookup()
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
     return self.lhs.output_field.get_prep_value(self.rhs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
     value = super().get_prep_value(value)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
     return self.to_python(value)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
     params={'value': value},
-django.core.exceptions.ValidationError: ["'2021-01-20 11:00:00 23:59:00' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
-ERROR|06/Jun/2021 13:02:34|basehttp|31178|139904989927168|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=2021-01-20%2000:00:00&to_date=2021-01-20%2011:00:00 HTTP/1.1" 500 22338
-ERROR|06/Jun/2021 13:37:01|log|32248|140249936377600|Internal Server Error: /currency_conversion_history/
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:05:22|basehttp|3201874|139861507958528|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:05:36|log|3201874|139861592864512|Internal Server Error: /currency_conversion_history/
 Traceback (most recent call last):
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
     response = get_response(request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     response = self.process_exception_by_middleware(e, request)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
     return self.dispatch(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
     response = self.handle_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
     response = handler(request, *args, **kwargs)
-  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 378, in get
-    from_date = datetime.strptime(from_date, "%d/%m/%Y").strftime('%Y-%m-%d')
-AttributeError: module 'datetime' has no attribute 'strptime'
-ERROR|06/Jun/2021 13:37:01|basehttp|32248|140249936377600|"GET /currency_conversion_history/?from_currency=DEM&to_currency=GBP&from_date=20/01/2021&to_date=20/01/2021 HTTP/1.1" 500 19771
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:05:36|basehttp|3201874|139861592864512|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:35:32|log|3205451|140240217728768|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:35:32|basehttp|3205451|140240217728768|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:38:24|log|3205451|140240217728768|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:38:24|basehttp|3205451|140240217728768|"GET /currency_conversion_history/?from_date=&to_date=2021-6-8&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:39:41|log|3205893|140253477148416|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:39:41|basehttp|3205893|140253477148416|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:42:39|log|3205893|140253458790144|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:42:39|basehttp|3205893|140253458790144|"GET /currency_conversion_history/?from_date=2020-1-1&to_date=&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:44:48|log|3206445|140384384395008|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:44:48|basehttp|3206445|140384384395008|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:45:35|log|3206445|140384384395008|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:45:35|basehttp|3206445|140384384395008|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21444
+ERROR|06/Jun/2021 13:47:07|log|3206445|140384384395008|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:47:07|basehttp|3206445|140384384395008|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21444
+ERROR|06/Jun/2021 13:49:00|log|3206886|140384625481472|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:49:00|basehttp|3206886|140384625481472|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21642
+ERROR|06/Jun/2021 13:49:13|log|3206886|140384625481472|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 359, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1408, in get_prep_value
+    value = super().get_prep_value(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1268, in get_prep_value
+    return self.to_python(value)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1393, in to_python
+    params={'value': value},
+django.core.exceptions.ValidationError: ["'' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."]
+ERROR|06/Jun/2021 13:49:13|basehttp|3206886|140384625481472|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 21444
+ERROR|06/Jun/2021 13:50:40|log|3207072|139932380579584|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 368, in get
+    filter_query = Q()
+NameError: name 'Q' is not defined
+ERROR|06/Jun/2021 13:50:40|basehttp|3207072|139932380579584|"GET /currency_conversion_history/?from_date=&to_date=2021-6-6&from_currency=&to_currency= HTTP/1.1" 500 18844
+ERROR|06/Jun/2021 15:42:52|log|3218909|140475685050112|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 113, in post
+    data = Vendor.object.get(vendor_email__iexact=request.data['vendor_email'])
+AttributeError: type object 'Vendor' has no attribute 'object'
+ERROR|06/Jun/2021 15:42:52|basehttp|3218909|140475685050112|"POST /get_add/vendor/ HTTP/1.1" 500 18748
+ERROR|06/Jun/2021 15:45:20|log|3219247|140146952054528|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 113, in post
+    data = Vendor.object.get(vendor_email__iexact=request.data['vendor_email'])
+AttributeError: type object 'Vendor' has no attribute 'object'
+ERROR|06/Jun/2021 15:45:20|basehttp|3219247|140146952054528|"POST /get_add/vendor/ HTTP/1.1" 500 18748
+ERROR|06/Jun/2021 15:49:46|log|3219660|140047992551168|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 113, in post
+    data = Vendor.object.get(vendor_email__iexact=request.data['vendor_email'])
+AttributeError: type object 'Vendor' has no attribute 'object'
+ERROR|06/Jun/2021 15:49:46|basehttp|3219660|140047992551168|"POST /get_add/vendor/ HTTP/1.1" 500 18748
+ERROR|06/Jun/2021 15:50:55|log|3219843|140637007312640|Internal Server Error: /get_add/vendor/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/vendor.py", line 113, in post
+    data = Vendor.objects.get(vendor_email__iexact=request.data['vendor_email'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+mobility_apps.master.models.Vendor.DoesNotExist: Vendor matching query does not exist.
+ERROR|06/Jun/2021 15:50:55|basehttp|3219843|140637007312640|"POST /get_add/vendor/ HTTP/1.1" 500 19137
+ERROR|06/Jun/2021 16:19:47|basehttp|3220228|140066357749504|"GET /get_add/country/ HTTP/1.1" 500 59
+ERROR|07/Jun/2021 13:29:53|log|3248289|140443543136000|Internal Server Error: /get_post_country_policy/
+Traceback (most recent call last):
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/mobility_apps/master/views/country.py", line 903, in get
+    print(country[0]['bv_threshold'])
+  File "/var/www/html/mobilitysqr_api/mobilitysqr_preprod_virtualenv/lib64/python3.6/site-packages/django/db/models/query.py", line 303, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR|07/Jun/2021 13:29:53|basehttp|3248289|140443543136000|"GET /get_post_country_policy/?days=8&country_code=Slovakia HTTP/1.1" 500 18947

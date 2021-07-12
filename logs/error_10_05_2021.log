@@ -1,0 +1,747 @@
+ERROR|10/May/2021 14:10:47|log|21043|139823631546112|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 122, in get
+    return Response(dict, status=status.HTTP_200_OK)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|10/May/2021 14:10:47|basehttp|21043|139823631546112|"GET /get_post_per_diem/?organization=ORG150866&band=&home_country= HTTP/1.1" 500 18127
+ERROR|10/May/2021 14:11:02|log|21043|139823631546112|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 122, in get
+    return Response(dict, status=status.HTTP_200_OK)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|10/May/2021 14:11:02|basehttp|21043|139823631546112|"GET /get_post_per_diem/?organization=ORG150866&band=&home_country= HTTP/1.1" 500 18127
+ERROR|10/May/2021 14:12:48|log|21043|139824091989760|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 122, in get
+    return Response(dict, status=status.HTTP_200_OK)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|10/May/2021 14:12:48|basehttp|21043|139824091989760|"GET /get_post_per_diem/?organization=ORG150866&band=&home_country= HTTP/1.1" 500 18128
+ERROR|10/May/2021 14:15:02|log|21043|139823648331520|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 122, in get
+    return Response(dict, status=status.HTTP_200_OK)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|10/May/2021 14:15:02|basehttp|21043|139823648331520|"GET /get_post_per_diem/?organization=ORG150866&band=&home_country= HTTP/1.1" 500 18128
+ERROR|10/May/2021 14:16:44|log|21043|139823631546112|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 122, in get
+    return Response(dict, status=status.HTTP_200_OK)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|10/May/2021 14:16:44|basehttp|21043|139823631546112|"GET /get_post_per_diem/?organization=ORG150866&band=&home_country= HTTP/1.1" 500 18127
+ERROR|10/May/2021 14:18:06|log|21043|139823631546112|Internal Server Error: /get_post_per_diem/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/master/views/currency.py", line 122, in get
+    return Response(dict, status=status.HTTP_200_OK)
+UnboundLocalError: local variable 'dict' referenced before assignment
+ERROR|10/May/2021 14:18:06|basehttp|21043|139823631546112|"GET /get_post_per_diem/?organization=ORG150866&band=&home_country= HTTP/1.1" 500 18127
+ERROR|10/May/2021 14:42:08|exception|25086|140631900145408|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/May/2021 14:42:08|basehttp|25086|140631900145408|"GET /manager/html HTTP/1.1" 500 59
+ERROR|10/May/2021 15:38:25|basehttp|25086|140631881791232|"GET /get_add/travel_request/?travel_req_status=2&org_id=ORG150866&emp_email=Emp112 HTTP/1.1" 500 59
+ERROR|10/May/2021 18:06:27|exception|25086|140631523456768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|10/May/2021 21:39:38|exception|25086|140631926109952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/May/2021 01:19:45|exception|25086|140631926109952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/May/2021 04:46:29|exception|25086|140631926109952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/May/2021 07:40:33|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 07:40:33|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21427
+ERROR|11/May/2021 07:40:41|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 07:40:41|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21427
+ERROR|11/May/2021 07:58:16|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 07:58:16|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21427
+ERROR|11/May/2021 08:04:59|exception|25086|140631926109952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/May/2021 08:33:09|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 08:33:09|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21427
+ERROR|11/May/2021 09:58:24|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 09:58:24|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21445
+ERROR|11/May/2021 09:58:30|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 09:58:30|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21445
+ERROR|11/May/2021 09:58:36|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 09:58:36|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21445
+ERROR|11/May/2021 10:03:29|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 10:03:29|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21430
+ERROR|11/May/2021 10:19:55|log|25086|140631926109952|Internal Server Error: /api/custom/login/
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/mobilitysqr_staging/mobility_apps/employee/views.py", line 2042, in post
+    if user_pass:
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 272, in __bool__
+    self._fetch_all()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/query.py", line 106, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1013, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1059, in execute_sql
+    cursor = self.connection.cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/django/db/backends/postgresql/base.py", line 174, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/var/www/hellotax/mobilitysqr_staging_virtualenv/lib/python3.6/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+django.db.utils.OperationalError: could not connect to server: Connection refused
+	Is the server running on host "172.104.183.68" and accepting
+	TCP/IP connections on port 5432?
+
+ERROR|11/May/2021 10:19:55|basehttp|25086|140631926109952|"POST /api/custom/login/ HTTP/1.1" 500 21455
+ERROR|11/May/2021 11:42:13|exception|25086|140631917717248|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/May/2021 11:42:14|basehttp|25086|140631917717248|"GET /manager/html HTTP/1.1" 500 59
+ERROR|11/May/2021 15:27:35|exception|25086|140631523456768|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|11/May/2021 19:14:28|exception|25086|140631926109952|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.

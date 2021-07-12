@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from . models import Employee,Message_Chat, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo,Employee_Org_Info,Calender_Events,Calender_Activity
-
+from mobility_apps.master.models import *
 
 class EmployeeSerializers(serializers.ModelSerializer):
     class Meta:
@@ -99,3 +99,9 @@ class Message_ChatSerializers(serializers.ModelSerializer):
     class Meta:
         model = Message_Chat
         fields = ('sender_emp_code','receiver_emp_code','chat_message','thread','ticket_id','created_date')
+
+
+class Employee_AddressSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Employee_Address
+        fields = '__all__'

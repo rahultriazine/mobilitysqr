@@ -478,6 +478,9 @@ class get_post_location(APIView):
     serializer_class = Location_MasterSerializers
 
     def post(self, request):
+        if Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).exists():
+            message1={"status": False,"data": {"location_code": "This location code already exists."}}
+            return Response(message1)
         serializers_data = Location_MasterSerializers(data=request.data)
         if serializers_data.is_valid():
            serializers_data.save()
@@ -488,7 +491,19 @@ class get_post_location(APIView):
            return Response(dict, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request):
-        country = Location_Master.objects.filter(country=request.GET['country']).order_by('location_name').order_by('id')
+        country=request.GET['country']
+        organization=self.request.GET.get('organization', None)
+        org_id=self.request.GET.get('org_id', None)
+
+        filter_query=Q()
+        if country:
+          filter_query.add(Q(country__iexact=country),Q.AND)
+        if organization:
+          filter_query.add(Q(organization=organization),Q.AND)
+        if org_id:
+          filter_query.add(Q(organization=org_id),Q.AND)
+
+        country = Location_Master.objects.filter(filter_query).order_by('location_name').order_by('id')
         serializer = Location_MasterSerializers(country,many=True)
         dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
@@ -505,14 +520,28 @@ class update_master_location(APIView):
         return Location_Master.objects.get(pk=pk)
 
     def patch(self, request, pk):
-        instance = self.get_object(pk)
-        serializer = Location_MasterSerializers(instance,data=request.data,partial=True)
-        if serializer.is_valid():
-            serializer.save()
-            dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
-            return Response(dict, status=status.HTTP_200_OK)
+        ids=Location_Master.objects.filter(organization=request.data['organization'],location_code=request.data['location_code']).last()
+        if ids is None:
+            instance = self.get_object(pk)
+            serializer = Location_MasterSerializers(instance,data=request.data,partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                return Response(serializer.errors, status=status.HTTP_200_OK)
+        if(ids.id!=pk):
+            message1={"status": False,"data": {"location_code": "This location code already exists."}}
+            return Response(message1)
         else:
-            return Response(serializer.errors, status=status.HTTP_200_OK)
+            instance = self.get_object(pk)
+            serializer = Location_MasterSerializers(instance,data=request.data,partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                dict = {'message': 'Successful', 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                return Response(serializer.errors, status=status.HTTP_200_OK)
 
 
 
@@ -560,9 +589,11 @@ class add_taxgrid(ListCreateAPIView):
 
 # Get all country:
     def get(self, request):
-        taxgrid = self.get_queryset()
+        # taxgrid = self.get_queryset()
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
+        org = self.request.GET.get('org',None)
+        taxgrid = Taxgrid.objects.filter(organization=org)
         serializer = TaxgridSerializers(taxgrid,many=True)
         dict = {'message':MSG_SUCESS,'status_code':200, 'status': True,'data': serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
@@ -637,7 +668,17 @@ class get_national_id(ListCreateAPIView):
     # Get all country:
     def get(self, request):
 
-        taxgrid = self.get_queryset(request.GET['country'])
+        # taxgrid = self.get_queryset(request.GET['country'])
+        country = self.request.GET.get('country',None)
+        organization = self.request.GET.get('organization',None)
+
+        filter_query=Q()
+        if country:
+          filter_query.add(Q(country=country),Q.AND)
+        if organization:
+          filter_query.add(Q(organization=organization),Q.AND)
+
+        taxgrid = National_Id.objects.filter(filter_query).order_by('id')
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = National_IdSerializers(taxgrid,many=True)
@@ -902,6 +943,7 @@ class get_post_country_policy(ListCreateAPIView):
         home_country = request.GET['home_country']
         organization_id = request.GET['organization_id']
         country = Country_Policy.objects.filter(country_name=country_name,home_country=home_country,organization_id=organization_id).values('bv_threshold').last()
+        # print(country[0]['bv_threshold'])
         # print('##############',country)
         if country:
             if int(country['bv_threshold'])<days:

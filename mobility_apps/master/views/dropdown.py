@@ -85,12 +85,13 @@ class get_post_marital_status(ListCreateAPIView):
     serializer_class = Marital_StatusSerializers
 
     def get_queryset(self):
-        marital_status = Marital_Status.objects.all().order_by('id')
+        marital_status = Marital_Status.objects.filter(status=True,organization=organization_id).order_by('id')
         return marital_status
 
     # Get all department
     def get(self, request):
-        marital_status = self.get_queryset()
+        organization_id=self.request.GET.get('organization_id',None)
+        marital_status = Marital_Status.objects.filter(status=True,organization=organization_id).order_by('id')
         serializer = Marital_StatusSerializers(marital_status,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
@@ -102,6 +103,19 @@ class get_post_marital_status(ListCreateAPIView):
             dict = {"status": True, "message": 'Successfully inserted', "data": serializer.data}
         else:
             dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+class get_marital_status(ListCreateAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Marital_StatusSerializers
+
+    # Get all department
+    def get(self, request):
+        organization_id=self.request.GET.get('organization_id',None)
+        marital_status = Marital_Status.objects.filter(organization=organization_id).order_by('id')
+        serializer = Marital_StatusSerializers(marital_status,many=True)
+        dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
 
 
@@ -188,9 +202,11 @@ class get_post_salutation(ListCreateAPIView):
 
     # Get all department
     def get(self, request):
-        salutation = self.get_queryset()
+        # salutation = self.get_queryset()
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
+        org_id = self.request.GET.get('org_id',None)
+        salutation = Salutation.objects.filter(organization=org_id).order_by('id')
         serializer = SalutationSerializers(salutation,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
@@ -357,9 +373,11 @@ class get_post_suffix(ListCreateAPIView):
 
     # Get all department
     def get(self, request):
-        suffix = self.get_queryset()
+        # suffix = self.get_queryset()
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
+        org_id = self.request.GET.get('org_id',None)
+        suffix = Name_Suffix.objects.filter(organization=org_id).order_by('id')
         serializer = Name_SuffixSerializers(suffix,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)

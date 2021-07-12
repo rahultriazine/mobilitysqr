@@ -1,0 +1,42 @@
+ERROR|05/Apr/2021 11:17:52|basehttp|8002|139828666545920|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/Apr/2021 11:43:55|basehttp|8002|139828658153216|"GET /admin-scripts.asp HTTP/1.1" 500 59
+ERROR|05/Apr/2021 11:46:09|exception|8002|139828658153216|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Apr/2021 12:07:02|exception|8002|139828658153216|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Apr/2021 13:09:50|log|15771|140152268318464|Internal Server Error: /uploadDoc/
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/var/www/html/mobilitysqr_staging/mobility_apps/employee/views.py", line 1314, in post
+    file = request.FILES['file']
+  File "/home/mobilitysqr/.local/lib/python3.6/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR|05/Apr/2021 13:09:50|basehttp|15771|140152268318464|"POST /uploadDoc/ HTTP/1.1" 500 17720
+ERROR|05/Apr/2021 15:08:25|exception|15771|140152268318464|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Apr/2021 18:31:07|exception|15771|140152242882304|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Apr/2021 21:09:09|basehttp|15771|140152268322560|You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR|05/Apr/2021 21:46:06|exception|15771|140152268322560|Invalid HTTP_HOST header: ''. The domain name provided is not valid according to RFC 1034/1035.
+ERROR|05/Apr/2021 22:45:56|basehttp|15771|140151879620352|"GET /config/getuser?index=0 HTTP/1.1" 500 59
