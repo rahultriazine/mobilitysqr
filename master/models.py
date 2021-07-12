@@ -1726,6 +1726,7 @@ class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
 
 
 class Employee_Address(TimeStampedModel, GeneratedByModel, Status):
+    
     pickup_address = models.TextField(null=True, blank=True)
     delivery_address = models.TextField(null=True,blank=True)
     move_date  = models.CharField(max_length=100, null=True,blank=True)
