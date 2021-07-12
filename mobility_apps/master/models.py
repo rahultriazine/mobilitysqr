@@ -1697,6 +1697,7 @@ class Designation(TimeStampedModel, GeneratedByModel, Status):
         return self.code
 from mobility_apps.travel.models import Travel_Request 
 TYPE_CHOICES = (('Tax Payer','Tax Payer'),('Spouse','Spouse'),('Joint','Joint'))
+
 class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
     income_type = models.CharField(max_length=100,null=True, blank=True)
     amount = models.CharField(max_length=100, null=True,blank=True)
@@ -1718,6 +1719,7 @@ class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
+
 
     class Meta:
         managed = True
