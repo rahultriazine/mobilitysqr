@@ -711,20 +711,20 @@ class get_post_vendor_income(ListCreateAPIView):
             dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
         return Response(dict, status=status.HTTP_200_OK)
 
-class get_post_capital_gainsI_income(ListCreateAPIView):
+class get_post_capital_gains_income(ListCreateAPIView):
     #permission_classes = (IsAuthenticated,)
-    serializer_class = Capital_GainsI_IncomeSerializers
+    serializer_class = Capital_Gains_IncomeSerializers
 
     # Get all department
     def get(self, request):
         org_id = self.request.GET.get('org_id',None)
-        vendor_income = Capital_GainsI_Income.objects.all().order_by('id')
-        serializer = Capital_GainsI_IncomeSerializers(vendor_income,many=True)
+        vendor_income = Capital_Gains_Income.objects.all().order_by('id')
+        serializer = Capital_Gains_IncomeSerializers(vendor_income,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
 
     def post(self, request):
-        serializer = Capital_GainsI_IncomeSerializers(data=request.data)
+        serializer = Capital_Gains_IncomeSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save()
             dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}
