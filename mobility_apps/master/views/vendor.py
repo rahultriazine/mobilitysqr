@@ -321,14 +321,14 @@ class get_post_vendor(ListCreateAPIView):
                     request.data['last_name']=""
                     request.data['role'] = "9"
                     request.data['column1'] = save_data.vendor_id
-                    res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
-                    request.data['password'] = make_password(str(res))
+                    # res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
+                    # request.data['password'] = make_password(str(res))
                     emailserializer=EmployeeSerializers(employee_obj,data=request.data)
                     if emailserializer.is_valid():
                         emailserializer.save()
                         ctxt = {
                             'user_name': request.data['user_name'],
-                            'password': request.data['password']
+                            # 'password': request.data['password']
                         }
 
                         subject, from_email, to = 'Welcome to MobilitySQR - Vendor Registration Successful',"",request.data['user_name']

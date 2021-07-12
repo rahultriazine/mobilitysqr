@@ -4152,3 +4152,36 @@ class bulk_approve_travelvisa_request(ListCreateAPIView):
         demo= string[0:10].split("-")
         new_case_date = demo[2]+"/"+demo[1]+"/"+demo[0]
         return new_case_date
+
+
+# class assignment_travel_request_status_count(ListCreateAPIView):
+#     # permission_classes = (IsAuthenticated,)
+#     serializer_class = Assignment_Travel_Request_StatusSerializers
+#     def get(self, request):
+#         travel_requests=Assignment_Travel_Request_Status.objects.filter(vendor=request.GET["emp_code"]).count()
+#         # travel_request_dependent=Assignment_Travel_Request_StatusSerializers(travel_requests,many=True)
+#         total_count = {"count":travel_requests}
+#         dict = {'massage': 'data found', 'status': True, 'data': total_count}
+#         # responseList = [dict]
+#         return Response(dict, status=status.HTTP_200_OK)
+
+class assignment_travel_request_status_count(ListCreateAPIView):
+    # permission_classes = (IsAuthenticated,)
+    serializer_class = Travel_RequestSerializers
+    # Get all visa_purpose
+    def get(self, request):
+        travel= Travel_Request.objects.filter(Q(travel_req_status="2")|Q(travel_req_status="3")|Q(travel_req_status="5"),emp_email=request.GET['emp_code'],organization_id=request.GET['org_id'])
+        travels= Travel_Request.objects.filter(travel_req_status="2",current_ticket_owner="",organization_id=request.GET['org_id'],emp_email=request.GET['emp_code']).count()
+        if travel or travels:
+            serializer =Travel_RequestSerializers(travels,many=True)
+            serializer =Travel_RequestSerializers(travel,many=True)
+            dict=[]
+            for data in serializer.data:
+                dict.append(data['travel_req_status'])
+            total=sum(Counter(dict).values())
+            my_dict = Counter(dict)
+            dict = {"status": True, "message":MSG_SUCESS, "data":  my_dict,"new_request":travels}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict = {"status": False,"status_code":200, "message":MSG_FAILED,"data":  travel,"new_request":travels}
+            return Response(dict, status=status.HTTP_200_OK)
