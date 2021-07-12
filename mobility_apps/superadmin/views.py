@@ -216,11 +216,11 @@ class OrgUsers(APIView):
         #"rahulr@triazinesoft.com"
         password = password
         #"123456"
-        subject = 'New Admin user added'
+        subject = 'New admin created'
         message = ''
-        html_message = '<h3>New Admin user details below</h3>'
-        html_message += '<p> User Name <b>: '+username+'</b> </p>'
-        html_message += '<p>User Name : <b>' +password+ '</b> </p>'
+        html_message = '<h3>Welcome to Voyager,</h3><p>Your account has been created, Please login using below credentials:</p>'
+        html_message += '<p> Username :<b>'+username+'</b> </p>'
+        html_message += '<p> Password :<b>' +password+ '</b> </p>'
         email_from = settings.EMAIL_HOST_USER
         recipient_list = [email,]
         send_mail(subject, message, email_from, recipient_list, fail_silently=False, html_message=html_message)
@@ -234,17 +234,18 @@ class OrgUsers(APIView):
             if (int(user_id) > 0):
                 #orgdata = Userinfo.objects.filter(id=user_id)
                 #orgdata2 = Userinfo.objects.filter(id=user_id)
-                psql =  "  and U.id = "+user_id
+                psql =  '  and U.id = '+user_id
             else:
                 #orgdata = Userinfo.objects.all().order_by('-id')
                 #orgdata2 = Userinfo.objects.count()
-                psql = " "
+                psql = ''
             #org_serializer = UserinfoSerializers(orgdata,many=True)
 
             cursor = connection.cursor()
-            cursor.execute('SELECT U.*,O.org_name from employee_employee as U '
-                           'JOIN superadmin_organizations O '
-                           'ON U.organization=O.org_id  '+psql+' WHERE U.role=7  ORDER BY ID DESC')
+            # cursor.execute('SELECT U.*,O.org_name from employee_employee as U '
+            #                'JOIN superadmin_organizations O '
+            #                'ON U.organization=O.org_id  '+psql+' WHERE U.role=7  ORDER BY ID DESC')
+            cursor.execute("SELECT U.*,O.org_name from employee_employee as U JOIN superadmin_organizations O ON U.organization=O.org_id " + psql + " WHERE U.role='7'  ORDER BY ID DESC")
             results = self.dictfetchall(cursor)
 
             if results:

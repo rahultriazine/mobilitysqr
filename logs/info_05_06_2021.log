@@ -1,0 +1,207 @@
+INFO|05/Jun/2021 11:46:16|basehttp|25933|140049842521856|"POST /api/custom/login/ HTTP/1.1" 200 455
+WARNING|05/Jun/2021 11:47:45|log|25933|140049842521856|Unauthorized: /get_action_status/
+WARNING|05/Jun/2021 11:47:45|basehttp|25933|140049842521856|"GET /get_action_status/?module=T, HTTP/1.1" 401 58
+INFO|05/Jun/2021 11:47:57|basehttp|25933|140049842521856|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/Jun/2021 11:50:39|basehttp|26176|140298236532480|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+ERROR|05/Jun/2021 11:56:24|log|26403|140453885679360|Internal Server Error: /get_action_status/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/approve_request.py", line 75, in get
+    user_id = self.request.user.role
+AttributeError: 'User' object has no attribute 'role'
+ERROR|05/Jun/2021 11:56:24|basehttp|26403|140453885679360|"GET /get_action_status/?module=T, HTTP/1.1" 500 19472
+INFO|05/Jun/2021 11:58:17|basehttp|26521|140094676096768|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+ERROR|05/Jun/2021 11:58:41|log|26568|140263525799680|Internal Server Error: /get_action_status/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/approve_request.py", line 77, in get
+    role_id = Employee.role.id
+AttributeError: 'DeferredAttribute' object has no attribute 'id'
+ERROR|05/Jun/2021 11:58:41|basehttp|26568|140263525799680|"GET /get_action_status/?module=T, HTTP/1.1" 500 19488
+INFO|05/Jun/2021 11:59:18|basehttp|26602|139908321232640|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/Jun/2021 12:00:05|basehttp|26690|139936053376768|"GET /get_action_status/?module=T, HTTP/1.1" 200 2108
+INFO|05/Jun/2021 16:41:19|basehttp|7660|140469402875648|"GET /getassignmentletter/?travel_req_id=TR205064 HTTP/1.1" 200 53
+INFO|05/Jun/2021 16:41:54|basehttp|7660|140469402875648|"GET /getassignmentletter/?travel_req_id=TR455812 HTTP/1.1" 200 53
+INFO|05/Jun/2021 16:42:07|basehttp|7660|140469402875648|"GET /getassignmentletter/?travel_req_id=TR321378 HTTP/1.1" 200 53
+INFO|05/Jun/2021 16:42:32|basehttp|7660|140469402875648|"GET /getassignmentletter/?travel_req_id=TR182975 HTTP/1.1" 200 53
+INFO|05/Jun/2021 16:42:51|basehttp|7660|140469402875648|"GET /getassignmentletter/?travel_req_id=TR418059 HTTP/1.1" 200 53
+INFO|05/Jun/2021 16:43:02|basehttp|7660|140469402875648|"GET /getassignmentletter/?travel_req_id=TR191797 HTTP/1.1" 200 53
+INFO|05/Jun/2021 16:43:11|basehttp|7660|140469402875648|"GET /getassignmentletter/?travel_req_id=TR314432 HTTP/1.1" 200 53
+INFO|05/Jun/2021 19:41:34|basehttp|13793|140114187028224|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/Jun/2021 20:26:02|basehttp|15992|139883975087872|"GET /currency_conversion_history/?from_date=2021-6-9&to_date=2021-6-17&from_currency=ARS&to_currency=THB HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:26:47|basehttp|15992|139883975087872|"GET /currency_conversion_history/?from_currency=ARS&to_currency=THB HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:26:54|basehttp|15992|139883975087872|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:26:55|basehttp|15992|139883975087872|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:28:25|basehttp|16612|140419861747456|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:29:16|basehttp|16687|139955887884032|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:30:20|basehttp|16687|139955887884032|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:30:50|basehttp|16810|140157389162240|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+ERROR|05/Jun/2021 20:31:18|log|16873|140612404020992|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 378, in get
+    currency = Currency_Conversion_History.objects.filter(filter_query)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1281, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1090, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1126, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'icontent' for CharField or join on the field not permitted.
+ERROR|05/Jun/2021 20:31:18|basehttp|16873|140612404020992|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 500 21319
+INFO|05/Jun/2021 20:32:03|basehttp|17033|140361662117632|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:32:18|basehttp|17068|140166582290176|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:32:19|basehttp|17068|140166582290176|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:33:34|basehttp|17138|140469476898560|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:34:13|basehttp|17208|140047590405888|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:37:25|basehttp|17208|140047590405888|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:37:47|basehttp|17413|139914298746624|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:38:55|basehttp|17535|139974855280384|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:39:38|basehttp|17662|140227527218944|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:41:01|basehttp|17746|139651739846400|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 20800
+WARNING|05/Jun/2021 20:41:58|log|17806|140479486453504|Unauthorized: /currency_conversion_history/
+WARNING|05/Jun/2021 20:41:58|basehttp|17806|140479486453504|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 401 183
+INFO|05/Jun/2021 20:42:04|basehttp|17806|140479486453504|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|05/Jun/2021 20:42:13|basehttp|17806|140479486453504|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+ERROR|05/Jun/2021 20:42:56|log|17915|140017238656768|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 384, in get
+    print(serializer.data)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'Currency_Conversion_History' object is not iterable
+ERROR|05/Jun/2021 20:42:56|basehttp|17915|140017238656768|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 500 20101
+INFO|05/Jun/2021 20:46:35|basehttp|18147|140259099002624|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 568
+INFO|05/Jun/2021 20:47:10|basehttp|18276|140163058349824|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 6628
+INFO|05/Jun/2021 20:47:36|basehttp|18325|139681808787200|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:48:52|basehttp|18412|140583522580224|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:48:54|basehttp|18412|140583522580224|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:49:18|basehttp|18474|139621875877632|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 6628
+INFO|05/Jun/2021 20:49:33|basehttp|18524|140415003227904|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+ERROR|05/Jun/2021 20:50:18|log|18574|139672579962624|Internal Server Error: /currency_conversion_history/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/currency.py", line 378, in get
+    currency = Currency_Conversion_History.objects.filter(from_currency__icontents="USD ")
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    split_subq=split_subq,
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1090, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/query.py", line 1126, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'icontents' for CharField or join on the field not permitted.
+ERROR|05/Jun/2021 20:50:18|basehttp|18574|139672579962624|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 500 21153
+INFO|05/Jun/2021 20:50:35|basehttp|18630|140496248456960|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:52:16|basehttp|18829|140139378362112|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:52:18|basehttp|18829|140139378362112|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:52:45|basehttp|18912|139701164824320|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:52:47|basehttp|18912|139701164824320|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:53:33|basehttp|19000|140097162925824|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:53:35|basehttp|19000|140097162925824|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:54:08|basehttp|19074|139773303940864|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:54:09|basehttp|19074|139773303940864|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 20:54:25|basehttp|19122|140215422777088|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 21:05:44|basehttp|19496|140582922692352|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63
+INFO|05/Jun/2021 21:05:45|basehttp|19496|140582922692352|"GET /currency_conversion_history/?from_currency=ARS HTTP/1.1" 200 63

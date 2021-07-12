@@ -1,0 +1,154 @@
+ERROR|01/Apr/2021 12:34:27|log|5653|140141151340288|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'ticket_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2764, in get
+    ticket_id = request.GET['ticket_id']
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'ticket_id'
+ERROR|01/Apr/2021 12:34:27|basehttp|5653|140141151340288|"GET /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444 HTTP/1.1" 500 19959
+ERROR|01/Apr/2021 12:35:20|log|5653|140141151340288|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2774, in get
+    message_query = Message_Chat.objects.filter(ticket_id = ticket_id | Q(thread=thread_data) | Q(thread=thread_data1)).order_by('created_date')
+TypeError: unsupported operand type(s) for |: 'str' and 'Q'
+ERROR|01/Apr/2021 12:35:20|basehttp|5653|140141151340288|"GET /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444&ticket_id=%27%27 HTTP/1.1" 500 19734
+ERROR|01/Apr/2021 12:39:57|log|5968|140195752793856|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2774, in get
+    message_query = Message_Chat.objects.filter(ticket_id=ticket_id | (Q(thread=thread_data) | Q(thread=thread_data1))).order_by('created_date')
+TypeError: unsupported operand type(s) for |: 'str' and 'Q'
+ERROR|01/Apr/2021 12:39:57|basehttp|5968|140195752793856|"GET /employee_chat/?sender_emp_code=raju1122&receiver_emp_code=div1444&ticket_id=%27%27 HTTP/1.1" 500 19734
+ERROR|01/Apr/2021 13:02:43|log|6639|140512414304000|Internal Server Error: /employee_chat/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 462, in _set_autocommit
+    allowed = self._get_trancount() > 0
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 424, in _get_trancount
+    return cursor.execute('SELECT @@TRANCOUNT').fetchone()[0]
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 37, in authenticate
+    return self.get_user(validated_token), validated_token
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework_simplejwt/authentication.py", line 110, in get_user
+    user = User.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1096, in execute_sql
+    cursor = self.connection.cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 195, in connect
+    self.set_autocommit(self.settings_dict['AUTOCOMMIT'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/backends/base/base.py", line 404, in set_autocommit
+    self._set_autocommit(autocommit)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 464, in _set_autocommit
+    self.connection.autocommit = autocommit
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 462, in _set_autocommit
+    allowed = self._get_trancount() > 0
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/sql_server/pyodbc/base.py", line 424, in _get_trancount
+    return cursor.execute('SELECT @@TRANCOUNT').fetchone()[0]
+django.db.utils.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+ERROR|01/Apr/2021 13:02:43|basehttp|6639|140512414304000|"GET /employee_chat/?sender_emp_code=vishal&receiver_emp_code=raju1122&ticket_id=tic2 HTTP/1.1" 500 23941

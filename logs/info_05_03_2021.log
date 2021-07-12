@@ -1,0 +1,8 @@
+INFO|05/Mar/2021 18:57:50|basehttp|27795|140573701523200|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|05/Mar/2021 18:58:32|basehttp|27795|140573701523200|"GET /get_calender_activity HTTP/1.1" 301 0
+INFO|05/Mar/2021 18:58:36|basehttp|27795|140573701523200|"GET /get_calender_activity/ HTTP/1.1" 200 1531
+INFO|05/Mar/2021 19:04:10|basehttp|28104|139825739679488|"GET /get_calender_activity HTTP/1.1" 301 0
+INFO|05/Mar/2021 19:04:15|basehttp|28104|139825739679488|"GET /get_calender_activity/ HTTP/1.1" 200 1531
+INFO|05/Mar/2021 19:04:40|basehttp|28104|139825739679488|"GET /get_calender_activity/ HTTP/1.1" 200 1531
+INFO|05/Mar/2021 19:06:16|basehttp|28181|140309484787456|"GET /get_calender_activity/ HTTP/1.1" 200 1531
+INFO|05/Mar/2021 19:07:00|basehttp|28243|139661624952576|"GET /get_calender_activity/ HTTP/1.1" 200 1106

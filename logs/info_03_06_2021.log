@@ -1,0 +1,202 @@
+WARNING|03/Jun/2021 10:59:40|log|10059|139889995896576|Unauthorized: /get_post_compliance_answer/
+WARNING|03/Jun/2021 10:59:40|basehttp|10059|139889995896576|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 401 183
+WARNING|03/Jun/2021 11:00:53|log|10059|139889995896576|Not Found: /api/custome/login/
+WARNING|03/Jun/2021 11:00:53|basehttp|10059|139889995896576|"POST /api/custome/login/ HTTP/1.1" 404 56807
+INFO|03/Jun/2021 11:01:19|basehttp|10059|139889995896576|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|03/Jun/2021 11:01:45|basehttp|10059|139889995896576|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 48
+INFO|03/Jun/2021 11:04:16|basehttp|10237|139666565011200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1295
+INFO|03/Jun/2021 11:10:27|basehttp|10500|140109827573504|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 50
+INFO|03/Jun/2021 11:16:23|basehttp|10818|139672898983680|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1295
+INFO|03/Jun/2021 11:16:26|basehttp|10818|139672898983680|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1295
+INFO|03/Jun/2021 11:45:35|basehttp|12117|140531521603328|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 455
+INFO|03/Jun/2021 11:46:02|basehttp|12173|140108699907840|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 490
+INFO|03/Jun/2021 11:46:53|basehttp|12173|140108699907840|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 490
+INFO|03/Jun/2021 11:57:34|basehttp|12621|140003145271040|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 580
+INFO|03/Jun/2021 11:58:48|basehttp|12621|140003145271040|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 580
+WARNING|03/Jun/2021 12:39:19|log|12621|140003145271040|Unauthorized: /get_post_compliance_answer/
+WARNING|03/Jun/2021 12:39:19|basehttp|12621|140003145271040|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 401 183
+WARNING|03/Jun/2021 12:39:45|log|12621|140003145271040|Unauthorized: /get_post_compliance_answer/
+WARNING|03/Jun/2021 12:39:45|basehttp|12621|140003145271040|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 401 183
+INFO|03/Jun/2021 12:39:49|basehttp|12621|140003145271040|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|03/Jun/2021 12:40:00|basehttp|12621|140003145271040|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 580
+INFO|03/Jun/2021 12:45:05|basehttp|13896|140278925018880|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1669
+INFO|03/Jun/2021 12:45:32|basehttp|13896|140278925018880|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 85
+INFO|03/Jun/2021 12:45:34|basehttp|13896|140278925018880|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 85
+INFO|03/Jun/2021 12:46:04|basehttp|13977|139801410623232|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 89
+INFO|03/Jun/2021 12:46:36|basehttp|14034|140656841803520|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 650
+INFO|03/Jun/2021 12:47:42|basehttp|14088|140285568009984|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 84
+INFO|03/Jun/2021 12:48:03|basehttp|14139|140139653879552|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 68
+INFO|03/Jun/2021 12:48:03|basehttp|14139|140139653879552|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 68
+INFO|03/Jun/2021 12:50:06|basehttp|14274|140474151769856|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 74
+INFO|03/Jun/2021 12:50:08|basehttp|14274|140474151769856|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 74
+INFO|03/Jun/2021 12:51:15|basehttp|14387|140007717066496|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 69
+INFO|03/Jun/2021 12:51:18|basehttp|14387|140007717066496|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 69
+INFO|03/Jun/2021 12:51:53|basehttp|14453|140134208882432|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 69
+INFO|03/Jun/2021 12:52:40|basehttp|14520|140510977111808|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 69
+INFO|03/Jun/2021 12:52:41|basehttp|14520|140510977111808|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 69
+INFO|03/Jun/2021 12:54:41|basehttp|14731|140034289395456|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 36
+INFO|03/Jun/2021 12:55:01|basehttp|14780|140422737610496|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 36
+INFO|03/Jun/2021 12:55:03|basehttp|14780|140422737610496|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 36
+INFO|03/Jun/2021 12:55:31|basehttp|14844|140609441666816|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 36
+INFO|03/Jun/2021 12:56:09|basehttp|14896|140046803572480|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 84
+INFO|03/Jun/2021 12:56:25|basehttp|14937|139765781481216|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 67
+ERROR|03/Jun/2021 12:56:50|log|14989|139840602986240|Internal Server Error: /get_post_compliance_answer/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 107, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Compliance is not JSON serializable
+ERROR|03/Jun/2021 12:56:50|basehttp|14989|139840602986240|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 500 125227
+INFO|03/Jun/2021 12:58:11|basehttp|15072|140715487405824|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 68
+INFO|03/Jun/2021 12:58:28|basehttp|15119|140061451175680|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 68
+INFO|03/Jun/2021 12:59:52|basehttp|15206|140307820037888|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 85
+INFO|03/Jun/2021 13:00:15|basehttp|15254|140326640207616|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 650
+INFO|03/Jun/2021 13:00:44|basehttp|15254|140326640207616|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 650
+INFO|03/Jun/2021 13:00:45|basehttp|15254|140326640207616|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 650
+INFO|03/Jun/2021 13:01:57|basehttp|15254|140326640207616|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1670
+INFO|03/Jun/2021 13:04:28|basehttp|15391|140594358757120|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1674
+INFO|03/Jun/2021 13:06:42|basehttp|15391|140594358757120|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1674
+INFO|03/Jun/2021 13:07:11|basehttp|15391|140594358757120|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1490
+INFO|03/Jun/2021 13:08:43|basehttp|15624|139920139446016|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 685
+INFO|03/Jun/2021 13:08:49|basehttp|15624|139920139446016|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 869
+INFO|03/Jun/2021 13:09:33|basehttp|15750|139985077118720|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1119
+INFO|03/Jun/2021 13:09:46|basehttp|15750|139985077118720|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 935
+INFO|03/Jun/2021 13:09:53|basehttp|15750|139985077118720|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 935
+INFO|03/Jun/2021 13:24:15|basehttp|17095|139975299655424|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 94
+INFO|03/Jun/2021 13:26:24|basehttp|17483|140682827360000|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 94
+INFO|03/Jun/2021 13:27:26|basehttp|17552|140313546110720|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 57
+INFO|03/Jun/2021 13:29:37|basehttp|17886|139928232797952|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|03/Jun/2021 13:30:34|basehttp|17963|139929878075136|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 83
+INFO|03/Jun/2021 13:34:36|basehttp|18320|139784690050816|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 78
+INFO|03/Jun/2021 13:35:35|basehttp|18431|140062390961920|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 70
+INFO|03/Jun/2021 13:35:57|basehttp|18467|139800946525952|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:36:19|basehttp|18502|140057788856064|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:37:40|basehttp|18502|140057788856064|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 650
+INFO|03/Jun/2021 13:38:20|basehttp|18502|140057788856064|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 76
+WARNING|03/Jun/2021 13:39:55|log|18758|140088170600192|Unauthorized: /get_post_compliance_answer/
+WARNING|03/Jun/2021 13:39:55|basehttp|18758|140088170600192|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 401 183
+INFO|03/Jun/2021 13:40:00|basehttp|18758|140088170600192|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|03/Jun/2021 13:40:13|basehttp|18758|140088170600192|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:41:00|basehttp|18758|140088170600192|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:46:07|basehttp|18991|139639304955648|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:46:47|basehttp|19050|139882593814272|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:46:49|basehttp|19050|139882593814272|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:47:06|basehttp|19050|139882593814272|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1117
+INFO|03/Jun/2021 13:47:36|basehttp|19050|139882593814272|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:47:38|basehttp|19050|139882593814272|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:47:44|basehttp|19050|139882593814272|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 13:47:52|basehttp|19050|139882593814272|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:49:13|basehttp|19203|140354861487872|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:49:53|basehttp|19203|140354861487872|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1117
+INFO|03/Jun/2021 13:51:47|basehttp|19352|139714192783104|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1672
+INFO|03/Jun/2021 13:55:04|basehttp|19564|140625736283904|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 13:55:12|basehttp|19564|140625736283904|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:55:15|basehttp|19564|140625736283904|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:55:28|basehttp|19564|140625736283904|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 13:55:33|basehttp|19564|140625736283904|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 13:55:36|basehttp|19564|140625736283904|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 13:56:29|basehttp|19564|140625736283904|"GET /get_post_compliance_answer/?emp_code=Emp113 HTTP/1.1" 200 650
+INFO|03/Jun/2021 13:58:13|basehttp|19724|140267821815552|"GET /get_post_compliance_answer/?emp_code=Emp113 HTTP/1.1" 200 740
+INFO|03/Jun/2021 13:58:20|basehttp|19724|140267821815552|"GET /get_post_compliance_answer/?emp_code=Emp113 HTTP/1.1" 200 740
+INFO|03/Jun/2021 13:58:22|basehttp|19724|140267821815552|"GET /get_post_compliance_answer/?emp_code=Emp113 HTTP/1.1" 200 740
+INFO|03/Jun/2021 13:58:59|basehttp|19724|140267821815552|"POST /get_post_compliance_answer/?emp_code=Emp113 HTTP/1.1" 200 352
+INFO|03/Jun/2021 13:59:16|basehttp|19724|140267821815552|"POST /get_post_compliance_answer/?emp_code=Emp113 HTTP/1.1" 200 352
+INFO|03/Jun/2021 14:05:52|basehttp|19923|140340675909376|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 14:09:10|basehttp|19923|140340675909376|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 14:10:10|basehttp|19923|140340675909376|"POST /get_post_compliance_answer/ HTTP/1.1" 200 87
+WARNING|03/Jun/2021 15:06:08|log|23824|139989975279360|Unauthorized: /get_post_compliance_answer/
+WARNING|03/Jun/2021 15:06:08|basehttp|23824|139989975279360|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 401 58
+INFO|03/Jun/2021 15:07:44|basehttp|23824|139989975279360|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|03/Jun/2021 15:07:57|basehttp|23824|139989975279360|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 15:09:05|basehttp|23824|139989975279360|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 740
+INFO|03/Jun/2021 15:10:44|basehttp|23824|139989975279360|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 15:11:07|basehttp|23824|139989975279360|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 15:11:25|basehttp|23824|139989975279360|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 15:11:59|basehttp|23824|139989975279360|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 933
+INFO|03/Jun/2021 15:13:15|basehttp|23824|139989975279360|"GET /get_post_compliance_answer/?emp_code=Emp113 HTTP/1.1" 200 740
+INFO|03/Jun/2021 15:16:36|basehttp|23824|139989975279360|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 740
+INFO|03/Jun/2021 15:27:05|basehttp|25103|140024876058368|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 740
+INFO|03/Jun/2021 15:28:04|basehttp|25182|140126413080320|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 740
+ERROR|03/Jun/2021 15:32:34|log|25388|140414971578112|Internal Server Error: /get_post_compliance_answer/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/renderers.py", line 107, in render
+    allow_nan=not self.strict, separators=separators
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/json.py", line 28, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.7/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/utils/encoders.py", line 68, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/usr/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Compliance is not JSON serializable
+ERROR|03/Jun/2021 15:32:34|basehttp|25388|140414971578112|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 500 127264
+INFO|03/Jun/2021 15:35:50|basehttp|25479|140035293406976|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 80
+INFO|03/Jun/2021 15:36:12|basehttp|25598|140375560603392|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 79
+INFO|03/Jun/2021 15:36:45|basehttp|25675|139741587519232|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 66
+INFO|03/Jun/2021 15:36:53|basehttp|25675|139741587519232|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 66
+INFO|03/Jun/2021 15:38:46|basehttp|25994|140337197328128|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 152
+INFO|03/Jun/2021 15:39:13|basehttp|26114|139797512013568|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 740
+INFO|03/Jun/2021 15:40:04|basehttp|26114|139797512013568|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 740
+INFO|03/Jun/2021 15:40:52|basehttp|26215|140627521787648|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 845
+WARNING|03/Jun/2021 16:36:12|log|30172|140196142233344|Unauthorized: /get_post_compliance_answer/
+WARNING|03/Jun/2021 16:36:12|basehttp|30172|140196142233344|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 401 183
+INFO|03/Jun/2021 16:36:16|basehttp|30172|140196142233344|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|03/Jun/2021 16:36:26|basehttp|30172|140196142233344|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 90
+INFO|03/Jun/2021 16:36:29|basehttp|30172|140196142233344|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 90
+INFO|03/Jun/2021 16:36:57|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 810
+INFO|03/Jun/2021 16:38:06|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 810
+INFO|03/Jun/2021 16:38:12|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 810
+INFO|03/Jun/2021 16:38:21|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1003
+INFO|03/Jun/2021 16:38:24|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:38:27|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:38:30|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:38:32|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:38:33|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:40:57|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:41:06|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:41:31|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1003
+INFO|03/Jun/2021 16:42:51|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1003
+INFO|03/Jun/2021 16:43:50|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1003
+INFO|03/Jun/2021 16:43:54|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+WARNING|03/Jun/2021 16:48:35|log|30301|139889111443200|Unauthorized: /get_post_compliance_answer/
+WARNING|03/Jun/2021 16:48:35|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 401 58
+INFO|03/Jun/2021 16:48:49|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1003
+INFO|03/Jun/2021 16:49:08|basehttp|30301|139889111443200|"GET /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 1003
+INFO|03/Jun/2021 16:49:11|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87
+INFO|03/Jun/2021 16:49:13|basehttp|30301|139889111443200|"POST /get_post_compliance_answer/?emp_code=Emp112 HTTP/1.1" 200 87

@@ -37,7 +37,7 @@ SECRET_KEY = '=n1)7@ws=@^f&_xbq!q(v15aj29gd4ex+dv49f)ou80&0q6x%q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','192.168.1.230']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 
 # Application definition
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'mobility_apps.travel',
     'mobility_apps.visa',
     'mobility_apps.letter',
+    'mobility_apps.vault',
     # 'mobility_apps.base',
     'mobility_apps.superadmin',
     # 'mobility_apps.reports',
@@ -64,6 +65,7 @@ INSTALLED_APPS = [
      # 'rest-auth',
     'api',
     # 'oauth2_provider',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -138,33 +140,18 @@ REST_FRAMEWORK = {
 # }
 
 # staging_database
+
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mob_test',
-        'HOST': 'mobilitysqrdev.database.windows.net',
-	    'PORT': '1433',
-        'USER': 'mobilitysqr_admin',
-        'PASSWORD': 'mob!@sqr1123573121',
-        'OPTIONS': {
-             'host_is_server': True,
-             'driver':'ODBC Driver 17 for SQL Server',
-        }
+        # 'NAME': 'mobilitysqr_staging',
+        'USER': 'postgres',
+        'PASSWORD': 'admin@123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'sql_server.pyodbc',
-#         'NAME': 'mobilitysqrpreprod',
-#         'HOST': 'mobilitysqrdev.database.windows.net',
-# 	'PORT': '1433',
-#         'USER': 'mobilitysqr_admin',
-#         'PASSWORD': 'mob!@sqr1123573121',
-#         'OPTIONS': {
-# 		 'host_is_server': True,'driver':'ODBC Driver 17 for SQL Server',
-#         }
-#     }
-# }
 
 CORS_ORIGIN_ALLOW_ALL = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -216,6 +203,8 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
@@ -231,9 +220,9 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'vikasy@triazinesoft.com'
-EMAIL_HOST_PASSWORD = '9455@LOVE'
-EMAIL_FROM ='vikasy@triazinesoft.com'
+EMAIL_HOST_USER = 'alert_imap@mobilitysqr.com'
+EMAIL_HOST_PASSWORD = 'MobilitySQR.1'
+EMAIL_FROM ='alert_imap@mobilitysqr.com'
 
 
 MEDIA_URL = '/media/'
@@ -241,3 +230,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 102400
 
 from settings.settings_log import *
+
+
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
+CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'

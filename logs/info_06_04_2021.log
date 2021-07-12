@@ -1,0 +1,11 @@
+WARNING|06/Apr/2021 12:50:19|log|8812|140399605442304|Unauthorized: /bulk_json_upload/employee/
+WARNING|06/Apr/2021 12:50:19|basehttp|8812|140399605442304|"POST /bulk_json_upload/employee/ HTTP/1.1" 401 51
+WARNING|06/Apr/2021 12:52:36|log|8812|140399605442304|Unauthorized: /bulk_json_upload/employee/
+WARNING|06/Apr/2021 12:52:36|basehttp|8812|140399605442304|"POST /bulk_json_upload/employee/ HTTP/1.1" 401 51
+INFO|06/Apr/2021 12:52:57|basehttp|8812|140399605442304|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|06/Apr/2021 12:53:44|basehttp|8812|140399605442304|"POST /bulk_json_upload/employee/ HTTP/1.1" 200 88
+INFO|06/Apr/2021 12:54:53|basehttp|8812|140399605442304|"POST /bulk_json_upload/employee/ HTTP/1.1" 200 85
+INFO|06/Apr/2021 13:10:11|basehttp|8812|140399605442304|"POST /api/custom/login/ HTTP/1.1" 200 452
+INFO|06/Apr/2021 13:11:06|basehttp|8812|140399605442304|"POST /bulk_json_upload/employee/ HTTP/1.1" 200 86
+INFO|06/Apr/2021 13:24:04|basehttp|10525|139965384832768|"POST /bulk_json_upload/employee/ HTTP/1.1" 200 87
+INFO|06/Apr/2021 13:25:51|basehttp|10599|140447393502976|"POST /bulk_json_upload/employee/ HTTP/1.1" 200 88

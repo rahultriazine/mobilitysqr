@@ -165,10 +165,10 @@ class Visa_Request_Document_Draft(TimeStampedModel, GeneratedByModel, Status):
     column6 = models.CharField(max_length=100, null=True, blank=True)
     column7 = models.CharField(max_length=100, null=True, blank=True)
     column8 = models.CharField(max_length=100, null=True, blank=True)
-    column9 = models.CharField(max_length=100, null=True, blank=True)
-    column10 = models.CharField(max_length=100, null=True, blank=True)
-    column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
+    # column9 = models.CharField(max_length=100, null=True, blank=True)
+    # column10 = models.CharField(max_length=100, null=True, blank=True)
+    # column11 = models.CharField(max_length=100, null=True, blank=True)
+
     class Meta:
         managed = True
         verbose_name = _('Visa Request Document Draft')

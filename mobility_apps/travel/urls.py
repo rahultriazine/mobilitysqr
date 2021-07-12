@@ -22,6 +22,15 @@ urlpatterns = [
         path('delete_save/', delete_save.as_view(), name='delete_save'),
         path('get_upcoming_travel_request/', get_upcoming_travel_request.as_view(), name='get_upcoming_travel_request'),
         
+        path('get_approve_reject_request_by_mail/', approved_Reject_TravelRequestByMail.as_view(), name='get_approve_reject_request_by_mail'),
+        re_path(r'^get_travel_count_user/$', getTravelCountUser.as_view(), name='get_travel_count_user'),
+        path('get_travel_request_approver_top/', get_travel_request_approver_top.as_view(), name='get_travel_request_approver_top'),
+        path('travel_request_priority/', travel_request_priority.as_view(),
+             name='travel_request_priority'),
 
+
+
+
+        path('bulk_approve_travelvisa_request/', bulk_approve_travelvisa_request.as_view(),name='bulk_approve_travelvisa_request'),
 
 ]

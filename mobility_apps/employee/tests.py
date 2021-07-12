@@ -19,7 +19,7 @@ def generate_access_token(user):
 def generate_refresh_token(user):
     refresh_token_payload = {
         'user_id': user,
-        'token_type': 'access',
+        'token_type': 'refresh',
         'exp': datetime.datetime.utcnow() + datetime.timedelta(days=7),
         'jti': "b932ba39d8024b39a55b3850129cbd10",
     }

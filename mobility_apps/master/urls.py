@@ -87,7 +87,6 @@ urlpatterns = [
         path('get_taxgridmaster/', get_taxgridmaster.as_view(), name='get_taxgridmaster'),
         path('get_taxgridcountry/', get_taxgridcountry.as_view(), name='get_taxgridcountry'),
         path('add_taxgrid/', add_taxgrid.as_view(), name='add_taxgrid'),
-		
 		path('get_post_gender/', get_post_gender.as_view(), name='get_post_gender'),
         path('bulk_upload_Gender/', bulk_upload_Gender.as_view(), name='bulk_upload_Gender'),
 
@@ -150,5 +149,34 @@ urlpatterns = [
         path('bulk_upload_vendor_master/', bulk_upload_vendor_master.as_view(), name='bulk_upload_vendor_master'),
         path('get_post_per_diem/', get_post_per_diem.as_view(), name='get_post_per_diem'),
         path('post_country_policy/', post_country_policy.as_view(), name='post_country_policy'),
+
+
+
+        path('json_upload/country/', json_upload_country.as_view(), name='json_upload_country'),
+        path('json_upload_city/', json_upload_city.as_view(), name='json_upload_city'),
+        path('json_upload/currency/', json_upload_currency.as_view(), name='json_upload_currency'),
+        path('json_upload/currency_conversion/', json_upload_currency_conversion.as_view(), name='json_upload_currency_conversion'),
+        path('json_upload/project/', json_upload_project.as_view(), name='json_upload_project'),
+        path('json_upload/department/', json_upload_department.as_view(), name='json_upload_department'),
+        path('json_upload/organization_location/', json_upload_organization_location.as_view(), name='json_upload_organization_location'),
+        path('json_upload/role/', json_upload_role.as_view(), name='json_upload_role'),
+
+
+        path('update_master_vendors_type/<int:pk>/', update_master_vendors_type.as_view(), name='update_post_master_vendors_type'),
+        path('get_post_master_vendors_type/', get_post_master_vendors_type.as_view(), name='get_post_master_vendors_type'),
+        path('update_purpose_of_travel/<int:pk>/', update_purpose_of_travel.as_view(), name='update_purpose_of_travel'),
+        path('update_master_location/<int:pk>/', update_master_location.as_view(), name='update_master_location'),
+        path('update_master_salutation/<int:pk>/', update_master_salutation.as_view(), name='update_master_salutation'),
+        path('update_master_suffix/<int:pk>/', update_master_suffix.as_view(), name='update_master_suffix'),
+        path('update_master_marital_status/<int:pk>/', update_master_marital_status.as_view(), name='update_master_marital_status'),
+        path('update_master_address/<int:pk>/', update_master_address.as_view(), name='update_master_address'),
+        path('update_master_email/<int:pk>/', update_master_email.as_view(), name='update_master_email'),
+        path('update_master_phone_type/<int:pk>/', update_master_phone_type.as_view(), name='update_master_phone_type'),
+        path('update_master_relation_type/<int:pk>/', update_master_relation_type.as_view(), name='update_master_relation_type'),
+        path('update_master_national_id/<int:pk>/', update_master_national_id.as_view(), name='update_master_national_id'),
+
+
+
+
 
 ]

@@ -62,6 +62,7 @@ urlpatterns = [
      path('', include('mobility_apps.letter.urls')),
      path('', include('mobility_apps.superadmin.urls')),
      path('', include('mobility_apps.reports.urls')),
+     path('', include('mobility_apps.vault.urls')),
     # path('api-auth/', include("rest_framework.urls")),
      path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
      path('api/login/',TokenObtainPairView.as_view(),name="token_obtain_pair"),

@@ -11,6 +11,10 @@ from rest_framework.permissions import  (AllowAny,IsAuthenticated)
 from django.db.models.deletion import ProtectedError
 import pandas as pd
 from mobility_apps.response_message import *
+from django.db.models import Q
+import datetime
+
+from django.db.models import Max
 
 class get_delete_update_currency(RetrieveDestroyAPIView):
     http_method_names = ['get', 'put', 'delete', 'head', 'options', 'trace']
@@ -63,7 +67,7 @@ class get_post_currency(ListCreateAPIView):
     serializer_class = CurrencySerializers
 
     def get_queryset(self):
-        currency = Currency.objects.all()
+        currency = Currency.objects.all().order_by('id')
         return currency
 
     # Get all currency
@@ -99,19 +103,36 @@ class get_post_per_diem(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = Per_DiemSerializers
 
-    def get_queryset(self):
-        currency = Per_Diem.objects.all()
-        return currency
-
     # Get all currency
     def get(self, request):
-        currency = self.get_queryset()
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
-        serializer = Per_DiemSerializers(currency,many=True)
-        dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
-        return Response(dict, status=status.HTTP_200_OK)
-        #return self.get_paginated_response(serializer.data)
+        band = request.GET.get('band', None)
+        organization = request.GET.get('organization', None)
+        home_country = request.GET.get('home_country', None)
+        if organization is None:
+            dict = {'message': "Organization id is required", 'status': False}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            if band is None and home_country is None:
+                currency = Per_Diem.objects.filter(organization=organization).order_by('id')
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data':serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            elif band is not None and home_country is None:
+                currency = Per_Diem.objects.filter(organization=organization,band=band).order_by('id')
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            elif band is None and home_country is not None:
+                currency = Per_Diem.objects.filter(organization=organization,home_country=home_country).order_by('id')
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                currency = Per_Diem.objects.filter(organization=organization, home_country=home_country,band=band).order_by('id')
+                serializer = Per_DiemSerializers(currency, many=True)
+                dict = {'message': MSG_SUCESS, 'status': True, 'data': serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+
 
     # Create a new currency
     def post(self, request):
@@ -258,7 +279,7 @@ class get_currency_conversion(ListCreateAPIView):
     serializer_class = Currency_ConversionSerializers
 
     def get_queryset(self,from_currency,to_currency):
-        currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency)
+        currency = Currency_Conversion.objects.filter(from_currency=from_currency,to_currency=to_currency).order_by('-conversion_date')
         return currency
 
     # Get all currency
@@ -277,7 +298,7 @@ class post_currency_conversion(ListCreateAPIView):
     serializer_class = Currency_ConversionSerializers
     # post all currency
     def get(self, request):
-        currency = Currency_Conversion.objects.all()
+        currency = Currency_Conversion.objects.all().order_by('id')
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
         serializer = Currency_ConversionSerializers(currency,many=True)
@@ -339,10 +360,73 @@ class currency_conversion_history(ListCreateAPIView):
     serializer_class = Currency_Conversion_HistorySerializers
     # post all currency
     def get(self, request):
-        currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
-        # paginate_queryset = self.paginate_queryset(employee)
-        # serializer = self.serializer_class(paginate_queryset, many=True)
+        from_currency = request.GET.get('from_currency', None)
+        to_currency = request.GET.get('to_currency', None)
+        from_date = request.GET.get('from_date', None)
+        to_date = request.GET.get('to_date', None)
+        print('#######from_currency####',from_currency)
+        print('#######to_currency####',to_currency)
+        print('#######from_date####',from_date)
+        print('#######to_date####',to_date)
+
+        filter_query = Q()
+        if from_currency is not None and from_currency !='':
+            filter_query.add(Q(from_currency=from_currency), Q.AND)
+        if to_currency is not None and to_currency !='':
+            filter_query.add(Q(to_currency__iexact=to_currency), Q.AND)
+        if from_date is not None and from_date !='':
+            filter_query.add(Q(conversion_date__gte=from_date), Q.AND)
+        if to_date is not None and to_date !='':
+            to_date = to_date+" "+"23:59:00"
+            filter_query.add(Q(conversion_date__lte=to_date), Q.AND)
+        currency = Currency_Conversion_History.objects.filter(filter_query)
+        # currency = currency1.annotate(Max('conversion_date'))
+        # print("##########",currency)
+        # .values('acct_id').annotate(count=Count('id')).order_by('month').last()
+        # currency = Currency_Conversion_History.objects.filter(from_currency=request.GET['from_currency'],to_currency=request.GET['to_currency'],conversion_date__gte=request.GET['from_date'],conversion_date__lte=request.GET['to_date'])
+
         serializer = Currency_Conversion_HistorySerializers(currency,many=True)
         print(serializer.data)
         dict = {'message': MSG_SUCESS, 'status_code':200,'status': True,'data':serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
+
+
+
+########################################################
+" bulk json upload currency"
+########################################################
+
+class json_upload_currency(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = CurrencySerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = CurrencySerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message': e, 'status': False, 'status_code': 406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
+################################################################
+" bulk upload json data for currency conversion"
+################################################################
+
+class json_upload_currency_conversion(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Currency_ConversionSerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = Currency_ConversionSerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message': e, 'status': False, 'status_code': 406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)

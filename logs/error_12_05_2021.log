@@ -1,0 +1,86 @@
+ERROR|13/May/2021 13:17:43|log|15770|140497156777728|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/letter/views.py", line 325, in get
+    template = get_template(lettername)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Long_Term_Assignment_ORG150866_AMk2WhZ.html
+ERROR|13/May/2021 13:17:43|basehttp|15770|140497156777728|"GET /getassignmentletter/?travel_req_id=TR166926 HTTP/1.1" 500 20672
+ERROR|13/May/2021 13:26:28|log|15770|140497156777728|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/letter/views.py", line 334, in get
+    pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file, encoding='utf-8')
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/document.py", line 105, in pisaDocument
+    encoding, context=context, xml_output=xml_output)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/document.py", line 67, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 761, in pisaParser
+    pisaLoop(document, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 699, in pisaLoop
+    pisaLoop(node, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 643, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 643, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 643, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 513, in pisaLoop
+    attr = pisaGetAttributes(context, node.tagName, node.attributes)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 125, in pisaGetAttributes
+    nv = c.getFile(nv)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/context.py", line 795, in getFile
+    return getFile(name, relative or self.pathDirectory)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/util.py", line 762, in getFile
+    file = pisaFileObject(*a, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/util.py", line 665, in __init__
+    conn.request("GET", path)
+  File "/usr/lib/python3.7/http/client.py", line 1277, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1323, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1272, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1032, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 972, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 944, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.7/socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+ERROR|13/May/2021 13:26:28|basehttp|15770|140497156777728|"GET /getassignmentletter/?travel_req_id=TR166926 HTTP/1.1" 500 22307

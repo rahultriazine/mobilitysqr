@@ -5,6 +5,7 @@ from django.db.models.signals import post_delete,post_save,pre_save
 from mobility_apps.base.models import TimeStampedModel, GeneratedByModel, Status
 from django.utils.translation import ugettext_lazy as _
 from mobility_apps.superadmin.models import *
+from datetime import datetime
 
 class Userinfo(TimeStampedModel, GeneratedByModel, Status, ):
     emp_code = models.CharField(unique=True,default="emp001", max_length=100)
@@ -82,14 +83,14 @@ class Employee(TimeStampedModel, GeneratedByModel, Status, ):
     place_of_birth = models.CharField(max_length=100, null=True, blank=True)
     active_start_date = models.CharField(max_length=100,default="", blank=True)
     active_end_date = models.CharField(max_length=100,default="", blank=True)
-    email=models.EmailField(max_length=100, unique=True, null=True, blank=True)
-    password=models.CharField(max_length=100,null=True,blank=True)
-    department =models.CharField(max_length=100,null=True,blank=True)
+    email= models.EmailField(max_length=100, unique=True, null=True, blank=True)
+    password= models.CharField(max_length=100,null=True,blank=True)
+    department = models.CharField(max_length=100,null=True,blank=True)
     role = models.CharField(max_length=100,null=True,blank=True)
-    photo =  models.CharField(max_length=255, null=True, blank=True)
-    assignment_role =models.CharField(max_length=100,null=True,blank=True)
+    photo = models.CharField(max_length=255, null=True, blank=True)
+    assignment_role = models.CharField(max_length=100,null=True,blank=True)
     organization = models.CharField(max_length=100, null=True, blank=True)
-    supervisor= models.CharField(max_length=100, null=True, blank=True)
+    supervisor= models.CharField(max_length=100, default="demo_supervisor_1", blank=True)
     last_login = models.CharField(max_length=100, null=True, blank=True)
     recent_login= models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100,null=True,blank=True)
@@ -104,6 +105,10 @@ class Employee(TimeStampedModel, GeneratedByModel, Status, ):
     column10 = models.CharField(max_length=100,null=True,blank=True)
     column11 = models.CharField(max_length=100,null=True,blank=True)
     column12 = models.CharField(max_length=100,null=True,blank=True)
+    is_visa_denied = models.BooleanField(default=False)
+    visa_denied_country = models.CharField(max_length=100, null=True, blank=True)
+    date_of_join = models.CharField(max_length=50, null=True, blank=True)
+
 
 
     class Meta:
@@ -387,6 +392,8 @@ class Employee_Visa_Detail(models.Model):
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
+    visa_entry_type = models.CharField(max_length=100, null=True, blank=True)
+
 
     class Meta:
         managed = True
@@ -427,6 +434,10 @@ class Employee_Org_Info(models.Model):
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
+    current_working_country = models.CharField(max_length=100, null=True, blank=True)
+    current_working_city = models.CharField(max_length=100, null=True, blank=True)
+    home_country_band = models.CharField(max_length=100, null=True, blank=True)
+    host_country_band = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True
@@ -475,3 +486,45 @@ class Calender_Events(TimeStampedModel, GeneratedByModel, Status):
 
     def __unicode__(self):
         return self.emp_code
+
+
+class Calender_Activity(models.Model):
+    activity_name = models.CharField(max_length=100, null=True, blank=True)
+    activity_sort_name = models.CharField(max_length=100, null=True, blank=True)
+    is_visible = models.CharField(max_length=50, default=True)
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    # column11 = models.CharField(max_length=100, null=True, blank=True)
+    # column12 = models.CharField(max_length=100, null=True, blank=True)
+
+    class Meta:
+        managed = True
+        verbose_name = _('Calender Activity')
+        verbose_name_plural = _('Calender Activity')
+
+    def __str__(self):
+        return self.activity_name
+
+    def __unicode__(self):
+        return self.activity_name
+
+
+
+class Message_Chat(models.Model):
+    sender_emp_code = models.CharField(max_length=200,null=True,)
+    receiver_emp_code = models.CharField(max_length=200,null=True,)
+    thread = models.CharField(max_length=200,null=True,)
+    chat_message = models.TextField(max_length=1000,null=True,)
+    created_date = models.DateTimeField(default=datetime.now, blank=True)
+    ticket_id = models.CharField(max_length=150,null=True,)
+
+
+

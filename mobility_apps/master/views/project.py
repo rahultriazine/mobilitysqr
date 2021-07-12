@@ -110,12 +110,12 @@ class get_update_project(ListCreateAPIView):
             serializer = ProjectSerializers(projectpid, data=request.data)
             if serializer.is_valid():
                 serializer.save()
-                dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.data}
+                dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
             else:
-                dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":serializer.errors}
+                dict={"status":False, 'status_code':201,"message":MSG_FAILED,"data":serializer.errors}
         else:
-            dict={"status":True,'status_code':201,"message":MSG_SUCESS,"data":"Project ID is not in database"}
-        return Response(dict, status=status.HTTP_201_CREATED)
+            dict={"status":False,'status_code':201,"message":MSG_FAILED,"data":"Project ID is not in database"}
+        return Response(dict, status=status.HTTP_200_OK)
 
 
 
@@ -227,8 +227,8 @@ class get_project_list_user(ListCreateAPIView):
 class get_projects(ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
     serializer_class = ProjectSerializers
-    
     pagination_class = CustomPagination
+
     def get(self, request):
         if request.GET['search']:
            queryset = Project.objects.filter(Q(pid__icontains=request.GET['search'])|Q(project_name__icontains=request.GET['search']),organization=request.GET['org'])
@@ -262,17 +262,42 @@ class get_projects(ListCreateAPIView):
         else:
             dict = {'status': "False", 'Message':MSG_FAILED}
         return Response(dict, status=status.HTTP_200_OK)
+
     def employee_name(self,emp_code):
         if emp_code:
             emp_code=Employee.objects.filter(emp_code=emp_code).values('emp_code','preferred_first_name','first_name','last_name')
-            if emp_code[0]['first_name']:
-                first_name=emp_code[0]['first_name']
-            else:
-                first_name=''
+            if emp_code:
+                if emp_code[0]['first_name']:
+                    first_name=emp_code[0]['first_name']
+                else:
+                    first_name=''
 
-            if emp_code[0]['last_name']:
-                last_name=emp_code[0]['last_name']
+                if emp_code[0]['last_name']:
+                    last_name=emp_code[0]['last_name']
+                else:
+                    last_name=""
+                name=first_name+" "+last_name
+                return name
             else:
-                last_name=""
-            name=first_name+" "+last_name
-            return name
+                name = ''
+                return name
+
+##################################################
+" bulk upload json project"
+##################################################
+
+class json_upload_project(APIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = ProjectSerializers
+
+    def post(self, request, *args, **kwargs):
+        try:
+            serializer = ProjectSerializers(data=request.data, many=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            dict = {'message': e, 'status': False, 'status_code': 406}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+

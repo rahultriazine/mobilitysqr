@@ -25,7 +25,6 @@ class Country(TimeStampedModel, GeneratedByModel, Status):
     column9 = models.CharField(max_length=100, null=True, blank=True)
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True
@@ -45,6 +44,9 @@ class Country_Policy(TimeStampedModel, GeneratedByModel, Status):
     country_name = models.CharField(max_length=100, null=True, blank=True)
     bv_threshold = models.CharField(max_length=100, null=True, blank=True)
     effective_date = models.CharField(max_length=100, null=True, blank=True)
+    organization_id = models.ForeignKey(Organizations, to_field='org_id', null=True, blank=True, on_delete=models.CASCADE)
+    home_country = models.CharField(max_length=100, null=True, blank=True)
+    period = models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)
@@ -55,8 +57,8 @@ class Country_Policy(TimeStampedModel, GeneratedByModel, Status):
     column8 = models.CharField(max_length=100, null=True, blank=True)
     column9 = models.CharField(max_length=100, null=True, blank=True)
     column10 = models.CharField(max_length=100, null=True, blank=True)
-    column11 = models.CharField(max_length=100, null=True, blank=True)
-    column12 = models.CharField(max_length=100, null=True, blank=True)
+    # column11 = models.CharField(max_length=100, null=True, blank=True)
+    # column12 = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         managed = True
@@ -426,7 +428,7 @@ class Role(TimeStampedModel, GeneratedByModel, Status):
     role_id = models.CharField(unique=True, max_length=4)
     role_name = models.CharField(max_length=100, blank=True, )
     role_description = models.CharField(max_length=200, blank=True, )
-    organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)
@@ -544,7 +546,7 @@ class Assignment_Group(TimeStampedModel, GeneratedByModel, Status):
 class Currency_Conversion(TimeStampedModel, GeneratedByModel, Status):
     from_currency= models.CharField(max_length=10, null=True,blank=True)
     to_currency = models.CharField(max_length=100,null=True, blank=True)
-    conversion_date=  models.DateTimeField(max_length=10,null=True, blank=True)
+    conversion_date =  models.DateTimeField(max_length=10,null=True, blank=True)
     conversion_rate = models.CharField(max_length=200, null=True, blank=True)
     status_code = models.CharField(max_length=200,null=True, blank=True)
     organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
@@ -576,7 +578,7 @@ class Currency_Conversion(TimeStampedModel, GeneratedByModel, Status):
 class Currency_Conversion_History(TimeStampedModel, GeneratedByModel, Status):
     from_currency= models.CharField(max_length=10, null=True,blank=True)
     to_currency = models.CharField(max_length=100,null=True, blank=True)
-    conversion_date=  models.DateTimeField(max_length=10,null=True, blank=True)
+    conversion_date =  models.DateTimeField(max_length=10,null=True, blank=True)
     conversion_rate = models.CharField(max_length=200, null=True, blank=True)
     status_code = models.CharField(max_length=200,null=True, blank=True)
     organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
@@ -609,7 +611,7 @@ class Currency(TimeStampedModel, GeneratedByModel, Status):
     currency_name = models.CharField(max_length=100, blank=True)
     currency_description = models.CharField(max_length=200, blank=True)
     status_type = models.CharField(max_length=200, blank=True)
-    organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)
@@ -704,10 +706,12 @@ class Per_Diem(TimeStampedModel, GeneratedByModel, Status):
     currency_code = models.CharField(max_length=100, null=True, blank=True)
     per_diem = models.CharField(max_length=100, null=True, blank=True)
     accommodation_limit = models.CharField(max_length=100, null=True, blank=True)
-    transportation  = models.CharField(max_length=100, null=True, blank=True)
+    transportation = models.CharField(max_length=100, null=True, blank=True)
     other = models.CharField(max_length=100, null=True, blank=True)
     effective_date = models.CharField(max_length=100, null=True, blank=True)
-    organization  = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
+    band = models.CharField(max_length=100, null=True, blank=True)
+    home_country = models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)
@@ -927,7 +931,7 @@ class Taxgrid(TimeStampedModel, GeneratedByModel, Status):
     tax_label= models.CharField(max_length=100,null=True, blank=True)
     tax_country= models.CharField(max_length=100,null=True, blank=True)
     group_by= models.CharField(max_length=100,null=True, blank=True)
-    organization  = models.CharField(max_length=100, null=True, blank=True)
+    organization = models.CharField(max_length=100, null=True, blank=True)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)

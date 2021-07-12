@@ -1,0 +1,347 @@
+INFO|22/Apr/2021 14:01:51|basehttp|10472|140458924574464|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|22/Apr/2021 14:02:11|basehttp|10472|140458924574464|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 14:02:18|basehttp|10472|140458924574464|"GET /employee_chat_test/ HTTP/1.1" 200 592
+INFO|22/Apr/2021 14:10:56|basehttp|11294|140619088197376|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 14:11:03|basehttp|11294|140619088197376|"GET /employee_chat_test/ HTTP/1.1" 200 592
+INFO|22/Apr/2021 14:12:17|basehttp|11354|140288806614784|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 14:12:24|basehttp|11354|140288806614784|"GET /employee_chat_test/ HTTP/1.1" 200 592
+INFO|22/Apr/2021 14:21:11|basehttp|11661|140481862805248|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:21:18|log|11661|140481862805248|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2837, in get
+    sender_email = self.getEmailFrom_Emp(self,thr['sender_emp_code'])
+TypeError: getEmailFrom_Emp() takes 2 positional arguments but 3 were given
+ERROR|22/Apr/2021 14:21:18|basehttp|11661|140481862805248|"GET /employee_chat_test/ HTTP/1.1" 500 19894
+INFO|22/Apr/2021 14:21:48|basehttp|11718|139998145783552|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:21:53|log|11718|139998145783552|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2837, in get
+    sender_email = self.getEmailFrom_Emp(thr['sender_emp_code'])
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2855, in getEmailFrom_Emp
+    personid = Employee.objects.filter(emp_code=empdata['emp_code']).values('email').first()
+NameError: name 'empdata' is not defined
+ERROR|22/Apr/2021 14:21:53|basehttp|11718|139998145783552|"GET /employee_chat_test/ HTTP/1.1" 500 20042
+INFO|22/Apr/2021 14:23:47|basehttp|11785|140465068549888|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 14:23:57|basehttp|11785|140465068549888|"GET /employee_chat_test/ HTTP/1.1" 200 592
+INFO|22/Apr/2021 14:26:12|basehttp|11875|139962163799808|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 14:26:22|basehttp|11875|139962163799808|"GET /employee_chat_test/ HTTP/1.1" 200 592
+INFO|22/Apr/2021 14:28:23|basehttp|11966|140623824303872|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 14:28:33|basehttp|11966|140623824303872|"GET /employee_chat_test/ HTTP/1.1" 200 592
+INFO|22/Apr/2021 14:48:44|basehttp|12677|140410687227648|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:48:51|log|12677|140410687227648|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2845, in get
+    html_message += chat_data['chat_message']
+UnboundLocalError: local variable 'html_message' referenced before assignment
+ERROR|22/Apr/2021 14:48:51|basehttp|12677|140410687227648|"GET /employee_chat_test/ HTTP/1.1" 500 19878
+INFO|22/Apr/2021 14:50:19|basehttp|12957|139992994400000|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:50:27|log|12957|139992994400000|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2846, in get
+    html_message += chat_data['chat_message']
+TypeError: 'Message_Chat' object is not subscriptable
+ERROR|22/Apr/2021 14:50:27|basehttp|12957|139992994400000|"GET /employee_chat_test/ HTTP/1.1" 500 19830
+INFO|22/Apr/2021 14:52:10|basehttp|13013|140142803134208|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:52:17|log|13013|140142803134208|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2847, in get
+    html_message += chat_data['chat_message']
+TypeError: 'Message_Chat' object is not subscriptable
+ERROR|22/Apr/2021 14:52:17|basehttp|13013|140142803134208|"GET /employee_chat_test/ HTTP/1.1" 500 19830
+INFO|22/Apr/2021 14:55:20|basehttp|13229|139790314923776|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:55:27|log|13229|139790314923776|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2848, in get
+    html_message += chat_data['chat_message']
+TypeError: 'Message_Chat' object is not subscriptable
+ERROR|22/Apr/2021 14:55:27|basehttp|13229|139790314923776|"GET /employee_chat_test/ HTTP/1.1" 500 19830
+INFO|22/Apr/2021 14:56:18|basehttp|13290|139793687918336|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:56:25|log|13290|139793687918336|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2847, in get
+    print(chat_data['chat_message'])
+TypeError: 'Message_Chat' object is not subscriptable
+ERROR|22/Apr/2021 14:56:25|basehttp|13290|139793687918336|"GET /employee_chat_test/ HTTP/1.1" 500 19821
+INFO|22/Apr/2021 14:57:42|basehttp|13344|140019206072064|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:57:49|log|13344|140019206072064|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2849, in get
+    html_message += chat_data['chat_message']
+TypeError: 'Message_Chat' object is not subscriptable
+ERROR|22/Apr/2021 14:57:49|basehttp|13344|140019206072064|"GET /employee_chat_test/ HTTP/1.1" 500 19830
+INFO|22/Apr/2021 14:58:40|basehttp|13404|140463699314432|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:58:47|log|13404|140463699314432|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2848, in get
+    html_message += chat_data.created_date
+TypeError: can only concatenate str (not "datetime.datetime") to str
+ERROR|22/Apr/2021 14:58:47|basehttp|13404|140463699314432|"GET /employee_chat_test/ HTTP/1.1" 500 19857
+INFO|22/Apr/2021 14:59:50|basehttp|13467|140393746392832|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 14:59:57|log|13467|140393746392832|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2850, in get
+    html_message += 'To: '+ receiver_email
+TypeError: can only concatenate str (not "bool") to str
+ERROR|22/Apr/2021 14:59:57|basehttp|13467|140393746392832|"GET /employee_chat_test/ HTTP/1.1" 500 19831
+INFO|22/Apr/2021 15:00:52|basehttp|13523|139627268638464|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 15:01:04|log|13523|139627268638464|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2853, in get
+    dict = {'massage': 'Send mail', 'status': True, 'data': sender_email+'/'+receiver_email}
+TypeError: can only concatenate str (not "bool") to str
+ERROR|22/Apr/2021 15:01:04|basehttp|13523|139627268638464|"GET /employee_chat_test/ HTTP/1.1" 500 19881
+INFO|22/Apr/2021 15:02:04|basehttp|13591|140117822064384|"GET /employee_chat_test HTTP/1.1" 301 0
+WARNING|22/Apr/2021 15:02:04|log|13591|140117822064384|Unauthorized: /employee_chat_test/
+WARNING|22/Apr/2021 15:02:04|basehttp|13591|140117822064384|"GET /employee_chat_test/ HTTP/1.1" 401 183
+INFO|22/Apr/2021 15:02:24|basehttp|13591|140117822064384|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|22/Apr/2021 15:02:51|basehttp|13591|140117822064384|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 15:03:09|basehttp|13591|140117822064384|"GET /employee_chat_test/ HTTP/1.1" 200 155
+INFO|22/Apr/2021 15:07:16|basehttp|13752|139723084580608|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 15:07:35|basehttp|13752|139723084580608|"GET /employee_chat_test/ HTTP/1.1" 200 155
+INFO|22/Apr/2021 15:10:07|basehttp|13931|140547333793536|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 15:10:24|basehttp|13931|140547333793536|"GET /employee_chat_test/ HTTP/1.1" 200 155
+INFO|22/Apr/2021 15:30:29|basehttp|15365|140323918477056|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 15:30:29|log|15365|140323918477056|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: send_mailChatEveryDay() takes 0 positional arguments but 1 was given
+ERROR|22/Apr/2021 15:30:29|basehttp|15365|140323918477056|"GET /employee_chat_test/ HTTP/1.1" 500 70254
+INFO|22/Apr/2021 15:34:16|basehttp|15624|139622699562752|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 15:34:21|log|15624|139622699562752|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/employee/views.py", line 2837, in send_mailChatEveryDay
+    sender_email = str(getEmailFrom_Emp(thr['sender_emp_code']))
+TypeError: getEmailFrom_Emp() missing 1 required positional argument: 'emp_code'
+ERROR|22/Apr/2021 15:34:21|basehttp|15624|139622699562752|"GET /employee_chat_test/ HTTP/1.1" 500 76570
+INFO|22/Apr/2021 15:35:09|basehttp|15681|139880429119232|"GET /employee_chat_test HTTP/1.1" 301 0
+ERROR|22/Apr/2021 15:35:27|log|15681|139880429119232|Internal Server Error: /employee_chat_test/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/response.py", line 55, in rendered_content
+    assert renderer, ".accepted_renderer not set on Response"
+AssertionError: .accepted_renderer not set on Response
+ERROR|22/Apr/2021 15:35:27|basehttp|15681|139880429119232|"GET /employee_chat_test/ HTTP/1.1" 500 78486
+INFO|22/Apr/2021 15:59:47|basehttp|16753|139733578516224|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 16:00:06|basehttp|16753|139733578516224|"GET /employee_chat_test/ HTTP/1.1" 200 155
+INFO|22/Apr/2021 16:35:50|basehttp|17519|140028970452736|"GET /employee_chat_test HTTP/1.1" 301 0
+WARNING|22/Apr/2021 16:35:50|log|17519|140028970452736|Unauthorized: /employee_chat_test/
+WARNING|22/Apr/2021 16:35:50|basehttp|17519|140028970452736|"GET /employee_chat_test/ HTTP/1.1" 401 183
+INFO|22/Apr/2021 16:35:58|basehttp|17519|140028970452736|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|22/Apr/2021 16:36:09|basehttp|17519|140028970452736|"GET /employee_chat_test HTTP/1.1" 301 0
+INFO|22/Apr/2021 16:36:42|basehttp|17519|140028970452736|"GET /employee_chat_test/ HTTP/1.1" 200 379

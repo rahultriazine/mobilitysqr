@@ -1,0 +1,81 @@
+INFO|27/Apr/2021 14:13:06|basehttp|10874|140587195762432|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|27/Apr/2021 14:13:20|basehttp|10874|140587195762432|"GET /update_master_marital_status HTTP/1.1" 301 0
+INFO|27/Apr/2021 14:13:25|basehttp|10874|140587195762432|"GET /update_master_marital_status/ HTTP/1.1" 200 4568
+INFO|27/Apr/2021 14:19:53|basehttp|10955|140308304078592|"GET /get_post_address HTTP/1.1" 301 0
+INFO|27/Apr/2021 14:19:58|basehttp|10955|140308304078592|"GET /get_post_address/ HTTP/1.1" 200 1276
+INFO|27/Apr/2021 14:26:51|basehttp|11412|140574576412416|"GET /get_post_email HTTP/1.1" 301 0
+INFO|27/Apr/2021 14:26:55|basehttp|11412|140574576412416|"GET /get_post_email/ HTTP/1.1" 200 1280
+INFO|27/Apr/2021 14:32:40|basehttp|11707|139753031010048|"GET /get_post_phone HTTP/1.1" 301 0
+INFO|27/Apr/2021 14:32:44|basehttp|11707|139753031010048|"GET /get_post_phone/ HTTP/1.1" 200 2088
+INFO|27/Apr/2021 14:42:50|basehttp|12183|139626949781248|"GET /update_master_relation_type HTTP/1.1" 301 0
+INFO|27/Apr/2021 14:42:54|basehttp|12183|139626949781248|"GET /update_master_relation_type/ HTTP/1.1" 200 2041
+INFO|27/Apr/2021 14:45:29|basehttp|12291|140319415088896|"GET /get_national_id HTTP/1.1" 301 0
+ERROR|27/Apr/2021 14:45:35|log|12291|140319415088896|Internal Server Error: /get_national_id/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 659, in get
+    taxgrid = self.get_queryset(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|27/Apr/2021 14:45:35|basehttp|12291|140319415088896|"GET /get_national_id/ HTTP/1.1" 500 20204
+INFO|27/Apr/2021 14:45:58|basehttp|12339|139657324693248|"GET /get_national_id HTTP/1.1" 301 0
+ERROR|27/Apr/2021 14:46:02|log|12339|139657324693248|Internal Server Error: /get_national_id/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 659, in get
+    taxgrid = self.get_queryset(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|27/Apr/2021 14:46:02|basehttp|12339|139657324693248|"GET /get_national_id/ HTTP/1.1" 500 20204
+INFO|27/Apr/2021 15:01:42|basehttp|12838|140268947818240|"GET /update_master_national_id HTTP/1.1" 301 0
+INFO|27/Apr/2021 15:01:47|basehttp|12838|140268947818240|"GET /update_master_national_id/ HTTP/1.1" 200 91237

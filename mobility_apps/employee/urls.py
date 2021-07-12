@@ -49,8 +49,38 @@ urlpatterns = [
         path('import_employee/', import_employee.as_view(), name='import_employee'),
         path('Otp_Generate/', Otp_Generate.as_view(), name='Otp_Generate'),
         path('access_token/', access_token.as_view(), name='access_token'),
-        path('post_get_calender_event/', calender_event_get_post.as_view(), name="post_get_calender_event"),
+        re_path(r'^post_get_calender_event/$', calender_event_get_post.as_view(), name="post_get_calender_event"),
         path('delete_update_calender_event/<int:pk>/', calender_event_update_delete.as_view(), name="delete_update_calender_event"),
+        path('get_calender_activity/',calender_activity.as_view(),name="get_calender_activity"),
+
+
+        path('getemployee_personal_info/', getEmployeePersonalInfo.as_view(), name="getemployee_personal_info"),
+        path('getemployee_org_info/', getEmployeeOrgInfo.as_view(), name="getemployee_org_info"),
+        path('getemployee_address_info/', getEmployeeAddressInfo.as_view(), name="getemployee_address_info"),
+        path('getemployee_email_info/', getEmployeeEmailInfo.as_view(), name="getemployee_email_info"),
+        path('getemployee_phone_info/', getEmployeePhoneInfo.as_view(), name="getemployee_phone_info"),
+        path('getemployee_national_id/', getEmployeeNationalId.as_view(), name="getemployee_national_id"),
+        path('getemployee_emergency_contact/', getEmployeeEmergencyContact.as_view(), name="getemployee_emergency_contact"),
+        path('getemployee_passport_info/', getEmployeePassportInfo.as_view(), name="getemployee_passport_info"),
+        path('getemployee_visa_info/', getEmployeeVisaInfo.as_view(), name="getemployee_visa_info"),
+
+
+        path('bulk_json_upload/employee/', bulk_json_upload_employee.as_view(), name='bulk_json_upload_employee'),
+        path('bulk_json_upload/employee_orginfo/', bulk_json_upload_employee_orginfo.as_view(), name='bulk_json_upload_employee_orginfo'),
+        path('bulk_json_upload/employee_address/', bulk_json_upload_employee_address.as_view(), name='bulk_json_upload_employee_address'),
+        path('bulk_json_upload/employee_emails/', bulk_json_upload_employee_emails.as_view(), name='bulk_json_upload_employee_emails'),
+        path('bulk_json_upload/employee_phoneinfo/', bulk_json_upload_phoneinfo.as_view(), name='bulk_json_upload_employee_phoneinfo'),
+        path('bulk_json_upload/employee_nationalid/', bulk_json_upload_employee_nationalid.as_view(), name='bulk_json_upload_employee_nationalid'),
+        path('bulk_json_upload/employee_visa/', bulk_json_upload_employee_visa.as_view(), name='get_post_employee_visa'),
+        path('bulk_json_upload/employee_emergencycontact/', bulk_json_upload_employee_emergencycontact.as_view(), name='bulk_json_upload_employee_emergencycontact'),
+        path('bulk_json_upload/employee_passport/', bulk_json_upload_employee_passport.as_view(), name='bulk_json_upload_employee_passport'),
+
+
+        path('employee_chat/', employee_chat.as_view(), name='employee_chat'),
+
+
+
+
            ]
 
 

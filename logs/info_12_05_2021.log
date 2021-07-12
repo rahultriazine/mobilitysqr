@@ -1,0 +1,134 @@
+INFO|12/May/2021 13:57:06|basehttp|16987|140552652240640|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|12/May/2021 13:57:47|basehttp|16987|140552652240640|"GET /get_post_country_policy/?days=1&country_code=Japan HTTP/1.1" 200 78
+WARNING|12/May/2021 15:15:50|log|4112|140685400393472|Unauthorized: /get_post_country_policy/
+WARNING|12/May/2021 15:15:50|basehttp|4112|140685400393472|"GET /get_post_country_policy/?days=1&country_code=Japan HTTP/1.1" 401 183
+INFO|12/May/2021 19:23:35|basehttp|9203|139703352534784|"POST /api/custom/login/ HTTP/1.1" 200 455
+INFO|12/May/2021 19:23:46|basehttp|9203|139703352534784|"GET /get_dial_code HTTP/1.1" 301 0
+INFO|12/May/2021 19:24:44|basehttp|9203|139703352534784|"GET /get_dial_code?dial_code= HTTP/1.1" 301 0
+INFO|12/May/2021 19:24:45|basehttp|9203|139703352534784|"GET /get_dial_code?dial_code= HTTP/1.1" 301 0
+INFO|12/May/2021 19:24:46|basehttp|9203|139703352534784|"GET /get_dial_code?dial_code= HTTP/1.1" 301 0
+INFO|12/May/2021 19:26:09|basehttp|9203|139703352534784|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+INFO|12/May/2021 19:26:37|basehttp|9495|140293317895936|"GET /get_dial_code/?dial_code= HTTP/1.1" 200 57031
+INFO|12/May/2021 20:00:16|basehttp|9799|140307559180032|"GET /userlist HTTP/1.1" 301 0
+INFO|12/May/2021 20:00:18|basehttp|9799|140307559180032|"GET /userlist HTTP/1.1" 301 0
+INFO|12/May/2021 20:00:41|basehttp|9799|140307559180032|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:07:06|basehttp|11656|140122791692032|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:09:43|basehttp|11871|140416994199296|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:10:33|basehttp|11919|140332920063744|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:10:35|basehttp|11919|140332920063744|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:10:51|basehttp|11972|139866880775936|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:10:53|basehttp|11972|139866880775936|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:11:39|basehttp|12032|139926180321024|"GET /userlist/ HTTP/1.1" 200 322
+INFO|12/May/2021 20:12:23|basehttp|12070|140594767021824|"GET /userlist/ HTTP/1.1" 200 193
+INFO|12/May/2021 20:12:44|basehttp|12116|140081055356672|"GET /userlist/ HTTP/1.1" 200 177
+INFO|12/May/2021 20:12:56|basehttp|12153|140307255957248|"GET /userlist/ HTTP/1.1" 200 295
+INFO|12/May/2021 20:13:20|basehttp|12195|139853794809600|"GET /userlist/ HTTP/1.1" 200 259859
+INFO|12/May/2021 20:14:01|basehttp|12245|140363814192896|"GET /userlist/ HTTP/1.1" 200 295
+INFO|12/May/2021 20:14:12|basehttp|12282|139873620285184|"GET /userlist/ HTTP/1.1" 200 30837
+INFO|12/May/2021 20:15:26|basehttp|12357|140452511049472|"GET /userlist/ HTTP/1.1" 200 328
+INFO|12/May/2021 20:15:42|basehttp|12407|140692145420032|"GET /userlist/ HTTP/1.1" 200 199
+INFO|12/May/2021 20:16:21|basehttp|12442|140395924506368|"GET /userlist/ HTTP/1.1" 200 199
+INFO|12/May/2021 20:16:33|basehttp|12485|140232288057088|"GET /userlist/ HTTP/1.1" 200 187
+INFO|12/May/2021 20:17:29|basehttp|12533|140334922811136|"GET /userlist/ HTTP/1.1" 200 190
+INFO|12/May/2021 20:20:00|basehttp|12934|140035805972224|"GET /userlist/ HTTP/1.1" 200 186
+INFO|12/May/2021 20:20:31|basehttp|12997|139647301621504|"GET /userlist/ HTTP/1.1" 200 190
+INFO|12/May/2021 20:21:08|basehttp|13061|140704529696512|"GET /userlist/ HTTP/1.1" 200 30837
+INFO|12/May/2021 20:21:24|basehttp|13098|139759011063552|"GET /userlist/ HTTP/1.1" 200 314
+INFO|12/May/2021 20:22:58|basehttp|13220|139677683750656|"GET /userlist/ HTTP/1.1" 200 30086
+WARNING|12/May/2021 20:23:36|log|13220|139677683750656|Unauthorized: /userlist/
+WARNING|12/May/2021 20:23:36|basehttp|13220|139677683750656|"GET /userlist/?user_id=4 HTTP/1.1" 401 183
+INFO|12/May/2021 20:23:42|basehttp|13220|139677683750656|"POST /api/custom/login/ HTTP/1.1" 200 455
+WARNING|12/May/2021 20:23:50|log|13220|139677683750656|Not Found: /userlist/
+WARNING|12/May/2021 20:23:50|basehttp|13220|139677683750656|"GET /userlist/?user_id=4 HTTP/1.1" 404 53
+WARNING|12/May/2021 20:23:56|log|13220|139677683750656|Not Found: /userlist/
+WARNING|12/May/2021 20:23:56|basehttp|13220|139677683750656|"GET /userlist/?user_id=9 HTTP/1.1" 404 53
+INFO|12/May/2021 20:24:03|basehttp|13220|139677683750656|"GET /userlist/?user_id= HTTP/1.1" 200 70
+INFO|12/May/2021 20:24:12|basehttp|13220|139677683750656|"GET /userlist/ HTTP/1.1" 200 30086
+INFO|12/May/2021 20:25:06|basehttp|13220|139677683750656|"GET /userlist/?user_id=186 HTTP/1.1" 200 1464
+INFO|12/May/2021 21:05:25|basehttp|15021|139831341176576|"GET /get_post_marital_status/ HTTP/1.1" 200 5438
+ERROR|13/May/2021 13:17:43|log|15770|140497156777728|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/letter/views.py", line 325, in get
+    template = get_template(lettername)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Long_Term_Assignment_ORG150866_AMk2WhZ.html
+ERROR|13/May/2021 13:17:43|basehttp|15770|140497156777728|"GET /getassignmentletter/?travel_req_id=TR166926 HTTP/1.1" 500 20672
+ERROR|13/May/2021 13:26:28|log|15770|140497156777728|Internal Server Error: /getassignmentletter/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/letter/views.py", line 334, in get
+    pisaStatus = pisa.CreatePDF(html.encode('utf-8'), dest=file, encoding='utf-8')
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/document.py", line 105, in pisaDocument
+    encoding, context=context, xml_output=xml_output)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/document.py", line 67, in pisaStory
+    pisaParser(src, context, default_css, xhtml, encoding, xml_output)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 761, in pisaParser
+    pisaLoop(document, context)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 699, in pisaLoop
+    pisaLoop(node, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 643, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 643, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 643, in pisaLoop
+    pisaLoop(nnode, context, path, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 513, in pisaLoop
+    attr = pisaGetAttributes(context, node.tagName, node.attributes)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/parser.py", line 125, in pisaGetAttributes
+    nv = c.getFile(nv)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/context.py", line 795, in getFile
+    return getFile(name, relative or self.pathDirectory)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/util.py", line 762, in getFile
+    file = pisaFileObject(*a, **kw)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/xhtml2pdf/util.py", line 665, in __init__
+    conn.request("GET", path)
+  File "/usr/lib/python3.7/http/client.py", line 1277, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1323, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1272, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1032, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 972, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 944, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.7/socket.py", line 752, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+ERROR|13/May/2021 13:26:28|basehttp|15770|140497156777728|"GET /getassignmentletter/?travel_req_id=TR166926 HTTP/1.1" 500 22307

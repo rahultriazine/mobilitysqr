@@ -82,9 +82,11 @@ class get_post_assignment_group(ListCreateAPIView):
         #assignment_group = self.get_queryset()
         # paginate_queryset = self.paginate_queryset(employee)
         # serializer = self.serializer_class(paginate_queryset, many=True)
-        assignment_group = Assignment_Group.objects.all()
+        organization_id = request.GET.get('org_id', None)
+        assignment_group = Assignment_Group.objects.filter(organization=organization_id)
         serializer=Assignment_GroupSerializers(assignment_group,many=True)
         i=0
+        print('######',organization_id)
         for data in serializer.data:
             print(data['emp_email'])
         #     assigndata=Assignment_Group.objects.filter(id=data)

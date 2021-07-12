@@ -5,10 +5,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from mobility_apps.employee.models import Employee, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo
-from mobility_apps.employee.serializer import EmployeeSerializers,Employee_Passport_DetailSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers
+from mobility_apps.employee.serializer import EmployeeSerializers,Employee_Passport_DetailSerializers,Employee_Org_InfoSerializers, Employee_Visa_DetailSerializers,Employee_AddressSerializers,Employee_EmailsSerializers,Employee_PhonesSerializers,Employee_NationalidSerializers,Employee_Emergency_ContactSerializers,UserinfoSerializers
 from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Assignment_Travel_Tax_Grid
 from mobility_apps.travel.serializers import Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Assignment_Travel_Tax_GridSerializers
-from mobility_apps.employee.models import Employee, Employee_Passport_Detail, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo
+from mobility_apps.employee.models import Employee, Employee_Passport_Detail,Employee_Org_Info, Employee_Visa_Detail,Employee_Address,Employee_Emails,Employee_Phones,Employee_Nationalid,Employee_Emergency_Contact,Userinfo
 from mobility_apps.letter.models import Letters
 from mobility_apps.letter.serializer import LettersSerializers
 from mobility_apps.visa.models import Visa_Request , Visa_Request_Document,Visa_Request_Draft
@@ -33,6 +33,7 @@ from mobility_apps.response_message import *
 from collections import Counter
 from django.db.models import Q
 import os
+import json
 from zipfile import ZipFile
 from django.utils.html import strip_tags
 from dateutil import tz
@@ -40,7 +41,8 @@ class getassignmentletter(APIView):
     
    def get(self,request, *args, **kwargs):
       travel_status=Travel_Request.objects.filter(travel_req_id =request.GET['travel_req_id'],travel_req_status="3")
-      
+      print('#################')
+      print(travel_status)
       letter=[]
       if travel_status.exists(): 
          id=request.GET['travel_req_id']
@@ -65,10 +67,14 @@ class getassignmentletter(APIView):
                   emp_code=travel_request_serializer.data[0]['Employee_ID']
                   #print(travel_request_serializer.data[0]['Employee_ID'])
                   emp = Employee.objects.filter(emp_code=emp_code)
-                  
+
                   emp_serializer = EmployeeSerializers(emp,many=True)
-                  #print(emp_serializer.data)
                   travel_request_serializer.data[0]['emp_info']=emp_serializer.data
+
+                  emp_org_info = Employee_Org_Info.objects.filter(emp_code=emp_code)
+                  emp_org_info_ser = Employee_Org_InfoSerializers(emp_org_info, many=True)
+                  travel_request_serializer.data[0]['emp_org_info'] = emp_org_info_ser.data
+
                   empcode=emp_serializer.data[0]['emp_code']
                   empadd = Employee_Address.objects.filter(emp_code=empcode,address_type="host")
                   empadd_serializer = Employee_AddressSerializers(empadd,many=True)
@@ -90,8 +96,14 @@ class getassignmentletter(APIView):
                   emppassport_serializer = Employee_Passport_DetailSerializers(empadd,many=True)
                   travel_request_serializer.data[0]['emp_passport']=emppassport_serializer.data
                   datas={}
-                  
+
+                  # print("###############emp_serializer.data")
+                  # print(travel_request_serializer.data[0]['emp_info'])
+                  # print("############### length travel_request_serializer.data #########")
+                  # print(len(travel_request_serializer.data))
                   for data in travel_request_serializer.data:
+                     print("############### length travel_request_serializer.data #########")
+                     print(data)
                      if data['emp_info']:
                         if data['emp_info'][0]['first_name']:
                            first_name=data['emp_info'][0]['first_name']
@@ -111,7 +123,18 @@ class getassignmentletter(APIView):
                            datas['DateofBirth']=""
                      datas['AssigneeName']=first_name+' '+last_name
                      #print(datas['AssigneeName'])
-                     datas['JobTitle']=""
+
+                     if data['emp_org_info']:
+                        if data['emp_org_info'][0]['home_country_designation']:
+                           datas['JobTitleHome'] = data['emp_org_info'][0]['home_country_designation']
+                        else:
+                           datas['JobTitleHome'] = ""
+                        if data['emp_org_info'][0]['host_country_designation']:
+                           datas['JobTitleHost'] = data['emp_org_info'][0]['host_country_designation']
+                        else:
+                           datas['JobTitleHost'] = ""
+
+
                      datas['TodayDate']=datetime.now()
                      datas['AssignmentStartDate']=data['Actual_Start_Date']
                      datas['AssignmentEndDate']=data['Actual_End_Date']
@@ -137,7 +160,7 @@ class getassignmentletter(APIView):
                         else:
                            datas['Host City']=""
                         if data['details'][i]['host_hr_name']:
-                           datas['Host Contact Name']=data['details'][i]['host_hr_name']
+                           datas['HostContactName']=data['details'][i]['host_hr_name']
                         else:
                            datas['HostContactName']=""
 
@@ -163,8 +186,8 @@ class getassignmentletter(APIView):
                            datas['VisaValidity']=self.date_format(date=data['details'][i]['visa_expiry_date'])
                         else:
                            datas['VisaValidity']=""
-                        if data['details'][i]['visa_expiry_date']:
-                           datas['VisaCategory']=self.date_format(date=data['details'][i]['visa_expiry_date'])
+                        if data['details'][i]['applicable_visa']:
+                           datas['VisaCategory']=data['details'][i]['applicable_visa']
                         else:
                            datas['VisaCategory']=""
                         if data['details'][i]['agenda']:
@@ -185,13 +208,14 @@ class getassignmentletter(APIView):
                      datas['HostCountry']=datas['travelling_country_to'] 
                      datas['HomeCountry']=datas['travelling_country']
                      if data['emp_passport']:
+                        print('#########################################################')
                         print(data['emp_passport'])
                         if data['emp_passport'][0]['passport_number']:
-                           datas['PassportNumber']=data['emp_passport'][0]['passport_number']
+                           datas['PassportNo']=data['emp_passport'][0]['passport_number']
                         else:
-                           datas['PassportNumber']=""
-                        if data['emp_passport'][0]['passport_expiry_date']:
-                           datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['passport_expiry_date'])
+                           datas['PassportNo']=""
+                        if data['emp_passport'][0]['date_of_expiration']:
+                           datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['date_of_expiration'])
                         else:
                            datas['PassportValidity']=""
                         if data['emp_passport'][0]['nationality']:
@@ -302,7 +326,7 @@ class getassignmentletter(APIView):
                      
                      school=Assignment_Travel_Tax_Grid.objects.filter(travel_req_id =id,tax_label='School Tuition - Self').values('annual_ammount')
                      
-                     if hosthousing:
+                     if school:
                         datas['SchoolTuitionSelf']=school[0]['annual_ammount']
                      else:
                         datas['SchoolTuitionSelf']=""
@@ -311,6 +335,9 @@ class getassignmentletter(APIView):
                      country=Country_Master.objects.filter(name=datas['travelling_country_to']).values("country_id")
                      print(country[0]['country_id'])
                      lettername=Letters.objects.filter(letter_type="Assignment Letter",country=country[0]['country_id'],letter_term=datas['AssignmentType']).values("letter_name")
+                     print('############# leter name ##')
+                     print(lettername)
+                     print(datas['AssignmentType'])
                      if lettername:
                         lettername=lettername[0]['letter_name'].lstrip('templates/')
                         template = get_template(lettername)
@@ -319,6 +346,8 @@ class getassignmentletter(APIView):
                         html = template.render(datas)
                         result = BytesIO()
                         file = open("uploadpdf/"+filename, "w+b")
+                        print('############## file')
+                        print(file)
                         #current_url = request.path_info
                         #print(current_url)
                         emp_codess="vikasy@triazinesoft.com"
@@ -405,6 +434,11 @@ class getassignmentletter(APIView):
                      travel_request_serializer = Travel_RequestSerializers(travel_request,many=True)
                      emp_code=travel_request_serializer.data[0]['emp_email']
                      print(emp_code)
+
+                     emp_org_info = Employee_Org_Info.objects.filter(emp_code=emp_code)
+                     emp_org_info_ser = Employee_Org_InfoSerializers(emp_org_info, many=True)
+                     travel_request_serializer.data[0]['emp_org_info'] = emp_org_info_ser.data
+
                      emp = Employee.objects.filter(emp_code=emp_code)
                      emp_serializer = EmployeeSerializers(emp,many=True)
                      travel_request_serializer.data[0]['emp_info']=emp_serializer.data
@@ -444,7 +478,17 @@ class getassignmentletter(APIView):
                            else:
                               datas['DateofBirth']=""
                         datas['AssigneeName']=first_name+' '+last_name
-                        datas['JobTitle']=""
+
+                        if data['emp_org_info']:
+                           if data['emp_org_info'][0]['home_country_designation']:
+                              datas['JobTitleHome'] = data['emp_org_info'][0]['home_country_designation']
+                           else:
+                              datas['JobTitleHome'] = ""
+                           if data['emp_org_info'][0]['host_country_designation']:
+                              datas['JobTitleHost'] = data['emp_org_info'][0]['host_country_designation']
+                           else:
+                              datas['JobTitleHost'] = ""
+
                         datetoday=datetime.now()
                         print(datetoday)
                         datas['TodayDate']=datetime.now()
@@ -465,7 +509,7 @@ class getassignmentletter(APIView):
                            else:
                               datas['Host City']=""
                            if data['details'][i]['host_hr_name']:
-                              datas['Host Contact Name']=data['details'][i]['host_hr_name']
+                              datas['HostContactName']=data['details'][i]['host_hr_name']
                            else:
                               datas['HostContactName']=""
 
@@ -491,8 +535,8 @@ class getassignmentletter(APIView):
                               datas['VisaValidity']=self.date_format(date=data['details'][i]['visa_expiry_date'])
                            else:
                               datas['VisaValidity']=""
-                           if data['details'][i]['visa_expiry_date']:
-                              datas['VisaCategory']=self.date_format(date=data['details'][i]['visa_expiry_date'])
+                           if data['details'][i]['applicable_visa']:
+                              datas['VisaCategory']=data['details'][i]['applicable_visa']
                            else:
                               datas['VisaCategory']=""
                            if data['details'][i]['agenda']:
@@ -516,11 +560,11 @@ class getassignmentletter(APIView):
                         if data['emp_passport']:
                            #print(data['emp_passport'][0]['passort_number'])
                            if data['emp_passport'][0]['passport_number']:
-                              datas['PassportNumber']=data['emp_passport'][0]['passport_number']
+                              datas['PassportNo']=data['emp_passport'][0]['passport_number']
                            else:
-                              datas['PassportNumber']=""
-                           if data['emp_passport'][0]['passport_expiry_date']:
-                              datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['passport_expiry_date'])
+                              datas['PassportNo']=""
+                           if data['emp_passport'][0]['date_of_expiration']:
+                              datas['PassportValidity']=self.date_format(date=data['emp_passport'][0]['date_of_expiration'])
                            else:
                               datas['PassportValidity']=""
                            if data['emp_passport'][0]['nationality']:
@@ -632,10 +676,10 @@ class getassignmentletter(APIView):
             #                            from_email='vikasy@triazinesoft.com',
             #                            to=['vikasy@triazinesoft.com','vikasy@triazinesoft.com'],
             #                            headers = {'Reply-To': 'vikasy@triazinesoft.com'}) 
-            # email.attach('http://52.165.220.40/mobilitysqrapi/uploadpdf/sample1.zip','application/rar') 
+            # email.attach('http://52.165.220.40/mobilitysqrapi/uploadpdf/sample1.zip','application/rar')
             
             # email.send()               
-            dict = {'massage': 'data found', 'status': True, 'data': 'uploadpdf/letters_'+id+'.zip' }
+            dict = {'massage': 'data found', 'status': True, 'data': 'http://api.mobilitysqr.net/mobilitysqr_api/mobilitysqr_preprod_virtualenv/mobilitysqr_staging/uploadpdf/letters_'+id+'.zip' }
       else:
          dict = {'massage': 'Assignment Not Generated', 'status': False}
       return Response(dict, status=status.HTTP_200_OK)
@@ -669,6 +713,11 @@ class getinviteletter(APIView):
             emp_code=travel_request_serializer.data[0]['Employee_ID']
             emp = Employee.objects.filter(email=emp_code)
             emp_serializer = EmployeeSerializers(emp,many=True)
+
+            emp_org_info = Employee_Org_Info.objects.filter(emp_code=emp_code)
+            emp_org_info_ser = Employee_Org_InfoSerializers(emp_org_info, many=True)
+            travel_request_serializer.data[0]['emp_org_info'] = emp_org_info_ser.data
+
             travel_request_serializer.data[0]['emp_info']=emp_serializer.data
             empcode=emp_serializer.data[0]['emp_code']
             empadd = Employee_Address.objects.filter(emp_code=empcode,address_type="host")
@@ -722,10 +771,20 @@ class getinviteletter(APIView):
                      datas['Citizenship']=data['emp_info'][0]['nationality']
                   else:
                      datas['Citizenship']=""
+
+               if data['emp_org_info']:
+                  if data['emp_org_info'][0]['home_country_designation']:
+                     datas['JobTitleHome'] = data['emp_org_info'][0]['home_country_designation']
+                  else:
+                     datas['JobTitleHome'] = ""
+                  if data['emp_org_info'][0]['host_country_designation']:
+                     datas['JobTitleHost'] = data['emp_org_info'][0]['host_country_designation']
+                  else:
+                     datas['JobTitleHost'] = ""
                   
                datas['AssigneeName']=first_name+' '+last_name
                print(datas['AssigneeName'])
-               datas['JobTitle']=""
+
                datas['TodayDate']=date.today()
                datas['AssignmentStartDate']=data['Actual_Start_Date']
                datas['AssignmentEndDate']=data['Actual_End_Date']
@@ -747,7 +806,7 @@ class getinviteletter(APIView):
                   else:
                      datas['Host City']=""
                   if data['details'][0]['host_hr_name']:
-                     datas['Host Contact Name']=data['details'][0]['host_hr_name']
+                     datas['HostContactName']=data['details'][0]['host_hr_name']
                   else:
                      datas['HostContactName']=""
 
@@ -773,8 +832,8 @@ class getinviteletter(APIView):
                      datas['VisaValidity']=data['details'][0]['visa_expiry_date']
                   else:
                      datas['VisaValidity']=""
-                  if data['details'][0]['visa_expiry_date']:
-                     datas['VisaCategory']=data['details'][0]['visa_expiry_date']
+                  if data['details'][0]['applicable_visa']:
+                     datas['VisaCategory']=data['details'][0]['applicable_visa']
                   else:
                      datas['VisaCategory']=""
                   if data['details'][0]['agenda']:
@@ -790,11 +849,11 @@ class getinviteletter(APIView):
                datas['HomeCountry']= data['Home_Country']
                if data['emp_passport']:
                   if data['emp_passport'][0]['passort_number']:
-                     datas['PassportNumber']=data['emp_passport'][0]['passort_number']
+                     datas['PassportNo']=data['emp_passport'][0]['passort_number']
                   else:
-                     datas['PassportNumber']=""
-                  if data['emp_passport'][0]['passort_expiry_date']:
-                     datas['PassportValidity']=data['emp_passport'][0]['passort_expiry_date']
+                     datas['PassportNo']=""
+                  if data['emp_passport'][0]['date_of_expiration']:
+                     datas['PassportValidity']=data['emp_passport'][0]['date_of_expiration']
                   else:
                      datas['PassportValidity']=""
                if data['travel']:
@@ -861,6 +920,11 @@ class getvisaletter(APIView):
             empadd_serializer = Employee_AddressSerializers(empadd,many=True)
             travel_request_serializer.data[0]['emp_add']=empadd_serializer.data
             print(empadd_serializer.data)
+
+            emp_org_info = Employee_Org_Info.objects.filter(emp_code=emp_code)
+            emp_org_info_ser = Employee_Org_InfoSerializers(emp_org_info, many=True)
+            travel_request_serializer.data[0]['emp_org_info'] = emp_org_info_ser.data
+
             #travel_request_serializer.data[0]['date']=datetime.now().date().strftime("%d-%b-%Y")
             travel_requests=Travel_Request.objects.filter(travel_req_id =id)
             travel_request_serializers= Travel_RequestSerializers(travel_requests,many=True)
@@ -908,10 +972,18 @@ class getvisaletter(APIView):
                      datas['Citizenship']=data['emp_info'][0]['nationality']
                   else:
                      datas['Citizenship']=""
-                  
+               if data['emp_org_info']:
+                  if data['emp_org_info'][0]['home_country_designation']:
+                     datas['JobTitleHome'] = data['emp_org_info'][0]['home_country_designation']
+                  else:
+                     datas['JobTitleHome'] = ""
+                  if data['emp_org_info'][0]['host_country_designation']:
+                     datas['JobTitleHost'] = data['emp_org_info'][0]['host_country_designation']
+                  else:
+                     datas['JobTitleHost'] = ""
                datas['AssigneeName']=first_name+' '+last_name
                print(datas['AssigneeName'])
-               datas['JobTitle']=""
+
                datas['TodayDate']=date.today()
                datas['AssignmentStartDate']=data['Actual_Start_Date']
                datas['AssignmentEndDate']=data['Actual_End_Date']
@@ -933,7 +1005,7 @@ class getvisaletter(APIView):
                   else:
                      datas['Host City']=""
                   if data['details'][0]['host_hr_name']:
-                     datas['Host Contact Name']=data['details'][0]['host_hr_name']
+                     datas['HostContactName']=data['details'][0]['host_hr_name']
                   else:
                      datas['HostContactName']=""
 
@@ -976,11 +1048,11 @@ class getvisaletter(APIView):
                datas['HomeCountry']= data['Home_Country']
                if data['emp_passport']:
                   if data['emp_passport'][0]['passort_number']:
-                     datas['PassportNumber']=data['emp_passport'][0]['passort_number']
+                     datas['PassportNo']=data['emp_passport'][0]['passort_number']
                   else:
-                     datas['PassportNumber']=""
-                  if data['emp_passport'][0]['passort_expiry_date']:
-                     datas['PassportValidity']=data['emp_passport'][0]['passort_expiry_date']
+                     datas['PassportNo']=""
+                  if data['emp_passport'][0]['date_of_expiration']:
+                     datas['PassportValidity']=data['emp_passport'][0]['date_of_expiration']
                   else:
                      datas['PassportValidity']=""
                if data['travel']:
@@ -1037,7 +1109,8 @@ class assignmentletterkeys(APIView):
     def get(self,request, *args, **kwargs):
         
         datas=['AssigneeName',
-                'JobTitle',
+                'JobTitleHome',
+                'JobTitleHost',
                 'TodayDate',
                 'AssignmentStartDate'	,
                 'AssignmentEndDate',	
