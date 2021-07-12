@@ -179,7 +179,7 @@ urlpatterns = [
 
 
         path('get_post_vendor_income/', get_post_vendor_income.as_view(), name='get_post_vendor_income'),
-        path('get_post_capital_gainsI_income/', get_post_capital_gainsI_income.as_view(), name='get_post_capital_gainsI_income'),
+        path('get_post_capital_gains_income/', get_post_capital_gains_income.as_view(), name='get_post_capital_gainsI_income'),
         path('get_post_Vendor_Status_history/', get_post_Vendor_Status_history.as_view(), name='get_post_Vendor_Status_history'),
         path('get_post_vendor_Service_List/', get_post_vendor_Service_List.as_view(), name='get_post_vendor_Service_List'),
 

@@ -1746,12 +1746,7 @@ class Employee_Address(TimeStampedModel, GeneratedByModel, Status):
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
 
-    class Meta:
-        managed = True
-        verbose_name = _('pickup_address')
-        verbose_name_plural = _('pickup_address')
-
-class Capital_GainsI_Income(TimeStampedModel, GeneratedByModel, Status):
+class Capital_Gains_Income(TimeStampedModel, GeneratedByModel, Status):
     company_name = models.CharField(max_length=200,null=True, blank=True)
     class_of_share = models.CharField(max_length=100, null=True,blank=True)
     share_sold = models.CharField(max_length=100, choices=TYPE_CHOICES,null=True,blank=True)
