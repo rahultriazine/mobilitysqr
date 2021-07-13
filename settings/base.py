@@ -152,9 +152,9 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mobilitysqr_dev',
+        'NAME': 'mob_test',
         'USER': 'postgres',
-        'PASSWORD': 'root',
+        'PASSWORD': 'admin@123',
         'HOST': 'localhost',
         'PORT': '5432',
     }

@@ -27,6 +27,7 @@ import uuid
 from django.db import transaction,IntegrityError
 from mobility_apps.master.serializers.vendor import *
 from mobility_apps.master.models import *
+from api.models import User
 
 class get_delete_update_vendor(RetrieveDestroyAPIView):
     http_method_names = ['get', 'put', 'delete', 'head', 'options', 'trace']
@@ -313,6 +314,7 @@ class get_post_vendor(ListCreateAPIView):
                 save_data=serializer.save()
                 employee_obj = Employee.objects.filter(column1=request.data.get('vendor_id')).last()
                 if employee_obj:
+                    old_user_name = employee_obj.user_name
                     request.data['user_name']=request.data['vendor_email']
                     request.data['email']=request.data['vendor_email']
                     request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
@@ -326,6 +328,11 @@ class get_post_vendor(ListCreateAPIView):
                     emailserializer=EmployeeSerializers(employee_obj,data=request.data)
                     if emailserializer.is_valid():
                         emailserializer.save()
+                        userdata = User.objects.get(username__iexact=old_user_name)
+                        if userdata is not None:
+                            userdata.username = request.data['vendor_email']
+                            userdata.email = request.data['vendor_email']
+                            userdata.save()
                         ctxt = {
                             'user_name': request.data['user_name'],
                             # 'password': request.data['password']
