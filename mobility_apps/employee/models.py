@@ -1,7 +1,7 @@
 from django.db import models
 from api.models import User
 from django.db.models.signals import post_delete,post_save,pre_save
-# Create your models here.
+# Create your models here
 from mobility_apps.base.models import TimeStampedModel, GeneratedByModel, Status
 from django.utils.translation import ugettext_lazy as _
 from mobility_apps.superadmin.models import *
