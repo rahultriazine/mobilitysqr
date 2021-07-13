@@ -1833,3 +1833,4 @@ class vendor_Service_List(TimeStampedModel, GeneratedByModel, Status):
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
+

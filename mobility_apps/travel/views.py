@@ -12,7 +12,7 @@ from mobility_apps.visa.models import Visa_Request , Visa_Request_Document,Visa_
 from mobility_apps.visa.serializers import Visa_RequestSerializers,Visa_Request_DocumentSerializers,Visa_Request_DraftSerializers
 from mobility_apps.travel.models import Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
 from mobility_apps.travel.serializers import Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
-from mobility_apps.master.models import Country,City,Per_Diem,Dial_Code,Country_Master,State_Master,Location_Master,Taxgrid_Master,Taxgrid_Country,Taxgrid,National_Id,Secondory_Assignment
+from mobility_apps.master.models import Vendor,Country,City,Per_Diem,Dial_Code,Country_Master,State_Master,Location_Master,Taxgrid_Master,Taxgrid_Country,Taxgrid,National_Id,Secondory_Assignment
 from mobility_apps.master.models import Notification
 from mobility_apps.master.models import Create_Assignment
 from mobility_apps.master.serializers.assinment_type import Secondory_AssignmentSerializers,Create_AssignmentSerializers
@@ -4169,14 +4169,21 @@ class assignment_travel_request_status_count(ListCreateAPIView):
     # permission_classes = (IsAuthenticated,)
     serializer_class = Assignment_Travel_Request_StatusSerializers
     def get(self, request):
-        vendor_email=Vendor.objects.filter(vendor_email=request.GET['vendor_email']).last()
-        if vendor_email:
-            vendor_id= vendor_email.vendor_id
-            travel_requests_inprogres=Assignment_Travel_Request_Status.objects.filter(travel_req_status_vendor__isnull=True,vendor=vendor_id,organization_id=request.GET['org_id']).count()
-            travel_requests_close=Assignment_Travel_Request_Status.objects.filter(travel_req_status_vendor="6",vendor=vendor_id,organization_id=request.GET['org_id']).count()
-            total_count = {"inprogress":travel_requests_inprogres,"close":travel_requests_close}
-            dict = {'massage': 'data found', 'status': True, 'data': total_count}
-            return Response(dict, status=status.HTTP_200_OK)
-        else:
-            dict = {'massage': 'data not found', 'status': False}
-            return Response(dict, status=status.HTTP_200_OK)
+        response_data = {}
+        response_data['error'] = {}
+        try:
+            vendor_email = Vendor.objects.filter(vendor_email=request.GET['vendor_email']).last()
+            if vendor_email is not None:
+                vendor_id = vendor_email.vendor_id
+                travel_requests_inprogres = Assignment_Travel_Request_Status.objects.filter(travel_req_status_vendor__isnull=True,vendor=vendor_id,organization_id=request.GET['org_id']).count()
+                travel_requests_close = Assignment_Travel_Request_Status.objects.filter(travel_req_status_vendor="6",vendor=vendor_id,organization_id=request.GET['org_id']).count()
+                total_count = {"inprogress":travel_requests_inprogres,"close":travel_requests_close}
+                dict = {'massage': 'data found', 'status': True, 'data': total_count}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                dict = {'massage': 'data not found', 'status': False}
+                return Response(dict, status=status.HTTP_200_OK)
+        except Exception as e:
+            response_data['status'] = False
+            response_data['error']['message'] = str(e)
+            return Response(response_data, status=status.HTTP_200_OK)

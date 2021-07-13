@@ -138,27 +138,27 @@ REST_FRAMEWORK = {
     # }
 # }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mobilitysqr_dev',
+        'USER': 'postgres',
+        'PASSWORD': 'X^5F<\Qrc+S3SW?',
+        'HOST': '172.105.35.73',
+        'PORT': '5432',
+    }
+}
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'mobilitysqr_dev',
+#         'NAME': 'mob_test',
 #         'USER': 'postgres',
-#         'PASSWORD': 'X^5F<\Qrc+S3SW?',
+#         'PASSWORD': 'admin@123',
 #         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }
 # }
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mob_test',
-        'USER': 'postgres',
-        'PASSWORD': 'admin@123',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
 
 
 CORS_ORIGIN_ALLOW_ALL = True
