@@ -350,6 +350,7 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
     current_ticket_owner = models.CharField(max_length=100,null=True, blank=True)
     vendor = models.CharField(max_length=100, blank=True, null=True)
     vendor_type = models.CharField(max_length=100, blank=True, null=True)
+    travel_req_status_vendor = models.CharField(max_length=50, null=True, blank=True)
     organization = models.ForeignKey(Organizations,to_field='org_id',null=True, blank=True,on_delete=models.CASCADE)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
@@ -403,6 +404,22 @@ class Assignment_Travel_Tax_Grid(TimeStampedModel, GeneratedByModel, Status):
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
 
+
     class Meta:
         managed = True
         verbose_name = _('Assignment Travel Tax Grid')
+
+
+class Travel_Vendor_Immigration(TimeStampedModel, GeneratedByModel, Status):
+    travel_req = models.ForeignKey(Travel_Request, to_field="travel_req_id", null=True, blank=True,
+                                      on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations, to_field='org_id', null=True, blank=True, on_delete=models.CASCADE)
+    emp_code = models.ForeignKey(Employee, to_field="emp_code", null=True, blank=True, on_delete=models.CASCADE)
+    Host_job_code = models.CharField(max_length=100,null=True, blank=True)
+    Host_job_description = models.CharField(max_length=100, null=True, blank=True)
+
+
+    class Meta:
+        managed = True
+        verbose_name = _('Travel Vendor Immigration')
+
