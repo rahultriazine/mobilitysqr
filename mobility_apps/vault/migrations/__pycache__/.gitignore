@@ -1,1 +1,14 @@
+<<<<<<< HEAD
 *.cpython-38.pyc
+=======
+/0002_remove_vault_type_info_test.cpython-38.pyc
+/0003_compliance_employee_compliance.cpython-38.pyc
+/0004_employee_compliance_compl_ques_id.cpython-38.pyc
+/0005_compliance_compl_ques_id.cpython-38.pyc
+/0006_auto_20210603_1543.cpython-38.pyc
+/0007_auto_20210603_1550.cpython-38.pyc
+/0008_auto_20210603_1552.cpython-38.pyc
+/0009_auto_20210603_1556.cpython-38.pyc
+/0010_compliance_test.cpython-38.pyc
+/0011_auto_20210603_1618.cpython-38.pyc
+>>>>>>> master

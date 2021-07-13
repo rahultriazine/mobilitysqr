@@ -1,1 +1,20 @@
+<<<<<<< HEAD
 *.cpython-38.pyc
+=======
+/0002_auto_20210325_1851.cpython-38.pyc
+/0003_auto_20210325_1855.cpython-38.pyc
+/0004_auto_20210325_1900.cpython-38.pyc
+/0005_delete_empmessage.cpython-38.pyc
+/0006_message.cpython-38.pyc
+/0007_remove_message_column2.cpython-38.pyc
+/0008_message_column2.cpython-38.pyc
+/0009_auto_20210325_1946.cpython-38.pyc
+/0010_auto_20210325_1947.cpython-38.pyc
+/0011_message_column1.cpython-38.pyc
+/0012_auto_20210326_1011.cpython-38.pyc
+/0013_auto_20210326_1108.cpython-38.pyc
+/0014_auto_20210326_1111.cpython-38.pyc
+/0015_message_chat_ticket_id.cpython-38.pyc
+/0016_auto_20210406_1233.cpython-38.pyc
+/0017_auto_20210422_1252.cpython-38.pyc
+>>>>>>> master
