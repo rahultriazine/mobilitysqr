@@ -1697,6 +1697,7 @@ class Designation(TimeStampedModel, GeneratedByModel, Status):
         return self.code
 from mobility_apps.travel.models import Travel_Request 
 TYPE_CHOICES = (('Tax Payer','Tax Payer'),('Spouse','Spouse'),('Joint','Joint'))
+
 class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
     income_type = models.CharField(max_length=100,null=True, blank=True)
     amount = models.CharField(max_length=100, null=True,blank=True)
@@ -1718,6 +1719,7 @@ class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
     column10 = models.CharField(max_length=100, null=True, blank=True)
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
+
 
     class Meta:
         managed = True
@@ -1760,7 +1762,7 @@ class Capital_Gains_Income(TimeStampedModel, GeneratedByModel, Status):
     vendor = models.ForeignKey(Vendor,null=True, blank=True,on_delete=models.CASCADE)
     organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
     travel_req = models.ForeignKey(Travel_Request,null=True, blank=True,  on_delete=models.CASCADE)
-    employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE) 
+    employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)
@@ -1774,10 +1776,12 @@ class Capital_Gains_Income(TimeStampedModel, GeneratedByModel, Status):
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
 
+
     class Meta:
         managed = True
         verbose_name = _('company_name')
         verbose_name_plural = _('company_name')
+
 
 class Vendor_Status(TimeStampedModel, GeneratedByModel, Status):
     status = models.CharField(max_length=200,null=True, blank=True)
