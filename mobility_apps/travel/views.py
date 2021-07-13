@@ -4167,21 +4167,16 @@ class bulk_approve_travelvisa_request(ListCreateAPIView):
 
 class assignment_travel_request_status_count(ListCreateAPIView):
     # permission_classes = (IsAuthenticated,)
-    serializer_class = Travel_RequestSerializers
-    # Get all visa_purpose
+    serializer_class = Assignment_Travel_Request_StatusSerializers
     def get(self, request):
-        travel= Travel_Request.objects.filter(Q(travel_req_status="2")|Q(travel_req_status="3")|Q(travel_req_status="5"),emp_email=request.GET['emp_code'],organization_id=request.GET['org_id'])
-        travels= Travel_Request.objects.filter(travel_req_status="2",current_ticket_owner="",organization_id=request.GET['org_id'],emp_email=request.GET['emp_code']).count()
-        if travel or travels:
-            serializer =Travel_RequestSerializers(travels,many=True)
-            serializer =Travel_RequestSerializers(travel,many=True)
-            dict=[]
-            for data in serializer.data:
-                dict.append(data['travel_req_status'])
-            total=sum(Counter(dict).values())
-            my_dict = Counter(dict)
-            dict = {"status": True, "message":MSG_SUCESS, "data":  my_dict,"new_request":travels}
+        vendor_email=Vendor.objects.filter(vendor_email=request.GET['vendor_email']).last()
+        if vendor_email:
+            vendor_id= vendor_email.vendor_id
+            travel_requests_inprogres=Assignment_Travel_Request_Status.objects.filter(travel_req_status_vendor__isnull=True,vendor=vendor_id,organization_id=request.GET['org_id']).count()
+            travel_requests_close=Assignment_Travel_Request_Status.objects.filter(travel_req_status_vendor="6",vendor=vendor_id,organization_id=request.GET['org_id']).count()
+            total_count = {"inprogress":travel_requests_inprogres,"close":travel_requests_close}
+            dict = {'massage': 'data found', 'status': True, 'data': total_count}
             return Response(dict, status=status.HTTP_200_OK)
         else:
-            dict = {"status": False,"status_code":200, "message":MSG_FAILED,"data":  travel,"new_request":travels}
+            dict = {'massage': 'data not found', 'status': False}
             return Response(dict, status=status.HTTP_200_OK)
