@@ -28,7 +28,7 @@ urlpatterns = [
         path('travel_request_priority/', travel_request_priority.as_view(),
              name='travel_request_priority'),
         path('assignment_travel_request_status_count/', assignment_travel_request_status_count.as_view(), name='assignment_travel_request_status_count'),
-
+        path('get_post_travel_vendor_immigration/', GetPostTravelVendorImmigration.as_view(), name='get_post_travel_vendor_immigration'),
 
 
 

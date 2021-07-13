@@ -244,6 +244,7 @@ class getemoloyeedata(APIView):
         employee = request.GET['employee']
         #emp = Employee.objects.raw("select * from employee_employee where emp_code LIKE '%"+employee+"%'")
         emp = Employee.objects.filter(Q(email__contains=employee)|Q(emp_code__contains=employee))
+
         emp_serializer = EmployeeSerializers(emp,many=True)
         dicts=[]
         for employees in emp_serializer.data:
@@ -281,6 +282,7 @@ class getemoloyeedata(APIView):
             empadd = Employee_Org_Info.objects.filter(emp_code=emp_code)
             emporg_serializer = Employee_Org_InfoSerializers(empadd,many=True)
             alldata['emp_orginfo']=emporg_serializer.data
+
             dicts.append(alldata)
         if dicts:
             dict = {'massage': 'data found', 'status': True, 'data':dicts}
@@ -2843,18 +2845,18 @@ class employee_chat(APIView):
 
 class get_post_employee_address(ListCreateAPIView):
     #permission_classes = (IsAuthenticated,)
-    serializer_class = Employee_AddressSerializers
+    serializer_class = Employee_Address_VendorSerializers
 
     # Get all department
     def get(self, request):
         # org_id = self.request.GET.get('org_id',None)
-        emp_address = Employee_Address.objects.all().order_by('id')
-        serializer = Employee_AddressSerializers(emp_address,many=True)
+        emp_address = Employee_Address_Vendor.objects.all().order_by('id')
+        serializer = Employee_Address_VendorSerializers(emp_address,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
 
     def post(self, request):
-        serializer = Employee_AddressSerializers(data=request.data)
+        serializer = Employee_Address_VendorSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save()
             dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}

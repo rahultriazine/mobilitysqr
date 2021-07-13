@@ -761,7 +761,7 @@ class get_post_Vendor_Status_history(ListCreateAPIView):
         return Response(dict, status=status.HTTP_200_OK)
 
 class get_post_vendor_Service_List(ListCreateAPIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = vendor_Service_ListSerializers
 
     # Get all department
@@ -774,6 +774,29 @@ class get_post_vendor_Service_List(ListCreateAPIView):
 
     def post(self, request):
         serializer = vendor_Service_ListSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+
+class get_post_vendor_Service_List_status(ListCreateAPIView):
+    # permission_classes = (IsAuthenticated,)
+    serializer_class = vendor_Service_List_statusSerializers
+
+    # Get all department
+    def get(self, request):
+        org_id = self.request.GET.get('org_id',None)
+        vendor_income = vendor_Service_List_status.objects.all().order_by('id')
+        serializer = vendor_Service_List_statusSerializers(vendor_income,many=True)
+        dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+        return Response(dict, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        serializer = vendor_Service_List_statusSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save()
             dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}
