@@ -312,11 +312,18 @@ class get_post_vendor(ListCreateAPIView):
                 serializer = VendorSerializers(data=request.data)
             if serializer.is_valid():
                 save_data=serializer.save()
-                employee_obj = Employee.objects.filter(column1=request.data.get('vendor_id')).last()
-                if employee_obj:
-                    old_user_name = employee_obj.user_name
-                    request.data['user_name']=request.data['vendor_email']
-                    request.data['email']=request.data['vendor_email']
+                employee_obj = Employee.objects.filter(column1__iexact=request.data.get('vendor_id')).last()
+                employee_emai = Employee.objects.filter(user_name__iexact=request.data.get('vendor_email')).last()
+                if employee_obj or employee_emai:
+                    if employee_obj is not None:
+                        old_user_name = employee_obj.user_name
+                    else:
+                        old_user_name = employee_emai.user_name
+                    request.data['column1'] = request.data['vendor_id']
+                    request.data['user_name'] = request.data['vendor_email']
+                    request.data['email'] = request.data['vendor_email']
+                    request.data['active_start_date'] = request.data['startDate']
+                    request.data['active_end_date'] = request.data['endDate']
                     request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
                     request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
                     request.data['first_name']=""
@@ -325,7 +332,10 @@ class get_post_vendor(ListCreateAPIView):
                     request.data['column1'] = save_data.vendor_id
                     # res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
                     # request.data['password'] = make_password(str(res))
-                    emailserializer=EmployeeSerializers(employee_obj,data=request.data)
+                    if employee_obj is not None:
+                        emailserializer=EmployeeSerializers(employee_obj,data=request.data)
+                    else:
+                        emailserializer=EmployeeSerializers(employee_emai,data=request.data)
                     if emailserializer.is_valid():
                         emailserializer.save()
                         userdata = User.objects.get(username__iexact=old_user_name)
@@ -355,6 +365,8 @@ class get_post_vendor(ListCreateAPIView):
                 else:
                     request.data['user_name']=request.data['vendor_email']
                     request.data['email']=request.data['vendor_email']
+                    request.data['active_start_date'] = request.data['startDate']
+                    request.data['active_end_date'] = request.data['endDate']
                     request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
                     request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
                     request.data['first_name']=""
