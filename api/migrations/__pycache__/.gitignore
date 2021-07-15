@@ -7,3 +7,5 @@
 /0007_remove_user_test.cpython-37.pyc
 *.cpython-38.pyc
 *.pyc
+/0001_initial.cpython-38.pyc
+/__init__.cpython-38.pyc

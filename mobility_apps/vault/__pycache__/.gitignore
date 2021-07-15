@@ -1,1 +1,7 @@
 *.cpython-38.pyc
+/__init__.cpython-38.pyc
+/admin.cpython-38.pyc
+/models.cpython-38.pyc
+/serializer.cpython-38.pyc
+/urls.cpython-38.pyc
+/views.cpython-38.pyc
