@@ -2038,7 +2038,7 @@ class calender_event_update_delete(APIView):
 
 
 #################################################
-"jwt custome login "
+"jwt custome login  "
 #################################################
 
 class jwt_custom_login(APIView):
