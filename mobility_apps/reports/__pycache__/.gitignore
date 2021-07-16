@@ -1,0 +1,5 @@
+*.pyc
+/__init__.cpython-38.pyc
+/models.cpython-38.pyc
+/urls.cpython-38.pyc
+/views.cpython-38.pyc
