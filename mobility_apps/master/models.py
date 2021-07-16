@@ -1728,7 +1728,7 @@ class Vendor_Income(TimeStampedModel, GeneratedByModel, Status):
         verbose_name_plural = _('income_type')
 
 
-class Employee_Address(TimeStampedModel, GeneratedByModel, Status):
+class Employee_Address_Vendor(TimeStampedModel, GeneratedByModel, Status):
     pickup_address = models.TextField(null=True, blank=True)
     delivery_address = models.TextField(null=True,blank=True)
     move_date  = models.CharField(max_length=100, null=True,blank=True)
@@ -1822,6 +1822,26 @@ class vendor_Service_List(TimeStampedModel, GeneratedByModel, Status):
     organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
     # travel_req = models.ForeignKey(Travel_Request,null=True, blank=True,  on_delete=models.CASCADE)
     employee= models.ForeignKey(Employee,null=True, blank=True, on_delete=models.CASCADE) 
+    column1 = models.CharField(max_length=100, null=True, blank=True)
+    column2 = models.CharField(max_length=100, null=True, blank=True)
+    column3 = models.CharField(max_length=100, null=True, blank=True)
+    column4 = models.CharField(max_length=100, null=True, blank=True)
+    column5 = models.CharField(max_length=100, null=True, blank=True)
+    column6 = models.CharField(max_length=100, null=True, blank=True)
+    column7 = models.CharField(max_length=100, null=True, blank=True)
+    column8 = models.CharField(max_length=100, null=True, blank=True)
+    column9 = models.CharField(max_length=100, null=True, blank=True)
+    column10 = models.CharField(max_length=100, null=True, blank=True)
+    column11 = models.CharField(max_length=100, null=True, blank=True)
+    column12 = models.CharField(max_length=100, null=True, blank=True)
+
+
+
+
+class vendor_Service_List_status(TimeStampedModel, GeneratedByModel, Status):
+    status_name = models.CharField(max_length=200,null=True, blank=True)
+    date_status = models.CharField(max_length=200, null=True,blank=True)
+    organization = models.ForeignKey(Organizations,null=True, blank=True,on_delete=models.CASCADE)
     column1 = models.CharField(max_length=100, null=True, blank=True)
     column2 = models.CharField(max_length=100, null=True, blank=True)
     column3 = models.CharField(max_length=100, null=True, blank=True)

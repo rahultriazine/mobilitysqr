@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from . models import Vault_type,Vault_type_info, Compliance, Employee_compliance
+from . models import Vault_type,Vault_type_info, Compliance, Employee_compliance,
 
 
 
@@ -38,3 +38,5 @@ class Employee_complianceSerializers(serializers.ModelSerializer):
         model = Employee_compliance
         # fields ='__all__'
         fields = ['id', 'emp_code', 'compl_ques', 'compl_ans','date_created']
+
+

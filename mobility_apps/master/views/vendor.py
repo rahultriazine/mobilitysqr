@@ -312,11 +312,18 @@ class get_post_vendor(ListCreateAPIView):
                 serializer = VendorSerializers(data=request.data)
             if serializer.is_valid():
                 save_data=serializer.save()
-                employee_obj = Employee.objects.filter(column1=request.data.get('vendor_id')).last()
-                if employee_obj:
-                    old_user_name = employee_obj.user_name
-                    request.data['user_name']=request.data['vendor_email']
-                    request.data['email']=request.data['vendor_email']
+                employee_obj = Employee.objects.filter(column1__iexact=request.data.get('vendor_id')).last()
+                employee_emai = Employee.objects.filter(user_name__iexact=request.data.get('vendor_email')).last()
+                if employee_obj or employee_emai:
+                    if employee_obj is not None:
+                        old_user_name = employee_obj.user_name
+                    else:
+                        old_user_name = employee_emai.user_name
+                    request.data['column1'] = request.data['vendor_id']
+                    request.data['user_name'] = request.data['vendor_email']
+                    request.data['email'] = request.data['vendor_email']
+                    request.data['active_start_date'] = request.data['startDate']
+                    request.data['active_end_date'] = request.data['endDate']
                     request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
                     request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
                     request.data['first_name']=""
@@ -325,7 +332,10 @@ class get_post_vendor(ListCreateAPIView):
                     request.data['column1'] = save_data.vendor_id
                     # res = ''.join(random.choices(string.ascii_uppercase + string.digits, k = 8))
                     # request.data['password'] = make_password(str(res))
-                    emailserializer=EmployeeSerializers(employee_obj,data=request.data)
+                    if employee_obj is not None:
+                        emailserializer=EmployeeSerializers(employee_obj,data=request.data)
+                    else:
+                        emailserializer=EmployeeSerializers(employee_emai,data=request.data)
                     if emailserializer.is_valid():
                         emailserializer.save()
                         userdata = User.objects.get(username__iexact=old_user_name)
@@ -355,6 +365,8 @@ class get_post_vendor(ListCreateAPIView):
                 else:
                     request.data['user_name']=request.data['vendor_email']
                     request.data['email']=request.data['vendor_email']
+                    request.data['active_start_date'] = request.data['startDate']
+                    request.data['active_end_date'] = request.data['endDate']
                     request.data['person_id'] = "PER" + str(uuid.uuid4().int)[:6]
                     request.data['emp_code'] = "VEN" + str(uuid.uuid4().int)[:6]
                     request.data['first_name']=""
@@ -761,7 +773,7 @@ class get_post_Vendor_Status_history(ListCreateAPIView):
         return Response(dict, status=status.HTTP_200_OK)
 
 class get_post_vendor_Service_List(ListCreateAPIView):
-    #permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
     serializer_class = vendor_Service_ListSerializers
 
     # Get all department
@@ -774,6 +786,29 @@ class get_post_vendor_Service_List(ListCreateAPIView):
 
     def post(self, request):
         serializer = vendor_Service_ListSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+
+class get_post_vendor_Service_List_status(ListCreateAPIView):
+    # permission_classes = (IsAuthenticated,)
+    serializer_class = vendor_Service_List_statusSerializers
+
+    # Get all department
+    def get(self, request):
+        org_id = self.request.GET.get('org_id',None)
+        vendor_income = vendor_Service_List_status.objects.all().order_by('id')
+        serializer = vendor_Service_List_statusSerializers(vendor_income,many=True)
+        dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+        return Response(dict, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        serializer = vendor_Service_List_statusSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save()
             dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}

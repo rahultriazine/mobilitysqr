@@ -46,3 +46,8 @@ class vendor_Service_ListSerializers(serializers.ModelSerializer):
     class Meta:
         model =  vendor_Service_List
         fields = '__all__'
+
+class vendor_Service_List_statusSerializers(serializers.ModelSerializer):
+    class Meta:
+        model =  vendor_Service_List_status
+        fields = '__all__'

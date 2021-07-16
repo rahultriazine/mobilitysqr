@@ -1,0 +1,17 @@
+INFO|14/Jul/2021 11:12:25|basehttp|13835|140689708529408|"POST /get_add/vendor/ HTTP/1.1" 200 49
+INFO|14/Jul/2021 11:37:26|basehttp|13835|140689708529408|"POST /get_add/vendor/ HTTP/1.1" 201 760
+WARNING|14/Jul/2021 17:32:05|log|31159|140017502512896|Unauthorized: /assignment_travel_request_status_count/
+WARNING|14/Jul/2021 17:32:05|basehttp|31159|140017502512896|"GET /assignment_travel_request_status_count/ HTTP/1.1" 401 183
+WARNING|14/Jul/2021 17:32:24|log|31159|140017502512896|Unauthorized: /assignment_travel_request_status_count/
+WARNING|14/Jul/2021 17:32:24|basehttp|31159|140017502512896|"GET /assignment_travel_request_status_count/ HTTP/1.1" 401 183
+WARNING|14/Jul/2021 17:32:52|log|31232|140016741627648|Unauthorized: /assignment_travel_request_status_count/
+WARNING|14/Jul/2021 17:32:52|basehttp|31232|140016741627648|"GET /assignment_travel_request_status_count/ HTTP/1.1" 401 183
+WARNING|14/Jul/2021 17:32:53|log|31232|140016741627648|Unauthorized: /assignment_travel_request_status_count/
+WARNING|14/Jul/2021 17:32:53|basehttp|31232|140016741627648|"GET /assignment_travel_request_status_count/ HTTP/1.1" 401 183
+INFO|14/Jul/2021 17:33:13|basehttp|31232|140016741627648|"GET /assignment_travel_request_status_count/ HTTP/1.1" 200 53
+INFO|14/Jul/2021 17:33:44|basehttp|31232|140016741627648|"GET /assignment_travel_request_status_count/?vendor_email=vikastest1@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 141
+INFO|14/Jul/2021 17:51:51|basehttp|31917|139650226620160|"GET /assignment_travel_request_status_count/?vendor_email=vikastest1@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 86
+INFO|14/Jul/2021 17:52:08|basehttp|31988|140701235308288|"GET /assignment_travel_request_status_count/?vendor_email=vikastest1@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 125
+INFO|14/Jul/2021 17:55:07|basehttp|32148|140617339873024|"GET /assignment_travel_request_status_count/?vendor_email=vikastest1@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 125
+INFO|14/Jul/2021 18:58:11|basehttp|2007|140504925112064|"GET /get_vendor_travel_request_inprogress/?vendor_email=vikastest1@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 70
+INFO|14/Jul/2021 20:17:14|basehttp|4918|140375967037184|"GET /get_vendor_travel_request_inprogress/?vendor_email=vikastest1@mailinator.com&org_id=ORG150866 HTTP/1.1" 200 2276

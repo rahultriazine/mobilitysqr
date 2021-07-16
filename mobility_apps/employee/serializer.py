@@ -101,7 +101,7 @@ class Message_ChatSerializers(serializers.ModelSerializer):
         fields = ('sender_emp_code','receiver_emp_code','chat_message','thread','ticket_id','created_date')
 
 
-class Employee_AddressSerializers(serializers.ModelSerializer):
+class Employee_Address_VendorSerializers(serializers.ModelSerializer):
     class Meta:
-        model = Employee_Address
+        model = Employee_Address_Vendor
         fields = '__all__'
