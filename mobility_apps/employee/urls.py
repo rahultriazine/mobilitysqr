@@ -79,8 +79,6 @@ urlpatterns = [
         path('employee_chat/', employee_chat.as_view(), name='employee_chat'),
         path('get_post_employee_address_vendor/', get_post_employee_address_vendor.as_view(), name='get_post_employee_address'),
 
-
-
            ]
 
 
