@@ -397,7 +397,6 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
     income_from_partnership_owner  = models.CharField(max_length=100, null=True,blank=True)
     retirement_income_owner  = models.CharField(max_length=100, null=True,blank=True)
     capital_gains_owner  = models.CharField(max_length=100, null=True,blank=True)
-    
 
 
 
