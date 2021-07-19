@@ -358,13 +358,22 @@ class get_country_master(ListCreateAPIView):
     serializer_class = Country_MasterSerializers
     def get(self, request):
         # import ipdb;ipdb.set_trace()
-        print(request.GET['country'])
-        dial=Country_Master.objects.filter(Q(name__icontains=request.GET['country']))
-        serializer = Country_MasterSerializers(dial,many=True)
-        if serializer.data:
-            dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
+        cont = request.GET.get('country', None)
+        if cont is not None and cont != '':
+            dial=Country_Master.objects.filter(Q(name__icontains=cont))
+            serializer = Country_MasterSerializers(dial,many=True)
+            if serializer.data:
+                dict = {"status": True, "Message":MSG_SUCESS, "data": serializer.data}
+            else:
+                dict = {'status': False, 'Message':MSG_FAILED}
         else:
-            dict = {'status': False, 'Message':MSG_FAILED}
+            dial = Country_Master.objects.all()
+            serializer = Country_MasterSerializers(dial, many=True)
+            if serializer.data:
+                dict = {"status": True, "Message": MSG_SUCESS, "data": serializer.data}
+            else:
+                dict = {'status': False, 'Message': MSG_FAILED}
+
         return Response(dict, status=status.HTTP_200_OK)
 
     def post(self, request):

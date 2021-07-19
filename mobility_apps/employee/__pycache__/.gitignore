@@ -2,3 +2,5 @@
 /serializer.cpython-37.pyc
 /views.cpython-37.pyc
 *.cpython-38.pyc
+/views.cpython-38.pyc
+/.gitignore

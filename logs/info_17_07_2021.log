@@ -1,0 +1,594 @@
+WARNING|17/Jul/2021 13:59:09|log|16629|139949297272576|Unauthorized: /get_post_vaccine_autho_aountry/
+WARNING|17/Jul/2021 13:59:09|basehttp|16629|139949297272576|"POST /get_post_vaccine_autho_aountry/ HTTP/1.1" 401 183
+ERROR|17/Jul/2021 13:59:17|log|16629|139949297272576|Internal Server Error: /get_post_vaccine_autho_aountry/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 13:59:17|basehttp|16629|139949297272576|"POST /get_post_vaccine_autho_aountry/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:00:13|log|16813|140440769038080|Internal Server Error: /get_post_vaccine_autho_aountry/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:00:13|basehttp|16813|140440769038080|"POST /get_post_vaccine_autho_aountry/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:01:07|log|16883|139807004047104|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:01:07|basehttp|16883|139807004047104|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:07:04|log|16883|139807004047104|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:07:04|basehttp|16883|139807004047104|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:07:52|log|17132|140567294408448|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:07:52|basehttp|17132|140567294408448|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+INFO|17/Jul/2021 14:10:16|basehttp|17336|140030890731264|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 77
+WARNING|17/Jul/2021 14:11:48|log|17506|140659007272704|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:11:48|basehttp|17506|140659007272704|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 86
+ERROR|17/Jul/2021 14:13:42|log|17683|140693878056704|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:13:42|basehttp|17683|140693878056704|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+WARNING|17/Jul/2021 14:14:17|log|17736|140018094393088|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:14:17|basehttp|17736|140018094393088|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 89
+WARNING|17/Jul/2021 14:14:19|log|17736|140018094393088|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:14:19|basehttp|17736|140018094393088|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 89
+ERROR|17/Jul/2021 14:17:01|log|17871|140409496307456|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:17:01|basehttp|17871|140409496307456|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:17:03|log|17871|140409496307456|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:17:03|basehttp|17871|140409496307456|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:17:39|log|17930|140139158783744|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:17:39|basehttp|17930|140139158783744|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:17:56|log|17973|140363701401344|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:17:56|basehttp|17973|140363701401344|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+INFO|17/Jul/2021 14:18:43|basehttp|18024|140089099278080|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 77
+INFO|17/Jul/2021 14:19:11|basehttp|18059|140049809565440|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 77
+INFO|17/Jul/2021 14:19:21|basehttp|18059|140049809565440|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 77
+ERROR|17/Jul/2021 14:22:45|log|18393|140224499803904|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:22:45|basehttp|18393|140224499803904|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+ERROR|17/Jul/2021 14:23:55|log|18462|140176293005056|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:23:55|basehttp|18462|140176293005056|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+WARNING|17/Jul/2021 14:26:27|log|18462|140176293005056|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:26:27|basehttp|18462|140176293005056|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+WARNING|17/Jul/2021 14:26:42|log|18462|140176293005056|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:26:42|basehttp|18462|140176293005056|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+WARNING|17/Jul/2021 14:26:47|log|18462|140176293005056|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:26:47|basehttp|18462|140176293005056|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+WARNING|17/Jul/2021 14:26:51|log|18462|140176293005056|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:26:51|basehttp|18462|140176293005056|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+WARNING|17/Jul/2021 14:26:55|log|18462|140176293005056|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:26:55|basehttp|18462|140176293005056|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+ERROR|17/Jul/2021 14:26:59|log|18462|140176293005056|Internal Server Error: /get_post_vaccine_autho_country/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 412, in finalize_response
+    % type(response)
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|17/Jul/2021 14:26:59|basehttp|18462|140176293005056|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 500 87391
+INFO|17/Jul/2021 14:28:50|basehttp|19084|139986565326592|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 78
+WARNING|17/Jul/2021 14:29:14|log|19084|139986565326592|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:29:14|basehttp|19084|139986565326592|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+WARNING|17/Jul/2021 14:31:00|log|19197|139692986087168|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:31:00|basehttp|19197|139692986087168|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+WARNING|17/Jul/2021 14:31:57|log|19249|139954967131904|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:31:57|basehttp|19249|139954967131904|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 98
+INFO|17/Jul/2021 14:32:53|basehttp|19312|140385706686208|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 127
+INFO|17/Jul/2021 14:34:31|basehttp|19312|140385706686208|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 127
+INFO|17/Jul/2021 14:34:33|basehttp|19312|140385706686208|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 127
+WARNING|17/Jul/2021 14:41:07|log|19804|139701162247936|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 14:41:07|basehttp|19804|139701162247936|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 279
+INFO|17/Jul/2021 14:41:33|basehttp|19804|139701162247936|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 121
+INFO|17/Jul/2021 14:42:26|basehttp|19893|140496911791872|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 334
+INFO|17/Jul/2021 14:44:54|basehttp|20096|140566151030528|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 139
+INFO|17/Jul/2021 14:46:46|basehttp|20286|139925898913536|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 341
+INFO|17/Jul/2021 14:46:56|basehttp|20286|139925898913536|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 340
+INFO|17/Jul/2021 14:49:13|basehttp|20443|140428971525888|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 340
+INFO|17/Jul/2021 14:49:19|basehttp|20443|140428971525888|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 340
+WARNING|17/Jul/2021 15:04:43|log|21087|140046820693760|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:04:43|basehttp|21087|140046820693760|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 122
+WARNING|17/Jul/2021 15:05:11|log|21140|139825347933952|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:05:11|basehttp|21140|139825347933952|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 122
+WARNING|17/Jul/2021 15:05:54|log|21245|140462839461632|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:05:54|basehttp|21245|140462839461632|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 130
+WARNING|17/Jul/2021 15:06:27|log|21306|139710937708288|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:06:27|basehttp|21306|139710937708288|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 122
+INFO|17/Jul/2021 15:07:17|basehttp|21401|140183423313664|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 834
+INFO|17/Jul/2021 15:08:42|basehttp|21495|139854732490496|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1238
+INFO|17/Jul/2021 15:10:27|basehttp|21495|139854732490496|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1238
+INFO|17/Jul/2021 15:11:13|basehttp|21697|139643057092352|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1239
+WARNING|17/Jul/2021 15:14:24|log|21858|139838089492224|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:14:24|basehttp|21858|139838089492224|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 135
+WARNING|17/Jul/2021 15:15:35|log|21950|139957465241344|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:15:35|basehttp|21950|139957465241344|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 135
+INFO|17/Jul/2021 15:16:03|basehttp|21982|139695491548928|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1255
+INFO|17/Jul/2021 15:16:46|basehttp|22049|140004209092352|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1296
+INFO|17/Jul/2021 15:24:01|basehttp|22474|140149357025024|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 338
+INFO|17/Jul/2021 15:24:10|basehttp|22474|140149357025024|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1593
+INFO|17/Jul/2021 15:25:29|basehttp|22474|140149357025024|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1628
+INFO|17/Jul/2021 15:29:25|basehttp|22800|140156872402688|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 1628
+INFO|17/Jul/2021 15:29:38|basehttp|22800|140156872402688|"GET /get_post_vaccine_autho_country/?organization=ORG150866&id=2 HTTP/1.1" 200 1628
+INFO|17/Jul/2021 15:29:51|basehttp|22800|140156872402688|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 1628
+WARNING|17/Jul/2021 15:30:32|log|22800|140156872402688|Unauthorized: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:30:32|basehttp|22800|140156872402688|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 401 183
+INFO|17/Jul/2021 15:30:43|basehttp|22800|140156872402688|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 1628
+INFO|17/Jul/2021 15:31:19|basehttp|22928|139698927748864|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 1617
+INFO|17/Jul/2021 15:32:00|basehttp|22991|140274547795712|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 1617
+INFO|17/Jul/2021 15:32:19|basehttp|22991|140274547795712|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 59
+INFO|17/Jul/2021 15:32:20|basehttp|22991|140274547795712|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 59
+WARNING|17/Jul/2021 15:32:47|log|23075|139834085594880|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:32:47|basehttp|23075|139834085594880|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 406 85
+WARNING|17/Jul/2021 15:33:11|log|23116|140526014064384|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:33:11|basehttp|23116|140526014064384|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 406 100
+WARNING|17/Jul/2021 15:34:06|log|23186|139908697405184|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 15:34:06|basehttp|23186|139908697405184|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 406 100
+INFO|17/Jul/2021 15:34:42|basehttp|23251|140571195115264|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 353
+INFO|17/Jul/2021 15:34:55|basehttp|23251|140571195115264|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 353
+INFO|17/Jul/2021 15:35:08|basehttp|23251|140571195115264|"GET /get_post_vaccine_autho_country/?id=2&organization= HTTP/1.1" 200 353
+INFO|17/Jul/2021 15:35:15|basehttp|23251|140571195115264|"GET /get_post_vaccine_autho_country/?id=2&organization=ORG150866 HTTP/1.1" 200 1617
+INFO|17/Jul/2021 15:35:27|basehttp|23251|140571195115264|"GET /get_post_vaccine_autho_country/?id=2&organizat HTTP/1.1" 200 353
+WARNING|17/Jul/2021 16:20:03|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:20:03|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 121
+WARNING|17/Jul/2021 16:20:28|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:20:28|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 121
+WARNING|17/Jul/2021 16:21:08|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:21:08|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 119
+WARNING|17/Jul/2021 16:25:47|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:25:47|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 119
+WARNING|17/Jul/2021 16:25:49|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:25:49|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 119
+WARNING|17/Jul/2021 16:25:50|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:25:50|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 119
+WARNING|17/Jul/2021 16:26:09|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:26:09|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 121
+WARNING|17/Jul/2021 16:26:11|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:26:11|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 121
+WARNING|17/Jul/2021 16:28:50|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:28:50|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 143
+WARNING|17/Jul/2021 16:29:48|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:29:48|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 121
+WARNING|17/Jul/2021 16:31:17|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:31:17|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 121
+WARNING|17/Jul/2021 16:32:11|log|25633|140204604552960|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:32:11|basehttp|25633|140204604552960|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 75
+WARNING|17/Jul/2021 16:33:56|log|26400|140536013285120|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:33:56|basehttp|26400|140536013285120|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 94
+WARNING|17/Jul/2021 16:34:24|log|26477|140118227052288|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:34:24|basehttp|26477|140118227052288|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 92
+WARNING|17/Jul/2021 16:35:14|log|26527|140265000003328|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:35:14|basehttp|26527|140265000003328|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 92
+WARNING|17/Jul/2021 16:36:01|log|26527|140265000003328|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:36:01|basehttp|26527|140265000003328|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 92
+WARNING|17/Jul/2021 16:36:38|log|26645|140690425132800|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:36:38|basehttp|26645|140690425132800|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 88
+WARNING|17/Jul/2021 16:37:20|log|26701|140402743473920|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:37:20|basehttp|26701|140402743473920|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 99
+WARNING|17/Jul/2021 16:38:01|log|26756|140532792059648|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:38:01|basehttp|26756|140532792059648|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 88
+WARNING|17/Jul/2021 16:40:07|log|26978|140346226296576|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:40:07|basehttp|26978|140346226296576|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 120
+WARNING|17/Jul/2021 16:41:14|log|27043|140321923643136|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:41:14|basehttp|27043|140321923643136|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 98
+WARNING|17/Jul/2021 16:42:51|log|27137|140418645747456|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:42:51|basehttp|27137|140418645747456|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 88
+WARNING|17/Jul/2021 16:45:43|log|27263|140440741848832|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:45:43|basehttp|27263|140440741848832|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 88
+WARNING|17/Jul/2021 16:45:45|log|27263|140440741848832|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:45:45|basehttp|27263|140440741848832|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 88
+WARNING|17/Jul/2021 16:48:58|log|27994|139943676897024|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 16:48:58|basehttp|27994|139943676897024|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 88
+INFO|17/Jul/2021 16:50:27|basehttp|28258|140419594303232|"POST /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 200 139
+ERROR|17/Jul/2021 16:59:15|log|28367|139901858719488|Internal Server Error: /get_country_master/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 361, in get
+    print(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|17/Jul/2021 16:59:15|basehttp|28367|139901858719488|"GET /get_country_master/ HTTP/1.1" 500 19507
+ERROR|17/Jul/2021 17:00:39|log|28700|139676379764480|Internal Server Error: /get_country_master/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 361, in get
+    print(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|17/Jul/2021 17:00:39|basehttp|28700|139676379764480|"GET /get_country_master/ HTTP/1.1" 500 19507
+ERROR|17/Jul/2021 17:00:40|log|28700|139676379764480|Internal Server Error: /get_country_master/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 361, in get
+    print(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|17/Jul/2021 17:00:40|basehttp|28700|139676379764480|"GET /get_country_master/ HTTP/1.1" 500 19507
+ERROR|17/Jul/2021 17:00:44|log|28700|139676379764480|Internal Server Error: /get_country_master/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 361, in get
+    print(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|17/Jul/2021 17:00:44|basehttp|28700|139676379764480|"GET /get_country_master/ HTTP/1.1" 500 19507
+ERROR|17/Jul/2021 17:00:44|log|28700|139676379764480|Internal Server Error: /get_country_master/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 361, in get
+    print(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|17/Jul/2021 17:00:44|basehttp|28700|139676379764480|"GET /get_country_master/ HTTP/1.1" 500 19507
+ERROR|17/Jul/2021 17:01:21|log|28781|140303623681792|Internal Server Error: /get_country_master/
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'country'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/tspl26/D/raju_python/mobility_env/mobilitysqr_live/mobility_apps/master/views/country.py", line 361, in get
+    print(request.GET['country'])
+  File "/media/tspl26/D/raju_python/mobility_env/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'country'
+ERROR|17/Jul/2021 17:01:21|basehttp|28781|140303623681792|"GET /get_country_master/ HTTP/1.1" 500 19507
+INFO|17/Jul/2021 17:01:51|basehttp|28781|140303623681792|"GET /get_country_master/?country=india HTTP/1.1" 200 535
+INFO|17/Jul/2021 17:02:56|basehttp|28912|140668167423744|"GET /get_country_master/?country=india HTTP/1.1" 200 535
+INFO|17/Jul/2021 17:02:57|basehttp|28912|140668167423744|"GET /get_country_master/?country=india HTTP/1.1" 200 535
+INFO|17/Jul/2021 17:03:04|basehttp|28912|140668167423744|"GET /get_country_master/ HTTP/1.1" 200 58715
+INFO|17/Jul/2021 17:03:22|basehttp|28912|140668167423744|"GET /get_country_master/?country=india HTTP/1.1" 200 535
+INFO|17/Jul/2021 17:03:56|basehttp|28912|140668167423744|"GET /get_country_master/?country=india HTTP/1.1" 200 535
+INFO|17/Jul/2021 17:04:04|basehttp|28912|140668167423744|"GET /get_country_master/ HTTP/1.1" 200 58715
+WARNING|17/Jul/2021 17:12:48|log|29523|140342703675136|Method Not Allowed: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:12:48|basehttp|29523|140342703675136|"UPDATE /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 405 43
+WARNING|17/Jul/2021 17:12:57|log|29523|140342703675136|Method Not Allowed: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:12:57|basehttp|29523|140342703675136|"UPDATE /get_post_vaccine_autho_country/ HTTP/1.1" 405 43
+WARNING|17/Jul/2021 17:13:24|log|29523|140342703675136|Method Not Allowed: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:13:24|basehttp|29523|140342703675136|"PATCH /get_post_vaccine_autho_country/ HTTP/1.1" 405 42
+WARNING|17/Jul/2021 17:15:51|log|29523|140342703675136|Method Not Allowed: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:15:51|basehttp|29523|140342703675136|"PUT /get_post_vaccine_autho_country/ HTTP/1.1" 405 40
+WARNING|17/Jul/2021 17:19:58|log|29828|140384730724096|Method Not Allowed: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:19:58|basehttp|29828|140384730724096|"PUT /get_post_vaccine_autho_country/ HTTP/1.1" 405 40
+INFO|17/Jul/2021 17:20:04|basehttp|29828|140384730724096|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 139
+WARNING|17/Jul/2021 17:20:22|log|29828|140384730724096|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:20:22|basehttp|29828|140384730724096|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 99
+WARNING|17/Jul/2021 17:20:39|log|29828|140384730724096|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:20:39|basehttp|29828|140384730724096|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 111
+INFO|17/Jul/2021 17:20:56|basehttp|29828|140384730724096|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 139
+WARNING|17/Jul/2021 17:21:10|log|29828|140384730724096|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 17:21:10|basehttp|29828|140384730724096|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 406 99
+INFO|17/Jul/2021 18:19:46|basehttp|29958|139796104505088|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 353
+WARNING|17/Jul/2021 18:23:32|log|31509|140215232915200|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 18:23:32|basehttp|31509|140215232915200|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 406 88
+WARNING|17/Jul/2021 18:24:05|log|31564|140264078026496|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 18:24:05|basehttp|31564|140264078026496|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 406 88
+WARNING|17/Jul/2021 18:24:51|log|31609|140436566341376|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 18:24:51|basehttp|31609|140436566341376|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 406 115
+INFO|17/Jul/2021 18:26:58|basehttp|31735|140553232574208|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 282
+INFO|17/Jul/2021 18:27:59|basehttp|31828|140161747150592|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 121
+INFO|17/Jul/2021 18:33:04|basehttp|32128|140642734946048|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 1728
+WARNING|17/Jul/2021 18:34:28|log|32215|140374624859904|Not Acceptable: /get_post_vaccine_autho_country/
+WARNING|17/Jul/2021 18:34:28|basehttp|32215|140374624859904|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 406 187
+INFO|17/Jul/2021 18:34:47|basehttp|32244|140635980330752|"GET /get_post_vaccine_autho_country/?id=2 HTTP/1.1" 200 1393
+INFO|17/Jul/2021 18:42:07|basehttp|32595|140408400131840|"GET /get_post_vaccine_autho_country/?id=2&organization=ORG150866 HTTP/1.1" 200 4082
+INFO|17/Jul/2021 18:59:25|basehttp|850|140431340242688|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 137
