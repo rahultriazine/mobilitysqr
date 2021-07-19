@@ -850,6 +850,11 @@ class GetPostVaccineAuthoCountry(APIView):
                         Vaccine_Master_data.save()
                         Vaccine_Master_id = Vaccine_Master_data.id
                     if Vaccine_Master_id is not None:
+                        vacc_data = Vaccine_Autho_Country.objects.filter(organization=organization,vaccine_master=Vaccine_Master_id).last()
+                        if vacc_data is not None:
+                            dict = {"status": False, "message": 'Vaccine name with Vaccine company is already exist.'}
+                            return Response(dict, status=status.HTTP_200_OK)
+
                         for data_ in bulk_data:
                             data['vaccine_master'] = Vaccine_Master_id
                             data['organization'] = organization
@@ -869,6 +874,14 @@ class GetPostVaccineAuthoCountry(APIView):
                         return Response(dict, status=status.HTTP_200_OK)
                 else:
                     Vaccine_Master_data = Vaccine_Master.objects.filter(id=update_id).last()
+                    # Vaccine_Master_data_data = Vaccine_Master.objects.filter(vaccine_name__iexact=vaccine_name_data,
+                    #                                                     vaccine_company_name__iexact=vaccine_company_name_data).last()
+                    # if Vaccine_Master_data_data is not None:
+                    #     if Vaccine_Master_data_data.id == Vaccine_Master_data.id:
+                    #         dict = {"status": False, "message": 'Vaccine name with Vaccine company is already exist.'}
+                    #         return Response(dict, status=status.HTTP_200_OK)
+
+
                     if Vaccine_Master_data is not None:
                         Vaccine_Master_data.vaccine_name = vaccine_name_data
                         Vaccine_Master_data.vaccine_company_name = vaccine_company_name_data
@@ -907,15 +920,19 @@ class GetPostVaccineAuthoCountry(APIView):
         try:
             organization = request.GET.get('organization', None)
             id = request.GET.get('id', None)
-            if organization is not None and organization != '':
-                vaccine_master_id = Vaccine_Autho_Country.objects.filter(organization=organization).values_list('vaccine_master')
-                vacc_data = Vaccine_Master.objects.filter(id__in=vaccine_master_id)
+            if organization is not None and id is not None:
+                data = Vaccine_Autho_Country.objects.filter(vaccine_master_id=id, organization=organization).values_list(
+                    'vaccine_master')
+                vacc_data = Vaccine_Master.objects.filter(id__in=data)
                 serializer = Vaccine_MasterSerializers(vacc_data, many=True)
                 dict = {"status": True, "message": 'data found', "data": serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
-            elif id is not None and id !='':
-                data = Vaccine_Master.objects.filter(id=id).last()
-                serializer = Vaccine_MasterSerializers(data)
+
+            elif organization is not None:
+                vaccine_master_id = Vaccine_Autho_Country.objects.filter(organization=organization).values_list(
+                    'vaccine_master')
+                vacc_data = Vaccine_Master.objects.filter(id__in=vaccine_master_id)
+                serializer = Vaccine_MasterSerializers(vacc_data, many=True)
                 dict = {"status": True, "message": 'data found', "data": serializer.data}
                 return Response(dict, status=status.HTTP_200_OK)
             else:
@@ -932,24 +949,32 @@ class get_vaccine_valid_country(ListCreateAPIView):
     # Get all department
     def get(self, request):
         vaccine_master_id = self.request.GET.get('vaccine_master_id',None)
-        country_id = Vaccine_Autho_Country.objects.filter(vaccine_master_id=vaccine_master_id).values_list("country_id",flat=True)
-        country_list=Country.objects.filter(country_id__in=country_id)
-        serializer = CountrySerializers(country_list,many=True)
+        country_id = Vaccine_Autho_Country.objects.filter(vaccine_master_id=vaccine_master_id, authorization_type=True).values_list("country_id",flat=True)
+        country_list=Country_Master.objects.filter(country_id__in=country_id)
+        serializer = Country_MasterSerializers(country_list,many=True)
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
 
 
 
 class get_travel_request_vaction_check(ListCreateAPIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
     serializer_class = CountrySerializers
 
     # Get all department
     def get(self, request):
         emp_code = self.request.GET.get('emp_code',None)
         emp_obj = Employee.objects.filter(emp_code=emp_code).last()
-        if emp_obj.is_vaccineted=="No" or emp_obj.is_vaccineted is None:
-            dict={"status":True,'status_code':200,"message":"You are not provided vaccination information, please provide vaccination information in your profile."}
+        print('emp_obj',emp_obj)
+        if emp_obj.is_vaccineted == "No":
+            print('NNN')
+            dict = {"status": True, "record": True, "applicable": True, 'status_code': 200,
+                    "message": "You have not provided vaccination information, please provide vaccination information in your profile."}
+            return Response(dict, status=status.HTTP_200_OK)
+        elif emp_obj.is_vaccineted == '' or emp_obj.is_vaccineted is None:
+            print('space')
+            dict = {"status": True, "record": False, "applicable": False, 'status_code': 200,
+                    "message": "You have not provided vaccination information, please provide vaccination information in your profile."}
             return Response(dict, status=status.HTTP_200_OK)
         else:
             # vaccine_master_id = self.request.GET.get('vaccine_master_id',None)
@@ -957,7 +982,7 @@ class get_travel_request_vaction_check(ListCreateAPIView):
             country_id = self.request.GET.get('country_id',None)
             Vaccine_Autho_Obj = Vaccine_Autho_Country.objects.filter(vaccine_master_id=vaccine_master_id,country_id=country_id,authorization_type=True)
             if Vaccine_Autho_Obj and emp_obj.is_vaccineted=="Yes":
-                dict={"status":True,'status_code':200,"message":"Yes"}
+                dict={"status":True,"record":True,"applicable":True,'status_code':200,"message":"Yes"}
                 return Response(dict, status=status.HTTP_200_OK)
             else:
                 if emp_obj.vaccine_master_id:
@@ -965,7 +990,7 @@ class get_travel_request_vaction_check(ListCreateAPIView):
                     try:
                         vaction_obj=Vaccine_Master.objects.get(id=vaccine_master_id)
                         vaccine_name=vaction_obj.vaccine_name
-                        dict={"status":True,'status_code':200,"message":"Ok","display_message":vaccine_name +" is not acceptable in select host country."}
+                        dict={"status":True,'status_code':200,"record":True,"applicable":False,"message":vaccine_name +" is not acceptable in selected host country."}
                         return Response(dict, status=status.HTTP_200_OK)
                     except Exception as e:
                         dict = {'message': str(e),'status_code': 406, 'status': 'False'}
