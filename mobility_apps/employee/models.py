@@ -6,6 +6,7 @@ from mobility_apps.base.models import TimeStampedModel, GeneratedByModel, Status
 from django.utils.translation import ugettext_lazy as _
 from mobility_apps.superadmin.models import *
 from datetime import datetime
+# from mobility_apps.master.models import Vaccine_Master
 
 class Userinfo(TimeStampedModel, GeneratedByModel, Status, ):
     emp_code = models.CharField(unique=True,default="emp001", max_length=100)
@@ -108,6 +109,11 @@ class Employee(TimeStampedModel, GeneratedByModel, Status, ):
     is_visa_denied = models.BooleanField(default=False)
     visa_denied_country = models.CharField(max_length=100, null=True, blank=True)
     date_of_join = models.CharField(max_length=50, null=True, blank=True)
+    
+    vaccine_master_id = models.CharField(max_length=50,null=True,blank=True)
+    is_vaccineted = models.CharField(max_length=10,null=True,blank=True)
+    vaccine_name = models.CharField(max_length=100,null=True,blank=True)
+    vaccineted_date = models.CharField(max_length=100,null=True,blank=True)
 
 
 
