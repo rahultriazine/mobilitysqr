@@ -29,6 +29,8 @@ from mobility_apps.master.serializers.vendor import *
 from mobility_apps.master.models import *
 from api.models import User
 
+from mobility_apps.master.serializers.country import *
+
 class get_delete_update_vendor(RetrieveDestroyAPIView):
     http_method_names = ['get', 'put', 'delete', 'head', 'options', 'trace']
     permission_classes = (IsAuthenticated,)
@@ -922,5 +924,53 @@ class GetPostVaccineAuthoCountry(APIView):
         except Exception as e:
             dict = {'message': str(e),'status_code': 406, 'status': 'False'}
             return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+class get_vaccine_valid_country(ListCreateAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = CountrySerializers
+
+    # Get all department
+    def get(self, request):
+        vaccine_master_id = self.request.GET.get('vaccine_master_id',None)
+        country_id = Vaccine_Autho_Country.objects.filter(vaccine_master_id=vaccine_master_id).values_list("country_id",flat=True)
+        country_list=Country.objects.filter(country_id__in=country_id)
+        serializer = CountrySerializers(country_list,many=True)
+        dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+        return Response(dict, status=status.HTTP_200_OK)
+
+
+
+class get_travel_request_vaction_check(ListCreateAPIView):
+    permission_classes = (IsAuthenticated,)
+    serializer_class = CountrySerializers
+
+    # Get all department
+    def get(self, request):
+        emp_code = self.request.GET.get('emp_code',None)
+        emp_obj = Employee.objects.filter(emp_code=emp_code).last()
+        if emp_obj.is_vaccineted=="No" or emp_obj.is_vaccineted is None:
+            dict={"status":True,'status_code':200,"message":"You are not provided vaccination information, please provide vaccination information in your profile."}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            # vaccine_master_id = self.request.GET.get('vaccine_master_id',None)
+            vaccine_master_id = emp_obj.vaccine_master_id
+            country_id = self.request.GET.get('country_id',None)
+            Vaccine_Autho_Obj = Vaccine_Autho_Country.objects.filter(vaccine_master_id=vaccine_master_id,country_id=country_id,authorization_type=True)
+            if Vaccine_Autho_Obj and emp_obj.is_vaccineted=="Yes":
+                dict={"status":True,'status_code':200,"message":"Yes"}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                if emp_obj.vaccine_master_id:
+                    vaccine_master_id=emp_obj.vaccine_master_id
+                    try:
+                        vaction_obj=Vaccine_Master.objects.get(id=vaccine_master_id)
+                        vaccine_name=vaction_obj.vaccine_name
+                        dict={"status":True,'status_code':200,"message":"Ok","display_message":vaccine_name +" is not acceptable in select host country."}
+                        return Response(dict, status=status.HTTP_200_OK)
+                    except Exception as e:
+                        dict = {'message': str(e),'status_code': 406, 'status': 'False'}
+                        return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
 
 
