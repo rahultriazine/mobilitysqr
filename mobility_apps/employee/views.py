@@ -2119,7 +2119,7 @@ class getEmployeePersonalInfo(APIView):
             i=0
             for datas in emp_serializers.data:
                 emp_serializers.data[i]['supervisor_name']=self.employee_name(emp_code=datas['supervisor'])
-                #======ajay===========
+                #======ajay============
                 emp_obj=Employee.objects.filter(emp_code=emp_code).last()
                 if emp_obj.vaccine_master_id:
                     vaccine_master_id=emp_obj.vaccine_master_id
