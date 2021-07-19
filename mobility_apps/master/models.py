@@ -1855,7 +1855,6 @@ class vendor_Service_List_status(TimeStampedModel, GeneratedByModel, Status):
     column11 = models.CharField(max_length=100, null=True, blank=True)
     column12 = models.CharField(max_length=100, null=True, blank=True)
 
-
 class Vaccine_Master(TimeStampedModel, GeneratedByModel, Status):
     vaccine_name = models.CharField(max_length=200,null=True, blank=True)
     vaccine_company_name = models.CharField(max_length=200, null=True,blank=True)
