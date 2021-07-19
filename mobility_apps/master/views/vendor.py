@@ -29,6 +29,8 @@ from mobility_apps.master.serializers.vendor import *
 from mobility_apps.master.models import *
 from api.models import User
 
+from mobility_apps.master.serializers.country import *
+
 class get_delete_update_vendor(RetrieveDestroyAPIView):
     http_method_names = ['get', 'put', 'delete', 'head', 'options', 'trace']
     permission_classes = (IsAuthenticated,)
@@ -923,4 +925,15 @@ class GetPostVaccineAuthoCountry(APIView):
             dict = {'message': str(e),'status_code': 406, 'status': 'False'}
             return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
 
+class get_vaccine_valid_country(ListCreateAPIView):
+    # permission_classes = (IsAuthenticated,)
+    serializer_class = vendor_Service_List_statusSerializers
 
+    # Get all department
+    def get(self, request):
+        vaccine_master_id = self.request.GET.get('vaccine_master_id',None)
+        country_id = Vaccine_Autho_Country.objects.filter(vaccine_master_id=vaccine_master_id).values_list("country_id",flat=True)
+        country_list=Country.objects.filter(country_id__in=country_id)
+        serializer = CountrySerializers(country_list,many=True)
+        dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+        return Response(dict, status=status.HTTP_200_OK)
