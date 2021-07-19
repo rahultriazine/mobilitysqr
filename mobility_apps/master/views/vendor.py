@@ -858,12 +858,13 @@ class GetPostVaccineAuthoCountry(APIView):
                             serializer = Vaccine_Autho_CountrySerializers(data=data)
                             if serializer.is_valid():
                                 serializer.save()
-                                dict = {"status": True,  "message": 'Successfully inserted', "country_id": data['country_id']}
-                                all_data.append(dict)
-                            else:
-                                dict = {"status": False, "message": 'Failed to insert data', "country_id": data['country_id']}
-                                all_data.append(dict)
-                        return Response(all_data, status=status.HTTP_200_OK)
+                            #     dict = {"status": True,  "message": 'Vaccine details has been added successfully.', "country_id": data['country_id']}
+                            #     all_data.append(dict)
+                            # else:
+                            #     dict = {"status": False, "message": 'Failed to insert data', "country_id": data['country_id']}
+                            #     all_data.append(dict)
+                        dict = {"status": True, "message": 'Vaccine details has been added successfully.'}
+                        return Response(dict, status=status.HTTP_200_OK)
                 else:
                     Vaccine_Master_data = Vaccine_Master.objects.filter(id=update_id).last()
                     if Vaccine_Master_data is not None:
@@ -882,14 +883,15 @@ class GetPostVaccineAuthoCountry(APIView):
                                 serializer = Vaccine_Autho_CountrySerializers(instance,data=data,partial=True)
                                 if serializer.is_valid():
                                     serializer.save()
-                                    dict = {"status": True, "message": 'Successfully Updated',
-                                            "country_id": data['country_id']}
-                                    all_data.append(dict)
-                                else:
-                                    dict = {"status": False, "message": 'Failed to update',
-                                            "country_id": data['country_id']}
-                                    all_data.append(dict)
-                            return Response(all_data, status=status.HTTP_200_OK)
+                                #     dict = {"status": True, "message": 'Successfully Updated',
+                                #             "country_id": data['country_id']}
+                                #     all_data.append(dict)
+                                # else:
+                                #     dict = {"status": False, "message": 'Failed to update',
+                                #             "country_id": data['country_id']}
+                                #     all_data.append(dict)
+                            dict = {"status": True, "message": 'Vaccine details has been updated successfully.'}
+                            return Response(dict, status=status.HTTP_200_OK)
 
             else:
                 dict = {"status": False, "message": 'vaccine_name and vaccine_company_name is required'}
