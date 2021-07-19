@@ -215,3 +215,7 @@ WARNING|19/Jul/2021 13:59:12|basehttp|13232|12668|"GET /getemployee_personal_inf
 WARNING|19/Jul/2021 14:01:48|log|13232|11532|Unauthorized: /getemployee_personal_info/
 WARNING|19/Jul/2021 14:01:48|basehttp|13232|11532|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 401 58
 INFO|19/Jul/2021 14:02:22|basehttp|1328|11712|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1625
+INFO|19/Jul/2021 16:02:23|basehttp|12732|14976|"GET /vaccine_valid_country_wise/?vaccine_master_id=10 HTTP/1.1" 200 36870
+INFO|19/Jul/2021 16:02:42|basehttp|12732|15320|"GET /vaccine_valid_country_wise/?vaccine_master_id=1 HTTP/1.1" 200 921
+INFO|19/Jul/2021 16:10:13|basehttp|12788|11268|"GET /vaccine_valid_country_wise/?vaccine_master_id=1 HTTP/1.1" 200 921
+INFO|19/Jul/2021 16:10:28|basehttp|12788|1932|"GET /vaccine_valid_country_wise/?vaccine_master_id=13 HTTP/1.1" 200 36870
