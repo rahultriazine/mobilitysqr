@@ -66,6 +66,8 @@ class Vaccine_MasterSerializers(serializers.ModelSerializer):
 
 
     def get_vaccine_contry_detail(self, instance):
+        # print('instance',instance)
+        # organization =self.context['request'].organization
         data = Vaccine_Autho_Country.objects.filter(vaccine_master=instance.id)
         return Vaccine_Autho_CountryGETSerializers(data, many=True).data
 
