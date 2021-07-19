@@ -815,3 +815,110 @@ class get_post_vendor_Service_List_status(ListCreateAPIView):
         else:
             dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
         return Response(dict, status=status.HTTP_200_OK)
+
+
+
+class GetPostVaccineAuthoCountry(APIView):
+    # permission_classes = (IsAuthenticated,)
+    serializer_class = Vaccine_Autho_CountrySerializers
+
+    def post(self, request):
+        try:
+            vaccine_name = request.data.get('vaccine_name' , None)
+            vaccine_company_name = request.data.get('vaccine_company_name', None)
+            organization = request.data.get('organization', None)
+            update_id = request.data.get('update_id', None)
+            # country_code = request.data.get('country_code', None)
+            # authorization_type = request.data.get('authorization_type', None)
+            # access_type = request.data.get('access_type', None)
+            all_data = []
+            data={}
+            bulk_data = request.data.get('bulk_data', None)
+            if vaccine_name is not None and vaccine_name !='' and vaccine_company_name is not None and vaccine_company_name !='':
+                vaccine_name_data = vaccine_name
+                vaccine_company_name_data = vaccine_company_name
+                if update_id is None or update_id == '':
+                    Vaccine_Master_data = Vaccine_Master.objects.filter(vaccine_name__iexact=vaccine_name_data,vaccine_company_name__iexact=vaccine_company_name_data).last()
+                    if Vaccine_Master_data is not None:
+                        Vaccine_Master_id = Vaccine_Master_data.id
+                    else:
+                        Vaccine_Master_data = Vaccine_Master()
+                        Vaccine_Master_data.vaccine_name = vaccine_name_data
+                        Vaccine_Master_data.vaccine_company_name =vaccine_company_name_data
+                        Vaccine_Master_data.save()
+                        Vaccine_Master_id = Vaccine_Master_data.id
+                    if Vaccine_Master_id is not None:
+                        for data_ in bulk_data:
+                            data['vaccine_master'] = Vaccine_Master_id
+                            data['organization'] = organization
+                            data['country_id'] = data_['country_id']
+                            data['authorization_type'] = data_['authorization_type']
+                            data['access_type'] = data_['access_type']
+
+                            serializer = Vaccine_Autho_CountrySerializers(data=data)
+                            if serializer.is_valid():
+                                serializer.save()
+                                dict = {"status": True,  "message": 'Successfully inserted', "country_id": data['country_id']}
+                                all_data.append(dict)
+                            else:
+                                dict = {"status": False, "message": 'Failed to insert data', "country_id": data['country_id']}
+                                all_data.append(dict)
+                        return Response(all_data, status=status.HTTP_200_OK)
+                else:
+                    Vaccine_Master_data = Vaccine_Master.objects.filter(id=update_id).last()
+                    if Vaccine_Master_data is not None:
+                        Vaccine_Master_data.vaccine_name = vaccine_name_data
+                        Vaccine_Master_data.vaccine_company_name = vaccine_company_name_data
+                        Vaccine_Master_data.save()
+                        Vaccine_Master_id = Vaccine_Master_data.id
+                        if Vaccine_Master_id is not None:
+                            for data_ in bulk_data:
+                                data['vaccine_master'] = Vaccine_Master_id
+                                data['organization'] = organization
+                                data['country_id'] = data_['country_id']
+                                data['authorization_type'] = data_['authorization_type']
+                                data['access_type'] = data_['access_type']
+                                instance = Vaccine_Autho_Country.objects.filter(vaccine_master_id=Vaccine_Master_id,country_id=data_['country_id']).last()
+                                serializer = Vaccine_Autho_CountrySerializers(instance,data=data,partial=True)
+                                if serializer.is_valid():
+                                    serializer.save()
+                                    dict = {"status": True, "message": 'Successfully Updated',
+                                            "country_id": data['country_id']}
+                                    all_data.append(dict)
+                                else:
+                                    dict = {"status": False, "message": 'Failed to update',
+                                            "country_id": data['country_id']}
+                                    all_data.append(dict)
+                            return Response(all_data, status=status.HTTP_200_OK)
+
+            else:
+                dict = {"status": False, "message": 'vaccine_name and vaccine_company_name is required'}
+            return Response(dict, status=status.HTTP_200_OK)
+        except Exception as e:
+            dict = {'message': str(e),'status_code': 406, 'status': 'False'}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
+    def get(self, request):
+        try:
+            organization = request.GET.get('organization', None)
+            id = request.GET.get('id', None)
+            if organization is not None and organization != '':
+                vaccine_master_id = Vaccine_Autho_Country.objects.filter(organization=organization).values_list('vaccine_master')
+                vacc_data = Vaccine_Master.objects.filter(id__in=vaccine_master_id)
+                serializer = Vaccine_MasterSerializers(vacc_data, many=True)
+                dict = {"status": True, "message": 'data found', "data": serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            elif id is not None and id !='':
+                data = Vaccine_Master.objects.filter(id=id).last()
+                serializer = Vaccine_MasterSerializers(data)
+                dict = {"status": True, "message": 'data found', "data": serializer.data}
+                return Response(dict, status=status.HTTP_200_OK)
+            else:
+                dict = {"status": False, "message": 'organization or id is required'}
+                return Response(dict, status=status.HTTP_200_OK)
+        except Exception as e:
+            dict = {'message': str(e),'status_code': 406, 'status': 'False'}
+            return Response(dict, status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
