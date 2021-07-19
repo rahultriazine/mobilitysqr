@@ -51,3 +51,35 @@ class vendor_Service_List_statusSerializers(serializers.ModelSerializer):
     class Meta:
         model =  vendor_Service_List_status
         fields = '__all__'
+
+
+class Vaccine_Autho_CountrySerializers(serializers.ModelSerializer):
+    class Meta:
+        model =  Vaccine_Autho_Country
+        fields = '__all__'
+
+class Vaccine_MasterSerializers(serializers.ModelSerializer):
+    vaccine_contry_detail = serializers.SerializerMethodField()
+    class Meta:
+        model = Vaccine_Master
+        fields = ['id','vaccine_name','vaccine_company_name','vaccine_contry_detail']
+
+
+    def get_vaccine_contry_detail(self, instance):
+        data = Vaccine_Autho_Country.objects.filter(vaccine_master=instance.id)
+        return Vaccine_Autho_CountryGETSerializers(data, many=True).data
+
+
+class Vaccine_Autho_CountryGETSerializers(serializers.ModelSerializer):
+    country_name = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Vaccine_Autho_Country
+        fields = ['id','date_created','date_modified', 'organization', 'authorization_type', 'access_type', 'vaccine_master','country_id','country_name']
+
+    def get_country_name(self, instance):
+        data = Country_Master.objects.filter(country_id=instance.country_id).last()
+        if data is not None:
+            return data.name
+        else:
+            return None
