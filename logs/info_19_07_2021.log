@@ -1,1 +1,217 @@
-INFO|19/Jul/2021 12:42:42|basehttp|18153|139767107827456|"POST /get_post_vaccine_autho_country/ HTTP/1.1" 200 72
+WARNING|19/Jul/2021 13:10:58|log|9808|14820|Unauthorized: /getemployee_personal_info/
+WARNING|19/Jul/2021 13:10:58|basehttp|9808|14820|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 401 183
+ERROR|19/Jul/2021 13:11:15|log|9808|2004|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2113, in get
+    for employees in emp_serializer.data:
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\serializers.py", line 685, in to_representation
+    return [
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\query.py", line 268, in __iter__
+    self._fetch_all()
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\query.py", line 63, in __iter__
+    for row in compiler.results_iter(results):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\sql\compiler.py", line 1462, in cursor_iter
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\sql\compiler.py", line 1462, in <lambda>
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\utils.py", line 96, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\backends\postgresql\utils.py", line 6, in utc_tzinfo_factory
+    raise AssertionError("database connection isn't set to UTC")
+AssertionError: database connection isn't set to UTC
+ERROR|19/Jul/2021 13:11:15|basehttp|9808|2004|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 20636
+INFO|19/Jul/2021 13:12:04|basehttp|9312|13600|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1629
+INFO|19/Jul/2021 13:13:27|basehttp|9516|804|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1662
+WARNING|19/Jul/2021 13:14:46|log|12936|6084|Unauthorized: /getemployee_personal_info/
+WARNING|19/Jul/2021 13:14:46|basehttp|12936|6084|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 401 58
+INFO|19/Jul/2021 13:15:09|basehttp|3076|4440|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1629
+ERROR|19/Jul/2021 13:26:57|log|10576|7152|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2126, in get
+    emp_serializers.data[i]['ajay=====']=vaction_obj.vaccine_name
+AttributeError: 'NoneType' object has no attribute 'vaccine_name'
+ERROR|19/Jul/2021 13:26:57|basehttp|10576|7152|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 18768
+ERROR|19/Jul/2021 13:28:00|log|10576|8484|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2126, in get
+    emp_serializers.data[i]['ajay=====']=vaction_obj.vaccine_name
+AttributeError: 'NoneType' object has no attribute 'vaccine_name'
+ERROR|19/Jul/2021 13:28:00|basehttp|10576|8484|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 18769
+ERROR|19/Jul/2021 13:28:41|log|8792|8112|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2127, in get
+    emp_serializers.data[i]['ajay=====']=vaction_obj.vaccine_name
+AttributeError: 'NoneType' object has no attribute 'vaccine_name'
+ERROR|19/Jul/2021 13:28:41|basehttp|8792|8112|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 18769
+ERROR|19/Jul/2021 13:29:14|log|10472|13892|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2127, in get
+    emp_serializers.data[i]['ajay=====']=vaction_obj.vaccine_name
+AttributeError: 'NoneType' object has no attribute 'vaccine_name'
+ERROR|19/Jul/2021 13:29:14|basehttp|10472|13892|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 18769
+INFO|19/Jul/2021 13:30:04|basehttp|11580|9932|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1648
+ERROR|19/Jul/2021 13:32:04|log|10540|11528|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2129, in get
+    emp_serializers.data[i]['ajay=====']=vaction_obj.vaccine_name
+AttributeError: 'NoneType' object has no attribute 'vaccine_name'
+ERROR|19/Jul/2021 13:32:05|basehttp|10540|11528|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 18769
+INFO|19/Jul/2021 13:35:51|basehttp|15376|6400|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1629
+ERROR|19/Jul/2021 13:36:41|log|16040|15220|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2131, in get
+    emp_serializers.data[i]['ajay=====']=vaction_obj.vaccine_name
+UnboundLocalError: local variable 'vaction_obj' referenced before assignment
+ERROR|19/Jul/2021 13:36:41|basehttp|16040|15220|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 18791
+INFO|19/Jul/2021 13:37:10|basehttp|2932|14492|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1644
+INFO|19/Jul/2021 13:46:32|basehttp|6360|5000|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1627
+INFO|19/Jul/2021 13:48:14|basehttp|6360|308|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1627
+INFO|19/Jul/2021 13:49:39|basehttp|6360|8132|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1630
+ERROR|19/Jul/2021 13:50:11|log|6360|3708|Internal Server Error: /getemployee_personal_info/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\employee\views.py", line 2126, in get
+    emp_serializers.data[i]['vaccine_name']=vaction_obj.vaccine_name
+AttributeError: 'NoneType' object has no attribute 'vaccine_name'
+ERROR|19/Jul/2021 13:50:11|basehttp|6360|3708|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 500 18772
+INFO|19/Jul/2021 13:54:09|basehttp|13864|14896|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1627
+INFO|19/Jul/2021 13:57:13|basehttp|13864|13796|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1630
+INFO|19/Jul/2021 13:57:38|basehttp|13864|4148|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1625
+WARNING|19/Jul/2021 13:59:12|log|13232|12668|Unauthorized: /getemployee_personal_info/
+WARNING|19/Jul/2021 13:59:12|basehttp|13232|12668|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 401 58
+WARNING|19/Jul/2021 14:01:48|log|13232|11532|Unauthorized: /getemployee_personal_info/
+WARNING|19/Jul/2021 14:01:48|basehttp|13232|11532|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 401 58
+INFO|19/Jul/2021 14:02:22|basehttp|1328|11712|"GET /getemployee_personal_info/?employee=div944 HTTP/1.1" 200 1625
