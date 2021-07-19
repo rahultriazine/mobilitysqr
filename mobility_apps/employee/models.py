@@ -112,7 +112,7 @@ class Employee(TimeStampedModel, GeneratedByModel, Status, ):
     
     vaccine_master_id = models.CharField(max_length=50,null=True,blank=True)
     is_vaccineted = models.CharField(max_length=10,null=True,blank=True)
-    vaccine_name = models.CharField(max_length=100,null=True,blank=True)
+    # vaccine_name = models.CharField(max_length=100,null=True,blank=True)
     vaccineted_date = models.CharField(max_length=100,null=True,blank=True)
 
 
