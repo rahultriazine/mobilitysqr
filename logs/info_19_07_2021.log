@@ -317,3 +317,10 @@ INFO|19/Jul/2021 18:18:58|basehttp|9752|16264|"GET /get_travel_request_vaction_c
 WARNING|19/Jul/2021 18:27:45|log|10652|15640|Unauthorized: /get_travel_request_vaccine_check/
 WARNING|19/Jul/2021 18:27:45|basehttp|10652|15640|"GET /get_travel_request_vaccine_check/?emp_code=div944&country_id=216 HTTP/1.1" 401 58
 INFO|19/Jul/2021 18:28:09|basehttp|5904|5296|"GET /get_travel_request_vaccine_check/?emp_code=div944&country_id=216 HTTP/1.1" 200 49
+INFO|19/Jul/2021 20:18:50|basehttp|9758|139865857935104|"GET /get_post_vaccine_autho_country/?id=16 HTTP/1.1" 200 58908
+INFO|19/Jul/2021 21:46:16|basehttp|13571|140379582523136|"GET /get_post_vaccine_autho_country/?id=16 HTTP/1.1" 200 58908
+INFO|19/Jul/2021 21:47:23|basehttp|13745|140447941293824|"GET /get_post_vaccine_autho_country/?id=16 HTTP/1.1" 200 58908
+WARNING|19/Jul/2021 21:55:57|log|13966|140123250456320|Unauthorized: /get_travel_request_vaccine_check/
+WARNING|19/Jul/2021 21:55:57|basehttp|13966|140123250456320|"GET /get_travel_request_vaccine_check/?emp_code=div944&country_id=216 HTTP/1.1" 401 58
+INFO|19/Jul/2021 21:56:52|basehttp|14254|140243710895872|"GET /get_travel_request_vaccine_check/?emp_code=div944&country_id=216 HTTP/1.1" 200 116
+INFO|19/Jul/2021 22:18:10|basehttp|15438|140638751307520|"GET /get_post_vaccine_autho_country/?id=16 HTTP/1.1" 200 58907

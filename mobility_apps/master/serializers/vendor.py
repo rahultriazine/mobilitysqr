@@ -69,6 +69,11 @@ class Vaccine_MasterSerializers(serializers.ModelSerializer):
         data = Vaccine_Autho_Country.objects.filter(vaccine_master=instance.id)
         return Vaccine_Autho_CountryGETSerializers(data, many=True).data
 
+    def to_representation(self, instance):
+        response = super().to_representation(instance)
+        response["vaccine_contry_detail"] = sorted(response["vaccine_contry_detail"], key=lambda x: x["country_name"])
+        return response
+
 
 class Vaccine_Autho_CountryGETSerializers(serializers.ModelSerializer):
     country_name = serializers.SerializerMethodField()
