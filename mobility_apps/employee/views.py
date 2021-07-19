@@ -2101,7 +2101,7 @@ class calender_activity(APIView):
 #################################################
 " get employee information "
 #################################################
-
+from mobility_apps.master.models import Vaccine_Master
 class getEmployeePersonalInfo(APIView):
     serializer_class = EmployeeSerializers
     permission_classes = (IsAuthenticated,)
@@ -2119,6 +2119,19 @@ class getEmployeePersonalInfo(APIView):
             i=0
             for datas in emp_serializers.data:
                 emp_serializers.data[i]['supervisor_name']=self.employee_name(emp_code=datas['supervisor'])
+                #======ajay===========
+                emp_obj=Employee.objects.filter(emp_code=emp_code).last()
+                if emp_obj.vaccine_master_id:
+                    vaccine_master_id=emp_obj.vaccine_master_id
+                    try:
+                        vaction_obj=Vaccine_Master.objects.get(id=vaccine_master_id)
+                        emp_serializers.data[i]['vaccine_name']=vaction_obj.vaccine_name
+                    except:
+                        emp_serializers.data[i]['vaccine_name']=""
+                else:
+                    emp_serializers.data[i]['vaccine_name']=""
+                #======ajay===========
+
                 i=i+1
         if emp_serializers.data:
             dict = {'massage': 'data found', 'status': True, 'data':emp_serializers.data}
