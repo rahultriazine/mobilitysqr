@@ -4,4 +4,8 @@
 *.cpython-38.pyc
 /views.cpython-38.pyc
 /.gitignore
+<<<<<<< HEAD
+/models.cpython-38.pyc
+=======
 *.cpython-37.pyc
+>>>>>>> mobilitysqr_staging
