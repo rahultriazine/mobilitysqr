@@ -219,3 +219,101 @@ INFO|19/Jul/2021 16:02:23|basehttp|12732|14976|"GET /vaccine_valid_country_wise/
 INFO|19/Jul/2021 16:02:42|basehttp|12732|15320|"GET /vaccine_valid_country_wise/?vaccine_master_id=1 HTTP/1.1" 200 921
 INFO|19/Jul/2021 16:10:13|basehttp|12788|11268|"GET /vaccine_valid_country_wise/?vaccine_master_id=1 HTTP/1.1" 200 921
 INFO|19/Jul/2021 16:10:28|basehttp|12788|1932|"GET /vaccine_valid_country_wise/?vaccine_master_id=13 HTTP/1.1" 200 36870
+ERROR|19/Jul/2021 17:01:23|log|7816|12820|Internal Server Error: /get_travel_request_vaction_check/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\master\views\vendor.py", line 951, in get
+    if emp_obj.is_vaccineted==No or emp_obj.is_vaccineted__Null==True:
+NameError: name 'No' is not defined
+ERROR|19/Jul/2021 17:01:23|basehttp|7816|12820|"GET /get_travel_request_vaction_check/?emp_code=div944 HTTP/1.1" 500 18725
+ERROR|19/Jul/2021 17:01:54|log|12508|14656|Internal Server Error: /get_travel_request_vaction_check/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\master\views\vendor.py", line 951, in get
+    if emp_obj.is_vaccineted=="No" or emp_obj.is_vaccineted__Null==True:
+AttributeError: 'Employee' object has no attribute 'is_vaccineted__Null'
+ERROR|19/Jul/2021 17:01:54|basehttp|12508|14656|"GET /get_travel_request_vaction_check/?emp_code=div944 HTTP/1.1" 500 18800
+ERROR|19/Jul/2021 17:02:17|log|11248|11340|Internal Server Error: /get_travel_request_vaction_check/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\master\views\vendor.py", line 951, in get
+    if emp_obj.is_vaccineted=="No" or emp_obj.is_vaccineted_Null==True:
+AttributeError: 'Employee' object has no attribute 'is_vaccineted_Null'
+ERROR|19/Jul/2021 17:02:17|basehttp|11248|11340|"GET /get_travel_request_vaction_check/?emp_code=div944 HTTP/1.1" 500 18798
+ERROR|19/Jul/2021 17:02:40|log|9176|2948|Internal Server Error: /get_travel_request_vaction_check/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 409, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+ERROR|19/Jul/2021 17:02:40|basehttp|9176|2948|"GET /get_travel_request_vaction_check/?emp_code=div944 HTTP/1.1" 500 85434
+INFO|19/Jul/2021 17:03:57|basehttp|16344|9032|"GET /get_travel_request_vaction_check/?emp_code=div944 HTTP/1.1" 200 108
+INFO|19/Jul/2021 17:06:13|basehttp|11952|1532|"GET /get_travel_request_vaction_check/?emp_code=div944 HTTP/1.1" 200 147
+INFO|19/Jul/2021 17:40:20|basehttp|8612|6924|"GET /get_travel_request_vaction_check/?emp_code=div944&vaccine_master_id=1&country_id12 HTTP/1.1" 200 116
+INFO|19/Jul/2021 17:43:20|basehttp|8612|13936|"GET /get_travel_request_vaction_check/?emp_code=div944&vaccine_master_id=1&country_id12 HTTP/1.1" 200 116
+INFO|19/Jul/2021 17:45:06|basehttp|15516|15612|"GET /get_travel_request_vaction_check/?emp_code=div944&vaccine_master_id=1&country_id12 HTTP/1.1" 200 116
+INFO|19/Jul/2021 17:47:24|basehttp|15516|3952|"GET /get_travel_request_vaction_check/?emp_code=div944&vaccine_master_id=1&country_id12 HTTP/1.1" 200 147
+INFO|19/Jul/2021 17:50:41|basehttp|6924|15536|"GET /get_travel_request_vaction_check/?emp_code=div944&vaccine_master_id=1&country_id12 HTTP/1.1" 200 116
+INFO|19/Jul/2021 17:52:20|basehttp|11392|4604|"GET /get_travel_request_vaction_check/?emp_code=div944&vaccine_master_id=1&country_id=12 HTTP/1.1" 200 49
+INFO|19/Jul/2021 18:16:32|basehttp|9752|12432|"GET /get_travel_request_vaction_check/?emp_code=div944&vaccine_master_id=1&country_id=12 HTTP/1.1" 200 116
+INFO|19/Jul/2021 18:16:51|basehttp|9752|10068|"GET /get_travel_request_vaction_check/?emp_code=div944&country_id=12 HTTP/1.1" 200 116
+INFO|19/Jul/2021 18:18:58|basehttp|9752|16264|"GET /get_travel_request_vaction_check/?emp_code=div944&country_id=216 HTTP/1.1" 200 49
+WARNING|19/Jul/2021 18:27:45|log|10652|15640|Unauthorized: /get_travel_request_vaccine_check/
+WARNING|19/Jul/2021 18:27:45|basehttp|10652|15640|"GET /get_travel_request_vaccine_check/?emp_code=div944&country_id=216 HTTP/1.1" 401 58
+INFO|19/Jul/2021 18:28:09|basehttp|5904|5296|"GET /get_travel_request_vaccine_check/?emp_code=div944&country_id=216 HTTP/1.1" 200 49
