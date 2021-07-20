@@ -188,6 +188,7 @@ urlpatterns = [
         path('get_post_vaccine_autho_country/', GetPostVaccineAuthoCountry.as_view(), name='get_post_vaccine_autho_country'),
         path('vaccine_valid_country_wise/', get_vaccine_valid_country.as_view(), name='vaccine_valid_country_in_country'),
         path('get_travel_request_vaccine_check/', get_travel_request_vaction_check.as_view(), name='get_travel_request_vaction_check'),
+        path('get_post_vendor_authorized_service_list/', get_post_vendor_authorized_service_list.as_view(), name='get_post_vendor_authorized_service_list'),
 
 
 

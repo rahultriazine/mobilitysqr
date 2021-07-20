@@ -1879,3 +1879,21 @@ class Vaccine_Autho_Country(TimeStampedModel, GeneratedByModel, Status):
         verbose_name = _('Vaccine Autho Country')
         verbose_name_plural = _('Vaccine Autho Country')
 
+
+class Vendor_Authorized_Service_List(TimeStampedModel, GeneratedByModel, Status):
+    travel_req = models.ForeignKey(Travel_Request, to_field="travel_req_id", null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations, to_field='org_id', null=True, blank=True, on_delete=models.CASCADE)
+    emp_code = models.ForeignKey(Employee, to_field="emp_code", null=True, blank=True, on_delete=models.CASCADE)
+    vendor = models.ForeignKey(Vendor,to_field="vendor_id",null=True, blank=True,on_delete=models.CASCADE)
+    services = models.CharField(max_length=200,null=True, blank=True)
+    authorization = models.BooleanField(default=False)
+    home_completed = models.BooleanField(default=False)
+    host_completed = models.BooleanField(default=False)
+    completion_date = models.CharField(max_length=100, null=True, blank=True)
+    home_tax_year = models.CharField(max_length=100, null=True, blank=True)
+    host_tax_year = models.CharField(max_length=100, null=True, blank=True)
+    validity = models.CharField(max_length=100, null=True, blank=True)
+    class Meta:
+        managed = True
+        verbose_name = _('Vendor Authorized Service List')
+        verbose_name_plural = _('Vendor Authorized Service List')

@@ -90,3 +90,7 @@ class Vaccine_Autho_CountryGETSerializers(serializers.ModelSerializer):
             return data.name
         else:
             return None
+class Vendor_Authorized_Service_ListSerializers(serializers.ModelSerializer):
+    class Meta:
+        model =  Vendor_Authorized_Service_List
+        fields = '__all__'
