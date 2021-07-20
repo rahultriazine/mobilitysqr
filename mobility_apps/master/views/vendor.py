@@ -955,7 +955,32 @@ class get_vaccine_valid_country(ListCreateAPIView):
         dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
         return Response(dict, status=status.HTTP_200_OK)
 
+class get_post_vendor_authorized_service_list(ListCreateAPIView):
+    #permission_classes = (IsAuthenticated,)
+    serializer_class = Vendor_Authorized_Service_ListSerializers
 
+    # Get all department
+    def get(self, request):
+        org_id = self.request.GET.get('org_id',None)
+        if org_id:
+            vendor_authorized = Vendor_Authorized_Service_List.objects.filter(organization=org_id).order_by('id')
+            serializer = Vendor_Authorized_Service_ListSerializers(vendor_authorized,many=True)
+            dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            vendor_authorized = Vendor_Authorized_Service_List.objects.filter(organization=org_id).order_by('id')
+            serializer = Vendor_Authorized_Service_ListSerializers(vendor_authorized,many=True)
+            dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        serializer = Vendor_Authorized_Service_ListSerializers(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            dict = {"status": True,  "message": 'Successfully inserted', "data": serializer.data}
+        else:
+            dict = {"status": False, "message": 'Failed to insert data', "data": serializer.errors}
+        return Response(dict, status=status.HTTP_200_OK)
 
 class get_travel_request_vaction_check(ListCreateAPIView):
     # permission_classes = (IsAuthenticated,)
