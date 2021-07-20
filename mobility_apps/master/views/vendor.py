@@ -965,14 +965,11 @@ class get_travel_request_vaction_check(ListCreateAPIView):
     def get(self, request):
         emp_code = self.request.GET.get('emp_code',None)
         emp_obj = Employee.objects.filter(emp_code=emp_code).last()
-        print('emp_obj',emp_obj)
         if emp_obj.is_vaccineted == "No":
-            print('NNN')
             dict = {"status": True, "record": True, "applicable": True, 'status_code': 200,
                     "message": "You have not provided vaccination information, please provide vaccination information in your profile."}
             return Response(dict, status=status.HTTP_200_OK)
         elif emp_obj.is_vaccineted == '' or emp_obj.is_vaccineted is None:
-            print('space')
             dict = {"status": True, "record": False, "applicable": False, 'status_code': 200,
                     "message": "You have not provided vaccination information, please provide vaccination information in your profile."}
             return Response(dict, status=status.HTTP_200_OK)
