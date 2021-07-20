@@ -116,3 +116,7 @@ WARNING|20/Jul/2021 03:21:33|log|30947|140703840188160|Not Acceptable: /get_post
 WARNING|20/Jul/2021 03:21:33|basehttp|30947|140703840188160|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 58
 WARNING|20/Jul/2021 03:21:34|log|30947|140703840188160|Not Acceptable: /get_post_vaccine_autho_country/
 WARNING|20/Jul/2021 03:21:34|basehttp|30947|140703840188160|"GET /get_post_vaccine_autho_country/?organization=ORG150866 HTTP/1.1" 406 58
+INFO|20/Jul/2021 15:16:29|basehttp|7644|1952|"GET /get_post_vendor_authorized_service_list/ HTTP/1.1" 200 63
+INFO|20/Jul/2021 15:16:40|basehttp|7644|8908|"POST /get_post_vendor_authorized_service_list/ HTTP/1.1" 200 447
+INFO|20/Jul/2021 15:16:49|basehttp|7644|1116|"GET /get_post_vendor_authorized_service_list/ HTTP/1.1" 200 453
+INFO|20/Jul/2021 15:18:51|basehttp|13016|7108|"GET /get_post_vendor_authorized_service_list/ HTTP/1.1" 200 453
