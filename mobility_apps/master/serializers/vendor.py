@@ -26,26 +26,26 @@ class Vendor_MasterSerializers(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class Vendor_IncomeSerializers(serializers.ModelSerializer):
-    class Meta:
-        model =  Vendor_Income
-        fields = '__all__'
+# class Vendor_IncomeSerializers(serializers.ModelSerializer):
+#     class Meta:
+#         model =  Vendor_Income
+#         fields = '__all__'
 
-class Capital_Gains_IncomeSerializers(serializers.ModelSerializer):
-    class Meta:
-        model =  Capital_Gains_Income
-        fields = '__all__'
+# class Capital_Gains_IncomeSerializers(serializers.ModelSerializer):
+#     class Meta:
+#         model =  Capital_Gains_Income
+#         fields = '__all__'
 
-class Vendor_StatusSerializers(serializers.ModelSerializer):
-    class Meta:
-        model =  Vendor_Status
-        fields = '__all__'
+# class Vendor_StatusSerializers(serializers.ModelSerializer):
+#     class Meta:
+#         model =  Vendor_Status
+#         fields = '__all__'
 
 
-class vendor_Service_ListSerializers(serializers.ModelSerializer):
-    class Meta:
-        model =  vendor_Service_List
-        fields = '__all__'
+# class vendor_Service_ListSerializers(serializers.ModelSerializer):
+#     class Meta:
+#         model =  vendor_Service_List
+#         fields = '__all__'
 
 class vendor_Service_List_statusSerializers(serializers.ModelSerializer):
     class Meta:
@@ -90,7 +90,7 @@ class Vaccine_Autho_CountryGETSerializers(serializers.ModelSerializer):
             return data.name
         else:
             return None
-class Vendor_Authorized_Service_ListSerializers(serializers.ModelSerializer):
-    class Meta:
-        model =  Vendor_Authorized_Service_List
-        fields = '__all__'
+# class Vendor_Authorized_Service_ListSerializers(serializers.ModelSerializer):
+#     class Meta:
+#         model =  Vendor_Authorized_Service_List
+#         fields = '__all__'
