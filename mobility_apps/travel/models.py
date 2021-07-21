@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 from mobility_apps.base.models import TimeStampedModel, GeneratedByModel, Status
 from mobility_apps.employee.models import Employee
-from mobility_apps.master.models import Project,Assignment_Type
+from mobility_apps.master.models import Project,Assignment_Type,vendor_Service_List_status
 from mobility_apps.superadmin.models import *
 from mobility_apps.visa.models import Visa_Request
 #from mobility_apps.master.models import Project, Country, Assignment_Type, Organization
@@ -378,6 +378,14 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
     tent_move_date  = models.CharField(max_length=100, null=True,blank=True)
     tent_delivery_date  = models.CharField(max_length=100, null=True,blank=True)
 
+    employment_income_name = models.CharField(max_length=100, null=True, blank=True)
+    interest_income_name = models.CharField(max_length=100, null=True, blank=True)
+    dividend_income_name = models.CharField(max_length=100, null=True, blank=True)
+    rent_and_royalty_income_name = models.CharField(max_length=100, null=True, blank=True)
+    self_employment_income_name = models.CharField(max_length=100, null=True, blank=True)
+    income_from_partnership_name = models.CharField(max_length=100, null=True, blank=True)
+    retirement_income_name = models.CharField(max_length=100, null=True, blank=True)
+    capital_gains_name = models.CharField(max_length=100, null=True, blank=True)
 
     employment_income_amount  = models.CharField(max_length=100, null=True,blank=True)
     interest_income_amount  = models.CharField(max_length=100, null=True,blank=True)
@@ -397,6 +405,54 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
     income_from_partnership_owner  = models.CharField(max_length=100, null=True,blank=True)
     retirement_income_owner  = models.CharField(max_length=100, null=True,blank=True)
     capital_gains_owner  = models.CharField(max_length=100, null=True,blank=True)
+
+    house_hold_status = models.CharField(max_length=100, null=True, blank=True)
+    house_hold_date = models.CharField(max_length=100, null=True, blank=True)
+
+    host_job_code = models.CharField(max_length=100, null=True, blank=True)
+    host_text_box = models.TextField(null=True, blank=True)
+
+    services_work_visa_status = models.ForeignKey(vendor_Service_List_status, null=True, blank=True,
+                                                  on_delete=models.CASCADE)
+    services_work_visa_date = models.CharField(max_length=200, null=True, blank=True)
+    services_work_visa_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+
+    services_business_visa_status = models.ForeignKey(vendor_Service_List_status,related_name='business_visa', null=True, blank=True,
+                                                      on_delete=models.CASCADE)
+    services_business_visa_date = models.CharField(max_length=200, null=True, blank=True)
+    services_business_visa_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+
+    services_residence_permit_status = models.ForeignKey(vendor_Service_List_status,related_name='residence_permit', null=True, blank=True,
+                                                         on_delete=models.CASCADE)
+    services_residence_permit_date = models.CharField(max_length=200, null=True, blank=True)
+    services_residence_permit_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+
+    services_permanent_residence_appli_status = models.ForeignKey(vendor_Service_List_status,related_name='permanent_residence_appli', null=True,
+                                                                        blank=True, on_delete=models.CASCADE)
+    services_permanent_residence_appli_date = models.CharField(max_length=200, null=True, blank=True)
+    services_permanent_residence_appli_esti_visa_aprovl_date = models.CharField(max_length=200, null=True,
+                                                                                             blank=True)
+
+    services_visa_extension_status = models.ForeignKey(vendor_Service_List_status,related_name='visa_extension', null=True, blank=True,
+                                                       on_delete=models.CASCADE)
+    services_visa_extension_date = models.CharField(max_length=200, null=True, blank=True)
+    services_visa_extension_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+
+    services_attestatios_status = models.ForeignKey(vendor_Service_List_status,related_name='attestatios', null=True, blank=True,
+                                                    on_delete=models.CASCADE)
+    services_attestatios_date = models.CharField(max_length=200, null=True, blank=True)
+    services_attestatios_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+
+    services_document_translation_status = models.ForeignKey(vendor_Service_List_status,related_name='document_translation', null=True, blank=True,
+                                                             on_delete=models.CASCADE)
+    services_document_translation_date = models.CharField(max_length=200, null=True, blank=True)
+    services_document_translation_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+
+    services_consular_services_status = models.ForeignKey(vendor_Service_List_status,related_name='consular_services', null=True, blank=True,
+                                                          on_delete=models.CASCADE)
+    services_consular_services_date = models.CharField(max_length=200, null=True, blank=True)
+    services_consular_services_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+
 
 
 
