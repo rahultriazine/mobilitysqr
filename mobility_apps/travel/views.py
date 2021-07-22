@@ -4347,12 +4347,7 @@ class Get_Post_Income_Tax_Vendor_Authorized_Service(ListCreateAPIView):
             return Response(response_data, status=status.HTTP_200_OK)
 
 class Get_Post_Immigration_Vendor_Service(ListCreateAPIView):
-<<<<<<< HEAD
-    # permission_classes = (IsAuthenticated,)
-=======
-    
     permission_classes = (IsAuthenticated,)
->>>>>>> mobilitysqr_staging
     serializer_class = Immigration_Vendor_ServiceSerializers
 
     def get(self, request):
