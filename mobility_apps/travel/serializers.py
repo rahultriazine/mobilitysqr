@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Travel_Vendor_Immigration, Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
+from .models import Travel_Vendor_Immigration, Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid,Income_Tax_Vendor_Authorized_Service
 
 class Travel_RequestSerializers(serializers.ModelSerializer):
     class Meta:
@@ -64,4 +64,9 @@ class Assignment_Travel_Tax_GridSerializers(serializers.ModelSerializer):
 class Travel_Vendor_ImmigrationSerializers(serializers.ModelSerializer):
     class Meta:
         model = Travel_Vendor_Immigration
+        fields = '__all__'
+
+class Income_Tax_Vendor_Authorized_ServiceSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Income_Tax_Vendor_Authorized_Service
         fields = '__all__'
