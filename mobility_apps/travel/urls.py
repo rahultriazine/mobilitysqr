@@ -35,4 +35,6 @@ urlpatterns = [
 
         path('bulk_approve_travelvisa_request/', bulk_approve_travelvisa_request.as_view(),name='bulk_approve_travelvisa_request'),
 
+        path('get_post_income_tax_vendor_authorized_service/', Get_Post_Income_Tax_Vendor_Authorized_Service.as_view(),name='get_post_income_tax_vendor_authorized_service'),
+
 ]
