@@ -75,3 +75,91 @@ INFO|22/Jul/2021 15:54:41|basehttp|9792|12084|"POST /get_post_income_tax_vendor_
 INFO|22/Jul/2021 15:54:47|basehttp|9792|15972|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 3978
 INFO|22/Jul/2021 15:56:40|basehttp|12348|236|"DELETE /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 49
 INFO|22/Jul/2021 15:56:47|basehttp|12348|16628|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 63
+INFO|22/Jul/2021 19:11:46|basehttp|18964|19240|"GET /get_post_immigration_vendor_service/ HTTP/1.1" 200 63
+INFO|22/Jul/2021 19:13:38|basehttp|18964|11740|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:13:51|basehttp|18964|15536|"GET /get_post_immigration_vendor_service/ HTTP/1.1" 200 391
+INFO|22/Jul/2021 19:15:22|basehttp|18964|8904|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:15:29|basehttp|18964|2096|"GET /get_post_immigration_vendor_service/ HTTP/1.1" 200 1049
+WARNING|22/Jul/2021 19:19:13|log|19024|10792|Not Found: //get_post_vendor_Service_List_status/
+WARNING|22/Jul/2021 19:19:13|basehttp|19024|10792|"GET //get_post_vendor_Service_List_status/ HTTP/1.1" 404 59544
+INFO|22/Jul/2021 19:19:21|basehttp|19024|19428|"GET /get_post_vendor_Service_List_status/ HTTP/1.1" 200 8293
+INFO|22/Jul/2021 19:38:08|basehttp|8668|15672|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:38:16|basehttp|8668|15440|"GET /get_post_immigration_vendor_service/ HTTP/1.1" 200 94
+INFO|22/Jul/2021 19:40:06|basehttp|8668|10300|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+ERROR|22/Jul/2021 19:41:49|log|8668|19004|Internal Server Error: /get_post_immigration_vendor_service/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\travel\views.py", line 4357, in get
+    vendor_authorized = Immigration_Vendor_Service.objects.filter(organization=org_id,travel_req=travel_req).order_by('id')
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\query.py", line 841, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\query.py", line 859, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\sql\query.py", line 1263, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\sql\query.py", line 1284, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\sql\query.py", line 1225, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\sql\query.py", line 1096, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\fields\related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\fields\__init__.py", line 965, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'ORG150866'
+ERROR|22/Jul/2021 19:41:49|basehttp|8668|19004|"GET /get_post_immigration_vendor_service/?travel_req=TR267543&org_id=ORG150866 HTTP/1.1" 500 20894
+INFO|22/Jul/2021 19:44:30|basehttp|8668|3152|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:45:52|basehttp|8668|17392|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 102
+INFO|22/Jul/2021 19:48:32|basehttp|8668|3328|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:48:59|basehttp|8668|8416|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 102
+INFO|22/Jul/2021 19:49:49|basehttp|8668|10208|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:50:04|basehttp|8668|15876|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:53:43|basehttp|8668|10088|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:53:46|basehttp|8668|11268|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 19:56:09|basehttp|15700|4832|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 161
+INFO|22/Jul/2021 19:59:15|basehttp|10528|11976|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+ERROR|22/Jul/2021 19:59:46|log|10528|7728|Internal Server Error: /get_post_immigration_vendor_service/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\travel\views.py", line 4358, in get
+    serializer = Immigration_Vendor_Service_Get_Serializers(vendor_authorized,many=True)
+NameError: name 'Immigration_Vendor_Service_Get_Serializers' is not defined
+ERROR|22/Jul/2021 19:59:46|basehttp|10528|7728|"GET /get_post_immigration_vendor_service/?travel_req=TR267543&org_id=ORG150866 HTTP/1.1" 500 18909
+INFO|22/Jul/2021 20:00:43|basehttp|5624|6932|"GET /get_post_immigration_vendor_service/?travel_req=TR267543&org_id=ORG150866 HTTP/1.1" 200 286
+INFO|22/Jul/2021 20:03:28|basehttp|7496|14424|"POST /get_post_immigration_vendor_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 20:03:53|basehttp|7496|16760|"GET /get_post_immigration_vendor_service/?travel_req=TR267543&org_id=ORG150866 HTTP/1.1" 200 734
