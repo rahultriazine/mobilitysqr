@@ -1,0 +1,77 @@
+ERROR|22/Jul/2021 15:19:54|log|13076|14756|Internal Server Error: /get_post_income_tax_vendor_authorized_service/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\travel\views.py", line 4325, in get
+    serializer = Income_Tax_Vendor_Authorized_Service(vendor_authorized,many=True)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\base.py", line 484, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % kwarg)
+TypeError: 'many' is an invalid keyword argument for this function
+ERROR|22/Jul/2021 15:19:54|basehttp|13076|14756|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 500 19041
+INFO|22/Jul/2021 15:21:11|basehttp|16668|10232|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 63
+INFO|22/Jul/2021 15:21:18|basehttp|16668|5000|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 447
+ERROR|22/Jul/2021 15:26:17|log|9892|19232|Internal Server Error: /get_post_income_tax_vendor_authorized_service/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\request.py", line 412, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\travel\views.py", line 4330, in post
+    all_data = request.Data
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\request.py", line 414, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Data'
+ERROR|22/Jul/2021 15:26:17|basehttp|9892|19232|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 500 19231
+INFO|22/Jul/2021 15:26:42|basehttp|14788|18420|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 826
+INFO|22/Jul/2021 15:38:27|basehttp|12240|12620|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 1626
+INFO|22/Jul/2021 15:41:24|basehttp|16464|15812|"DELETE /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 15:41:31|basehttp|16464|9796|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 63
+INFO|22/Jul/2021 15:41:38|basehttp|16464|1400|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 826
+INFO|22/Jul/2021 15:41:45|basehttp|16464|6456|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 453
+INFO|22/Jul/2021 15:42:18|basehttp|16464|12856|"DELETE /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 15:43:37|basehttp|19316|8016|"DELETE /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 15:43:42|basehttp|19316|4992|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 63
+INFO|22/Jul/2021 15:43:50|basehttp|19316|8196|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 826
+INFO|22/Jul/2021 15:43:57|basehttp|19316|8516|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 844
+INFO|22/Jul/2021 15:45:52|basehttp|10168|6428|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 844
+INFO|22/Jul/2021 15:45:59|basehttp|10168|8260|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 826
+INFO|22/Jul/2021 15:46:12|basehttp|10168|13508|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 1626
+INFO|22/Jul/2021 15:46:35|basehttp|10168|18864|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 826
+INFO|22/Jul/2021 15:53:50|basehttp|9792|16712|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 45
+INFO|22/Jul/2021 15:54:41|basehttp|9792|12084|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 15:54:47|basehttp|9792|15972|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 3978
+INFO|22/Jul/2021 15:56:40|basehttp|12348|236|"DELETE /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 49
+INFO|22/Jul/2021 15:56:47|basehttp|12348|16628|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 200 63

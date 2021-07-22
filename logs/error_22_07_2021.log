@@ -1,0 +1,55 @@
+ERROR|22/Jul/2021 15:19:54|log|13076|14756|Internal Server Error: /get_post_income_tax_vendor_authorized_service/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\travel\views.py", line 4325, in get
+    serializer = Income_Tax_Vendor_Authorized_Service(vendor_authorized,many=True)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\db\models\base.py", line 484, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % kwarg)
+TypeError: 'many' is an invalid keyword argument for this function
+ERROR|22/Jul/2021 15:19:54|basehttp|13076|14756|"GET /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 500 19041
+ERROR|22/Jul/2021 15:26:17|log|9892|19232|Internal Server Error: /get_post_income_tax_vendor_authorized_service/
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\request.py", line 412, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\ajay singh\Desktop\mobilitysqr_live\mobility_apps\travel\views.py", line 4330, in post
+    all_data = request.Data
+  File "C:\Users\ajay singh\Desktop\django_study\mobilitysqr_live\myenv\lib\site-packages\rest_framework\request.py", line 414, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Data'
+ERROR|22/Jul/2021 15:26:17|basehttp|9892|19232|"POST /get_post_income_tax_vendor_authorized_service/ HTTP/1.1" 500 19231
