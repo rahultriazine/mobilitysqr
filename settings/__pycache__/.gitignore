@@ -1,2 +1,3 @@
 *.cpython-38.pyc
 /base.cpython-38.pyc
+*.cpython-37.pyc
