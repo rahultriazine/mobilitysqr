@@ -10,8 +10,8 @@ from mobility_apps.employee.serializer import EmployeeSerializers
 from mobility_apps.master.models import Project
 from mobility_apps.visa.models import Visa_Request , Visa_Request_Document,Visa_Request_Draft
 from mobility_apps.visa.serializers import Visa_RequestSerializers,Visa_Request_DocumentSerializers,Visa_Request_DraftSerializers
-from mobility_apps.travel.models import Income_Tax_Vendor_Authorized_Service,Travel_Vendor_Immigration,Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
-from mobility_apps.travel.serializers import Income_Tax_Vendor_Authorized_ServiceSerializers,Travel_Vendor_ImmigrationSerializers,Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
+from mobility_apps.travel.models import Immigration_Vendor_Service,Income_Tax_Vendor_Authorized_Service,Travel_Vendor_Immigration,Travel_Request ,Travel_Request_Details,Travel_Request_Dependent,Travel_Request_Draft ,Travel_Request_Details_Draft,Travel_Request_Dependent_Draft,Travel_Request_Action_History,Visa_Request_Action_History,Assignment_Travel_Request_Status,Assignment_Travel_Tax_Grid
+from mobility_apps.travel.serializers import Immigration_Vendor_Service_Get_Serializers,Immigration_Vendor_ServiceSerializers,Income_Tax_Vendor_Authorized_ServiceSerializers,Travel_Vendor_ImmigrationSerializers,Travel_RequestSerializers ,Travel_Request_DetailsSerializers,Travel_Request_DependentSerializers,Travel_Request_DraftSerializers ,Travel_Request_Details_DraftSerializers,Travel_Request_Dependent_DraftSerializers,Travel_Request_Action_HistorySerializers,Visa_Request_Action_HistorySerializers,Assignment_Travel_Request_StatusSerializers,Assignment_Travel_Tax_GridSerializers
 from mobility_apps.master.models import Vendor,Country,City,Per_Diem,Dial_Code,Country_Master,State_Master,Location_Master,Taxgrid_Master,Taxgrid_Country,Taxgrid,National_Id,Secondory_Assignment
 from mobility_apps.master.models import Notification
 from mobility_apps.master.models import Create_Assignment
@@ -4338,6 +4338,43 @@ class Get_Post_Income_Tax_Vendor_Authorized_Service(ListCreateAPIView):
                         serializer.save()
                 dict = {"status": True,  "message": 'Successfully inserted'}
                 return Response(dict, status=status.HTTP_200_OK)
+            else:
+                dict = {"status": False,  "message": 'Failed to insert'}
+                return Response(dict, status=status.HTTP_200_OK)
+        except Exception as e:
+            response_data['status'] = False
+            response_data['error']['message'] = str(e)
+            return Response(response_data, status=status.HTTP_200_OK)
+
+class Get_Post_Immigration_Vendor_Service(ListCreateAPIView):
+    
+    permission_classes = (IsAuthenticated,)
+    serializer_class = Immigration_Vendor_ServiceSerializers
+
+    def get(self, request):
+        org_id = self.request.GET.get('org_id',None)
+        travel_req = self.request.GET.get('travel_req',None)
+        if org_id is not None and travel_req is not None and org_id!='' and travel_req !='':
+            vendor_authorized = Immigration_Vendor_Service.objects.filter(organization=org_id,travel_req=travel_req).order_by('id')
+            serializer = Immigration_Vendor_Service_Get_Serializers(vendor_authorized,many=True)
+            dict={"status":True,'status_code':200,"message":MSG_SUCESS,"data":serializer.data}
+            return Response(dict, status=status.HTTP_200_OK)
+        else:
+            dict={"status":False,'status_code':200,"message":"Organization id and travel_requests id required"}
+            return Response(dict, status=status.HTTP_200_OK)
+
+    def post(self, request):
+        response_data = {}
+        response_data['error'] = {}
+        try:
+            all_data = request.data
+            if all_data:
+                for data in all_data:
+                    serializer = Immigration_Vendor_ServiceSerializers(data=data)
+                    if serializer.is_valid():
+                        serializer.save()
+                        dict = {"status": True,  "message": 'Successfully inserted'}
+                return Response(dict, status=status.HTTP_200_OK) 
             else:
                 dict = {"status": False,  "message": 'Failed to insert'}
                 return Response(dict, status=status.HTTP_200_OK)
