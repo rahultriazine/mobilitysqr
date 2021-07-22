@@ -413,46 +413,46 @@ class Assignment_Travel_Request_Status(TimeStampedModel, GeneratedByModel, Statu
     host_job_code = models.CharField(max_length=100, null=True, blank=True)
     host_text_box = models.TextField(null=True, blank=True)
 
-    services_work_visa_status = models.ForeignKey(vendor_Service_List_status, null=True, blank=True,
-                                                  on_delete=models.CASCADE)
-    services_work_visa_date = models.CharField(max_length=200, null=True, blank=True)
-    services_work_visa_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_work_visa_status = models.ForeignKey(vendor_Service_List_status, null=True, blank=True,
+    #                                               on_delete=models.CASCADE)
+    # services_work_visa_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_work_visa_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
 
-    services_business_visa_status = models.ForeignKey(vendor_Service_List_status,related_name='business_visa', null=True, blank=True,
-                                                      on_delete=models.CASCADE)
-    services_business_visa_date = models.CharField(max_length=200, null=True, blank=True)
-    services_business_visa_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_business_visa_status = models.ForeignKey(vendor_Service_List_status,related_name='business_visa', null=True, blank=True,
+    #                                                   on_delete=models.CASCADE)
+    # services_business_visa_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_business_visa_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
 
-    services_residence_permit_status = models.ForeignKey(vendor_Service_List_status,related_name='residence_permit', null=True, blank=True,
-                                                         on_delete=models.CASCADE)
-    services_residence_permit_date = models.CharField(max_length=200, null=True, blank=True)
-    services_residence_permit_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_residence_permit_status = models.ForeignKey(vendor_Service_List_status,related_name='residence_permit', null=True, blank=True,
+    #                                                      on_delete=models.CASCADE)
+    # services_residence_permit_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_residence_permit_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
 
-    services_permanent_residence_appli_status = models.ForeignKey(vendor_Service_List_status,related_name='permanent_residence_appli', null=True,
-                                                                        blank=True, on_delete=models.CASCADE)
-    services_permanent_residence_appli_date = models.CharField(max_length=200, null=True, blank=True)
-    services_permanent_residence_appli_esti_visa_aprovl_date = models.CharField(max_length=200, null=True,
-                                                                                             blank=True)
+    # services_permanent_residence_appli_status = models.ForeignKey(vendor_Service_List_status,related_name='permanent_residence_appli', null=True,
+    #                                                                     blank=True, on_delete=models.CASCADE)
+    # services_permanent_residence_appli_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_permanent_residence_appli_esti_visa_aprovl_date = models.CharField(max_length=200, null=True,
+    #                                                                                          blank=True)
 
-    services_visa_extension_status = models.ForeignKey(vendor_Service_List_status,related_name='visa_extension', null=True, blank=True,
-                                                       on_delete=models.CASCADE)
-    services_visa_extension_date = models.CharField(max_length=200, null=True, blank=True)
-    services_visa_extension_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_visa_extension_status = models.ForeignKey(vendor_Service_List_status,related_name='visa_extension', null=True, blank=True,
+    #                                                    on_delete=models.CASCADE)
+    # services_visa_extension_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_visa_extension_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
 
-    services_attestatios_status = models.ForeignKey(vendor_Service_List_status,related_name='attestatios', null=True, blank=True,
-                                                    on_delete=models.CASCADE)
-    services_attestatios_date = models.CharField(max_length=200, null=True, blank=True)
-    services_attestatios_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_attestatios_status = models.ForeignKey(vendor_Service_List_status,related_name='attestatios', null=True, blank=True,
+    #                                                 on_delete=models.CASCADE)
+    # services_attestatios_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_attestatios_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
 
-    services_document_translation_status = models.ForeignKey(vendor_Service_List_status,related_name='document_translation', null=True, blank=True,
-                                                             on_delete=models.CASCADE)
-    services_document_translation_date = models.CharField(max_length=200, null=True, blank=True)
-    services_document_translation_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_document_translation_status = models.ForeignKey(vendor_Service_List_status,related_name='document_translation', null=True, blank=True,
+    #                                                          on_delete=models.CASCADE)
+    # services_document_translation_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_document_translation_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
 
-    services_consular_services_status = models.ForeignKey(vendor_Service_List_status,related_name='consular_services', null=True, blank=True,
-                                                          on_delete=models.CASCADE)
-    services_consular_services_date = models.CharField(max_length=200, null=True, blank=True)
-    services_consular_services_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_consular_services_status = models.ForeignKey(vendor_Service_List_status,related_name='consular_services', null=True, blank=True,
+    #                                                       on_delete=models.CASCADE)
+    # services_consular_services_date = models.CharField(max_length=200, null=True, blank=True)
+    # services_consular_services_estimated_visa_approvel_date = models.CharField(max_length=200, null=True, blank=True)
 
 
 
@@ -523,3 +523,13 @@ class Income_Tax_Vendor_Authorized_Service(TimeStampedModel, GeneratedByModel, S
         managed = True
         verbose_name = _('Vendor Authorized Service List')
         verbose_name_plural = _('Vendor Authorized Service List')
+
+class Immigration_Vendor_Service(TimeStampedModel, GeneratedByModel, Status):
+    services_list = models.CharField(max_length=200,null=True, blank=True)
+    date = models.CharField(max_length=100,null=True, blank=True)
+    estimated_visa_approve_date=models.CharField(max_length=100,null=True, blank=True)
+    status_audit_history = models.ForeignKey(vendor_Service_List_status,null=True, blank=True,on_delete=models.CASCADE)
+    travel_req = models.ForeignKey(Travel_Request, to_field="travel_req_id", null=True, blank=True,on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organizations, to_field='org_id', null=True, blank=True, on_delete=models.CASCADE)
+    employee = models.ForeignKey(Employee, to_field="emp_code", null=True, blank=True, on_delete=models.CASCADE)
+    vendor = models.ForeignKey(Vendor,to_field="vendor_id",null=True, blank=True,on_delete=models.CASCADE) 
